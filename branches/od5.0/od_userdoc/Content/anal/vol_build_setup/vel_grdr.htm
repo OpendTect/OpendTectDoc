@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1023" MadCap:lastWidth="1342">
+    <head>
+    </head>
+    <body>
+        <h3>Velocity Gridder</h3>
+        <p>The gridding will create a volume out of a sparsely sampled dataset. <b>The input source MUST be <a href="../../survey/import/imp_seis/tagged_seis.htm" target="_self">tagged</a> with a velocity type.</b> Indeed the gridding is applied to the time-depth relation hold by the velocity source and not on the amplitudes of the velocity source. This preserves the time-depth relation and blocky-ness of interval velocity models. The gridded time-depth relation is converted back to the input velocity type in the output volume.</p>
+        <p>&#160;</p>
+        <p>However any other data type could be gridded by this module (Thomsen parameters, temperatures, ...). These other types must be <a href="../../survey/import/imp_seis/tagged_seis.htm" target="_self">tagged</a> as delta, epsilon or eta before being used for gridding. The functions will be vertically interpolated using a linear 1D interpolation before the lateral gridding.</p>
+        <p>&#160;</p>
+        <p>Two interpolation methods are available for gridding: inverse distance interpolation or triangulation. The first method is designed for the interpolation of sparse dataset, while the second algorithm should be preferred if the input exists on a regular (but coarse) grid. In general gridding is always followed by some filtering.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis volume builder velocity gridder.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The input data can be either a (coarse SEG-Y imported) <a href="../../survey/import/imp_seis/imp_seis.htm" target="_self">volume</a>, stored (ascii) <a href="../../survey/import/imp_vel_funcs.htm" target="_self">functions</a> or velocity picks (requires the Velocity Model Building plugin)</p>
+        <p>&#160;</p>
+        <p>Clicking on the '<i>Properties</i>' button will allow you to change the selected input for this step:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis volume builder velocity gridder ed functions.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <p><b>Note:</b> Velocity volumes have to be <a href="../../survey/import/imp_seis/tagged_seis.htm" target="_self">tagged</a> to recognize their type.</p>
+            <p>&#160;</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Tip:</b> If you have no velocity volume available, press '<i>Add</i>' and then, in the next window, press '<i>Create</i>'. Here you may tag a volume with a velocity type, so that it can be used as input for the gridding step.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

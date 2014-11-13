@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2480" MadCap:lastWidth="1188">
+    <head>
+    </head>
+    <body>
+        <h2>Fault</h2>
+        <p>
+            <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault popout menu.png" class="General_Image" />
+        </p>
+        <p>The fault option enables interpretation of either a new fault or loading an existing one.</p>
+        <p>&#160;</p>
+        <p><b>Add:</b> Adds selected faults into the tree and displays them in the scene:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault add.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>New:</b> Adds an empty fault in the scene (New fault 1) that needs to be named and saved once the interpretation is completed.</p>
+        <p>&#160;</p>
+        <p><b>Display all:</b> If more than one faults have already been displayed or added in the tree, this option will be available. It is used to display all faults in full, only at sections, or at horizons, or both. It is also used to toggle On/Off the fault plane, sticks and both displays.</p>
+        <p>&#160;</p>
+        <p><b>Show all items:</b> It is used to check all items, which means that all items would be displayed in the scene.</p>
+        <p>&#160;</p>
+        <p><b>Hide all items:</b> It is used to hide all (check out) the displayed faults.</p>
+        <p>&#160;</p>
+        <p><b>Remove all items:</b> To remove all faults that are added in the tree, this option is used.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault example no fault.png" class="General_Image" style="width: 300px;height: 200px;" /> <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault example fault.png" class="General_Image" style="width: 300px;height: 200px;" /></p>
+        <p><i>An example of a picked fault line on a seismic section:</i>
+        </p>
+        <p>&#160;</p>
+        <p>Once a fault has been added, right-clicking will pop-out the following menus :</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault active add.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Add:</b>
+            </p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p><b>Attribute:</b> Add a new attribute for fault element. Right click and choose 'Select attribute' to select the desired seismic volume. The attribute will be displayed along fault planes. The example line with interpreted faults in a 3D volume has been shown below. Note that the faults have seismic data displayed as an attribute along their planes.</p>
+                <p><b>Volume Processing Attribute:</b> It is used to add a special sub layer to the fault that belongs to volume processing attribute. To read more about this, please go to the Volume Builder Setup chapter.</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Display:</b>
+            </p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p><b>Histograms:</b> It shows multiple histograms of the displayed data along the selected fault plane.</p>
+                <p><b>Only at sections:</b> It is a toggle that is used to display a fault plane on a section as a stick.</p>
+                <p><b>Only at horizons:</b> To display a fault plane on a horizon as a fault trace, this option could be toggled On/Off.</p>
+                <p><b>Fault planes:</b> If a fault has been displayed either on a section or a horizon, it can be back into a 3D fault plane. This option toggles On a fault plane display.</p>
+                <p><b>Fault sticks:</b> To see the fault sticks only in 3D, this option should be toggled on.</p>
+                <p><b>Use single color:</b> It sets a single color to a fault plane display. Any displayed attribute along the fault plane will become hidden an only the fault color would be displayed.</p>
+                <p><b>Properties:</b> Set the Type, Size, and Color of the pick markers on the graphics area.</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Save:</b> It saves the selected fault.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Save As:</b> To save the selected fault with a new name, this option is used.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Lock:</b> Lock the selected object. Prevents accidental removing, moving, or displaying data on object. After clicking on <i>Lock</i> again (i.e unlocking), editing is enabled.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Remove:</b> It removes the selected fault from the scene.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The sub-menus for the displayed attributes are explained below:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/4 OpendTect Trees and Elements/Fault active attribute add.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Select Attribute:</b> It is used to select and display various types of data(see below).</p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p><b>Stored Cubes:</b> Any stored volume could be displayed along the fault plane in 3D.</p>
+                <p><b>Attributes:</b> Any attribute defined in the Attribute set window could be displayed. This requires a pre-defined attribute set in the Attribute set window. It will be inactive if no attribute is defined in that window.</p>
+                <p><b>SteeringCubes:</b> If a SteeringCube has already been pre-processed it can be selected and displayed along the fault plane.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <p><b>Save Color Settings:</b> The active <a href="../get_started/col_tabs.htm" target="_popup">color table</a> could be stored permanently or updated for the displayed stored attribute. For instance, if you do not like the color bar for a particular seismic data (say PSTM) that is Red-white-blue (color table) and you want to change it into Magic, you could set it here. It will save the colour settings for this specific stored volume (PSTM).</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Move:</b> To change the display level of an attribute, it can either be moved up / down or placed to top / bottom.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Display:</b> To make a fault semi-transparent, the transparency is used. One can also visualize the histogram of the attribute.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Remove:</b> It remove the selected attribute from the tree.</p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>&#160;</p>
+                <p><b>Note:</b> For Fault interpretation, please see the <a href="../how_to/int_flts.htm" target="_self">interpret faults</a> chapter</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+    </body>
+</html>

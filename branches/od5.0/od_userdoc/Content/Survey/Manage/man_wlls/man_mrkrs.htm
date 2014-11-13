@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2004" MadCap:lastWidth="706">
+    <head>
+    </head>
+    <body>
+        <h4>Manage Markers</h4>
+        <p>Well markers can be manually provided or imported. They can be exported.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage markers main window.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Edit markers:</b> Individual markers can to be added or deleted right-clicking the mouse on an existing well marker in the marker table and choosing the appropriate command. To edit the name or value, double click in the appropriate cell. Levels can be set according to the stratigraphic framework, but please note that marker names and color will be updated according to the framework when setting a level to a well marker. The <a href="../man_strat/man_strat.htm" target="_self">Stratipgraphy manager</a> can be access from the <img src="../../../Resources/Images/Icons/man_strat.png" class="Icons" /> icon.</p>
+        <p>&#160;</p>
+        <p><b>Add markers:</b> Markers can be loaded from a file by clicking the <i>Import</i> button. The following window will then be displayed:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage markers import markers.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Select the input Ascii file. The main work is to specify the presence of a <i>file header</i> and the file <i>format definition</i>. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
+        <p>&#160;</p>
+        <p>Predefined and saved file formats are available by pressing the Open icon <img src="../../../Resources/Images/Icons/open.png" class="Icons" />. Otherwise the format must be manually specified. The <i>Define</i> button gives access to the format definition window.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage markers import markers format definition.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>You must specify in the format definition window the column numbers of the marker name and depth. Please mind the spaces in the marker names that can break the fixed column format. For that reason it is recommended to have the depth in the first column, and to specify column 2 as the position of marker names. Then all strings found in column 2 and up will be used to form the marker names. Depths can be either measured depths or TVDSS depths. Data loading can be stopped at a specific line by providing the adequate keyword.</p>
+        <p>&#160;</p>
+        <p>It is recommended to save the format definition for a later use and QC, by clicking on the Save icon <img src="../../../Resources/Images/Icons/save.png" class="Icons" />. In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage. Press <i>Ok</i> when done.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage markers import markers format definition save format.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Update display:</b> After adding and/or editing the markers, they can be refreshed in the main display by clicking on the<i>Update display</i> button.</p>
+        <p><b>Export markers:</b> Finally, the edited markers may be saved to a new file/location by clicking on the <i>Export</i> button.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

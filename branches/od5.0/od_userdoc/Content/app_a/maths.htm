@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3587" MadCap:lastWidth="1214">
+    <head>
+    </head>
+    <body>
+        <h1>Mathematics</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Mathematics -- Attribute that returns the result of a user-defined mathematical expression</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The Mathematics attribute is a way to combine data from stored data and attributes into a new data.</p>
+        <p>The input data can be volumes, 2D lines or well logs. The output data has always the same dimension (3D, 2D, 1D respectively) as the input, with the exception that 3D and 2D attributes can also be computed along surfaces (horizons and faults). The mathematical expression is calculated at each sample position.</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic mathematics.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>A mathematical expression is specified in the Formula text field with variables, constants, numerical values and/or recursive operators.</p>
+        <blockquote>
+            <ul>
+                <li>Constants must start with the letter C and be following by a number: C1, C5, C9... The number does not necessarily start at 0 and does not have to be consecutive. Constants can be evaluated just like stepouts and time gates for the other attribute. They are not available for logs creation</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Variables expressions can be any string: seis, energy, sim, ... They can be called with a number between brackets like seis[-1] or seis[4], in which case the value represents a shift in number of samples. seis[-1] represents seis on the sample above, seis[4] represents seis four samples below</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Recursive expressions are a way to call back the result of the mathematical formula on a sample above for computation. This result is called with the expression OUT[-i] (case insensitive) where i is a number of samples</li>
+            </ul>
+        </blockquote>
+        <p><b>Note 1:</b> There is no limit in number of variables/constants used in an expression.</p>
+        <p><b>Note 2:</b> There are special constants for which it is not necessary to provide the numerical value: DZ is the sampling rate of the input data, Inl and Crl are respectively the inline and crossline numbers of the current trace. The special constant are case sensitive.</p>
+        <p><b>Note 3:</b> Mathematics attributes containing a recursive equation should only be applied to the full volume/lines, not along a surface because of the integration length.</p>
+        <p>&#160;</p>
+        <p>Parentheses ( ) are allowed and even welcome. Once the mathematical expression has be entered you must press <i>Set</i>. Then a table will appear where you will be able to assign data to the variables and values to the constants and recursive settings: Start time (or depth) of the recursive function and value at this time.</p>
+        <p>&#160;</p>
+        <p>Supported operators are:</p>
+        <p>&#160;</p>
+        <p><i>+, -, *, /, ^, &gt;, &lt;, &lt;=, &gt;=, ==, !=, &amp;&amp; (and), || (or), |xn |</i>(absolute value).</p>
+        <p>&#160;</p>
+        <p>Supported mathematical functions are:</p>
+        <p>&#160;</p>
+        <p><i>sin(), cos(), tan(), ln(), log(), exp(), sqrt(), min(), max(), avg(), sum(), med(), var(), rand(v)</i> and <i>randg(std).</i></p>
+        <p>&#160;</p>
+        <p>Where avg is the average, med is the median, and var is the variance of the input parameters. The input parameters in parentheses should be separated by a comma.</p>
+        <p>The function <i>rand(v)</i> gives a random number from a uniform distribution between 0 and v. The function <i>randg(std)</i> generates a random number from a Gaussian (normal distribution) with standard deviation std and expectation 0.</p>
+        <p>&#160;</p>
+        <p>Supported constants are:</p>
+        <p>&#160;</p>
+        <p><i>pi</i> (3.1415927), <i>undef</i> (The OpendTect undefined value: 1e+30)</p>
+        <p>&#160;</p>
+        <p>In addition it is possible to make logical operations using IF .. THEN .. ELSE statements. The following syntax must be used:</p>
+        <p>&#160;</p>
+        <p>CONDITION ? OUTPUT IF TRUE : OUTPUT IF FALSE</p>
+        <p>&#160;</p>
+        <p>The three parts can be any set of variables and/or constants. IF..THEN..ELSE statements can be embedded like here:</p>
+        <p>CONDITION1 ? TRUE : (CONDITION2 ? TRUE : FALSE)</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Other options</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic maths toolbar.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Predefined functions, constants, and operators can be inserted into the '<i>Formula</i>' field using a combination of the drop-downs, followed by the '<i>Insert</i>' button. These are grouped so:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic maths functions.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic maths other.png" class="General_Image" />
+        </p>
+        <p>The grouping '<i>Other</i>' contains the above.</p>
+        <p>&#160;</p>
+        <p>Pressing this button, <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic maths rockphys button.png" class="General_Image" />, will open the '<i><a href="../Survey/Manage/man_wlls/rok_phys_lib.htm" target="_self">Rock Physics</a></i>' library of formulas. Clicking '<i>Ok</i>' in this additional window will directly insert the chosen formula into the '<i>Formula</i>' field.</p>
+        <p>&#160;</p>
+        <p>Formulas in Mathematics can be saved (<img src="../Resources/Images/Icons/save.png" class="Icons" />) and loaded from a stored location (<img src="../Resources/Images/Icons/open.png" class="Icons" />).</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Examples of expressions</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li>X0 == X1 returns 1 if X0 equals X1, 0 is returned if the statement is false, i.e. X0 is not equal to X1</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>X0 != X1 returns 1 if X0 is not equal to X1 and 0 if X0 equals X1</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>X0 &amp;&amp; X1 returns 1 if X0 and X1 are not equal to 0. If one of these equals zero a 0 is returned</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>X0 || X1 returns 1 if X0 or X1 is not equal to 0. If both are zero a 0 is returned</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>|X0| returns the absolute value of X0</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>X0 &gt; 1 ? X1 : X2 means if X0 is larger than 1 return X1, else return X2</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>sin(X0) returns the sine of X0</li>
+            </ul>
+        </blockquote>
+        <p>Let's say you have one input cube, say 'Cube1' and one attribute already defined, Energy40, which is the Energy per sample calculated in a [-20,20] ms window around the current sample. Then, you could define 'Damped amplitude' as;</p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li>Select Mathematics attribute</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Enter formula: seis / energy</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Press Set</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Select 'Cube1' for seis and 'Energy40' for energy</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Provide a name for the attribute, and press Add as new</li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <p><b>Additional examples</b>
+        </p>
+        <blockquote>
+            <p>1 - <i>Centred differentiation example:</i> Centred differentiation can be coded using the formula (seis[+1]-seis[-1])/(2*DZ) where DZ is the sampling rate. Please note that for lateral shifts the reference shift attribute must still be used.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <blockquote>
+            <p>2 - Recursive filters can be created using the syntax "OUT[-i]". The most general form of recursive equation is the following:</p>
+            <p>&#160;</p>
+            <p>y[n] = a0*x[n] + a1*x[n-1] + a2*x[n-2] + ...</p>
+            <p>+ b1*y[n-1] + b2*y[n-2] + ...</p>
+            <p>&#160;</p>
+            <p>where x[] is the input volume, y[] is the output volume and the a's and b's the coefficients. n is the current sample number.</p>
+            <p>&#160;</p>
+            <p>In the mathematics attribute the current sample index "n" does not need to be specified. Therefore the equation above can be entered as:</p>
+            <p>c0*x0 + c1*x0[-1] + c2*x0[-2] + c3*OUT[-1] + c4*OUT[-2] + ...</p>
+            <p>where OUT[-1] stands for y[n-1] and OUT[-2] stands for y[n-2]</p>
+            <p>&#160;</p>
+            <p>For each instance of OUT[-i] a starting value and attached time/depth must be provided.</p>
+            <p>&#160;</p>
+            <p>Two examples of low pass and high pass recursive filters are provided in the default attribute set "Evaluate attributes":</p>
+            <p>"Single pole low pass recursive filter" and "Single pole high pass recursive filter". Best results are achieved when providing an input of impedance or velocity type.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <blockquote>
+            <p>3 - The phase rotation is an attribute available in the Evaluate attribute set and in the dGB Evaluate attribute set.</p>
+            <p>&#160;</p>
+            <p>This attribute allows the user to apply a phase rotation of any angle to the data.</p>
+            <p>&#160;</p>
+            <p>
+                <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic mathematics hilbert.png" class="General_Image" />
+            </p>
+            <p>&#160;</p>
+            <p>It applies the formula: seis*cos(c0*PI/180)-hilbert*sin(c0*PI/180)</p>
+            <p>where seis is the seismic data</p>
+            <p>hilbert is the Hilbert transform of the seismic data</p>
+            <p>c0 is the applied angle for the rotation</p>
+            <p>&#160;</p>
+            <p>c0 is in degrees.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

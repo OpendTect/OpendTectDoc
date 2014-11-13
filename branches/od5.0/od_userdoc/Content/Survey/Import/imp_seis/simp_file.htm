@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2783" MadCap:lastWidth="686">
+    <head>
+    </head>
+    <body>
+        <h4>Simple File</h4>
+        <p>The user can import simple ASCII or Binary file by using plain file Seismic I/O Plugin. This can be reached via <i>Survey &gt; Import &gt; Seismic &gt; Simple File &gt; 3D or 2D (Pre/Post-stack) etc</i>.</p>
+        <p>&#160;</p>
+        <p>The input file must first be selected and its data format type specified, between ascii and binary (4-bytes floats). All data must be in the 'local' format, because a blunt binary read/write is performed.</p>
+        <p>&#160;</p>
+        <p>(Part of) the input file can be visualized by pressing the examine button. The data must consists of <b>one trace per record</b> (line). The samples are thus in columns, from shallowest to deepest, with a regular step. The trace position and time/depth index can be read from the input file, left of the trace, or can be provided. If provided, start, step and number of samples are requested in the corresponding directions, assuming the input file if regular and does not contain holes. Post-stack volume must be sorted by inlines, crossline, (offset), Z (time or depth).</p>
+        <p>&#160;</p>
+        <p>Optionally, the user can scale the cube before loading as well by mentioning the amount of shift and the corresponding factor. Either <i>pass</i> or <i>discard</i> the null traces before loading.</p>
+        <p>&#160;</p>
+        <p>The easiest way to see what the format looks like is by producing a little export file from a bit of seismics. In the example below we exported inlines 500-501 and crosslines 600-603, Z range 1000-1020 step 4 (which is 6 samples):</p>
+        <p>&#160;</p>
+        <p>1000 4 6</p>
+        <p>500 600 1456 -688 -1502 4955 8935 1209</p>
+        <p>500 601 1429 -640 -967 5248 8362 527</p>
+        <p>500 602 1353 -424 -1040 5071 8059 -64</p>
+        <p>500 603 1428 -587 -1244 5139 8447 13</p>
+        <p>501 600 1450 -411 -1414 4792 8449 1117</p>
+        <p>501 601 1619 -456 -1243 4695 8271 702</p>
+        <p>501 602 1617 -213 -1272 4675 7903 393</p>
+        <p>501 603 1552 -248 -1088 4875 8004 204</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Below are respective examples of the import for 3D post-stack, 2D post-stack, 3D pre-stack, 2D pre-stack:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Import simple post stack 3D.png" class="General_Image" style="vertical-align: top;" /> <img src="../../../Resources/Images/5 Menu - Survey/Import simple post stack 2D.png" class="General_Image" /></p>
+        <p><i>Simple post-stack 3D  and 2D  Seismic File Import Window</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Import simple pre stack 3D.png" class="General_Image" style="vertical-align: top;" /> <img src="../../../Resources/Images/5 Menu - Survey/Import simple pre stack 2D.png" class="General_Image" /></p>
+        <p><i>Simple Pre-stack 3D  and 2D Seismic File Import Window</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+img
+{
+	border: none;
+	max-width: 100%;
+	background-image: url('../Images/General Images/Chain_OpendTect.png');
+}
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+img.General_Image
+{
+	border: none;
+	width: auto;
+	height: auto;
+}
+
+img.Icons
+{
+	width: 28px;
+	height: auto;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	max-width: 28px;
+	max-height: 28px;
+}
+
+body.background_image
+{
+	background-repeat: no-repeat;
+	background-image: url('../Images/General Images/Chain_OpendTect.png');
+}
+
+a.MCBreadcrumbsLink
+{
+	color: #3cb371;
+	font-family: Arial;
+	font-size: 1em;
+	font-style: italic;
+}
+
+MadCap|breadcrumbsProxy
+{
+	color: #000000;
+	font-family: Arial;
+	font-style: italic;
+	font-size: 0.85em;
+	mc-breadcrumbs-count: 7;
+}
+

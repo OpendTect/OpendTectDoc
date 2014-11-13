@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="865" MadCap:lastWidth="768">
+    <head>
+    </head>
+    <body>
+        <h3>Tie Well to Seismic</h3>
+        <p>Launch the Well-Seismic Tie window from the main menu or, optionally, the Well-Seismic Tie window can be launched from the tree.</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic from tree.png" class="General_Image" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>Well to the seismic tie is a major task for interpretation projects. It is used to correlate the well information (logs) to the 3D seismic volume or 2D seismic lines. This enables the comparison (crossplots, ...) of well-based and the 2D/3D seismic data.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Well-to-Seismic tie workflow:</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>1. Data preparation:</b>
+        </p>
+        <ul>
+            <li>Import the <a href="../../survey/import/imp_seis/imp_seis.htm" target="_self">seismic</a> volume or 2D line.</li>
+            <li>Extract a <a href="../../survey/manage/man_wvlts/stat_wvlt_extr.htm" target="_self">wavelet</a>.</li>
+            <li>Import the wells: Each well requires a <a href="../../survey/manage/man_wlls/wll_trk_ed.htm" target="_self">track</a>, <a href="../../survey/manage/man_wlls/chksht_td_mods.htm" target="_self">checkshot</a> or time-depth curve and sonic <a href="../../survey/manage/man_wlls/log_imp.htm" target="_self">log</a>.</li>
+            <li>Import the additional data: 3D/2D Horizons, well markers, additional time-depth curve if a checkshot was loaded.</li>
+            <li>Edit the log database: Fill the missing sonic parts, <a href="../../app_a/maths.htm" target="_self">create a density log</a> from the sonic (constant value or Gardner's equation) if not available.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>2. Synthetic-to-seismic tie</b>
+        </p>
+        <ul>
+            <li>The module is launched from the Analysis menu or via the right-click menu of each well.</li>
+            <li>The input fields must be selected.</li>
+            <li>Based on the available data the density and sonic logs will be combined into impedance and reflectivity, depth-time converted (includes an upscaling) and convolved with the wavelet. The result is a synthetic seismic traces for the well. This trace will be compared with a composite seismic trace extracted in the volume along the (deviated) well path, on the nearest trace. Both synthetic and composite seismic traces are cross-correlated, and the output value is an indication of the alignment and matching quality.</li>
+            <li>The alignment will be carried out either by shifting the synthetic trace up or down, or by selecting several locations in both seismic traces, specifying and applying a shift function that varies with the travel time.The applied changes must be validated, before being converted into a new time-depth function that replaces the previous one. No changes are being applied to the well logs.</li>
+            <li>At each step of the tie a deterministic wavelet can be estimated using the time-converted reflectivity log and the composite seismic trace. This deterministic wavelet should vary per well, and is known to link the well data to the seismic data more reliably.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

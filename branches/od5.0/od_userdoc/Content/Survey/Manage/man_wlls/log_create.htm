@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1025" MadCap:lastWidth="680">
+    <head>
+    </head>
+    <body>
+        <h4>Logs Creation</h4>
+        <p>Logs can be created from log-log computations. Select one or more wells and click on 'Create' in the well management to open the log creation window as shown below:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage wells create log window.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>There is an inbuilt list of functions which can be used for creating new logs.This is supplemented by a <a href="rok_phys_lib.htm" target="_self">Rock physics library</a> containing more advanced resources.</p>
+        <p>&#160;</p>
+        <p>The same syntax as the <a href="../../../app_a/maths.htm" target="_self">mathematics attributes</a> should be used, with the following changes:</p>
+        <p>&#160;</p>
+        <ul>
+            <li>The computation is done in the depth domain. No upscaling is performed.</li>
+            <li>The various quantities (e.g. density) in the formula are matched with the input logs on which the calculation is being performed. The units of these quantities can also be changed, if needed.</li>
+            <li>If "Fill empty sections" is not set for any log then the output will be defined where all logs do exist. Otherwise the input log that must be filled will be interpolated. In the shallow and deep parts the input log will be extrapolated by copying the data from the first and last sample respectively. This interpolation/extrapolation is done prior to computation.</li>
+            <li>An automatic assignment of well logs based on the expression names is attempted when pressing "Set".</li>
+            <li>The inputs logs have probably different Z ranges. The output Z range will be a regular array defined by the '<i>Output sample distance</i>'.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

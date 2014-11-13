@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1391" MadCap:lastWidth="1560">
+    <head>
+    </head>
+    <body>
+        <h1>Match Delta</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Match Delta -- Attribute that extracts time shifts between similar events in different seismic volumes</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>This algorithm extracts the time difference <i>delta t</i> between peaks in different seismic volumes. A search window is set to avoid loop-skips. After extracting all delta t values, they are interpolated. The resulting cube is the delta cube in ms or meter/feet which can be used for the <a href="del_resamp.htm" target="_self">Delta Resample</a> attribute.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Delta t.png" class="General_Image" />
+        </p>
+        <p><i>Extraction of delta t from two neighboring traces.</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>In a little more detail, the algorithm proceeds along these lines:</p>
+        <blockquote>
+            <p>1. For each trace, all peaks are found.</p>
+            <blockquote>
+                <p>Result: a list of peaks and the time of occurrence.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <p>2. Each peak is coupled with a counterpart if it is found to be within the specified search window. (If none are found, there is no addition to the list of differences.)</p>
+            <blockquote>
+                <p>Result: a list of time differences (deltas)</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <p>3. The delta list is interpolated (linear, constant extrapolation at the ends)</p>
+            <blockquote>
+                <p>Result: a delta value for each sample</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <p>After using this attribute, it will be clear that there are many 'jumps' and 'skips' in the displayed sections. Because we know that the deltas should not vary that quickly - not going from trace to trace, but also not going from sample to sample, these can be effectively removed by utilizing a double filter: first a rather large median filter over many traces and a 2 to 3 samples, then an average or FFT-based filtering in all directions. The resulting output should now be relatively 'noise-free'.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D trace match delta.png" class="General_Image" />
+        </p>
+        <p><i>Besides the reference and the match cube, a maximum time-window must be defined in order to avoid loop-skips.</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1009" MadCap:lastWidth="1201">
+    <head>
+    </head>
+    <body>
+        <h3>Multi-Threaded Programming</h3>
+        <p>A thread of execution is the smallest unit of processing that can be scheduled by an operating system. It generally results from a fork of a computer program into two or more concurrently running tasks. The implementation of threads and processes differs from one operating system to another, but in most cases, a thread is contained inside a process.</p>
+        <p>&#160;</p>
+        <p>Multithreading allows multiple threads to exist within the context of a single or multiple process. These threads share the process' resources (such as memory) but are able to execute independently.</p>
+        <p>OpendTect uses the power of multithreading to run different applications in data loading, visualization, processing etc ..</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">Multithreaded:</td>
+                    <td style="font-weight: bold;">Not multi-threaded:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>BG Steering*</p>
+                    </td>
+                    <td>
+                        <p>Constant Steering</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Central Steering</p>
+                    </td>
+                    <td>
+                        <p>Convolve (Wavelet option)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Convolve (all except Wavelet option)</p>
+                    </td>
+                    <td>
+                        <p>DeltaResample</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Curvature</td>
+                    <td>
+                        <p>Energy (Gradient option)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Dip Angle</p>
+                    </td>
+                    <td>
+                        <p>Event Steering</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Velocity Fan Filter (=DipFilter)</p>
+                    </td>
+                    <td>
+                        <p>FaultDip</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Energy (all except Gradient option)</p>
+                    </td>
+                    <td>
+                        <p>FingerPrint</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Event</td>
+                    <td>GapDecon</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>FreqFilter*</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Curvature</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Frequency*</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Dip</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Full Steering</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Spacing</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>HorizonCube Data</p>
+                    </td>
+                    <td>
+                        <p>Horizon</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>HorizonCube Density</p>
+                    </td>
+                    <td>
+                        <p>Match Delta</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>HorizonCube Layer</p>
+                    </td>
+                    <td>
+                        <p>Maths (recursive expression)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hilbert</p>
+                    </td>
+                    <td>
+                        <p>Perpendicular Dip Extractor</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Instantaneous**</p>
+                    </td>
+                    <td>
+                        <p>SampleValue</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Local Fluid Contact Finder</p>
+                    </td>
+                    <td>
+                        <p>Scaling (scaling type AGC and stats type = detrend)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Maths (except when expression is recursive)</p>
+                    </td>
+                    <td>Shift</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Polar Dip</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Position</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>PreStack</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reference</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Scaling (all except scaling type AGC and stats type = detrend)</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Semblance</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Similarity</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Spectral Decomposition*</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>SpectrogramDip (create steering cube, FFT steering)</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Texture</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Tutorial</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Volume Statistics</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*multi-threading implemented in March 2014</p>
+        <p>**multi-threading improved in March 2014</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

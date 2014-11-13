@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2134" MadCap:lastWidth="1168">
+    <head>
+    </head>
+    <body>
+        <h1>Prestack</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Prestack -- The pre-stack attribute can be used either to extract statistics on the gathers and their amplitudes, or to extract AVO attributes.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>This attribute requires pre-stack data as input, but will output post-stack data. The following workflow is used in the above example:</p>
+        <blockquote>
+            <ul>
+                <li>Pre-processing is applied to the gathers, like mute and AGC</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The data is extracted in the offset range [500, 3000] m and sorted per CDP and depth sample</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>For each CDP and depth a crossplot of amplitude vs. square root of the offset is made</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>A least square regression is computed</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The intercept value is returned</li>
+            </ul>
+        </blockquote>
+        <p>The <a href="../proc/create_seis_output/prstk_proc.htm" target="_self">pre-processing</a> of the gathers is optional. When used it must be setup in a separate window either by selecting an existing setup or creating a new one.</p>
+        <p>&#160;</p>
+        <p>The offset range is used to define the extraction window. It requires absolute offset values, in meter or feet (depending on the survey unit definition). Optionally if angles were used instead of offsets while loading, then angle ranges can be used. Once again they have to be in the same unit as in the input trace (SEG-Y) headers.</p>
+        <p>&#160;</p>
+        <p>After optional pre-processing and data extraction, a vector of amplitudes is available for each CMP/CIG, at each depth. From each vector either statistics or a least-square regression can be made.</p>
+        <p>&#160;</p>
+        <p><b>Statistics:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack statistics.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The above list of statistics can be returned. The highlighted output option provides the fold of each bin, while average or RMS may be used to generate full or partial stacks (partial stacking occurs if the offset range defined is not full). At the foot of this list are also: <i>Sum</i>, <i>SquareSum</i> and <i>MostFrequent</i></p>
+        <p>&#160;</p>
+        <p><b>Least Square:</b>
+        </p>
+        <p>&#160;</p>
+        <p>The Least-Square calculation type is cross-plotting the extracted amplitudes, computing a least-square regression and returning one of its property.</p>
+        <p>Before the crossplot the amplitudes can be transformed using the following axis transformation (left hand-side):</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack axis trans.png" class="General_Image" /> <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack amp trans.png" class="General_Image" /></p>
+        <p>&#160;</p>
+        <p>Similarly the offset values that are associated with those amplitudes can also be transformed (right-hand side). This is useful, e.g. to have <i>the sin</i><sup style="font-style: italic;">2</sup><i> of the angle</i> as x-axis.</p>
+        <p>&#160;</p>
+        <p>AVO attributes will become AVA attributes if the X axis becomes Azimuth (i.e. angle). Please note that the azimuths (angles) must be provided in the trace headers when extracting AVA attributes.</p>
+        <p>&#160;</p>
+        <p>The extractable AVO (Least-Square) attributes are Intercept, Gradient, their standard deviation and the Correlation Coefficient. It is also possible to have angle/offset constrained AVO attributes; by specifying the required angle/offset range instead of using the full range. Please note that further transformations can be achieved using the output as input to another attribute.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack avo output.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

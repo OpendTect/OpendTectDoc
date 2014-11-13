@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1949" MadCap:lastWidth="560">
+    <head>
+    </head>
+    <body>
+        <h4>Attributes 3D</h4>
+        <p>This window is used to import grids from ascii files and attached them to <u style="font-weight: normal; text-decoration: none; font-style: italic;">Existing</u> 3D horizons. <i>Select</i> the input Ascii file. You may display the input file by pressing the Examine button. The input file should be column sorted with one point per record (line).</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Import horizon attributes 3D main.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Grid names must first be provided in front of <i>Select Attribute(s) to import</i>. This can be done by pressing <i>Add new</i> right of it, and providing each time a new grid name. This will populate the list of importable grids. Only the highlighted grids will be imported, which is why each new grid is highlighted after providing its name.</p>
+        <p>&#160;</p>
+        <p>Next, the presence of a file header must be specified and the file format definition must be provided. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
+        <p>&#160;</p>
+        <p>Predefined and saved file formats are available by pressing the <img src="../../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise the format must be manually specified. The Define button gives access to the format definition window.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Import horizon attributes 3D format definition.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>You must specify in the format definition window the column numbers for the position, in terms of an X-Y pair or an inline-crossline pair, and the grid(s) column(s). Grid values that should not be read must all have the same numerical value, which is to be filled in as the <i>Undefined value</i>. Reading may be stopped at a specific line by providing the adequate keyword.</p>
+        <p>&#160;</p>
+        <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" /> icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage. Please note that the full grid names will be saved as provided in the format definition. Press OK when done.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Import horizon attributes save format.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>It is highly recommended to scan the input file after providing its format, and prior to the actual import. The scanned information will pop-up and error(s) or warning(s) may suggest a change of the format definition. The area subselection is essentially present to optionally reduce the amount of data to be imported, by reducing the inline/crossline range(s).</p>
+        <p>&#160;</p>
+        <p>Finally an horizon must be provided, to attach the grid(s) to it. Grids will be accessible only after having loaded this horizon in the tree. Press <i>Go</i> to launch the import.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

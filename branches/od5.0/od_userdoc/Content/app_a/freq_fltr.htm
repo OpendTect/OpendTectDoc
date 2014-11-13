@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2867" MadCap:lastWidth="941">
+    <head>
+    </head>
+    <body>
+        <h1>Frequency Filter</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Frequency Filter -- Attribute that returns filtered data using FFT or Butterworth filter types</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The specified <b>Input Data</b> is bandpass filtered with the commonly used Fast Fourier Transform or Butterworth filter.</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters frequency filter.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters butterworth.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The difference between using the FFT or Butterworth filtering method is that, for the FFT, one considers the complete trace while for the Butterworth filter, only a "small" segment, depending on the selected number of poles, is taken into account. The user should keep in mind that using the Butterworth Filter results in a small shift in the seismic data.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Filter butterworth.png" class="General_Image" />
+        </p>
+        <p><i>The curves of the Butterworth filter for various numbers of poles</i>
+        </p>
+        <p>&#160;</p>
+        <p>The <i>Filter type</i> is set to <i>LowPass, HighPass</i> or <i>BandPass</i> according as it is discriminating against frequencies above or below a certain limiting frequency or outside of a given band of frequencies. The top frequency tapering applied to the extracted data in the time domain.</p>
+        <p>&#160;</p>
+        <p><b>Frequency Taper:</b>
+        </p>
+        <p>Additionally, a frequency taper can be applied by setting the min/max Hz tapering window. This could be done by toggling <i>Specify Frequency Taper</i> ON. Press the View button to specify an appropriate frequency taper.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters frequency taper.png" class="General_Image" />
+        </p>
+        <p><i>Frequency taper settings in the attribute definition (for filter type: 'BandPass').</i>
+        </p>
+        <p>&#160;</p>
+        <p>Once the Frequency Taper is displayed (red line in a pop-up window), a spectrum on any inline/crossline can be viewed by pressing the <i>Preview Spectrum</i> button. It will prompt to select an inline/crossline ("Select line from Data"). In that dialog select either inline or crossline radio button and press <i>Next</i>. Sub select the part of inline/crossline and proceed. A blue coloured amplitude spectrum will be displayed (as shown below). Now adjust the parameters (Slope or Start/Stop Frequency) and finalize the frequency taper settings.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters frequency taper spectrum.png" class="General_Image" />
+        </p>
+        <p><i>Interactive display of the frequency taper parameters (for filter type: 'BandPass').</i>
+        </p>
+    </body>
+</html>

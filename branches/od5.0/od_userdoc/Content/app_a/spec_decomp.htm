@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3614" MadCap:lastWidth="884">
+    <head>
+    </head>
+    <body>
+        <h1>Spectral Decomposition</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Spectral decomposition -- Frequency attribute that returns the amplitude spectrum (FFT) or waveletcoefficients (CWT)</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>Spectral Decomposition unravels the seismic signal into its constituent frequencies, which allows the user to see phase and amplitude tuned to specific wavelengths. The amplitude component excels at quantifying thickness variability and detecting lateral discontinuities while the phase component detects lateral discontinuities.</p>
+        <p>&#160;</p>
+        <p>It is a useful tool for "below resolution" seismic interpretation, sand thickness estimation, and enhancing channel structures.</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>The user can choose between two types of transform:</p>
+        <blockquote>
+            <ul>
+                <li><i>FFT</i> the Fast Fourier Transform. The FFT requires a short window (time-gate) and a step-size between the analyzed frequencies. This step can be interpreted as the frequency resolution.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>CWT</i> the Continuous Wavelet Transform. The CWT requires a wavelet type.</li>
+            </ul>
+        </blockquote>
+        <p>When choosing the CWT, you can set the wavelet type:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition cwt.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li><i>Morlet</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Gaussian</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Mexican Hat</i>
+                </li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <p>In FFT only, the signal within the time-window will be transformed into frequency domain. The given step determines the output resolution, if necessary zeros will be added to acquire this resolution. The amplitude spectrum is calculated for the requested frequency. The time-window slides from top to bottom to cover the complete signal. In an ideal situation, the time-window encompasses one seismic event, which may be a superposition of multiple geological events which interfere in the seismic trace.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Output and Examples</b>
+        </p>
+        <p>The CWT is defined as the sum over the signal multiplied by a scaled and shifted wavelet. The wavelet is shifted along the signal and at each position the correlation of the wavelet with the signal is calculated. The result is called a wavelet coefficient. The given frequency corresponds to the central wavelet frequency. The step determines the output resolution, which is especially interesting when evaluating this attribute.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Output examples.png" class="General_Image" />
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Output legend.png" class="General_Image" />
+        </p>
+        <p><i>Spectral Decomposition (CWT) applied to a horizon. Notice that each index frequency is describing the specific parts of channels (NNE-SSW oriented). Also thinner and thicker parts of horizon along channels are highlighed clearly.</i>
+        </p>
+        <p>&#160;</p>
+        <p><b>Time-frequency spectrum</b>
+        </p>
+        <p>The output frequency is best determined using the time-frequency spectrum panel. This panel displays the spectral decomposition output for all frequencies between 0 and the Nyquist frequency of the data, computed with a step of 1Hz. One must first select a position for this single trace analysis:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition position.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The time-frequency is then displayed in a 2D panel like this:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition tf spectrum.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Color blended display:</b>
+        </p>
+        <p><i>RGB(A)* blending attribute display</i> is used to create a normalized color-blended display that often show features with greater clarity and enhances a detail map view. Traditionally, it is used to blend the iso-frequency responses (Spectral Decomposition), but a user can blend three/four different attributes that define a spectrum that is comparable. For instance, spectral decomposition outputs the amplitude at discrete frequencies. So, it renders the same output (unit=amplitude). Depending upon a geological condition or the objective, FFT short window or CWT (continuous wavelet transform) can be chosen. Results are best displayed on time/horizon slices, volume.</p>
+        <p>(* RGB(A)- Red, Green, Blue, (Alpha) -channel)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Color blended display.png" class="General_Image" />
+        </p>
+        <p><i>A color blended map view (image on right) of the spectral decomposition (red-10hz, green-20Hz, blue-40hz). Compare the results with the coherency map (image on left). Note that the yellowish colored fault bounder region is thicker as compared to the surrounding regions. The faults throw (red-color) are also clearly observable. Coherency/similarity together with color blended spectral images can reveal better geological information.</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

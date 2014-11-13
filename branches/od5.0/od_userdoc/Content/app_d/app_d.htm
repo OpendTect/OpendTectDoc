@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="15206" MadCap:lastWidth="742">
+    <head>
+    </head>
+    <body>
+        <h1>Appendix D. Wacom Digitizing Tablets</h1>
+        <p>OpendTect is the first Seismic Interpretation System to support Wacom Digitizing Tablets. Workflows for horizon tracking, fault interpretation, drawing of polygons &amp; bodies etc. have been adapted to benefit from the superior hand-eye co-ordination offered by the pen/tablet combination device.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix D/Wacom.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Table of contents</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li><a href="#Introduction" target="_self">Introduction</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#pen_device" target="_self">Pen Device</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#basic_interaction" target="_self">Basic Interaction</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#draw_polygons" target="_self">Draw Polygons</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#bodies" target="_self">Create Bodies</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#interpret_horizons" target="_self">Interpret Horizons</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#man_edit_horizons" target="_self">Manually Edit Horizons</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#interpret_faults" target="_self">Interpret Faults</a>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><a href="#supported_platforms" target="_self">Supported Platforms</a>
+                </li>
+            </ul>
+        </blockquote>
+        <p><b><a name="Introduction"></a>Introduction</b>
+        </p>
+        <p>OpendTect combined with a Wacom Tablet has become a key application for hand-eye coordination. It has proven to be vital in manual interpretations with OpendTect. Many of the OpendTect interpretation- workflows were modified in version 4.2 for optional use of a tablet device. This documentation is thus written to provide a brief introduction on seismic interpretation on a tablet. The documentation assumes basic familiarity with the OpendTect environment.</p>
+        <p>&#160;</p>
+        <p>Several aspects of 3D interpretation will be covered:</p>
+        <blockquote>
+            <ul>
+                <li>How to use the Wacom Pen device instead of a conventional mouse</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>How to draw interpretations in OpendTect with a Wacom tablet</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Polygon/Picksets</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Horizon Interpretation</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Fault Interpretation</li>
+            </ul>
+        </blockquote>
+        <p>Before you start using the documentation, a general introduction will be given on the pen device and the features which are supported by OpendTect.</p>
+        <p>&#160;</p>
+        <p><b><a name="pen_device"></a>Pen Device</b>
+        </p>
+        <p>The following list describes how the pen device replaces traditional mouse features:</p>
+        <blockquote>
+            <ul>
+                <li><i>Mouse clicks</i> are replaced with the clicks being made by the tip of the pen device</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The mouse <i>drag</i> function is replicated by dragging the tip of the pen on the tablet device</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The right/left/double click buttons are supported via the <i>DuoSwitch</i></li>
+            </ul>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Pen.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The only thing required is to hold the pen device in your hand and begin interpreting the seismic data. If you want to draw a seismic object e.g. a horizon/polygon, you will simply need to drag the tip with a <i>light</i> pressure on the tablet. Light pressure here simply means that you touch the tablet screen using the tip of the pen. The tablet is pressure sensitive and will automatically detect that the user is intending to draw on screen. It will convert the screen coordinates back to the survey coordinates and will store the object.</p>
+        <p>&#160;</p>
+        <p>Furthermore, the <i>Eraser</i> can be used to remove (parts of) the interpretation (specifically, the seeds). The eraser feature is accessed either by clicking on the node/seed to remove it, alternatively by rubbing it over the interpretation (drawn lines). The <i>DuoSwitch</i> is used to launch pop-up menus or for double clicking on an element. The single left mouse-button click is accessed through the tip of the pen (by 'tapping' on the screen).</p>
+        <p>&#160;</p>
+        <p>Precautions:</p>
+        <blockquote>
+            <ul>
+                <li>When the pen is not in use, please place it back in the pen stand</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Please avoid using the mouse while the pen device is in your hand. You may either use a pen supported by the Wacom tablet or regular installed mouse</li>
+            </ul>
+        </blockquote><b><a name="basic_interaction"></a>Basic Interaction</b>
+        <p>&#160;</p>
+        <p><b>Menus/Icons:</b>
+        </p>
+        <p>The menus/icons are <i>clicked</i> using the tip of the pen device. The tip is tapped over the (sub ) menu/icon to launch the corresponding dialog/application.</p>
+        <p>&#160;</p>
+        <p><b>Display an Element:</b>
+        </p>
+        <p>To display an element in a scene, you will need to use the <i>Tree</i> of OpendTect. For instance, to display an <i>Inline</i>, simply place the tip of the pen at inline and select the <i>Add</i> option.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix D/Inline add.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Pop-Up Menus:</b>
+        </p>
+        <p>Pop-up menus are launched using the lower button of the <i>DuoSwitch</i>. The pop-up menu options are <i>selected</i> by tapping the item with the tip of the pen.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix D/Pop-up menus.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Lines/Seeds/Points:</b>
+        </p>
+        <p>The lines, seeds or points (Picksets) in OpendTect are drawn by dragging the tip of the pen over the displayed element in the 3D scene, similarly to drawing with a pen on regular paper. The drawn line/point data can be removed interactively using the <i>Eraser</i> at the end of the pen.</p>
+        <p>&#160;</p>
+        <p><b><a name="draw_polygons"></a>Draw Polygons</b>
+        </p>
+        <p>The first example in this tutorial is creating a simple polygon on a horizon on the tablet device. Although the workflow is simple, several options and features are introduced so that you will familiarize yourself with other important features simultaneously. Please follow the steps set out below:</p>
+        <p>&#160;</p>
+        <p><b>Note:</b> In the following workflow, use the pen device instead of mouse. Tap/Press/Select in this workflow refers to the tip of the pen device.</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Hold the pen device in your hand</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	Drawing a polygon on a seismic horizon:</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	First, display a seismic horizon. Tap the tip of the pen on the Horizon element in the tree; a pop-up sub-menu appears</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Select <i>Load</i></p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	The Horizon Selection dialog is then launched from where you can select one or more saved horizons</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Select a horizon by tapping on it, or multiple horizons by tapping and dragging</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Press Ok to display the selected horizon(s)</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Once a seismic horizon on which you want to draw a polygon is displayed, you can continue to the next steps; drawing a polygon</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>3.	From the tree, tap on the Pickset/Polygon element</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	From the pop-up menu select New Polygon</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Polygon.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <blockquote>
+                <p>5.	The Polygon Creation dialog box is opened, type a name for the new polygon. For typing, you may use either the conventional keyboard attached to your computer or the virtual keyboard supported in OpendTect. The virtual keyboard is launched using the lower DuoSwitch button (equivalent to the right-click button on a conventional mouse) whilst pointing the pen at the name field. Once done typing, simply close the virtual keyboard: the new polygon name is automatically inserted in the field</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>6.	Hit Ok in the parent Polygon Creation dialog</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	A blank polygon is added in the tree, with the given name (step 5)</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	Optional: before drawing on the horizon, change to map-view by selecting View North-Z in the main toolbar to the left</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/View.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>&#160;</p>
+                <p>9.	Make sure the polygon element in the tree is active (tap it) and start drawing the polygon on the horizon. Two methods are available: (1) drag and release, in which you will have to drag the pen over the area where you want to draw a polygon or (2) tap pen, where you tap on the horizon to insert seeds, the seeds are then connected automatically</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>10.	Whilst drawing the polygon, unwanted points can be removed with the eraser at the end of the pen</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>11.	Finally, close the polygon: Right click (lower button on the DuoSwitch) on the polygon name in the tree and select Close Polygon option from the pop-up menu.</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Close polygon.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b><a name="create_bodies"></a>Create Bodies</b>
+        </p>
+        <p>Bodies are easily created after drawing a polygon. The workflow requires a combination of a saved polygon and top &amp; bottom horizons between which the body will be created.</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Display a stored (<i>Load</i>) or draw (<i>New</i>) a polygon by following the workflow above</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	From the polygon pop-up menu (use the lower DuoSwitch), select <i>Create body</i></p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Polygon channel.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <blockquote>
+                <p>3.	In this dialog, select top and bottom horizons</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	Hit the <i>Ok</i> button</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>5.	The above step (4) creates the body with an empty name and displays it in the scene. In the tree, the &lt;New MCBody 1&gt; sub element under the <i>Body</i> menu appears. Save it by launching the pop-up menu for the body by using the lower DuoSwitch</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="interpret_horizons"></a>Interpret Horizons</b>
+        </p>
+        <p>Seismic horizon interpretation is fast and convenient on the Wacom tablet device. This is mainly due to the human adaptability with the pen. To help you get started with interpreting seismic horizons with OpendTect on the tablet device, simply grab your pen and follow the workflow set out below.</p>
+        <p>&#160;</p>
+        <p><b>Note:</b> Please use the pen device instead of mouse in the following workflow. Tap/Press/Select all refer to the tip of the pen device.</p>
+        <p>&#160;</p>
+        <p><b>Setup an orthogonal Display:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>1.	A flat (orthogonal) display has proven useful when interpreting horizons on seismic data. This view enables you to view the inlines/crosslines/z-slices as '2D' planes. Simply switch the default perspective view to orthographic:</p>
+                <p>
+                    <img src="../Resources/Images/Appendix D/Orthogonal icon.png" class="Icons" />Use the pen device to tap the button to toggle the <i>orthographic</i> view on/off.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	If you wish to interpret horizons on inlines, you may want to select the <i>View Inline</i> display option from the <i>Graphical Toolbar</i>.</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/View inline.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>3.	<i>Optional: You may also adjust the zoom of the display using the touch strips available on the back side of the table.</i></p>
+            </blockquote>
+        </blockquote>
+        <p><b>Display seismic data:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>4.	Display seismic data in the scene by tapping either <i>Inline</i> or <i>Crossline</i> in the tree. By default data is being displayed as a white colored 'empty' element in the centre of the survey. Select data by tapping the &lt;right-click&gt; sub-element. Use the lower DuoSwitch to access the sub-element and select seismic data to be displayed (as shown below).</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Display seismic data.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Once the seismic data is loaded, you can proceed to the next step</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <p><b>Add a New Horizon:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>5.	Use the pen tip to add a new horizon in the tree. Tap the <i>Horizon</i> element in the tree using the pen. A drop-down list appears; select <i>New</i>...</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Load horizon.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>6.	A new horizon is added in the tree, labeled &lt;New Horizon 1&gt; by default. A pop-up dialog also appears (i.e. the <i>Tracking Setup</i>).</p>
+            </blockquote>
+        </blockquote>
+        <p><b>Pick seeds and Auto-track:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>7.	The <i>tracking setup</i> window features four tabs, presented briefly below. Please refer to the general help documentation of OpendTect for detailed descriptions.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	<b>Mode:</b> Select tracking mode i.e. <i>auto-tracking, tracking on a line, </i>or<i> tracking manually</i>.</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	<b>Event:</b> Used if the mode is set to either <i>auto-tracking</i> or <i>line tracking</i>. Select seismic data in the <i>Input data</i> field and provide the <i>event type</i> (Peak/Trough/Zero-crossing). Please, note that Max refers to peak, <i>Min</i> refers to trough, 0+/- refers to positive to negative zero crossing, and 0-/+ refers to negative to positive zero crossing. Use the default search window as a starting point. These settings can be accessed and changed later. Also, use the default step-wise-tracking options i.e. <i>Relative</i> (amplitude) difference of 1, 2, 5, 10, 20 â€¦%. Leave the other settings to default.</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Event.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	<b>Similarity:</b> Matches the seismic events based on the picked seeds and searches for the corresponding signal in the immediate vicinity. Please, leave this blank for now. [Tip: For fast tracking in a good quality area, reduce the threshold (e.g. 0.5), and the time gate (e.g. -16 and +16).</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Similarity.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	<b>Properties:</b> Change horizon colour and the seed properties (e.g. size, colour and shape).</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	By default the seed mode  is toggled on in the OpendTect tracking toolbar (shown below). Note that volume tracking is set on by default (i.e. tracking in a small sub volume)</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Icons.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>9.	Next, start interpreting by picking a seismic event using the pen device. [<b>Tip:</b> Drag the pen over a seismic event if the area is coherent and of good quality, otherwise use the pen clicks on the event to drop seeds]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>10.	Move the inline position and continue interpreting over the entire survey.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>11.	In order to remove a seed, simply use the <i>Eraser</i> on the end of the pen. Optionally, use the ExpressKeys on the tablet device (subject to availability).</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Keys.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Pen tap on a plane = pick and local track</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Pen tap with Ctrl + Shift express keys pressed = drop/undrop a seed at a pen location</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Pen tap with Ctrl express key = remove the seed and track locally</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <blockquote>
+                    <p>o	Pen tap with Shift express key = remove the seed and erase auto-tracking from that seed until the next seed(s)</p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>12.	After interpreting a good part of the survey area, test the <i>auto-track</i> settings by specifying a small auto-tracking area. Select the <i>show tracking area</i> <img src="../Resources/Images/Appendix D/Show tracking icon.png" class="Icons" /> button in the tracking toolbar.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>13.	A 3D boundary box appears around the interpreted horizon. Use the green anchors at the corners of the box to <i>re-size</i> or <i>move it</i>: place the pen tip at one of the anchors and drag in the respective directions (diagonal anchors resize the entire box in 3D with equal proportion, whilst the others stretch/squeeze the box horizontally/vertically). <b>[Tip:</b> <i>toggle view</i> mode to <i>perspective</i> to see the whole box.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>14.	Once the tracking area is defined, tap anywhere in an empty area in the scene to read/load seismic data within the specified tracking volume. <b>[Tip:</b> Preferably, tap outside the survey area with a zoomed-out view.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>15.	Press the <i>auto-track</i> button<img src="../Resources/Images/Appendix D/Auto-track icon.png" class="Icons" />  to start auto-tracking the horizon within the tracking area. <b>[Tip:</b> It is recommended to save the raw interpretation as a separate file before attempting to auto-track.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <p><b>Manual Tracking:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>16.	Manual tracking is accessed by changing the <i>tracking</i> setup to <i>Line manual</i><img src="../Resources/Images/Appendix D/Line manual.png" class="General_Image" />  in the tracking toolbar drop-down list.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>17.	With <i>Line manual</i> selected, you will just need to draw horizons using the pen <b>[Tip:</b> Drag the pen over the event and release once done.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>18.	Move about 5 or 10 inlines (or cross-lines) forward/backward and repeat manual interpretation. <b>[Tip:</b> Instead of interpreting the data in 3D, you may interpret the data in a 2D viewer<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <p><b>Save Horizon(s):</b>
+        </p>
+        <p>Click on the save button<img src="../Resources/Images/Appendix D/Save icon.png" class="Icons" />  that is present in the tracking toolbar to <i>Save</i> the &lt;New Horizon 1&gt;&gt;, alternatively right click the horizon in the tree menu and choose either <i>Save</i> or <i>Save as</i>...</p>
+        <p>&#160;</p>
+        <p><b>Save Session:</b>
+        </p>
+        <p style="font-style: italic;">Save the session to continue interpreting the horizon at a later time if not completed</p>
+        <p>&#160;</p>
+        <p><b><a name="man_edit_horizons"></a>Manually Edit Horizons</b>
+        </p>
+        <p>This is an important exercise where you will learn how to <i>edit</i> a Horizon in OpendTect with your tablet device.</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	In <i>map view</i>, draw a polygonal area using the polygon selection tool<img src="../Resources/Images/Appendix D/Selection icon.png" class="Icons" />  (from the Graphical Toolbar to the left).</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Map view.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>2.	Click the horizon from the tree (to activate it) and press the trash icon<img src="../Resources/Images/Appendix D/Trash icon.png" class="Icons" />  to remove the outlined portion of the horizon</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Horizon outline.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>3.	Now switch to inline/cross-line view in the area of the removed polygon</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	Enable the tracking mode; use the DuoSwitch to launch the use the pop-up menu of the horizon and select the <i>Enable tracking</i> option under the Tracking sub-menu. This will enable the tracking controls and now you can either edit the horizon in the 3D scene or in a 2D Viewer</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Tracking.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>5.	From the tracking controls available at the bottom of OpendTect by default, set <i>setup</i> to <i>Line manual</i></p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/VD.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>6.	In this exercise, we will edit the horizon in a 2D viewer:</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	Display the inline in a 2D Viewer (use the lower DuoSwitch as shown above)</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	In the 2D viewer, you will have to display the same horizon</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>9.	Toggle <i>Edit mode</i> ON (or as shown below)</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/2D viewer.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>10.	Now, start editing the horizon by drawing over an event using the pen</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>11.	Move the inline/cross-line to next/previous 10 lines, and repeat the interpretation</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>12.	Save the horizon after editing. This can be done directly from the tree available in the 2D Viewer</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Save horizon.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b><a name="interpret_faults"></a>Interpret Faults</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix D/Interpret faults.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Faults in OpendTect can be interpreted as a FaultStickSets or directly as fault planes. The FaultStickSet (in the tree) is a set of sticks that can be converted to 3D fault planes. The FaultStickSet element can be used for a 2D line or for a 3D volume (inline/crossline/timeslice). Contrary to the FaultStickSet, the Fault element in the tree is generally used to interpret a single 3D fault plane in a 3D survey, however FaultStickSets can be converted and merged to new or existing single or grouped faults at any time (and vice versa).</p>
+        <p>&#160;</p>
+        <p>In this manual, you will learn the use of both mentioned methods of interpreting faults in a 3D survey.</p>
+        <p>&#160;</p>
+        <p><b>Note:</b> In the following workflow, use the pen device instead of mouse. Tap/Press/Select in this workflow refers to the tip of the pen device.</p>
+        <p>&#160;</p>
+        <p><b>Basic Fault Interpretation for 3D Seismic Data:</b>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Display an inline (or a cross-line) in the scene. [Make sure that the seismic data has already been displayed along the displayed inline]. <b>Optional:</b> Position the inline to a location at where you want to start the 3D fault interpretation. To position, you may use the slice position controls</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Fault steps.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>2.	Click on the <i>Fault</i> element to add a <i>New Fault</i> sub-element in the tree. Next, make sure that it is selected / active</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/New fault.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>3.	Now in the scene, start drawing the fault stick on the inline. [Drag the pen over the inline at fault plane location]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	To remove a seed of a fault plane, you may use the <i>Eraser</i> of the pen</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>5.	To position a seed to a new location, you may move the seed by clicking and dragging it in any direction</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>6.	Move (step) the inline to the next position to interpret another stick of the fault in a new location (5 or 10 inlines forward or backward or smaller steps if continuation is unclear). <b>[Tip:</b> Display the fault plane on sections online. For this use may use the lower button of the DuoSwitch to launch the pop-up menu. In the pop-up menu please select the Display option<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	Repeat the steps to interpret the fault on other inline/cross-lines</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	Use the lower button of DuoSwitch to <i>Save</i> the &lt;New Fault 1&gt;</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Save fault.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Interactive Fault Interpretation using Auto-scroll method:</b>
+        </p>
+        <p>&#160;</p>
+        <p>This is an alternative workflow for quick 3D fault interpretation.</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Preload the seismic data on which you are intended to interpret faults. <b>[Tip:</b> Use the Survey menu i.e. Survey &gt; Preload &gt; Seismics<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	Display an inline (or a crossline) in the scene. [Make sure that the seismic data has already been displayed along the displayed inline]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>3.	Click on the <i>Fault</i> element to add a New Fault sub-element in the tree. This will add a &lt;New Fault 1&gt; fault under <i>Fault</i> element. [Make sure that it is clicked / active]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	Use the lower button of DuoSwitch on the Inline to launch the drop-down list and select <i>Position</i>... In the <i>Positioning</i> dialog, please click on the Scroll button</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Position.png" class="General_Image" /> <img src="../Resources/Images/Appendix D/Positioning.png" class="General_Image" /></p>
+        <blockquote>
+            <blockquote>
+                <p>5.	In the scrolling dialog, set the <i>scroll</i> step (i.e. number of inlines/cross-lines to move, use positive number for forward <i>scrolling</i> and negative number for backward scrolling) and <i>time</i> to scroll the inline to the next position (use for example 5 seconds)</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Scrolling.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>6.	Click on the to activate it</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	Now in the scene, start drawing the fault stick on the inline. Drag the pen over the inline at where you observe the fault. Once you have interpreted a fault stick on the current inline, wait for a few seconds for the inline to be moved forward/backward automatically</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	Continue the fault interpretation on all lines (step p-q)</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>9.	Use the lower button of DuoSwitch to <i>Save</i> the &lt;New Fault 1&gt;</p>
+            </blockquote>
+        </blockquote>
+        <p><b>Fault Sticks Interpretation for 3D Seismic Data:</b>
+        </p>
+        <p>This workflow allows for interpreting fault sticks only, which can later be converted to 3D fault planes. The benefit of this workflow is that you can interpret multiple sticks on an inline/crossline.</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Display an inline/crossline in the scene. <b>[Tip:</b> Click on the Inline element to add a new inline<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	Add a new FaultStickSet in the tree. [Click on the FaultStickSet, and select the <i>Add</i> option in the pop-up menu.]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>3.	Start drawing multiple fault sticks in the scene. To split sticks, use lower DuoSwitch</p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Fault sticks.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>4.	If you want to move a node of a fault stick, place the tip of the pen over the node to be modified. Click and drag the node in 3D and position it to a correct location</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>5.	Save the FaultStickSet by launching the drop-down list <b>[Tip:</b> Use the lower DuoSwitch button.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>6.	Move the inline/crossline to the next position and continue the interpretation</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	While moving the inline/crossline, you may still observe the sticks from previously interpreted sections. To hide them (and therefore avoid confusion), please display the fault sticks at sections only. <b>[Tip:</b> Use the pop-up menu for the fault stick set.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <p><b>Optional:</b> Optionally combine the FaultStickSet interpretation workflow above with the <i>auto-scrolling</i> method.</p>
+        <p>&#160;</p>
+        <p><b>Convert Fault Sticks to Fault Planes:</b>
+        </p>
+        <p>To convert fault sticks into fault planes, you will need to familiarize yourself with the Fault Sticks Toolbar (shown below). By default, this toolbar appears at the bottom of the OpendTect window.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix D/Icons2.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>1.	Display a time slice of similarity attribute, so that you can identify the fault trends</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	Display the fault sticks in a 3D scene. <b>[Tip:</b> Use the pop-up menu for the fault stick set.<b>]</b></p>
+            </blockquote>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix D/Fault planes.png" class="General_Image" />
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>3.	Optional: Position the time slice (step-a) at where you can see the tops of the fault sticks</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	Activate the select sticks button<img src="../Resources/Images/Appendix D/Select sticks icon.png" class="Icons" /></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>5.	Make sure that you are in interact mode</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>6.	In the scene, draw a polygon to select the sticks that you want to convert into a fault plane. [Use the pen device and draw a red colored polygon.]</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	Once the tip of the pen is lifted away from the tablet, observe that the sticks within the polygon turn green. This means that the sticks have been selected (and can be converted to a fault plane)</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	Next, <i>copy</i> or <i>move</i> the selection to a single new fault plane. This option is illustrated in the above fault stick toolbar</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>9.	Give a name in the text field of the toolbar</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>10.	Hit the Go button to save and display the fault plane in the scene and tree</p>
+            </blockquote>
+        </blockquote>
+        <p><b>Useful Notes on Fault Sticks Toolbar:</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li>The 'Copy selection to' option is used to copy the selected fault sticks to a fault plane without remove the fault sticks from the original fault stick set. Contrary to this, the 'Move selection to' option removes the selected fault sticks from the original fault stick set and moves them to a fault plane.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The Fault/FaultStickSet option is used to convert the selected fault sticks to a fault plane or to another fault stick set.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>There are different ways to name faults/FaultStickSets. This is done via the output operations list box i.e. Create single new (to create a new single fault plane or a fault stick set), Create new in series (automatically labels the faults with a numeric index), Merge with existing (to merge the fault plane to an existing fault plane or fault stick set), and Replace the existing (replace the selected fault plane with the newly selected sticks).</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>The trash button in the toolbar is used to remove the selected fault sticks</li>
+            </ul>
+        </blockquote>
+        <p><b><a name="supported_platforms"></a>Supported Platforms</b>
+        </p>
+        <p>Officially the Wacom Cintiq 21UX and Wacom Cintiq 24HD are only supported on Windows and Mac.</p>
+        <p>However it is possible to get it to work on Linux.</p>
+        <p>There is an Open Source group that writes and maintains drivers for the Wacom tablets.</p>
+        <p>For more information please go to this <a href="http://sourceforge.net/apps/mediawiki/linuxwacom/index.php?title=Main_Page" target="_blank">page</a>.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

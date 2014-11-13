@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4929" MadCap:lastWidth="1201">
+    <head>
+    </head>
+    <body>
+        <h2>Random Line</h2>
+        <p>If you click on the <i>Random line</i> in the tree, four options will be available: <i>Add Empty, Add Stored, Add Color blended</i> and <i>New</i>.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line popout menu.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b><a href="man_mod.htm" target="_popup">Add Empty:</a></b> Right-click on Random line and select 'Empty'. The new line will be added as a sub-element of the random line. By default, this is the centre inline of the cube. To create the new arbitrary direction of random line, the user can modify nodes by editing or inserting nodes:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line insert node.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p> With multiple nodes, the random line can also consist of multiple flat sections. The sections of one single random line may intersect one another. In interact mode, the little plane of a node can be used to drag the node laterally, and the vertical tube can be used to shift the edge of the random line vertically. Nodes can be added from the pop menu by right clicking on the random line in the Interact mode.</p>
+        <p>&#160;</p>
+        <p><b>Add Stored:</b> If there are previously stored random lines available in the survey, this option should be used to display them. It will launch a random line section dialog that is used to select and display the line in the scene.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line add stored.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Add Color blended:</b> A color blended (RGBA*) Random Line may be added. This may be either a color blended version of a previously-stored random line, or an 'Empty' color blended random line:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line add color blended.png" class="General_Image" /> <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line add color blended tree.png" class="General_Image" /></p>
+        <p>&#160;</p>
+        <p>RGBA (color) blended attribute display is used to create a normalized color-blended display that often show features with greater clarity and enhances a detail map view. Traditionally, it is used to blend the iso-frequency responses (Spectral Decomposition), but a user can blend three/four different attributes that define a spectrum that is comparable. For instance, spectral decomposition outputs the amplitude at discrete frequencies. So, it renders the same output (unit=amplitude). Depending upon a geological condition or the objective, FFT short window or CWT (continuous wavelet transform) can be chosen.</p>
+        <p>&#160;</p>
+        <p>Once you have your inputs selected for the appropriate color attributes, it is also possible to add the fourth attribute (the 'Alpha channel') to highlight structural features such as faults/fractures (ie: similarity).</p>
+        <p>&#160;</p>
+        <p>  <![CDATA[ ]]></p>
+        <p><b>New:</b> There are several ways to create a new random line:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line add new popout.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li><i><a href="int_mod.htm" target="_popup">Interactive:</a></i> When creating a random line from interactive mode, a horizon or Z slice must be loaded in the scene first, a random line can then be created by picking nodes on the displayed horizon/Z-slice.</li>
+            <li><i><a href="create_al_cntr.htm" target="_popup">Along Contours:</a></i> Create random lines between specified contour ranges. Note that a interpreted horizon grid will be required to provide the contours.</li>
+            <li><i><a href="create_fm_exist.htm" target="_popup">From Existing:</a></i> Generate random line(s) from existing random line(s). There is an option available to generate random line at some distance away from existing random geometry and store it in new random line geometry.</li>
+            <li><a href="create_fm_plygns.htm" target="_popup" style="font-style: italic;">From Polygon:</a> Create random line from a saved polygon.</li>
+            <li><i><a href="create_fm_tabs.htm" target="_popup">From Table:</a></i> Create random line from table. The input will be X/Y coordinates, Inline/Crossline and Z ranges.</li>
+            <li><i><a href="create_fm_wlls.htm" target="_popup">Create From Wells:</a></i> Connect several wells by a random line. The line follows the deviated well paths (optional). By right clicking on the random line tree, and selecting Create from wells, a dialogue box appears with a list of wells that can be selected in order to set up the random line path. </li>
+        </ul>
+        <blockquote>
+            <blockquote>
+                <p><b>Tip:</b> Use in HorizonCube creation, when it is created in a 2D line-section that follows the well paths.</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">When right-clicking on the newly created random line, the following options are available in a pop-up menu:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line right click.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Add:</b>
+                <ul>
+                    <li><i>Add attribute:</i> When selected, choose to display data from stored cubes, from an attribute from the current attribute set or from an output node of the current neural network. To display an attribute or neural network, select or create an attribute set or neural network first.</li>
+                    <li><i>Add Volume processing attribute:</i> Display volume created from the volume builder</li>
+                    <li><i>Add HorizonCube display:</i> Display the stored HorizonCube</li>
+                    <li><i>Add System tracts display:</i> This option will add systems tract interpretation.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Display:</b>
+            </li>
+        </ul>
+        <blockquote>
+            <ul>
+                <li><i>Histogram:</i> Displays multiple histograms for the randomline. If there are more than one attributes displayed, it will show the histograms of each in a pop-up view.</li>
+                <li><i>Resolution:</i> Choose the resolution between standard/higher/highest</li>
+                <li><i>Position:</i> It is used to manipulate the nodes / position of a random line. To read more, please go to the <a href="man_mod.htm" target="_popup">Manual mode</a> sub-section of this chapter.</li>
+                <li><i>Insert node:</i> Insert a new node before the selected node.</li>
+                <li><i>Properties:</i> This option refers to display parameters such as <i>Ambient reflectivity, Diffuse reflectivity, Transparency.</i></li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Duplicate:</b> Duplicate the line as an empty element in the tree. This option displays different attributes on the duplicated line whilst keeping the original data.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Reset Manipulation:</b> This will reset any change in the position of the random line (or its nodes) that you have applied and it will set line to its original position. This option is only available if changes have been made to the position of the element.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b><a name="Create_2D_Grid"></a>Create 2D Grid:</b> The random lines (with two nodes only) can be used to create a 2D grid with a fixed grid spacing. When selected, the <i>Create 2D Grid</i> window is launched (see below). Here, specify the input 3D seismic volume and the output data set name. The output grid is generated according to the dip (parallel) and strike (perpendicular) direction of the selected random line. The prefix labels are used as prefixes to the output line names, stored to the specified new data set name. The grid spacing is the constant spacing between the two lines. At the bottom, the total number of parallel and perpendicular lines will be updated according to the grid spacing. By pressing <i>OK</i>, a batch process will start to generate the 2D grid. When the batch program is finished, the data can be displayed in the scene (see <a href="../2d_seis.htm" target="_self">2D Seismic</a> section for details).</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line create seismic grid.png" class="General_Image" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Save As:</b> Save the random line as a new name or overwrite the existing.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Save As 2D:</b> Creates a 2D line from a Random line. Right-click on the random line in the tree and select <i>Save As 2D</i>. A window will pop up, as shown below. Select the <i>Input cube</i>, the <i>output line</i> and the <i>line name</i>. The <i>first trace nr</i> number of line is also necessary.</li>
+        </ul>
+        <p>&#160;</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line save as 2D.png" class="General_Image" />
+            </p>
+        </blockquote>
+        <blockquote>
+            <p><b>Note:</b> The survey type should be 2D as well if you want to view the 2D line created from a random line.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Correlate with wells:</b> This option is used to correlate a random line with wells. Well - seismic correlation is normally done in the Well Correlation Plugin (WCP), which requires a commercial license.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Lock:</b> Locks the selected object. This will prevent accidental removing, moving or displaying data on the object. After clicking <i>lock</i> again, editing is again enabled.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Export to Google KLM:</b> Export selected random line to a Google KML file. Specify the KML file parameters in the pop-up dialog. </li>
+        </ul>
+        <p>&#160;</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line export to google klm.png" class="General_Image" />
+            </p>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p><b>Note:</b> annotate the start and end of the random line with a user defined <i>line annotation</i> in the output file settings.</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Remove:</b> Remove the random line from the tree and the scene.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">The options available for attribute pop-up menu list are briefly described here:</p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">
+            <img src="../../Resources/Images/4 OpendTect Trees and Elements/Random line attribute popout.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Select Attribute:</b> When selected, data can be displayed from stored cubes or an attribute from the current attribute set (if available). To display an attribute, select or create an attribute set first.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Save Colour Settings:</b> Save color settings for a specific stored volume and make them available for later use.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Move:</b> Move the attribute up, down, to top of the list, or to bottom of the list.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Display:</b> There are several display settings / features that are briefly explained below:<ul><li><i>Show Histogram:</i> Display data statistics (selected attribute) of the randomline as a histogram in a pop up window.</li><li><i>Show Amplitude Spectrum:</i> Amplitude vs frequency plot will be shown in pop up window.</li><li><i>Change transparency:</i> Change the transparency of the attribute item to view one or more overlaying attributes simultaneously.</li><li><i>2D Viewer - VD / Wiggles:</i> Display the selected attribute in the 2D viewer as "Wiggle" or "VD" (Variable Density). For more details, please refer to: 2D viewer</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><b>Remove:</b> Removes the attribute item from the tree.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

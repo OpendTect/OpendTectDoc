@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="2616" MadCap:lastWidth="781">
+    <head>
+    </head>
+    <body>
+        <h3>Calculate Attributes</h3>
+        <p>The attribute evaluation process has been considered critically and thus several key options are available for the user. For instance, <i>Evaluate Attribute</i> <img src="../../Resources/Images/Icons/evalattr.png" class="Icons" /> is considered as intermediate (but not necessary) step to quickly analyze the different parameters of any attribute within the working environment (<a href="http://www.youtube.com/watch?v=STDUoDX8Cc0" target="_blank">View tutorial-Evaluate attributes</a>). Similarly, the user can create a list of seismic attribute definitions as a working set that later on can be updated. The attribute set is then used to calculate the seismic attributes along lines/surfaces.</p>
+        <p>&#160;</p>
+        <p>There are two possible ways of calculating seismic attributes in OpendTect: First, in order to calculate the results of any attribute in the foreground, user(s) can do it on-the-fly. Second possibility is to calculate attributes after evaluation by running a secondary process in the background. In OpendTect, seismic attributes are applied on several elements (inlines, crosslines, Z slices, random lines, 2D lines, volumes, horizons etc).</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The workflow to calculate the selected attribute is quite simple:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <p>1. Define (or use existing) attribute Set and save. For details see earlier sections of this chapter.</p>
+        </blockquote>
+        <blockquote>
+            <p>2. Calculate on-the-fly or <a href="../../proc/create_seis_output/create_seis_output.htm" target="_self">Create Seismic Output</a> or <a href="../../proc/create_hor_output/create_hor_output.htm" target="_self">Create horizon attribute</a> output.</p>
+        </blockquote>
+        <blockquote>
+            <p>3. If attribute is not calculated on-the-fly, retrieve results by displaying attribute in tree.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The example of first step is given in following figure. It highlights the sequential process (notice green arrows form left to right) of on-the-fly attribute calculation. Firstly, several attributes are defined. Secondly, by default, when a user presses <i>Ok</i> button in <i>Attribute Set</i> window, the <i>Save Attribute definition</i> window will appear to save the attributes definition as an Attribute set. The attribute can then be applied on an inline (for instance) by adding a blank attribute (right-click on inline number). Right-click on the blank attribute and select the attribute (Select Attribute &gt; Attributes &gt; "<i>User Attribute</i>"). The listed attributes are those that are defined in the attributes set window. Selection of any one, would start a process of on-the-fly attribute calculation. By following same workflow (as elaborated in figure) the same attribute can be calculated along other elements (e.g. crosslines, Z-slices, volumes etc).</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis attribute calculate on the fly workflow.png" class="General_Image" />
+        </p>
+        <p><i>Schematic flow of on-the-fly seismic attributes evaluation on an inline.</i>
+        </p>
+        <p>&#160;</p>
+        <p><b>Notes:</b>
+        </p>
+        <p>1. There are some attributes that can take too much time during the on-the-fly calculation process. This depends upon the type of attribute that how much calculation steps it considers e.g. multi-trace (e.g. Similarity) attributes normally take more calculation time than the single trace (instantaneous) attributes. Similarly, the attributes with steering normally takes more time in calculation. So, each time the attribute is displayed in the scene (as shown above), it is calculated in the fore-ground. If the user is committed with the attributes results, this can be resolved by creating seismic outputs (See <a href="../../proc/create_seis_output/create_seis_output.htm" target="_self">Create Seismic Output</a> and <a href="../../proc/create_hor_output/create_hor_output.htm" target="_self">Create Horizon Output</a> sections) in the background. This will also help to restore the saved <a href="../../survey/sess.htm" target="_self">sessions</a> quickly.</p>
+        <p>&#160;</p>
+        <p>2. Additionally, <b>multi-component</b> output seismics-2D/3D (like spectral decomposition) are created by using <a href="../../proc/create_seis_output/create_seis_output.htm" target="_self">create seismic output</a>.</p>
+        <p>&#160;</p>
+        <p>Another example of second step, is shown in following figures. The attribute can be calculated <b>along the horizon</b> by following the same steps described above, for inserting and displaying the attribute (as shown below). In this example, <a href="../../app_a/sim.htm" target="_self">Similarity</a> is calculated on-the-fly along a horizon. This attribute normally takes time (depending upon amount of traces involved). So, user can take benefit of saving the on-the-fly results that later on can be retrieved.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis attribute calculate attributes add attribute horizon2.png" class="General_Image" />
+        </p>
+        <p><i>Schematic flow of on-the-fly seismic attributes evaluation at a horizon.</i>
+        </p>
+        <p>&#160;</p>
+        <p>In order to save the calculated attribute as horizon data, right-click on the attribute and select <i>Save as Horizon Data...</i>. In pop-up window edit the name accordingly and press <i>Ok</i>. This will save the horizon attribute as its horizon data. That can be managed later on by using horizon management window. (see <a href="../../survey/manage/man_hors/man_hors.htm" target="_self">Management horizon</a>)</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis attribute calculate attributes add attribute horizon save as horizon data.png" class="General_Image" />
+        </p>
+        <p><i>Result of calculated similarity attribute. Saving the horizon attribute as horizon data</i>
+        </p>
+        <p>&#160;</p>
+        <p>The stored attributes along horizon can be retrieved as horizon data. Right-click on horizon and add blank attribute. Right-click on the newly inserted blank attribute and locate Horizon data item in the sub-list of attribute (as shown below). In the horizon data selection window, select the desired attribute. This will display the selected attribute in the scene.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis attribute select horizon data.png" class="General_Image" />
+        </p>
+        <p><i>Retrieving the stored horizon data (attribute) of a horizon.</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

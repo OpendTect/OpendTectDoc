@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="2737" MadCap:lastWidth="693">
+    <head>
+    </head>
+    <body>
+        <h4>Manage 3D Prestack</h4>
+        <p>This window is opened via <i>Survey--&gt; Manage--&gt; Seismics Prestack--&gt; 3D...</i></p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage seismics manage prestack 3d.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Most options are common to the other managers: change file location, rename, lock, delete.  '<i>Notes</i>' may be anything of interest to the survey and may be added to, edited and saved multiple times.</p>
+        <p>&#160;</p>
+        <p>The options copy cube and merge blocks of lines work similarly to the <a href="../man_seis/man_3d_seis.htm" target="_self">3D post-stack seismic manager</a>.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage seismics manage prestack copy prestack.png" class="General_Image" style="vertical-align: top;" />
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage seismics manage prestack merge prestack.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Pre-stack data stores are present on the disk in a folder of the same name within the survey ("Seismics" sub-folder). This folder contains one file per inline for quicker access, with auxiliary files. The manager will display information about the entire pre-stack data store: Folder name, number of files etc.</p>
+        <p>&#160;</p>
+        <p>A pre-stack specific option, accessible via <img src="../../../Resources/Images/Icons/mkmulticubeps.png" class="Icons" style="width: auto;" />, allows creation of a pre-stack data store from two or more post-stack volumes. This can be used to create pre-stack data from a partial stack volume for <a href="../../../app_a/prestack.htm" target="_self">AVO attributes extraction</a>. A specific offset must be set in front of each volume.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage seismics manage prestack multicube.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>This option may also be employed in creating a multi-component cube for attributes with more than one component. For example, using this option, a user may create a multi-component Spectral Decomposition cube with each of the included frequencies given a pseudo-offset value. In the example (below), a multi-component Spectral Decomposition cube has been created, and for simplicity, the pseudo-offset used is a multiple of the frequency component. [The actual value used in these pseudo is irrelevant in this case, affecting only the width of the pre-stack display (which can be altered by right-clicking on the pre-stack displayed in the scene and choosing '<i>Properties...</i>']</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/5 Menu - Survey/Manage seismics manage prestack multicube example.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Note:</b> No new file is written to the disk. Therefore deleting a post-stack volume used in the pre-stack data store will cause problems. Please use same option to remove or modify the previously set multiple volume selection.</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </blockquote>
+    </body>
+</html>

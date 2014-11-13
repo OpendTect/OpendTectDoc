@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2880" MadCap:lastWidth="905">
+    <head>
+    </head>
+    <body>
+        <h1>Event</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Event -- Attribute that quantifies an events shape or distance relative to a next event</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The event attribute is a useful tool when determining the quality of horizons in seismic data that can also be applied to in-lines, cross-lines, or z-slice elements. A sketch of the several event attribute applications is shown below:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Event Description.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>In the <i>single event mode</i>, the algorithm searches for the extremum and quantifies the shape around the event in terms of either <i>Peakedness, Steepness</i> or <i>Asymmetry</i>.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns event.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li><b>Peakedness:</b> The ratio between the Extremum value and distance between next and previous zero crossings (ZC)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><b>Steepness:</b> The slope of tangent to the seismic trace at a zero crossing</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><b>Asymmetry:</b> The asymmetry of event. Mathematically it can be presented as: (L-R)/(L+R) where L is the distance between previous ZC and extremum and R is distance between next ZC and extremum</li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <p>In the multiple event mode, the event type needs to be specified from the Event type drop-down list:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns multiple events.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li><i>Extremum</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Maximum</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Minimum</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Zero Crossing</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Negative to Positive Zero Crossing</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Positive to Negative Zero Crossing</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Maximum within the gate</i>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><i>Minimum within the gate</i>
+                </li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <p><b>Output</b>
+        </p>
+        <p>The output is either the <i>distance</i> between the chosen event and the next/previous similar event or the <i>amplitude</i> of the event. The output is determined by the checkbox below the event type drop-down list.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns multiple events extremum.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>For the event types <i>Maximum within the gate and Minimum within the gate</i>, a <i>time-gate</i> (in milliseconds) needs to be specified. The algorithm computes the distance, within the specified time-gate from the current point, e.g. on a horizon, to the nearest maximum or minimum.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns multiple events maximum within the gate.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The Event attribute is for example useful while quality-checking horizon grids. The attribute can also aid in finding the distances between two events and using it as an estimate of relative thickness changes between them. The adaptive use of <a href="vol_stats.htm" target="_self">Volume Statistics</a> along with the Event attribute can also bring relative changes to derive meaningful geological aspects.</p>
+        <p>&#160;</p>
+    </body>
+</html>
