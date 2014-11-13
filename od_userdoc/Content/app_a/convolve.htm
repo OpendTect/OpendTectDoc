@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2563" MadCap:lastWidth="1168">
+    <head>
+    </head>
+    <body>
+        <h1>Convolve (2D &amp; 3D)</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Convolve (2D/3D) -- Attribute that returns a filtered response.</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The input data is convolved with a three-dimensional kernel specified by Filter type and associated parameters. Lowpass, Laplacian, and Prewitt are well known filters in image processing.</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Lowpass</b>
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve lowpass.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Lowpass is an arithmetic averaging filter which is used to smooth seismic data. The smoothness is determined by the <i>Filter size</i>. The <i>shape</i> parameter specifies whether the input samples are collected in a sphere or a cube centered around the evaluation point. The output is the sum of the sample values divided by the number of samples.</p>
+        <p>&#160;</p>
+        <p><b>Laplacian</b>
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve laplacian.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The Laplacian filter is an edge enhancement filter. The sharpness is determined by the <i>Filter size</i>. The <i>shape</i> parameter specifies the input samples to the filter. In a 3x3x3 Laplace filter, the output is calculated by multiplying the central sample value with 26 and subtracting all surrounding sample values. The convolution is characterized by the following kernel:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>(-1,-1,-1) (-1,+26,-1) (-1,-1,-1)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
+            </ul>
+            <p>&#160;</p>
+            <p>In case all sample values are equal and non-zero (either positive or negative), the effect of this operation is zero.</p>
+            <p>&#160;</p>
+        </blockquote>
+        <p><b>Prewitt</b>
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve prewitt.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>Prewitt is a contrast enhancement filter. This filter computes the gradient in different directions from a 3x3x3 input cube. The <i>Output</i> is returned in the specified direction (inline, crossline, or Z-plane). A 3x3x3 Prewitt kernel to calculate a horizontal gradient is given by:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+            </ul>
+            <p>&#160;</p>
+        </blockquote>
+        <p>Note that the inline gradient returns the difference in amplitude in the inline direction. This is best visualized on a crossline. Similarly, a crossline gradient is visualized best on an inline.</p>
+        <p>&#160;</p>
+        <p>A 3x3x3 Prewitt kernel that returns the vertical gradient is given by:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <ul>
+                <li>(-1,-1,-1) (-1,-1,-1) (-1,-1,-1)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>( 0, 0, 0) ( 0, 0, 0) ( 0, 0, 0)</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>( 1, 1, 1) ( 1, 1, 1) ( 1, 1, 1)</li>
+            </ul>
+            <p>&#160;</p>
+        </blockquote>
+        <p><b>Wavelet</b>
+        </p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve wavelet.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>This option enables the user to convolve the data with a wavelet. In this context, a wavelet is the time series response of a filter. The wavelet should be imported into OpendTect first or it can also be created in OpendTect (From Wavelet management or ARKCLS Spectral blueing attribute).</p>
+        <p>&#160;</p>
+    </body>
+</html>

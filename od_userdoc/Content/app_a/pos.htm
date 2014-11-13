@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1208" MadCap:lastWidth="910">
+    <head>
+    </head>
+    <body>
+        <h1>Position</h1>
+        <p><b>Name</b>
+        </p>
+        <p>Position -- Attribute that returns any attribute calculated at the location where another attribute has its minimum, maximum or median within a small volume.</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The input attribute is the criteria used to determine the position at which the output attribute has to be calculated. The stepouts and time-gate define the volume in which the input attribute is evaluated. In case of a 2D attribute as input, the inline/crossline stepout is replaced by a single trace stepout.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D positions position.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The Operator determines which position is returned from this analysis; the position of the minimum, maximum, or median of the input attribute. This position is the position at which the output attribute will be calculated.</p>
+        <p>&#160;</p>
+        <p><b>Examples</b>
+        </p>
+        <p>The position attribute can be used for several purposes. For example, one can determine where in a small volume the energy is minimal and output the frequency at the location of this lowest energy. Also, application of the position attribute is an important step for Fault Enhancing Filtering. In this case, the user takes the Minimum Similarity as Input attribute and as Output, for example, filtered data (using Max as Operator). The stepout is set to, for example, 1 in both inline and crossline direction and the time-gate is defined [0,0]. The result below shows a sharply defined fault:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Before applying position attribute.png" class="General_Image" /> <img src="../Resources/Images/Appendix A/After applying position attribute.png" class="General_Image" /></p>
+        <blockquote>
+            <p><i>Before applying the position attribute</i> <i>After applying the position attribute</i></p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="6663" MadCap:lastWidth="761">
+    <head>
+    </head>
+    <body>
+        <h1>CEEMD - Spectral Decomposition</h1>
+        <p><b>Name</b>
+        </p>
+        <p>CEEMD (Complementary Ensemble EMD) – Group of Spectral Decomposition algorithms which are based on Empirical Mode Decomposition (Huang et al., 1998).</p>
+        <p>&#160;</p>
+        <p><b>Description</b>
+        </p>
+        <p>The Empirical Mode Decomposition (EMD) algorithms implemented in OpendTect follow the work published by Jiajun Han and Mirko van der Baan (2013). Compared to Short Window FFT and Continuous Wavelet Transforms, the other two spectral decompositions methods supported in OpendTect, EMD methods reportedly yield significantly higher time-frequency resolutions.</p>
+        <p>&#160;</p>
+        <p>EMD is a data-driven spectral decomposition method developed by Huang et al. (1998). The method decomposes a time series (e.g. a seismic trace) into a set of intrinsic oscillatory components called Intrinsic Mode Functions (IMF’s). An IMF is defined as a function that satisfies two conditions:</p>
+        <blockquote>
+            <p>1)	The number of extrema and the number of zero-crossings must either be equal or differ at most by one.</p>
+        </blockquote>
+        <blockquote>
+            <p>2)	At any point the mean value of the envelope defined by the local maxima and the envelope defined by the local minima is zero.</p>
+        </blockquote>
+        <p>These conditions ensure that IMF’s contain only one mode of oscillation per cycle whereby a cycle is defined by the zero crossings. No riding waves are allowed. Riding waves can result in negative instantaneous frequencies, a major problem in any application that relies on instantaneous frequencies. An important characteristic of IMF’s that is utilized in EMD is that instantaneous frequency can be defined everywhere.</p>
+        <p>&#160;</p>
+        <p>To decompose the signal into the IMF components the algorithm performs a process called sifting. In sifting the local mean of the signal is subtracted from the signal. The local mean is computed from the envelopes (below). If the difference signal fulfils the IMF conditions defined above the first component is found. This will be the component with locally the highest frequencies. This component is subsequently subtracted from the original signal and the process is repeated until all components have been found. The last component contains the lowest frequencies, or represents the trend.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd sifting process.png" />
+        </p>
+        <p><i>The sifting process. Envelopes of the signal are constructed by fitting a polynomial function through picked minima and maxima. From the envelopes the local mean of the signal is computed, which is subtracted from the input signal. It is then checked whether the difference signal (bottom) meets the IMF conditions. If not, the sifting process is repeated until the IMF conditions, or the sifting stopping criteria, are met.</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>EMD is a relatively slow decomposition method and it has a problem called mode mixing. This is defined as either a single IMF consisting of widely disparate scales, or a signal of similar scale captured in different IMF’s.</p>
+        <p>&#160;</p>
+        <p>To overcome mode mixing two noise assisted methods have emerged, both of which are supported in the OpendTect attribute.</p>
+        <p>&#160;</p>
+        <p>Ensemble Empirical Mode Decomposition (EEMD) adds a fixed percentage of white noise to the signal before decomposing it. This step is repeated N times after which all results are averaged. EEMD improves the mode-mixing problem but it cannot completely reconstruct the input signal from the resulting components.</p>
+        <p>&#160;</p>
+        <p>Complete Ensemble Mode Decomposition (CEEMD) is also a noise-assisted method. Similarly the method decomposes the signal with N different noise realizations but here the results are averaged after each component is found. CEEMD solves the mode mixing problem and it provides an exact reconstruction of the input signal. CEEMD is however, a CPU intensive process and in the current implementation rather slow.</p>
+        <p>&#160;</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd input parameters.png" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Input Data</b> is the seismic data to be decomposed. The current implementation decomposes the entire trace, hence decomposition along one horizon takes as much computing time as a decomposition in batch mode of a cube over the same area.</p>
+        <blockquote>
+            <p> <b>TIP:</b> To evaluate the results along one horizon, e.g. with RGB blending, it is faster to run a batch process on a time slice that encompasses the horizon-slice than to run the job interactively using the evaluate attribute option.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p><b>Method:</b> Select the decomposition algorithm:</p>
+        <blockquote>
+            <p><i>EMD</i> – slow and possibly suffers from mode-mixing (see Description above).</p>
+        </blockquote>
+        <blockquote>
+            <p><i>EEMD</i> – slower but partly solves mode-mixing, however signal cannot be reconstructed exactly.</p>
+        </blockquote>
+        <blockquote>
+            <p><i>CEEMD</i> – slowest but solves the mode-mixing problem and the signal can be reconstructed exactly from the components.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p><b>Maximum No. of IMFs</b> is the maximum number of components into which a signal can be decomposed.</p>
+        <p>&#160;</p>
+        <p><b>IMF threshold</b> is a value below which the decomposition process is stopped. The value is computed as the standard deviation of the component divided by the standard deviation of the input signal.</p>
+        <p>&#160;</p>
+        <p><b>Maximum no. of sifts and Sift threshold</b> are stopping criteria for the sifting process. The Sift threshold is defined as the standard deviation of the signal after the sifting step divided by the signal before the sifting step. The typical range is between 0.2 and 0.3</p>
+        <p>&#160;</p>
+        <p><b>Display Time Frequency Panel</b> will decompose the selected trace and displays the result in a time-frequency plot with frequencies ranging between 0 and Nyquist Hz.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd tf spectrum.png" />
+        </p>
+        <p><i>Time-Frequency plot of the synthetic test trace, below(zoomed in to show only frequencies from 0 to 150Hz.)</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Output</b>
+        </p>
+        <p>The current version supports four output Attributes:</p>
+        <blockquote>
+            <p><b>Frequency</b> This is computed from the instantaneous frequency of the IMF components and by re-gridding these irregularly sampled frequencies to the requested output frequencies. Output Frequency is the frequency that is output if the attribute is computed interactively. In Batch mode you can output all frequencies from Output Frequency to Nyquist with an increment of Step, e.g. 5, 10, 15, …, 120, 125 for an Output Frequency of 5, a Step of 5 and an input signal with 4ms sampling rate (Nyquist is 125 Hz). Please note that computing one output (interactively) takes nearly the same amount of computing time as computing all frequencies (in batch mode).</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Peak Frequency</b> This is the frequency with the largest amplitude in all IMF components. It captures information from the spectral decomposition into a single attribute that is related to tuning effects at varying thicknesses.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Peak Amplitude</b> This is the highest amplitude in all components.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>IMF Component</b> Outputs the IMF components (below). This corresponds to the real parts of the decomposed signal. The first component corresponds to the highest frequency oscillations in the signal. A decomposition may result into an unknown number of components. When running a job in batch mode the output is stored in a multi-attribute file (cbvs format) with N+1 number of attributes where N is the maximum no. of IMF’s. If a trace is decomposed into less than N components the remaining attributes are filled with zeroes. The N+1 attribute contains the average of the input trace (= DC component) that was removed at the start of the decomposition.</p>
+            <p>
+                <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd trace decomposed.png" />
+            </p>
+            <p><i>Synthetic trace (top) decomposed with CEEMD into its IMF components (bottom).</i>
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p><b>Examples</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd examples input.png" />
+        </p>
+        <p><i>Line 425 of F3 Demo is the input for the decomposition with CEEMD. The IMF components; Peak Frequency components; and Peak Amplitude are shown below</i>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd imf components.png" />
+        </p>
+        <p style="font-style: italic;">IMF components (CEEMD) of Line 425.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd peak freq components.png" />
+        </p>
+        <p style="font-style: italic;">Peak Frequency (CEEMD) of Line 425.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency ceemd peak ampl components.png" />
+        </p>
+        <p style="font-style: italic;">Peak Amplitude (CEEMD) of Line 425.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>References</b>
+        </p>
+        <blockquote>
+            <p>Han J. and Van der Baan M., 2013. Empirical mode decomposition for seismic time-frequency analysis. Geophysics, 78 (2), O9-O19.</p>
+        </blockquote>
+        <blockquote>
+            <p>Huang, N.E., Shen, Z., Long, S.R., Wu, M.C., Shih, H.H., Zheng, Q., Yen, N.C., Tung, C.C. and Liu, H.H., 1998. The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis: Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 454, no. 1971, 903-995.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

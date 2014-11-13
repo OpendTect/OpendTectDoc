@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="8154" MadCap:lastWidth="729">
+    <head>
+    </head>
+    <body>
+        <h1>Appendix C. SEG-Y Checklist</h1>
+        <p>This document contains examples of SEG-Y loading problems and proposes solutions for the most often encountered problems.</p>
+        <p>&#160;</p>
+        <p>In all cases, the <a href="../survey/import/imp_seis/segy/segy.htm" target="_self">SEG-Y import tool</a> must be launched from the survey menu (<i>Import --&gt; Seismics --&gt; SEG-Y</i>). Enter the <a href="../survey/import/imp_seis/segy/segy_imp_prep.htm" target="_self">settings needed</a> for the first step and press OK. In the next window (main import window) press scan and perform the scan. An examine window will pop up. Display the first traces in the 2D viewer.</p>
+        <p>&#160;</p>
+        <p><b>You should have on your screen:</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li><b>The main import window</b>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><b>The examine window</b>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><b>The scan report</b>
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><b>The first traces displayed in a 2D viewer</b>
+                </li>
+            </ul>
+        </blockquote>
+        <p>Once you have this on screen check the most appropriate situation in the list below:</p>
+        <blockquote>
+            <blockquote>
+                <p>1.	<a href="#textual_header" target="_self">The textual header is not readable</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	<a href="#line_header" target="_self">The line header in not readable</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>3.	<a href="#no_headers" target="_self">None of the trace headers are readable</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>4.	<a href="#first_but_no_others" target="_self">The first trace header is readable but no other - zero sample rate - last trace incomplete</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>5.	<a href="#examine_scan" target="_self">The examine/scan reports incorrect coordinates</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>6.	<a href="#loaded_wrong_amp" target="_self">The loaded volume contains wrong amplitudes</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>7.	<a href="#loaded_holes" target="_self">The loaded volume contains holes - traces were rejected</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>8.	<a href="#loaded_shifted" target="_self">The loaded volume is shifted with respect to the others - does not start at zero</a></p>
+            </blockquote>
+        </blockquote>
+        <p><a href="#excel_utilities" target="_self">Excel utilities</a>
+        </p>
+        <blockquote>
+            <blockquote>
+                <p>1.	<a href="#segy_file_size_comp" target="_self">SEG-Y file size computation</a></p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>2.	<a href="#segy_trace_number_comp" target="_self">SEG-Y trace numbers computation</a></p>
+            </blockquote>
+        </blockquote>
+        <p><b>SEG-Y checklist</b>
+        </p>
+        <p>&#160;</p>
+        <p><b><a name="textual_header"></a>The textual header is not readable</b>
+        </p>
+        <p>The top of the examine window may look like any of those two windows, although there is an enormous variety in textual headers:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix C/SEG-Y checklist.png" class="General_Image" /> <img src="../Resources/Images/Appendix C/SEG-Y checklist2.png" class="General_Image" /></p>
+        <p>&#160;</p>
+        <p>The left picture is a very common empty (automatically filled) textual header. Sometimes an operator fills the empty parts, but you can expect mistakes to occur. The second picture is a textual header from an OpendTect exported SEG-Y file. All the fields were directly copied from the project database (additional edits are possible).</p>
+        <p>&#160;</p>
+        <p>Every SEG-Y file begins with 40 times 80 characters encoded in ASCII, or EBCDIC for old files. The main difference between them is that your favorite text editor (wordpad, vi or text edit) will not be able to translate EBCDIC encoded characters if you open the SEG-Y file with it, while if you open an ASCII SEG-Y textual header you will see the same as in the OpendTect examine window, without the line breaks.</p>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: If you do not see the above described structure you <b>might not be reading a SEG-Y file</b> at all, but maybe a seismic file written in a different format (binary, SEG-D, ...).</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: <b>Translate</b> your file if possible.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: Some characters in the textual header are <b>weird</b>.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: They were <b>badly translated</b> from EBCDIC to ASCII (or the opposite), either when writing the file or when reading it. Unfortunately there is no 1 to 1 translation between EBCDIC and ASCII, therefore this issue cannot be solved. That is why EBCDIC coding has been banned from the SEG-Y revision 1 norm.</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="line_header"></a>The line header is not readable</b>
+        </p>
+        <p>The line header overview is provided in the top part of the examine window below the textual header. Use the right scroll bar to reach it. Only the non-zero values are shown, on the contrary to the other headers where the entire content is reported. A correct line header will look like this in the OpendTect examine window:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix C/File header info.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>The title line, field names (first column), byte offsets (second column) and explanations between brackets (fourth column) are provided by OpendTect. Only the numbers in the third column originate from the file. The byte numbers indicate where those values were found.</p>
+        <p>&#160;</p>
+        <p><b>Look at the field isrev1 (301):</b> If the value is zero your file is revision 0 compliant. If the value is equal to 1 then your file in (normally) revision 1 compliant. This enables to answer to the <a href="../survey/import/imp_seis/segy/segy_rev.htm" target="_self">revision 1 question</a>.</p>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: If none of the values are reasonable but contain <b>a lot of 256 and 16777216</b>, or in general if none of the numbers make sense, the file might be byte-swapped (i.e. written using "little-endian" byte ordering instead of "big-endian"). See example below:</li>
+            </ul>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix C/File header info2.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <blockquote>
+                <p><a name="soluton_one"></a><![CDATA[	]]><u>Solution 1</u>: In that case cancel the import window (that will bring you back to the first step), and put the "<b MadCap:targetName="byteswapped">Byte swapped</b>" parameter to "all".</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p><u>Solution 2</u>:.If this is not enough then the textual and/or line headers might be <b>corrupted</b>. Try to re-create your SEG-Y file if possible.</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="no_headers"></a>None of the trace headers are readable</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: The line header is <b>truncated</b>: The line header should be 400 bytes long. It will not be possible to deduct the start position of the first trace if any of the first 3600 (=3200 + 400) bytes are missing. If the line header is truncated then you should see a lot of non-standard entries in the examine window, like in the example below:</li>
+            </ul>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix C/File header info3.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: Use the <a href="#excel_utilities" target="_self">excel utilities</a> to determine if your file may be missing some bytes. If that is the case you need to re-create your file unless you know exactly how many bytes are missing and how to lengthen your line header.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: The bytes are swapped.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: <a href="#soluton_one" target="_self">See above</a>.</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="first_but_no_others"></a>The first trace header is readable but no other - zero sample rate - last trace incomplete</b>
+        </p>
+        <p>This happens when the trace size could not be computed successfully. The trace size is function of the sample size (format) and number of samples. The problem then occurs when either of those variables was not correctly written in the headers.</p>
+        <blockquote>
+            <ul>
+                <li><u>Action 1</u>: <b>Check</b> if the sample size (<b>format</b>) is correct in the line header: The sample format is reported in the examine window in the line header in front of the "format" field. It must report a value of 1, 2, 3, 5 or 8. If not the following warning will be shown when scanning the file or loading it:</li>
+            </ul>
+        </blockquote>
+        <p>
+            <img src="../Resources/Images/Appendix C/Error message.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>A value of 1, 2, 5 represents a sample size of 4 bytes.</p>
+        <p>A value of 3 represents a sample size of 2 bytes.</p>
+        <p>A value of 8 represents a sample size of 1 byte.</p>
+        <p>&#160;</p>
+        <p>Furthermore the warning "Err: Warning: replacing zero sample rate with survey default" is printed (but that is not the only cause) if the actual sample size is larger than the sample size deducted from the headers of overruled.</p>
+        <p>&#160;</p>
+        <p>On the contrary the warning "last trace incomplete" is printed (but that is not the only cause) if the actual sample size is smaller than the sample size deducted from the headers or overruled.</p>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: <b>Overrule</b> the SEG-Y <b>format</b> to another format until the line header and all trace headers are readable in the examine window. Scan your file and check the output amplitudes since three different formats are available for a sample size of 4 bytes. A proper display of the data in the 2D viewer will indicate a success.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><u>Action 2</u>: <b>Check</b> if the <b>number of samples</b> was correctly extracted from either the line or trace headers: The number of samples is reported at multiple positions in the SEG-Y file:<p>In the examine window in the line header overview in front of the "hns" field.</p><p>In each trace header at byte offset 115 (field "ns").</p><p>OpendTect will only use the number of samples defined in the trace headers. Therefore the line header field "hns" might be missing or in contradiction with the trace headers, with no consequence upon the data loading as long as the trace headers "ns" field are correctly written.</p></li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: <b>Overrule</b> the SEG-Y <b>number of samples</b> to another value until all trace headers are readable. The <a href="#excel_utilities" target="_self">excel utilities</a> might be helpful to check the correct value and to check if the file is not missing some bytes.</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="examine_scan"></a>The examine/scan reports incorrect coordinates</b>
+        </p>
+        <p>The coordinates may be found in each trace headers on bytes 73 (CDP-X) and 77 (CDP-Y) or 181 and 185 respectively with SEG-Y revision 1 files. However those values will be scaled during scan and loading by the scaler coordinate that should always be found on bytes 71-72.</p>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: The coordinates found in the trace headers do not make sense: Your file might contain coordinate trace header encoded as floats instead of integers. This is not allowed by any SEG-Y standard, although still being encountered sometimes.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: Get a SEG-Y compliant file.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Problem: The unscaled coordinates are reasonable but after scan/loading the scaled coordinates are not correct.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: Overrule the scaler coordinate to the right value in the import window. You need to specify a number that when multiplied by the trace header coordinate will return the actual (scaled) coordinate. Therefore the trace header scalco "-10" would have to be overruled by 0.1 in order to get the same scaling.</p>
+            </blockquote>
+        </blockquote>
+        <p>Please note the it is not possible to apply a static shift (easting/northing) to the coordinates, however this is not needed by OpendTect. Nevertheless you can load the SEG-Y file first and apply your shift to the survey coordinates afterwards in the survey definition window.</p>
+        <p>&#160;</p>
+        <p><b><a name="loaded_wrong_amp"></a>The loaded volume contains wrong amplitudes</b>
+        </p>
+        <p>This is linked to the <b>sample format</b> not being correctly set. The three formats 1, 2, 5 code the data on four bytes. You may need to switch and <b>overrule</b> between 1, 2 and 5.</p>
+        <p>&#160;</p>
+        <p><b><a name="loaded_holes"></a>The loaded volume contains holes - traces were rejected</b>
+        </p>
+        <p>Neither a SEG-Y file nor and OpendTect volume need to be rectangular, i.e. they do not need to contain all traces of rectangular survey. This is normal, except if you expect a rectangular volume. Please note that the default setting in OpendTect is to dismiss null traces, i.e. traces where all samples have a zero value.</p>
+        <blockquote>
+            <ul>
+                <li><u>Problem</u>: The warning "during import 123450 traces were rejected" appers when loading the file.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution 1</u>: Display the loaded file. The warning sometimes pops up by mistakes such that your file may be already correctly loaded.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution 2</u>: Make sure that the survey area is large enough to accommodate your new volume.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li><u>In general</u>: .</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	<u>Solution</u>: Use the excel utilities to compute the number of traces you can expect to have in your SEG-Y file, and compare it with the actual number of loaded traces, reported in the scan report. OpendTect will be able to load all full traces until the first missing byte is found in the input file or until the end of the file, even if the end of the file is in the middle of a trace. In that case only the last non-complete trace will not be acccessible.</p>
+            </blockquote>
+        </blockquote>
+        <p><b><a name="loaded_shifted"></a>The loaded volume is shifted with respect to the others - does not start at zero</b>
+        </p>
+        <p>Sometimes the first sample does not correspond to the time or depth 0. If that is the case the corresponding time or depth should be reported in each SEG-Y trace header at bytes 109-110 (delrt) and/or 105-106 (laga) with the opposite polarity like in this example:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix C/Trace header info.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>"laga" is equal to -200, delrt is equal to 200: both mean that the first sample corresponds to time 200ms.</p>
+        <blockquote>
+            <ul>
+                <li>Problem : The start time is not specified in the trace headers but is expected to be different that zero.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	Solution: Overrule the start time parameter in the import window.</p>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Problem: An incorrect start time was applied during loading.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <p>o	Solution: Either re-import the file by overruling the start time or use the reference shift attribute to apply a static shift to your traces.</p>
+            </blockquote>
+        </blockquote>
+        <p>Please note that in all cases you must have a priori knowledge of the start time.</p>
+        <p>&#160;</p>
+        <p><b><a name="excel_utilities"></a>Excel utilities</b>
+        </p>
+        <p>The following two utilities can be used to:</p>
+        <blockquote>
+            <ul>
+                <li>Compute the SEG-Y file size based on the sample format, number of traces and number of samples. A successful application will be the indicator of a SEG-Y file without missing bytes.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li>Compute the number of traces present in the SEG-Y file based on its size, the sample format and the number of samples per trace, assuming a constant trace length. If the returned number os an integer the SEG-Y file does not contain holes (except for a very unlikely occasion).</li>
+            </ul>
+        </blockquote>
+        <p>How-to use them: Double-click on the pictures below, open the file and fill the variables. The sample format must be specified using the list box.</p>
+        <p>&#160;</p>
+        <p>Please note that extended textual headers are not supported.</p>
+        <p>&#160;</p>
+        <p><b><a name="segy_file_size_comp"></a>SEG-Y file size computation</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/Appendix C/SEG-Y size computation.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;"><span style="font-weight: bold;"><a name="segy_trace_number_comp"></a>SEG-Y trace numbers computation</span>
+        </p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">
+            <img src="../Resources/Images/Appendix C/SEG-Y trace computation.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>
