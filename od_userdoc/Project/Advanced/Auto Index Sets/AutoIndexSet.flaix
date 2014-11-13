@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAutoIndexSet>
+  <AutoIndex
+    Phrase="This is my auto-indexed phrase"
+    IndexTerm="Linked To This:And This" />
+  <AutoIndex
+    Phrase="This is the term"
+    IndexTerm="Other Term:Subterm"></AutoIndex>
+</CatapultAutoIndexSet>
