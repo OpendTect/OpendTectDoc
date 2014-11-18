@@ -5,10 +5,23 @@
   Type="PDF"
   Destinations=""
   GlossaryTermConversion="marked"
-  PatchHeadingLevels="true">
+  PatchHeadingLevels="true"
+  conditions="Default.PrintOnly"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
+  InjectEmptyPages="true"
+  MasterToc="/Project/TOCs/Master.fltoc">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="true"
+    GenerateTOCProxy="false"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
+  <DocumentProperties
+    Title="OpendTect User Documentation - Version 5.0"
+    Author="dGB Earth Sciences" />
+  <PDF
+    TitleBar="DocumentTitle"
+    PageLayout="SinglePage"
+    CollapsedBookmarks="true"
+    FullScreen="false"
+    PageMode="UseNone" />
 </CatapultTarget>

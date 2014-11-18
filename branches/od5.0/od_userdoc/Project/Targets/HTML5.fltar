@@ -14,7 +14,9 @@
   MasterPage="/Content/Resources/MasterPage.flmsp"
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  Skin="/Project/Skins/HTML5.flskn">
+  Skin="/Project/Skins/HTML5.flskn"
+  conditions="Default.ScreenOnly"
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] ">
   <PrintedOutput
     CollapseMargins="true" />
 </CatapultTarget>
