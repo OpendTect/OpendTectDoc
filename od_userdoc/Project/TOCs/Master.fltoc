@@ -2,6 +2,20 @@
 <CatapultToc
   Version="1">
   <TocEntry
+    Title="pdf_cover"
+    Link="/Content/covers/pdf_cover.htm"
+    conditions="Default.PrintOnly"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="toc_proxy_only"
+    Link="/Content/covers/toc_proxy_only.htm"
+    conditions="Default.PrintOnly" />
+  <TocEntry
     Title="OpendTect User Documentation - Version 5.0"
     Link="/Content/od_userdoc_v5.0/od_userdc_v5.htm" />
   <TocEntry
@@ -131,7 +145,7 @@
   </TocEntry>
   <TocEntry
     Title="OpendTect Trees and Elements"
-    Link="/Content/od_trees_elements/inl_crl_zslice.htm">
+    Link="/Content/od_trees_elements/od_trees_elements.htm">
     <TocEntry
       Title="Scene"
       Link="/Content/od_trees_elements/scene.htm" />
@@ -821,10 +835,10 @@
       Link="/Content/anal/wells/wlls.htm">
       <TocEntry
         Title="Well Log Tools"
-        Link="/Content/anal/wells/tie_wll_seis.htm" />
+        Link="/Content/anal/wells/wll_log_tools.htm" />
       <TocEntry
         Title="Tie Well to Seismic"
-        Link="/Content/anal/wells/wlls.htm">
+        Link="/Content/anal/wells/tie_wll_seis.htm">
         <TocEntry
           Title="Well-Tie Selection Window"
           Link="/Content/anal/wells/wll_tie_sel_win.htm" />
@@ -1019,6 +1033,22 @@
       <TocEntry
         Title="Madagascar Processing Output"
         Link="/Content/proc/madagascar/mad_proc_output.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Batch Processing"
+      Link="/Content/proc/btch_proc/btch_proc.htm">
+      <TocEntry
+        Title="Single Machine Batch Processing Window"
+        Link="/Content/proc/btch_proc/sm_btch_proc_win.htm" />
+      <TocEntry
+        Title="Multi-Machine Batch Processing Window"
+        Link="/Content/proc/btch_proc/mm_btch_proc_win.htm" />
+      <TocEntry
+        Title="Batch Log File"
+        Link="/Content/proc/btch_proc/btch_log_file.htm" />
+      <TocEntry
+        Title="Cluster Processing"
+        Link="/Content/proc/btch_proc/clstr_proc.htm" />
     </TocEntry>
   </TocEntry>
   <TocEntry

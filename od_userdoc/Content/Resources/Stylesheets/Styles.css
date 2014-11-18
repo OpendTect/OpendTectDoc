@@ -132,3 +132,17 @@ MadCap|breadcrumbsProxy
 	mc-breadcrumbs-count: 7;
 }
 
+p.toc_heading
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 24pt;
+	font-weight: bold;
+	page-break-before: always;
+}
+
+body.cover_page
+{
+	font-family: Arial;
+}
+
