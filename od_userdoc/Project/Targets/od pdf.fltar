@@ -9,7 +9,8 @@
   conditions="Default.PrintOnly"
   ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
   InjectEmptyPages="true"
-  MasterToc="/Project/TOCs/Master.fltoc">
+  MasterToc="/Project/TOCs/Master.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
