@@ -372,4 +372,39 @@ The different types of SEGY are shown below:
     <Definition
       Link="">Process of flattening seismic data (or attributes) according to the chrono-stratigraphic horizons in a HorizonCube. In a Wheeler scene the vertical axis represent relative geologic time.</Definition>
   </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>AI</Term>
+    </Terms>
+    <Definition
+      Link="">Acoustic Impedance: the product of seismic velocity and density.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>Absolute Impedance</Term>
+    </Terms>
+    <Definition
+      Link="">Full-bandwith impedance inversion response in which the "missing" low-frequency part of the spectrum has been added by the inversion method. For example - in model-driven inversions the low-frequency model is typically created by interpolating impedance well logs guided by mapped seismic horizons.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>Relative Impedance</Term>
+    </Terms>
+    <Definition
+      Link="">Band-limited impedance inversion response computed by methods such as colored inversion.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>EI</Term>
+    </Terms>
+    <Definition
+      Link="">Elastic Impedance. Impedance response at a particular angle of incidence.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>EEI</Term>
+    </Terms>
+    <Definition
+      Link="">Extended Elastic Impedance. Scaled and rotated impedance response at a paarticular angle. Rotation is typically optimized to predict a certain well log property of interest.</Definition>
+  </GlossaryEntry>
 </CatapultGlossary>

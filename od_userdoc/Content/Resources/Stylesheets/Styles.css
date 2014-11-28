@@ -146,3 +146,11 @@ body.cover_page
 	font-family: Arial;
 }
 
+@media print
+{
+	p
+	{
+		text-align: justify;
+	}
+}
+
