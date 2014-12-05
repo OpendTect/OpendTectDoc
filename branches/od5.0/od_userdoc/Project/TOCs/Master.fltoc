@@ -1166,7 +1166,7 @@
         Title="Licenses"
         Link="/Content/utils/install/lics.htm">
         <TocEntry
-          Title="Install demo License"
+          Title="Install demo/node-locked license"
           Link="/Content/utils/install/inst_demo_lic.htm" />
         <TocEntry
           Title="Clear License Installation"
