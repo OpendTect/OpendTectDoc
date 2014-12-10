@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">dGB Earth Sciences</Variable>
+  <Variable
+    Comment=""
+    Name="PhoneNumber">+31 (0) 53 431 51 55</Variable>
+</CatapultVariableSet>
