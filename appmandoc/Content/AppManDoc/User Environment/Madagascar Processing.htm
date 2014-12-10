@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1421" MadCap:lastWidth="1263">
+    <head>
+    </head>
+    <body>
+        <h2>Madagascar Processing</h2>
+        <p>Please refer to Madagascar's own web pages for further information on download and installation: <a href="http://www.ahay.org/wiki/Main_Page" target="_blank">http://www.ahay.org/wiki/Main_Page</a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>To enable <MadCap:keyword term="Madagascar" />Madagascar processing, the variable RSFROOT should be set in the user's environment, pointing to an existing Madagascar installation.</p>
+        <p>&#160;</p>
+        <p>To get the full benefit of the plugin, you should also make sure there is text documentation in the Madagascar installation. This should be present in <span style="font-family: 'Miriam Fixed';">$RSFROOT/doc/txt</span>. If there is no directory <span style="font-family: 'Miriam Fixed';">$RSFROOT/doc/txt</span>, or if it's empty, you can run:</p>
+        <p>&#160;</p>
+        <p><span style="font-family: 'Miriam Fixed';">$RSFROOT/bin/sfdoc -t $RSFROOT/doc/txt</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The following additional information may be of great help:</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The&#160;<a href="http://www.ahay.org/wiki/Main_Page" target="_blank">Madagascar</a>&#160;connection plugin implements a link to an existing Madagascar installation.</p>
+        <p>&#160;</p>
+        <p>On Windows, you can only use Madagascar in combination with Cygwin. Getting this to work with a native Windows program like OpendTect is not always easy. Here's how we succeeded:</p>
+        <p>&#160;</p>
+        <ul>
+            <li>Download the latest Cygwin installator</li>
+            <li>(<a href="http://www.cygwin.com/mirrors.html" target="_blank">http://www.cygwin.com/mirrors.html</a>) and Madagascar sources</li>
+            <li>(<a href="http://reproducibility.org/wiki/Download" target="_blank">http://reproducibility.org/wiki/Download</a>) in a temporary folder (C:\temp for</li>
+            <li>instance).</li>
+            <li>Extract the Madagascar sources to a folder that you rename from "madagacar-" to "rsf".</li>
+            <li>Install Cygwin (accept the default settings) but select at least the following packages (per section):</li>
+        </ul>
+        <p>&#160;</p>
+        <blockquote>
+            <blockquote>
+                <p>Devel: gcc, libnetpbm-devel, make, mingw-runtime, subversion, swig</p>
+                <p>Editors: vim</p>
+                <p>Graphics: jpeg</p>
+                <p>Interpreters: python</p>
+                <p>Python: Numeric (numpy if available)</p>
+                <p>X11: xorg-X11-base, libXaw(3d)-devel</p>
+                <p>&#160;</p>
+            </blockquote>
+        </blockquote>
+        <ul>
+            <li>Open a Cygwin session</li>
+            <li>Edit the .bashrc file to add some madagascar environment variables:<blockquote><p style="font-family: 'Miriam Fixed';"># Madagascar initialization</p><p style="font-family: 'Miriam Fixed';">export RSFROOT=/usr/local/rsf</p><p style="font-family: 'Miriam Fixed';">if [ -n "$PYTHONPATH" ]; then</p><p style="font-family: 'Miriam Fixed';">export PYTHONPATH=${PYTHONPATH}:$RSFROOT/lib</p><p style="font-family: 'Miriam Fixed';">else</p><p style="font-family: 'Miriam Fixed';">export PYTHONPATH=$RSFROOT/lib</p><p style="font-family: 'Miriam Fixed';">fi</p><p style="font-family: 'Miriam Fixed';">export PATH=$PATH:$RSFROOT/bin</p><p style="font-family: 'Miriam Fixed';">export DATAPATH=/var/tmp/</p></blockquote><p style="font-family: 'Miriam Fixed';">&#160;</p></li>
+            <li>Enter the command "source .bashrc".</li>
+            <li>Copy the source to your emulated linux filesystem: "cp /cygdrive/c/temp/rsf /usr/local".</li>
+            <li>go to this folder: "cd /usr/local/rsf"</li>
+            <li>Compile madagascar using the following successive commands:<blockquote><p>"./configure". If "Checking for SCons" returns "no" the script configure will need to be launched a second time.</p><p>"make"</p><p>"make install"</p><p>"make clean".</p></blockquote></li>
+            <li>Now you can close your Cygwin terminal or&#160;<a href="http://reproducibility.org/wiki/Installation#Testing_and_quick_start" target="_blank">test the Madagascar installation</a>. The testing and use of Madagascar without OpendTect will require to start the X server ("xwin &amp;") and set the display ("export=:0") before opening a terminal ("xterm&amp;").</li>
+            <li>In your control panel open the "System" item; Go in the "Advanced" tab, select the "Environment Variables" option. Add a new user or system variable of name "RSFROOT" pointing towards "C:\cygwin/usr/local/rsf" (if cygwin was installed at its default location C:\cygwin). Accept and exit.</li>
+            <li>This variable is setup once in the settings and does not need to be specified after each boot.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>On the next startup of OpendTect Madagascar should be available.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>More general information can be found in the OpendTect User Documentation: <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#proc/madagascar/madagascar.htm?TocPath=Processing|Madagascar|_____0" target="_blank">http://www.opendtect.org/500/doc/od_userdoc/Default.htm#proc/madagascar/madagascar.htm%3FTocPath%3DProcessing%7CMadagascar%7C_____0</a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

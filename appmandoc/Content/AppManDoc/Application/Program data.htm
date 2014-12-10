@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1614" MadCap:lastWidth="1289">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Program"></a>
+            <MadCap:keyword term="Program data" />Program data</h3>
+        <p>&#160;</p>
+        <p style="font-weight: bold;"><a name="Location_of_Program_data_files"></a>Location of Program data files</p>
+        <p>Data files for the OpendTect programs are located in the 'data' subdirectory. If you want to overrule certain defaults like a custom default empty survey, or standard color bars, then you can make changes in this directory. Note that you have to make these changes in every update or re-install.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><span style="font-size: 12pt;font-weight: bold;"><a name="Batch_Processing_Hosts_(BatchHosts)"></a>Batch Processing Hosts</span><b> <![CDATA[ ]]></b>
+            <MadCap:keyword term="Batch Processing Hosts;BatchHosts" /><span style="font-size: 12pt;font-weight: bold;">(BatchHosts)</span>
+        </p>
+        <p>In the data sub directory in the installation directory you will find a file BatchHosts_example. It is easy to see how to use this file as an example of a BatchHosts file. If you do not place such a BatchHosts file in a location specified in the&#160;<a href="#Location_of_Program_data_files" target="_self">data locations section</a>, OpendTect will ask the Operating System for remote host names (via the g/sethostent() type functions). This can result in a lot of choices for the user, or none.</p>
+        <p>&#160;</p>
+        <p>See also the&#160;<a href="../Running OpendTect/Remote Batch Processing.htm" target="_self">section on remote batch processing</a>. Make sure remote machines need to have a well synchronized system time.</p>
+        <p>&#160;</p>
+        <p>About the 'First port' entry: the multi-machine processing processing needs a free TCP port to do its work. It starts at a port number which is used if it's free. If not, the program will try one higher and so forth. The starting port is by default set to 19636. If this clashes with any application (that means if that other application is not flexible in its port allocation), overrule it.</p>
+        <p>&#160;</p>
+        <p>The name of the BatchHosts file can be overridden using the environment variable <span style="font-family: 'Miriam Fixed';">DTECT_BATCH_HOSTS_FILENAME</span>. You can also specify a filename + full path using the <span style="font-family: 'Miriam Fixed';">DTECT_BATCH_HOSTS_FILEPATH</span> environment variable.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="Default_Color_Tables_(ColTabs)"></a>Default </b>
+            <MadCap:keyword term="Color Tables" /><b>Color Tables (ColTabs)</b>
+        </p>
+        <p>The ColTabs file in the data directory contains the default color tables that every new user will get. The user can never remove these tables, but (s)he can change the definition (only in their own environment). The format of the file is quite simple. The only thing to explain is the concept. A color table is seen as a series of colors (RGB, optional transparency) on a fictive measure of 0 to 1. Every color table needs a definition of the values 0 and 1, but more colors can be defined in between. For example, the well-known Red-white-black color scale is defined as:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <p style="font-family: 'Miriam Fixed';">2.Name:           Red-White-Black</p>
+            <p style="font-family: 'Miriam Fixed';">2.Value-Color.1:  0`255`0`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Value-Color.2:  0.25`255`200`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Value-Color.3:  0.5`255`255`255</p>
+            <p style="font-family: 'Miriam Fixed';">2.Value-Color.4:  1`0`0`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Transparency.0: 0`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Transparency.1: 1`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Undef color:    150`200`150</p>
+            <p style="font-family: 'Miriam Fixed';">2.Marker color:   0`240`0</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>On six lines, you see the definition of colors, format Red`Green`Blue (separated by back-quotes). On the Value-Color lines, these are preceded by the position in the color table, here 0, 0.25, 0.5, and 1. In the above example there is no transparency; a simple 'full transparency in the middle' example would be:</p>
+        <p>&#160;</p>
+        <blockquote>
+            <p style="font-family: 'Miriam Fixed';">2.Transparency.0: 0`0</p>
+            <p style="font-family: 'Miriam Fixed';">2.Transparency.1: 0.5`1</p>
+            <p style="font-family: 'Miriam Fixed';">2.Transparency.2: 1`0</p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="Default_User_Settings"></a>Default </b>
+            <MadCap:keyword term="User Settings" /><b>User Settings</b>
+        </p>
+        <p>The default user settings are copied to the user's home directory when the user starts OpendTect for the very first time. The file format is straightforward, for details about what the entries mean exactly, please contact OpendTect support.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="Default_Available_Batch_Programs_(BatchPrograms)"></a>Default Available Batch Programs (BatchPrograms)</b>
+        </p>
+        <p>A selection of system utilities and OpendTect batch programs will be available to the OpendTect user through the user interface. This file defines which ones are available, what parameters must be passed and provides info on the programs. Also here the file format is straightforward, for details about what the entries mean exactly, please contact OpendTect support.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="Default_Mouse_Button_Bindings_(MouseControls)"></a>Default </b>
+            <MadCap:keyword term="Mouse Controls" /><b>Mouse Button Bindings (MouseControls)</b>
+        </p>
+        <p>A list of standard mouse button bindings have been compiled in the&#160;MouseControls&#160;file. The user can select one of these setups in OpendTect. If more setups are needed, add those to this file. Even the 'new user' default can be set. The 'Default' setting is the OpenInventor default which is also adopted by Landmark.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="Default_Attribute_Sets"></a>Default </b>
+            <MadCap:keyword term="Default Attribute Sets" /><b>Attribute Sets</b>
+        </p>
+        <p>The attribute sets in this directory are available to users as initial sets. In principle, any set created by any user can be placed in this directory to make it available for all OpendTect users. This requires one extra step, however: addition to the Object Management File (.omf). The .omf file needs to be edited with at text editor; an entry similar to the existing ones should be added, but with another ID on the first line of the entry. Alternatively, you can copy the entry as it appears in the .omf in the user's project's Attribs subdirectory's .omf .</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="The_Initial_Survey_(BasicSurvey)"></a>The Initial Survey </b>
+            <MadCap:keyword term="Basic Survey" /><b>(BasicSurvey)</b>
+        </p>
+        <p>This directory is copied in its entirety when a user creates a new survey (i.e. a new project). Like all OpendTect surveys, the directory can be copied on the UNIX or Windows level (note: make sure hidden files are copied, too!). Therefore, companies can customize and extend initial survey contents by changing/adding to this survey.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b><a name="OpendTect_Documentation_(doc)"></a>OpendTect </b>
+            <MadCap:keyword term="Documentation" /><b>Documentation (doc)</b>
+        </p>
+        <p>&#160;</p>
+        <p>Check the following directory for basic documentation: <i>\OpendTect\5.0.0\doc</i></p>
+        <p>&#160;</p>
+        <p>The OpendTect and dGB&#160;Plugins User Documentation - if installed - can be reached from inside OpendTect via the <i>Help</i> menu. From outside OpendTect, these  User Docs can be accessed (if installed) via <i>Default_CSH.htm</i> in the respective directories <i>\OpendTect\5.0.0\doc\od_userdoc</i> and <i>\OpendTect\5.0.0\doc\dgb_userdoc</i>.</p>
+        <p>&#160;</p>
+        <p>Online versions and PDF files may be available on the opendtect.org web site via: <a href="http://opendtect.org/index.php/support/documentation" target="_blank">http://opendtect.org/index.php/support/documentation</a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

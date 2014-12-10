@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="576" MadCap:lastWidth="1302">
+    <head>
+    </head>
+    <body>
+        <h2>Remote <MadCap:keyword term="Batch Processing" />Batch Processing</h2>
+        <p>OpendTect users need a lot of processing power. Therefore, chances are that they want lots of processing access to other machines. The OpendTect <MadCap:keyword term="multi-machine processing" />multi-machine batch utility provides this. It relies on remote shell execution and NFS mounting or Windows shares to do its work.</p>
+        <p>&#160;</p>
+        <p>Therefore, Unix (i.e. Linux and Mac) users should have a valid&#160;<span style="font-family: 'Miriam Fixed';">$HOME/.rhosts</span>&#160;file writeable by the&#160;<i>user only</i>&#160;(i.e. file permissions&#160;must&#160;be: -rw-r--r--). ; The Unix systems that need to be available for processing need to have rsh or ssh enabled.</p>
+        <p>&#160;</p>
+        <p>NFS or Windows network shares are needed to make the application directory and the data directory available on all hosts that are used for processing. On Unix, in case rsh access is not possible you can use ssh, which must then be set up with public key authentication without passwords.</p>
+        <p>&#160;</p>
+        <p>If on Unix machines no 'BatchHosts' file is present, OpendTect calls the system utilities of the 'hostent' (sethostent, gethostent, etc.) type to get a table of hosts for the user to select from. How the Operating System builds the lists is dependent on the particular system setup; most likely&#160;/etc/hosts&#160;and/or the NIS tables are consulted. The 'hostent' functions are old and not very good up to the task. We recommend to always create a BatchHosts file.</p>
+        <p>&#160;</p>
+        <p>The program will try to use the machines that are selected when necessary. So when a job is finished on a machine, it will see which machine from the 'used machines' list is free (most likely the same machine) and start the next job on that machine. Sometimes, the machine selected has problems, is down or the network is overloaded. In any case, if the machine does not react within 5 minutes, the program considers the machine dead. It will remove the machine from the 'used machines' list, and allocates the job to the next machine that is selected or becomes free. Note: the 5 minutes timeout can be overridden using the environment variable&#160;<i>DTECT_MM_CL_FAIL_TO</i>, which can be used to set the desired timeout in seconds.</p>
+        <p>&#160;</p>
+        <p>This leads us to the thing that needs to be checked, on Unix-based systems. NFS has an option to cache file attributes. This can cause NFS to report that a file is not there when it in fact does exist. We recommend this attribute caching is turned off, which is in fact the default on Solaris systems. On Linux, the default caching time can be as high as 30 seconds. For mounting, we therefore recommend 'noac' (Not available on Linux) and 'actimeo=0' as extra mount options for remote disks.</p>
+        <p>&#160;</p>
+        <p>In terms of licensing, we encourage to tie any licensing to actual users working with it. Although we have no control on plugin builders, we advocate to never license per-cpu, per-machine and so forth. No extra licenses should be needed for processing on remote hosts. The licensing should be per actual user and therefore on the GUI level.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>
