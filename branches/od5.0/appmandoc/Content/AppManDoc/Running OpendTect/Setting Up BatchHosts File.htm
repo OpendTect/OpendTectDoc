@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1960" MadCap:lastWidth="1276">
+    <head>
+    </head>
+    <body>
+        <h3>Setting Up <MadCap:keyword term="BatchHosts" />BatchHosts File</h3>
+        <p>In order to utilize OpendTect's capability for Multi-Machine Processing (MMP), a <i>BatchHosts</i> file must be used. This file must contain  the list of remote machines (<i>host machines</i> or <i>nodes</i>) and some relevant details about these machines. Two BatchHosts_example files  come with the installation inside the OpendTect <i>data</i> folder, which may be amended for use. OpendTect will use this file to communicate to the remote hosts and launch processes remotely on them. Follow the example file format to add the list of remote machines and their details in the respective fields.</p>
+        <p>&#160;</p>
+        <p>In order to minimize complications, the Setup Batch Processing tool can be used to create a tailor-made BatchHosts file (via <i>Utilities--&gt; Installation--&gt; Setup Batch Processing...</i>):</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Installation setup batch proc.png" class="General_Image" />
+        </p>
+        <p>&#160;</p>
+        <p>This tool allows the user to enter the details necessary for functioning MMP. On pressing 'Close', the file is saved. These include:</p>
+        <blockquote>
+            <p><b>IP address:</b> IP address of the node machine(s)</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Hostname:</b> Hostname of the node machine(s)</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Display name:</b> Free-text field. Text entered here appears in the Multi-Machine Processing window.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Platform:</b> Select platform type.</p>
+        </blockquote>
+        <blockquote>
+            <p><b>Survey data root:</b> Location of the survey (the path to the survey data root folder from the host machine)</p>
+        </blockquote>
+        <p>&#160;</p>
+        <blockquote>
+            <p><b>Advanced Settings:</b> Here you may change the first port value (in the case that it is blocked/in use). Linux users may decide to change the shell command from the default <i>ssh</i> to <i>rsh</i>. The <i>Nice level</i> sets the priority on the host machines, 19 being nicest and 1 being least nice). Finally, the Default Data Root can be set per platform:</p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Installation setup batch proc_adv.png" class="PDF_Images" />
+            </p>
+            <p>&#160;</p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/addnew.png" class="Icons" /><b>Add</b> new host.</p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/stop.png" class="Icons" /><b>Remove</b> selected host.</p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/uparrow.png" class="Icons" />
+                <img src="../../Resources/Images/downarrow.png" class="Icons" /><b>Move</b> host up or down.</p>
+        </blockquote>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/checkgreen.png" class="Icons" /><b>Test hosts</b>. Will perform tests to ensure that the server and nodes can communicate to the necessary extent to perform the MMP. (ie: can the nodes find the data root folder and read/write into it)</p>
+            <blockquote>
+                <p>
+                    <img src="../../Resources/Images/Installation setup batch proc test hosts.png" class="General_Image" />
+                </p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <p>For more information on this topic, please refer to <a href="http://www.youtube.com/channel/UCiaLX2p5rCcovOK_NAwpaOQ" target="_blank">OpendTect's YouTube Channel</a> where you may find the webinar: <a href="https://www.youtube.com/watch?v=9bEXxZ0RyxU" target="_blank">Multi-Machine Processing Setup</a>.</p>
+        <p>Alternatively, refer to the webinar on this page: <a href="http://opendtect.org/index.php/support/tutorials/tutorial-videos/webinars" target="_blank">http://opendtect.org/index.php/support/tutorials/tutorial-videos/webinars</a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

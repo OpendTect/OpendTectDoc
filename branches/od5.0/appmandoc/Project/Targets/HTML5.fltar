@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="first"
+  ReplaceSpacesWithUnderscores="true"
+  MakeFileLowerCase="true"
+  PartialWordSearch="true"
+  Skin="/Project/Skins/from_od.flskn"
+  MasterPage="/Content/Resources/PageLayouts/from_od.flmsp">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Destination.fldes" />
+  </Destinations>
+  <Glossaries />
+</CatapultTarget>

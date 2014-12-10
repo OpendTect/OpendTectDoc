@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="535" MadCap:lastWidth="1302">
+    <head>
+    </head>
+    <body>
+        <h2>Data Management</h2>
+        <p>OpendTect was not designed for extensive data management; Although it may be used for this purpose, we realize that in many cases OpendTect maintains project-storage for data further maintained in company data stores like OpenWorks or GeoFrame.</p>
+        <p>&#160;</p>
+        <p>Users can choose to put projects on any storage area they like. In addition, large data objects like seismic cubes can be relocated to other directories using for example the 'Manage-Seismics' dialog. This relocation is possible because selection of cubes is not done on basis of file name. Rather, the user specifies a name for each cube, and the system translates this automatically into a default file name. Later, location and file name may be changed, whilst retaining the same object ID and name.</p>
+        <p>&#160;</p>
+        <p>Seismic cubes can have a class, like Imported, Steering, and Attribute cubes. This difference is maintained in the Object Manager, but is not apparent on the Operating System level. In the 'Object Management File' (Seismics/.omf) the type can be seen as in:</p>
+        <p>&#160;</p>
+        <p><span style="font-family: 'Miriam Fixed';">#Type : Steering</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Currently all Seismic cubes are stored in the <MadCap:keyword term="CBVS" />'CBVS' file format, which is an platform-specific binary format. Although the storage is platform-dependent, all CBVS files can be read by OpendTect, fully transparently across platform boundaries. CBVS cubes can be stored in multiple files, where the first file usually contains most of the header info. Subsequent files belonging to the same cube can be recognized by the ^01 , ^02 etc. in the filename. For 2D seismics, this system is also used, now for the different lines in a 2D dataset.</p>
+        <p>&#160;</p>
+        <p>OpendTect projects can be copied on the Operating System level, at the <i>$DTECT_DATA</i>&#160;level. Therefore, a command like:</p>
+        <p>&#160;</p>
+        <p><span style="font-family: 'Miriam Fixed';">cp -a $DTECT_DATA/Name1 $DTECT_DATA/Name2</span>
+        </p>
+        <p>&#160;</p>
+        <p>will result in a fully functional new project in directory <i>Name2</i> immediately. Note that the user recognizes a survey by the directory name.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>
