@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1522" MadCap:lastWidth="1263">
+    <head>
+    </head>
+    <body>
+        <h1>Start New Project</h1>
+        <p><b style="font-style: italic;">Purpose:</b> Set up the structure for a new OpendTect project.</p>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Theory:</b> OpendTect stores data in flat files organized in directories and managed by OpendTect's file management system. The root directory for projects must be created by OpendTect. Usually a root directory is created at installation time. Alternatively, a new root directory can be created when you define the new project. For each project OpendTect requires the survey boundaries and the transformation between inline, crossline numbers and X,Y rectangular co-ordinates to be specified. OpendTect projects can be set up for 3D seismic only, 2D seismic only and for both 2D + 3D seismic. OpendTect does not require 2D lines to lie inside the survey definition boundaries.</p>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Software:</b> OpendTect</p>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Workflow:</b>
+        </p>
+        <p>&#160;</p>
+        <blockquote>
+            <p>1. Press the Survey Selection icon <img src="../Resources/Images/icons/survey.png" class="icons" />and press <img src="../Resources/Images/icons/addnew.png" class="icons" /> to <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#how_to/quickstart_proj/quickstart_proj.htm?TocPath=How To|QuickStart a Project|_____0" target="_blank">create a new project</a>.</p>
+        </blockquote>
+        <blockquote>
+            <p>2. Specify a Survey name, the survey type (3D, 2D or both..) and the survey domain (time or depth). Then select the manner in which you wish to set up the survey (next step):</p>
+            <p>
+                <img src="../Resources/Images/create_new_surv.png" class="PDF_Images" />
+            </p>
+            <p>&#160;</p>
+            <p>The most commonly used method here is to scan a  3D SEG-Y file.  Afterwards, in the <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_seis/segy/segy_imp_prep.htm?TocPath=Survey|Import|Import Seismic|SEG-Y|_____1" target="_blank">SEG-Y tool window</a> select an input SEG-Y file and type (e.g. 3D volume or 2D line). Further, in this window you can also manipulate the headers of the SEG-Y file by pressing <i><a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_seis/segy/segy_imp_prep.htm?TocPath=Survey|Import|Import Seismic|SEG-Y|_____1" target="_blank">Manipulate</a></i>.</p>
+        </blockquote>
+        <p>Manipulating the headers could be necessary in case there is a prior information that a change is required in the sampling rate, start time or number of samples per trace (this is done by editing the binary header). Further, a static shift to the X/Y coordinates (e.g. to move them Northwards) can be applied. This is done by editing the trace headers (viz. "xcdp" and "ycdp") using the "Trace header calculation" option and specifying the formula: xcdp = xcdp + a and ycdp = ycdp + b; a and b are the required static shifts in X and Y directions respectively.(Optional)</p>
+        <p>Moreover, if the trace numbers are missing (in the SEG-Y header) they can be computed; provided that the survey area is rectangular, the Inline/Crossline range is known and there are no gaps in the inlines and crosslines. This can be done by specifying the following formula in the "Trace header calculation" dialogue box. For any Inline, IL and Crossline, XL the associated trace number can be calculated as: Trace-Number = (total number of crosslines) x (IL - (first-inline-number)) + (XL- (first-crossline-number + 1)).(Optional)</p>
+        <p>Leave rest of the options as default and press Next.</p>
+        <p>Use the options "No" or "Almost" if it is not certain that the file is in a correct SEG-Y Rev.1 format in the SEG-Y revision dialogue.</p>
+        <p>If "No" is chosen, a modification in the Inline/Crossline and/or X/Y-coordinate byte locations can be done. Further, you can overrule the coordinate scaling, start time and the sampling rate (this can also be achieved using the previously described Manipulate option).</p>
+        <p>If "Almost" is chosen, you have the possibility to overrule only the coordinate scaling, start time and the sampling rate.</p>
+        <p>Optionally, a pre-scan of the SEG-Y file using a limited number of traces can also be done at this point, to QC the modifications made here.</p>
+        <p>After having finished with the revision (or in case the file was already in a correct SEG-Y Rev.1 format without any revision requirement and the "Yes" option was chosen) press OK. This will automatically fill the "Survey ranges" and the "Coordinate settings" field alongside providing a full survey scan report. If the survey is in the Depth domain, manually change the "Z range" to meter.</p>
+        <p>This scan report could be analyzed to check if the range of Inlines/Crosslines and X/Y-coordinates is sensible and whether there are any gaps in inlines or crosslines. Further, an amplitude value range of the raw data along-with various clipping ranges is provided. This information can be used to clip the seismic amplitudes in order to reduce the file size (e.g. a 5% clipping range means that after clipping all the samples having an amplitude count of less than 5% will be given the amplitude of the samples exactly at 5% count, thus changing the overall amplitude range of the seismic data). This clipping range is applied by scaling the amplitude values of the seismic data. You can use the two scalars to store seismic data in either "16" or "8" bit format while importing from SEG-Y files.(Optional)</p>
+        <p>In the end, to leave the "Survey selection" window, press OK. After pressing 'OK' the software will ask you if you want to import the SEG-Y file (i.e. the file used for setting up the survey) now or later.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="font-style: italic;"><b>Tip:</b>
+        </p>
+        <blockquote>
+            <ul>
+                <li>If you have a license for Workstation Access you can get the survey settings for a new OpendTect project directly from a seismic volume in a Seisworks/OpenWorks or Geoframe-IESX project. After setting up the project you import seismic (horizons, wells) from these data stores with Workstation Access.</li>
+                <li>The <a href="http://opendtect.org/index.php/products/commercial-products/petrel-access" target="_blank">Petrel Connector Plugin</a> must be installed (along with its Petrel counterpart, <a href="http://opendtect.org/index.php/products/commercial-products/geodatasync-accelerate" target="_blank">GeoDataSync Accelarate</a>) in order to import directly from Petrel.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>For more info, see: <a href="https://www.youtube.com/watch?v=AY2QZQJe4xM" target="_blank">Tutorial video - Start New Project</a></p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>
