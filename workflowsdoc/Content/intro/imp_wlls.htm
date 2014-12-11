@@ -1,9 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="111" MadCap:lastWidth="1302">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="952" MadCap:lastWidth="852">
     <head>
     </head>
     <body>
         <h1>Import Wells</h1>
-        <p>Delete this text and replace it with your own content.</p>
+        <p><i style="font-weight: bold;">Purpose:</i> Importing well/checkshot data to a new or existing OpendTect project.</p>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Theory:</i> Importing well data into OpendTect from SEG-Y, general ASCII or LAS files.</p>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Software:</i> OpendTect</p>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Workflow:</i> All import functions are accessed from the '<a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/survey.htm?TocPath=Survey|_____0" target="_blank">Survey</a>' menu in the main toolbar (<a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/import.htm?TocPath=Survey|Import|_____0" target="_blank">Survey &gt; Import</a>)</p>
+        <p>&#160;</p>
+        <ol>
+            <li>
+                <p>Well data can be imported to OpendTect in various formats; <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/fm_ascii_files.htm?TocPath=Survey|Import|Import Wells|From Ascii Files|_____0" target="_blank">ASCII</a>, <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/imp_0_offset.htm?TocPath=Survey|Import|Import Wells|_____2" target="_blank">VSP</a> and <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/simp_mlti_wll.htm?TocPath=Survey|Import|Import Wells|_____3" target="_blank">Simple Multi-Well.</a> There is also functionality to support <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/bulk_wll_trk_imp.htm?TocPath=Survey|Import|Import Wells|Bulk|_____1" target="_blank">Bulk import</a> (<a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/bulk_wll_trk_imp.htm?TocPath=Survey|Import|Import Wells|Bulk|_____1" target="_blank">Bulk Tracks</a>, <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/bulk_wll_log_imp.htm?TocPath=Survey|Import|Import Wells|Bulk|_____2" target="_blank">Bulk Logs</a>, <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/bulk_wll_mrkr_imp.htm?TocPath=Survey|Import|Import Wells|Bulk|_____3" target="_blank">Bulk Markers</a> and <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/bulk_td_mod_imp.htm?TocPath=Survey|Import|Import Wells|Bulk|_____4" target="_blank">Bulk Time-Depth Models</a>).</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>For importing well data from ASCII file, first specify the type of data (<a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/trk.htm?TocPath=Survey|Import|Import Wells|From Ascii Files|_____1" target="_blank">tracks</a>, <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/logs.htm?TocPath=Survey|Import|Import Wells|From Ascii Files|_____2" target="_blank">logs</a> or <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/import/imp_wlls/mrkrs.htm?TocPath=Survey|Import|Import Wells|From Ascii Files|_____3" target="_blank">markers</a>).</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>For well tracks, specify the input file, header and format (column order in data file). If the well is vertical or no well track file is available, uncheck the well track check-box and provide the surface coordinate (in meters), KB elevation and total depth (TD).</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>In the second section, specify the depth to time model, header and format definition. Here, you also have the option to specify whether its a check-shot data or normal well data. If no depth to time model is available, uncheck the check-box and specify a temporary, constant model velocity (by default 2000 m/s).</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>Finally, in the advanced/optional settings the surface coordinate can be set (if different from the starting coordinate in the well track). A number of additional fields are available for further well information such as the Well ID, Operator and State &amp; County. All information filled out here will also show up in the well information window in the <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#survey/manage/man_wlls/man_wlls.htm?TocPath=Survey|Manage|Manage Wells|_____0" target="_blank">Well Manager</a>.</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>For importing various well logs, go to <i>Survey &gt; Import &gt; Wells &gt; ASCII &gt; Logs...</i> or via the Manage Wells window and press <i>Import</i>. Select the input LAS log file; specify (change) the Depth interval to load and toggle either '<i>TVDSS</i>' or '<i>MD</i>' values. Finally, select the logs that you wish to import, and specify to which well you wish to add these logs.</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>Similarly, for importing the well markers, in the Manage Wells window press Edit markers <img src="../Resources/Images/icons/edmarkers.png" class="icons" />. In the newly opened <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#cshid=275779585" target="_blank">Edit Well Markers</a> window press <i>Import</i> and select the input ASCII file, define the file header and format (column order in data file) and specify if you want to keep any existing markers or replace them completely.</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>If well data is available in <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#cshid=275775489" target="_blank">VSP</a> (SEG-Y) format, first select and Examine the input SEG-Y file in the SEG-Y tool window. Then, specify if the data is in time or depth. In the second section, select to which well the VSP data should be added and specify a name for the new log. The output interval can be limited if desired.</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>The <a href="http://www.opendtect.org/500/doc/od_userdoc/Default.htm#cshid=275775495" target="_blank">Simple Multi-Well</a> import option allows simultaneous creation of several vertical wells,  either manually or by reading data from a file (click <i>Read file</i>.. in the bottom left corner of the Simple Multi-Well Creation window, specify the file and format in the popup dialog).</p>
+                <p>&#160;</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
     </body>
 </html>
