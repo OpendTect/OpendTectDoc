@@ -1,48 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="843" MadCap:lastWidth="1289">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="932" MadCap:lastWidth="1362">
     <head>
     </head>
     <body>
         <h3>Licensing</h3>
-        <p>Many commercial plugins for OpendTect use <MadCap:keyword term="FlexLM" />FlexLM licensing. The FlexLM end-user manual can be found at&#160;<a href="http://opendtect.org/lic/endusermanual" target="_blank">http://opendtect.org/lic/endusermanual</a>.</p>
+        <p>Many commercial plugins for OpendTect use <MadCap:keyword term="FlexLM" />FlexLM licensing. The FlexLM end-user manual can be found at&#160;<a href="http://opendtect.org/lic/doc/flexnet_end_user_manual.pdf" target="_blank">http://opendtect.org/lic/doc/flexnet_end_user_manual.pdf</a>.</p>
         <p>&#160;</p>
         <p>The main source of information from opendtect.org is&#160;<a href="http://opendtect.org/lic/doc/flexnet_installation_guide.html" target="_blank">http://opendtect.org/lic/doc/flexnet_installation_guide.html</a>.</p>
         <p>&#160;</p>
-        <p>Some hints: There are two types of licenses: 'node-locked' and 'floating'.</p>
-        <p>A <MadCap:keyword term="node-locked license" />node-locked license is locked to a certain machine. Node-locked licenses have only got lines like this:</p>
+        <p>Some hints: There are two types of licenses: 'node-locked' and 'floating':</p>
         <p>&#160;</p>
         <blockquote>
-            <p style="font-family: 'Miriam Fixed';"># Dip-Steering</p>
-            <p style="font-family: 'Miriam Fixed';">FEATURE dTectDS dgbld 5.000 15-jan-2015 uncounted B4909ACBA201 \</p>
-            <p style="font-family: 'Miriam Fixed';">HOSTID=81537ee56k1g SIGN="003D 554A E7AA 524C 4143 AJ7H DA91 2C00 A967 \</p>
-            <p style="font-family: 'Miriam Fixed';">214D B70A 6983 9435 78A9 D947"</p>
-            <p style="font-family: 'Miriam Fixed';">&#160;</p>
-            <p style="font-family: 'Miriam Fixed';"># Neural Networks</p>
-            <p style="font-family: 'Miriam Fixed';">FEATURE dTectNN dgbld 5.000 15-jan-2015 uncounted 3DA0D1CBA2D2 \</p>
-            <p style="font-family: 'Miriam Fixed';">HOSTID=81537ee56k1g SIGN="00BC AC49 AJ7H E557 BA20 7444 57D5 4C00 831E \</p>
-            <p style="font-family: 'Miriam Fixed';">4072 F677 0831 1FB9 4D38 BB7E"</p>
+            <p>A <MadCap:keyword term="node-locked license" />node-locked license is locked to a certain machine. Node-locked licenses have only got lines like this:</p>
+            <p>&#160;</p>
+            <blockquote>
+                <p style="font-family: 'Miriam Fixed';"># Dip-Steering</p>
+                <p style="font-family: 'Miriam Fixed';">FEATURE dTectDS dgbld 5.000 15-jan-2015 uncounted B4909ACBA201 \</p>
+                <p style="font-family: 'Miriam Fixed';">HOSTID=81537ee56k1g SIGN="003D 554A E7AA 524C 4143 AJ7H DA91 2C00 A967 \</p>
+                <p style="font-family: 'Miriam Fixed';">214D B70A 6983 9435 78A9 D947"</p>
+                <p style="font-family: 'Miriam Fixed';">&#160;</p>
+                <p style="font-family: 'Miriam Fixed';"># Neural Networks</p>
+                <p style="font-family: 'Miriam Fixed';">FEATURE dTectNN dgbld 5.000 15-jan-2015 uncounted 3DA0D1CBA2D2 \</p>
+                <p style="font-family: 'Miriam Fixed';">HOSTID=81537ee56k1g SIGN="00BC AC49 AJ7H E557 BA20 7444 57D5 4C00 831E \</p>
+                <p style="font-family: 'Miriam Fixed';">4072 F677 0831 1FB9 4D38 BB7E"</p>
+            </blockquote>
+            <p>&#160;</p>
+            <p>Also <MadCap:keyword term="demo licenses" />demo licenses (these have <span style="font-family: 'Miriam Fixed';">HOSTID=DEMO</span> but look the same) are handled in this same way.</p>
         </blockquote>
         <p>&#160;</p>
-        <p>Also <MadCap:keyword term="demo licenses" />demo licenses (these have <span style="font-family: 'Miriam Fixed';">HOSTID=DEMO</span> but look the same) are handled in this same way.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <p>Another kind of license file <MadCap:keyword term="floating license" />('floating license') require a machine designated as license <MadCap:keyword term="server;License server" />server. On this machine, a <MadCap:keyword term="daemon;license daemon" />daemon (UNIX) or service (Windows) will keep track of the licenses available. These are typically used when OpendTect can run on multiple computers. These license files look like this:</p>
         <p>&#160;</p>
         <blockquote>
-            <p style="font-family: 'Miriam Fixed';">SERVER myserver b9mk6f97036p</p>
-            <p style="font-family: 'Miriam Fixed';">DAEMON dgbld full_path_to/dgbld</p>
-            <p style="font-family: 'Miriam Fixed';">&#160;</p>
-            <p style="font-family: 'Miriam Fixed';">FEATURE dTect dgbld 5.000 25-jun-2015 8 AE0FBB71CE46 DUP_GROUP=D \</p>
-            <p style="font-family: 'Miriam Fixed';">SIGN="0098 0DD9 3ED8 7BA4 JJ57 F8DC 69A1 0A00 8145 F528 6A2E \</p>
-            <p style="font-family: 'Miriam Fixed';">2237 0071 8AC0 469D"</p>
-            <p style="font-family: 'Miriam Fixed';">&#160;</p>
-            <p style="font-family: 'Miriam Fixed';"># Dip-Steering</p>
-            <p style="font-family: 'Miriam Fixed';">FEATURE dTectDS dgbld 5.000 25-jun-2015 8 07408D0E40F9 DUP_GROUP=D \</p>
-            <p style="font-family: 'Miriam Fixed';">SIGN="0003 CCD5 JJ57 07CB C551 1877 AFD0 8F00 79AB A687 9843 \</p>
-            <p style="font-family: 'Miriam Fixed';">B83C 9405 67F8 B992"</p>
+            <p>Another kind of license file <MadCap:keyword term="floating license" />('floating license') require a machine designated as license <MadCap:keyword term="server;License server" />server. On this machine, a <MadCap:keyword term="daemon;license daemon" />daemon (UNIX) or service (Windows) will keep track of the licenses available, therefore the DAEMON line will need to be update to the full path to the location of the license daemon <i>including the daemon itself and its extension</i>. These are typically used when OpendTect can run on multiple computers. These license files look like this:</p>
+            <p>&#160;</p>
+            <blockquote>
+                <p style="font-family: 'Miriam Fixed';">SERVER myserver b9mk6f97036p</p>
+                <p style="font-family: 'Miriam Fixed';">DAEMON dgbld full_path_to/dgbld</p>
+                <p style="font-family: 'Miriam Fixed';">&#160;</p>
+                <p style="font-family: 'Miriam Fixed';">FEATURE dTect dgbld 5.000 25-jun-2015 8 AE0FBB71CE46 DUP_GROUP=D \</p>
+                <p style="font-family: 'Miriam Fixed';">SIGN="0098 0DD9 3ED8 7BA4 JJ57 F8DC 69A1 0A00 8145 F528 6A2E \</p>
+                <p style="font-family: 'Miriam Fixed';">2237 0071 8AC0 469D"</p>
+                <p style="font-family: 'Miriam Fixed';">&#160;</p>
+                <p style="font-family: 'Miriam Fixed';"># Dip-Steering</p>
+                <p style="font-family: 'Miriam Fixed';">FEATURE dTectDS dgbld 5.000 25-jun-2015 8 07408D0E40F9 DUP_GROUP=D \</p>
+                <p style="font-family: 'Miriam Fixed';">SIGN="0003 CCD5 JJ57 07CB C551 1877 AFD0 8F00 79AB A687 9843 \</p>
+                <p style="font-family: 'Miriam Fixed';">B83C 9405 67F8 B992"</p>
+            </blockquote>
+            <p>&#160;</p>
+            <p>The file is read like this: FlexLM needs to start a server on machine 'myserver' with FlexLM host ID b9mk6f97036p. To start this server, use a program lm_dgb(.exe). Until 25-Jun-2015 you can use OpendTect and the plugin 'Dip-Steering' (dTectDS) with up to a maximum of 8 concurrent users, on version 5.0.x (and this is also back-compatible to OpendTect 4.6.0x).</p>
         </blockquote>
-        <p>&#160;</p>
-        <p>The file is read like this: FlexLM needs to start a server on machine 'myserver' with FlexLM host ID b9mk6f97036p. To start this server, use a program lm_dgb(.exe). Until 25-Jun-2015 you can use OpendTect and the plugin 'Dip-Steering' (dTectDS) with up to a maximum of 8 concurrent users, on version 5.0.x (and this is also back-compatible to OpendTect 4.6.0x).</p>
         <p>&#160;</p>
         <p>&#160;</p>
     </body>

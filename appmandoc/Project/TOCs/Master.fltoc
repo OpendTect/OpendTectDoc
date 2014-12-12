@@ -97,9 +97,6 @@
       Title="Content"
       Link="/Content/AppManDoc/Application/Content.htm">
       <TocEntry
-        Title="Installation Scripts and INSTALL.txt"
-        Link="/Content/AppManDoc/Application/Installation Scripts and INSTALL.txt.htm" />
-      <TocEntry
         Title="Licensing"
         Link="/Content/AppManDoc/Application/Licensing.htm">
         <TocEntry
@@ -155,25 +152,8 @@
         Title="Setting Up BatchHosts File"
         Link="/Content/AppManDoc/Running OpendTect/Setting Up BatchHosts File.htm" />
       <TocEntry
-        Title="Multi-Machine Batch Processing on Windows"
-        Link="/Content/AppManDoc/Running OpendTect/Multi-Machine Batch Processing on Windows.htm">
-        <TocEntry
-          Title="Configuring BatchHosts on Windows"
-          Link="/Content/AppManDoc/Running OpendTect/Configuring BatchHosts on Windows.htm" />
-        <TocEntry
-          Title="Mapping Survey Folder"
-          Link="/Content/AppManDoc/Running OpendTect/Mapping Survey Folder.htm" />
-        <TocEntry
-          Title="Starting the Daemon on Remote Machines"
-          Link="/Content/AppManDoc/Running OpendTect/Starting the Daemon on Remote Machines.htm" />
-      </TocEntry>
-      <TocEntry
-        Title="Multi-Machine Processing on Linux"
-        Link="/Content/AppManDoc/Running OpendTect/Multi-Machine Processing on Linux.htm">
-        <TocEntry
-          Title="Configuring BatchHosts on Linux"
-          Link="/Content/AppManDoc/Running OpendTect/Configuring BatchHosts on Linux.htm" />
-      </TocEntry>
+        Title="Starting the Daemon on Remote Machines"
+        Link="/Content/AppManDoc/Running OpendTect/Starting the Daemon on Remote Machines.htm" />
       <TocEntry
         Title="Start Processing"
         Link="/Content/AppManDoc/Running OpendTect/Start Processing.htm" />
