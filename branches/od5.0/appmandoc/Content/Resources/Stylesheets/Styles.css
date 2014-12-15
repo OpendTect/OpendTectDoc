@@ -3,49 +3,50 @@
 body
 {
 	font-family: Arial;
+	font-size: 0.9em;
 }
 
 h1
 {
 	font-weight: bold;
-	font-size: 24.0pt;
+	font-size: 1.8em;
 }
 
 h2
 {
 	font-weight: bold;
-	font-size: 18.0pt;
+	font-size: 1.60em;
 }
 
 h3
 {
 	font-weight: bold;
-	font-size: 14.0pt;
+	font-size: 1.40em;
 }
 
 h4
 {
 	font-weight: bold;
-	font-size: 12.0pt;
+	font-size: 1.20em;
 }
 
 h5
 {
 	font-weight: bold;
-	font-size: 10.0pt;
+	font-size: 1em;
 }
 
 h6
 {
 	font-weight: bold;
-	font-size: 8.0pt;
+	font-size: 0.8em;
 }
 
 p
 {
-	font-size: 12.0pt;
 	margin-top: 0pt;
 	margin-bottom: 0pt;
+	font-size: inherit;
 }
 
 ol,
@@ -116,5 +117,22 @@ img.icons
 {
 	width: 28px;
 	height: auto;
+}
+
+MadCap|miniTocProxy
+{
+	font-family: Arial;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #1e90ff;
+}
+
+p.copyright
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	border-top-style: solid;
+	border-top-width: 1px;
 }
 
