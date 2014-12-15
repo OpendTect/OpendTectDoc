@@ -264,7 +264,6 @@ external/doc_csh instance of it.
 #define		mExportHorizonHelpID			        0x10400001
 #define		mImportHorAttribHelpID			        0x10400002
 #define		mChangeSurfaceDlgHelpID				0x10400003
-#define		mEMHorizonEditorSettingHelpID		        0x10400004
 #define		mHor3DFrom2DDlgHelpID			        0x10400005
 #define		mArr2DFilterParsDlgHelpID			0x10400007
 #define		mTableImpDataSel3DSurfacesHelpID		0x10400008
