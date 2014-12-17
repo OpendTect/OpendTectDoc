@@ -55,6 +55,9 @@
       Title="Plugins"
       Link="/Content/AppManDoc/Installation/plugins.htm" />
     <TocEntry
+      Title="Setting Up BatchHosts File"
+      Link="/Content/AppManDoc/Running OpendTect/Setting Up BatchHosts File.htm" />
+    <TocEntry
       Title="Licenses"
       Link="/Content/AppManDoc/Installation/lics.htm">
       <TocEntry
