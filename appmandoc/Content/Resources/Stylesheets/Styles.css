@@ -122,9 +122,10 @@ img.icons
 MadCap|miniTocProxy
 {
 	font-family: Arial;
-	font-size: 0.8em;
 	font-style: italic;
-	color: #1e90ff;
+	color: #7fff00;
+	font-variant: normal;
+	font-size: 1em;
 }
 
 p.copyright
@@ -134,5 +135,12 @@ p.copyright
 	font-size: inherit;
 	border-top-style: solid;
 	border-top-width: 1px;
+}
+
+p.MiniTOC1
+{
+	text-decoration: underline;
+	color: #4169e1;
+	font-family: Arial;
 }
 
