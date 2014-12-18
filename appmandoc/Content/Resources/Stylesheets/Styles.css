@@ -4,12 +4,14 @@ body
 {
 	font-family: Arial;
 	font-size: 0.9em;
+	background-image: none;
 }
 
 h1
 {
 	font-weight: bold;
 	font-size: 1.8em;
+	background-image: none;
 }
 
 h2
@@ -135,6 +137,7 @@ p.copyright
 	font-size: inherit;
 	border-top-style: solid;
 	border-top-width: 1px;
+	background-image: none;
 }
 
 p.MiniTOC1
@@ -142,5 +145,46 @@ p.MiniTOC1
 	text-decoration: underline;
 	color: #4169e1;
 	font-family: Arial;
+}
+
+MadCap|breadcrumbsProxy
+{
+	font-family: Arial;
+	font-size: 0.8em;
+	color: #4169e1;
+	font-style: italic;
+	line-height: 1em;
+}
+
+p.note
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	background-image: url('../Images/note.png');
+	border-bottom-style: none;
+	border-style: none;
+	margin-left: 3em;
+	padding-left: 40px;
+}
+
+p.caution
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	background-image: url('../Images/caution.png');
+	margin-left: 3em;
+	padding-left: 40px;
 }
 
