@@ -188,3 +188,15 @@ p.caution
 	padding-left: 40px;
 }
 
+img.PDF_Images_float
+{
+	border: none;
+	max-height: auto;
+	min-width: auto;
+	min-height: auto;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	float: left;
+}
+
