@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="244" MadCap:lastWidth="1254">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="250" MadCap:lastWidth="669">
     <head>
     </head>
     <body>
         <MadCap:breadcrumbsProxy class="Styles.css" />
         <MadCap:bodyProxy />
+        <MadCap:miniTocProxy style="mc-toc-depth: 1;" />
         <p>&#160;</p>
-        <MadCap:miniTocProxy />
         <p>&#160;</p>
         <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" />
         <p>&#160;</p>
+        <p class="copyright">© dGB&#160;Earth Sciences 2002 - 2015</p>
         <p>&#160;</p>
-        <p class="copyright">© <MadCap:variable name="Variables.CompanyName" /> 2015</p>
+        <p>&#160;</p>
     </body>
 </html>
