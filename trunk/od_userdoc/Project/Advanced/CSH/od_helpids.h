@@ -61,7 +61,7 @@ external/doc_csh instance of it.
 #define		mSetDataDirHelpID				0x00800001
 // Object-Management Selection 01
 #define		mIOObjSelDlgHelpID				0x00801001
-//Visualisation 50
+//Visualization 50
 // Visualization 3D 00
 #define		mSnapshotDlgHelpID				0x05000001
 #define		mStereoDlgHelpID				0x05000002
