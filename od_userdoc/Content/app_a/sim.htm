@@ -4,11 +4,13 @@
     </head>
     <body>
         <h1>Similarity</h1>
-        <p><b>Name</b>
+        <p>
+            <b>Name</b>
         </p>
         <p>Similarity -- Multi-trace attribute that returns trace-to-trace similarity properties</p>
         <p>&#160;</p>
-        <p><b>Description</b>
+        <p>
+            <b>Description</b>
         </p>
         <p>Similarity is a form of "coherency" that expresses how much two or more trace segments look alike. A similarity of 1 means the trace segments are completely identical in waveform and amplitude. A similarity of 0 means they are completely dis-similar.</p>
         <p>&#160;</p>
@@ -23,13 +25,16 @@
         <p>
             <img src="../Resources/Images/Appendix A/Trace positions.png" class="General_Image" />
         </p>
-        <p><i>Definition of trace positions relative to the reference point at (0,0).</i>
+        <p>
+            <i>Definition of trace positions relative to the reference point at (0,0).</i>
         </p>
         <p>&#160;</p>
-        <p><b>Input Parameters</b>
+        <p>
+            <b>Input Parameters</b>
         </p>
         <p>&#160;</p>
-        <p><b>Extension Definitions</b>
+        <p>
+            <b>Extension Definitions</b>
         </p>
         <blockquote>
             <ul>
@@ -68,7 +73,7 @@
         </blockquote>
         <p>The attribute returns the statistical property specified in <i>Output statistic</i>. The <i>Steering</i> option enables the user to follow the local dip to find trace segments that should be compared instead of comparing two horizontally extracted trace segments. The <i>Steering</i> option supports five different modes of data-driven steering: None, Central, Full, Constant direction Steering and Browse dip.]</p>
         <p>&#160;</p>
-        <p>Similarity "None" Steering: This option is used when non steeringcube algorithm is used. This is ok in the case the layering is mainly horizontal (with less dip).</p>
+        <p>Similarity "None" Steering: This option is used when non SteeringCube algorithm is used. This is ok in the case the layering is mainly horizontal (with less dip).</p>
         <p>&#160;</p>
         <p>
             <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic similarity.png" class="General_Image" />
@@ -91,7 +96,8 @@
         <p>The 'Maximum dip' represents the maximum dip in microseconds per metre (μs/m), relative to an event in one trace, in which the algorithm will look for similar events along the neighbouring trace. Default is 250.</p>
         <p>The "Delta Dip" is a variable which represents the window in microseconds per metre (μs/m) which is shifted along the neighbouring trace to detect similar events whithin the earlier specified 'Maximum Dip'. The closer the value to 1 the more precise the results will be. The default value is 10. Using this value will result in a good balance between calculation time and quality of the results, this also depends on the quality of the data itself.</p>
         <p>&#160;</p>
-        <p><b>Mathematical description</b>
+        <p>
+            <b>Mathematical description</b>
         </p>
         <p>Let us assume two vectors X, Y of length N=15 samples:</p>
         <p>Xi, i=1,15</p>
@@ -103,13 +109,15 @@
             <img src="../Resources/Images/Appendix A/Mathematical description similarity.png" class="General_Image" />
         </p>
         <p>&#160;</p>
-        <p><b>Examples</b>
+        <p>
+            <b>Examples</b>
         </p>
         <p>&#160;</p>
         <p>
             <img src="../Resources/Images/Appendix A/Dip-steered non-steered minimum-steered.png" class="General_Image" />
         </p>
-        <p><i>An example timeslice is highlighting fault structure: (a) Dip-steered Filtered Seismic, (b) Non-Steered minimum Similarity, (c) Steered minimum Similarity. Notice that the definition of faults has been improved with the Similarity attributes. The steered minimum Similarity (c) is highlighting precise fault definitions as compared with the result of non-steered minimum Similarity (b).</i>
+        <p>
+            <i>An example timeslice is highlighting fault structure: (a) Dip-steered Filtered Seismic, (b) Non-Steered minimum Similarity, (c) Steered minimum Similarity. Notice that the definition of faults has been improved with the Similarity attributes. The steered minimum Similarity (c) is highlighting precise fault definitions as compared with the result of non-steered minimum Similarity (b).</i>
         </p>
         <p>&#160;</p>
     </body>

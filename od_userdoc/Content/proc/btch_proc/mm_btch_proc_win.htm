@@ -4,9 +4,9 @@
     </head>
     <body>
         <h3>Multi-Machine Batch Processing Window</h3>
-        <p>The multi-machine batch processing window controls on which machines a volume output or steering cube batch job will be processed. Jobs are distributed over the <i>Used hosts</i> on a line-by-line basis (the number of inlines per job can be specified). Hosts can be <i>Added</i> and/or <i>Stopped</i> at all times. Processed results are stored in a <i>Temporary storage directory</i>.</p>
+        <p>The multi-machine batch processing window controls on which machines a volume output or SteeringCube batch job will be processed. Jobs are distributed over the <i>Used hosts</i> on a line-by-line basis (the number of inlines per job can be specified). Hosts can be <i>Added</i> and/or <i>Stopped</i> at all times. Processed results are stored in a <i>Temporary storage directory</i>.</p>
         <p>&#160;</p>
-        <p>At the end of the processing sequence, OpendTect will merge all processed lines and store the data in the output file that was specified in the <i>Volume output</i> or <i>Create steering cube</i> window, and it will delete the temporary disk files. If for any reason OpendTect fails to perform this data transfer, this can also be done manually in the <i>File - Manage</i> module. The temporary data store appears with a name starting with Proc_. Select this item and copy it to a new cube.</p>
+        <p>At the end of the processing sequence, OpendTect will merge all processed lines and store the data in the output file that was specified in the <i>Volume output</i> or <i>Create SteeringCube</i> window, and it will delete the temporary disk files. If for any reason OpendTect fails to perform this data transfer, this can also be done manually in the <i>File - Manage</i> module. The temporary data store appears with a name starting with Proc_. Select this item and copy it to a new cube.</p>
         <p>&#160;</p>
         <p>It is possible that at the end of a multi-machine batch job not all data was processed successfully. Some jobs may have failed (e.g. because one of the hosts was temporarily not available). OpendTect will come back with a warning message stating which jobs (i.e. which inlines) have not been processed yet. It is then advised to re-submit these jobs until all data are processed. The <i>Auto-fill</i> option automatically scans and fills gaps in the processed volume.</p>
         <p>&#160;</p>
@@ -16,7 +16,8 @@
         <p>&#160;</p>
         <p>OpendTect calls the system utilities of the '<i>hostent</i>' (sethostent, gethostent, etc.) type to get a table of hosts that can be selected. How the Operating System builds the lists is dependent on the particular system setup; most likely /etc/hosts and/or the NIS tables are consulted. OpendTect supports multi-threading which means that all processors of multi-processor machines will be used.</p>
         <blockquote>
-            <p><b>Note:</b> Though we support multi-threading, not all calculations can be run this way due to some of the algorithms involved (ie: recursive calculations). See the following table:</p>
+            <p>
+                <b>Note:</b> Though we support multi-threading, not all calculations can be run this way due to some of the algorithms involved (ie: recursive calculations). See the following table:</p>
         </blockquote>
         <p>&#160;</p>
         <table style="border-spacing: 1px 1px;border-collapse: collapse;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
@@ -24,7 +25,8 @@
             <col />
             <thead>
                 <tr>
-                    <th><b>Attributes that support multi-threading</b>
+                    <th>
+                        <b>Attributes that support multi-threading</b>
                     </th>
                     <th>Attributes that do not support multi-threading</th>
                 </tr>
@@ -127,7 +129,7 @@
                     <td>SampleValue</td>
                 </tr>
                 <tr>
-                    <td>SpectrogramDip (create steering cube, FFT steering)
+                    <td>SpectrogramDip (create SteeringCube, FFT steering)
 </td>
                     <td>Scaling (scaling type AGC and stats type = detrend)
 </td>
@@ -151,31 +153,38 @@
         </table>
         <p>&#160;</p>
         <p>&#160;</p>
-        <p><b>Multi-machine processing on Windows OS</b>
+        <p>
+            <b>Multi-machine processing on Windows OS</b>
         </p>
         <p>&#160;</p>
         <p>The new system works with a Daemon Service running in background on every remote machine to be used for processing. The communication works with TCP/IP and requires some configurations to actually make things working.</p>
         <p>&#160;</p>
         <blockquote>
-            <p><b>Mapping of Survey folder:</b> We assume a DataRoot folder ($DTECT_DATA) to be in a centralised server. This folder has to be mapped on the same drive in every PC to be used as hosts. For example, we have 4 PCs (A,B,C,D). A is a server and the ODData is in drive D. Then map D:ODData on e.g. S: on B, C and D. PCs B, C, and D can then be used as your processing nodes.</p>
+            <p>
+                <b>Mapping of Survey folder:</b> We assume a DataRoot folder ($DTECT_DATA) to be in a centralised server. This folder has to be mapped on the same drive in every PC to be used as hosts. For example, we have 4 PCs (A,B,C,D). A is a server and the ODData is in drive D. Then map D:ODData on e.g. S: on B, C and D. PCs B, C, and D can then be used as your processing nodes.</p>
         </blockquote>
         <blockquote>
-            <p><b>OpendTect installation:</b> You need to have OpendTect installed on all hosts, and make sure they all use the same survey at the same time (have access to). For example if B is using F3_Demo and want to process something in F3_Demo. then it has to be made sure that the rest of the two PCs also use the same folder as long as the processing is needed.</p>
+            <p>
+                <b>OpendTect installation:</b> You need to have OpendTect installed on all hosts, and make sure they all use the same survey at the same time (have access to). For example if B is using F3_Demo and want to process something in F3_Demo. then it has to be made sure that the rest of the two PCs also use the same folder as long as the processing is needed.</p>
         </blockquote>
         <blockquote>
-            <p><b>BatchHosts file:</b> Add the IP addresses of C and D in the BatchHosts file inside the application data folder.</p>
+            <p>
+                <b>BatchHosts file:</b> Add the IP addresses of C and D in the BatchHosts file inside the application data folder.</p>
         </blockquote>
         <blockquote>
-            <p><b>Start the daemon:</b> If launching process from B to the other two, then B is his local machine, C and D are remote machine. In this case the Daemon service ( odremoteservice ) application has to be launched from binwin folder ( win32/win64 ) only in the remote machines and not in the local machine ( B ). Please note the odremoteservice.exe not to be run directly instead a launching tool will be found in win32mmod_remote_service_manager. Use od_remote_service_manager to launch the daemon which will also add anotification icon to the system tray. Once the service starts, the remote machines are ready.</p>
+            <p>
+                <b>Start the daemon:</b> If launching process from B to the other two, then B is his local machine, C and D are remote machine. In this case the Daemon service ( odremoteservice ) application has to be launched from binwin folder ( win32/win64 ) only in the remote machines and not in the local machine ( B ). Please note the odremoteservice.exe not to be run directly instead a launching tool will be found in win32mmod_remote_service_manager. Use od_remote_service_manager to launch the daemon which will also add anotification icon to the system tray. Once the service starts, the remote machines are ready.</p>
         </blockquote>
         <blockquote>
-            <p><b>Start processing:</b> Select the PC's B, C and D from the list of machines in the multimachine launch window and start processing:</p>
+            <p>
+                <b>Start processing:</b> Select the PC's B, C and D from the list of machines in the multimachine launch window and start processing:</p>
         </blockquote>
         <blockquote>
             <p>
                 <img src="../../Resources/Images/7 Processing/Batch processing MMP main window.png" class="General_Image" />
             </p>
-            <p><i>Select machines to use for processing from the list</i>
+            <p>
+                <i>Select machines to use for processing from the list</i>
             </p>
         </blockquote>
         <p>&#160;</p>
@@ -183,7 +192,8 @@
             <p>
                 <img src="../../Resources/Images/7 Processing/Batch processing MMP main window progress.png" class="General_Image" />
             </p>
-            <p><i>Multi-machine batch processing progress window</i>
+            <p>
+                <i>Multi-machine batch processing progress window</i>
             </p>
             <p>&#160;</p>
             <p>&#160;</p>
