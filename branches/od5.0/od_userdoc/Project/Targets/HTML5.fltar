@@ -11,7 +11,7 @@
   GetLatestBeforeCompile="false"
   PartialWordSearch="true"
   MinimumWordSize="3"
-  MasterPage="/Content/Resources/MasterPage.flmsp"
+  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp"
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Skin="/Project/Skins/HTML5.flskn"
