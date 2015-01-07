@@ -17,7 +17,8 @@
     conditions="Default.PrintOnly" />
   <TocEntry
     Title="OpendTect User Documentation - Version 5.0"
-    Link="/Content/od_userdoc_v5.0/od_userdc_v5.htm" />
+    Link="/Content/od_userdoc_v5.0/od_userdc_v5.htm"
+    conditions="Default.ScreenOnly" />
   <TocEntry
     Title="Preface"
     Link="/Content/preface/preface.htm">
@@ -1272,13 +1273,13 @@
       Link="/Content/app_a/vol_stats.htm" />
   </TocEntry>
   <TocEntry
-    Title="Appendix B. Command Driver Manual"
+    Title="Appendix B - Command Driver Manual"
     Link="/Content/app_b/app_b.htm" />
   <TocEntry
-    Title="Appendix C. SEG-Y Checklist"
+    Title="Appendix C - SEG-Y Checklist"
     Link="/Content/app_c/app_c.htm" />
   <TocEntry
-    Title="Appendix D. Wacom Digitizing Tablets"
+    Title="Appendix D - Wacom Digitizing Tablets"
     Link="/Content/app_d/app_d.htm"
     StartSection="false"
     SectionNumberReset="continue"
