@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  conditions="Default.PrintOnly"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
+  InjectEmptyPages="true"
+  PatchHeadingLevels="true"
+  MasterToc="/Project/TOCs/appman_basic.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <DocumentProperties
+    Title="OpendTect Application Management Documentation - Version 5.0"
+    Author="dGB Earth Sciences" />
+  <PDF
+    CollapsedBookmarks="true"
+    PageMode="UseNone"
+    PageLayout="SinglePage"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="MadCap HTML5 Target"
+  Comment="OpendTect Application Management Documentation"
   Type="WebHelp2"
   Destinations=""
   GlossaryTermConversion="first"
@@ -11,8 +11,9 @@
   Skin="/Project/Skins/from_od.flskn"
   MasterStylesheet="/Content/Resources/Stylesheets/appman_basic.css"
   MasterToc="/Project/TOCs/appman_basic.fltoc"
-  DefaultUrl="/Content/AppManDoc/Copyright/OpendTect Application Management Documentation - Version 5.0.htm"
-  MasterPage="/Content/Resources/PageLayouts/appman_basic.flmsp">
+  MasterPage="/Content/Resources/PageLayouts/appman_basic.flmsp"
+  conditions="Default.ScreenOnly"
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] ">
   <PrintedOutput
     CollapseMargins="true" />
   <Destinations>
