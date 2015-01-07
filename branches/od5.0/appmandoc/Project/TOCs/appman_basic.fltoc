@@ -2,8 +2,29 @@
 <CatapultToc
   Version="1">
   <TocEntry
+    Title="pdf_cover"
+    Link="/Content/AppManDoc/covers/pdf_cover.htm"
+    conditions="Default.PrintOnly"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="toc_proxy_only"
+    Link="/Content/AppManDoc/covers/toc_proxy_only.htm"
+    conditions="Default.PrintOnly"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
     Title="OpendTect Application Management Documentation - Version 5.0"
-    Link="/Content/AppManDoc/Copyright/OpendTect Application Management Documentation - Version 5.0.htm" />
+    Link="/Content/AppManDoc/Copyright/OpendTect Application Management Documentation - Version 5.0.htm"
+    conditions="Default.ScreenOnly" />
   <TocEntry
     Title="Data Storage"
     Link="/Content/AppManDoc/Data Storage/Data Storage.htm">
