@@ -141,6 +141,8 @@ p.tip
 	line-height: 30px;
 	margin-left: 3em;
 	padding-left: 40px;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
 }
 
 p.caution
