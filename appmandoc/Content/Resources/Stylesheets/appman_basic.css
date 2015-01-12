@@ -200,3 +200,18 @@ p.note
 	padding-left: 40px;
 }
 
+p.tip
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	margin-left: 3em;
+	padding-left: 40px;
+	background-image: url('../Images/tip.png');
+}
+
