@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4264" MadCap:lastWidth="634">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3593" MadCap:lastWidth="1253">
     <head>
     </head>
     <body>
@@ -56,11 +56,9 @@
         <p>You must specify in the format definition window the column numbers of the X and Y coordinates (absolute values, not relative to the surface coordinates), in the same unit as used when defining the OpendTect survey. The Z depths that must be provided are TVDSS depths, in meters or feet, increasing downwards and equal to zero at a height of zero (sea level, geoid). This is regardless of the reference datum elevation of the wells or any seismic reference datum of the seismic data. Optionally the fourth column can contain measured depths values to provide the link between MD and TVDSS. Data loading can be stopped at a specific line by providing the adequate keyword.</p>
         <p>&#160;</p>
         <p>&#160;</p>
+        <p class="note">The best way to ensure that the reference datum elevation is properly set is to have the deviation survey file start at MD=0. The first lines of the file would then look like:</p>
+        <p>&#160;</p>
         <blockquote>
-            <p><b>Notes:</b>
-            </p>
-            <p>The best way to ensure that the reference datum elevation is properly set is to have the deviation survey file start at MD=0. The first lines of the file would then look like:</p>
-            <p>&#160;</p>
             <table style="width: 100%;">
                 <col style="width: 150px;" />
                 <col style="width: 150px;" />
@@ -107,7 +105,6 @@
             <p>The track file determines the size of the usable and displayed well data. Any log or marker outside of the track Z range will neither be usable nor be displayed. On the other hand the well track is not limited to the survey Z range, especially it can be loaded outside the survey box.</p>
         </blockquote>
         <p>&#160;</p>
-        <p>&#160;</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" />icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage.</p>
         <p>&#160;</p>
         <p>
@@ -126,18 +123,18 @@
         <p>If you want to import a well track with TVDSS as Z input, please be aware that the measured depth of the track will always be ascending. This means that displaying horizontal wells using TVDSS is not supported yet.</p>
         <p>&#160;</p>
         <blockquote>
-            <p><b>Notes:</b>
-            </p>
-            <p>When loading a depth-time model please check that TWT (TVDSS=0) =0 for MD=KB. This is by definition mandatory. Many package break this relation while matching the well to the seismic data.</p>
-            <p>Make sure that the time-depth model does not start like the following example, in format TVDSS(m)-TWT(ms):</p>
-            <p>0.00 0</p>
-            <p>0.15 60</p>
-            <p>0.30 60.5</p>
-            <p>0.45 61</p>
-            <p>&#160;</p>
-            <p>This would cause serious extrapolation problems of the time-depth model above TWT=0. It is highly recommended that the 2nd sample of the time-depth model corresponds to the start depth of your sonic log, unless the input is a measured checkshot survey.</p>
-            <p>&#160;</p>
-            <p>The Time/Depth model used during import can be either a checkshot model or a "normal" time depth curve. More information can be found in the well management chapter.</p>
+            <p class="note">When loading a depth-time model please check that TWT (TVDSS=0) =0 for MD=KB. This is by definition mandatory. Many package break this relation while matching the well to the seismic data.</p>
+            <blockquote>
+                <p>Make sure that the time-depth model does not start like the following example, in format TVDSS(m)-TWT(ms):</p>
+                <p>0.00 0</p>
+                <p>0.15 60</p>
+                <p>0.30 60.5</p>
+                <p>0.45 61</p>
+                <p>&#160;</p>
+                <p>This would cause serious extrapolation problems of the time-depth model above TWT=0. It is highly recommended that the 2nd sample of the time-depth model corresponds to the start depth of your sonic log, unless the input is a measured checkshot survey.</p>
+                <p>&#160;</p>
+                <p>The Time/Depth model used during import can be either a checkshot model or a "normal" time depth curve. More information can be found in the well management chapter.</p>
+            </blockquote>
         </blockquote>
         <p>&#160;</p>
         <p>Similarly the depth-time model reading settings can be saved:</p>

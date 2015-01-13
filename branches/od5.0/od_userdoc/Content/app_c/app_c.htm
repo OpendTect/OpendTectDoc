@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="6389" MadCap:lastWidth="1240">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="6461" MadCap:lastWidth="1240">
     <head>
     </head>
     <body>
@@ -73,6 +73,8 @@
         <blockquote>
             <blockquote>
                 <p>8.	<a href="#loaded_shifted" target="_self">The loaded volume is shifted with respect to the others - does not start at zero</a></p>
+                <p>&#160;</p>
+                <p>&#160;</p>
             </blockquote>
         </blockquote>
         <p><a href="#excel_utilities" target="_self">Excel utilities</a>
@@ -85,6 +87,8 @@
         <blockquote>
             <blockquote>
                 <p>2.	<a href="#segy_trace_number_comp" target="_self">SEG-Y trace numbers computation</a></p>
+                <p>&#160;</p>
+                <p>&#160;</p>
             </blockquote>
         </blockquote>
         <p><b>SEG-Y checklist</b>
@@ -107,7 +111,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: <b>Translate</b> your file if possible.</p>
+                <p><u>Solution</u>: <b>Translate</b> your file if possible.</p>
             </blockquote>
         </blockquote>
         <blockquote>
@@ -117,7 +121,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: They were <b>badly translated</b> from EBCDIC to ASCII (or the opposite), either when writing the file or when reading it. Unfortunately there is no 1 to 1 translation between EBCDIC and ASCII, therefore this issue cannot be solved. That is why EBCDIC coding has been banned from the SEG-Y revision 1 norm.</p>
+                <p><u>Solution</u>: They were <b>badly translated</b> from EBCDIC to ASCII (or the opposite), either when writing the file or when reading it. Unfortunately there is no 1 to 1 translation between EBCDIC and ASCII, therefore this issue cannot be solved. That is why EBCDIC coding has been banned from the SEG-Y revision 1 norm.</p>
             </blockquote>
         </blockquote>
         <p><b><a name="line_header"></a>The line header is not readable</b>
@@ -163,7 +167,7 @@
         <p>&#160;</p>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: Use the <a href="#excel_utilities" target="_self">excel utilities</a> to determine if your file may be missing some bytes. If that is the case you need to re-create your file unless you know exactly how many bytes are missing and how to lengthen your line header.</p>
+                <p><u>Solution</u>: Use the <a href="#excel_utilities" target="_self">excel utilities</a> to determine if your file may be missing some bytes. If that is the case you need to re-create your file unless you know exactly how many bytes are missing and how to lengthen your line header.</p>
             </blockquote>
         </blockquote>
         <blockquote>
@@ -173,7 +177,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: <a href="#soluton_one" target="_self">See above</a>.</p>
+                <p><u>Solution</u>: <a href="#soluton_one" target="_self">See above</a>.</p>
             </blockquote>
         </blockquote>
         <p><b><a name="first_but_no_others"></a>The first trace header is readable but no other - zero sample rate - last trace incomplete</b>
@@ -197,7 +201,7 @@
         <p>On the contrary the warning "last trace incomplete" is printed (but that is not the only cause) if the actual sample size is smaller than the sample size deducted from the headers or overruled.</p>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: <b>Overrule</b> the SEG-Y <b>format</b> to another format until the line header and all trace headers are readable in the examine window. Scan your file and check the output amplitudes since three different formats are available for a sample size of 4 bytes. A proper display of the data in the 2D viewer will indicate a success.</p>
+                <p><u>Solution</u>: <b>Overrule</b> the SEG-Y <b>format</b> to another format until the line header and all trace headers are readable in the examine window. Scan your file and check the output amplitudes since three different formats are available for a sample size of 4 bytes. A proper display of the data in the 2D viewer will indicate a success.</p>
             </blockquote>
         </blockquote>
         <blockquote>
@@ -207,7 +211,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: <b>Overrule</b> the SEG-Y <b>number of samples</b> to another value until all trace headers are readable. The <a href="#excel_utilities" target="_self">excel utilities</a> might be helpful to check the correct value and to check if the file is not missing some bytes.</p>
+                <p><u>Solution</u>: <b>Overrule</b> the SEG-Y <b>number of samples</b> to another value until all trace headers are readable. The <a href="#excel_utilities" target="_self">excel utilities</a> might be helpful to check the correct value and to check if the file is not missing some bytes.</p>
             </blockquote>
         </blockquote>
         <p><b><a name="examine_scan"></a>The examine/scan reports incorrect coordinates</b>
@@ -220,7 +224,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: Get a SEG-Y compliant file.</p>
+                <p><u>Solution</u>: Get a SEG-Y compliant file.</p>
             </blockquote>
         </blockquote>
         <blockquote>
@@ -230,7 +234,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: Overrule the scaler coordinate to the right value in the import window. You need to specify a number that when multiplied by the trace header coordinate will return the actual (scaled) coordinate. Therefore the trace header scalco "-10" would have to be overruled by 0.1 in order to get the same scaling.</p>
+                <p><u>Solution</u>: Overrule the scaler coordinate to the right value in the import window. You need to specify a number that when multiplied by the trace header coordinate will return the actual (scaled) coordinate. Therefore the trace header scalco "-10" would have to be overruled by 0.1 in order to get the same scaling.</p>
             </blockquote>
         </blockquote>
         <p>Please note the it is not possible to apply a static shift (easting/northing) to the coordinates, however this is not needed by OpendTect. Nevertheless you can load the SEG-Y file first and apply your shift to the survey coordinates afterwards in the survey definition window.</p>
@@ -249,12 +253,12 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution 1</u>: Display the loaded file. The warning sometimes pops up by mistakes such that your file may be already correctly loaded.</p>
+                <p><u>Solution 1</u>: Display the loaded file. The warning sometimes pops up by mistakes such that your file may be already correctly loaded.</p>
             </blockquote>
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution 2</u>: Make sure that the survey area is large enough to accommodate your new volume.</p>
+                <p><u>Solution 2</u>: Make sure that the survey area is large enough to accommodate your new volume.</p>
             </blockquote>
         </blockquote>
         <blockquote>
@@ -264,7 +268,7 @@
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	<u>Solution</u>: Use the excel utilities to compute the number of traces you can expect to have in your SEG-Y file, and compare it with the actual number of loaded traces, reported in the scan report. OpendTect will be able to load all full traces until the first missing byte is found in the input file or until the end of the file, even if the end of the file is in the middle of a trace. In that case only the last non-complete trace will not be acccessible.</p>
+                <p><u>Solution</u>: Use the excel utilities to compute the number of traces you can expect to have in your SEG-Y file, and compare it with the actual number of loaded traces, reported in the scan report. OpendTect will be able to load all full traces until the first missing byte is found in the input file or until the end of the file, even if the end of the file is in the middle of a trace. In that case only the last non-complete trace will not be acccessible.</p>
             </blockquote>
         </blockquote>
         <p><b><a name="loaded_shifted"></a>The loaded volume is shifted with respect to the others - does not start at zero</b>
@@ -278,22 +282,22 @@
         <p>"laga" is equal to -200, delrt is equal to 200: both mean that the first sample corresponds to time 200ms.</p>
         <blockquote>
             <ul>
-                <li>Problem : The start time is not specified in the trace headers but is expected to be different that zero.</li>
+                <li><u>Problem</u> : The start time is not specified in the trace headers but is expected to be different that zero.</li>
             </ul>
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	Solution: Overrule the start time parameter in the import window.</p>
+                <p><u>Solution</u>: Overrule the start time parameter in the import window.</p>
             </blockquote>
         </blockquote>
         <blockquote>
             <ul>
-                <li>Problem: An incorrect start time was applied during loading.</li>
+                <li><u>Problem</u>: An incorrect start time was applied during loading.</li>
             </ul>
         </blockquote>
         <blockquote>
             <blockquote>
-                <p>o	Solution: Either re-import the file by overruling the start time or use the reference shift attribute to apply a static shift to your traces.</p>
+                <p><u>Solution</u>: Either re-import the file by overruling the start time or use the reference shift attribute to apply a static shift to your traces.</p>
             </blockquote>
         </blockquote>
         <p>Please note that in all cases you must have a priori knowledge of the start time.</p>

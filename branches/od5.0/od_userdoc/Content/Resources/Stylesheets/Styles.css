@@ -161,3 +161,84 @@ p.copyright
 	border-top-width: 1px;
 }
 
+p.caution
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	margin-left: 3em;
+	padding-left: 40px;
+	background-image: url('../Images/General Images/caution.png');
+}
+
+p.note
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	border-bottom-style: none;
+	border-style: none;
+	margin-left: 3em;
+	padding-left: 40px;
+	background-image: url('../Images/General Images/note.png');
+}
+
+p.tip
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: inherit;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	margin-left: 3em;
+	padding-left: 40px;
+	background-image: url('../Images/General Images/tip.png');
+}
+
+MadCap|miniTocProxy
+{
+	color: #4169e1;
+	font-family: Arial;
+	font-size: 1em;
+	font-style: italic;
+	font-variant: normal;
+	mc-toc-depth: 3;
+}
+
+p.MiniTOC1
+{
+	color: #4169e1;
+	font-family: Arial;
+	font-size: inherit;
+	text-decoration: underline;
+}
+
+p.note_after
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	font-family: Arial;
+	font-size: inherit;
+	font-style: italic;
+	line-height: 30px;
+	margin-left: 3em;
+	padding-left: 40px;
+}
+

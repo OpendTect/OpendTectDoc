@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1074" MadCap:lastWidth="667">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="844" MadCap:lastWidth="1266">
     <head>
     </head>
     <body>
@@ -30,33 +30,23 @@
             <ul>
                 <li>All: This last option will output the maximum number of trace with respect to the available data and possible stepouts</li>
             </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
         </blockquote>
-        <p>&#160;</p>
+        <p class="note">&#160;</p>
         <blockquote>
-            <p><b>Notes:</b>
-            </p>
-        </blockquote>
-        <blockquote>
-            <blockquote>
-                <p>1. The use of larger <i>vertical</i> stepouts will cause the data to be decimated in the given direction. Please note that an anti-alias filter (using the <a href="../../../app_a/freq_fltr.htm" target="_self">frequency filter attribute</a>) should be applied before decimating data. The copy-cube does not do it.</p>
-            </blockquote>
+            <p>1. The use of larger <i>vertical</i> stepouts will cause the data to be decimated in the given direction. Please note that an anti-alias filter (using the <a href="../../../app_a/freq_fltr.htm" target="_self">frequency filter attribute</a>) should be applied before decimating data. The copy-cube does not do it.</p>
         </blockquote>
         <blockquote>
-            <blockquote>
-                <p>2. The use of smaller <i>vertical</i> stepouts will cause the data to be interpolated with a polynomial interpolation. This is mostly appropriate for seismic data.</p>
-            </blockquote>
+            <p>2. The use of smaller <i>vertical</i> stepouts will cause the data to be interpolated with a polynomial interpolation. This is mostly appropriate for seismic data.</p>
         </blockquote>
         <blockquote>
-            <blockquote>
-                <p>3. Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</p>
-            </blockquote>
+            <p>3. Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</p>
         </blockquote>
         <blockquote>
-            <blockquote>
-                <p>4. The copy-cube option does not do lateral interpolation of the data (but it can decimate). Use the <a href="../../../anal/vol_build_setup/vel_grdr.htm" target="_self">Velocity gridder</a> step of the volume builder to laterally grid a coarse volume.</p>
-                <p>&#160;</p>
-                <p>&#160;</p>
-            </blockquote>
+            <p>4. The copy-cube option does not do lateral interpolation of the data (but it can decimate). Use the <a href="../../../anal/vol_build_setup/vel_grdr.htm" target="_self">Velocity gridder</a> step of the volume builder to laterally grid a coarse volume.</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
         </blockquote>
     </body>
 </html>

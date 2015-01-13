@@ -606,6 +606,9 @@
           <TocEntry
             Title="Merge Files"
             Link="/Content/survey/manage/man_seis/mrg_files.htm" />
+          <TocEntry
+            Title="Browse &amp; Edit Cube Locations"
+            Link="/Content/survey/manage/man_seis/brws_ed_cube_locs.htm" />
         </TocEntry>
         <TocEntry
           Title="Manage 2D Seismics"
@@ -630,9 +633,6 @@
             Title="Dump 2D Geometry"
             Link="/Content/survey/manage/man_seis/dump_2d_geom.htm" />
         </TocEntry>
-        <TocEntry
-          Title="Browse &amp; Edit Cube Locations"
-          Link="/Content/survey/manage/man_seis/brws_ed_cube_locs.htm" />
       </TocEntry>
       <TocEntry
         Title="Manage Seismics Prestack"
@@ -910,7 +910,7 @@
       Title="Create Seismic Output"
       Link="/Content/proc/create_seis_output/create_seis_output.htm">
       <TocEntry
-        Title="Attribute"
+        Title="Attributes"
         Link="/Content/proc/create_seis_output/attr.htm">
         <TocEntry
           Title="2D - Create  Output"
@@ -1141,6 +1141,9 @@
             <TocEntry
               Title="Rollback"
               Link="/Content/utils/install/rollback.htm" />
+            <TocEntry
+              Title="Show Log File"
+              Link="/Content/utils/install/show_logfile.htm" />
           </TocEntry>
           <TocEntry
             Title="Offline Installation"
