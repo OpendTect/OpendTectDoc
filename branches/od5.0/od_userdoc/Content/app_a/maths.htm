@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3587" MadCap:lastWidth="1214">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3725" MadCap:lastWidth="1266">
     <head>
     </head>
     <body>
@@ -38,15 +38,20 @@
                 <li>Recursive expressions are a way to call back the result of the mathematical formula on a sample above for computation. This result is called with the expression OUT[-i] (case insensitive) where i is a number of samples</li>
             </ul>
         </blockquote>
-        <p><b>Note 1:</b> There is no limit in number of variables/constants used in an expression.</p>
-        <p><b>Note 2:</b> There are special constants for which it is not necessary to provide the numerical value: DZ is the sampling rate of the input data, Inl and Crl are respectively the inline and crossline numbers of the current trace. The special constant are case sensitive.</p>
-        <p><b>Note 3:</b> Mathematics attributes containing a recursive equation should only be applied to the full volume/lines, not along a surface because of the integration length.</p>
+        <p>&#160;</p>
+        <p class="note">There is no limit in number of variables/constants used in an expression.</p>
+        <p>&#160;</p>
+        <p class="note">There are special constants for which it is not necessary to provide the numerical value: DZ is the sampling rate of the input data, Inl and Crl are respectively the inline and crossline numbers of the current trace. The special constant are case sensitive.</p>
+        <p>&#160;</p>
+        <p class="note">Mathematics attributes containing a recursive equation should only be applied to the full volume/lines, not along a surface because of the integration length.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
         <p>&#160;</p>
         <p>Parentheses ( ) are allowed and even welcome. Once the mathematical expression has be entered you must press <i>Set</i>. Then a table will appear where you will be able to assign data to the variables and values to the constants and recursive settings: Start time (or depth) of the recursive function and value at this time.</p>
         <p>&#160;</p>
         <p>Supported operators are:</p>
         <p>&#160;</p>
-        <p><i>+, -, *, /, ^, &gt;, &lt;, &lt;=, &gt;=, ==, !=, &amp;&amp; (and), || (or), |xn |</i>(absolute value).</p>
+        <p><i>+, -, *, /, ^, &gt;, &lt;, &lt;=, &gt;=, ==, !=, &amp;&amp; (and), || (or), |xn |</i>(absolute value), cond ? true stat : false stat.</p>
         <p>&#160;</p>
         <p>Supported mathematical functions are:</p>
         <p>&#160;</p>
@@ -57,7 +62,7 @@
         <p>&#160;</p>
         <p>Supported constants are:</p>
         <p>&#160;</p>
-        <p><i>pi</i> (3.1415927), <i>undef</i> (The OpendTect undefined value: 1e+30)</p>
+        <p><i>pi</i> (3.1415927), <i>undef</i> (The OpendTect undefined value: 1e+30), e (2.71...), DZ (Z step), Inl (Inline number), Crl (Crossline number), XCoord (X Coordinate), YCoord (Y Coordinate), Z (Z value), THIS, seis[-1]</p>
         <p>&#160;</p>
         <p>In addition it is possible to make logical operations using IF .. THEN .. ELSE statements. The following syntax must be used:</p>
         <p>&#160;</p>
