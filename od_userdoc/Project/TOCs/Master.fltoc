@@ -1191,9 +1191,6 @@
     Title="Appendix A - Attributes and Filters"
     Link="/Content/app_a/app_a.htm">
     <TocEntry
-      Title="CEEMD - Spectral Decomposition"
-      Link="/Content/app_a/ceemd.htm" />
-    <TocEntry
       Title="Convolve (2D &amp; 3D)"
       Link="/Content/app_a/convolve.htm" />
     <TocEntry
