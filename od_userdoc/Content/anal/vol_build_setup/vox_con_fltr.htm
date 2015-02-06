@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2661" MadCap:lastWidth="1201">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3089" MadCap:lastWidth="1151">
     <head>
     </head>
     <body>
@@ -37,6 +37,12 @@
                 <li>Common Edges (18 neighbours): The propagation is done by using the 6 faces and the 12 edges adjacent to the current seed.</li>
                 <li>Full (26 neighbours): The propagation is done is all directions, using the 6 faces, 12 edges and 8 corners adjacent to the current seed. This is the default mode.</li>
             </ul>
+            <p>&#160;</p>
+            <p class="note">The easiest way to visualize the connectivity is to imagine the reference voxel as the central voxel in a 3x3x3 cube, such as the red one in this image:</p>
+            <p class="note_after">
+                <img src="../../Resources/Images/6 Analysis/Analysis vol_bldr_vcf_rubiks.png" class="General_Image" />
+            </p>
+            <p>&#160;</p>
         </blockquote>
         <blockquote>
             <p><b>Keep bodies larger than [voxels]:</b> It defines the minimum number of voxels required to output a body. Actually all bodies are computed in the first pass. The smallest bodies are then dismissed. Minimum allowed is one.</p>
