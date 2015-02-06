@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="5905" MadCap:lastWidth="1279">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="5906" MadCap:lastWidth="1229">
     <head>
     </head>
     <body>
@@ -46,7 +46,7 @@
         </blockquote>
         <blockquote>
             <p><b>Advanced Ray Tracer</b> (not in the GPL version)<b>:</b></p>
-            <p>It works in a more sophisticated way than the simple ray tracer. It honours the ray bending according to Snell's law and thus velocity inversions as well. To reduce the processing time, the Elastic Model [hyperlink with Elastic Model] layers may be blocked: Consecutive layers with similar Vp, Vs and Density values are concatenated together, as defined by the threshold. For example the default threshold is 1%, which means if there is less than 1% difference in the elastic model values of two layers, they will be blocked. The ray is propagated in a straight line inside a concatenated layer.</p>
+            <p>It works in a more sophisticated way than the simple ray tracer. It honours the ray bending according to Snell's law and thus velocity inversions as well. To reduce the processing time, the <a href="#Elastic_Model" target="_self">Elastic Model</a> layers may be blocked: Consecutive layers with similar Vp, Vs and Density values are concatenated together, as defined by the threshold. For example the default threshold is 1%, which means if there is less than 1% difference in the elastic model values of two layers, they will be blocked. The ray is propagated in a straight line inside a concatenated layer.</p>
             <p>It is also possible to compute internal multiples in the advanced ray tracer. Furthermore,   incorporation of spherical divergence, is also possible, by defining the spreading geometry as either  "Distance" or "Distance*Vint" .</p>
             <blockquote>
                 <p>
@@ -99,7 +99,6 @@
         <p>&#160;</p>
         <p>Full Zoeppritz equations are used to compute angle-dependent reflectivity from the elastic model (i.e. upscaled and time converted version of various logs (Rho, Vp and Vs) from pseudo-wells) at various interfaces as:</p>
         <p>&#160;</p>
-        <p>(images are from Wikipedia)</p>
         <blockquote>
             <p>
                 <img src="../Resources/Images/Appendix E/Synthetic data generation nonzero offset formula.png" class="General_Image" />
