@@ -355,4 +355,5 @@
     <Map Name="mODInstMgrcheckInstDirHelpID" Link="/Content/utils/install/offline_inst.htm" />
     <Map Name="mProxyDlgHelpID" Link="/Content/utils/install/con_setts.htm" />
     <Map Name="mHandleDLSiteFailHelpID" Link="/Content/utils/install/pkg_man.htm" />
+    <Map Name="mSemblanceAttribHelpID" Link="/Content/app_a/semb.htm" />
 </CatapultAliasFile>
