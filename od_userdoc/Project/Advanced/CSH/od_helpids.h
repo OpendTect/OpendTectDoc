@@ -123,6 +123,7 @@ external/doc_csh instance of it.
 #define		mVolumeStatisticsAttribHelpID		        0x10100016
 #define		mPreStackAttribHelpID			        0x10100017
 #define		mWellLogAttribHelpID				0x10100018
+#define		mSemblanceAttribHelpID				0x10100019
 #define		mHorizonAttribHelpID			        0x10100100
 #define		mGapDeconHelpID					0x10100101
 #define		mMatchDeltaHelpID				0x10100102
