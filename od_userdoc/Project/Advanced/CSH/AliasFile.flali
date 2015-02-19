@@ -3,7 +3,7 @@
     <Map Name="mAttribCrossPlotHelpID" Link="/Content/anal/xplot/att_based_extr_win.htm" />
     <Map Name="mBodyOperatorDlgHelpID" Link="/Content/Survey/Manage/man_bods/bod_oprtr.htm" />
     <Map Name="mBodyRegionDlgHelpID" Link="/Content/Survey/Manage/man_bods/bod_reg_constr.htm" />
-    <Map Name="mBulkHorizonImportHelpID" Link="/Content/Survey/Import/imp_hors/bulk_3d.htm" />
+    <Map Name="mBulkHorizonImportHelpID" Link="/Content/od_trees_elements/hor/grid.htm" />
     <Map Name="mBulkLogImportHelpID" Link="/Content/Survey/Import/imp_wlls/bulk_wll_log_imp.htm" />
     <Map Name="mBulkMarkerImportHelpID" Link="/Content/Survey/Import/imp_wlls/bulk_wll_mrkr_imp.htm" />
     <Map Name="mBulkTrackImportHelpID" Link="/Content/Survey/Import/imp_wlls/bulk_wll_trk_imp.htm" />
