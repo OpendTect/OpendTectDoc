@@ -107,7 +107,7 @@
     <Map Name="mAttrTrcSelOutSliceHelpID" Link="/Content/proc/create_seis_output/along_hors.htm" />
     <Map Name="mAttrTrcSelOutBetweenHelpID" Link="/Content/proc/create_seis_output/btwn_hors.htm" />
     <Map Name="mSeis2DExtractFrom3DHelpID" Link="/Content/proc/create_seis_output/extr_2d_fm_3d.htm" />
-    <Map Name="mSeis2DTo3DHelpID" Link="/Content/proc/create_seis_output/create_3d_fm_2d.htm" />
+    <Map />
     <Map Name="mAngleMuteComputerHelpID" Link="/Content/proc/create_seis_output/ang_mut_func.htm" />
     <Map Name="mAngleCompAdvParsDlgHelpID" Link="/Content/proc/create_seis_output/ang_mut.htm" />
     <Map Name="mSeisBayesPDFInpHelpID" Link="/Content/proc/create_seis_output/bayes_clss.htm" />
