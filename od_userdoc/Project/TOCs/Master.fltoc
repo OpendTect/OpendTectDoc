@@ -940,9 +940,6 @@
         <TocEntry
           Title="Extract 2D from 3D"
           Link="/Content/proc/create_seis_output/extr_2d_fm_3d.htm" />
-        <TocEntry
-          Title="Create 3D from 2D"
-          Link="/Content/proc/create_seis_output/create_3d_fm_2d.htm" />
       </TocEntry>
       <TocEntry
         Title="Angle Mute Function"
