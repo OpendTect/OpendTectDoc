@@ -13,7 +13,9 @@
   MasterToc="/Project/TOCs/appman_basic.fltoc"
   MasterPage="/Content/Resources/PageLayouts/appman_basic.flmsp"
   conditions="Default.ScreenOnly"
-  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] ">
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
+  EnableSitemap="false"
+  SitemapWebUrl="">
   <PrintedOutput
     CollapseMargins="true" />
   <Destinations>
