@@ -94,14 +94,14 @@ external/doc_csh instance of it.
 #define		mSessionManHelpID				0x05003002
 //Flat_displays 51
 // Flat_displays Display 00
-#define		mFlatViewStdControlHelpID			0x05100000
-#define		mFlatViewPropDlgHelpID			        0x05100001
-//#define	mEMObjectTabsWin			        0x05100002
+#define		mODViewer2DHelpID				0x05100000
+#define		mODViewer2DPropDlgHelpID			0x05100001
+#define		mODViewer2DPosDlgHelpID				0x05100002
 // Flat_displays 2DPSViewer 01
-#define		mViewer2DMainWinHelpID			        0x05101000
-#define		mViewer2DPosDlgHelpID			        0x05101001
-#define		mViewer2DSelDataDlgHelpID			0x05101002
-#define		mViewer2DMainWindisplayAngleHelpID	        0x05101003
+#define		mViewer2DPSMainWinHelpID			0x05101000
+#define		mViewer2DPSPosDlgHelpID				0x05101001
+#define		mViewer2DPSSelDataDlgHelpID			0x05101002
+#define		mViewer2DPSMainWindisplayAngleHelpID		0x05101003
 //Attributes 101
 // Attributes Definition 00
 #define	        mCoherencyAttrib			        0x10100000
