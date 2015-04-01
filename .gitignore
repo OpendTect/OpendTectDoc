@@ -1,0 +1,11 @@
+#All Output and Analyzer directories
+*/Output
+*/Analyzer
+
+#Temporary files
+*~
+*.swp
+
+#User settings
+*/Project/Users
+
