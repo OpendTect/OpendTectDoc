@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/DefaultHTML5.flskn"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/BookStyles.css"
+  MakeFileLowerCase="true"
+  ReplaceSpacesWithUnderscores="true"
+  Medium="non-print"
+  PartialWordSearch="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="MyVariables/CompanyName">dGB Earth Sciences</Variable>
+  </Variables>
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/trng_doc_glossary.flglo" />
+  </Glossaries>
+</CatapultTarget>

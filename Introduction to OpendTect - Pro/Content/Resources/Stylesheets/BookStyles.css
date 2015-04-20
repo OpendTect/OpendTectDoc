@@ -1,0 +1,258 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+}
+
+h1
+{
+	font-weight: bold;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	font-size: 24pt;
+	font-family: Arial;
+	font-style: normal;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+h2.pageBreak
+{
+	page-break-before: always;
+}
+
+p.heading1
+{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 36pt;
+	margin-bottom: 0.25in;
+	page-break-before: always;
+	margin-top: 1.75in;
+}
+
+p.Title
+{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 64pt;
+	text-align: center;
+	margin-top: 1in;
+	margin-bottom: 1in;
+	page-break-before: always;
+}
+
+p.Subtitle
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+}
+
+MadCap|glossaryProxy
+{
+	border-top-style: none;
+}
+
+MadCap|indexProxy
+{
+	border-top-style: none;
+}
+
+p.Publisher
+{
+	margin-bottom: 0pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 4in;
+	font-size: 12pt;
+}
+
+@media print
+{
+	p.Publisher
+	{
+		page-break-after: always;
+	}
+
+	img.front_matter
+	{
+		
+	}
+
+	body
+	{
+		background-image: none;
+	}
+
+	body.front_matter
+	{
+		background-image: url('../Images/0 Cover etc/DGB_Earth_header_rotated_cropped.png');
+	}
+
+	body.toc
+	{
+		
+	}
+
+	MadCap|tocProxy
+	{
+		font-family: Arial;
+		font-size: 12pt;
+		color: #000000;
+	}
+}
+
+img.General_image
+{
+	max-width: 100%;
+}
+
+img.plugin_icons
+{
+	height: 80px;
+	width: 80px;
+}
+
+img.General_icons
+{
+	width: 28px;
+	height: 28px;
+}
+
+p.h4_fake
+{
+	font-weight: bold;
+	margin-bottom: 1.12em;
+	margin-right: 1.12em;
+	margin-top: 1.12em;
+}
+
+MadCap|breadcrumbsProxy
+{
+	background-color: #ffffff;
+	border-bottom: none;
+	border-top: none;
+	color: #000000;
+	font-family: Arial;
+	font-style: italic;
+	margin-bottom: 0px;
+	mc-breadcrumbs-count: 6;
+	border-bottom-style: solid;
+	font-size: 0.85em;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-weight: bold;
+}
+
+a.MCBreadcrumbsLink
+{
+	color: #3cb371;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+p.exercise
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	background-image: url('../Images/3 Exercises with OpendTect/Training Manual exercise green.png');
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-style: none;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 30px;
+	margin-left: 3em;
+	padding-left: 40px;
+}
+
