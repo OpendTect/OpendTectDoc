@@ -1,6 +1,6 @@
 #All Output and Analyzer directories
-*/Output
-*/Analyzer
+*/Output/
+*/Analyzer/
 
 #Temporary files
 *~
