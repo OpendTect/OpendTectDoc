@@ -6,9 +6,8 @@ ________________________________________________________________________
  (C) dGB Beheer B.V.; (LICENSE) http://opendtect.org/OpendTect_license.txt
  Author:        K. TIngdahl
  Date:          March 2014
- RCS:           $Id: od_helpids.h 37012 2014-10-24 07:15:47Z mark.crawford@dgbes.com $
+ RCS:           $Id: od_helpids.h 37068 2014-10-28 12:15:29Z nanne.hemstra@dgbes.com $
 ________________________________________________________________________
-
 
 NOTE: This file belongs to the documentation package and is copied into
 include/General at build from external/doc_csh/ at build. Any changes in the
@@ -95,16 +94,17 @@ external/doc_csh instance of it.
 #define		mSessionManHelpID				0x05003002
 //Flat_displays 51
 // Flat_displays Display 00
-#define		mFlatViewStdControlHelpID			0x05100000
-#define		mFlatViewPropDlgHelpID			        0x05100001
-//#define	mEMObjectTabsWin			        0x05100002
+#define		mODViewer2DHelpID				0x05100000
+#define		mODViewer2DPropDlgHelpID			0x05100001
+#define		mODViewer2DPosDlgHelpID				0x05100002
 // Flat_displays 2DPSViewer 01
-#define		mViewer2DMainWinHelpID			        0x05101000
-#define		mViewer2DPosDlgHelpID			        0x05101001
-#define		mViewer2DSelDataDlgHelpID			0x05101002
-#define		mViewer2DMainWindisplayAngleHelpID	        0x05101003
+#define		mViewer2DPSMainWinHelpID			0x05101000
+#define		mViewer2DPSPosDlgHelpID				0x05101001
+#define		mViewer2DPSSelDataDlgHelpID			0x05101002
+#define		mViewer2DPSMainWindisplayAngleHelpID		0x05101003
 //Attributes 101
 // Attributes Definition 00
+#define	        mCoherencyAttrib			        0x10100000
 #define		mConvolveAttribHelpID			        0x10100001
 #define		mDipFilterAttribHelpID			        0x10100002
 #define		mEnergyAttribHelpID				0x10100003
@@ -165,16 +165,16 @@ external/doc_csh instance of it.
 #define		mSeisIOSimpleImpHelpID			        0x10300011
 #define		mSeisIOSimpleExpHelpID			        0x10300012
 #define		mSeisPreLoadMgrHelpID			        0x10300013
-#define		mSeisPreLoadMgrSel2DHelpID			0x10300014
 #define		mSEGYExpdoWorkHelpID			        0x10300015
 #define		mDZTImporterHelpID				0x10300016
+#define		mSeisFmtScaleDlgHelpID			        0x10300017
 #define		mSEGYFileManipHelpID			        0x10300019
 #define		mSEGYBinHdrEdDlgHelpID			        0x10300020
 #define		mSEGYFileManipHdrCalcEdHelpID		        0x10300021
 #define		mSeisImpCBVSFromOtherSurveyDlgHelpID	        0x10300022
 // Seismics Manage 01
 #define		mSeisFileMan3DHelpID			        0x10301000
-#define		mSeisImpCBVSCopyHelpID			        0x10301001
+#define		mSeisCopyHelpID					0x10301001
 #define		mMergeSeisHelpID				0x10301002
 #define		mSeis2DManHelpID				0x10301003
 #define		mSeisDump2DGeomHelpID			        0x10301004
@@ -256,6 +256,7 @@ external/doc_csh instance of it.
 #define		mVolumeReaderHelpID				0x10306008
 #define		mEditFunctionHelpID				0x10306009
 #define		mVoxelConnectivityFilterHelpID		        0x10306010
+#define		mWellLogInterpolHelpID				0x10306011
 #define		mHorInterFillerHelpID				0x10306012
 //Surfaces 104
 // Surfaces Horizons 00
@@ -275,7 +276,7 @@ external/doc_csh instance of it.
 #define		mHorizonShiftDialogHelpID			0x10400015
 #define		mBulkHorizonImportHelpID			0x10400016
 #define		mHorizonSettingsHelpID				0x10400017
-#define		mHorizonPreLoadDlgHelpID			0x10400018
+#define		mHorizonPreLoadDlgHelpID		        0x10400018
 // Surfaces Faults 01
 #define		mImportFaultHelpID				0x10401000
 #define		mExportFaultHelpID				0x10401001
@@ -322,6 +323,7 @@ external/doc_csh instance of it.
 #define		mFetchPicksHelpID				0x10500000
 #define		mImpPickSetHelpID			        0x10500001
 #define		mExpPickSetHelpID			        0x10500002
+#define		mStorePicksHelpID				0x10500003
 #define		mMergePickSetsHelpID			        0x10500004
 #define		mTableImpDataSelpicksHelpID		        0x10500005
 #define		mPickSetManHelpID				0x10500006
@@ -383,6 +385,7 @@ external/doc_csh instance of it.
 #define		mSeisRandTo2DLineDlgHelpID			0x10900005
 #define		mRandomLinePolyLineDlgHelpID		        0x10900006
 #define		mGoogleExportRandomLineHelpID		        0x10900007
+#define		mWellto2DLineDlgHelpID				0x10900008
 //Stratigraphy 110
 // Stratigraphy General 00
 #define		mStratTreeWinHelpID				0x11000000
