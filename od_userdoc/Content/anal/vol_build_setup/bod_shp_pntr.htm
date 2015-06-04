@@ -1,14 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="556" MadCap:lastWidth="643">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1145" MadCap:lastWidth="1140">
     <head>
     </head>
     <body>
         <h3>Body Shape Painter</h3>
-        <p>The body shape painter is used to fill an OpendTect body with any constant value. It can also be transparent (i.e. undefined). For instance, if one wants to create a salt velocity cube, the values inside can be filled with a salt velocity and outside can be left as transparent. In that case the outer values will originate from the other steps. If no other step exists the undefined value is written.</p>
+        <p>The body shape painter is used to define the inside and&#160;outside values for an OpendTect body. The options for 'Inside Fill Type'  are shown in the image below. The same options are available for 'Outside Fill Type':</p>
         <p>&#160;</p>
         <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis volume builder body shape painter.png" class="General_Image" />
+            <img src="../../Resources/Images/6 Analysis/anal_vol_bldr_bod_shp_pntr_1.png" class="General_Image" />
         </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Fill Types:</p>
+        <ul>
+            <li>Constant Value: Single, user-defined value:<p><img src="../../Resources/Images/6 Analysis/anal_vol_bldr_bod_shp_pntr_2.png" class="General_Image" /></p></li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li>
+                <p>Previous step: takes the values of the previous step in the Volume Builder setup (ie: a stored volume):</p>
+                <p>
+                    <img src="../../Resources/Images/6 Analysis/anal_vol_bldr_bod_shp_pntr_3.png" class="General_Image" />
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li>Undefined Value: Equivalent to 'transparency'</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>One example of use would be: if one wants to create a salt velocity cube, the values inside can be filled with a salt velocity and outside can be set to previous step. If no other step exists the undefined value is written.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
         <p>&#160;</p>
         <p>&#160;</p>
     </body>
