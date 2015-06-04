@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="ftp.dgbes.com"
+  User="MyAccountId"
+  Password=""
+  Directory="support"
+  Port="21"
+  ViewUrl="ftp://ftp.dgbes.com/"
+  Type="ftp"></CatapultDestination>

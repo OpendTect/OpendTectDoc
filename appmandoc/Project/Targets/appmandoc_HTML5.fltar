@@ -15,12 +15,13 @@
   conditions="Default.ScreenOnly"
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
   EnableSitemap="false"
-  SitemapWebUrl="">
+  SitemapWebUrl=""
+  ServerEnabled="true">
   <PrintedOutput
     CollapseMargins="true" />
   <Destinations>
     <Destination
-      Link="/Project/Destinations/Destination.fldes" />
+      Link="/Project/Destinations/support_appmandoc.fldes" />
   </Destinations>
   <Glossaries />
 </CatapultTarget>
