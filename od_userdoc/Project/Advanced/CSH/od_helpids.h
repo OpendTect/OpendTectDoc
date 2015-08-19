@@ -314,6 +314,7 @@ external/doc_csh instance of it.
 #define		mStoreAuxDataHelpID				0x10404006
 #define		mHorAttr2GeomHelpID				0x10404007
 #define		mHorGeom2AttrHelpID				0x10404008
+#define		muiEMDataPointSetPickDlgHelpID			0x10404009
 // Prestack events 05
 #define		mPreStackEventExportHelpID			0x10405000
 #define		mPreStackEventImportHelpID			0x10405001
@@ -386,6 +387,7 @@ external/doc_csh instance of it.
 #define		mRandomLinePolyLineDlgHelpID		        0x10900006
 #define		mGoogleExportRandomLineHelpID		        0x10900007
 #define		mWellto2DLineDlgHelpID				0x10900008
+#define		mRandomLineManHelpID				0x10900009
 //Stratigraphy 110
 // Stratigraphy General 00
 #define		mStratTreeWinHelpID				0x11000000
