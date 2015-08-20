@@ -387,6 +387,7 @@ external/doc_csh instance of it.
 #define		mRandomLinePolyLineDlgHelpID		        0x10900006
 #define		mGoogleExportRandomLineHelpID		        0x10900007
 #define		mWellto2DLineDlgHelpID				0x10900008
+#define		mRandomLineManHelpID				0x10900009
 //Stratigraphy 110
 // Stratigraphy General 00
 #define		mStratTreeWinHelpID				0x11000000
