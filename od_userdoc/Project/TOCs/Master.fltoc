@@ -1124,7 +1124,7 @@
       Title="Installation"
       Link="/Content/utils/install/install.htm">
       <TocEntry
-        Title="Installation Manager"
+        Title="Update (Installation Manager)"
         Link="/Content/utils/install/inst_man.htm">
         <TocEntry
           Title="Package Manager"
