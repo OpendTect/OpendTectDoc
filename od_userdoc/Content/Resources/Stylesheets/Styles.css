@@ -7,45 +7,60 @@ body
 
 h1
 {
-	font-weight: bold;
-	font-size: 24.0pt;
+	font-weight: normal;
+	font-style: italic;
+	font-family: Arial;
+	font-size: 32pt;
 }
 
 h2
 {
 	font-weight: bold;
-	font-size: 18.0pt;
+	font-size: 22pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
 }
 
 h3
 {
 	font-weight: bold;
 	font-size: 14.0pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
 }
 
 h4
 {
 	font-weight: bold;
 	font-size: 12.0pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	mc-heading-level: 0;
+	font-family: Arial;
 }
 
 h5
 {
 	font-weight: bold;
 	font-size: 10.0pt;
+	mc-heading-level: 0;
 }
 
 h6
 {
 	font-weight: bold;
 	font-size: 8.0pt;
+	mc-heading-level: 0;
 }
 
 p
 {
-	margin-top: 0pt;
-	margin-bottom: 0pt;
 	font-size: 12pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
 }
 
 ol,
@@ -95,6 +110,8 @@ img.General_Image
 	border: none;
 	width: auto;
 	height: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 img.Icons
@@ -179,34 +196,33 @@ p.caution
 
 p.note
 {
-	margin-top: 0pt;
-	margin-bottom: 0pt;
 	font-size: inherit;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
 	font-family: Arial;
 	font-style: italic;
-	line-height: 30px;
 	border-bottom-style: none;
 	border-style: none;
 	margin-left: 3em;
 	padding-left: 40px;
 	background-image: url('../Images/General Images/note.png');
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-clip: padding-box;
 }
 
 p.tip
 {
-	margin-top: 0pt;
-	margin-bottom: 0pt;
 	font-size: inherit;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
 	font-family: Arial;
 	font-style: italic;
-	line-height: 30px;
 	margin-left: 3em;
 	padding-left: 40px;
 	background-image: url('../Images/General Images/tip.png');
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 MadCap|miniTocProxy
@@ -241,5 +257,10 @@ p.note_after
 	line-height: 30px;
 	margin-left: 3em;
 	padding-left: 40px;
+}
+
+table
+{
+	border-spacing: 2px;
 }
 

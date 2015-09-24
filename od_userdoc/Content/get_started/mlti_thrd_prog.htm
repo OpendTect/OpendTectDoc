@@ -1,229 +1,145 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1009" MadCap:lastWidth="1201">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="967" MadCap:lastWidth="948">
     <head>
     </head>
     <body>
         <h3>Multi-Threaded Programming</h3>
         <p>A thread of execution is the smallest unit of processing that can be scheduled by an operating system. It generally results from a fork of a computer program into two or more concurrently running tasks. The implementation of threads and processes differs from one operating system to another, but in most cases, a thread is contained inside a process.</p>
-        <p>&#160;</p>
         <p>Multithreading allows multiple threads to exist within the context of a single or multiple process. These threads share the process' resources (such as memory) but are able to execute independently.</p>
-        <p>OpendTect uses the power of multithreading to run different applications in data loading, visualization, processing etc ..</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;margin-left: 0;margin-right: auto;">
+        <p>OpendTect uses the power of multithreading to run different applications in data loading, visualization, processing etc...</p>
+        <table style="border-spacing: 0px; border-collapse: collapse">
             <col />
             <col />
             <tbody>
                 <tr>
-                    <td style="font-weight: bold;">Multithreaded:</td>
-                    <td style="font-weight: bold;">Not multi-threaded:</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>BG Steering*</p>
+                    <td style="border: 1px solid #000; border-bottom: 2px solid #000"><b>Multithreaded</b>
                     </td>
-                    <td>
-                        <p>Constant Steering</p>
+                    <td style="border: 1px solid #000; border-bottom: 2px solid #000"><b>Not multi-threaded</b>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Central Steering</p>
-                    </td>
-                    <td>
-                        <p>Convolve (Wavelet option)</p>
-                    </td>
+                    <td style="border: 1px solid #000">BG Steering*</td>
+                    <td style="border: 1px solid #000">Constant Steering</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Convolve (all except Wavelet option)</p>
-                    </td>
-                    <td>
-                        <p>DeltaResample</p>
-                    </td>
+                    <td style="border: 1px solid #000">Central Steering</td>
+                    <td style="border: 1px solid #000">Convolve (Wavelet option)</td>
                 </tr>
                 <tr>
-                    <td>Curvature</td>
-                    <td>
-                        <p>Energy (Gradient option)</p>
-                    </td>
+                    <td style="border: 1px solid #000">Convolve (all except Wavelet option)</td>
+                    <td style="border: 1px solid #000">DeltaResample</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Dip Angle</p>
-                    </td>
-                    <td>
-                        <p>Event Steering</p>
-                    </td>
+                    <td style="border: 1px solid #000">Curvature</td>
+                    <td style="border: 1px solid #000">Energy (Gradient option)</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Velocity Fan Filter (=DipFilter)</p>
-                    </td>
-                    <td>
-                        <p>FaultDip</p>
-                    </td>
+                    <td style="border: 1px solid #000">Dip Angle</td>
+                    <td style="border: 1px solid #000">Event Steering</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Energy (all except Gradient option)</p>
-                    </td>
-                    <td>
-                        <p>FingerPrint</p>
-                    </td>
+                    <td style="border: 1px solid #000">Velocity Fan Filter (=DipFilter)</td>
+                    <td style="border: 1px solid #000">FaultDip</td>
                 </tr>
                 <tr>
-                    <td>Event</td>
-                    <td>GapDecon</td>
+                    <td style="border: 1px solid #000">Energy (all except Gradient option)</td>
+                    <td style="border: 1px solid #000">FingerPrint</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>FreqFilter*</p>
-                    </td>
-                    <td>
-                        <p>HorizonCube Curvature</p>
-                    </td>
+                    <td style="border: 1px solid #000">Event</td>
+                    <td style="border: 1px solid #000">GapDecon</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Frequency*</p>
-                    </td>
-                    <td>
-                        <p>HorizonCube Dip</p>
-                    </td>
+                    <td style="border: 1px solid #000">FreqFilter*</td>
+                    <td style="border: 1px solid #000">HorizonCube Curvature</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Full Steering</p>
-                    </td>
-                    <td>
-                        <p>HorizonCube Spacing</p>
-                    </td>
+                    <td style="border: 1px solid #000">Frequency*</td>
+                    <td style="border: 1px solid #000">HorizonCube Dip</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>HorizonCube Data</p>
-                    </td>
-                    <td>
-                        <p>Horizon</p>
-                    </td>
+                    <td style="border: 1px solid #000">Full Steering</td>
+                    <td style="border: 1px solid #000">HorizonCube Spacing</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>HorizonCube Density</p>
-                    </td>
-                    <td>
-                        <p>Match Delta</p>
-                    </td>
+                    <td style="border: 1px solid #000">HorizonCube Data</td>
+                    <td style="border: 1px solid #000">Horizon</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>HorizonCube Layer</p>
-                    </td>
-                    <td>
-                        <p>Maths (recursive expression)</p>
-                    </td>
+                    <td style="border: 1px solid #000">HorizonCube Density</td>
+                    <td style="border: 1px solid #000">Match Delta</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Hilbert</p>
-                    </td>
-                    <td>
-                        <p>Perpendicular Dip Extractor</p>
-                    </td>
+                    <td style="border: 1px solid #000">HorizonCube Layer</td>
+                    <td style="border: 1px solid #000">Maths (recursive expression)</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Instantaneous**</p>
-                    </td>
-                    <td>
-                        <p>SampleValue</p>
-                    </td>
+                    <td style="border: 1px solid #000">Hilbert</td>
+                    <td style="border: 1px solid #000">Perpendicular Dip Extractor</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Local Fluid Contact Finder</p>
-                    </td>
-                    <td>
-                        <p>Scaling (scaling type AGC and stats type = detrend)</p>
-                    </td>
+                    <td style="border: 1px solid #000">Instantaneous**</td>
+                    <td style="border: 1px solid #000">SampleValue</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Maths (except when expression is recursive)</p>
-                    </td>
-                    <td>Shift</td>
+                    <td style="border: 1px solid #000">Local Fluid Contact Finder</td>
+                    <td style="border: 1px solid #000">Scaling (scaling type AGC and stats type = detrend)</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Polar Dip</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Maths (except when expression is recursive)</td>
+                    <td style="border: 1px solid #000">Shift</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Position</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Polar Dip</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>PreStack</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Position</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Reference</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">PreStack</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Scaling (all except scaling type AGC and stats type = detrend)</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Reference</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>Semblance</td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Scaling (all except scaling type AGC and stats type = detrend)</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>Similarity</td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Semblance</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Spectral Decomposition*</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Similarity</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>SpectrogramDip (create SteeringCube, FFT steering)</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Spectral Decomposition*</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>Texture</td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">SpectrogramDip (create SteeringCube, FFT steering)</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>Tutorial</td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Texture</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Volume Statistics</p>
-                    </td>
-                    <td>&#160;</td>
+                    <td style="border: 1px solid #000">Tutorial</td>
+                    <td style="border: 1px solid #000">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #000">Volume Statistics</td>
+                    <td style="border: 1px solid #000">&#160;</td>
                 </tr>
             </tbody>
         </table>
-        <p>&#160;</p>
-        <p>*multi-threading implemented in March 2014</p>
-        <p>**multi-threading improved in March 2014</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <p><i>*multi-threading implemented in March 2014<br />**multi-threading improved in March 2014</i>
+        </p>
     </body>
 </html>

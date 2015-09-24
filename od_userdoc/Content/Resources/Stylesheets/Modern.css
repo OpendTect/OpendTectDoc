@@ -138,3 +138,73 @@ MadCap|helpControlMenuItem.Highlighted
 	background-color: #E5EFF7;
 }
 
+h1
+{
+	font-family: Arial;
+	font-size: 32pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h2
+{
+	font-size: 22pt;
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+h3
+{
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 14pt;
+	font-family: Arial;
+}
+
+h4
+{
+	color: #000000;
+	font-size: 12pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	mc-heading-level: 0;
+	font-family: Arial;
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+h6
+{
+	mc-heading-level: 0;
+}
+
+p
+{
+	font-size: 12pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+div.antipagebreak
+{
+	page-break-before: always;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+img
+{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
