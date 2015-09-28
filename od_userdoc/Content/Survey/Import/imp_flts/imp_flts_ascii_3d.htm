@@ -1,35 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1482" MadCap:lastWidth="1292">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1562" MadCap:lastWidth="974">
     <head>
     </head>
     <body>
-        <h4>Import Fault Ascii 3D</h4>
+        <h3>Import Fault Ascii 3D</h3>
         <p><i>Select</i> the input Ascii file. You may display the input file by pressing the <i>Examine</i> button. The input file should be column sorted with one point per record (line).</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import fault main.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import fault main.png" class="General_Image" />
         <p>The main work is to specify the <i>type</i> of data, the presence of a <i>file header</i>, and the <i>file format definition</i>.</p>
-        <p>&#160;</p>
         <p>The sticks composing the planes can be either gathered automatically, either from picked slices (inlines or crosslines), and/or based on their slope. The sorting can be done based on the geometry of the fault sticks, on an index written in the input file, or in the order found in the file. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
-        <p>&#160;</p>
-        <p class="note"><b>Note:</b> that OpendTect does not support crossing fault sticks (a fault plane cannot cross itself). If faults were picked on inlines, crosslines and horizontal slices, only the largest subset of the three will be used to import the faults.</p>
-        <p>&#160;</p>
+        <p class="tip"><b>Note:</b> that OpendTect does not support crossing fault sticks (a fault plane cannot cross itself). If faults were picked on inlines, crosslines and horizontal slices, only the largest subset of the three will be used to import the faults.</p>
         <p>Predefined and saved formats are available by pressing the <img src="../../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise the format must be manually specified. The Define button gives access to the format definition window.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import fault format definition.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import fault format definition.png" class="General_Image" />
         <p>You must specify in the format definition the column numbers for the position; in terms of an X-Y pair, pick column, and optionally stick index (0 = no stick index). The Z units can be seconds, milliseconds or microseconds. Reading may be stopped at a specific line by providing the adequate keyword.</p>
-        <p>&#160;</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" /> icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage. Press OK after having provided the name of the fault to be imported.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import fault save format.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import fault save format.png" class="General_Image" />
     </body>
 </html>

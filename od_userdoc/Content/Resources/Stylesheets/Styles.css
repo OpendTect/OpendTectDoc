@@ -25,33 +25,33 @@ h2
 h3
 {
 	font-weight: bold;
-	font-size: 14.0pt;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	font-family: Arial;
+	font-size: 20pt;
 }
 
 h4
 {
 	font-weight: bold;
-	font-size: 12.0pt;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	mc-heading-level: 0;
 	font-family: Arial;
+	font-size: 18pt;
+	mc-heading-level: 4;
 }
 
 h5
 {
 	font-weight: bold;
-	font-size: 10.0pt;
-	mc-heading-level: 0;
+	font-size: 16pt;
+	mc-heading-level: 5;
 }
 
 h6
 {
 	font-weight: bold;
-	font-size: 8.0pt;
+	font-size: 14pt;
 	mc-heading-level: 0;
 }
 
@@ -262,5 +262,10 @@ p.note_after
 table
 {
 	border-spacing: 2px;
+}
+
+ul.ordered_list > li > ol
+{
+	list-style-type: decimal;
 }
 

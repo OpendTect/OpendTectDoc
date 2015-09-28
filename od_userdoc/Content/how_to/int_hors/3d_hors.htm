@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="7260" MadCap:lastWidth="922">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="7371" MadCap:lastWidth="922">
     <head>
     </head>
     <body>
@@ -19,10 +19,10 @@
             <li>QC and Edit the horizon.</li>
         </ol>
         <p>These steps are explained more fully below:</p>
-        <h4><a name="1._Define_mode_and_tracker_settings&#xA;">1. Define mode and tracker settings</a>
-        </h4>
+        <h6><a name="1._Define_mode_and_tracker_settings&#xA;">1. Define mode and tracker settings</a>
+        </h6>
         <p>Right-click "Horizon" in the tree and select <i>New</i> ....This will launch a tracking setup which contains several tabs:</p>
-        <h4>Mode</h4>
+        <h6>Mode</h6>
         <img src="../../Resources/Images/3 How to/Horizon tracker mode.png" class="General_Image" />
         <p>Choose the tracking mode:</p>
         <ul>
@@ -30,7 +30,7 @@
             <li><i>Line tracking</i> is used to track a horizon on a line (inline or crossline). This mode gives the interpreter more control and is the one mainly used when creating the initial horizon grid. In between the seeds the horizon is tracked along the line. The result is a grid that needs to be filled, either by autotracking or interpolation.</li>
             <li><i>Line manual</i> mode will manually pick a horizon (interpolated line) between two seeds on lines. This workflow differs from the line tracking as in this case seeds are linked by a straight line: there is no automated tracking. This mode is used in difficult areas, for example to cross faults, push through noise zones or interpret unconformities.</li>
         </ul>
-        <h4>Event</h4>
+        <h6>Event</h6>
         <img src="../../Resources/Images/3 How to/Horizon tracker event.png" class="General_Image" />
         <p><i>Volume tracking</i> and <i>line tracking</i> are automated tracking workflows. Thus the user needs to define several tracking criteria:</p>
         <ul>
@@ -47,33 +47,33 @@
         <p><u>Steps...</u>: Step-wise tracking results in a better tracked horizons. Good parts of the horizon are tracked first, followed by the more difficult areas. The tracker will first track those part of the horizon that have a low difference to the seeds or parts that have a high amplitude. In subsequent steps the tracker settings become less strict. Therefore, the horizon will be of better quality and needs less editing. The user can define the subsequent percentage values (incremental: eg 1,2,5,10,20) , or subsequent amplitude values (decremental e.g. 2500,2000,1500,1000,500)</p>
         <img src="../../Resources/Images/3 How to/Horizon tracker stepwise.png" class="General_Image" />
         <p><u>If tracking fails..:</u> If the tracker can not find a neighbouring point (that complies with the specified relative difference or cut-off amplitude) it can either stop tracking or extrapolate the horizon. (Tip: When the tracker stops tracking before you want it to, adjust the Threshold value and/or <i>Similarity threshold</i> before choosing the <i>extrapolate</i> option.)</p>
-        <h4>Similarity</h4>
+        <h6>Similarity</h6>
         <img src="../../Resources/Images/3 How to/Horizon tracker similarity.png" class="General_Image" />
         <p>Similarity is a kind of cross-correlation. A part of a trace (trace segment) around the last tracked point is compared to all the trace segments on the neighboring traces around the points that lie within the Search window (See figure below). The distance between the points is typically 1 ms. The number of comparisons is thus controlled by the search window, while the compare window controls the length of the trace segments. The measure of Similarity between the trace segments lies between 0 and 1. The tracker will choose the point that has the highest similarity <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="#search_window" target="_self">drawing C</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">drawing C</MadCap:conditionalText>, below). When the point with the highest similarity has a value below the defined threshold the tracker stops tracking. Tracking with "Similarity" is optional. It is more accurate, but increases the computation time.</p><a name="search_window"><img src="../../Resources/Images/3 How to/Horizon tracker similarity explained.png" class="General_Image" /></a>
-        <h4>Properties</h4>
+        <h6>Properties</h6>
         <img src="../../Resources/Images/3 How to/Horizon tracker properties.png" class="General_Image" />
         <p>This tab is used to adjust the display properties of the horizon.</p>
-        <h4>Dip Steering</h4>
+        <h6>Dip Steering</h6>
         <img src="../../Resources/Images/3 How to/Horizon tracker dipsteer.png" class="General_Image" />
         <p>The dipsteering cube can be now added as constraint for horizon interpretation. This will improve the horizon tracking especially in the areas of dipping reflectors. Dip steering gives structural information.</p>
         <p>For loading a  color blended horizon in a scene, please take a look at <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://dgbes.com/index.php/support/tutorials/how-to-manuals" target="_blank">dGB's How to...manuals</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">dGB's How to...manuals</MadCap:conditionalText></p>
-        <h4>2. Tracking</h4>
+        <h6>2. Tracking</h6>
         <p>After adjusting the parameters in the tracker setup (which can remain open during tracking), start picking seeds on a displayed inline/crossline. The corresponding tracking controls are described in the tracking toolbar section.</p>
-        <h4>Tracking in volume</h4>
+        <h6>Tracking in volume</h6>
         <p>Pick one or more seeds and display the tracking area <img src="../../Resources/Images/Icons/trackcube.png" class="Icons" />. Resize the tracking area by dragging the green anchors on the edges of the cube, but do not exceed your computer's memory size or the size of your graphics card memory. If you run out of computer memory, OpendTect will crash.</p>
         <img src="../../Resources/Images/3 How to/Horizon tracking picked and resize.png" class="General_Image" />
-        <h4>Seeds picked and tracking area resized</h4>
+        <h6>Seeds picked and tracking area resized</h6>
         <p>Now, click the auto-track icon <img src="../../Resources/Images/Icons/autotrack.png" class="Icons" />. After the input data is loaded inside the tracking area the horizon is tracked</p>
         <img src="../../Resources/Images/3 How to/Horizon tracking autotracking.png" class="General_Image" />
-        <h4>Auto-track the horizon within the tracking area</h4>
+        <h6>Auto-track the horizon within the tracking area</h6>
         <p>After tracking a part of the 3D-horizon, move the tracking cube to next place (click the top of the tracking cube and drag). A small part of the horizon should be inside the new position of the tracking area.</p>
         <img src="../../Resources/Images/3 How to/Horizon tracking move location.png" class="General_Image" />
-        <h4>Move the tracking cube to next location</h4>
+        <h6>Move the tracking cube to next location</h6>
         <p>When the Cube is at its desired position, click <img src="../../Resources/Images/Icons/autotrack.png" class="Icons" />again.</p>
         <img src="../../Resources/Images/3 How to/Horizon tracking move location next.png" class="General_Image" />
-        <h4>Next location is auto-tracked</h4>
+        <h6>Next location is auto-tracked</h6>
         <p>Optionally, you can chose to track from the seeds only (only the seeds are taken into account for the tracking).</p>
-        <h4>Line tracking and line manual</h4>
+        <h6>Line tracking and line manual</h6>
         <p>Interpreting on lines creates a grid, which allows for greater user control. Line tracking and manual interpretation can be done directly in the 3D scene and optionally in the 2D viewer for better accuracy. To launch a 2D viewer, the tree is used. Right click on the seismic data (at an inline/crossline) in the tree... and select <i>Display &gt; 2D Viewer - VD</i>. Select the track/edit mode button and pick seeds, then move the line and repeat the process.</p>
         <img src="../../Resources/Images/3 How to/Horizon tracking 2D viewer.png" class="General_Image" />
     </body>

@@ -1,25 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="901" MadCap:lastWidth="625">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="759" MadCap:lastWidth="961">
     <head>
     </head>
     <body>
-        <h5>SEG-Y Revision</h5>
+        <h3>SEG-Y Revision</h3>
         <p>After preparing the SEG-Y import you will be asked to revise the type of your SEG-Y file(s). The time consumption and the smoothness of the import phase will depend on the answer.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../../Resources/Images/5 Menu - Survey/Import segy revision yes.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>1. <b>[No]:</b> the file is NOT SEG-Y Rev.1 - treat as legacy (i.e. Rev.0) - For un-lucky users the revision 1 flag might wrongly be set to "Yes" in the line header while obviously the file does not comply with the SEG-Y revision 1 norm. It may happen when the software blindly copies entire headers without refreshing all the necessary characters. "Rev.0" is an older way of loading SEG-Y files: The inline and crossline offset (bytes) must be present in the trace headers and their offsets must be provided to the software since it may vary from file to file.</p>
-        <p>&#160;</p>
-        <p>2. <b>[Mostly]:</b> It's Rev.1 but I may need to overrule some things - The file is 100% SEG-Y Rev.1 but you would like to overrule some particular information e.g. Coordinates, Sampling rate and Start time etc.</p>
-        <p>&#160;</p>
-        <p>3. <b>[Yes]:</b> I know the file is 100% correct SEG-Y Rev.1 - For lucky people, this is by far the most easy and quick way to import your SEG-Y file. No additional settings are required except the final output volume/line name in the OpendTect database.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../../../Resources/Images/5 Menu - Survey/Import segy revision yes.png" class="General_Image" />
+        <ol>
+            <li><b>[No]:</b> the file is NOT SEG-Y Rev.1 - treat as legacy (i.e. Rev.0) - For un-lucky users the revision 1 flag might wrongly be set to "Yes" in the line header while obviously the file does not comply with the SEG-Y revision 1 norm. It may happen when the software blindly copies entire headers without refreshing all the necessary characters. "Rev.0" is an older way of loading SEG-Y files: The inline and crossline offset (bytes) must be present in the trace headers and their offsets must be provided to the software since it may vary from file to file.</li>
+            <li><b>[Mostly]:</b> It's Rev.1 but I may need to overrule some things - The file is 100% SEG-Y Rev.1 but you would like to overrule some particular information e.g. Coordinates, Sampling rate and Start time etc.</li>
+            <li><b>[Yes]:</b> I know the file is 100% correct SEG-Y Rev.1 - For lucky people, this is by far the most easy and quick way to import your SEG-Y file. No additional settings are required except the final output volume/line name in the OpendTect database.</li>
+        </ol>
         <p>After selecting appropriate option, press OK to reach the import window.</p>
         <p>You can save the answer to this question in your survey settings by activating the option "Don't ask again for this survey". If you set this flag by mistake and wish to go back you need to edit the ".defs" file (in the OpendTect survey directory) with a text editor and remove the line "SEG-Y Rev. 1 policy:".</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>
