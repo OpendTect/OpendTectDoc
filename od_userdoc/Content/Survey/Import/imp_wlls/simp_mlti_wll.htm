@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2329" MadCap:lastWidth="1272">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2542" MadCap:lastWidth="961">
     <head>
     </head>
     <body>
         <h4>Simple Multi-Well</h4>
         <p>Well depths in OpendTect are always referenced using their Measured Depth. The alignment with the seismic data in done using the track (deviation survey) data and time-depth and/or checkshot data. The track data provides the relation between lateral coordinates, TVDSS depths and Measured Depths. The checkshot data and time-depth data provides the relation between Measured depths and travel times (TWT). Other formats can be used during import, but will be converted.</p>
-        <p>&#160;</p>
         <p>This utility window allows the quick creation of multiple vertical wells with a constant velocity as depth-time model provider. The table window below can either be filled manually or by reading a file.</p>
-        <p>&#160;</p>
         <p>The following parameters are mandatory:</p>
         <ul>
             <li>Well name</li>
@@ -16,38 +14,19 @@
             <li>Reference datum elevation (KB or other): Altitude measured from sea level of the point MD=0., positive upwards. Can be left to 0 if unknown.</li>
             <li>Total depth (TD): Largest measured depth in the well. This parameter is half optional; If not provided the well track is created such that it will reach the survey base.</li>
         </ul>
-        <p>&#160;</p>
         <p>The following parameters are optional:</p>
         <ul>
             <li>Seismic reference datum (SRD): Altitude measured from sea level of the point TWT=0ms, positive upwards.</li>
             <li>UWI (Unique well identifier): You can input any number, string or combination.</li>
         </ul>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi main.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi main.png" class="General_Image" />
         <p>To read a file containing that information, press <i>Read</i> file and select the input Ascii file. One line in this file should correspond to one line in the output table.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi read file.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi read file.png" class="General_Image" />
         <p>The main work is to specify the presence of a <i>file header</i> and the file <i>format definition</i>. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
         <p>Predefined and saved file formats are available by pressing the <img src="../../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise the format must be manually specified. The <i>Define</i> button gives access to the format definition window.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi format definition.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi format definition.png" class="General_Image" />
         <p>You must specify in the format definition window the column numbers of the X and Y coordinates (absolute values, not relative to the surface coordinates), in the same unit as used when defining the OpendTect survey. Reference datum elevation and TD should also be provided, while the SRD and UWI are less frequently used. Please note that KB and SRD both increase upwards and are positive above sea level, whereas MD is a depth and increases downwards (MD is never negative).</p>
-        <p>&#160;</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" />icon. In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi save format.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi save format.png" class="General_Image" />
     </body>
 </html>
