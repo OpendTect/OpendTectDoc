@@ -1,25 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1381" MadCap:lastWidth="1311">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1435" MadCap:lastWidth="961">
     <head>
     </head>
     <body>
         <h4>Statistical Wavelet Extraction</h4>
         <p>Statistical wavelets can be extracted from the seismic data.</p>
         <p>The User first needs to choose the input seismic, i.e 3D volume or 2D line.</p>
-        <p>&#160;</p>
         <p>If 3D seismic is selected, the following window pops up:</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 3d.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 3d.png" class="General_Image" />
         <p>It is recommended to use a sub-selection of the seismic data, e.g. every 10th inline/crossline, and to use horizons to guide the extraction. The extract length of the seismic data should be at least 1 second TWT.</p>
-        <p>&#160;</p>
         <p>The wavelet length should never be too small (min 50ms), or too large (200ms max). A rule of thumb is that the first side lobe should be fully contained in the wavelet.</p>
-        <p>&#160;</p>
         <p>The extraction is performed using the following workflow:</p>
-        <p>&#160;</p>
         <ol>
             <li>Seismic traces are extracted and tapered</li>
             <li>The auto-correlation of the seismic traces is computed, using the length of the desired wavelet</li>
@@ -28,15 +19,8 @@
             <li>The inverse FFT is computed.</li>
             <li>The zero phase wavelet is the real part of the inverse FFT output</li>
         </ol>
-        <p>&#160;</p>
         <p>The output phase rotation cannot be set in the current version. It is being implemented.</p>
-        <p>&#160;</p>
         <p>The Wavelet extraction in 2D line is shown below:</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 2d.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 2d.png" class="General_Image" />
     </body>
 </html>
