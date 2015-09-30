@@ -1,21 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1185" MadCap:lastWidth="794">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1153" MadCap:lastWidth="987">
     <head>
     </head>
     <body>
         <h4>Wavelet</h4>
-        <p>The wavelet can be selected from the one already available in the project and listed or a new one can be created in the <a href="../../survey/manage/man_wvlts/man_wvlts.htm" target="_self">Wavelet manager</a> accessible from the  icon <img src="../../Resources/Images/Icons/man_wvlt.png" class="Icons" />.</p>
-        <p>&#160;</p>
+        <p>The wavelet can be selected from the one already available in the project and listed or a new one can be created in the <a href="../../survey/manage/man_wvlts/man_wvlts.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Wavelet manager</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Wavelet manager</MadCap:conditionalText> accessible from the  icon <img src="../../Resources/Images/Icons/man_wvlt.png" class="Icons" />.</p>
         <p>Some workflows need to have the synthetic with the same amplitude that the real seismic. The purpose to the scaler is to scale the wavelet by comparison between the synthetic seismic computed at a given horizon and the real seismic extracted in a defined time window regarding this same horizon. To do so click on <i>Scale</i>.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis layer modelling scale synthetics.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>First of all you need to select your reference seismic as <i>Input Cube</i>, then the reference horizon for the extraction of the real seismic data. The reference for the extraction in the synthetics is the reference <a href="displ.htm" target="_self">stratigraphic level</a> selected in the main window. The extraction must be done at a level interpreted in the pseudo-wells and in the real seismic. It is possible to restrict the extraction to an area defined by a polygon. Also the reference level in the pseudo-wells does not necessary correspond to a specific event in all the wells, on the contrary horizons are most often interpreted following a same event. Thus it is possible to snap the synthetics to a specific event. Finally the extraction window around this reference level has to be specified. It will depends on the thickness of the interval of interest of your data. Once all these parameters have been given, you can <i>extract values</i>.</p>
-        <p>&#160;</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis layer modelling scale synthetics.png" class="General_Image" />
+        <p>First of all you need to select your reference seismic as <i>Input Cube</i>, then the reference horizon for the extraction of the real seismic data. The reference for the extraction in the synthetics is the reference <a href="displ.htm" target="_self" MadCap:conditions="Default.ScreenOnly">stratigraphic level</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">stratigraphic level</MadCap:conditionalText> selected in the main window. The extraction must be done at a level interpreted in the pseudo-wells and in the real seismic. It is possible to restrict the extraction to an area defined by a polygon. Also the reference level in the pseudo-wells does not necessary correspond to a specific event in all the wells, on the contrary horizons are most often interpreted following a same event. Thus it is possible to snap the synthetics to a specific event. Finally the extraction window around this reference level has to be specified. It will depends on the thickness of the interval of interest of your data. Once all these parameters have been given, you can <i>extract values</i>.</p>
         <p>The histograms for the synthetics and the the real seismic are displayed side by side to be easily compared. A same pick is identified in the two cases and the difference between the two amplitude values is used to determine the <i>scaling factor</i>. The scaled wavelet can then be saved and used afterwards.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>

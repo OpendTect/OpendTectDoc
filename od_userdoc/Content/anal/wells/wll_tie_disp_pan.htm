@@ -1,87 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3309" MadCap:lastWidth="1253">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3525" MadCap:lastWidth="935">
     <head>
     </head>
     <body>
         <h4>Well-Tie Display Panel</h4>
         <p>The display panel is the main window where the wells are tied to the seismic data. This module is primarly used to update the current (loaded) time-depth curve. Previous, intermediate and final TD curves can be exported to ascii at any moment using the following icon <img src="../../Resources/Images/Icons/z2t.png" class="Icons" />.</p>
-        <p>&#160;</p>
         <p>A secondary output of the synthetic-to-seismic tie is the estimated wavelet, that is estimated at any time and must be saved explicitly.</p>
-        <p>&#160;</p>
         <p>The view is separated in three frames, from left to right:</p>
-        <p>&#160;</p>
         <ul>
             <li>The sonic (red) and density (blue) logs.</li>
             <li>The computed impedance (red) and reflectivity (blue) logs.</li>
             <li>The computed/extracted synthetic and composite seismic traces.</li>
         </ul>
-        <p>&#160;</p>
-        <p class="note">The raw logs are shown before upscaling. The vertical axis of all 3 frames is in travel time.</p>
-        <p>&#160;</p>
+        <p class="tip">The raw logs are shown before upscaling. The vertical axis of all 3 frames is in travel time.</p>
         <p>Key points:</p>
-        <p>&#160;</p>
         <ul>
             <li>The time-depth conversion and synthetic seismic traces computation is done using the current time-depth curve and checkshot (if available).</li>
             <li>The checkshot data acts as a strong constraint, i.e. any input and output time-depth curve will be forced to honour the checkshot.</li>
-            <li>The time of the depth TVDSD=0 will always remain at TWT=0 even when applying a bulk shift: The difference is absorbed between the point TVDSS=0 and the first sonic log sample. The reference datum elevations definitions are summarized in the <a href="../../Survey/Import/imp_wlls/trk.htm" target="_self">well track import</a> chapter.</li>
+            <li>The time of the depth TVDSD=0 will always remain at TWT=0 even when applying a bulk shift: The difference is absorbed between the point TVDSS=0 and the first sonic log sample. The reference datum elevations definitions are summarized in the <a href="../../Survey/Import/imp_wlls/trk.htm" target="_self" MadCap:conditions="Default.ScreenOnly">well track import</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">well track import</MadCap:conditionalText> chapter.</li>
         </ul>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic main tie window.png" class="General_Image" />
-        </p>
+        <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic main tie window.png" class="General_Image" />
         <p><i>Display panel for the well-seismic tie.</i>
         </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
         <p>At the bottom right corner of this display panel, there are several tracking controls. The options are used to pick an event to match the seismic and synthetic traces. After picking the event, press <i>Apply Changes</i> to reflect the changes and update the time to depth model.</p>
-        <p>&#160;</p>
         <p>
             <img src="../../Resources/Images/Icons/z2t.png" class="Icons" /> Launches the Edit Time/Depth model window. In the pop-up window, press Export button to export the time-depth model as an ASCII file.</p>
         <p>
             <img src="../../Resources/Images/Icons/save.png" class="Icons" /> Launches the save option.</p>
-        <p>&#160;</p>
         <p>You can either save the created logs:</p>
-        <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic save log.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic save log.png" class="General_Image" />
         <p>Or save the synthetic trace as a seismic volume.</p>
-        <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic save seismic cube.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic save seismic cube.png" class="General_Image" />
         <p>
             <img src="../../Resources/Images/Icons/snapshot.png" class="Icons" /> Takes the snapshot of the display panel</p>
         <p>
-            <img src="../../Resources/Images/Icons/disppars.png" class="Icons" /> Display settings/properties for the panel. The settings are similar to that of the <a href="../../get_started/2d_view.htm" target="_popup">normal 2D-viewer</a> model</p>
+            <img src="../../Resources/Images/Icons/disppars.png" class="Icons" /> Display settings/properties for the panel. The settings are similar to that of the <a href="../../get_started/2d_view.htm" target="_popup" MadCap:conditions="Default.ScreenOnly">normal 2D-viewer</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">normal 2D-viewer</MadCap:conditionalText> model</p>
         <p>
-            <img src="../../Resources/Images/Icons/zoomforward.png" class="Icons" style="height: 28px;width: auto;" /> Zoom-in</p>
+            <img src="../../Resources/Images/Icons/zoomforward.png" class="Icons" /> Zoom-in</p>
         <p>
-            <img src="../../Resources/Images/Icons/zoombackward.png" class="Icons" style="width: auto;height: 28px;" /> Zoom-out</p>
+            <img src="../../Resources/Images/Icons/zoombackward.png" class="Icons" /> Zoom-out</p>
         <p>
-            <img src="../../Resources/Images/Icons/altview.png" class="Icons" style="width: auto;" /> Toggles interact mode ON/OFF</p>
+            <img src="../../Resources/Images/Icons/altview.png" class="Icons" /> Toggles interact mode ON/OFF</p>
         <p>
-            <img src="../../Resources/Images/Icons/seedpickmode.png" class="Icons" style="height: auto;" /> Pick seeds on the seismic or synthetic to update the time to depth model.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+            <img src="../../Resources/Images/Icons/seedpickmode.png" class="Icons" /> Pick seeds on the seismic or synthetic to update the time to depth model.</p>
         <p><b>Change in depth/time model</b>
         </p>
         <ul>
             <li>Choose a <i>tracking mode</i> (e.g. maxima, minima, zero-crossings etc.) and select events in the synthetics/seismic displays by first selecting the <i>Pick mode</i> button. Events can not be picked separately. Each event in the synthetics must be linked with an other event in the seismic.</li>
             <li>Once all the events are selected on both synthetics/seismic displays, press <i>Apply changes</i> button. The depth/time model and the whole computational workflow will be recomputed. If needed, repeat the operation.</li>
             <li>The <i>Display additional information</i> button will open the <i>Cross-checking parameters</i> window, and provide useful cross-checking tools, such as correlation coefficient and estimated wavelet in a specific depth range. The estimated wavelet displayed here can also be saved:</li>
-            <li>
-                <p>
-                    <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic crosscheck parameters.png" class="General_Image" />
-                </p>
-                <p>&#160;</p>
-            </li>
+        </ul>
+        <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic crosscheck parameters.png" class="General_Image" />
+        <ul>
             <li>The depth/time table can be saved between each state by pushing the <i>Save</i> button, in the toolbar to the right of the synthetics/seismic displays, and saving with an appropriate name. The <i>View/Edit Model</i> button allows the user to import a depth/time table.</li>
             <li>Once a good correlation has been established, click on <i>Ok/Save</i> and save the depth/time model.</li>
         </ul>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>

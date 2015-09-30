@@ -1,83 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2525" MadCap:lastWidth="1279">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3078" MadCap:lastWidth="961">
     <head>
     </head>
     <body>
         <h3>Cross-Plot Table</h3>
         <p>The crossplot table displays the extracted data. It is used to edit and plot the data for a crossplot. A row in the table corresponds to one extracted data point, annotated by its position (X, Y and Z) and followed by the collected attributes values (forming at vector, from left to right: logs, attributes, stored data). The star adjacent to an attribute name indicates sorted column. Empty cells represent attributes than could not be extracted with the provided the settings for data extraction.</p>
-        <p>&#160;</p>
         <p>The table enables the manipulation and edition of the collected data, prior to making cross-plots. For instance, it is possible to sort the data from an attribute, and to delete the first or last rows, before plotting the data. Please note that the table window is interactively linked with the cross-plot window. Any editing done in the cross-plot window will reflect in the table window that remains open and active while working in the cross-plot window.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../../Resources/Images/6 Analysis/Analysis crossplot table main.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>Standard workflow: Save <img src="../../Resources/Images/Icons/save.png" class="Icons" />, edit, click in a column and then <img src="../../Resources/Images/Icons/axis-x.png" class="Icons" style="width: auto;height: 28px;" />, click in another column and then <img src="../../Resources/Images/Icons/axis-add-y.png" class="Icons" style="width: auto;" />, launch the cross-plot window <img src="../../Resources/Images/Icons/xplot.png" class="Icons" />.</p>
-        <p>&#160;</p>
-        <p class="note"> You can select a column by either clicking on its title cell or by clicking on any single cell.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis crossplot table main.png" class="General_Image" />
+        <p>Standard workflow: Save <img src="../../Resources/Images/Icons/save.png" class="Icons" />, edit, click in a column and then <img src="../../Resources/Images/Icons/axis-x.png" class="Icons" />, click in another column and then <img src="../../Resources/Images/Icons/axis-add-y.png" class="Icons" />, launch the cross-plot window <img src="../../Resources/Images/Icons/xplot.png" class="Icons" />.</p>
+        <p class="tip"> You can select a column by either clicking on its title cell or by clicking on any single cell.</p>
         <p>The toolbar contains the following editing tools:</p>
-        <p>&#160;</p>
-        <ul>
-            <li>
-                <img src="../../Resources/Images/Icons/save.png" class="Icons" />Saves the data shown in the table to a file (simple text file or OpendTect object). OpendTect object is a special format to retrieve (open) the cross-plot. The format is called position vector data and the data is saved in the survey sub-directory (/Features/*.pvds). The Text file selection outputs the data to an ASCII (column sorted) file that later on can be used in 3rd party softwares e.g.Excel.</li>
-        </ul>
-        <blockquote>
-            <p>
-                <img src="../../Resources/Images/6 Analysis/Analysis crossplot well attribute save as.png" class="General_Image" />
-            </p>
-        </blockquote>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <ul>
-            <li>
-                <img src="../../Resources/Images/Icons/open.png" class="Icons" /> Open/Retrieve the stored crossplot data. An alternative short-cut is present in the menu <i>Analysis -&gt; Cross-plot -&gt; <a href="open_xplot.htm" target="_self">Open Crossplot</a></i>.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/axis-x.png" class="Icons" style="width: auto;height: 28px;" /> Assigns the X-axis of the cross-plot to a selected/highlighted column.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/axis-add-y.png" style="width: auto;" class="Icons" /> Assigns the Y-axis of the cross-plot to selected/highlighted column.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/axis-rm-y.png" class="Icons" style="width: auto;height: 28px;" /> Removes the selected Y-axis for cross-plotting.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/delselrows.png" class="Icons" /> Removes the selected rows in the table.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/axis-prev.png" class="Icons" style="width: 29px;height: 29px;" /> Moves the selection of the primary Y-axis one column to the left. The cross-plot gets updated accordingly.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/axis-next.png" class="Icons" /> Moves the selection of the primary Y-axis one column to the right. The cross-plot gets updated accordingly.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/sortcol.png" class="Icons" /> Sorts the selected column to an increasing order, from top to bottom.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/plus.png" class="Icons" /> Add an empty column in the table. In the pop-up window, the column name is provided. The mathematical operation is done to compute the data for the new column. An example is the Acoustic impedance data computed from the velocity and density logs available in the crossplot table. For further information on the mathematical operators, please find the description on the <a href="../../app_a/maths.htm" target="_self">Mathematics</a> attribute in the Appendix.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/minus.png" class="Icons" /> Removes the selected column from the crossplot.</li>
-            <li>
-                <img src="../../Resources/Images/6 Analysis/Analysis crossplot show data displayed.png" class="General_Image" style="height: 28px;width: auto;" /> Displays selected percentage of the data. If a lot a data was extracted not all will be displayed in the table. Nevertheless the sort and remove lines tools may still apply to all the extracted data, upon request of the user.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/toggxy.png" class="Icons" /> Toggles on/off the display of the coordinates.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/toggz.png" class="Icons" /> Toggles on/off the display of Z values.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/statsinfo.png" class="Icons" /> Shows histogram and statistics on the selected column.</li>
-            <li>
-                <img src="../../Resources/Images/Icons/variogram.png" class="Icons" /> Allows to achieve <i>vertical variogram analysis</i>. A variogram describes the spatial continuity. The vertical variogram can be computed for any of the attribute or log from the extracted data. To achieve a variogram analysis from well log, the log data is resampled at the variogram processing step and de-trended prior to the variogram computation itself. In the pop-up windows, the different parameters can be defined: the maximum range (maximum distance allowed between the pairs for the analysis), the step and the minimum pairs per log distance. Once these parameters provided, the variogram is computed and the analysis can be performed.</li>
-        </ul>
-        <p>&#160;</p>
-        <blockquote>
-            <blockquote>
-                <p>
-                    <img src="../../Resources/Images/6 Analysis/Analysis crossplot variogram analysis pars.png" class="General_Image" style="vertical-align: top;" /> <img src="../../Resources/Images/6 Analysis/Analysis crossplot variogram analysis.png" class="General_Image" /></p>
-                <p><i>Variogram analysis: Set parameters (left), main window(right) : blue = real data, green = model</i>
-                </p>
-                <p>&#160;</p>
-                <p>A synthetic variogram can be set in changing the sill, the range and also the variogram model (exponential, spherical, gaussian). The objective is to get a synthetic variogram that best describes the real variogram. The data can be analyzed for each well or for all of them. The analysis results can be used when achieving inversion.</p>
-            </blockquote>
-        </blockquote>
-        <ul>
-            <li>
-                <img src="../../Resources/Images/Icons/xplot.png" class="Icons" /> Launches the <a href="xplot_win.htm" target="_self">crossplot window</a>.</li>
-        </ul>
-        <p>&#160;</p>
-        <p>&#160;</p>
-    </body>
+        <p>
+            <img src="../../Resources/Images/Icons/save.png" class="Icons" />Saves the data shown in the table to a file (simple text file or OpendTect object). OpendTect object is a special format to retrieve (open) the cross-plot. The format is called position vector data and the data is saved in the survey sub-directory (/Features/*.pvds). The Text file selection outputs the data to an ASCII (column sorted) file that later on can be used in 3rd party softwares e.g.Excel.</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis crossplot well attribute save as.png" class="General_Image" />
+        <p>
+            <img src="../../Resources/Images/Icons/open.png" class="Icons" /> Open/Retrieve the stored crossplot data. An alternative short-cut is present in the menu <i>Analysis -&gt; Cross-plot -&gt; <a href="open_xplot.htm" target="_self">Open Crossplot</a></i>.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/axis-x.png" class="Icons" /> Assigns the X-axis of the cross-plot to a selected/highlighted column.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/axis-add-y.png" class="Icons" /> Assigns the Y-axis of the cross-plot to selected/highlighted column.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/axis-rm-y.png" class="Icons" /> Removes the selected Y-axis for cross-plotting.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/delselrows.png" class="Icons" /> Removes the selected rows in the table.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/axis-prev.png" class="Icons" /> Moves the selection of the primary Y-axis one column to the left. The cross-plot gets updated accordingly.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/axis-next.png" class="Icons" /> Moves the selection of the primary Y-axis one column to the right. The cross-plot gets updated accordingly.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/sortcol.png" class="Icons" /> Sorts the selected column to an increasing order, from top to bottom.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/plus.png" class="Icons" /> Add an empty column in the table. In the pop-up window, the column name is provided. The mathematical operation is done to compute the data for the new column. An example is the Acoustic impedance data computed from the velocity and density logs available in the crossplot table. For further information on the mathematical operators, please find the description on the <a href="../../app_a/maths.htm" target="_self">Mathematics</a> attribute in the Appendix.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/minus.png" class="Icons" /> Removes the selected column from the crossplot.</p>
+        <p>
+            <img src="../../Resources/Images/6 Analysis/Analysis crossplot show data displayed.png" class="General_Image" /> Displays selected percentage of the data. If a lot a data was extracted not all will be displayed in the table. Nevertheless the sort and remove lines tools may still apply to all the extracted data, upon request of the user.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/toggxy.png" class="Icons" /> Toggles on/off the display of the coordinates.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/toggz.png" class="Icons" /> Toggles on/off the display of Z values.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/statsinfo.png" class="Icons" /> Shows histogram and statistics on the selected column.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/variogram.png" class="Icons" /> Allows to achieve <i>vertical variogram analysis</i>. A variogram describes the spatial continuity. The vertical variogram can be computed for any of the attribute or log from the extracted data. To achieve a variogram analysis from well log, the log data is resampled at the variogram processing step and de-trended prior to the variogram computation itself. In the pop-up windows, the different parameters can be defined: the maximum range (maximum distance allowed between the pairs for the analysis), the step and the minimum pairs per log distance. Once these parameters provided, the variogram is computed and the analysis can be performed.</p>
+        <img src="../../Resources/Images/6 Analysis/Analysis crossplot variogram analysis pars.png" class="General_Image" style="vertical-align: top;" /> <img src="../../Resources/Images/6 Analysis/Analysis crossplot variogram analysis.png" class="General_Image" /><p><i>Variogram analysis: Set parameters (left), main window(right) : blue = real data, green = model</i></p><p>A synthetic variogram can be set in changing the sill, the range and also the variogram model (exponential, spherical, gaussian). The objective is to get a synthetic variogram that best describes the real variogram. The data can be analyzed for each well or for all of them. The analysis results can be used when achieving inversion.</p><p><img src="../../Resources/Images/Icons/xplot.png" class="Icons" /> Launches the <a href="xplot_win.htm" target="_self">crossplot window</a>.</p></body>
 </html>
