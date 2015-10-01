@@ -1,28 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="New Target"
+  Comment=""
   Type="PDF"
   Destinations=""
   GlossaryTermConversion="marked"
   PatchHeadingLevels="true"
   conditions="Default.PrintOnly"
   ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
-  InjectEmptyPages="true"
+  InjectEmptyPages="false"
   MasterToc="/Project/TOCs/Master.fltoc"
-  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  Medium="print">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
-    GenerateIndexProxy="true"
-    GenerateGlossaryProxy="true" />
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
   <DocumentProperties
-    Title="OpendTect User Documentation - Version 5.0"
+    Title="OpendTect User Documentation - Version 6.0"
     Author="dGB Earth Sciences" />
   <PDF
     TitleBar="DocumentTitle"
-    PageLayout="SinglePage"
     CollapsedBookmarks="true"
     FullScreen="false"
-    PageMode="UseNone" />
+    PageMode="UseOutlines"
+    ShowUsedBookmarks="false" />
+  <RelationshipTables />
 </CatapultTarget>

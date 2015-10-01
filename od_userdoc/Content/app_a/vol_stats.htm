@@ -1,94 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1658" MadCap:lastWidth="871">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1586" MadCap:lastWidth="935">
     <head>
     </head>
     <body>
-        <h1>Volume Statistics</h1>
+        <h2>Volume Statistics</h2>
         <p><b>Name</b>
         </p>
         <p>Volume statistics -- Attribute that returns statistical properties</p>
-        <p>&#160;</p>
         <p><b>Description</b>
         </p>
         <p>This attribute extracts data from a cube or line using a small 3D probe and returns a statistical property from the samples collected.</p>
-        <p>&#160;</p>
-        <p style="font-weight: bold;">Input Parameters</p>
-        <p style="font-weight: bold;">&#160;</p>
-        <p style="font-weight: bold;">
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D statistics volume statistics.png" class="General_Image" />
+        <p><b>Input Parameters</b>
         </p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D statistics volume statistics optical stack.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D statistics volume statistics.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D statistics volume statistics optical stack.png" class="General_Image" />
         <p>The probe is defined using relative times/depths and trace stepouts with respect to the actual location. The probe can be:</p>
-        <blockquote>
-            <ul>
-                <li>Cube: The three dimensions listed above define the 3D cube.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Cylinder: The cylinder option requires the same settings as the cube, but traces outside of the ellipsoid will not be used.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Optical stack: The probe is not 3D but a 2D vertical plane in the direction of the data, or perpendicular to it. This settings is useful only when applied on random lines where the azimuth is different from the inline and crossline direction.</li>
-            </ul>
-        </blockquote>
+        <ul>
+            <li>Cube: The three dimensions listed above define the 3D cube.</li>
+            <li>Cylinder: The cylinder option requires the same settings as the cube, but traces outside of the ellipsoid will not be used.</li>
+            <li>Optical stack: The probe is not 3D but a 2D vertical plane in the direction of the data, or perpendicular to it. This settings is useful only when applied on random lines where the azimuth is different from the inline and crossline direction.</li>
+        </ul>
         <p>Please note that the probe direction can be reduced by using:</p>
-        <blockquote>
-            <ul>
-                <li>A [0,0] time gate: The probe becomes a flat rectangle or disk. Only one sample per trace is used at the actual time/depth.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>A 0 stepout: Only one sample is used in one or both directions.</li>
-            </ul>
-        </blockquote>
+        <ul>
+            <li>A [0,0] time gate: The probe becomes a flat rectangle or disk. Only one sample per trace is used at the actual time/depth.</li>
+            <li>A 0 stepout: Only one sample is used in one or both directions.</li>
+        </ul>
         <p><b>Output</b>
         </p>
         <p>The following statistical properties can be output:</p>
-        <blockquote>
-            <ul>
-                <li>Average</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Median</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Variance = Square root of the standard deviation</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Min, Max, Sum</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Norm Variance</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>Most Frequency</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li>RMS: Root Mean Square</li>
-            </ul>
-        </blockquote>
+        <ul>
+            <li>Average</li>
+            <li>Median</li>
+            <li>Variance = Square root of the standard deviation</li>
+            <li>Min, Max, Sum</li>
+            <li>Norm Variance</li>
+            <li>Most Frequency</li>
+            <li>RMS: Root Mean Square</li>
+        </ul>
         <p>Please note that undefined values collected by the probe will not be used for the computation. In the case of a stack only the valid values will define the number of values.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>

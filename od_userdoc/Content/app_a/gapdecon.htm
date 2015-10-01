@@ -1,79 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1917" MadCap:lastWidth="1266">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2948" MadCap:lastWidth="948">
     <head>
     </head>
     <body>
-        <h1>GapDecon</h1>
+        <h2>GapDecon</h2>
         <p><b>Name</b>
         </p>
         <p>GapDecon -- Attribute that aims to attenuate repetitions of primary reflections (multiples).<br /></p>
-        <p>&#160;</p>
         <p><b>Description</b>
         </p>
         <p>The type of multiple removal algorithm chosen for this application is the well known inversed filtering method also known as Gap deconvolution. This filter aims to attenuate a user-defined part of an auto-correlation function. The underlying idea is that multiples in the data are secondary reflections, i.e repetitions of the primary reflections that show up in the auto-correlation function at a time that corresponds with the extra travel time. The filter can be applied on-the-fly or in batch-mode to produce a filtered output cube. The user defines the <i>GapDecon</i> attribute from the list and specifies a number of input parameters.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <blockquote>
-            <ul>
-                <li><b>Correlation window</b> = the window for calculating the auto-correlation function.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Examine</b> = pressing this button will open a new window where the user selects a subset of the data (e.g one inline, or one cross-line) on which the result of the auto-correlation will be calculated and displayed for filter design purposes. This result can be used to determine the lag and gap size (see example below).</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Lag-size</b> = the window length in the auto-correlation function that is unaffected by the filter. This window contains the wavelet-shape information.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Gap-size</b> = the window length in the auto-correlation function that the filter aims to blank. This window contains repetitive (multiple) information.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Noise level</b> = random noise that can be added to stabilize the filter derivation. The noise level is set to 1% by default.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Stepout</b> = a moving average across neighbouring traces that is applied prior to the calculation of the auto-correlation function. This trace averaging results in a smoother end-result. The higher the stepout, the smoother the result.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Input is</b> = The user can set the input to minimum or zero phase; if the input is zero phase, a phase rotation of 90 degrees is applied before applying the GapDecon filter.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Output is</b> = The user may set the output to zero phase, then the inverse 90 degrees rotation is applied after the filtering.</li>
-            </ul>
-        </blockquote>
-        <blockquote>
-            <ul>
-                <li><b>Check parameters</b> = check whether the (multiple) energy has indeed been removed. A QC of the parameters : the GapDecon-filter with the selected parameters, lag 44 and gap 100 (see example below), is applied on a user defined line and the auto-correlation of the filtered data is displayed in a 2d-viewer to check whether the parameters are correct. If they are not correct, the parameters can still be changed.</li>
-            </ul>
-            <p>&#160;</p>
-        </blockquote>
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon.png" class="General_Image" />
+        <ul>
+            <li><b>Correlation window</b> = the window for calculating the auto-correlation function.</li>
+            <li><b>Examine</b> = pressing this button will open a new window where the user selects a subset of the data (e.g one inline, or one cross-line) on which the result of the auto-correlation will be calculated and displayed for filter design purposes. This result can be used to determine the lag and gap size (see example below).</li>
+            <li><b>Lag-size</b> = the window length in the auto-correlation function that is unaffected by the filter. This window contains the wavelet-shape information.</li>
+            <li><b>Gap-size</b> = the window length in the auto-correlation function that the filter aims to blank. This window contains repetitive (multiple) information.</li>
+            <li><b>Noise level</b> = random noise that can be added to stabilize the filter derivation. The noise level is set to 1% by default.</li>
+            <li><b>Stepout</b> = a moving average across neighbouring traces that is applied prior to the calculation of the auto-correlation function. This trace averaging results in a smoother end-result. The higher the stepout, the smoother the result.</li>
+            <li><b>Input is</b> = The user can set the input to minimum or zero phase; if the input is zero phase, a phase rotation of 90 degrees is applied before applying the GapDecon filter.</li>
+            <li><b>Output is</b> = The user may set the output to zero phase, then the inverse 90 degrees rotation is applied after the filtering.</li>
+            <li><b>Check parameters</b> = check whether the (multiple) energy has indeed been removed. A QC of the parameters : the GapDecon-filter with the selected parameters, lag 44 and gap 100 (see example below), is applied on a user defined line and the auto-correlation of the filtered data is displayed in a 2d-viewer to check whether the parameters are correct. If they are not correct, the parameters can still be changed.</li>
+        </ul>
         <p><b>Spiking Deconvolution.</b>
         </p>
         <p>The Gap Decon attribute can also be used for Spiking Deconvolution or Whitening. The goal of Spiking Deconvolution is to flatten the output spectrum. This is achieved by shortening the embedded wavelet and attempting to make it as close as possible to a spike (zero-lag spike). One should keep in mind that the frequency bandwith of the data might limit the extent to which this whitening is possible. At higher frequencies, Spiking Deconvolution might cause an increase in noise.</p>
-        <p>&#160;</p>
         <p><b>Example</b>
         </p>
-        <p>&#160;</p>
         <p>In the attribute defined above, we define an auto-correlation window between 300ms and 1200ms. After pressing '<i>Examine</i>' we can see that the following parameters could give us the result we desire: a lag of 44 ms and a gap of 100ms. Pressing 'Check Parameters' shows the effect this would have if we were to output this attribute with the current parameter settings:</p>
-        <p>&#160;</p>
-        <p>
-            <img class="General_Image" src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example examine.png" style="width: auto;height: 400px;" /> <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example check params.png" class="General_Image" style="height: 400px;width: auto;" /></p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-    </body>
+        <img class="General_Image" src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example examine.png" /> <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example check params.png" class="General_Image" /></body>
 </html>

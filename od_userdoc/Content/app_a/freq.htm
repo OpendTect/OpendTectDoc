@@ -1,79 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2922" MadCap:lastWidth="941">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="3233" MadCap:lastWidth="987">
     <head>
     </head>
     <body>
-        <h1>Frequency</h1>
+        <h2>Frequency</h2>
         <p><b>Name</b>
         </p>
         <p>Frequency -- Response attribute that returns frequency properties</p>
-        <p>&#160;</p>
         <p><b>Description</b>
         </p>
-        <p>&#160;</p>
         <p><b>Input Parameters</b>
         </p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency costaper.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency costaper.png" class="General_Image" />
         <p>The specified <i>time-gate</i> is transformed to the Fourier domain and the requested <i>output</i> is calculated. The time-gate is tapered with the specified <i>Window/Taper</i> prior to Fourier Transform. The shape of the various tapers is shown in the figure below.</p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Frequency tapers.png" class="General_Image" />
-        </p>
-        <p>&#160;</p>
+        <img src="../Resources/Images/Appendix A/Frequency tapers.png" class="General_Image" />
         <p>If <i>Normalize</i> is enabled, the frequency spectrum is normalized with regard to its area. This will make it possible to compare attributes from areas with high and low energy.</p>
-        <p>&#160;</p>
         <p><b>Output</b>
         </p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency dominant frequency.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency dominant frequency.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Frequency outputs.png" class="General_Image" />
+        <p><i>All possible Frequency outputs are in X-axis, Y-axis = Amplitude values</i>
         </p>
-        <p>&#160;</p>
-        <p>
-            <img src="../Resources/Images/Appendix A/Frequency outputs.png" class="General_Image" />
-        </p>
-        <p style="font-style: italic;">All possible Frequency outputs are in X-axis, Y-axis = Amplitude values</p>
-        <p style="font-style: italic;">&#160;</p>
         <p><b>Dominant frequency</b>
         </p>
         <p>Returns the dominant frequency from the frequency spectrum--the frequency with the highest amplitude</p>
-        <p>&#160;</p>
         <p><b>Average frequency</b>
         </p>
         <p>Returns the arithmetic mean of the frequency spectrum.</p>
-        <p>&#160;</p>
         <p><b>Median frequency</b>
         </p>
         <p>Returns the weighted median value of the frequency spectrum, which is the frequency at half the spectral area on each side. The median frequency might be somewhat more robust than average frequency, at the cost of lower precision.</p>
-        <p>&#160;</p>
         <p><b>Average frequency squared</b>
         </p>
         <p>Returns the average of the squared frequencies.</p>
-        <p>&#160;</p>
         <p><b>Maximum spectral amplitude</b>
         </p>
         <p>Returns the maximum amplitude of the frequency spectrum, i.e. the amplitude of the dominant frequency.</p>
-        <p>&#160;</p>
         <p><b>Spectral area beyond dominant frequency</b>
         </p>
         <p>Returns the spectral area beyond the dominant frequency (see figure below).</p>
-        <p>&#160;</p>
         <p><b>Absorption quality factor</b>
         </p>
         <p>Returns the area beyond the dominant frequency weighted by frequency.</p>
-        <p>&#160;</p>
         <p><b>Frequency slope fall</b>
         </p>
         <p>Returns the peakedness of the spectrum. It is defined as: 1+(MSA-Spectral Area)/(MSA+Spectral Area). A value approaching zero indicates a flat distribution while a value approaching one indicates a peaked distribution.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>
