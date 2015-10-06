@@ -11,7 +11,8 @@
   InjectEmptyPages="false"
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  Medium="print">
+  Medium="print"
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
