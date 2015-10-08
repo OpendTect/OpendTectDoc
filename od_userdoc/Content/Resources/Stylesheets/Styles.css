@@ -269,3 +269,9 @@ ul.ordered_list > li > ol
 	list-style-type: decimal;
 }
 
+td
+{
+	border: solid 1px #000000;
+	vertical-align: top;
+}
+
