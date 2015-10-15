@@ -130,6 +130,7 @@ MadCap|breadcrumbsProxy
 	font-style: italic;
 	font-size: 0.85em;
 	mc-breadcrumbs-count: 7;
+	mc-breadcrumbs-prefix: 'You are here: OpendTect 5.0 > ';
 }
 
 p.toc_heading
