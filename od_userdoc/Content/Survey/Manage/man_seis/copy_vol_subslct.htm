@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="790" MadCap:lastWidth="948">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="847" MadCap:lastWidth="765">
     <head>
     </head>
     <body>
@@ -14,7 +14,7 @@
             <li>All: This last option will output the maximum number of trace with respect to the available data and possible stepouts</li>
             <li>The use of larger <i>vertical</i> stepouts will cause the data to be decimated in the given direction. Please note that an anti-alias filter (using the <a href="../../../app_a/freq_fltr.htm" target="_self" MadCap:conditions="Default.ScreenOnly">frequency filter attribute</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">frequency filter attribute</MadCap:conditionalText>) should be applied before decimating data. The copy-cube does not do it.</li>
             <li>The use of smaller <i>vertical</i> stepouts will cause the data to be interpolated with a polynomial interpolation. This is mostly appropriate for seismic data.</li>
-            <li>3Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</li>
+            <li>Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</li>
             <li>The copy-cube option does not do lateral interpolation of the data (but it can decimate). Use the <a href="../../../anal/vol_build_setup/vel_grdr.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Velocity gridder</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Velocity gridder</MadCap:conditionalText> step of the volume builder to laterally grid a coarse volume.</li>
         </ul>
     </body>
