@@ -16,7 +16,20 @@
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Skin="/Project/Skins/HTML5.flskn"
   conditions="Default.ScreenOnly"
-  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] ">
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
+  EnableSitemap="true"
+  SitemapWebUrl="http://www.opendtect.org/500/doc/od_userdoc/">
   <PrintedOutput
     CollapseMargins="true" />
+  <MetaTags>
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="description"
+      content="OpendTect 5.0 User Documentation" />
+    <meta
+      name="keywords"
+      content="opendtect, documentation, doc, manual, help, howto, processing, survey, import, export, seg-y, seismic, scenes, analysis, horizons, faults, wells, wavelets, bodies, geometry, madagascar, gmt" />
+  </MetaTags>
 </CatapultTarget>
