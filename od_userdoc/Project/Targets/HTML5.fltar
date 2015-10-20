@@ -31,5 +31,8 @@
     <meta
       name="keywords"
       content="opendtect, documentation, doc, manual, help, howto, processing, survey, import, export, seg-y, seismic, scenes, analysis, horizons, faults, wells, wavelets, bodies, geometry, madagascar, gmt" />
+    <meta
+      name="robots"
+      content="index,follow" />
   </MetaTags>
 </CatapultTarget>
