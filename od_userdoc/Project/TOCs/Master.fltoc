@@ -585,7 +585,7 @@
         Link="/Content/survey/manage/man_pdf.htm">
         <TocEntry
           Title="Generate Probability Density Functions"
-          Link="/Content/Survey/Manage/gen_pdfs.htm" />
+          Link="/Content/survey/manage/gen_pdfs.htm" />
       </TocEntry>
       <TocEntry
         Title="Manage Seismics"
