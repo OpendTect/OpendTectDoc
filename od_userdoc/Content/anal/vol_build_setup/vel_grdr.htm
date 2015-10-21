@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1662" MadCap:lastWidth="1292">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1720" MadCap:lastWidth="1144">
     <head><title></title>
     </head>
     <body>
-        <h3>Velocity Gridder</h3>
+        <h1 class="h3">Velocity Gridder</h1>
         <p>The gridding will create a volume out of a sparsely sampled dataset. <b>The input source MUST be <a href="../../survey/import/imp_seis/tagged_seis.htm" target="_self">tagged</a> with a velocity type.</b> Indeed the gridding is applied to the time-depth relation hold by the velocity source and not on the amplitudes of the velocity source. This preserves the time-depth relation and blocky-ness of interval velocity models. The gridded time-depth relation is converted back to the input velocity type in the output volume.</p>
         <p>&#160;</p>
         <p>However any other data type could be gridded by this module (Thomsen parameters, temperatures, ...). These other types must be <a href="../../survey/import/imp_seis/tagged_seis.htm" target="_self">tagged</a> as delta, epsilon or eta before being used for gridding. The functions will be vertically interpolated using a linear 1D interpolation before the lateral gridding.</p>

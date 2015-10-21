@@ -8,7 +8,7 @@ body
 h1
 {
 	font-weight: bold;
-	font-size: 24.0pt;
+	font-size: 24pt;
 }
 
 h2
@@ -130,7 +130,7 @@ MadCap|breadcrumbsProxy
 	font-style: italic;
 	font-size: 0.85em;
 	mc-breadcrumbs-count: 7;
-	mc-breadcrumbs-prefix: 'You are here: OpendTect 5.0 > ';
+	mc-breadcrumbs-prefix: 'You are here: OpendTect 5.0 Doc > ';
 }
 
 p.toc_heading
@@ -242,5 +242,30 @@ p.note_after
 	line-height: 30px;
 	margin-left: 3em;
 	padding-left: 40px;
+}
+
+h1.h2
+{
+	font-size: 18pt;
+}
+
+h1.h3
+{
+	font-size: 14pt;
+}
+
+h1.h4
+{
+	font-size: 12pt;
+}
+
+h1.h5
+{
+	font-size: 10pt;
+}
+
+h1.h6
+{
+	font-size: 8pt;
 }
 
