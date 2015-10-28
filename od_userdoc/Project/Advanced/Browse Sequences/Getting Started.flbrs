@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Read this first"
+    Link="/Content/get_started/sys_overview.htm">
+    <TocEntry
+      Title="Toolbars"
+      Link="/Content/get_started/tbars/tbars.htm" />
+    <TocEntry
+      Title="Mouse Controls - Scenes and Graphical Interaction"
+      Link="/Content/get_started/mouse_cntrls.htm" />
+    <TocEntry
+      Title="Color Tables"
+      Link="/Content/get_started/col_tabs.htm" />
+    <TocEntry
+      Title="General Selection Window"
+      Link="/Content/get_started/gen_sel_win.htm" />
+    <TocEntry
+      Title="2D Viewer"
+      Link="/Content/get_started/2d_view.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Then this"
+    Link="/Content/0_rmvd_dltd/how_to/quickstart_proj/quickstart_proj.htm">
+    <TocEntry
+      Title="Setup 2D &amp; 3D Survey"
+      Link="/Content/0_rmvd_dltd/how_to/quickstart_proj/setup_surv.htm" />
+    <TocEntry
+      Title="Load Seismic (2D &amp; 3D)"
+      Link="/Content/0_rmvd_dltd/how_to/quickstart_proj/load_seis.htm" />
+    <TocEntry
+      Title="Interpret Horizons"
+      Link="/Content/0_rmvd_dltd/how_to/int_hors/int_hors.htm" />
+  </TocEntry>
+</CatapultToc>

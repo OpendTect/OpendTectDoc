@@ -16,7 +16,7 @@
     Link="/Content/covers/toc_proxy_only.htm"
     conditions="Default.PrintOnly" />
   <TocEntry
-    Title="OpendTect User Documentation - Version 5.0"
+    Title="OpendTect User Documentation - Version 6.0"
     Link="/Content/od_userdoc_v5.0/od_userdoc_v6.htm"
     conditions="Default.ScreenOnly" />
   <TocEntry
@@ -90,59 +90,6 @@
         Title="Pre-Stack 2D Viewer"
         Link="/Content/get_started/prstk_2d_view.htm" />
     </TocEntry>
-  </TocEntry>
-  <TocEntry
-    Title="How To"
-    Link="/Content/how_to/how_to.htm">
-    <TocEntry
-      Title="QuickStart a Project"
-      Link="/Content/how_to/quickstart_proj/quickstart_proj.htm">
-      <TocEntry
-        Title="OpendTect Survey"
-        Link="/Content/how_to/quickstart_proj/od_surv.htm" />
-      <TocEntry
-        Title="Setup 2D &amp; 3D Survey"
-        Link="/Content/how_to/quickstart_proj/setup_surv.htm">
-        <TocEntry
-          Title="Survey Name and Type"
-          Link="/Content/how_to/quickstart_proj/surv_nam_typ.htm"></TocEntry>
-        <TocEntry
-          Title="Survey Ranges"
-          Link="/Content/how_to/quickstart_proj/surv_rang.htm" />
-        <TocEntry
-          Title="Coordinate Settings"
-          Link="/Content/how_to/quickstart_proj/coord_setts.htm" />
-      </TocEntry>
-      <TocEntry
-        Title="Data Loading"
-        Link="/Content/how_to/quickstart_proj/data_load.htm">
-        <TocEntry
-          Title="Load Seismic (2D &amp; 3D)"
-          Link="/Content/how_to/quickstart_proj/load_seis.htm" />
-        <TocEntry
-          Title="Load Well Data"
-          Link="/Content/how_to/quickstart_proj/load_wll_data.htm" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="Display Loaded Data"
-      Link="/Content/how_to/disp_data.htm" />
-    <TocEntry
-      Title="Interpret Horizons"
-      Link="/Content/how_to/int_hors/int_hors.htm">
-      <TocEntry
-        Title="3D Horizons"
-        Link="/Content/how_to/int_hors/3d_hors.htm" />
-      <TocEntry
-        Title="Edit 3D Horizons"
-        Link="/Content/how_to/int_hors/ed_3d_hors.htm" />
-      <TocEntry
-        Title="2D Horizons"
-        Link="/Content/how_to/int_hors/2d_hors.htm" />
-    </TocEntry>
-    <TocEntry
-      Title="Interpret Faults"
-      Link="/Content/how_to/int_flts.htm" />
   </TocEntry>
   <TocEntry
     Title="OpendTect Trees and Elements"

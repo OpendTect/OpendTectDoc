@@ -107,7 +107,6 @@
     <Map Name="mAttrTrcSelOutSliceHelpID" Link="/Content/proc/create_seis_output/along_hors.htm" />
     <Map Name="mAttrTrcSelOutBetweenHelpID" Link="/Content/proc/create_seis_output/btwn_hors.htm" />
     <Map Name="mSeis2DExtractFrom3DHelpID" Link="/Content/proc/create_seis_output/extr_2d_fm_3d.htm" />
-    <Map />
     <Map Name="mAngleMuteComputerHelpID" Link="/Content/proc/create_seis_output/ang_mut_func.htm" />
     <Map Name="mAngleCompAdvParsDlgHelpID" Link="/Content/proc/create_seis_output/ang_mut.htm" />
     <Map Name="mSeisBayesPDFInpHelpID" Link="/Content/proc/create_seis_output/bayes_clss.htm" />
@@ -190,7 +189,7 @@
     <Map Name="mWindowGrabDlgDesktopHelpID" Link="/Content/get_started/tbars/snapshots.htm" />
     <Map Name="mAttribDescSetEddefaultSetHelpID" Link="/Content/anal/atts/def_att_set.htm" />
     <Map Name="mAttribDescSetEdimportSetHelpID" Link="/Content/anal/atts/imp_att_set_from.htm" />
-    <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/how_to/quickstart_proj/surv_rang.htm" />
+    <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/0_rmvd_dltd/how_to/quickstart_proj/surv_rang.htm" />
     <Map Name="mSeisDump2DGeomHelpID" Link="/Content/Survey/Manage/man_seis/dump_2d_geom.htm" />
     <Map Name="mSeisCopyLineSetHelpID" Link="/Content/Survey/Manage/man_seis/copy_dataset.htm" />
     <Map Name="mSeisBrowserHelpID" Link="/Content/Survey/Manage/man_seis/brws_ed_cube_locs.htm" />
@@ -207,7 +206,7 @@
     <Map Name="mVolumeSmootherHelpID" Link="/Content/anal/vol_build_setup/smthr.htm" />
     <Map Name="mHor2DFrom3DDlgHelpID" Link="/Content/od_trees_elements/2d_hor/2d_hor.htm" />
     <Map Name="mHorizonShiftDialogHelpID" Link="/Content/od_trees_elements/hor/shft.htm" />
-    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/how_to/int_hors/3d_hors.htm" />
+    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/0_rmvd_dltd/how_to/int_hors/3d_hors.htm" />
     <Map Name="mWell2RandomLineDlgHelpID" Link="/Content/od_trees_elements/rdm_lin/create_fm_wlls.htm" />
     <Map Name="mODEditAttribColorDlgHelpID" Link="/Content/od_trees_elements/2d_seis.htm" />
     <Map Name="mAttrSrchProcFilesHelpID" Link="/Content/anal/atts/imp_att_set_from.htm" />
@@ -330,7 +329,7 @@
     <Map Name="mTableImpDataSelpicksHelpID" Link="/Content/Survey/Import/imp_pksts_plygns.htm" />
     <Map Name="mTableImpDataSelpvdsHelpID" Link="/Content/Survey/Import/imp_xplot_data.htm" />
     <Map Name="mTableImpDataSelwellsHelpID" Link="/Content/Survey/Import/imp_wlls/simp_mlti_wll.htm" />
-    <Map Name="mTrackingWizardHelpID" Link="/Content/how_to/int_hors/3d_hors.htm" />
+    <Map Name="mTrackingWizardHelpID" Link="/Content/0_rmvd_dltd/how_to/int_hors/3d_hors.htm" />
     <Map Name="mVelocityDescDlg" Link="/Content/Scenes/t_d_conv_scenes.htm" />
     <Map Name="mViewer2DMainWindisplayAngleHelpID" Link="/Content/get_started/prstk_2d_view.htm" />
     <Map Name="mVolrenTreeItemHelpID" Link="/Content/od_trees_elements/vol.htm" />
