@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="8614" MadCap:lastWidth="974">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="3782" MadCap:lastWidth="1891">
     <head>
     </head>
     <body>
@@ -54,10 +54,10 @@
         <p><b>Mathematical description</b>
         </p>
         <p>The GLCM is a measure of how often different combinations of neighboring pixel values occur within an analysis window. For a 2D image the immediate neighboring pixels can be in four different directions (0°, 45°, 90°, and 135°). For the calculation of 2D GLCM the following equation is used:</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic texture directonal 2d equation.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic texture directonal 2d equation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>where i and j vary from 1 to Ng (number of grey levels).</p>
         <p>In this equation G(x,y) are the center sample points and G(x+dx, y+dy) are the neighboring sample points. Usually, the distance between center and neighboring samples is one, but in general greater distances could also be taken for the calculation. It is, in principal also possible to combine the four principal directions to form an average GLCM. By this approach the spatial variations can be eliminated to a certain degree (Gao 2007). In the case of 3D data the number of possible directions increases to 13. The 3D case implies a modification of the above given equation:</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic texture directonal 3d equation.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic texture directonal 3d equation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>Similar to the 2D case, it is possible to calculate the GLCM in single directions, to combine several directions, or to calculate an average GLCM. Previous works on 3D GLCM calculation use 2D GLCM calculations in various directions and combine the results of these calculations to form a pseudo-3D GLCM attribute cube.</p>
         <p>Based on the grey level co-occurrence matrix, it is possible to calculate several attributes. Haralick et al. (1973), in their work, describe 14 attributes that can be calculated from the GLCM. In literature a few more attributes based on the GLCM have been developed (e.g. Soh and Tsatsoulis, 1999; Wang et al., 2010). For the calculation of any of these GLCM-based attributes it is necessary to normalize the GLCM to generate a kind of probability matrix. This is done by dividing each matrix entry by the sum of all entries. The different GLCM-based attributes can be divided into three general groups. The first group is the contrast group and includes measurements such as contrast and homogeneity. All the attributes from this first group are basically a function of the probability of each matrix entry and the difference of the grey levels (i and j). Therefore, these contrast group attributes are related to the distance from the GLCM diagonal. Values on the diagonal (where i and j are the same) result in zero contrast, whereas the contrast increases by increase of distance from the diagonal.</p>
         <p>The second attribute group is the orderliness group, which includes attributes such as energy and entropy. Attributes in the orderliness group measure how regular grey level values are distributed within a given search window. In contrast to the first group all attributes from this group are solely a function of the GLCM probability entries.</p>

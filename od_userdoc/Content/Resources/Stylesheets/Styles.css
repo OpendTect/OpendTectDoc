@@ -11,6 +11,7 @@ h1
 	font-style: italic;
 	font-family: Arial;
 	font-size: 32pt;
+	margin: 20px;
 }
 
 h2
@@ -20,6 +21,7 @@ h2
 	margin-bottom: 20px;
 	margin-top: 20px;
 	font-family: Arial;
+	margin: 20px;
 }
 
 h3
@@ -29,6 +31,7 @@ h3
 	margin-top: 20px;
 	font-family: Arial;
 	font-size: 20pt;
+	margin: 20px;
 }
 
 h4
@@ -39,6 +42,7 @@ h4
 	font-family: Arial;
 	font-size: 18pt;
 	mc-heading-level: 4;
+	margin: 20px;
 }
 
 h5
@@ -46,6 +50,7 @@ h5
 	font-weight: bold;
 	font-size: 16pt;
 	mc-heading-level: 5;
+	margin: 20px;
 }
 
 h6
@@ -53,6 +58,7 @@ h6
 	font-weight: bold;
 	font-size: 14pt;
 	mc-heading-level: 6;
+	margin: 20px;
 }
 
 p
@@ -61,6 +67,7 @@ p
 	margin-bottom: 20px;
 	margin-top: 20px;
 	font-family: Arial;
+	margin: 20px;
 }
 
 ol,
@@ -113,6 +120,7 @@ img.General_Image
 	margin-bottom: 20px;
 	margin-top: 20px;
 	mc-thumbnail: popup;
+	margin: 20px;
 }
 
 img.Icons
@@ -225,8 +233,8 @@ p.tip
 	padding-left: 40px;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	background-position-y: 100%;
 	background-image: url('../Images/General Images/tip_18w.png');
+	background-position-y: 50%;
 }
 
 MadCap|miniTocProxy
@@ -265,7 +273,9 @@ p.note_after
 
 table
 {
-	border-spacing: 2px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin: 20px;
 }
 
 ul.ordered_list > li > ol
@@ -277,5 +287,23 @@ td
 {
 	border: solid 1px #000000;
 	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+}
+
+pre
+{
+	margin-bottom: 20px;
+	margin: 20px;
+}
+
+ol
+{
+	margin-left: 20px;
+}
+
+ul
+{
+	margin-left: 20px;
 }
 

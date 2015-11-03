@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3179" MadCap:lastWidth="935">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1769" MadCap:lastWidth="1852">
     <head>
     </head>
     <body>
@@ -11,134 +11,234 @@
         <p>The <i>Processes</i> menu allows to set the <i>Run</i>, <i>Pause</i>, or <i>Go - Only between</i> options. The <i>Go - Only between</i> option, pauses and runs the processes at user-defined times.</p>
         <p>OpendTect calls the system utilities of the '<i>hostent</i>' (sethostent, gethostent, etc.) type to get a table of hosts that can be selected. How the Operating System builds the lists is dependent on the particular system setup; most likely /etc/hosts and/or the NIS tables are consulted. OpendTect supports multi-threading which means that all processors of multi-processor machines will be used.</p>
         <p class="tip">Though we support multi-threading, not all calculations can be run this way due to some of the algorithms involved (ie: recursive calculations). See the following table:</p>
-        <table style="width: 100%; border-spacing: 0px; border-collapse: collapse">
+        <table>
             <col />
             <col />
             <tbody>
                 <tr>
-                    <td style="border-bottom: 2px solid #000"><b>Multi-threaded</b>
+                    <td style="border-bottom: 2px solid #000;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 3px;border-bottom-color: #000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
+                        <p><b>Multi-threaded</b>
+                        </p>
                     </td>
-                    <td style="border-bottom: 2px solid #000"><b>Not multi-threaded</b>
+                    <td style="border-bottom: 2px solid #000;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 3px;border-bottom-color: #000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
+                        <p><b>Not multi-threaded</b>
+                        </p>
                     </td>
                 </tr>
                 <tr>
-                    <td>BG Steering*</td>
-                    <td>Constant Steering</td>
+                    <td>
+                        <p>BG Steering*</p>
+                    </td>
+                    <td>
+                        <p>Constant Steering</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Central Steering</td>
-                    <td>Convolve (Wavelet option)</td>
+                    <td>
+                        <p>Central Steering</p>
+                    </td>
+                    <td>
+                        <p>Convolve (Wavelet option)</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Convolve (all except Wavelet option)</td>
-                    <td>DeltaResample</td>
+                    <td>
+                        <p>Convolve (all except Wavelet option)</p>
+                    </td>
+                    <td>
+                        <p>DeltaResample</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Curvature</td>
-                    <td>&gt;Energy (Gradient option)</td>
+                    <td>
+                        <p>Curvature</p>
+                    </td>
+                    <td>
+                        <p>Energy (Gradient option)</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Dip Angle</td>
-                    <td>Event Steering</td>
+                    <td>
+                        <p>Dip Angle</p>
+                    </td>
+                    <td>
+                        <p>Event Steering</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Velocity Fan Filter (=DipFilter)</td>
-                    <td>Fault Dip</td>
+                    <td>
+                        <p>Velocity Fan Filter (=DipFilter)</p>
+                    </td>
+                    <td>
+                        <p>Fault Dip</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Energy (all except Gradient option)</td>
-                    <td>FingerPrint</td>
+                    <td>
+                        <p>Energy (all except Gradient option)</p>
+                    </td>
+                    <td>
+                        <p>FingerPrint</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Event</td>
-                    <td>GapDecon</td>
+                    <td>
+                        <p>Event</p>
+                    </td>
+                    <td>
+                        <p>GapDecon</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>FreqFilter*</td>
-                    <td>HorizonCube Curvature</td>
+                    <td>
+                        <p>FreqFilter*</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Curvature</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Frequency*</td>
-                    <td>HorizonCube Dip</td>
+                    <td>
+                        <p>Frequency*</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Dip</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Full Steering</td>
-                    <td>HorizonCube Spacing</td>
+                    <td>
+                        <p>Full Steering</p>
+                    </td>
+                    <td>
+                        <p>HorizonCube Spacing</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>HorizonCube Data</td>
-                    <td>Horizon</td>
+                    <td>
+                        <p>HorizonCube Data</p>
+                    </td>
+                    <td>
+                        <p>Horizon</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>HorizonCube Density</td>
-                    <td>Match Delta</td>
+                    <td>
+                        <p>HorizonCube Density</p>
+                    </td>
+                    <td>
+                        <p>Match Delta</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>HorizonCube Layer</td>
-                    <td>Maths (recursive expression)</td>
+                    <td>
+                        <p>HorizonCube Layer</p>
+                    </td>
+                    <td>
+                        <p>Maths (recursive expression)</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Hilbert</td>
-                    <td>Perpendicular Dip Extractor</td>
+                    <td>
+                        <p>Hilbert</p>
+                    </td>
+                    <td>
+                        <p>Perpendicular Dip Extractor</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Instantaneous**</td>
-                    <td>SampleValue</td>
+                    <td>
+                        <p>Instantaneous**</p>
+                    </td>
+                    <td>
+                        <p>SampleValue</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Local Fluid Contact Finder</td>
-                    <td>Scaling (scaling type AGC and stats type = detrend)</td>
+                    <td>
+                        <p>Local Fluid Contact Finder</p>
+                    </td>
+                    <td>
+                        <p>Scaling (scaling type AGC and stats type = detrend)</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Maths (except when expression is recursive)</td>
-                    <td>Shift</td>
+                    <td>
+                        <p>Maths (except when expression is recursive)</p>
+                    </td>
+                    <td>
+                        <p>Shift</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Polar Dip</td>
+                    <td>
+                        <p>Polar Dip</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Position</td>
+                    <td>
+                        <p>Position</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>PreStack</td>
+                    <td>
+                        <p>PreStack</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Reference</td>
+                    <td>
+                        <p>Reference</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Scaling (all except scaling type AGC and stats type = detrend)</td>
+                    <td>
+                        <p>Scaling (all except scaling type AGC and stats type = detrend)</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Semblance</td>
+                    <td>
+                        <p>Semblance</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Similarity</td>
+                    <td>
+                        <p>Similarity</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Spectral Decomposition*</td>
+                    <td>
+                        <p>Spectral Decomposition*</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>SpectrogramDip (create SteeringCube, FFT steering)</td>
+                    <td>
+                        <p>SpectrogramDip (create SteeringCube, FFT steering)</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Texture</td>
+                    <td>
+                        <p>Texture</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Tutorial</td>
+                    <td>
+                        <p>Tutorial</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
                 <tr>
-                    <td>Volume Statistics</td>
+                    <td>
+                        <p>Volume Statistics</p>
+                    </td>
                     <td>&#160;</td>
                 </tr>
             </tbody>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="6127" MadCap:lastWidth="961">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2365" MadCap:lastWidth="1909">
     <head>
     </head>
     <body>
@@ -41,7 +41,7 @@
         <p><i>Advanced RayTracer:&#160;Advanced corrections options</i>
         </p>
         <p><a name="Computation_of_the_Zero_Offset_Reflection_Coefficient"></a><b style="text-decoration: underline;">Computation of the Zero Offset Reflection Coefficient</b> For the simplest Zero Offset Stack, calculation of reflection coefficient at any interface is done using the simple formula:</p>
-        <img src="../Resources/Images/Appendix E/Synthetic data generation zero offset formula.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix E/Synthetic data generation zero offset formula.png" style="background-image: url('../Images/General Images/Chain_OpendTect.png');margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>where  Z<sub>1</sub> and Z<sub>0</sub> are the impedance of the top and bottom layers, respectively. These layers are basically upscaled and time converted version of various logs (Rho, Vp and Vs) in pseudo-well models, and as such comprise the Elastic Model [hyperlink with Elastic Model] for synthetic seismic generation. The upscaling is done using the Backus averaging algorithm in depth, but at a (variable) depth sampling rate which is equivalent to the seismic sample rate in time. Depth-to-time conversion of the pseudo-well logs, is done using the velocity model of the pseudo-wells itself.</p>
         <p class="tip"><u>Backus upscaling</u> is done only for Vp, Vs and Density logs (and other logs based on them e.g. AI, LambdaRho, MuRho etc.). All other logs e.g. Phi, Sw etc. are upscaled using thickness weighted averaging (i.e. weights used for the averaging are the thicknesses of various pseudo-well layers) and are afterwards converted into time (using the velocity model of the pseudo-wells), at survey sample rate. A Nyquist filter, as defined by the survey sample rate is also applied on these time converted rock property traces; e.g. if seismic survey sampling is at 4 ms, Nyquist filter will allow a maximum frequency of 125Hz. These are accessible to user in real-time on the Variable Density View:</p>
         <img src="../Resources/Images/Appendix E/Synthetic data generation upscaling.png" class="General_Image" />
