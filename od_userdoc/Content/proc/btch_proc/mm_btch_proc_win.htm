@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1769" MadCap:lastWidth="1852">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1920" MadCap:lastWidth="1371">
     <head>
     </head>
     <body>
-        <h3>Multi-Machine Batch Processing Window</h3>
+        <h3>6.6.2 Multi-Machine Batch Processing Window</h3>
         <p>The multi-machine batch processing window controls on which machines a volume output or SteeringCube batch job will be processed. Jobs are distributed over the <i>Used hosts</i> on a line-by-line basis (the number of inlines per job can be specified). Hosts can be <i>Added</i> and/or <i>Stopped</i> at all times. Processed results are stored in a <i>Temporary storage directory</i>.</p>
         <p>At the end of the processing sequence, OpendTect will merge all processed lines and store the data in the output file that was specified in the <i>Volume output</i> or <i>Create SteeringCube</i> window, and it will delete the temporary disk files. If for any reason OpendTect fails to perform this data transfer, this can also be done manually in the <i>File - Manage</i> module. The temporary data store appears with a name starting with Proc_. Select this item and copy it to a new cube.</p>
         <p>It is possible that at the end of a multi-machine batch job not all data was processed successfully. Some jobs may have failed (e.g. because one of the hosts was temporarily not available). OpendTect will come back with a warning message stating which jobs (i.e. which inlines) have not been processed yet. It is then advised to re-submit these jobs until all data are processed. The <i>Auto-fill</i> option automatically scans and fills gaps in the processed volume.</p>
