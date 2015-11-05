@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="707" MadCap:lastWidth="1397">
+    <head>
+    </head>
+    <body>
+        <h6>9.3.1.1.2.1 Package Verification</h6>
+        <p>We generate signature files for all packages. Normally, a package is a zip file downloadable from our website:</p>
+        <p>For OpendTect version 4.6.0, please visit:&#160;<a href="http://www.opendtect.org/relman/4.6.0/" target="_blank" MadCap:conditions="Default.ScreenOnly">OD version 4.6</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">OD version 4.6</MadCap:conditionalText> page</p>
+        <p>For OpendTect version 5.0, please visit:&#160;<a href="http://www.opendtect.org/relman/5.0.0/" target="_blank" MadCap:conditions="Default.ScreenOnly">OD version 5.0</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">OD version 5.0</MadCap:conditionalText> page</p>
+        <p>For each zip-file, there is a zip.sig file containing a digital certificate that can be used to verify that the package has not been tampered with during transit.</p>
+        <p>To verify a package, download the corresponding zip.sig file and place it in the same directory as the package file. gpg (or pgp) must be used (an encryption program). These programs are normally installed in most linux installations, and can be found at&#160;the <a href="http://www.gnu.org/" target="_blank" MadCap:conditions="Default.ScreenOnly">GNU license</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GNU license</MadCap:conditionalText> page</p>
+        <p>dGB's public key has to be downloaded to your keyring. This is only necessary for the initial verification. To obtain the key, use gpg itself:</p>
+        <p><span style="font-family: 'Miriam Fixed';">gpg --keyserver pgp.mit.edu --search-keys "support@dgbes.com"</span>
+        </p>
+        <p>You may chose any keyserver you want, as they all share data. Once you have located our key, import it to your keyring.</p>
+        <p>Secondly, to avoid warning messages, edit the key and tell gpg that you trust it:</p>
+        <p><span style="font-family: 'Miriam Fixed';">gpg --edit-key support@dgbes.com</span>
+        </p>
+        <p>and then type "trust" as command. Once you have our key installed, you are ready to verify the packages. This is done by gpg:</p>
+        <p><span style="font-family: 'Miriam Fixed';">#bash-&gt; gpg --verify demosurvey.zip.sig</span>
+        </p>
+        <p>This will check that demosurvey.zip has not changed since the file demosurvey.zip.sig was generated in our office. A positive output may look like this:</p>
+        <ul>
+            <li style="font-family: 'Miriam Fixed';">gpg: Signature made Thu Oct  4 08:46:01 2012 CEST using DSA key ID A02F407E</li>
+            <li style="font-family: 'Miriam Fixed';">gpg: checking the trustdb</li>
+            <li style="font-family: 'Miriam Fixed';">gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model</li>
+            <li style="font-family: 'Miriam Fixed';">gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u</li>
+            <li style="font-family: 'Miriam Fixed';">gpg: next trustdb check due at 2022-03-13</li>
+            <li style="font-family: 'Miriam Fixed';">gpg: Good signature from "dGB Earth Sciences B. V. (Software package signing key) "</li>
+        </ul>
+    </body>
+</html>

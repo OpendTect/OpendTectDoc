@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1241" MadCap:lastWidth="1909">
+    <head>
+    </head>
+    <body>
+        <h4>5.3.3.5 Selection Settings</h4>
+        <p>The selections made interactively in the cross-plot window can be further refined and managed in this window.</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot refine selection.png" class="General_Image" />
+        <p>The 'Refine' option (<img src="../../../Resources/Images/Icons/refinesel.png" class="Icons" />)utilizes mathematical logic to restrict the selection according to the range set in the Refine Selection window (a pop-up window invoked when this button is pressed). For instance, a user may want to remove a data (x0) within a range of 3-4 from a cross-plot in which 1-2 values are overlapping. To do that, press this button to launch Refine Selection window. In the <i>Enter Ranges</i> field, an equation can be set i.e. X0 &gt; 3 and X0 &lt; 4. Where X0 is desired data in a cross-plot. After this a section can be made within a cross-plot to remove values within the polygon according to the equation.</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot refine selection settings.png" class="General_Image" />
+        <p>The <i>'Manage Selection'</i> option (<img src="../../../Resources/Images/Icons/selsettings.png" class="Icons" />) can be used to do multiple selections by adding new groups (see below). It is launched using this manage selection button. The multiple group selection allows you to select different clusters/trends on a crossplot in the form of groups. Second and subsequent selections are made by clicking on a group name and holding the CTRL key down from a keyboard prior. Then the corresponding polygon (with a given colour) is drawn over the crossplot display area. It is a very useful tool for reservoir prediction and characterization.</p>
+        <p>The selected scattered points can then be displayed in the active scene by clicking on OK. This allows an interactive display of the cross-plot in a scene. The displayed points (i.e. picks) can be saved in the OpendTect survey either as a Pickset or as a Body. Right-click on any point in the display, it will launch a pop-up menu (see below).</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot select settings scene display.png" class="General_Image" />
+        <ul>
+            <li><b>Properties:</b> It can be used to edit the size of the points.</li>
+            <li><b>Create Body:</b> Create a <a href="../../../3 OpendTect Trees And Elements/3.11 Body.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Body</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Body</MadCap:conditionalText> from the selected picks.</li>
+            <li><b>Save as Picksets:</b> To store the selected points as a pickset.</li>
+            <li><b>Remove selected points:</b> Removes the selected data.</li>
+        </ul>
+        <p>You can do multiple selections by adding new groups (see below). It is launched using this manage selection button. The multiple group selection allows you to select different clusters/trends on a crossplot in the form of groups. Second and subsequent selections are made by clicking on a group name and holding the CTRL key down from a keyboard prior. Then the corresponding polygon (with a given colour) is drawn over the crossplot display area. It is a very useful tool for reservoir prediction and characterization.</p>
+        <p>In the column name, a new name should be given that would be added in the crossplot data table. Show selectedness as an overlay, if checked, would display the colour coded selection ranging (between 0-1) as an overlay in the crossplot area. The colours represent the chosen colortable. Show selectedness in 3D scene would display the points within the selectedness range in the 3D scene.</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot save selection area.png" class="General_Image" />
+        <p>The user can manage the groups (or selections) by saving them (Save groups)</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot open selection.png" class="General_Image" />
+        <p>Furthermore, the user can also manage the groups (or selections) by opening (Open groups) the saved groups.</p>
+        <img src="../../../Resources/Images/6 Analysis/Analysis crossplot selectedness calculate.png" class="General_Image" />
+        <p>The Selectedness is a special data selection. It is a measure of how likely a point is to be selected in a particular selection. If a point is present in and around the center of a particular selection that has higher selectedness values. Whereas those belonging in the border regions are less likely to belong to that selection and thus it will have lower selectedness values. It is a measure of which points are better representative of a particular selection. The value of Selectedness ranges from 0-1. The points outside the selection has undefined values. It is added as a separate attribute in the table and can be seen in the form of an overlay attribute. To mark selectedness, one group is needed to be selected by using the selection mode.</p>
+    </body>
+</html>

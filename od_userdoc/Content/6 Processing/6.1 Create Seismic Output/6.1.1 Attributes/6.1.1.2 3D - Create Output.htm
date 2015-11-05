@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="915" MadCap:lastWidth="1922">
+    <head>
+    </head>
+    <body>
+        <h4>6.1.1.2 3D - Create  Output</h4>
+        <p>To create a 3D seismic output from an attribute, follow the path <i>Processing &gt; Create Seismic Output &gt; Attribute &gt; 3D</i>.</p>
+        <img src="../../../Resources/Images/7 Processing/Processing create seismic output 3d seismic output.png" class="General_Image" />
+        <p>First, <i>Select</i> the output quantity. Optionally, a <i>sub-volume</i> can be specified.</p>
+        <p>Note that only attributes from the current attribute set can be selected in the '<i>Select output quantity</i>' window. To output an attribute from another attribute set, you must select this attribute set in the attribute module.</p>
+        <p>Null traces can be discarded.</p>
+        <p>It is also possible to choose between <a href="../../6.6 Batch Processing/6.6.1 Single Machine Batch Processing Window.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Single Process</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Single Process</MadCap:conditionalText> and <a href="../../6.6 Batch Processing/6.6.2 Multi-Machine Batch Processing Window.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Multi-Job/Machine</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Multi-Job/Machine</MadCap:conditionalText> processing:</p>
+        <img src="../../../Resources/Images/7 Processing/Processing create seismic output 2d lineset output select process.png" class="General_Image" />
+        <p>And to set the job priority (if deemed necessary). This is equivalent to the '<i>Nice level</i>' on Linux, determining how much priority the process will take on the remote machine:</p>
+        <img src="../../../Resources/Images/7 Processing/Processing create seismic output 2d lineset output set priority.png" class="General_Image" />
+        <p>Optionally, the output can be scaled with a Shift and a Factor:</p>
+        <p><span style="font-family: 'Miriam Fixed';">Output = Factor * Input + Shift</span>
+        </p>
+        <p><b>Storage:</b> OpendTect can store data internally in 8-, 16-, 32-, and 64-bit seismic data formats. 8-bit signed has a data range between -127 and +127. 8-bit unsigned ranges between 0 and 255. Similarly, 16-bit signed ranges between -32767 and +32767 (unsigned 0 - 65535). The data is stored in the same byte-format as the input by default (Storage is set to 0 - auto). This is chosen when specifying the <i>Format/Scaling.</i></p>
+        <img src="../../../Resources/Images/7 Processing/Processing create seismic output 3d seismic output storage.png" class="General_Image" />
+        <p><b>Adjust Z range to survey range:</b> this option adjusts the new scaled seismic to the survey range.</p>
+        <p><b>Optimize horizontal slice access:</b> For better performance when loading time slices, set this option to 'Yes'. This compromises some speed in loading crosslines, but it loads time slices significantly faster.</p>
+        <p><b>Processing:</b> OpendTect batch jobs for 3D volumes can be processed on a <i>single-</i>, <i>multiple machines</i>, or <a href="../../6.6 Batch Processing/6.6.4 Cluster Processing.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">Clustering</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Clustering</MadCap:conditionalText>. For more information look at <a href="../../6.6 Batch Processing.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">batch processing</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">batch processing</MadCap:conditionalText>.</p>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1602" MadCap:lastWidth="1358">
+    <head>
+    </head>
+    <body>
+        <h4>9.1.4.1 Personal Settings</h4>
+        <p>A user can update the <i>Personal Settings</i> by specifying a keyward (a variable name) and its value. The value column becomes editable if left mouse button is double clicked in a cell. A brief description on the available variables (and their values) is given below:</p>
+        <img src="../../../Resources/Images/10 Utilities/Utilities settings personal settings.png" class="General_Image" />
+        <p class="tip">Most of the changes are updated after restarting the OpendTect, other are active directly.</p>
+        <p><b>Pre-defined Keywords:</b>
+        </p>
+        <p>Press Select existing button to pop-up the pre-defined keywords. After selection of any variable, the values should be updated. The values are updated by pressing 'OK' button.</p>
+        <ul>
+            <li><b>Company:</b> Write the company name. Keyword - Company, Value: Text (e.g. dGB Earth Sciences).</li>
+            <li><b>Default DATA directory:</b> It enables a user to setup a default OpendTect data directory. The value is a path pointing to a data directory e.g. /disk/ODData/.</li>
+            <li><b>Fonts:</b> The fonts for the OpendTect controls and graphics are set by selecting the Font.* or Graphic.* keywords. The wild card character (*) refers to the text followed by the Font/Graphic word. All of these key words refer to a font dialog that may have a specific value. For instance, a value is written as Times New Roman`12`Normal`No [Font, Size, Style, Others]. The following keywords can have the similar values:</li>
+        </ul>
+        <p><i>Font.def.Fixed width, Font.def.Graphics large, Font.def.Graphics medium, Font.def.Large control, Font.def.Small control, Font.for.Annotations, Font.for.Title, Graphics large font size, Graphics small font size.</i>
+        </p>
+        <ul>
+            <li><b>Icons.size:</b> It is a size of OpendTect icons. Its value can be a numeric number e.g. 20, 24, 32 etc.</li>
+            <li><b>In-line byte:</b> This will enable the user to setup the inline byte location</li>
+            <li><b>Pre-stack Viewer Settings (3D PS Viewer.*)</b> With value=1,the Prestack viewer will change in autowidth mode</li>
+            <li><b>Bold font:</b> With Value set to 'Yes', the font is set to bold</li>
+            <li><b>Cross-line byte:</b> This will set up the default croosline byte location</li>
+            <li><b>Display UnitID:</b> This will enable the user to display the help window ID</li>
+            <li><b>MultiMachine.Nr inline per job:</b> A user may overrule the number of jobs (i.e. number of inlines) for each machine while running multi machine batch processing. By default the value is 3</li>
+            <li><b>Nr Processors:</b> It is a numeric number to specify the number of processors to be used for a processing. For instance, '0' means to use all processors</li>
+            <li><b>dTect.Measure LineStyle:</b> This is a standard settings for the <a href="../../../2 Getting Started/2.3 Mouse Controls.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">distance measurement tool</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">distance measurement tool</MadCap:conditionalText> available in the Graphics Toolbar</li>
+            <li><b>Seg-Y headers:</b> Default file location to dump a SEG-Y headers. The value is the output path together with a file name (e.g. /disk/SGY_dump.txt).</li>
+            <li><b>SEG-Y.Examine.Number of traces:</b> Set a minimum numeric value (e.g. 100) as a default setting to examine any seg-y file</li>
+            <li><b>Ui.ToolTips.enable:</b> Refers to enable a tool tip guide. Set Yes/No in the value</li>
+            <li><b>dTect.Ask.*:</b> Set to prompt a warning message settings (Value: Yes/No) for several windows. This include a prompt while closing OpendTect, closing Attribute Set window, storing picksets, store session</li>
+            <li><b>dTect.Auto Attribute set:</b> Set an attribute name that will be auto loaded if the OpendTect is launched</li>
+            <li><b>dTect.Average even median:</b>
+            </li>
+            <li><b>dTect.Color table.Name:</b> A default color table for the user. The default is Red-White-Blue. The value is a color table name</li>
+            <li><b>dTect.ColorBar.show on top:</b> Set a value to Yes/No to set the color table on top of OpendTect or not</li>
+            <li><b>dTect.ColorBar.show vertical:</b> Set a value to Yes/No to set the default orientation of the color table (vertical - Yes)</li>
+            <li><b>2D Viewer Settings (SeisView.*):</b> 2D Viewer Display Properties of Wiggle Variable Area</li>
+        </ul>
+        <p>The following keywords can have the similar values:</p>
+        <p><i>SeisView.Display.WVA.Clipping, SeisView.Display.WVA.Display Null traces, SeisView.Display.WVA.Draw wiggles, SeisView.Display.WVA.Interpolate, SeisView.Display.WVA.Left color, SeisView.Display.WVA.Min Pix/Trace, SeisView.Display.WVA.Overlap, SeisView.Display.WVA.Reftime color, SeisView.Display.WVA.Reverse order, SeisView.Display.WVA.Reverse polarity, SeisView.Display.WVA.Right color, SeisView.Display.WVA.Show reftime, SeisView.Display.WVA.Var Area.</i>
+        </p>
+        <ul>
+            <li><b>dTect.DTECT_SHOW_HELP:</b> This will allow the user to show ID on the help window icon</li>
+            <li><b>dTect.Disp.Default clip perc:</b> Set a default clipping value (1-100 %) to clip the seismic data</li>
+            <li><b>dTect.Default symmetry zero:</b>This will set the colorbar symmetry around zero</li>
+            <li><b>dTect.Dont load plugins:</b> This enables the User to load or not the plugins</li>
+            <li><b>dTect.Dump OI Menu:</b> This is a special setting to <a href="../../../3 OpendTect Trees And Elements/3.1 Scene.htm" target="_self" MadCap:conditions="Default.ScreenOnly">export a OpendTect scene</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">export a OpendTect scene</MadCap:conditionalText>. Set the value Yes/No to make this option available</li>
+            <li><b>dTect.Icons.size:</b> Set a default numeric value for OpendTect icon's size</li>
+            <li><b>dTect.ProcessVolumeBuilderOnOK:</b> This setting deals with <a href="../../../5 Analysis/5.2 Volume Builder Setup.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Volume Builder setup</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Volume Builder setup</MadCap:conditionalText>. By default the value is Yes i.e the setup process the volume based on the available volume builder setup</li>
+            <li><b>dTect.Show inl progress:</b> Set Yes/No to show or hide the inline progress bar while displaying the data</li>
+            <li><b>dTect.Use VolRen shading:</b> Set Yes/No for volume rendering shading</li>
+            <li><b>dTect.Use shading:</b> Set Yes/No for shading</li>
+            <li><b>dTect.Zoom factor:</b> Set a value for wheel zooming factor. Default value is 1</li>
+            <li><b>dTect.KeyBindings.Default:</b>
+            </li>
+            <li><b>dTect.Select Plugins:</b> This feature allows the user to select or not the plugins</li>
+            <li><b>dTect.VolRen shading:</b> Set Yes/No for shading</li>
+            <li><b>dTect.Use startup session:</b> This option enables the user to directly start a session when opening a specific survey in OpendTect</li>
+            <li><b>dTect.Maximum Visualization Texture Size:</b> Set the maximum size for the individual visualization data 'chunks'. Default is 4096 (though this may be decreased to 2048, 1024, 512...)</li>
+        </ul>
+        <p>The following files are used to store the Personal settings:</p>
+        <ul>
+            <li><b>settings.DTECT_USER:</b> This file is used to setup Personal settings</li>
+            <li><b>settings_coltabs.DTECT_USER:</b> This file is used to edit <a href="../../../2 Getting Started/2.4 Color Tables.htm" target="_self" MadCap:conditions="Default.ScreenOnly">colorbar</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">colorbar</MadCap:conditionalText> display properties</li>
+            <li><b>settings_snapshot.DTECT_USER:</b> This file allows the user to edit the <a href="../../../2 Getting Started/2.2 Toolbars/2.2.3 Graphics Toolbar/2.2.3.1 Take Snapshots.htm" target="_self" MadCap:conditions="Default.ScreenOnly">snapshot</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">snapshot</MadCap:conditionalText> properties like resolution, height, width etc ..</li>
+            <li><b>settings_flatview.DTECT_USER:</b> This file enables the user to edit the <a href="../../../2 Getting Started/2.6 2D Viewer.htm" target="_self" MadCap:conditions="Default.ScreenOnly">2D viewer</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">2D viewer</MadCap:conditionalText> properties like Variable Density, Wiggle Variable Area.</li>
+            <li><b>settings_welldisp.DTECT_USER:</b> This file enables the user to edit the <a href="../../../3 OpendTect Trees And Elements/3.12 Well.htm" target="_self" MadCap:conditions="Default.ScreenOnly">well display properties</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">well display properties</MadCap:conditionalText></li>
+            <li><b>settings_welltie.DTECT_USER:</b> This file is used to edit the <a href="../../../5 Analysis/5.4 Wells/5.4.2 Tie Well To Seismic.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Well to Seismic tie</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Well to Seismic tie</MadCap:conditionalText> properties like Velocity/Density names, Wavelet ID etc..</li>
+            <li><b>qtsettings.DTECT_USER:</b> This file will allow the user to edit the QT properties</li>
+            <li><b>settings_3DPSViewer.DTECT_USER:</b> This file will allow the user to edit the <a href="../../../3 OpendTect Trees And Elements/3.14 Pre-Stack 3D Viewer.htm" target="_self" MadCap:conditions="Default.ScreenOnly">3D PreStack viewer</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">3D PreStack viewer</MadCap:conditionalText> properties</li>
+            <li><b>settings_GMT.DTECT_USER:</b> This file will allow the user to edit the <a href="../../../6 Processing/6.4 GMT.htm" target="_self" MadCap:conditions="Default.ScreenOnly">GMT</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GMT</MadCap:conditionalText> properties</li>
+            <li><b>survey.DTECT_USER:</b> This file is used to edit the Default Survey. Typing cds from a linux console will bring the user back to his/her default survey</li>
+        </ul>
+    </body>
+</html>

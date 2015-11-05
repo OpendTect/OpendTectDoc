@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="789" MadCap:lastWidth="1384">
+    <head>
+    </head>
+    <body>
+        <h2>11.13 Match Delta</h2>
+        <p><b>Name</b>
+        </p>
+        <p>Match Delta -- Attribute that extracts time shifts between similar events in different seismic volumes</p>
+        <p><b>Description</b>
+        </p>
+        <p>This algorithm extracts the time difference <i>delta t</i> between peaks in different seismic volumes. A search window is set to avoid loop-skips. After extracting all delta t values, they are interpolated. The resulting cube is the delta cube in ms or meter/feet which can be used for the <a href="11.2 Delta Resample.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Delta Resample</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Delta Resample</MadCap:conditionalText> attribute.</p>
+        <img src="../Resources/Images/Appendix A/Delta t.png" class="General_Image" />
+        <p><i>Extraction of delta t from two neighboring traces.</i>
+        </p>
+        <p>In a little more detail, the algorithm proceeds along these lines:</p>
+        <ul>
+            <li>For each trace, all peaks are found.</li>
+            <li><i>Result</i>: a list of peaks and the time of occurrence.</li>
+            <li>Each peak is coupled with a counterpart if it is found to be within the specified search window. (If none are found, there is no addition to the list of differences.)</li>
+            <li><i>Result</i>: a list of time differences (deltas)</li>
+            <li>The delta list is interpolated (linear, constant extrapolation at the ends)</li>
+            <li><i>Result</i>: a delta value for each sample</li>
+        </ul>
+        <p>After using this attribute, it will be clear that there are many 'jumps' and 'skips' in the displayed sections. Because we know that the deltas should not vary that quickly - not going from trace to trace, but also not going from sample to sample, these can be effectively removed by utilizing a double filter: first a rather large median filter over many traces and a 2 to 3 samples, then an average or FFT-based filtering in all directions. The resulting output should now be relatively 'noise-free'.</p>
+        <p><b>Input Parameters</b>
+        </p>
+        <img src="../Resources/Images/Appendix A/Analysis attributes 3D trace match delta.png" class="General_Image" />
+        <p><i>Besides the reference and the match cube, a maximum time-window must be defined in order to avoid loop-skips.</i>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1181" MadCap:lastWidth="1909">
+    <head>
+    </head>
+    <body>
+        <h2>3.14 Pre-Stack 3D Viewer</h2>
+        <p style="font-weight: bold;">Prestack gather selection from the tree</p>
+        <p>Pre-stack (PS) gathers can be displayed in the 3D scene, perpendicular to an inline or crossline. Post stack data must first be displayed on an inline/crossline. The post-stack data does not need to be linked to the pre-stack data. Once the line is loaded, go to interact mode (graphical toolbar, second icon from the left), right-click in the scene your inline and use the option <i>Display PS gather</i>. The menu will list any pre-stack data available (loaded) in the survey. Please note that multiple PS gathers can be displayed on the same inline, and moving the inline to another position will keep the position of the PS gather and update its content.</p>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack 3D viewer popout menu.png" class="General_Image" />
+        <p><i>Right-click menu of a vertical slice tree item when pre-stack datasets are available.</i>
+        </p>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack 3D viewer example prestack gather.png" class="General_Image" />
+        <p><i>Post-stack data on an inline (left) with a prestack gather displayed perpendicular to it.</i>
+        </p>
+        <p style="font-weight: bold;">Positioning the prestack gather</p>
+        <p>When a pre-stack data is displayed in a scene, the pre-stack positioning window also pop-ups (look at the corners of the screen). By using this window, the pre-stack data can be scrolled interactively. The crossline value locates the currently-displayed prestack panel. That can be scrolled at given steps (increment). You can use either the arrows or the mouse wheel over the inline/crossline value.</p>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack 3D viewer position.png" class="General_Image" />
+        <p style="font-weight: bold;">Right-click options for a prestack dataset</p>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack 3D viewer view in 2D panel.png" class="General_Image" />
+        <p><i>Right-click menu on the pre-stack gather display to open it in the prestack 2D viewer.</i>
+        </p>
+        <p style="font-weight: bold;">Properties</p>
+        <p>There are several display properties available that are described below. Please note that the gathers are first displayed without any processing. This can be set together with other properties in the PS gather display properties:</p>
+        <ul>
+            <li><b>Shape:</b> The shape tab will set the size of the gather with respect to other 3D elements and its relative position</li>
+            <li><b>Appearance:</b> Color bar, amplitude ranges and grid lines can be set in this tab.</li>
+            <li><b>Scaling:</b> This tab is used to scale (clip) the amplitude range of the displayed data.</li>
+            <li><b>Preprocessing:</b> Pre-processing may be applied to enhance the display. The available algorithms are presented in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../6 Processing/6.1 Create Seismic Output/6.1.6 Pre-Stack Processing.htm" target="_blank">prestack processing chapter</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">prestack processing chapter</MadCap:conditionalText>.</li>
+        </ul>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack properties shape.png" class="General_Image" /> <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack properties appearance.png" class="General_Image" /><img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack properties scaling.png" class="General_Image" /> <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack properties preprocessing.png" class="General_Image" /><p><b>Resolution:</b> Interpolates the data to get a better display (consumes more memory).</p><p><b>View in 2D panel:</b> Transfer this dataset to view it in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" target="_blank">prestack 2D viewer</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">prestack 2D viewer</MadCap:conditionalText>.</p><p><b>Amplitude spectrum:</b> Display the average frequency spectrum of the trace of that gather, for the displayed Z range.</p></body>
+</html>
