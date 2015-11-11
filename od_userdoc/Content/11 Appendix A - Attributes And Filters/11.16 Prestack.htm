@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1171" MadCap:lastWidth="1384">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1133" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -8,14 +8,20 @@
         </p>
         <p>Prestack -- The pre-stack attribute can be used either to extract statistics on the gathers and their amplitudes, or to extract AVO attributes.</p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic prestack.png" class="General_Image" />
-        <p>This attribute requires pre-stack data as input, but will output post-stack data. The following workflow is used in the above example:</p>
-        <ul>
-            <li>Pre-processing is applied to the gathers, like mute and AGC</li>
-            <li>The data is extracted in the offset range [500, 3000] m and sorted per CDP and depth sample</li>
-            <li>For each CDP and depth a crossplot of amplitude vs. square root of the offset is made</li>
-            <li>A least square regression is computed</li>
-            <li>The intercept value is returned</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>This attribute requires pre-stack data as input, but will output post-stack data. The following workflow is used in the above example:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Pre-processing is applied to the gathers, like mute and AGC</li>
+                    <li>The data is extracted in the offset range [500, 3000] m and sorted per CDP and depth sample</li>
+                    <li>For each CDP and depth a crossplot of amplitude vs. square root of the offset is made</li>
+                    <li>A least square regression is computed</li>
+                    <li>The intercept value is returned</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>The <a href="../6 Processing/6.1 Create Seismic Output/6.1.6 Pre-Stack Processing.htm" target="_self" MadCap:conditions="Default.ScreenOnly">pre-processing</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">pre-processing</MadCap:conditionalText> of the gathers is optional. When used it must be setup in a separate window either by selecting an existing setup or creating a new one.</p>
         <p>The offset range is used to define the extraction window. It requires absolute offset values, in meter or feet (depending on the survey unit definition). Optionally if angles were used instead of offsets while loading, then angle ranges can be used. Once again they have to be in the same unit as in the input trace (SEG-Y) headers.</p>
         <p>After optional pre-processing and data extraction, a vector of amplitudes is available for each CMP/CIG, at each depth. From each vector either statistics or a least-square regression can be made.</p>

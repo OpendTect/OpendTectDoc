@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1444" MadCap:lastWidth="1384">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1444" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -20,29 +20,47 @@
         <p><b>Laplacian</b>
         </p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve laplacian.png" class="General_Image" />
-        <p>The Laplacian filter is an edge enhancement filter. The sharpness is determined by the <i>Filter size</i>. The <i>shape</i> parameter specifies the input samples to the filter. In a 3x3x3 Laplace filter, the output is calculated by multiplying the central sample value with 26 and subtracting all surrounding sample values. The convolution is characterized by the following kernel:</p>
-        <ul>
-            <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
-            <li>(-1,-1,-1) (-1,+26,-1) (-1,-1,-1)</li>
-            <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The Laplacian filter is an edge enhancement filter. The sharpness is determined by the <i>Filter size</i>. The <i>shape</i> parameter specifies the input samples to the filter. In a 3x3x3 Laplace filter, the output is calculated by multiplying the central sample value with 26 and subtracting all surrounding sample values. The convolution is characterized by the following kernel:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
+                    <li>(-1,-1,-1) (-1,+26,-1) (-1,-1,-1)</li>
+                    <li>(-1,-1,-1) (-1,-1 ,-1) (-1,-1,-1)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>In case all sample values are equal and non-zero (either positive or negative), the effect of this operation is zero.</p>
         <p><b>Prewitt</b>
         </p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve prewitt.png" class="General_Image" />
-        <p>Prewitt is a contrast enhancement filter. This filter computes the gradient in different directions from a 3x3x3 input cube. The <i>Output</i> is returned in the specified direction (inline, crossline, or Z-plane). A 3x3x3 Prewitt kernel to calculate a horizontal gradient is given by:</p>
-        <ul>
-            <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
-            <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
-            <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prewitt is a contrast enhancement filter. This filter computes the gradient in different directions from a 3x3x3 input cube. The <i>Output</i> is returned in the specified direction (inline, crossline, or Z-plane). A 3x3x3 Prewitt kernel to calculate a horizontal gradient is given by:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+                    <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+                    <li>(1,0,-1) (1,0,-1) (1,0,-1)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>Note that the inline gradient returns the difference in amplitude in the inline direction. This is best visualized on a crossline. Similarly, a crossline gradient is visualized best on an inline.</p>
-        <p>A 3x3x3 Prewitt kernel that returns the vertical gradient is given by:</p>
-        <ul>
-            <li>(-1,-1,-1) (-1,-1,-1) (-1,-1,-1)</li>
-            <li>( 0, 0, 0) ( 0, 0, 0) ( 0, 0, 0)</li>
-            <li>( 1, 1, 1) ( 1, 1, 1) ( 1, 1, 1)</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>A 3x3x3 Prewitt kernel that returns the vertical gradient is given by:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>(-1,-1,-1) (-1,-1,-1) (-1,-1,-1)</li>
+                    <li>( 0, 0, 0) ( 0, 0, 0) ( 0, 0, 0)</li>
+                    <li>( 1, 1, 1) ( 1, 1, 1) ( 1, 1, 1)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p><b>Wavelet</b>
         </p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D convolve wavelet.png" class="General_Image" />

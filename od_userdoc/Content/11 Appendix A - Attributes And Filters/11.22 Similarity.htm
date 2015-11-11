@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2049" MadCap:lastWidth="1384">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1897" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -19,17 +19,23 @@
         </p>
         <p><b>Input Parameters</b>
         </p>
-        <p><b>Extension Definitions</b>
-        </p>
-        <ul>
-            <li>None: Only the similarity between the pair of traces defined in 'Trace positions' is calculated.</li>
-            <li>Mirror 90 degrees: Two similarities are computed: one for the defined trace pair (as in 'None') and one for the pair obtained by 90 degree rotation. (Not available for 2D data)</li>
-            <li>Mirror 180 degrees: Two similarities are computed: one for the defined trace pair (as in 'None') and one for the pair obtained by 180 degree rotation.</li>
-            <li>Full Block: Similarities between all possible trace pairs in the rectangle defined by the step-out are computed.</li>
-            <li>Cross: Similarities between all possible trace pairs in the '+' -shape defined by the step-out are computed.</li>
-            <li>Diagonal: Similarities between all possible trace pairs in the 'x' -shape defined by the step-out are computed.</li>
-            <li>All Directions: Similarities between all possible trace pairs in the ' ' -shape defined by step-out are computed. This is the extension found to be most useful: it gives a degree of accuracy almost equal to that of 'Full Block' but with significantly less processing time (depending on the step-out, up to a factor of 10).</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><b>Extension Definitions</b>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>None: Only the similarity between the pair of traces defined in 'Trace positions' is calculated.</li>
+                    <li>Mirror 90 degrees: Two similarities are computed: one for the defined trace pair (as in 'None') and one for the pair obtained by 90 degree rotation. (Not available for 2D data)</li>
+                    <li>Mirror 180 degrees: Two similarities are computed: one for the defined trace pair (as in 'None') and one for the pair obtained by 180 degree rotation.</li>
+                    <li>Full Block: Similarities between all possible trace pairs in the rectangle defined by the step-out are computed.</li>
+                    <li>Cross: Similarities between all possible trace pairs in the '+' -shape defined by the step-out are computed.</li>
+                    <li>Diagonal: Similarities between all possible trace pairs in the 'x' -shape defined by the step-out are computed.</li>
+                    <li>All Directions: Similarities between all possible trace pairs in the ' ' -shape defined by step-out are computed. This is the extension found to be most useful: it gives a degree of accuracy almost equal to that of 'Full Block' but with significantly less processing time (depending on the step-out, up to a factor of 10).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>The attribute returns the statistical property specified in <i>Output statistic</i>. The <i>Steering</i> option enables the user to follow the local dip to find trace segments that should be compared instead of comparing two horizontally extracted trace segments. The <i>Steering</i> option supports five different modes of data-driven steering: None, Central, Full, Constant direction Steering and Browse dip.]</p>
         <p>Similarity "None" Steering: This option is used when non SteeringCube algorithm is used. This is ok in the case the layering is mainly horizontal (with less dip).</p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic similarity.png" class="General_Image" />

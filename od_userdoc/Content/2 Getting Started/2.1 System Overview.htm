@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="735" MadCap:lastWidth="1909">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="754" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -11,15 +11,21 @@
         <img src="../Resources/Images/2 Getting Started/Getting started full view.png" class="General_Image" />
         <p><b>OpendTect main user interface including commercial plugins</b>
         </p>
-        <p>Just some of the functions for which OpendTect can be used:</p>
-        <ul>
-            <li>To perform seismic data interpretation.</li>
-            <li>To create advanced single-attribute cubes.</li>
-            <li>To filter the seismic data.</li>
-            <li>To track and filter horizons</li>
-            <li>To combine attribute and filter responses by maths and logic (IF..THEN..ELSE, ..AND.., ..OR.. etc.)</li>
-            <li>As a platform to develop new applications or plug-ins.</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Just some of the functions for which OpendTect can be used:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>To perform seismic data interpretation.</li>
+                    <li>To create advanced single-attribute cubes.</li>
+                    <li>To filter the seismic data.</li>
+                    <li>To track and filter horizons</li>
+                    <li>To combine attribute and filter responses by maths and logic (IF..THEN..ELSE, ..AND.., ..OR.. etc.)</li>
+                    <li>As a platform to develop new applications or plug-ins.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>Projects in OpendTect are associated with a seismic survey, which must be defined at the start (File - Survey). The survey specifications define the geographical boundaries of the study area and the relationship between inline/cross-line and X/Y co-ordinate system. Seismic data is loaded from external sources (e.g. SEGY) into OpendTect's CBVS (Common Binary Volume Storage) format.</p>
         <p>An important thing to remember is that OpendTect works with an <i>active attribute set</i> (You can auto-load an attribute-set which will be active the next time you open the survey. Do the following: open an attribute set window, then select <i>File &gt; Autoload Attribute set</i>). Only attributes in the current active set can be used to make displays. You must select an existing attribute set or create a new one before you can apply attributes. If you wish to test a different attribute or, in case you simply wish to change the parameters of an attribute, you can do so by modifying the current attribute set.</p>
         <p>Interactive testing of attributes is a key benefit of OpendTect. Attributes and input data can be visualized in multiple graphic windows ("Scenes") using multiple plane viewers (inline, crossline, randomline, Z-slice). Each scene has its own graphic tree that controls the elements that can be switched on/off. The plane viewer dimensions can be re-sized to reduce calculation times. The attribute specification window supports a direct application mode for fast testing of attribute parameters. Press the "Swift" icon to apply the current attribute to the currently selected active element. Up to eight different attributes can be displayed in one element (inline, crossline, 2D line, Z-slice, randomline).</p>

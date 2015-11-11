@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="396" MadCap:lastWidth="1397">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="377" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
         <h3>6.6.4 Cluster Processing</h3>
         <p>Batch jobs can be run from OpendTect to cluster management tools. So far dGB has successfully tested <a href="https://computing.llnl.gov/linux/slurm/" target="_blank" MadCap:conditions="Default.ScreenOnly">SLURM</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SLURM</MadCap:conditionalText> which is easy to install and even easier to use.</p>
-        <p>Cluster processing is enabled by following this prerequisites:</p>
-        <ul>
-            <li>The environment variable DTECT_CLUSTER_PROC is set to yes before starting OpendTect</li>
-            <li>The cluster management tool must be up and running. In the case of SLURM it means that the daemon 'slurmctld' should be running on the master computer and that the daemon 'mlurmd' must be running on every node.</li>
-            <li>This cluster management tool (SLURM) bin directory is included in your PATH variable</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Cluster processing is enabled by following this prerequisites:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>The environment variable DTECT_CLUSTER_PROC is set to yes before starting OpendTect</li>
+                    <li>The cluster management tool must be up and running. In the case of SLURM it means that the daemon 'slurmctld' should be running on the master computer and that the daemon 'mlurmd' must be running on every node.</li>
+                    <li>This cluster management tool (SLURM) bin directory is included in your PATH variable</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>Cluster processing is started by choosing "Cluster" in the 'Submit' options menu of the volume processing window. Only 3D attributes can make use of cluster computing so far.</p>
         <p>A new window will pop up that will list a number of directories use for the storage of temporary files. The jobs will be split using a user-defined number of inlines. The field named 'Cluster Processing command' represents the name of the binary from the cluster management tool used to run a process.</p>
         <p>You can run the "Main script file" (default: ~/yoursurvey/Proc/clusterprocscript) from a command line which will run each job one-by-one using the above command and will also launch the UI to show progress and do post-processing merging of temporary data.</p>

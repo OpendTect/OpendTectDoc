@@ -1,24 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1005" MadCap:lastWidth="1909">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1043" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
         <h4>4.3.13.3 Simple Multi-Well</h4>
         <p>Well depths in OpendTect are always referenced using their Measured Depth. The alignment with the seismic data in done using the track (deviation survey) data and time-depth and/or checkshot data. The track data provides the relation between lateral coordinates, TVDSS depths and Measured Depths. The checkshot data and time-depth data provides the relation between Measured depths and travel times (TWT). Other formats can be used during import, but will be converted.</p>
         <p>This utility window allows the quick creation of multiple vertical wells with a constant velocity as depth-time model provider. The table window below can either be filled manually or by reading a file.</p>
-        <p>The following parameters are mandatory:</p>
-        <ul>
-            <li>Well name</li>
-            <li>(Vertical) position along the X axis, in the same unit as the survey geometry.</li>
-            <li>(Vertical) Position along the Y axis, in the same unit as the survey geometry.</li>
-            <li>Reference datum elevation (KB or other): Altitude measured from sea level of the point MD=0., positive upwards. Can be left to 0 if unknown.</li>
-            <li>Total depth (TD): Largest measured depth in the well. This parameter is half optional; If not provided the well track is created such that it will reach the survey base.</li>
-        </ul>
-        <p>The following parameters are optional:</p>
-        <ul>
-            <li>Seismic reference datum (SRD): Altitude measured from sea level of the point TWT=0ms, positive upwards.</li>
-            <li>UWI (Unique well identifier): You can input any number, string or combination.</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The following parameters are mandatory:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Well name</li>
+                    <li>(Vertical) position along the X axis, in the same unit as the survey geometry.</li>
+                    <li>(Vertical) Position along the Y axis, in the same unit as the survey geometry.</li>
+                    <li>Reference datum elevation (KB or other): Altitude measured from sea level of the point MD=0., positive upwards. Can be left to 0 if unknown.</li>
+                    <li>Total depth (TD): Largest measured depth in the well. This parameter is half optional; If not provided the well track is created such that it will reach the survey base.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The following parameters are optional:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Seismic reference datum (SRD): Altitude measured from sea level of the point TWT=0ms, positive upwards.</li>
+                    <li>UWI (Unique well identifier): You can input any number, string or combination.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi main.png" class="General_Image" />
         <p>To read a file containing that information, press <i>Read</i> file and select the input Ascii file. One line in this file should correspond to one line in the output table.</p>
         <img src="../../../Resources/Images/5 Menu - Survey/Import wells simple multi read file.png" class="General_Image" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="557" MadCap:lastWidth="1896">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="557" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -9,16 +9,22 @@
         <p>The SEG-Y revision 1 default bytes locations will be used during export, but additional positions can be used with the <a href="../../../9 Utilities/9.1 Settings/9.1.4 Advanced Settings/9.1.4.1 Personal Settings.htm" target="_self" MadCap:conditions="Default.ScreenOnly">personal setting keywords</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">personal setting keywords</MadCap:conditionalText> listed on the right-hand side.</p>
         <p>The pick is a trace attribute stored in the OpendTect seismic files. It is most often not used.</p>
         <p>The reference number is most often the Shot Point for 2D data but could be used for anything else. Please note that a SEG-Y scalar at bytes 201-202 apply for values stored in bytes 197-200. The SP scalar will always be -10, thus the value written on bytes 197-200 is 10 times the SP value.</p>
-        <p>All values listed above are encoded on 4 bytes by default. The byte length can be overridden using the following personal key words, except for the coordinates:</p>
-        <ul>
-            <li>SEG-Y.Nr bytes for In-line</li>
-            <li>SEG-Y.Nr bytes for Cross-line</li>
-            <li>SEG-Y.Nr bytes for Offset</li>
-            <li>SEG-Y.Nr bytes for Azimuth</li>
-            <li>SEG-Y.Nr bytes for trace number</li>
-            <li>SEG-Y.Nr bytes for Pick</li>
-            <li>SEG-Y.Nr bytes for RefNr</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>All values listed above are encoded on 4 bytes by default. The byte length can be overridden using the following personal key words, except for the coordinates:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>SEG-Y.Nr bytes for In-line</li>
+                    <li>SEG-Y.Nr bytes for Cross-line</li>
+                    <li>SEG-Y.Nr bytes for Offset</li>
+                    <li>SEG-Y.Nr bytes for Azimuth</li>
+                    <li>SEG-Y.Nr bytes for trace number</li>
+                    <li>SEG-Y.Nr bytes for Pick</li>
+                    <li>SEG-Y.Nr bytes for RefNr</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>The layout of the SEG-Y export window changes slightly based on the data type.</p>
     </body>
 </html>

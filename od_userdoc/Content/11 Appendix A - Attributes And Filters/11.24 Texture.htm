@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4157" MadCap:lastWidth="1371">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4043" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -21,12 +21,18 @@
         <p>Input Data <b>Minimum</b> and <b>Maximum</b> define the clipping range of the data, which is needed to rescale the data to 4-bits (16 x 16), or 5-bits (32 x 32).Input data range is automatically calculated from the compute option.In the "analysis" window number of traces need to be selected which computes the scaling range from the selected input traces.</p>
         <p><b>Output</b>
         </p>
-        <p>OpendTect supports three groups of Texture Attributes:</p>
-        <ol>
-            <li>Contrast group: Measures related to contrast use weights related to the distance from the GLCM diagonal along which neighboring values are equal. Attributes in this group: Contrast, Dissimilarity, Homogeneity</li>
-            <li>Measures related to orderliness. Attributes in this group: Angular Second Moment (ASM), Energy, Entropy</li>
-            <li>Group using descriptive statistics of the GLCM texture measures. Attributes in this group: GLCM Mean, GLCM Variance, GLCM Standard Deviation, GLCM Correlation</li>
-        </ol>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>OpendTect supports three groups of Texture Attributes:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Contrast group: Measures related to contrast use weights related to the distance from the GLCM diagonal along which neighboring values are equal. Attributes in this group: Contrast, Dissimilarity, Homogeneity</li>
+                    <li>Measures related to orderliness. Attributes in this group: Angular Second Moment (ASM), Energy, Entropy</li>
+                    <li>Group using descriptive statistics of the GLCM texture measures. Attributes in this group: GLCM Mean, GLCM Variance, GLCM Standard Deviation, GLCM Correlation</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>In all equations given below N denotes the size of the GLCM matrix; i refers to the column and j to the row. P is the GLCM Probability matrix.</p>
         <p><b>Contrast</b>
         </p>
@@ -139,11 +145,17 @@
                 </tr>
             </tbody>
         </table>
-        <p><b>References</b>
-        </p>
-        <ul>
-            <li>Chopra, S. and Alexeev, V., 2005. Application of texture attribute analysis to 3D seismic data. CSEG Recorder, Sep. 2005 pp 29-32.</li>
-            <li>Hall-Beyer, M. <a href="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText>. Available: Online [Accessed 9 Oct. 2012].</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><b>References</b>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Chopra, S. and Alexeev, V., 2005. Application of texture attribute analysis to 3D seismic data. CSEG Recorder, Sep. 2005 pp 29-32.</li>
+                    <li>Hall-Beyer, M. <a href="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText>. Available: Online [Accessed 9 Oct. 2012].</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
     </body>
 </html>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1308" MadCap:lastWidth="1384">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1232" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -13,33 +13,45 @@
         <img src="../Resources/Images/Appendix A/Event Description.png" class="General_Image" />
         <p><b>Input Parameters</b>
         </p>
-        <p>In the <i>single event mode</i>, the algorithm searches for the extremum and quantifies the shape around the event in terms of either <i>Peakedness, Steepness</i> or <i>Asymmetry</i>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>In the <i>single event mode</i>, the algorithm searches for the extremum and quantifies the shape around the event in terms of either <i>Peakedness, Steepness</i> or <i>Asymmetry</i>.</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><b>Peakedness:</b> The ratio between the Extremum value and distance between next and previous zero crossings (ZC)</li>
+                    <li><b>Steepness:</b> The slope of tangent to the seismic trace at a zero crossing</li>
+                    <li><b>Asymmetry:</b> The asymmetry of event. Mathematically it can be presented as: (L-R)/(L+R) where L is the distance between previous ZC and extremum and R is distance between next ZC and extremum</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns event.png" class="General_Image" />
-        <ul>
-            <li><b>Peakedness:</b> The ratio between the Extremum value and distance between next and previous zero crossings (ZC)</li>
-            <li><b>Steepness:</b> The slope of tangent to the seismic trace at a zero crossing</li>
-            <li><b>Asymmetry:</b> The asymmetry of event. Mathematically it can be presented as: (L-R)/(L+R) where L is the distance between previous ZC and extremum and R is distance between next ZC and extremum</li>
-        </ul>
-        <p>In the multiple event mode, the event type needs to be specified from the Event type drop-down list:</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>In the multiple event mode, the event type needs to be specified from the Event type drop-down list:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><i>Extremum</i>
+                    </li>
+                    <li><i>Maximum</i>
+                    </li>
+                    <li><i>Minimum</i>
+                    </li>
+                    <li><i>Zero Crossing</i>
+                    </li>
+                    <li><i>Negative to Positive Zero Crossing</i>
+                    </li>
+                    <li><i>Positive to Negative Zero Crossing</i>
+                    </li>
+                    <li><i>Maximum within the gate</i>
+                    </li>
+                    <li><i>Minimum within the gate</i>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D patterns multiple events.png" class="General_Image" />
-        <ul>
-            <li><i>Extremum</i>
-            </li>
-            <li><i>Maximum</i>
-            </li>
-            <li><i>Minimum</i>
-            </li>
-            <li><i>Zero Crossing</i>
-            </li>
-            <li><i>Negative to Positive Zero Crossing</i>
-            </li>
-            <li><i>Positive to Negative Zero Crossing</i>
-            </li>
-            <li><i>Maximum within the gate</i>
-            </li>
-            <li><i>Minimum within the gate</i>
-            </li>
-        </ul>
         <p><b>Output</b>
         </p>
         <p>The output is either the <i>distance</i> between the chosen event and the next/previous similar event or the <i>amplitude</i> of the event. The output is determined by the checkbox below the event type drop-down list.</p>

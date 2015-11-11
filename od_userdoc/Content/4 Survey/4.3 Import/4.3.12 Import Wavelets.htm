@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="672" MadCap:lastWidth="1909">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="691" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -9,12 +9,18 @@
         <img src="../../Resources/Images/5 Menu - Survey/Import wavelets main.png" class="General_Image" />
         <p><b>Format definition</b>
         </p>
-        <p>Pre-defined and saved file formats are available by pressing the <img src="../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise, the format must be manually specified. The <i>Define</i> button gives access to the <i>Format definition</i> window:</p>
-        <ul>
-            <li><i>Center sample</i>: a number of lines between the first sample and the center sample (if provided incorrectly, a warning message suggests an auto-predicted number).</li>
-            <li><i>Data samples</i>: a column containing amplitude values.</li>
-            <li><i>Stop reading at</i>: optional keyword to stop reading a file.</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Pre-defined and saved file formats are available by pressing the <img src="../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise, the format must be manually specified. The <i>Define</i> button gives access to the <i>Format definition</i> window:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><i>Center sample</i>: a number of lines between the first sample and the center sample (if provided incorrectly, a warning message suggests an auto-predicted number).</li>
+                    <li><i>Data samples</i>: a column containing amplitude values.</li>
+                    <li><i>Stop reading at</i>: optional keyword to stop reading a file.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p class="tip">When file header is present, both sampling interval and center sample can be dynamically extracted from it by providing keywords for each, or indexed using columns positions.</p>
         <img src="../../Resources/Images/5 Menu - Survey/Import wavelets format definition.png" class="General_Image" />
         <p>It is recommended to save the format definition for a later use by clicking on the <img src="../../Resources/Images/Icons/save.png" class="Icons" /> icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage. Press OK when done.</p>

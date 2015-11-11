@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="676" MadCap:lastWidth="1909">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="676" MadCap:lastWidth="1762">
     <head>
     </head>
     <body>
@@ -10,15 +10,21 @@
         <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 3d.png" class="General_Image" />
         <p>It is recommended to use a sub-selection of the seismic data, e.g. every 10th inline/crossline, and to use horizons to guide the extraction. The extract length of the seismic data should be at least 1 second TWT.</p>
         <p>The wavelet length should never be too small (min 50ms), or too large (200ms max). A rule of thumb is that the first side lobe should be fully contained in the wavelet.</p>
-        <p>The extraction is performed using the following workflow:</p>
-        <ol>
-            <li>Seismic traces are extracted and tapered</li>
-            <li>The auto-correlation of the seismic traces is computed, using the length of the desired wavelet</li>
-            <li>The frequency spectrum of the auto-correlation is computed.</li>
-            <li>The square root of the modulus of the frequency spectrum is taken, the zero Hertz component is muted to zero.</li>
-            <li>The inverse FFT is computed.</li>
-            <li>The zero phase wavelet is the real part of the inverse FFT output</li>
-        </ol>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The extraction is performed using the following workflow:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Seismic traces are extracted and tapered</li>
+                    <li>The auto-correlation of the seismic traces is computed, using the length of the desired wavelet</li>
+                    <li>The frequency spectrum of the auto-correlation is computed.</li>
+                    <li>The square root of the modulus of the frequency spectrum is taken, the zero Hertz component is muted to zero.</li>
+                    <li>The inverse FFT is computed.</li>
+                    <li>The zero phase wavelet is the real part of the inverse FFT output</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>The output phase rotation cannot be set in the current version. It is being implemented.</p>
         <p>The Wavelet extraction in 2D line is shown below:</p>
         <img src="../../../Resources/Images/5 Menu - Survey/Manage wavelets extract window 2d.png" class="General_Image" />
