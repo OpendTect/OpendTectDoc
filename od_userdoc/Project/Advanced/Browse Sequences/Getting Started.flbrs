@@ -21,16 +21,12 @@
       Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
   </TocEntry>
   <TocEntry
-    Title="Then this"
-    Link="/Content/0 Remove Data/0.1 How-to/0.1.2 Quickstart A Project.htm">
+    Title="Then this">
     <TocEntry
-      Title="Setup 2D &amp; 3D Survey"
-      Link="/Content/0 Remove Data/0.1 How-to/0.1.2 Quickstart A Project/setup_surv.htm" />
+      Title="Setup 2D &amp; 3D Survey" />
     <TocEntry
-      Title="Load Seismic (2D &amp; 3D)"
-      Link="/Content/0 Remove Data/0.1 How-to/0.1.2 Quickstart A Project/load_seis.htm" />
+      Title="Load Seismic (2D &amp; 3D)" />
     <TocEntry
-      Title="Interpret Horizons"
-      Link="/Content/0 Remove Data/0.1 How-to/0.1.1 Interpret Horizons.htm" />
+      Title="Interpret Horizons" />
   </TocEntry>
 </CatapultToc>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="811" MadCap:lastWidth="1922">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="830" MadCap:lastWidth="1477">
     <head>
     </head>
     <body>
-        <h3>5.2.5 Velocity Gridder</h3>
+        <h3>5.2.5 Velocity Gridder<MadCap:keyword term="5.2.5 Velocity Gridder" /></h3>
         <p>The gridding will create a volume out of a sparsely sampled dataset. <b>The input source MUST be </b><a href="../../4 Survey/4.3 Import/4.3.10 Import Seismic/4.3.10.6 Tagged Seismic Data.htm" target="_self" MadCap:conditions="Default.ScreenOnly">tagged</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><b>tagged</b></MadCap:conditionalText><b> with a velocity type.</b> Indeed the gridding is applied to the time-depth relation hold by the velocity source and not on the amplitudes of the velocity source. This preserves the time-depth relation and blocky-ness of interval velocity models. The gridded time-depth relation is converted back to the input velocity type in the output volume.</p>
         <p>However any other data type could be gridded by this module (Thomsen parameters, temperatures, ...). These other types must be <a href="../../4 Survey/4.3 Import/4.3.10 Import Seismic/4.3.10.6 Tagged Seismic Data.htm" target="_self" MadCap:conditions="Default.ScreenOnly">tagged</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">tagged</MadCap:conditionalText> as delta, epsilon or eta before being used for gridding. The functions will be vertically interpolated using a linear 1D interpolation before the lateral gridding.</p>
         <p>Two interpolation methods are available for gridding: inverse distance interpolation or triangulation. The first method is designed for the interpolation of sparse dataset, while the second algorithm should be preferred if the input exists on a regular (but coarse) grid. In general gridding is always followed by some filtering.</p>
