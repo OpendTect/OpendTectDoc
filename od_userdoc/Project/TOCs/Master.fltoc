@@ -3,7 +3,7 @@
   Version="1">
   <TocEntry
     Title="pdf_cover"
-    Link="/Content/covers/pdf_cover.htm"
+    Link="/Content/PDF Front Page/pdf_cover.htm"
     conditions="Default.PrintOnly"
     StartSection="false"
     SectionNumberReset="continue"
@@ -13,11 +13,11 @@
     ReplaceMergeNode="false" />
   <TocEntry
     Title="toc_proxy_only"
-    Link="/Content/covers/toc_proxy_only.htm"
+    Link="/Content/PDF Front Page/toc_proxy_only.htm"
     conditions="Default.PrintOnly" />
   <TocEntry
     Title="OpendTect User Documentation - Version 6.0"
-    Link="/Content/od_userdoc_v6.0/od_userdoc_v6.htm"
+    Link="/Content/HTML Front Page/od_userdoc_v6.htm"
     conditions="Default.ScreenOnly" />
   <TocEntry
     Title="1 Preface"
