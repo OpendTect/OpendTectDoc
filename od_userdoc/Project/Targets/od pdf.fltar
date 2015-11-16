@@ -13,7 +13,7 @@
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
-  OutputFolder="C:\documentation\UserDoc-6\od_userdoc\Output\Cases\od pdf">
+  OutputFolder="C:\separate_repositories\ODDoc6\od_userdoc\Output\mark\od pdf">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
