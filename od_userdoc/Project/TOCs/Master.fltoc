@@ -3,7 +3,7 @@
   Version="1">
   <TocEntry
     Title="pdf_cover"
-    Link="/Content/covers/pdf_cover.htm"
+    Link="/Content/PDF Front Page/pdf_cover.htm"
     conditions="Default.PrintOnly"
     StartSection="false"
     SectionNumberReset="continue"
@@ -13,11 +13,11 @@
     ReplaceMergeNode="false" />
   <TocEntry
     Title="toc_proxy_only"
-    Link="/Content/covers/toc_proxy_only.htm"
+    Link="/Content/PDF Front Page/toc_proxy_only.htm"
     conditions="Default.PrintOnly" />
   <TocEntry
     Title="OpendTect User Documentation - Version 6.0"
-    Link="/Content/od_userdoc_v5.0/od_userdoc_v6.htm"
+    Link="/Content/HTML Front Page/od_userdoc_v6.htm"
     conditions="Default.ScreenOnly" />
   <TocEntry
     Title="1 Preface"
@@ -1179,49 +1179,49 @@
       Link="/Content/11 Appendix A - Attributes And Filters/11.12 Log.htm" />
     <TocEntry
       Title="11.13 Match Delta"
-      Link="/Content/11 Appendix A - Attributes And Filters/match_delta.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.13 Match Delta.htm" />
     <TocEntry
       Title="11.14 Mathematics"
-      Link="/Content/11 Appendix A - Attributes And Filters/maths.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.14 Mathematics.htm" />
     <TocEntry
       Title="11.15 Position"
-      Link="/Content/11 Appendix A - Attributes And Filters/pos.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.15 Position.htm" />
     <TocEntry
       Title="11.16 Prestack"
-      Link="/Content/11 Appendix A - Attributes And Filters/prestack.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.16 Prestack.htm" />
     <TocEntry
       Title="11.17 Reference"
-      Link="/Content/11 Appendix A - Attributes And Filters/ref.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.17 Reference.htm" />
     <TocEntry
       Title="11.18 Reference Shift"
-      Link="/Content/11 Appendix A - Attributes And Filters/ref_shft.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.18 Reference Shift.htm" />
     <TocEntry
       Title="11.19 Sample Value"
-      Link="/Content/11 Appendix A - Attributes And Filters/samp_val.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.19 Sample Value.htm" />
     <TocEntry
       Title="11.20 Scaling"
-      Link="/Content/11 Appendix A - Attributes And Filters/scaling.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.20 Scaling.htm" />
     <TocEntry
       Title="11.21 Semblance"
       Link="/Content/11 Appendix A - Attributes And Filters/11.21 Semblance.htm" />
     <TocEntry
       Title="11.22 Similarity"
-      Link="/Content/11 Appendix A - Attributes And Filters/sim.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.22 Similarity.htm" />
     <TocEntry
       Title="11.23 Spectral Decomposition"
-      Link="/Content/11 Appendix A - Attributes And Filters/spec_decomp.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.23 Spectral Decomposition.htm" />
     <TocEntry
       Title="11.24 Texture"
-      Link="/Content/11 Appendix A - Attributes And Filters/text.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.24 Texture.htm" />
     <TocEntry
       Title="11.25 Texture - Directional"
-      Link="/Content/11 Appendix A - Attributes And Filters/text_dir.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.25 Texture - Directional.htm" />
     <TocEntry
       Title="11.26 Velocity Fan Filter"
-      Link="/Content/11 Appendix A - Attributes And Filters/vel_fan_fltr.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.26 Velocity Fan Filter.htm" />
     <TocEntry
       Title="11.27 Volume Statistics"
-      Link="/Content/11 Appendix A - Attributes And Filters/vol_stats.htm" />
+      Link="/Content/11 Appendix A - Attributes And Filters/11.27 Volume Statistics.htm" />
   </TocEntry>
   <TocEntry
     Title="12 Appendix B - Command Driver Manual"

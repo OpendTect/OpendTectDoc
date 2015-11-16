@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="436" MadCap:lastWidth="1896">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="436" MadCap:lastWidth="1438">
     <head>
     </head>
     <body>
-        <h6>4.5.12.1.1.1 Copy - Volume Sub-Selection</h6>
+        <h6>4.5.12.1.1.1 Copy - Volume Sub-Selection<MadCap:keyword term="4.5.12.1.1.1 Copy - Volume Sub-Selection" /></h6>
         <img src="../../../../../Resources/Images/5 Menu - Survey/Manage seismics volume subselection window.png" class="General_Image" />
         <p>This standard menu is available when <i>importing/exporting</i> a volume, line, or horizon, copying a cube or horizon, or processing an attribute.</p>
-        <p>In all those processes, the output might be limited with respect to the available input data. The limitation may be:</p>
-        <ul>
-            <li>A rectangular part of the survey, possibly with a larger horizontal and vertical stepout</li>
-            <li>An area limited by an OpendTect polygon. The area within the polygon can be as well by decimated horizontal by using larger stepouts</li>
-            <li>A table of positions from an OpendTect pickset or from a text file. The text file should contain inline and crossline values without header</li>
-            <li>All: This last option will output the maximum number of trace with respect to the available data and possible stepouts</li>
-            <li>The use of larger <i>vertical</i> stepouts will cause the data to be decimated in the given direction. Please note that an anti-alias filter (using the <a href="../../../../../11 Appendix A - Attributes And Filters/11.6 Frequency Filter.htm" target="_self" MadCap:conditions="Default.ScreenOnly">frequency filter attribute</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">frequency filter attribute</MadCap:conditionalText>) should be applied before decimating data. The copy-cube does not do it.</li>
-            <li>The use of smaller <i>vertical</i> stepouts will cause the data to be interpolated with a polynomial interpolation. This is mostly appropriate for seismic data.</li>
-            <li>Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</li>
-            <li>The copy-cube option does not do lateral interpolation of the data (but it can decimate). Use the <a href="../../../../../5 Analysis/5.2 Volume Builder Setup/5.2.5 Velocity Gridder.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Velocity gridder</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Velocity gridder</MadCap:conditionalText> step of the volume builder to laterally grid a coarse volume.</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>In all those processes, the output might be limited with respect to the available input data. The limitation may be:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>A rectangular part of the survey, possibly with a larger horizontal and vertical stepout</li>
+                    <li>An area limited by an OpendTect polygon. The area within the polygon can be as well by decimated horizontal by using larger stepouts</li>
+                    <li>A table of positions from an OpendTect pickset or from a text file. The text file should contain inline and crossline values without header</li>
+                    <li>All: This last option will output the maximum number of trace with respect to the available data and possible stepouts</li>
+                    <li>The use of larger <i>vertical</i> stepouts will cause the data to be decimated in the given direction. Please note that an anti-alias filter (using the <a href="../../../../../11 Appendix A - Attributes And Filters/11.6 Frequency Filter.htm" target="_self" MadCap:conditions="Default.ScreenOnly">frequency filter attribute</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">frequency filter attribute</MadCap:conditionalText>) should be applied before decimating data. The copy-cube does not do it.</li>
+                    <li>The use of smaller <i>vertical</i> stepouts will cause the data to be interpolated with a polynomial interpolation. This is mostly appropriate for seismic data.</li>
+                    <li>Volumes tagged as Vint, Vrms or Vavg are not using a polynomial interpolation of the input amplitudes, as soon as Z start, Z stop and/or Z step are changed. Instead they are converted to the corresponding time-depth relation that is linearly interpolated (vertically), before back converting the interpolated TD function to the input type.</li>
+                    <li>The copy-cube option does not do lateral interpolation of the data (but it can decimate). Use the <a href="../../../../../5 Analysis/5.2 Volume Builder Setup/5.2.5 Velocity Gridder.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Velocity gridder</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Velocity gridder</MadCap:conditionalText> step of the volume builder to laterally grid a coarse volume.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
     </body>
 </html>

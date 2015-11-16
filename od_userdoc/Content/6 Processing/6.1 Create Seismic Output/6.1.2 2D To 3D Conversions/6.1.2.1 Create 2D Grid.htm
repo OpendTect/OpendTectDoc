@@ -1,26 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="860" MadCap:lastWidth="1397">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="656" MadCap:lastWidth="1438">
     <head>
     </head>
     <body>
-        <h4>6.1.2.1 Create 2D Grid</h4>
+        <h4>6.1.2.1 Create 2D Grid<MadCap:keyword term="6.1.2.1 Create 2D Grid" /></h4>
         <p>The <i>Create 2D from 3D</i> option is an interactive tool for creating 2D-lattices from a 3D volumes.</p>
-        <p>This option can be used to create a 2D grid with a fixed grid spacing. When selected, the <i>Create 2D Grid</i> window is launched (see below). Here, specify the input 3D seismic volume and the output data set name. The output grid is generated according to the dip (parallel) and strike (perpendicular) direction of the selected volume. The prefix labels are used as prefixes to the output line names, stored to the specified new data set name. The grid spacing is the constant spacing between the two lines. At the bottom, the total number of parallel and perpendicular lines will be updated according to the grid spacing. By pressing <i>Ok</i>, a batch process will start to generate the 2D grid. When the batch program is finished, the lines and data can be displayed in the scene</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>This option can be used to create a 2D grid with a fixed grid spacing. When selected, the <i>Create 2D Grid</i> window is launched (see below). Here, specify the input 3D seismic volume and the output data set name. The output grid is generated according to the dip (parallel) and strike (perpendicular) direction of the selected volume. The prefix labels are used as prefixes to the output line names, stored to the specified new data set name. The grid spacing is the constant spacing between the two lines. At the bottom, the total number of parallel and perpendicular lines will be updated according to the grid spacing. By pressing <i>Ok</i>, a batch process will start to generate the 2D grid. When the batch program is finished, the lines and data can be displayed in the scene</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><b>Input Cube:</b> 3D seismic data for conversion into 2D line-set.</li>
+                    <li><b>Volume Subselection:</b> Restricts the extent of the 3D volume (optional). Choose inline/cross-line/time ranges for the selected volume.</li>
+                    <li><b>Create Grid from:</b> Define the output grid geometry and orientation of the 2D lines. If <i>Inl/Crl</i> is selected, the inline/cross-line orientation (or geometry) of the selected 3D data will be used within the defined inline/cross-line/z-range and corresponding steps. Optionally, the inline/crossline range can be edited manually by using loosely spaced inline/cross-line numbers separated by commas.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <img src="../../../Resources/Images/7 Processing/Processing create seismic output create 2d grid.png" class="General_Image" />
-        <ul>
-            <li><b>Input Cube:</b> 3D seismic data for conversion into 2D line-set.</li>
-            <li><b>Volume Subselection:</b> Restricts the extent of the 3D volume (optional). Choose inline/cross-line/time ranges for the selected volume.</li>
-            <li><b>Create Grid from:</b> Define the output grid geometry and orientation of the 2D lines. If <i>Inl/Crl</i> is selected, the inline/cross-line orientation (or geometry) of the selected 3D data will be used within the defined inline/cross-line/z-range and corresponding steps. Optionally, the inline/crossline range can be edited manually by using loosely spaced inline/cross-line numbers separated by commas.</li>
-        </ul>
         <img src="../../../Resources/Images/7 Processing/Processing bayesian create 2d from 3d loose.png" class="General_Image" />
-        <p>Another option is to define the 2D grid geometry based on a <i>Random Line</i>. The grid can be created both parallel- and perpendicular to the direction of the random line. Set the fixed spacing in the <i>line spacing</i><i>(m)</i> fields.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Another option is to define the 2D grid geometry based on a <i>Random Line</i>. The grid can be created both parallel- and perpendicular to the direction of the random line. Set the fixed spacing in the <i>line spacing</i><i>(m)</i> fields.</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><b>Prefix:</b> Label the 2D-line names.</li>
+                    <li><b>Output Data Set:</b> Output for the 2D line-set. Provide a name for the line and the seismic data (attribute).</li>
+                    <li><b>Extract Horizons:</b> Convert existing 3D horizons into 2D horizons by checking the box (optional). In the <i>Select horizons</i> list, select one or more horizons and, if desired, set a prefix for these selected horizons.</li>
+                    <li><b>Execution Options:</b> Launches the 'Batch Execution Parameters' window and gives the option to execute the job remotely:</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <img src="../../../Resources/Images/7 Processing/Processing bayesian create 2d from 3d random line.png" class="General_Image" />
-        <ul>
-            <li><b>Prefix:</b> Label the 2D-line names.</li>
-            <li><b>Output Data Set:</b> Output for the 2D line-set. Provide a name for the line and the seismic data (attribute).</li>
-            <li><b>Extract Horizons:</b> Convert existing 3D horizons into 2D horizons by checking the box (optional). In the <i>Select horizons</i> list, select one or more horizons and, if desired, set a prefix for these selected horizons.</li>
-            <li><b>Execution Options:</b> Launches the 'Batch Execution Parameters' window and gives the option to execute the job remotely:</li>
-        </ul>
         <img src="../../../Resources/Images/7 Processing/Processing create seismic output create 2d grid exec options.png" class="General_Image" />
     </body>
 </html>

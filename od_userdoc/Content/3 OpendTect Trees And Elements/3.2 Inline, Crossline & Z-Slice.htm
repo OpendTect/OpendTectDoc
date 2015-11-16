@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="2998" MadCap:lastWidth="1870">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="3131" MadCap:lastWidth="1425">
     <head>
     </head>
     <body>
-        <h2>3.2 Inline, Crossline &amp; Z-Slice</h2>
+        <h2>3.2 Inline, Crossline &amp; Z-Slice<MadCap:keyword term="3.2 Inline, Crossline &amp; Z-Slice" /></h2>
         <img src="../Resources/Images/4 OpendTect Trees and Elements/Inl crl zslice popout menu.png" class="General_Image" />
         <p><i>Inline</i>, <i>Crossline</i> and <i>Z-slice</i> elements can be added into the tree by clicking on the element name and selecting <i>Add/Add default data/Add color blended</i> from the pop-up menu. The Add option will insert an inline/crossline/Z-slice with a blank line in the middle of the survey (ready for an attribute or stored cube to be loaded). If a well has been loaded in the project and is within the survey box, it is possible to Add at Well location an inline or crossline. The inline/crossline loaded will be according to the surface coordinates that can be found in the well manager information summary section. Once added, a selection window will pop up to select the attribute to display: <i>Stored volume</i>, <i>Attribute</i> from the active attribute set,... If  cancel is clicked, the attribute line will stay blank in the scene and the tree entry will read <i>&lt;right click&gt;</i>.</p>
         <p>Pre-stack stored cubes will appear in the list surrounded by curly brackets {}. They can be displayed on the slices of the 3D scene as common offset volumes, in a similar way to the components of <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../6 Processing/6.1 Create Seismic Output/6.1.1 Attributes/6.1.1.4 Multi-Component Outputs.htm" target="_self">multi-components volumes</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">multi-components volumes</MadCap:conditionalText>.The prefix "O=" is then presented with the offset value in XY units (meter or feet). Attributes may be computed on common offset volumes like for components or multi-component volumes.</p>
@@ -16,14 +16,20 @@
         </p>
         <p>Each individual element (Inline/Crossline/Z-slice) has a similar pop-up list menu (see below). There are two different ways to open this list. Either display it from the Tree (as shown below) or display it in the scene. In the latter case, place the mouse over the inline/crossline/Z-slice and right-click to launch the tree. This menu list has several functions that are described in following text.</p>
         <img src="../Resources/Images/4 OpendTect Trees and Elements/Inl crl zslice inline popout.png" class="General_Image" />
-        <p><b>Add</b>
-        </p>
-        <ul>
-            <li><i>Attribute:</i> Add an additional blank attribute for the corresponding inline/crossline/Z-slice number. The attribute data (stored cubes or the attribute definition) can be displayed by right-clicking on it and selecting the desired attribute. Up to eight different attributes can be displayed within one element (inline, crossline, Z-slice).</li>
-            <li><i>Volume Processing attribute:</i> This option will add the volume processing attribute.</li>
-            <li><i>HorizonCube Display:</i> This will display the HorizonCube. It requires the HorizonCube plugin.</li>
-            <li><i>Systems Tracts Display:</i> This adds system tracts interpretation. It requires the SSIS plugin.</li>
-        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><b>Add</b>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><i>Attribute:</i> Add an additional blank attribute for the corresponding inline/crossline/Z-slice number. The attribute data (stored cubes or the attribute definition) can be displayed by right-clicking on it and selecting the desired attribute. Up to eight different attributes can be displayed within one element (inline, crossline, Z-slice).</li>
+                    <li><i>Volume Processing attribute:</i> This option will add the volume processing attribute.</li>
+                    <li><i>HorizonCube Display:</i> This will display the HorizonCube. It requires the HorizonCube plugin.</li>
+                    <li><i>Systems Tracts Display:</i> This adds system tracts interpretation. It requires the SSIS plugin.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p><b>Display</b>
         </p>
         <p><i>Histograms:</i> The histograms of all added attributes of an element can be displayed using the right-click option of the parent element (inline number, surface name...). It is a useful tool to clip the ranges of an attribute by using vertical green lines in the histogram: The vertical green lines show the current amplitude range and can be moved left or right using the left mouse-click. The display is updated when the mouse click is released. This is performed independently for each attribute. Please note that this will toggle off the automatic clipping.</p>

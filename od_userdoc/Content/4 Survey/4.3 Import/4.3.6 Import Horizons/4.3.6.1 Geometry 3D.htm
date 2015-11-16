@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="873" MadCap:lastWidth="1922">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="891" MadCap:lastWidth="1438">
     <head>
     </head>
     <body>
-        <h4>4.3.6.1 Geometry 3D</h4>
+        <h4>4.3.6.1 Geometry 3D<MadCap:keyword term="4.3.6.1 Geometry 3D" /></h4>
         <p><i>Select</i> the input ASCII file. You may display the input file by pressing the <i>Examine</i> button. Available grids (attributes) present in the input file may also be imported <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="4.3.6.2 Attributes 3D.htm" target="_self">simultaneously</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">semultaneously</MadCap:conditionalText>. The input file should be column sorted with one point per record (line).</p>
         <img src="../../../Resources/Images/5 Menu - Survey/Import horizon geometry 3D main.png" class="General_Image" />
         <p>The main work is to specify the presence of a <i>file header</i> and the file <i>format definition</i>. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
@@ -13,9 +13,17 @@
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" /> icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage. Press <i>Ok</i> when done.</p>
         <img src="../../../Resources/Images/5 Menu - Survey/Import horizon save format.png" class="General_Image" />
         <p>It is highly recommended to scan the input file after providing its format, and prior to the actual import. The scanned information will pop-up and error(s) or warning(s) may suggest a change of the format definition.</p>
-        <p>The area sub-selection can be used in two ways:</p>
-        <p>- Reduce the amount of data to be loaded: By reducing the inline/crossline ranges</p>
-        <p>- Specify a new grid size if a coarse input grid should be gridded during import: By decreasing the inline/crosslines steps to the survey steps (minimum).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The area sub-selection can be used in two ways:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Reduce the amount of data to be loaded: By reducing the inline/crossline ranges</li>
+                    <li>Specify a new grid size if a coarse input grid should be gridded during import: By decreasing the inline/crosslines steps to the survey steps (minimum).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>The option <i>Fill undefined parts</i> will be toggle on if gaps were found during scan. A triangulation to the convex hull with an interpolation where the maximum size is the input grid step (in XY units, thus meters or feet), and <i>Keep holes larger than</i> toggled off, should be the optimal settings in most cases.</p>
         <p class="tip"><i>Tied to level</i> is additional option specifically designed to tie horizons to well markers, for correlation purposes. In order to define the stratigraphic information of the survey, please read about <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../4.5 Manage/4.5.15 Manage Stratigraphy.htm" target="_self">Manage Stratigraphy</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Manage Stratigraphy</MadCap:conditionalText>.</p>
     </body>

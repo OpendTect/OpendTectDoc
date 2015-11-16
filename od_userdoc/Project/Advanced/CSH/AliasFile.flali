@@ -135,11 +135,7 @@
     <Map Name="mGridLinesDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.2 Inline, Crossline &amp; Z-Slice.htm" />
     <Map Name="mPropertiesDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.2 Inline, Crossline &amp; Z-Slice.htm" />
     <Map Name="mViewer3DPositionsDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.14 Pre-Stack 3D Viewer.htm" />
-    <Map Name="mViewer2DPosDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
-    <Map Name="mViewer2DMainWinHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
     <Map Name="mPrintSceneDlgHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.3 Graphics Toolbar/2.2.3.1 Take Snapshots.htm" />
-    <Map Name="mFlatViewPropDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
-    <Map Name="mViewer2DSelDataDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" />
     <Map Name="mPreStackProcSelHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.6 Pre-Stack Processing.htm" />
     <Map Name="mImportVelFuncParsHelpID" Link="/Content/4 Survey/4.3 Import/4.3.11 Import Velocity Functions.htm" />
     <Map Name="mPreStackImportMuteParsHelpID" Link="/Content/4 Survey/4.3 Import/4.3.7 Import Mute Functions.htm" />
@@ -147,7 +143,7 @@
     <Map Name="mSeisBayesSeisInpHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.4 Bayesian Classification.htm" />
     <Map Name="mSeisBayesOutHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.4 Bayesian Classification.htm" />
     <Map Name="mAngleMuteHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.3 Angle Mute Function.htm" />
-    <Map Name="mPositionAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/pos.htm" />
+    <Map Name="mPositionAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.15 Position.htm" />
     <Map Name="mPreStackMergeDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.13 Manage Seismics Prestack/4.5.13.1 Manage 3D Prestack.htm" />
     <Map Name="mPreStackCopyDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.13 Manage Seismics Prestack/4.5.13.1 Manage 3D Prestack.htm" />
     <Map Name="mSeisWvltManCrWvltHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.16 Manage Wavelets/4.5.6.2 Generate Synthetic Wavelets.htm" />
@@ -163,19 +159,19 @@
     <Map Name="mAutoRangeClipDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.3 Manage Color Tables.htm" />
     <Map Name="mColTabMarkerDlgHelpID" Link="/Content/2 Getting Started/2.4 Color Tables.htm" />
     <Map Name="mInstantaneousAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.11 Instantaneous.htm" />
-    <Map Name="mMathAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/maths.htm" />
-    <Map Name="mReferenceAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/ref.htm" />
-    <Map Name="mScalingAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/scaling.htm" />
-    <Map Name="mShiftAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/ref_shft.htm" />
-    <Map Name="mSimilarityAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/sim.htm" />
-    <Map Name="mSpecDecompAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/spec_decomp.htm" />
-    <Map Name="mVolumeStatisticsAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/vol_stats.htm" />
-    <Map Name="mPreStackAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/prestack.htm" />
+    <Map Name="mMathAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.14 Mathematics.htm" />
+    <Map Name="mReferenceAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.17 Reference.htm" />
+    <Map Name="mScalingAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.20 Scaling.htm" />
+    <Map Name="mShiftAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.18 Reference Shift.htm" />
+    <Map Name="mSimilarityAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.22 Similarity.htm" />
+    <Map Name="mSpecDecompAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.23 Spectral Decomposition.htm" />
+    <Map Name="mVolumeStatisticsAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.27 Volume Statistics.htm" />
+    <Map Name="mPreStackAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.16 Prestack.htm" />
     <Map Name="mWellLogAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.12 Log.htm" />
     <Map Name="mHorizonAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.10 Horizon.htm" />
-    <Map Name="mMatchDeltaHelpID" Link="/Content/11 Appendix A - Attributes And Filters/match_delta.htm" />
-    <Map Name="mTextureAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/text_dir.htm" />
-    <Map Name="mSampleValueAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/samp_val.htm" />
+    <Map Name="mMatchDeltaHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.13 Match Delta.htm" />
+    <Map Name="mTextureAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.25 Texture - Directional.htm" />
+    <Map Name="mSampleValueAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.19 Sample Value.htm" />
     <Map Name="mConvolveAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.1 Convolve.htm" />
     <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.7 Horizon.htm" />
     <Map Name="mWaveletExtractionHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.16 Manage Wavelets/4.5.6.3 Statitistical Wavelet Extraction.htm" />
@@ -189,7 +185,6 @@
     <Map Name="mWindowGrabDlgDesktopHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.3 Graphics Toolbar/2.2.3.1 Take Snapshots.htm" />
     <Map Name="mAttribDescSetEddefaultSetHelpID" Link="/Content/5 Analysis/5.1 Attributes/5.1.4 Default Attribute Sets.htm" />
     <Map Name="mAttribDescSetEdimportSetHelpID" Link="/Content/5 Analysis/5.1 Attributes/5.1.6 Import An Attribute Set From.htm" />
-    <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/0 Remove Data/0.1 How-to/0.1.2 Quickstart A Project/surv_rang.htm" />
     <Map Name="mSeisDump2DGeomHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.2 Manage 2D Seismics/4.5.12.2.3 Dump 2D Geometry.htm" />
     <Map Name="mSeisCopyLineSetHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.2 Manage 2D Seismics/4.5.12.2.2 Copy Data Set.htm" />
     <Map Name="mSeisBrowserHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.1 Manage 3D Seismics/4.5.12.1.3 Browse &amp; Edit Cube Locations.htm" />
@@ -206,7 +201,6 @@
     <Map Name="mVolumeSmootherHelpID" Link="/Content/5 Analysis/5.2 Volume Builder Setup/5.2.3 Smoother.htm" />
     <Map Name="mHor2DFrom3DDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.8 2D Horizon.htm" />
     <Map Name="mHorizonShiftDialogHelpID" Link="/Content/3 OpendTect Trees And Elements/3.7 Horizon/3.7.8 Shift.htm" />
-    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/0 Remove Data/0.1 How-to/0.1.1 Interpret Horizons/3d_hors.htm" />
     <Map Name="mWell2RandomLineDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.4 Random Line/3.4.5 Create From Wells.htm" />
     <Map Name="mODEditAttribColorDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.5 2D Seismic.htm" />
     <Map Name="mAttrSrchProcFilesHelpID" Link="/Content/5 Analysis/5.1 Attributes/5.1.6 Import An Attribute Set From.htm" />
@@ -235,7 +229,7 @@
     <Map Name="mDataPointSetHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.2 Cross-Plot Table.htm" />
     <Map Name="mDataPointSetMergerHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.4 Manage Cross-Plot Data.htm" />
     <Map Name="mdataPointSetSaveHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.2 Cross-Plot Table.htm" />
-    <Map Name="mDipFilterAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/vel_fan_fltr.htm" />
+    <Map Name="mDipFilterAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.26 Velocity Fan Filter.htm" />
     <Map Name="mDPSOverlayPropDlgHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.3 Cross-Plot Window/5.3.3.3 Overlay From A Third Attribute.htm" />
     <Map Name="mDPSSelectednessDlgHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.3 Cross-Plot Window.htm" />
     <Map Name="mEvaluateDlgHelpID" Link="/Content/5 Analysis/5.1 Attributes/5.1.2 Attribute Set Toolbar.htm" />
@@ -264,7 +258,7 @@
     <Map Name="mSetDataDirHelpID" Link="/Content/4 Survey/4.1 Select &amp; Setup Survey/4.1.1 Survey Selection Window.htm" />
     <Map Name="mSnapToEventHelpID" Link="/Content/3 OpendTect Trees And Elements/3.7 Horizon/3.7.3 Tools/3.7.3.3 Snap-To Event.htm" />
     <Map Name="mStoreAuxDataHelpID" Link="/Content/3 OpendTect Trees And Elements/3.7 Horizon/3.7.1 Add Attribute.htm" />
-    <Map Name="mTrcPositionDlgHelpID" Link="/Content/11 Appendix A - Attributes And Filters/spec_decomp.htm" />
+    <Map Name="mTrcPositionDlgHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.23 Spectral Decomposition.htm" />
     <Map Name="mWellDispPropDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.12 Well.htm" />
     <Map Name="mWellImportAscDataSelHelpID" Link="/Content/4 Survey/4.3 Import/4.3.13 Import Wells/4.3.13.1 From Ascii Files/4.3.13.1.1 Track.htm" />
     <Map Name="mWellImpPptDlgHelpID" Link="/Content/4 Survey/4.3 Import/4.3.13 Import Wells/4.3.13.1 From Ascii Files/4.3.13.1.1 Track.htm" />
@@ -295,18 +289,14 @@
     <Map Name="mEditPropRefHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.9 Manage Layer Properties.htm" />
     <Map Name="mElasticPropSelDlgHelpID" Link="/Content/15 Appendix E - Synthetic Data Generation.htm#Elastic_Model" />
     <Map Name="mExpSelectionAreaHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.3 Cross-Plot Window.htm" />
-    <Map Name="mFlatViewStdControlHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
     <Map Name="mLaySeqAttribEdHelpID" Link="/Content/5 Analysis/5.5 Layer Modeling/5.5.4 Cross-Plots.htm" />
     <Map Name="mMathPropEdDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.9 Manage Layer Properties.htm" />
     <Map Name="mMultOutSelHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.1 Attributes/6.1.1.4 Multi-Component Outputs.htm" />
     <Map Name="mRandomLinePolyLineDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.4 Random Line/3.4.7 Interactive Mode.htm" />
     <Map Name="mReadSelGrpHelpID" Link="/Content/5 Analysis/5.3 Cross-Plot/5.3.3 Cross-Plot Window.htm" />
     <Map Name="mRockPhysFormHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.9 Manage Layer Properties.htm" />
-    <Map Name="mSEGYExpdoWorkHelpID" Link="/Content/4 Survey/4.4 Export/4.4.8 Export Seismics/4.4.8.1 Export SEG-Y/4.4.8.1.1 Export SEG-Y 3D.htm" />
     <Map Name="mSeis2DMultiLineSelDlgHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.1 Attributes/6.1.1.1 2D - Create Output.htm" />
-    <Map Name="mSeisImpCBVSCopyHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.1 Manage 3D Seismics/4.5.12.1.1 Copy Cube.htm" />
     <Map Name="mSeisPartServerselect2DLinesHelpID" Link="/Content/3 OpendTect Trees And Elements/3.5 2D Seismic.htm" />
-    <Map Name="mSeisPreLoadMgrSel2DHelpID" Link="/Content/4 Survey/4.6 Pre-Load/4.6.1 Preload Seismics.htm" />
     <Map Name="mSelectPropRefsHelpID" Link="/Content/5 Analysis/5.5 Layer Modeling/5.5.2 Layer Description.htm" />
     <Map Name="mSetPickDirsHelpID" Link="/Content/3 OpendTect Trees And Elements/3.6 Pickset &amp; Polygon/3.6.5 Pop-Up Menus.htm" />
     <Map Name="mSimpleMultiWellCreateReadDataHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.17 Manage Wells/4.5.17.1 Simple Multi-Well Creation.htm" />
@@ -329,9 +319,7 @@
     <Map Name="mTableImpDataSelpicksHelpID" Link="/Content/4 Survey/4.3 Import/4.3.8 Import PickSets &amp; Polygons.htm" />
     <Map Name="mTableImpDataSelpvdsHelpID" Link="/Content/4 Survey/4.3 Import/4.3.3 Import Cross-Plot Data.htm" />
     <Map Name="mTableImpDataSelwellsHelpID" Link="/Content/4 Survey/4.3 Import/4.3.13 Import Wells/4.3.13.3 Simple Multi-Well.htm" />
-    <Map Name="mTrackingWizardHelpID" Link="/Content/0 Remove Data/0.1 How-to/0.1.1 Interpret Horizons/3d_hors.htm" />
     <Map Name="mVelocityDescDlg" Link="/Content/7 Scenes/7.1 Time And Depth-Converted Scenes.htm" />
-    <Map Name="mViewer2DMainWindisplayAngleHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" />
     <Map Name="mVolrenTreeItemHelpID" Link="/Content/3 OpendTect Trees And Elements/3.3 Volume.htm" />
     <Map Name="mWellTieInfoDlgHelpID" Link="/Content/5 Analysis/5.4 Wells/5.4.2 Tie Well To Seismic/5.4.2.3 Well-Tie Display Panel.htm" />
     <Map Name="mWellTieSaveDataDlgHelpID" Link="/Content/5 Analysis/5.4 Wells/5.4.2 Tie Well To Seismic/5.4.2.3 Well-Tie Display Panel.htm" />
@@ -355,4 +343,28 @@
     <Map Name="mProxyDlgHelpID" Link="/Content/9 Utilities/9.3 Installation/9.3.3 Connection Settings.htm" />
     <Map Name="mHandleDLSiteFailHelpID" Link="/Content/9 Utilities/9.3 Installation/9.3.1 Update/9.3.1.1 Package Manager.htm" />
     <Map Name="mSemblanceAttribHelpID" Link="/Content/11 Appendix A - Attributes And Filters/11.21 Semblance.htm" />
+    <Map Name="mCoherencyAttrib" Link="/Content/11 Appendix A - Attributes And Filters/11.22 Similarity.htm" />
+    <Map Name="mColorBarDialog" Link="/Content/2 Getting Started/2.4 Color Tables.htm" />
+    <Map Name="mDispEditMarkerDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.17 Manage Wells/4.5.17.4 Manage Markers.htm" />
+    <Map Name="mLithCodeManHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.15 Manage Stratigraphy/4.5.15.1 Manage Lithologies.htm" />
+    <Map Name="mODViewer2DHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mODViewer2DPosDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mODViewer2DPropDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mPrepNLADataHelpID" Link="/Content/4 Survey/4.3 Import/4.3.10 Import Seismic/4.3.10.6 Tagged Seismic Data.htm" />
+    <Map Name="mProgressViewerHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mRandomLineManHelpID" Link="/Content/3 OpendTect Trees And Elements/3.4 Random Line.htm" />
+    <Map Name="mSeis2DTo3DHelpID" Link="/Content/6 Processing/6.1 Create Seismic Output/6.1.2 2D To 3D Conversions.htm" />
+    <Map Name="mSeisCopyHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.2 Manage 2D Seismics/4.5.12.2.2 Copy Data Set.htm" />
+    <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.1 Manage 3D Seismics/4.5.12.1.1 Copy Cube/4.5.12.1.1.2 Copy - Format &amp; Scaling.htm" />
+    <Map Name="mStorePicksHelpID" Link="/Content/3 OpendTect Trees And Elements/3.6 Pickset &amp; Polygon/3.6.1 Manual &amp; Empty Pickset.htm" />
+    <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/3 OpendTect Trees And Elements/3.6 Pickset &amp; Polygon.htm" />
+    <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer.htm" />
+    <Map Name="mViewer2DPSPosDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" />
+    <Map Name="mViewer2DPSSelDataDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" />
+    <Map Name="mWellLogInterpolHelpID" Link="/Content/5 Analysis/5.2 Volume Builder Setup/5.2.8 Well Log Interpolator.htm" />
+    <Map Name="mWellto2DLineDlgHelpID" Link="/Content/5 Analysis/5.4 Wells/5.4.2 Tie Well To Seismic.htm" />
+    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.4 Tracking Toolbar.htm" />
+    <Map Name="mTrackingWizardHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.4 Tracking Toolbar.htm" />
+    <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.2 Manage 2D Seismics.htm" />
 </CatapultAliasFile>
