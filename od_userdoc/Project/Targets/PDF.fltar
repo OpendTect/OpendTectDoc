@@ -9,11 +9,10 @@
   conditions="Default.PrintOnly"
   ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
   InjectEmptyPages="false"
-  MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
-  OutputFolder="C:\documentation\UserDoc-6\od_userdoc\Output\Cases\od pdf">
+  MasterToc="/Project/TOCs/Master.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
