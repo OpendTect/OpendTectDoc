@@ -22,6 +22,7 @@ h2
 	margin-top: 20px;
 	font-family: Arial;
 	margin: 20px;
+	page-break-before: always;
 }
 
 h3
@@ -32,6 +33,7 @@ h3
 	font-family: Arial;
 	font-size: 20pt;
 	margin: 20px;
+	page-break-before: always;
 }
 
 h4
@@ -43,6 +45,7 @@ h4
 	font-size: 18pt;
 	mc-heading-level: 4;
 	margin: 20px;
+	page-break-before: always;
 }
 
 h5
@@ -51,6 +54,7 @@ h5
 	font-size: 16pt;
 	mc-heading-level: 5;
 	margin: 20px;
+	page-break-before: always;
 }
 
 h6
@@ -59,6 +63,7 @@ h6
 	font-size: 14pt;
 	mc-heading-level: 6;
 	margin: 20px;
+	page-break-before: always;
 }
 
 p
