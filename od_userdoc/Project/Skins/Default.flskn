@@ -9,7 +9,7 @@
   Left="0"
   Bottom="0"
   Right="0"
-  Tabs="TOC,Index,Search,Community"
+  Tabs="TOC,Search,Community"
   DefaultTab="TOC"
   UseBrowserDefaultSize="True"
   UseDefaultBrowserSetup="True">
