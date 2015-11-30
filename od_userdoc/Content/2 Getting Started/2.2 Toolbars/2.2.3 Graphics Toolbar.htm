@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1065" MadCap:lastWidth="1590">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1219" MadCap:lastWidth="1429">
     <head>
     </head>
     <body>
         <h3>2.2.3 Graphics Toolbar<MadCap:keyword term="2.2.3 Graphics Toolbar" /></h3>
-        <p>The graphics toolbar contains icons to manipulate the scenes (graphics window) using the icons listed below:</p>
-        <img src="../../Resources/Images/2 Getting Started/Graphics toolbar.png" class="General_Image" />
-        <p style="page-break-before: always">
-            <img src="../../Resources/Images/Icons/altpick.png" class="Icons">
-            </img> When this icon is visible, you are in <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2.3 Mouse Controls.htm" target="_self">interact mode</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>interact mode</i></MadCap:conditionalText> on. Click on the element that you wish to move or edit. If the element is an inline, crossline or Z-slice, a frame with handles (green squares) appears around the clicked element. The handles are used to re-size the frame. Clicking and dragging inside the element is the way to move the entire element in the in-plane direction. Tip: For accurate positioning of a data element, use the Position option from the right-hand mouse button pop-up menu in the tree.</p>
         <p>
-            <img src="../../Resources/Images/Icons/altview.png" class="Icons">
-            </img> When this icon is visible, you are in <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2.3 Mouse Controls.htm" target="_self">view mode</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>view mode</i></MadCap:conditionalText>. In this mode, you can rotate the view and zoom in and out. Tip: in order to evaluate data values, zoom in and switch to interact mode by clicking on the appropriate icon. Move the cursor over the zoomed-in data and watch the returned position (inline, crossline and X,Y,T plus value) in the status line at the bottom of the main window.</p>
+            <img src="../../Resources/Images/2 Getting Started/Graphics toolbar.png" class="Icons" title="graphics" />
+        </p>
+        <p>From the graphics toolbar you can start processes to manipulate the 3D graphics window. The following options are available: </p>
+        <p style="page-break-before: always">
+            <img src="../../Resources/Images/Icons/altpick.png" class="Icons" /> When this icon is visible, you are in <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2.3 Mouse Controls.htm" target="_self">Position mode</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>Position mode</i></MadCap:conditionalText>. Click on the display element you wish to move or edit. If the element is an inline, crossline or Z-slice, a frame with handles (green squares) appears around the clicked element. The handles are used to re-size the frame. Clicking and dragging inside the element is the way to move the entire element in the in-plane direction. Tip: For accurate positioning of a data element, use the Position option from the right-hand mouse button pop-up menu in the tree, or press the position icon <img src="../../Resources/Images/Icons/orientation64.png" class="Icons" title="position" />.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/altview.png" class="Icons" /> When this icon is visible, you are in <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2.3 Mouse Controls.htm" target="_self">View mode</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>View mode</i></MadCap:conditionalText>. In this mode, you can rotate, pan and zoom using Left-Mouse operations. </p>
+        <p class="note" style="font-weight: normal;">View Mode is a relic from the past. It is expected to disappear in future releases because as of v6 rotate, pan and zoom are available in all modes (Position, View, Interpretation) as Middle-Mouse operations, see: <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../2.3 Mouse Controls.htm" target="_self">Mouse Controls</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>Mouse Controls</i></MadCap:conditionalText>. </p>
         <p>
             <img src="../../Resources/Images/Icons/home.png" class="Icons">
             </img> Resets the view to the position that was saved when you pressed the "save home position" icon, one below.</p>
@@ -25,13 +26,10 @@
             <img src="../../Resources/Images/Icons/perspective.png" class="Icons">
             </img> Toggles the view between orthographic &amp; perspective view.</p>
         <p>
-            <img src="../../Resources/Images/Icons/seek.png" class="Icons">
-            </img> Clicking this icon then clicking at a particular point in the scene will centre the scene on that point. (Ctrl+S serves the same purpose)</p>
-        <p>
             <img src="../../Resources/Images/Icons/cube_inl.png" class="Icons">
             </img> Use this icon to set the scene orientation to a particular 'standard' direction. Options include 'View Inline', 'View Crossline', 'View Z', 'View North' and 'View North Z'</p>
         <p>
-            <img src="../../Resources/Images/Icons/dir-light.png" class="Icons" /> Will open the directional lightening dialog box</p>
+            <img src="../../Resources/Images/Icons/dir-light.png" class="Icons" /> Will open the<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="2.2.3 Graphics Toolbar/2.2.3.2 Directional Lighting.htm" target="_self">directional lightening</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">directional lightening</MadCap:conditionalText> dialog box.</p>
         <p>
             <img src="../../Resources/Images/Icons/axis.png" class="Icons" /> The display rotation axis is used to show/hide the N-E-Z (North-East-Z) orientation arrows. This button can only be activated in View mode, but the arrows remain active in both view mode and interact mode.</p>
         <p>
@@ -41,11 +39,11 @@
         <p>
             <img src="../../Resources/Images/Icons/polygonselect.png" class="Icons" /> Sets the selection to polygon or rectangular modes and allows the user to select an area (or elements within an area, i.e faults sticks...)</p>
         <p>
-            <img src="../../Resources/Images/Icons/trashcan.png" class="Icons" /> For removal/deletion of selected elements.</p>
+            <img src="../../Resources/Images/Icons/trashcan.png" class="Icons" /> For removal / deletion of selected elements.</p>
         <p>
             <img src="../../Resources/Images/Icons/solo.png" class="Icons" /> Displays selected element only. When more than one element is displayed in the tree, one can quickly view a single element and toggle between elements by clicking the different elements in the tree.</p>
         <p>
-            <img src="../../Resources/Images/Icons/measure.png" class="Icons" /> Tool to measure distances by drawing a polygon on an inline/crossline or on a Z-slice. The tool returns horizontal distance (meters), vertical distance (ms in time survey or meter/feet in depth survey) and the inline or crossline distance respectively. The distance is computed by using input constant velocity.</p>
+            <img src="../../Resources/Images/Icons/measure.png" class="Icons" /> Tool to measure distances by drawing a polygon on an inline / crossline or on a Z-slice. The tool returns horizontal distance (meters), vertical distance (ms in time survey or meter / feet in depth survey) and the inline or crossline distance respectively. For time surveys the vertical distance is computed with a user-specified constant velocity.</p>
         <img src="../../Resources/Images/2 Getting Started/Measured Distance.png" class="General_Image" />
     </body>
 </html>

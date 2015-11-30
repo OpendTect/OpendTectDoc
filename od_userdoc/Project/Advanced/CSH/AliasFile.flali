@@ -364,7 +364,7 @@
     <Map Name="mViewer2DPSSelDataDlgHelpID" Link="/Content/2 Getting Started/2.6 2D Viewer/2.6.1 Pre-Stack 2D Viewer.htm" />
     <Map Name="mWellLogInterpolHelpID" Link="/Content/5 Analysis/5.2 Volume Builder Setup/5.2.8 Well Log Interpolator.htm" />
     <Map Name="mWellto2DLineDlgHelpID" Link="/Content/5 Analysis/5.4 Wells/5.4.2 Tie Well To Seismic.htm" />
-    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.4 Tracking Toolbar.htm" />
-    <Map Name="mTrackingWizardHelpID" Link="/Content/2 Getting Started/2.2 Toolbars/2.2.4 Tracking Toolbar.htm" />
+    <Map />
+    <Map />
     <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/4 Survey/4.5 Manage/4.5.12 Manage Seismics/4.5.12.2 Manage 2D Seismics.htm" />
 </CatapultAliasFile>

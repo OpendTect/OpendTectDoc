@@ -1,52 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1463" MadCap:lastWidth="1616">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2237" MadCap:lastWidth="1377">
     <head>
     </head>
     <body>
         <h2>2.6 2D Viewer<MadCap:keyword term="2.6 2D Viewer" /></h2>
-        <p>The 2D Viewer is used for examining the seismic data of an inline, crossline, or a 2D lines in a 2D-screen. To open the main 2D viewer, display an attribute on e.g an inline. Right-click on that attribute, display in a 2D viewer as .. <i>Wiggles</i> or <i>Variable Density</i> (VD).</p>
+        <p>The 2D Viewer is a flat viewer for visualizing and interpreting 2D and 3D seismic data. When zoomed in use middle-mouse click and drag to pan through the entire section. 2D viewers can be launched in different ways:</p>
+        <ul>
+            <li>From the main OpendTect window using the View menu, option 2D Viewer.</li>
+            <li>From the variable density <img src="../Resources/Images/Icons/vd.png" class="Icons" title="variable density" /> and wiggle <img src="../Resources/Images/Icons/wva.png" class="Icons" title="Wiggle" /> display icons that appear when the display element is selected in the 3D window.</li>
+            <li>From the Basemap utility (only if you have access to OpendTect Pro)</li>
+        </ul>
         <img src="../Resources/Images/2 Getting Started/2D viewer main Variable density.png" class="General_Image" />
-        <img src="../Resources/Images/2 Getting Started/2D viewer main wiggles.png" class="General_Image" />
-        <p>The 2D Viewer shows several options:</p>
+        <p><b>Tree.</b> Each 2D viewer features a tree to populate and manipulate the graphics window. Use right-click on the object to open the corresponding menu. The 2D Viewer supports two modes of visualization: variable density and wiggles + variable area. Per default the same attribute is used in both modes but the user is free to select different attributes per mode (Select attribute menu). </p>
+        <p><b>2D Graphics area.</b> For 2D seismic lines you can open a crossing 2D line using right-click on the annotated cross-line. When the 2D viewer displays an inline you can open a crossline or a time-slice at any position using right-click. It is also possible to change the display properties by right-clicking in the graphics area. Alternatively use the <img src="../Resources/Images/Icons/disppars.png" class="Icons" title="Display parameters" /> icon. For details, see <b>Display Parameters</b> below.</p>
+        <p><b>Position and Color toolbars.</b> To interpret every Nth line set the step to N and use the arrows (or <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="2.3 Mouse Controls.htm" target="_self">Keyboard short-keys</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Keyboard short-keys</MadCap:conditionalText> to jump to the next line. For details see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="2.2 Toolbars/2.2.4 Slice Position Tool.htm" target="_self">Slice Position Tool</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Slice Position Tool</MadCap:conditionalText>and <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="2.2 Toolbars/2.2.3 Graphics Toolbar.htm" target="_self">Graphics Toolbar</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Graphics Toolbar</MadCap:conditionalText>.</p>
+        <p><b>Display toolbar.</b> </p>
         <p>
-            <img src="../Resources/Images/Icons/altview.png" class="Icons" />Enables the user to select a zone of interest and to zoom in on this region: In this mode the mouse wheel will zoom in and out, and the left click will drag the data on the sides. The view is refreshed only once the left click button is released.</p>
+            <img src="../Resources/Images/2 Getting Started/2D viewer display toolbar.PNG" class="General_Image" title="2D display toolbar" />
+        </p>
         <p>
-            <img src="../Resources/Images/Icons/altpick.png" class="Icons" />This option can be used to zoom in a specific area within the viewer.</p>
+            <img src="../Resources/Images/Icons/rubbandzoom.png" class="Icons" title="rubberband" />Rubberband zoom.</p>
         <p>
-            <img src="../Resources/Images/Icons/seedpickmode.png" class="Icons" />This creates seeds on the 2D viewer, this is especially possible when tracking a horizon. To track an horizon on 2D viewer, make sure that the picking mode is active in both the main scene and the 2D viewer.</p>
+            <img src="../Resources/Images/Icons/zoomforward.png" class="Icons" title="zoom forward" />Zoom in with a fixed step (same zoom for horizontal and vertical).</p>
         <p>
-            <img src="../Resources/Images/Icons/zoomforward.png" class="Icons" />Zooms in when clicking</p>
+            <img src="../Resources/Images/Icons/zoombackward.png" class="Icons" title="zoom backward" />Zoom out with a fixed step (same zoom for horizontal and vertical).</p>
         <p>
-            <img src="../Resources/Images/Icons/zoombackward.png" class="Icons" />Zooms out when clicking</p>
+            <img src="../Resources/Images/Icons/vertzoomin.png" class="Icons" title="vertical zoom in" /> Zoom in vertically with a fixed step (horizontal zoom does not change).</p>
         <p>
-            <img src="../Resources/Images/Icons/flip_lr.png" class="Icons" />Flip the 2D-section</p>
+            <img src="../Resources/Images/Icons/vertzoomout.png" class="Icons" title="vertical zoom out" />Zoom out vertically with a fixed step (horizontal zoom does not change).</p>
         <p>
-            <img src="../Resources/Images/Icons/snapshot.png" class="Icons" />enables the user to grab pictures</p>
+            <img src="../Resources/Images/Icons/cancelzoom.png" class="Icons" title="cancel zoom" /> Cancel zoom (displays the entire element).</p>
         <p>
-            <img src="../Resources/Images/Icons/disppars.png" class="Icons" />Set display parameters</p>
+            <img src="../Resources/Images/Icons/exttofullsurv.png" class="Icons" title="maximize display" />Maximize the display to fit the screen.</p>
         <p>
-            <img src="../Resources/Images/Icons/contexthelp.png" class="Icons" />2D-Viewer's Help</p>
+            <img src="../Resources/Images/Icons/set_homezoom.png" class="Icons" title="set home zoom" />Sets the home zoom level. You can either set the zoom level for this window only or for all 2D viewers that will be launched hereafter. Either zoom in until you have reached a level on which you want to work or set the horizontal and vertical levels manually.</p>
         <p>
-            <img src="../Resources/Images/Icons/selectsticks.png" class="Icons" />Manage the polygon selection</p>
+            <img src="../Resources/Images/Icons/homezoom.png" class="Icons" title="home zoom" />Return to the home zoom level.</p>
         <p>
-            <img src="../Resources/Images/Icons/trashcan.png" class="Icons" />Remove the selected data within the polygon</p>
+            <img src="../Resources/Images/Icons/flip_lr.png" class="Icons" title="flip left-right" />Flip left and right.</p>
         <p>
-            <img src="../Resources/Images/Icons/csslider.png" class="Icons" />Clicking this icon will start the HorizonCube slider</p>
-        <p>When clicking the right mouse-button on the 2D Viewer, and clicking <i>Properties</i>, the <i>Specify Display Properties</i> Window appears  in which the display parameters can be set for both the <i>Wiggle Variable area</i> and the <i>Variable Density</i>.</p>
+            <img src="../Resources/Images/Icons/snapshot.png" class="Icons" />Grab the image and save as a picture.</p>
+        <p>
+            <img src="../Resources/Images/Icons/printer.png" class="Icons" title="print" />Print the image.</p>
+        <p>
+            <img src="../Resources/Images/Icons/disppars.png" class="Icons" />Set display parameters (see below)</p>
+        <p>
+            <img src="../Resources/Images/Icons/contexthelp.png" class="Icons" />Launch Help.</p>
+        <p>&#160;</p>
+        <p><b>Display Parameters.</b> can be modified in the Specify Display Properties window, which features three tabs:</p>
         <img src="../Resources/Images/2 Getting Started/2D viewer wiggles display.png" class="General_Image" />
         <div style="page-break-before: always">
             <img src="../Resources/Images/2 Getting Started/2D viewer variable density display.png" class="General_Image" />
         </div>
         <img src="../Resources/Images/2 Getting Started/2D Viewer annotations display properties.png" class="General_Image" />
-        <p><i>2D Viewer Wiggles Display Properties; 2D Viewer Variable Density (VD) Display Properties; 2D Viewer Annotation Settings</i>
-        </p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Please note that under the 'Annotation' tab, the user may choose between different distance values to be displayed on the Axis-distances:</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ul>
-                    <li>Trace number*: This will display the traces number on the X axis</li>
+                    <li>Trace number (only for 2D): This will display the traces number on the X axis</li>
                     <li>Reference position*: This displays the SP (shot points) number that is available in the shot point header field of the original SEG-Y</li>
                     <li>X-Coordinate: This shows the X coordinate in the axis</li>
                     <li>Y-Coordinate: This displays the Y coordinate in the axis</li>
@@ -54,7 +67,18 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <img src="../Resources/Images/2 Getting Started/2D Viewer annotations display axis distance.png" class="General_Image" />
-        <p><i>* for 2D only</i>
+        <p><b>Horizon tracking toolbar.</b>
         </p>
+        <p>
+            <img src="../Resources/Images/2 Getting Started/2D viewer tracking toolbar.PNG" class="General_Image" title="2D horizon tracking toolbar" />
+        </p>
+        <p>
+            <img src="../Resources/Images/Icons/editsticks.png" class="Icons" title="pick seeds" />Interpretation mode toggle. If the toggle is on you can add seed positions to the horizon you are tracking. In this mode the cursor is a cross. When you toggle this mode off you are back in Position mode. The cursor is an arrow.</p>
+        <p>
+            <img src="../Resources/Images/Icons/seedpicksettings.png" class="Icons" title="horizon tracking setup" />Pops up the horizon tracking setup window.</p>
+        <p>
+            <img src="../Resources/Images/Icons/polygonselect.png" class="Icons" title="Polygon selection" />Polygon selection tool. Use this to select areas that need to be removed. Alternatively, when you are in manual draw mode, use Control - Left Click + Drag to remove parts of a horizon.</p>
+        <p>
+            <img src="../Resources/Images/Icons/clearselection.png" class="Icons" title="delete selection" /> Delete the selected area.</p>
     </body>
 </html>
