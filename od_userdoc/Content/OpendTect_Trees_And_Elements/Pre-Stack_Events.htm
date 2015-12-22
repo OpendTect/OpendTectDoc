@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="562" MadCap:lastWidth="1616">
+    <head>
+    </head>
+    <body>
+        <h2>3.13 Pre-Stack Events<MadCap:keyword term="3.13 Pre-Stack Events" /></h2>
+        <img src="../Resources/Images/4 OpendTect Trees and Elements/Prestack events popout menu.png" class="General_Image" />
+        <p>This tree item allows you to display picked or imported pre-stack events in the 3D scene. Note that this tree item is only display when there are pre-stack events in the current project. Otherwise it is hidden.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>There are five display modes:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><b>None:</b> nothing is displayed.</li>
+                    <li><b>Zero offset:</b> A pick shows the location of each pre-stack events, and the Z value of the zero offset.</li>
+                    <li><b>Sticks from sections:</b> Picks show not only the location but also the moveout curve described by the picked events.</li>
+                    <li><b>Zero offset on sections:</b> Same as zero offset, but only the events that exists on displayed inlines/crosslines will be shown.</li>
+                    <li><b>Sticks to gathers:</b> Same of sticks from sections, but only the events that exists on <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Pre-Stack_3D_Viewer.htm" target="_self">displayed 3D pre-stack planes</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">displayed 3D pre-stack planes</MadCap:conditionalText> will be shown.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown style="page-break-before: always">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>The displayed picks are always linked with a thin line. Regardless of the display mode the picks are colour-coded with respect to the following color settings:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><b>Single:</b> Default mode, one single color for all picks of the pre-stack events.</li>
+                    <li><b>Quality:</b> The color of the picks is related to its quality. This attribute is either imported with the pre-stack event or set when picked in the Velocity Model Building plugin.</li>
+                    <li><b>Velocity:</b> The color of the picks is related to the corresponding interval velocity. Note that for this to work the input pre-stack datastore and corresponding migration velocity must be specified in the velocity model building plugin.</li>
+                    <li><b>Velocity fit:</b> The color of the picks is related to the deviation between the picked event and velocity of the best fitting normal/residual moveout curve. Note that for this to work the input pre-stack datastore and corresponding migration velocity must be specified in the velocity model building plugin.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>The color of the picks, except in single mode, should be adjusted using the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Getting_Started/Color_Tables.htm" target="_self">colorbar</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">colorbar</MadCap:conditionalText> like with any attribute by ajusting the colorbar and amplitude ranges.</p>
+    </body>
+</html>
