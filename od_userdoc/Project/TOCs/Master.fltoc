@@ -327,7 +327,7 @@
         Link="/Content/Survey/Import/Import_Seismic.htm">
         <TocEntry
           Title="4.3.10.1 SEG-Y"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.1 SEG-Y.htm">
+          Link="/Content/Survey/Import/Import_Seismic/SEG-Y.htm">
           <TocEntry
             Title="4.3.10.1.1 SEG-Y Import Preparation"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
@@ -346,19 +346,19 @@
         </TocEntry>
         <TocEntry
           Title="4.3.10.2 SEG-Y Scanned"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.2 SEG-Y Scanned.htm" />
+          Link="/Content/Survey/Import/Import_Seismic/SEG-Y_Scanned.htm" />
         <TocEntry
           Title="4.3.10.3 Simple File"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.3 Simple File.htm" />
+          Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
         <TocEntry
           Title="4.3.10.4 Import CBVS Cube"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.4 Import CBVS Cube.htm" />
+          Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
         <TocEntry
           Title="4.3.10.5 GPR - DTZ"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.5 GPR - DTZ.htm" />
+          Link="/Content/Survey/Import/Import_Seismic/GPR-DTZ.htm" />
         <TocEntry
           Title="4.3.10.6 Tagged Seismic Data"
-          Link="/Content/Survey/Import/Import_Seismic/4.3.10.6 Tagged Seismic Data.htm" />
+          Link="/Content/Survey/Import/Import_Seismic/Tagged_Seismic_Data.htm" />
       </TocEntry>
       <TocEntry
         Title="4.3.11 Import Velocity Functions"

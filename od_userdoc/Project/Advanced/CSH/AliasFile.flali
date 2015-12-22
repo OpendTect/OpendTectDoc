@@ -23,7 +23,7 @@
     <Map Name="mCreate2DGridHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D/Extract_2D_From_3D.htm" />
     <Map Name="mDeltaResampleHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Delta_Resample.htm" />
     <Map Name="mDirLightDlgHelpID" Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm" />
-    <Map Name="mDZTImporterHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.5 GPR - DTZ.htm" />
+    <Map Name="mDZTImporterHelpID" Link="/Content/Survey/Import/Import_Seismic/GPR-DTZ.htm" />
     <Map Name="mEditProbDenFuncHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions.htm" />
     <Map Name="mEnergyAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Energy.htm" />
     <Map Name="mEventAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Event.htm" />
@@ -68,9 +68,9 @@
     <Map Name="mImpPickSetHelpID" Link="/Content/Survey/Import/Import_PickSets_Polygons.htm" />
     <Map Name="mImpRokDocPDFHelpID" Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
     <Map Name="mSEGYDefDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
-    <Map Name="mSeisIOSimpleImpHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.3 Simple File.htm" />
-    <Map Name="mSeisImpCBVSHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.4 Import CBVS Cube.htm" />
-    <Map Name="mSeisImpCBVSFromOtherSurveyDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.4 Import CBVS Cube.htm" />
+    <Map Name="mSeisIOSimpleImpHelpID" Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
+    <Map Name="mSeisImpCBVSHelpID" Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
+    <Map Name="mSeisImpCBVSFromOtherSurveyDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
     <Map Name="mImportVelFuncHelpID" Link="/Content/Survey/Import/Import_Velocity_Functions.htm" />
     <Map Name="mSeisWvltImpHelpID" Link="/Content/Survey/Import/Import_Wavelets.htm" />
     <Map Name="mWellImportAscHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Track.htm" />
@@ -245,7 +245,7 @@
     <Map Name="mODSceneMgrsetKeyBindingsHelpID" Link="/Content/Utilities/Settings/Mouse_Controls.htm" />
     <Map Name="mPreStackAGCHelpID" Link="/Content/Processing/Create_Seismic_Output/Pre-Stack_Processing/Automatic_Gain_Control.htm" />
     <Map Name="mPreStackEventExportHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm" />
-    <Map Name="mPreStackEventImportHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.3 Simple File.htm" />
+    <Map Name="mPreStackEventImportHelpID" Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
     <Map Name="mPreStackMuteHelpID" Link="/Content/Processing/Create_Seismic_Output/Pre-Stack_Processing/Mute.htm" />
     <Map Name="mPreStackVerticalStackHelpID" Link="/Content/Processing/Create_Seismic_Output/Pre-Stack_Processing/Super_Gather.htm" />
     <Map Name="mProcSettingsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
@@ -350,7 +350,7 @@
     <Map Name="mODViewer2DHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mODViewer2DPosDlgHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mODViewer2DPropDlgHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
-    <Map Name="mPrepNLADataHelpID" Link="/Content/Survey/Import/Import_Seismic/4.3.10.6 Tagged Seismic Data.htm" />
+    <Map Name="mPrepNLADataHelpID" Link="/Content/Survey/Import/Import_Seismic/Tagged_Seismic_Data.htm" />
     <Map Name="mProgressViewerHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mRandomLineManHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mSeis2DTo3DHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D.htm" />
