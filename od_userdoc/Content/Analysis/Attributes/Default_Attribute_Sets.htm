@@ -1,47 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1001" MadCap:lastWidth="1603">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1077" MadCap:lastWidth="1405">
     <head>
     </head>
     <body>
         <h3>5.1.4 Default Attribute Sets<MadCap:keyword term="5.1.4 Default Attribute Sets" /></h3>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>OpendTect is provided with "<i>Default attribute sets</i>" to get you started. By selecting a default attribute set, a window appears to select the correct input volume(s) and the correct SteeringCube (see images below). These attributes (except "<i>Evaluate Attributes</i>") require the following dGB plug-ins:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li><i>SteeringCube</i>: attributes and filters are calculated along user-driven, or data-driven directions</li>
-                    <li><i>Neural Network</i>: Both supervised and unsupervised neural networks allow generation of meta attribute volumes that highlight any object of interest (e.g: Chimney, Faults, Salt,...).</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>The OpendTect version comes out with new "default attribute-sets" in addition to the already existing attribute sets like NN ChimneyCube, NN SaltCube, Unsupervised Waveform Segmentation, dGB Evaluate Attribute, etc .</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li><b>Evaluate Attributes:</b> This default attribute set contains the default definitions of several basic attributes grouped together to give an idea of attributes evaluation in OpendTect. This default attribute set can be selected to start with OpendTect. After selection, only input seismic data is required.</li>
-                    <li><b>dGB Evaluate Attributes:</b> This default attribute set is similar to above attribute set with additional dGB attributes (using dGB plug-ins). For this set, both seismic and steering data are required as input.</li>
-                    <li><b>AVO attributes from Intercept-Gradient:</b> This attribute set requires two inputs; Intercept and Gradient (from AVO analysis) as first and second inputs respectively. It computes attributes like Envelope, Fluid Factor and Rp-Rs.</li>
-                    <li><b>AVO attributes from Near-Far:</b> The input for this attribute set are the Near and Far stacked data sets in the same order. This includes attributes like Envelopes and Enhanced pseudo gradients.</li>
-                    <li><b>Dip-steered median filter:</b> This default attribute set contains the definition of dip-steered median filter. It cleans up the seismic data by removing random noise. Both seismic and steering data are required as input.</li>
-                    <li><b>Dip-steered Diffusion Filter:</b> This filter is mainly used to sharpen faults. Both seismic and steering data are required as input.</li>
-                    <li><b>Fault Enhancement Filter:</b> This type of filter is used in the Fault/Fracture analysis, it dramatically sharpens the faults by suppressing random noise. It is a combination of the diffusion filter and the dip-steered filtered. Both seismic and steering data are required as inputs.</li>
-                    <li><b>Fault Enhancement Filter (Expert):</b> This is a more sophisticated version of the basic Fault Enhancement Filter and uses similarity and dip-steered filtering. It also requires both seismic and steering data as input.</li>
-                    <li><b>Ridge Enhancement Filter:</b> This filter detects lateral lineaments using different steered similarities (in inline, crossline and diagonal directions)</li>
-                    <li><b>Ridge Enhancement Filter (Expert):</b> This filter is an advanced version of the above described filter and uses steered similarities in addition with their second derivatives (in inline, crossline and diagonal directions).</li>
-                    <li><b>NN Fault Cube:</b> dGB standard default attribute set containing the definitions of all attributes that are used in neural network (NN) training to create meta-attribute i.e. NN Fault Cube.</li>
-                    <li><b>NN Chimney Cube:</b> dGB standard default attribute set containing the definitions of all attributes that are used in neural network (NN) training to create ChimneyCube (meta-attribute).</li>
-                    <li><b>NN Salt Cube:</b> dGB standard SaltCube meta-attribute.</li>
-                    <li><b>NN Slump Cube:</b> dGB standard SlumpCube meta-attribute.</li>
-                    <li><b>Unsupervised Waveform Segmentation:</b> attribute set containing the definition of attributes that are used in unsupervised waveform segmentation (a.k.a UVQs).</li>
-                    <li><b>Seismic Filters Median-Diffusion-Fault-Enhancement:</b> This is an advanced version of the "Fault Enhancement Filter". It enables the user to have much control on the input parameters by modifying the parameters of the dip-steered median filter, dip-steered diffusion filter and fault enhancement filter.</li>
-                    <li><b>Fault Enhancement Attributes:</b> expandable attribute set containing the list of the attributes that are useful for fault visualization and fault interpretation.</li>
-                    <li><b>NN Fault Cube Advanced:</b> most superior FaultCube (meta-attribute) attribute set that is used as input for neural network training to create fault probability cube.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>OpendTect is provided with "<i>Default attribute sets</i>" to get you started. By selecting a default attribute set, a window appears to select the correct input volume(s) and the correct SteeringCube (see images below). These attributes (except "<i>Evaluate Attributes</i>") require the following dGB plug-ins:</p>
+        <ul>
+            <li><i>SteeringCube</i>: attributes and filters are calculated along user-driven, or data-driven directions</li>
+            <li><i>Neural Network</i>: Both supervised and unsupervised neural networks allow generation of meta attribute volumes that highlight any object of interest (e.g: Chimney, Faults, Salt,...).</li>
+        </ul>
+        <p>The OpendTect version comes out with new "default attribute-sets" in addition to the already existing attribute sets like NN ChimneyCube, NN SaltCube, Unsupervised Waveform Segmentation, dGB Evaluate Attribute, etc .</p>
+        <ul>
+            <li><b>Evaluate Attributes:</b> This default attribute set contains the default definitions of several basic attributes grouped together to give an idea of attributes evaluation in OpendTect. This default attribute set can be selected to start with OpendTect. After selection, only input seismic data is required.</li>
+            <li><b>dGB Evaluate Attributes:</b> This default attribute set is similar to above attribute set with additional dGB attributes (using dGB plug-ins). For this set, both seismic and steering data are required as input.</li>
+            <li><b>AVO attributes from Intercept-Gradient:</b> This attribute set requires two inputs; Intercept and Gradient (from AVO analysis) as first and second inputs respectively. It computes attributes like Envelope, Fluid Factor and Rp-Rs.</li>
+            <li><b>AVO attributes from Near-Far:</b> The input for this attribute set are the Near and Far stacked data sets in the same order. This includes attributes like Envelopes and Enhanced pseudo gradients.</li>
+            <li><b>Dip-steered median filter:</b> This default attribute set contains the definition of dip-steered median filter. It cleans up the seismic data by removing random noise. Both seismic and steering data are required as input.</li>
+            <li><b>Dip-steered Diffusion Filter:</b> This filter is mainly used to sharpen faults. Both seismic and steering data are required as input.</li>
+            <li><b>Fault Enhancement Filter:</b> This type of filter is used in the Fault/Fracture analysis, it dramatically sharpens the faults by suppressing random noise. It is a combination of the diffusion filter and the dip-steered filtered. Both seismic and steering data are required as inputs.</li>
+            <li><b>Fault Enhancement Filter (Expert):</b> This is a more sophisticated version of the basic Fault Enhancement Filter and uses similarity and dip-steered filtering. It also requires both seismic and steering data as input.</li>
+            <li><b>Ridge Enhancement Filter:</b> This filter detects lateral lineaments using different steered similarities (in inline, crossline and diagonal directions)</li>
+            <li><b>Ridge Enhancement Filter (Expert):</b> This filter is an advanced version of the above described filter and uses steered similarities in addition with their second derivatives (in inline, crossline and diagonal directions).</li>
+            <li><b>NN Fault Cube:</b> dGB standard default attribute set containing the definitions of all attributes that are used in neural network (NN) training to create meta-attribute i.e. NN Fault Cube.</li>
+            <li><b>NN Chimney Cube:</b> dGB standard default attribute set containing the definitions of all attributes that are used in neural network (NN) training to create ChimneyCube (meta-attribute).</li>
+            <li><b>NN Salt Cube:</b> dGB standard SaltCube meta-attribute.</li>
+            <li><b>NN Slump Cube:</b> dGB standard SlumpCube meta-attribute.</li>
+            <li><b>Unsupervised Waveform Segmentation:</b> attribute set containing the definition of attributes that are used in unsupervised waveform segmentation (a.k.a UVQs).</li>
+            <li><b>Seismic Filters Median-Diffusion-Fault-Enhancement:</b> This is an advanced version of the "Fault Enhancement Filter". It enables the user to have much control on the input parameters by modifying the parameters of the dip-steered median filter, dip-steered diffusion filter and fault enhancement filter.</li>
+            <li><b>Fault Enhancement Attributes:</b> expandable attribute set containing the list of the attributes that are useful for fault visualization and fault interpretation.</li>
+            <li><b>NN Fault Cube Advanced:</b> most superior FaultCube (meta-attribute) attribute set that is used as input for neural network training to create fault probability cube.</li>
+        </ul>
         <img src="../../Resources/Images/6 Analysis/Analysis attribute set 3d default attribute set.png" class="General_Image" />
         <p><i>Default attribute sets window containing the list of all available default attributes</i>
         </p>

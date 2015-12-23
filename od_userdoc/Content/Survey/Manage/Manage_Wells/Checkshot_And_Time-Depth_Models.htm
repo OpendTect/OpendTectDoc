@@ -1,32 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="621" MadCap:lastWidth="1438">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="621" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
         <h4>4.5.17.3 Checkshot and Time-Depth Models<MadCap:keyword term="4.5.17.3 Checkshot and Time-Depth Models" /></h4>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Wells in OpendTect can have two different types of Time/Depth models:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>An optional checkshot model, often the first available time/depth model or a measured checkshot survey.</li>
-                    <li>The Time/Depth model, that is always the active time/depth model for the well, used for data extraction and visualization.</li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>The main differences in usage are:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>If a Time/Depth model is flagged as being a checkshot model during import, the Time/Depth model will be a copy of the Checkshot model.</li>
-                    <li>If a Time/Depth model is not flagged as being a checkshot model during import there will be no checkshot model for this well.</li>
-                    <li>Checkshot models may be used during synthetic-to-seismic ties to constraint the output Time/Depth model. On the contrary the time/depth model provides the actual input mapping when starting the well tie.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>Wells in OpendTect can have two different types of Time/Depth models:</p>
+        <ol>
+            <li>An optional checkshot model, often the first available time/depth model or a measured checkshot survey.</li>
+            <li>The Time/Depth model, that is always the active time/depth model for the well, used for data extraction and visualization.</li>
+        </ol>
+        <p>The main differences in usage are:</p>
+        <ul>
+            <li>If a Time/Depth model is flagged as being a checkshot model during import, the Time/Depth model will be a copy of the Checkshot model.</li>
+            <li>If a Time/Depth model is not flagged as being a checkshot model during import there will be no checkshot model for this well.</li>
+            <li>Checkshot models may be used during synthetic-to-seismic ties to constraint the output Time/Depth model. On the contrary the time/depth model provides the actual input mapping when starting the well tie.</li>
+        </ul>
         <p>Both types have a similar editing window. It shows the mapping between measured depths and two-way traveltime, respectively in the first and second columns. Depths are displayed either in meters or in feet (toggle at the bottom of the window), and times are always displayed in milliseconds. These tables are fully editable: Double-click on a cell to edit it, type and new number and press enter or select another cell. The "<i>Update display</i>" button allows the user to update the displayed well data (track, markers and logs) in the scene to be updated based on the actual table content.</p>
         <img src="../../../Resources/Images/5 Menu - Survey/Manage wells edit checkshot model.png" class="General_Image" />
         <img src="../../../Resources/Images/5 Menu - Survey/Manage wells edit time depth model.png" class="General_Image" />

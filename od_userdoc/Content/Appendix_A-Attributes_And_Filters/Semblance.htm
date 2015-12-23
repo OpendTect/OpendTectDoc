@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1222" MadCap:lastWidth="1438">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1222" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
@@ -26,22 +26,16 @@
         </p>
         <p>Applies for <i>'Extensions'</i> of shape <i>None</i>, <i>Mirror 90 degrees</i> and <i>Mirror 180 degrees</i>. Defines the positions of the traces to be used in the correlation window (see 'Extension' below for more detail).</p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic semblance trace position.png" class="General_Image" />
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><b>Extension</b> shapes:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li><i>None:</i> Semblance is calculated using only the traces defined in 'Trace positions'.</li>
-                    <li><i>Mirror 90 degrees:</i> Semblance is calculated using two additional traces: the defined trace pair (as in 'None') and  the trace obtained by 90° rotation. (Not available for 2D data)</li>
-                    <li><i>Mirror 180 degrees:</i> Semblance is calculated using two additional traces: the defined trace pair (as in 'None') and  the trace obtained by 180° degree rotation. </li>
-                    <li><i>Full Block:</i> Semblance is calculated using all possible traces in the column defined by the time-gate/step-out. Beware of potentially long processing times with large time-gates/stepouts.</li>
-                    <li><i>Cross:</i> Semblance is calculated using all possible traces in the '+' -shaped column bounded by the time-gate/step-out.</li>
-                    <li><i>All Directions:</i> Semblance is calculated using all possible traces in the '✴' -shape bounded by time-gate/step-out. This is the extension found to be most useful: it gives a degree of accuracy almost equal to that of 'Full Block' but with significantly less processing time (depending on the step-out, up to a factor of 10).</li>
-                    <li><i>Diagonal:</i> Semblance is calculated using all possible traces in the 'x' -shaped column bounded by the time-gate/step-out.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p><b>Extension</b> shapes:</p>
+        <ul>
+            <li><i>None:</i> Semblance is calculated using only the traces defined in 'Trace positions'.</li>
+            <li><i>Mirror 90 degrees:</i> Semblance is calculated using two additional traces: the defined trace pair (as in 'None') and  the trace obtained by 90° rotation. (Not available for 2D data)</li>
+            <li><i>Mirror 180 degrees:</i> Semblance is calculated using two additional traces: the defined trace pair (as in 'None') and  the trace obtained by 180° degree rotation. </li>
+            <li><i>Full Block:</i> Semblance is calculated using all possible traces in the column defined by the time-gate/step-out. Beware of potentially long processing times with large time-gates/stepouts.</li>
+            <li><i>Cross:</i> Semblance is calculated using all possible traces in the '+' -shaped column bounded by the time-gate/step-out.</li>
+            <li><i>All Directions:</i> Semblance is calculated using all possible traces in the '✴' -shape bounded by time-gate/step-out. This is the extension found to be most useful: it gives a degree of accuracy almost equal to that of 'Full Block' but with significantly less processing time (depending on the step-out, up to a factor of 10).</li>
+            <li><i>Diagonal:</i> Semblance is calculated using all possible traces in the 'x' -shaped column bounded by the time-gate/step-out.</li>
+        </ul>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic semblance extension.png" class="General_Image" />
         <p><b>References</b>
         </p>

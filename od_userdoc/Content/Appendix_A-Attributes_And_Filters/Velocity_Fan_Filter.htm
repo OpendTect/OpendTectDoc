@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1071" MadCap:lastWidth="1616">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1128" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
@@ -9,18 +9,12 @@
         <p>Velocity Fan Filter -- Attribute that returns energy with apparent velocities/dips inside a specified Min/Max range.</p>
         <p><b>Description</b>
         </p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>The velocity fan filter passes energy with apparent velocities (for Time surveys) or apparent dips (for Depth surveys) inside the specified Min/Max velocity/dip range. The filter supports three options:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>pass low velocities/dips (i.e. suppress high velocities/dips)</li>
-                    <li>pass high velocities/dips (i.e. suppress low velocities/dips)</li>
-                    <li>pass velocities/dips within a specified cone.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>The velocity fan filter passes energy with apparent velocities (for Time surveys) or apparent dips (for Depth surveys) inside the specified Min/Max velocity/dip range. The filter supports three options:</p>
+        <ul>
+            <li>pass low velocities/dips (i.e. suppress high velocities/dips)</li>
+            <li>pass high velocities/dips (i.e. suppress low velocities/dips)</li>
+            <li>pass velocities/dips within a specified cone.</li>
+        </ul>
         <p>Therefore, this attribute can be used to filter out or enhance certain dip/azimuth events.</p>
         <p><b>Input Parameters</b>
         </p>
@@ -28,7 +22,7 @@
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters velocity fan filter.png" class="General_Image" />
         <p>The different shapes of the filter ( low pass, high pass, interval velocity/dip) are shown below:</p>
         <img src="../Resources/Images/Appendix A/Velocity fan filter.png" class="General_Image" />
-        <p>Note: Please be aware that in Time surveys, flat events have infinite velocity, and vertical events have a zero velocity. The opposite is observed in Depth surveys where not velocities but dips are used: Horizontal events have zero dip, while vertical events have 90 degrees dip.</p>
+        <p class="tip">Please be aware that in Time surveys, flat events have infinite velocity, and vertical events have a zero velocity. The opposite is observed in Depth surveys where not velocities but dips are used: Horizontal events have zero dip, while vertical events have 90 degrees dip.</p>
         <p><b>Display F-K Panel:</b>
         </p>
         <p>This option allows you to display a two-dimensional Fourier transform over time and space where F is the frequency (Fourier transform over time) and K refers to wave-number (Fourier transform over space).</p>

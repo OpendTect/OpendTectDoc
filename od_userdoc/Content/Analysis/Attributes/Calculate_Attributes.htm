@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1340" MadCap:lastWidth="1438">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1340" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
         <h3>5.1.7 Calculate Attributes<MadCap:keyword term="5.1.7 Calculate Attributes" /></h3>
         <p>The attribute evaluation process has been considered critically and thus several key options are available for the user. For instance, <i>Evaluate Attribute</i> <img src="../../Resources/Images/Icons/evalattr.png" class="Icons" /> is considered as intermediate (but not necessary) step to quickly analyze the different parameters of any attribute within the working environment (<a href="http://www.youtube.com/watch?v=STDUoDX8Cc0" target="_blank" MadCap:conditions="Default.ScreenOnly">View tutorial-Evaluate attributes</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">View tutorial-Evaluate attributes</MadCap:conditionalText>). Similarly, the user can create a list of seismic attribute definitions as a working set that later on can be updated. The attribute set is then used to calculate the seismic attributes along lines/surfaces.</p>
         <p>There are two possible ways of calculating seismic attributes in OpendTect: First, in order to calculate the results of any attribute in the foreground, user(s) can do it on-the-fly. Second possibility is to calculate attributes after evaluation by running a secondary process in the background. In OpendTect, seismic attributes are applied on several elements (inlines, crosslines, Z slices, random lines, 2D lines, volumes, horizons etc).</p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>The workflow to calculate the selected attribute is quite simple:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>Define (or use existing) attribute Set and save. For details see earlier sections of this chapter.</li>
-                    <li>Calculate on-the-fly or <a href="../../Processing/Create_Seismic_Output.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Create Seismic Output</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Create Seismic Output</MadCap:conditionalText> or <a href="../../Processing/Create_Horizon_Output.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Create horizon attribute</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Create horizon attribute</MadCap:conditionalText> output.</li>
-                    <li>If attribute is not calculated on-the-fly, retrieve results by displaying attribute in tree.</li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>The workflow to calculate the selected attribute is quite simple:</p>
+        <ol>
+            <li>Define (or use existing) attribute Set and save. For details see earlier sections of this chapter.</li>
+            <li>Calculate on-the-fly or <a href="../../Processing/Create_Seismic_Output.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Create Seismic Output</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Create Seismic Output</MadCap:conditionalText> or <a href="../../Processing/Create_Horizon_Output.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Create horizon attribute</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Create horizon attribute</MadCap:conditionalText> output.</li>
+            <li>If attribute is not calculated on-the-fly, retrieve results by displaying attribute in tree.</li>
+        </ol>
         <p>The example of first step is given in following figure. It highlights the sequential process (notice green arrows form left to right) of on-the-fly attribute calculation. Firstly, several attributes are defined. Secondly, by default, when a user presses <i>Ok</i> button in <i>Attribute Set</i> window, the <i>Save Attribute definition</i> window will appear to save the attributes definition as an Attribute set. The attribute can then be applied on an inline (for instance) by adding a blank attribute (right-click on inline number). Right-click on the blank attribute and select the attribute (Select Attribute &gt; Attributes &gt; "<i>User Attribute</i>"). The listed attributes are those that are defined in the attributes set window. Selection of any one, would start a process of on-the-fly attribute calculation. By following same workflow (as elaborated in figure) the same attribute can be calculated along other elements (e.g. crosslines, Z-slices, volumes etc).</p>
         <img src="../../Resources/Images/6 Analysis/Analysis attribute calculate on the fly workflow.png" class="General_Image" />
         <p><i>Schematic flow of on-the-fly seismic attributes evaluation on an inline.</i>

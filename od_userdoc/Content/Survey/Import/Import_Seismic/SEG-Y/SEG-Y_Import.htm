@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2114" MadCap:lastWidth="1616">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2134" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
@@ -7,18 +7,12 @@
         <p>The main import window will look different based on the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y_Revision.htm" target="_self">type</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">type</MadCap:conditionalText> of SEG-Y file. At any moment a partial or <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../SEG-Y_Scanned.htm" target="_self">full scan of the input(s)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">full scan of the input(s)</MadCap:conditionalText> can be launched using the <img src="../../../../Resources/Images/Icons/prescan.png" class="Icons" />icon on the right-hand side.</p>
         <p>If the file is <b>Rev 1</b> standard then the import is almost complete: You must provide an output name and can optionally sub-select a range of the volume to be loaded and/or change the output format and/or re-scale the amplitudes. Pressing <i>Ok</i> will launch the import. Please note that <b>depth volumes</b> can be imported in time surveys and vice versa by using the depth/time toggle. They can be visualized using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../../../Scenes/Time_And_Depth-Converted_Scenes.htm" target="_self">transformed scenes</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">transformed scenes</MadCap:conditionalText>, providing that velocities are available.</p>
         <img src="../../../../Resources/Images/5 Menu - Survey/Import segy main.png" class="General_Image" />
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>If the file is mostly Rev 1 but with <b>changed parameters</b> you will receive three additional fields that can overrule the values to be found in the headers:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>SEG-Y coordinate scaling: Please provide the scaler that must be multiplied to the trace coordinates in order to get the loaded coordinates.</li>
-                    <li>Please provide the time assigned to the first sample of the traces, in milliseconds or meters. Negative times are allowed.</li>
-                    <li>Sample rate: Please provide the sampling rate of your data in milliseconds or meters/feet.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>If the file is mostly Rev 1 but with <b>changed parameters</b> you will receive three additional fields that can overrule the values to be found in the headers:</p>
+        <ul>
+            <li>SEG-Y coordinate scaling: Please provide the scaler that must be multiplied to the trace coordinates in order to get the loaded coordinates.</li>
+            <li>Please provide the time assigned to the first sample of the traces, in milliseconds or meters. Negative times are allowed.</li>
+            <li>Sample rate: Please provide the sampling rate of your data in milliseconds or meters/feet.</li>
+        </ul>
         <img src="../../../../Resources/Images/5 Menu - Survey/Import segy mostly.png" class="General_Image" />
         <p>Those parameters constitute a SEG-Y setup that can be saved and retrieved using the yellow folder icon on the right. This setup will not only contain the parameters but also the path of the input files and settings of the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y_Import_Preparation.htm" target="_self">preparation step</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">preparation step</MadCap:conditionalText>. The setups are data dependent therefore they are stored in your survey.</p>
         <p>If the file is not Rev 1 you will get the overrule fields described above in a tab and two additional tabs to provide the byte locations of either the pair inline/crossline or the pair of X and Y coordinates. In the case of pre-stack data an additional tab will be present to provide the offsets/azimuth byte locations.</p>

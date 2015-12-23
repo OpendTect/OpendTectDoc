@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="631" MadCap:lastWidth="1412">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="631" MadCap:lastWidth="1392">
     <head>
     </head>
     <body>
@@ -7,33 +7,27 @@
         <p>Launch the Well-Seismic Tie window from the main menu or, optionally, the Well-Seismic Tie window can be launched from the tree.</p>
         <img src="../../Resources/Images/6 Analysis/Analysis tie well to seismic from tree.png" class="General_Image" />
         <p>Well to the seismic tie is a major task for interpretation projects. It is used to correlate the well information (logs) to the 3D seismic volume or 2D seismic lines. This enables the comparison (crossplots, ...) of well-based and the 2D/3D seismic data.</p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><b>Well-to-Seismic tie workflow:</b>
-                </MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li><b>Data preparation</b>
-                        <ul>
-                            <li>Import the <a href="../../Survey/Import/Import_Seismic.htm" target="_self" MadCap:conditions="Default.ScreenOnly">seismic</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">seismic</MadCap:conditionalText> volume or 2D line.</li>
-                            <li>Extract a <a href="../../Survey/Manage/Manage_Wavelets/Statitistical_Wavelet_Extraction.htm" target="_self" MadCap:conditions="Default.ScreenOnly">wavelet</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">wavelet</MadCap:conditionalText>.</li>
-                            <li>Import the wells: Each well requires a <a href="../../Survey/Manage/Manage_Wells/Well_Track_Editor.htm" target="_self" MadCap:conditions="Default.ScreenOnly">track</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">track</MadCap:conditionalText>, <a href="../../Survey/Manage/Manage_Wells/Checkshot_And_Time-Depth_Models.htm" target="_self" MadCap:conditions="Default.ScreenOnly">checkshot</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">checkshot</MadCap:conditionalText> or time-depth curve and sonic <a href="../../Survey/Manage/Manage_Wells/Logs_Import.htm" target="_self" MadCap:conditions="Default.ScreenOnly">log</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">log</MadCap:conditionalText>.</li>
-                            <li>Import the additional data: 3D/2D Horizons, well markers, additional time-depth curve if a checkshot was loaded.</li>
-                            <li>Edit the log database: Fill the missing sonic parts, <a href="../../Appendix_A-Attributes_And_Filters/Mathematics.htm" target="_self" MadCap:conditions="Default.ScreenOnly">create a density log</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">create a density log</MadCap:conditionalText> from the sonic (constant value or Gardner's equation) if not available.</li>
-                        </ul>
-                    </li>
-                    <li><b>Synthetic-to-seismic tie</b>
-                        <ul>
-                            <li>The module is launched from the Analysis menu or via the right-click menu of each well.</li>
-                            <li>The input fields must be selected.</li>
-                            <li>Based on the available data the density and sonic logs will be combined into impedance and reflectivity, depth-time converted (includes an upscaling) and convolved with the wavelet. The result is a synthetic seismic traces for the well. This trace will be compared with a composite seismic trace extracted in the volume along the (deviated) well path, on the nearest trace. Both synthetic and composite seismic traces are cross-correlated, and the output value is an indication of the alignment and matching quality.</li>
-                            <li>The alignment will be carried out either by shifting the synthetic trace up or down, or by selecting several locations in both seismic traces, specifying and applying a shift function that varies with the travel time.The applied changes must be validated, before being converted into a new time-depth function that replaces the previous one. No changes are being applied to the well logs.</li>
-                            <li>At each step of the tie a deterministic wavelet can be estimated using the time-converted reflectivity log and the composite seismic trace. This deterministic wavelet should vary per well, and is known to link the well data to the seismic data more reliably.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p><b>Well-to-Seismic tie workflow:</b>
+        </p>
+        <ol>
+            <li><b>Data preparation</b>
+                <ul>
+                    <li>Import the <a href="../../Survey/Import/Import_Seismic.htm" target="_self" MadCap:conditions="Default.ScreenOnly">seismic</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">seismic</MadCap:conditionalText> volume or 2D line.</li>
+                    <li>Extract a <a href="../../Survey/Manage/Manage_Wavelets/Statitistical_Wavelet_Extraction.htm" target="_self" MadCap:conditions="Default.ScreenOnly">wavelet</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">wavelet</MadCap:conditionalText>.</li>
+                    <li>Import the wells: Each well requires a <a href="../../Survey/Manage/Manage_Wells/Well_Track_Editor.htm" target="_self" MadCap:conditions="Default.ScreenOnly">track</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">track</MadCap:conditionalText>, <a href="../../Survey/Manage/Manage_Wells/Checkshot_And_Time-Depth_Models.htm" target="_self" MadCap:conditions="Default.ScreenOnly">checkshot</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">checkshot</MadCap:conditionalText> or time-depth curve and sonic <a href="../../Survey/Manage/Manage_Wells/Logs_Import.htm" target="_self" MadCap:conditions="Default.ScreenOnly">log</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">log</MadCap:conditionalText>.</li>
+                    <li>Import the additional data: 3D/2D Horizons, well markers, additional time-depth curve if a checkshot was loaded.</li>
+                    <li>Edit the log database: Fill the missing sonic parts, <a href="../../Appendix_A-Attributes_And_Filters/Mathematics.htm" target="_self" MadCap:conditions="Default.ScreenOnly">create a density log</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">create a density log</MadCap:conditionalText> from the sonic (constant value or Gardner's equation) if not available.</li>
+                </ul>
+            </li>
+            <li><b>Synthetic-to-seismic tie</b>
+                <ul>
+                    <li>The module is launched from the Analysis menu or via the right-click menu of each well.</li>
+                    <li>The input fields must be selected.</li>
+                    <li>Based on the available data the density and sonic logs will be combined into impedance and reflectivity, depth-time converted (includes an upscaling) and convolved with the wavelet. The result is a synthetic seismic traces for the well. This trace will be compared with a composite seismic trace extracted in the volume along the (deviated) well path, on the nearest trace. Both synthetic and composite seismic traces are cross-correlated, and the output value is an indication of the alignment and matching quality.</li>
+                    <li>The alignment will be carried out either by shifting the synthetic trace up or down, or by selecting several locations in both seismic traces, specifying and applying a shift function that varies with the travel time.The applied changes must be validated, before being converted into a new time-depth function that replaces the previous one. No changes are being applied to the well logs.</li>
+                    <li>At each step of the tie a deterministic wavelet can be estimated using the time-converted reflectivity log and the composite seismic trace. This deterministic wavelet should vary per well, and is known to link the well data to the seismic data more reliably.</li>
+                </ul>
+            </li>
+        </ol>
     </body>
 </html>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2451" MadCap:lastWidth="1590">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2489" MadCap:lastWidth="1392">
     <head>
     </head>
     <body>
@@ -14,18 +14,12 @@
         <p><b>Input Parameters</b>
         </p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic mathematics.png" class="General_Image" />
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>A mathematical expression is specified in the Formula text field with variables, constants, numerical values and/or recursive operators.</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>Constants must start with the letter C and be following by a number: C1, C5, C9... The number does not necessarily start at 0 and does not have to be consecutive. Constants can be evaluated just like stepouts and time gates for the other attribute. They are not available for logs creation</li>
-                    <li>Variables expressions can be any string: seis, energy, sim, ... They can be called with a number between brackets like seis[-1] or seis[4], in which case the value represents a shift in number of samples. seis[-1] represents seis on the sample above, seis[4] represents seis four samples below</li>
-                    <li>Recursive expressions are a way to call back the result of the mathematical formula on a sample above for computation. This result is called with the expression OUT[-i] (case insensitive) where i is a number of samples</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>A mathematical expression is specified in the Formula text field with variables, constants, numerical values and/or recursive operators.</p>
+        <ul>
+            <li>Constants must start with the letter C and be following by a number: C1, C5, C9... The number does not necessarily start at 0 and does not have to be consecutive. Constants can be evaluated just like stepouts and time gates for the other attribute. They are not available for logs creation</li>
+            <li>Variables expressions can be any string: seis, energy, sim, ... They can be called with a number between brackets like seis[-1] or seis[4], in which case the value represents a shift in number of samples. seis[-1] represents seis on the sample above, seis[4] represents seis four samples below</li>
+            <li>Recursive expressions are a way to call back the result of the mathematical formula on a sample above for computation. This result is called with the expression OUT[-i] (case insensitive) where i is a number of samples</li>
+        </ul>
         <p class="tip">There is no limit in number of variables/constants used in an expression.</p>
         <p class="tip">There are special constants for which it is not necessary to provide the numerical value: DZ is the sampling rate of the input data, Inl and Crl are respectively the inline and crossline numbers of the current trace. The special constant are case sensitive.</p>
         <p class="tip">Mathematics attributes containing a recursive equation should only be applied to the full volume/lines, not along a surface because of the integration length.</p>
@@ -51,50 +45,32 @@
         <p>The grouping '<i>Other</i>' contains the above.</p>
         <p>Pressing this button, <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic maths rockphys button.png" />, will open the '<a href="../Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Rock Physics</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Rock Physics</MadCap:conditionalText>' library of formulas. Clicking '<i>Ok</i>' in this additional window will directly insert the chosen formula into the '<i>Formula</i>' field.</p>
         <p>Formulas in Mathematics can be saved (<img src="../Resources/Images/Icons/save.png" class="Icons" />) and loaded from a stored location (<img src="../Resources/Images/Icons/open.png" class="Icons" />).</p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><b>Examples of expressions</b>
-                </MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>X0 == X1 returns 1 if X0 equals X1, 0 is returned if the statement is false, i.e. X0 is not equal to X1</li>
-                    <li>X0 != X1 returns 1 if X0 is not equal to X1 and 0 if X0 equals X1</li>
-                    <li>X0 &amp;&amp; X1 returns 1 if X0 and X1 are not equal to 0. If one of these equals zero a 0 is returned</li>
-                    <li>X0 || X1 returns 1 if X0 or X1 is not equal to 0. If both are zero a 0 is returned</li>
-                    <li>|X0| returns the absolute value of X0</li>
-                    <li>X0 &gt; 1 ? X1 : X2 means if X0 is larger than 1 return X1, else return X2</li>
-                    <li>sin(X0) returns the sine of X0</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Let's say you have one input cube, say 'Cube1' and one attribute already defined, Energy40, which is the Energy per sample calculated in a [-20,20] ms window around the current sample. Then, you could define 'Damped amplitude' as;</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li>Select Mathematics attribute</li>
-                    <li>Enter formula: seis / energy</li>
-                    <li>Press Set</li>
-                    <li>Select 'Cube1' for seis and 'Energy40' for energy</li>
-                    <li>Provide a name for the attribute, and press Add as new</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><b>Additional examples</b>
-                </MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li><i>Centred differentiation example:</i> Centred differentiation can be coded using the formula (seis[+1]-seis[-1])/(2*DZ) where DZ is the sampling rate. Please note that for lateral shifts the reference shift attribute must still be used.</li>
-                    <li>Recursive filters can be created using the syntax "OUT[-i]". The most general form of recursive equation is the following:<ul><li>y[n] = a0*x[n] + a1*x[n-1] + a2*x[n-2] + ...</li><li>+ b1*y[n-1] + b2*y[n-2] + ...</li><li>where x[] is the input volume, y[] is the output volume and the a's and b's the coefficients. n is the current sample number.</li><li>In the mathematics attribute the current sample index "n" does not need to be specified. Therefore the equation above can be entered as:</li><li>c0*x0 + c1*x0[-1] + c2*x0[-2] + c3*OUT[-1] + c4*OUT[-2] + ...</li><li>where OUT[-1] stands for y[n-1] and OUT[-2] stands for y[n-2]</li><li>For each instance of OUT[-i] a starting value and attached time/depth must be provided.</li><li>Two examples of low pass and high pass recursive filters are provided in the default attribute set "Evaluate attributes":</li><li>"Single pole low pass recursive filter" and "Single pole high pass recursive filter". Best results are achieved when providing an input of impedance or velocity type.</li></ul></li>
-                    <li>The phase rotation is an attribute available in the Evaluate attribute set and in the dGB Evaluate attribute set.<ul><li>This attribute allows the user to apply a phase rotation of any angle to the data.</li><li>It applies the formula: seis*cos(c0*PI/180)-hilbert*sin(c0*PI/180)</li><li>where seis is the seismic data</li><li>hilbert is the Hilbert transform of the seismic data</li><li>c0 is the applied angle for the rotation</li><li>c0 is in degrees.</li></ul></li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p><b>Examples of expressions</b>
+        </p>
+        <ul>
+            <li>X0 == X1 returns 1 if X0 equals X1, 0 is returned if the statement is false, i.e. X0 is not equal to X1</li>
+            <li>X0 != X1 returns 1 if X0 is not equal to X1 and 0 if X0 equals X1</li>
+            <li>X0 &amp;&amp; X1 returns 1 if X0 and X1 are not equal to 0. If one of these equals zero a 0 is returned</li>
+            <li>X0 || X1 returns 1 if X0 or X1 is not equal to 0. If both are zero a 0 is returned</li>
+            <li>|X0| returns the absolute value of X0</li>
+            <li>X0 &gt; 1 ? X1 : X2 means if X0 is larger than 1 return X1, else return X2</li>
+            <li>sin(X0) returns the sine of X0</li>
+        </ul>
+        <p>Let's say you have one input cube, say 'Cube1' and one attribute already defined, Energy40, which is the Energy per sample calculated in a [-20,20] ms window around the current sample. Then, you could define 'Damped amplitude' as;</p>
+        <ul>
+            <li>Select Mathematics attribute</li>
+            <li>Enter formula: seis / energy</li>
+            <li>Press Set</li>
+            <li>Select 'Cube1' for seis and 'Energy40' for energy</li>
+            <li>Provide a name for the attribute, and press Add as new</li>
+        </ul>
+        <p><b>Additional examples</b>
+        </p>
+        <ol>
+            <li><i>Centred differentiation example:</i> Centred differentiation can be coded using the formula (seis[+1]-seis[-1])/(2*DZ) where DZ is the sampling rate. Please note that for lateral shifts the reference shift attribute must still be used.</li>
+            <li>Recursive filters can be created using the syntax "OUT[-i]". The most general form of recursive equation is the following:<ul><li>y[n] = a0*x[n] + a1*x[n-1] + a2*x[n-2] + ...</li><li>+ b1*y[n-1] + b2*y[n-2] + ...</li><li>where x[] is the input volume, y[] is the output volume and the a's and b's the coefficients. n is the current sample number.</li><li>In the mathematics attribute the current sample index "n" does not need to be specified. Therefore the equation above can be entered as:</li><li>c0*x0 + c1*x0[-1] + c2*x0[-2] + c3*OUT[-1] + c4*OUT[-2] + ...</li><li>where OUT[-1] stands for y[n-1] and OUT[-2] stands for y[n-2]</li><li>For each instance of OUT[-i] a starting value and attached time/depth must be provided.</li><li>Two examples of low pass and high pass recursive filters are provided in the default attribute set "Evaluate attributes":</li><li>"Single pole low pass recursive filter" and "Single pole high pass recursive filter". Best results are achieved when providing an input of impedance or velocity type.</li></ul></li>
+            <li>The phase rotation is an attribute available in the Evaluate attribute set and in the dGB Evaluate attribute set.<ul><li>This attribute allows the user to apply a phase rotation of any angle to the data.</li><li>It applies the formula: seis*cos(c0*PI/180)-hilbert*sin(c0*PI/180)</li><li>where seis is the seismic data</li><li>hilbert is the Hilbert transform of the seismic data</li><li>c0 is the applied angle for the rotation</li><li>c0 is in degrees.</li></ul></li>
+        </ol>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic mathematics hilbert.png" class="General_Image" />
     </body>
 </html>

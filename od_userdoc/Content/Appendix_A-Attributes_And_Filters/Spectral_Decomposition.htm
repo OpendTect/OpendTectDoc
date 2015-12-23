@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1672" MadCap:lastWidth="1616">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1710" MadCap:lastWidth="1418">
     <head>
     </head>
     <body>
@@ -13,32 +13,20 @@
         <p>It is a useful tool for "below resolution" seismic interpretation, sand thickness estimation, and enhancing channel structures.</p>
         <p><b>Input Parameters</b>
         </p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>The user can choose between two types of transform:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li><i>FFT</i> the Fast Fourier Transform. The FFT requires a short window (time-gate) and a step-size between the analyzed frequencies. This step can be interpreted as the frequency resolution.</li>
-                    <li><i>CWT</i> the Continuous Wavelet Transform. The CWT requires a wavelet type.</li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>When choosing the CWT, you can set the wavelet type:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ul>
-                    <li><i>Morlet</i>
-                    </li>
-                    <li><i>Gaussian</i>
-                    </li>
-                    <li><i>Mexican Hat</i>
-                    </li>
-                </ul>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>The user can choose between two types of transform:</p>
+        <ul>
+            <li><i>FFT</i> the Fast Fourier Transform. The FFT requires a short window (time-gate) and a step-size between the analyzed frequencies. This step can be interpreted as the frequency resolution.</li>
+            <li><i>CWT</i> the Continuous Wavelet Transform. The CWT requires a wavelet type.</li>
+        </ul>
+        <p>When choosing the CWT, you can set the wavelet type:</p>
+        <ul>
+            <li><i>Morlet</i>
+            </li>
+            <li><i>Gaussian</i>
+            </li>
+            <li><i>Mexican Hat</i>
+            </li>
+        </ul>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition cwt.png" class="General_Image" />
         <p>In FFT only, the signal within the time-window will be transformed into frequency domain. The given step determines the output resolution, if necessary zeros will be added to acquire this resolution. The amplitude spectrum is calculated for the requested frequency. The time-window slides from top to bottom to cover the complete signal. In an ideal situation, the time-window encompasses one seismic event, which may be a superposition of multiple geological events which interfere in the seismic trace.</p>
         <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition.png" class="General_Image" />
