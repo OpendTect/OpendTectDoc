@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment=""
@@ -13,7 +13,7 @@
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
-  OutputFolder="C:\separate_repositories\ODDoc6\od_userdoc\Output\mark\od pdf">
+  OutputFolder="C:\documentation\UserDoc-6\od_userdoc\Output\Cases">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
@@ -29,4 +29,4 @@
     PageMode="UseOutlines"
     ShowUsedBookmarks="false" />
   <RelationshipTables />
-  </CatapultTarget>
+</CatapultTarget>
