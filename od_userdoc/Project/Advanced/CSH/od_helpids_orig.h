@@ -30,7 +30,6 @@ external/doc_csh instance of it.
 #define		mPluginSelHelpID				0x00002006
 #define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
 #define		mSurveySettingsHelpID				0x00002008
-
 // General Survey 03
 #define         mSurveyHelpID				        0x00003001
 #define		mSurveyInfoEditorHelpID				0x00003002
@@ -43,6 +42,10 @@ external/doc_csh instance of it.
 #define		mGoogleExportSurveyHelpID			0x00003010
 #define		mSeisWvltMangetFromOtherSurveyHelpID	        0x00003011
 #define         mSurveyexportButPushedHelpID                    0x00003012
+#define         mSelObjFromOtherSurveyHelpID                    0x00003013
+#define         mNewSurveyByCopyHelpID                          0x00003014
+#define         mStartNewSurveySetupHelpID                      0x00003015
+#define         mSurveySelectDlgHelpID                          0x00003016
 // General Other 04
 #define		mSliceSelHelpID					0x00004001
 #define		mSliceScrollHelpID				0x00004002
@@ -51,6 +54,15 @@ external/doc_csh instance of it.
 #define		mODApplMgrDispatchersetAutoUpdatePolHelpID	0x00004005
 #define		mHandleDLSiteFailHelpID				0x00004006
 #define		mProxyDlgHelpID					0x00004007
+#define         mExp2DGeomHelpID                                0x00004008
+#define         mLatLong2CoordFileTransDlgHelpID                0x00004009
+#define         mEditSEGYFileDataDlgHelpID                      0x00004010
+#define         mSEGYReadImpParsDlgHelpID                       0x00004011
+#define         mSEGYStoreImpParsDlgHelpID                      0x00004012
+#define         mSEGYReadFinisherHelpID                         0x00004013
+#define         mhandleExistingGeometryHelpID                   0x00004014
+#define         mSEGYReadStarterHelpID                          0x00004015
+#define         mSingleBatchJobDispatcherParsHelpID             0x00004016
 // General Installation 05
 #define	        mODInstMgrHelpID				0x00005001
 #define	        mODInstPkgMgrHelpID				0x00005002
@@ -92,6 +104,8 @@ external/doc_csh instance of it.
 // Visualization Sessions 03
 #define		mODMainAutoSessionDlgHelpID			0x05003001
 #define		mSessionManHelpID				0x05003002
+#define         mSlideLayoutDlgHelpID                           0x05003003
+#define         mPresentationMakerDlgHelpID                     0x05003004
 //Flat_displays 51
 // Flat_displays Display 00
 #define		mODViewer2DHelpID				0x05100000
@@ -130,6 +144,9 @@ external/doc_csh instance of it.
 #define		mDeltaResampleHelpID			        0x10100103
 #define		mTextureAttribHelpID			        0x10100104
 #define		mSampleValueAttribHelpID			0x10100105
+#define         mWhereIsDotDlgHelpID                            0x10100106
+#define         mGrubbsFilterAttribHelpID                       0x10100107
+#define         mVolProcAttribHelpID                            0x10100108
 // Attributes Selection 01
 #define		mAttribDescSetEdHelpID			        0x10101000
 #define		mAttrSelDlgNo_NNHelpID			        0x10101001
@@ -139,6 +156,7 @@ external/doc_csh instance of it.
 #define		mAutoAttrSelDlgHelpID			        0x10101005
 #define		mAttribDescSetEddefaultSetHelpID		0x10101006
 #define		mTrcPositionDlgHelpID			        0x10101007
+#define         mImpAttrSetHelpID                               0x10101008
 // Attributes Output 02
 #define		mAttrVolOutHelpID				0x10102000
 #define		mRestartBatchDialogHelpID			0x10102001
@@ -240,6 +258,7 @@ external/doc_csh instance of it.
 #define		mPreStackCopyDlgHelpID			        0x10304002
 #define		mPreStackMergeDlgHelpID				0x10304003
 #define		mRayTrcParamsDlgHelpID			        0x10304004
+#define         mPreStackMMProcHelpID                           0x10304005
 // Seismics LINKS 05
 #define		mMadagascarMainHelpID			        0x10305000
 #define		mMadIOSelDlgHelpID				0x10305001
@@ -276,6 +295,10 @@ external/doc_csh instance of it.
 #define		mBulkHorizonImportHelpID			0x10400016
 #define		mHorizonSettingsHelpID				0x10400017
 #define		mHorizonPreLoadDlgHelpID		        0x10400018
+#define         mCreateHorizonHelpID                            0x10400019
+#define         mgetHorizonZAxisTransformHelpID                 0x10400020
+#define         mDataPointSetPickDlgHelpID                      0x10400021
+#define         mIsochronMakerBatchHelpID                       0x10400022
 // Surfaces Faults 01
 #define		mImportFaultHelpID				0x10401000
 #define		mExportFaultHelpID				0x10401001
@@ -286,6 +309,7 @@ external/doc_csh instance of it.
 #define		mTableImpDataSelFaultStickSet3DHelpID	        0x10401006
 #define		mTableImpDataSelFaultStickSet2DHelpID	        0x10401007
 #define		mFaultStickTransferDlgHelpID		        0x10401008
+#define         mFaultOptSelHelpID                              0x10401009
 // Surfaces Manage 02
 #define		mSurfaceManHelpID				0x10402000
 #define		mSurface2DManHelpID				0x10402001
@@ -344,6 +368,7 @@ external/doc_csh instance of it.
 #define		mBulkTrackImportHelpID			        0x10700010
 #define		mBulkLogImportHelpID			        0x10700011
 #define		mBulkMarkerImportHelpID				0x10700012
+#define         mBulkD2TModelImportHelpID                       0x10700013
 // Wells Manage 01
 #define		mWellManHelpID				        0x10701000
 #define		mMarkerDlgHelpID				0x10701001
@@ -358,9 +383,14 @@ external/doc_csh instance of it.
 #define		mWellLogCalcHelpID				0x10701010
 #define		mGoogleExportWellsHelpID			0x10701011
 #define		mWellLogCalcRockPhysHelpID			0x10701012
+#define         mWellLogEditorHelpID                            0x10701013
+#define         mWellRockPhysLauncherHelpID                     0x10701014
 // Wells Display 02
 #define		mWellDispPropDlgHelpID			        0x10702000
 #define		mDispEditMarkerDlgHelpID			0x10702001
+#define         mMarkerViewDlgHelpID                            0x10702002
+#define         mWellMarkersDlgHelpID                           0x10702003
+#define         mSynthCorrAdvancedDlgHelpID                     0x10702004
 // Wells Attributes 03
 #define		mCreateAttribLogDlgHelpID			0x10703000
 #define		mWellLogToolWinMgrHelpID			0x10703001
@@ -400,6 +430,7 @@ external/doc_csh instance of it.
 #define		mStratSynthLayerModFRPPropSelectorHelpID	0x11000010
 #define		mStratEditLayerHelpID			        0x11000011
 #define		mStratSimpleLayerModDispHelpID		        0x11000012
+#define         mStratUnitDivideDlgHelpID                       0x11000013
 // Stratigraphy Properties 01
 #define		mManPROPSHelpID					0x11001000
 #define		mEditPropRefHelpID				0x11001001
@@ -409,6 +440,7 @@ external/doc_csh instance of it.
 #define		mSingleLayerGeneratorEdHelpID		        0x11002000
 #define		mSynthToRealScaleHelpID				0x11002001
 #define		mStratLayerModelcheckUnscaledWaveletHelpID	0x11002002
+#define         mStratLayerModelDispIOHelpID                    0x11002003
 // Stratigraphy Crossplotting 03
 #define		mStratSynthCrossplotHelpID			0x11003000
 #define		mSingleAttribEdHelpID			        0x11003001
@@ -442,11 +474,12 @@ external/doc_csh instance of it.
 #define		mProbDenFuncManHelpID			        0x11201000
 #define		mEditProbDenFuncHelpID			        0x11201001
 #define		mProbGenFuncGenHelpID			        0x11201002
-
+#define         mProbDenFuncGenSampledHelpID                    0x11201003
+#define         mProbDenFuncGenGaussianHelpID                   0x11201004
 //SynthRock 113
 #define		mRockPhysFormHelpID				0x11300000
 #define		mMathPropEdDlgHelpID				0x11300001
-
+#define         mrockPhysReqHelpID                              0x11300002
 //NLA 114
 #define		mPrepNLADataHelpID				0x11400000
 #define		mLithCodeManHelpID				0x11400001
