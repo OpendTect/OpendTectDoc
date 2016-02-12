@@ -120,7 +120,6 @@ external/doc_csh instance of it.
 // Attributes Definition 00
 #define	        mCoherencyAttrib			        0x10100000
 #define		mConvolveAttribHelpID			        0x10100001
-#define		mDipFilterAttribHelpID			        0x10100002
 #define		mEnergyAttribHelpID				0x10100003
 #define		mEventAttribHelpID				0x10100004
 #define		mFingerPrintAttribHelpID			0x10100005
