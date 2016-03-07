@@ -12,8 +12,7 @@
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
-  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
-  OutputFolder="C:\documentation\UserDoc-6\od_userdoc\Output\Cases">
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
