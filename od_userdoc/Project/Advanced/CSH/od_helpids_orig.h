@@ -41,7 +41,7 @@ external/doc_csh instance of it.
 #define		mLatLong2CoordDlgHelpID				0x00003009
 #define		mGoogleExportSurveyHelpID			0x00003010
 #define		mSeisWvltMangetFromOtherSurveyHelpID	        0x00003011
-#define         mSurveyexportButPushedHelpID                    0x00003012
+#define		mSurveyCompressButPushedHelpID			0x00003012
 #define         mSelObjFromOtherSurveyHelpID                    0x00003013
 #define         mNewSurveyByCopyHelpID                          0x00003014
 #define         mStartNewSurveySetupHelpID                      0x00003015
