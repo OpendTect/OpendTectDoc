@@ -17,7 +17,8 @@
   Skin="/Project/Skins/HTML5.flskn"
   conditions="Default.ScreenOnly"
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
-  BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs">
+  BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs"
+  PreCompileScaledImages="false">
   <PrintedOutput
     CollapseMargins="true" />
 </CatapultTarget>
