@@ -365,4 +365,6 @@
     <Map Name="mWellLogInterpolHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Well_Log_Interpolator.htm" />
     <Map Name="mWellto2DLineDlgHelpID" Link="/Content/Analysis/Wells/Tie_Well_To_Seismic.htm" />
     <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics.htm" />
+    <Map Name="mTrackingWizardHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Track.htm" />
+    <Map Name="mTrackingSetupGroupHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Track.htm" />
 </CatapultAliasFile>
