@@ -19,189 +19,191 @@ external/doc_csh instance of it.
 //General 000
 // General_support 01
 
-#define	    mProgressViewerHelpID							0x00001003
+#define		mProgressViewerHelpID				0x00001003
 #define		mBatchProgLaunchHelpID                          0x00001005
-#define		mBatchHostsDlgHelpID							0x00001006
+#define		mBatchHostsDlgHelpID				0x00001006
 
 // General Setup 02
 
-#define		mSettingsHelpID				        			0x00002001
-#define		mSetFontsHelpID									0x00002002
-#define		mLooknFeelSettingsHelpID						0x00002003
-#define		mShortcutsDlgHelpID								0x00002004
-#define		mPluginManHelpID								0x00002005
-#define		mPluginSelHelpID								0x00002006
-#define		mODSceneMgrsetKeyBindingsHelpID					0x00002007
-#define		mSurveySettingsHelpID							0x00002008
+#define		mSettingsHelpID					0x00002001
+#define		mSetFontsHelpID					0x00002002
+#define		mLooknFeelSettingsHelpID			0x00002003
+#define		mShortcutsDlgHelpID				0x00002004
+#define		mPluginManHelpID				0x00002005
+#define		mPluginSelHelpID				0x00002006
+#define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
+#define		mSurveySettingsHelpID				0x00002008
 
 // General Survey 03
 
-#define     mSurveyHelpID				        			0x00003001
-#define		mSurveyInfoEditorHelpID							0x00003002
-#define		mWorkAreaDlgHelpID								0x00003004
-#define		mAttribDescSetEdimportSetHelpID					0x00003005
-#define		mCopySurveySIPHelpID			        		0x00003006
-#define		mConvertPosHelpID								0x00003007
-#define		m2DDefSurvInfoDlgHelpID							0x00003008
-#define		mLatLong2CoordDlgHelpID							0x00003009
-#define		mGoogleExportSurveyHelpID						0x00003010
-#define		mSeisWvltMangetFromOtherSurveyHelpID	        0x00003011
-#define     mSurveyexportButPushedHelpID					0x00003012
+#define		mSurveyHelpID					0x00003001
+#define		mSurveyInfoEditorHelpID				0x00003002
+#define		mWorkAreaDlgHelpID				0x00003004
+#define		mAttribDescSetEdimportSetHelpID			0x00003005
+#define		mCopySurveySIPHelpID				0x00003006
+#define		mConvertPosHelpID				0x00003007
+#define		m2DDefSurvInfoDlgHelpID				0x00003008
+#define		mLatLong2CoordDlgHelpID				0x00003009
+#define		mGoogleExportSurveyHelpID			0x00003010
+#define		mSeisWvltMangetFromOtherSurveyHelpID		0x00003011
+#define		mSurveyexportButPushedHelpID			0x00003012
 
 // General Other 04
 
-#define		mSliceSelHelpID									0x00004001
-#define		mSliceScrollHelpID								0x00004002
-#define		mmcmddriverimpsHelpID			        		0x00004003
-#define		mODApplMgraddTimeDepthSceneHelpID				0x00004004
-#define		mODApplMgrDispatchersetAutoUpdatePolHelpID		0x00004005
-#define		mHandleDLSiteFailHelpID							0x00004006
-#define		mProxyDlgHelpID									0x00004007
+#define		mSliceSelHelpID					0x00004001
+#define		mSliceScrollHelpID				0x00004002
+#define		mmcmddriverimpsHelpID				0x00004003
+#define		mODApplMgraddTimeDepthSceneHelpID		0x00004004
+#define		mODApplMgrDispatchersetAutoUpdatePolHelpID	0x00004005
+#define		mHandleDLSiteFailHelpID				0x00004006
+#define		mProxyDlgHelpID					0x00004007
 
 // General Installation 05
 
-#define	    mODInstMgrHelpID								0x00005001
-#define	    mODInstPkgMgrHelpID								0x00005002
-#define	    mODInstMgrcheckInstDirHelpID		        	0x00005003
-#define	    mODInstMgrgetPackageChoiceHelpID				0x00005004
+#define		mODInstMgrHelpID				0x00005001
+#define		mODInstPkgMgrHelpID				0x00005002
+#define		mODInstMgrcheckInstDirHelpID			0x00005003
+#define		mODInstMgrgetPackageChoiceHelpID		0x00005004
 
 //Object-Management 008
 // Object-Management Basic 00
 
-#define		mSetDataDirHelpID								0x00800001
+#define		mSetDataDirHelpID				0x00800001
 
 // Object-Management Selection 01
 
-#define		mIOObjSelDlgHelpID								0x00801001
+#define		mIOObjSelDlgHelpID				0x00801001
 
 //Visualization 50
 // Visualization 3D 00
 
-#define		mSnapshotDlgHelpID								0x05000001
-#define		mStereoDlgHelpID								0x05000002
-#define		mGridLinesDlgHelpID								0x05000003
-#define		mPropertiesDlgHelpID			        		0x05000004
-#define		mScenePropertyDlgHelpID							0x05000005
-#define		mColorBarDialog									0x05000006
-#define		mZScaleDlgHelpID								0x05000007
-#define		mPSViewerSettingDlgHelpID						0x05000008
-#define		mPrintSceneDlgHelpID			        		0x05000009
-#define		mWindowGrabDlgWindowHelpID						0x05000010
-#define		mWindowGrabDlgDesktopHelpID						0x05000011
-#define		mMultiMapperRangeEditWinHelpID		        	0x05000012
-#define		mSurvTopBotImageDlgHelpID						0x05000013
-#define		mArrowDialogHelpID								0x05000014
-#define		mMeasureDlgHelpID								0x05000015
-#define		mVolrenTreeItemHelpID			        		0x05000016
-#define		mSeisPartServerselect2DLinesHelpID	        	0x05000017
-#define		mDirLightDlgHelpID								0x05000018
-#define		mScenePropertyDlgLineSurfSepHelpID				0x05000019
-#define		mViewer3DPositionsDlgHelpID						0x05000020
+#define		mSnapshotDlgHelpID				0x05000001
+#define		mStereoDlgHelpID				0x05000002
+#define		mGridLinesDlgHelpID				0x05000003
+#define		mPropertiesDlgHelpID				0x05000004
+#define		mScenePropertyDlgHelpID				0x05000005
+#define		mColorBarDialog					0x05000006
+#define		mZScaleDlgHelpID				0x05000007
+#define		mPSViewerSettingDlgHelpID			0x05000008
+#define		mPrintSceneDlgHelpID				0x05000009
+#define		mWindowGrabDlgWindowHelpID			0x05000010
+#define		mWindowGrabDlgDesktopHelpID			0x05000011
+#define		mMultiMapperRangeEditWinHelpID			0x05000012
+#define		mSurvTopBotImageDlgHelpID			0x05000013
+#define		mArrowDialogHelpID				0x05000014
+#define		mMeasureDlgHelpID				0x05000015
+#define		mVolrenTreeItemHelpID				0x05000016
+#define		mSeisPartServerselect2DLinesHelpID		0x05000017
+#define		mDirLightDlgHelpID				0x05000018
+#define		mScenePropertyDlgLineSurfSepHelpID		0x05000019
+#define		mViewer3DPositionsDlgHelpID			0x05000020
 
 // Visualization Colors 01
 
-#define		mColTabMarkerDlgHelpID							0x05001001
-#define	    mColorTableManHelpID			        		0x05001002
-#define		mAutoRangeClipDlgHelpID							0x05001003
-#define		mColTabImportHelpID								0x05001004
-#define		mODEditAttribColorDlgHelpID						0x05001005
+#define		mColTabMarkerDlgHelpID				0x05001001
+#define		mColorTableManHelpID				0x05001002
+#define		mAutoRangeClipDlgHelpID				0x05001003
+#define		mColTabImportHelpID				0x05001004
+#define		mODEditAttribColorDlgHelpID			0x05001005
 
 // Visualization Sessions 03
 
-#define		mODMainAutoSessionDlgHelpID						0x05003001
-#define		mSessionManHelpID								0x05003002
+#define		mODMainAutoSessionDlgHelpID			0x05003001
+#define		mSessionManHelpID				0x05003002
+#define		mSlideLayoutDlgHelpID				0x05003003
+#define		mPresentationMakerDlgHelpID			0x05003004
 
 //Flat_displays 51
 // Flat_displays Display 00
 
-#define		mODViewer2DHelpID								0x05100000
-#define		mODViewer2DPropDlgHelpID						0x05100001
-#define		mODViewer2DPosDlgHelpID							0x05100002
+#define		mODViewer2DHelpID				0x05100000
+#define		mODViewer2DPropDlgHelpID			0x05100001
+#define		mODViewer2DPosDlgHelpID				0x05100002
 
 // Flat_displays 2DPSViewer 01
 
-#define		mViewer2DPSMainWinHelpID						0x05101000
-#define		mViewer2DPSPosDlgHelpID							0x05101001
-#define		mViewer2DPSSelDataDlgHelpID						0x05101002
-#define		mViewer2DPSMainWindisplayAngleHelpID			0x05101003
+#define		mViewer2DPSMainWinHelpID			0x05101000
+#define		mViewer2DPSPosDlgHelpID				0x05101001
+#define		mViewer2DPSSelDataDlgHelpID			0x05101002
+#define		mViewer2DPSMainWindisplayAngleHelpID		0x05101003
 
 //Attributes 101
 // Attributes Definition 00
 
-#define	    mCoherencyAttrib			        			0x10100000
-#define		mConvolveAttribHelpID			        		0x10100001
-#define		mDipFilterAttribHelpID			        		0x10100002
-#define		mEnergyAttribHelpID								0x10100003
-#define		mEventAttribHelpID								0x10100004
-#define		mFingerPrintAttribHelpID						0x10100005
-#define		mFrequencyAttribHelpID			        		0x10100006
-#define		mFreqFilterAttribHelpID							0x10100007
-#define		mInstantaneousAttribHelpID						0x10100008
-#define		mMathAttribHelpID								0x10100009
-#define		mPositionAttribHelpID			        		0x10100010
-#define		mReferenceAttribHelpID			        		0x10100011
-#define		mScalingAttribHelpID			        		0x10100012
-#define		mShiftAttribHelpID								0x10100013
-#define		mSimilarityAttribHelpID							0x10100014
-#define		mSpecDecompAttribHelpID							0x10100015
-#define		mVolumeStatisticsAttribHelpID		        	0x10100016
-#define		mPreStackAttribHelpID			        		0x10100017
-#define		mWellLogAttribHelpID							0x10100018
-#define		mSemblanceAttribHelpID							0x10100019
-#define		mHorizonAttribHelpID			        		0x10100100
-#define		mGapDeconHelpID									0x10100101
-#define		mMatchDeltaHelpID								0x10100102
-#define		mDeltaResampleHelpID			        		0x10100103
-#define		mTextureAttribHelpID			        		0x10100104
-#define		mSampleValueAttribHelpID						0x10100105
+#define		mCoherencyAttrib				0x10100000
+#define		mConvolveAttribHelpID				0x10100001
+#define		mDipFilterAttribHelpID				0x10100002
+#define		mEnergyAttribHelpID				0x10100003
+#define		mEventAttribHelpID				0x10100004
+#define		mFingerPrintAttribHelpID			0x10100005
+#define		mFrequencyAttribHelpID				0x10100006
+#define		mFreqFilterAttribHelpID				0x10100007
+#define		mInstantaneousAttribHelpID			0x10100008
+#define		mMathAttribHelpID				0x10100009
+#define		mPositionAttribHelpID				0x10100010
+#define		mReferenceAttribHelpID				0x10100011
+#define		mScalingAttribHelpID				0x10100012
+#define		mShiftAttribHelpID				0x10100013
+#define		mSimilarityAttribHelpID				0x10100014
+#define		mSpecDecompAttribHelpID				0x10100015
+#define		mVolumeStatisticsAttribHelpID	        	0x10100016
+#define		mPreStackAttribHelpID		       		0x10100017
+#define		mWellLogAttribHelpID				0x10100018
+#define		mSemblanceAttribHelpID				0x10100019
+#define		mHorizonAttribHelpID		       		0x10100100
+#define		mGapDeconHelpID					0x10100101
+#define		mMatchDeltaHelpID				0x10100102
+#define		mDeltaResampleHelpID		       		0x10100103
+#define		mTextureAttribHelpID		       		0x10100104
+#define		mSampleValueAttribHelpID			0x10100105
 
 // Attributes Selection 01
 
-#define		mAttribDescSetEdHelpID			        		0x10101000
-#define		mAttrSelDlgNo_NNHelpID			        		0x10101001
-#define		mAttrInpDlgHelpID								0x10101002
-#define		mGetFileForAttrSetHelpID						0x10101003
-#define		mAttrSrchProcFilesHelpID						0x10101004
-#define		mAutoAttrSelDlgHelpID			        		0x10101005
-#define		mAttribDescSetEddefaultSetHelpID				0x10101006
-#define		mTrcPositionDlgHelpID			        		0x10101007
+#define		mAttribDescSetEdHelpID		      		0x10101000
+#define		mAttrSelDlgNo_NNHelpID		       		0x10101001
+#define		mAttrInpDlgHelpID				0x10101002
+#define		mGetFileForAttrSetHelpID			0x10101003
+#define		mAttrSrchProcFilesHelpID			0x10101004
+#define		mAutoAttrSelDlgHelpID		       		0x10101005
+#define		mAttribDescSetEddefaultSetHelpID		0x10101006
+#define		mTrcPositionDlgHelpID		       		0x10101007
 
 // Attributes Output 02
 
-#define		mAttrVolOutHelpID								0x10102000
-#define		mRestartBatchDialogHelpID						0x10102001
-#define		mClusterJobProvHelpID			        		0x10102002
-#define		mMultOutSelHelpID								0x10102003
-#define		mAttrVolOut2DHelpID								0x10102004
+#define		mAttrVolOutHelpID				0x10102000
+#define		mRestartBatchDialogHelpID			0x10102001
+#define		mClusterJobProvHelpID		      		0x10102002
+#define		mMultOutSelHelpID				0x10102003
+#define		mAttrVolOut2DHelpID				0x10102004
 
 // Attributes Utilities 03
 
-#define		mAttrSetManHelpID								0x10103000
-#define		mEvaluateDlgHelpID								0x10103001
-#define		mFPAdvancedDlgHelpID			        		0x10103002
-#define		mFreqTaperDlgHelpID								0x10103003
+#define		mAttrSetManHelpID				0x10103000
+#define		mEvaluateDlgHelpID				0x10103001
+#define		mFPAdvancedDlgHelpID		       		0x10103002
+#define		mFreqTaperDlgHelpID				0x10103003
 
 //Seismics 103
 // Seismics I/O 00
 
-#define		mSeisImpCBVSHelpID			        			0x10300001
-#define		mSEGYExpMoreHelpID								0x10300002
-#define		mSEGYExpTxtHeaderDlgHelpID						0x10300003
-#define		mSEGYImpSimilarDlgHelpID						0x10300004
-#define		mSEGYExamineHelpID								0x10300005
-#define		mSEGYDefDlgHelpID								0x10300006
-#define		mSEGYExpHelpID				        			0x10300007
-#define		mSEGYReadRev1QuestionHelpID						0x10300008
-#define		mSEGYReadDlgHelpID								0x10300009
-#define		mSEGYReadPreScannerHelpID						0x10300010
-#define		mSeisIOSimpleImpHelpID			        		0x10300011
-#define		mSeisIOSimpleExpHelpID			        		0x10300012
-#define		mSeisPreLoadMgrHelpID			        		0x10300013
-#define		mDZTImporterHelpID								0x10300016
-#define		mSeisFmtScaleDlgHelpID			        		0x10300017
-#define		mSEGYFileManipHelpID			        		0x10300019
-#define		mSEGYBinHdrEdDlgHelpID			        		0x10300020
-#define		mSEGYFileManipHdrCalcEdHelpID		        	0x10300021
+#define		mSeisImpCBVSHelpID		 		0x10300001
+#define		mSEGYExpMoreHelpID				0x10300002
+#define		mSEGYExpTxtHeaderDlgHelpID			0x10300003
+#define		mSEGYImpSimilarDlgHelpID			0x10300004
+#define		mSEGYExamineHelpID				0x10300005
+#define		mSEGYDefDlgHelpID				0x10300006
+#define		mSEGYExpHelpID					0x10300007
+#define		mSEGYReadRev1QuestionHelpID			0x10300008
+#define		mSEGYReadDlgHelpID				0x10300009
+#define		mSEGYReadPreScannerHelpID			0x10300010
+#define		mSeisIOSimpleImpHelpID			       	0x10300011
+#define		mSeisIOSimpleExpHelpID			       	0x10300012
+#define		mSeisPreLoadMgrHelpID			       	0x10300013
+#define		mDZTImporterHelpID				0x10300016
+#define		mSeisFmtScaleDlgHelpID			       	0x10300017
+#define		mSEGYFileManipHelpID			       	0x10300019
+#define		mSEGYBinHdrEdDlgHelpID			       	0x10300020
+#define		mSEGYFileManipHdrCalcEdHelpID	        	0x10300021
 #define		mSeisImpCBVSFromOtherSurveyDlgHelpID	        0x10300022
 
 // Seismics Manage 01
@@ -253,7 +255,7 @@ external/doc_csh instance of it.
 #define		mAngleMuteComputerHelpID						0x10302019
 #define		mAngleMuteHelpID								0x10302020
 #define		mResortSEGYDlg			                		0x10302021
-#define	    mMultiWellCreateLogCubeDlg		        		0x10302022
+#define		mMultiWellCreateLogCubeDlg		        		0x10302022
 #define		mCreate2DGridHelpID								0x10302023
 #define		mSeis2DTo3DHelpID								0x10302024
 #define		mCreateLogCubeDlgHelpID							0x10302025
@@ -398,7 +400,7 @@ external/doc_csh instance of it.
 #define		mWellImportAscDataSelHelpID						0x10700002
 #define		mD2TModelGroupHelpID			        		0x10700003
 #define		mWellImpPptDlgHelpID			        		0x10700004
-#define     mNewWellTrackDlgHelpID							0x10700005
+#define		mNewWellTrackDlgHelpID							0x10700005
 #define		mSimpleMultiWellCreateHelpID		        	0x10700007
 #define		mSimpleMultiWellCreateReadDataHelpID	        0x10700008
 #define		mTableImpDataSelwellsHelpID		        		0x10700009
@@ -443,7 +445,7 @@ external/doc_csh instance of it.
 //Tracking 108
 // Trakcing I/O 00
 
-#define	    mTrackingWizardHelpID			        		0x10800000
+#define		mTrackingWizardHelpID			        		0x10800000
 #define		mTrackingSetupGroupHelpID						0x10800001
 
 //Random_lines 109
