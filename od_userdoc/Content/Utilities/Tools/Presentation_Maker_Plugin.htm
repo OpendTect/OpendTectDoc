@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1080" MadCap:lastWidth="1444">
+    <head>
+    </head>
+    <body>
+        <h3>9.2.5 Presentation Maker Plugin<MadCap:keyword term="9.2.5 Presentation Maker Plugin" /></h3>
+        <p style="font-weight: bold;">Introduction</p>
+        <p style="font-weight: normal;">Python-pptx is a Python library for creating and updating PowerPoint (.pptx files). The OpendTect 'Presentation Maker' plugin uses this library to create a PowerPoint presentation from scene, window or desktop screenshots.</p>
+        <p style="font-weight: bold;">Python-pptx installation</p>
+        <p style="font-weight: normal;">General installation information is at the <a href="https://python-pptx.readthedocs.org/en/latest/user/install.html" target="_blank"><MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">Python-pptx website</MadCap:conditionalText></a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Python-pptx website</MadCap:conditionalText>.</p>
+        <p style="font-weight: bold;">Windows</p>
+        <p style="font-weight: normal;font-style: italic;">Preparation</p>
+        <p style="font-weight: normal;font-style: normal;">On Windows, three packages need to be installed. First of all Python itself, then lxml and finally Python-pptx. The three packages have to be installed in the given order and installation instructions are given below. Before you start, create a new folder to store the Python installation, eg C:\apps.</p>
+        <p style="font-weight: normal;font-style: italic;">Python</p>
+        <p style="font-weight: normal;font-style: normal;">Install Python itself from the <a href="https://www.python.org/downloads/release/python-2710/" target="_blank" MadCap:conditions="Default.ScreenOnly">download page</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">download page</MadCap:conditionalText>. Download the 'Windows x86-64 MSI installer' for 64bit systems or 'Windows x86 MSI installer' for 32bit systems. Click on the link. During installation, choose C:\apps as the installation folder and select the option to add Python to the PATH environment variable. If you don't get this option, or missed it, edit the PATH environment variable and add the following: <i>C:\apps\Python27\;C\apps\Python27\Scripts;</i> More information on settings environment variables in Windows can be found at the <a href="http://www.computerhope.com/issues/ch000549.htm" target="_blank">Computer Hope</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Computer Hope</MadCap:conditionalText> webpage.</p>
+        <p style="font-weight: normal;font-style: italic;">lxml</p>
+        <p style="font-weight: normal;font-style: normal;">The package python-pptx requires the lsml tools. Install binary for lxml from the <a href="https://pypi.python.org/pypi/lxml" target="_blank" MadCap:conditions="Default.ScreenOnly">lxml</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">lxml</MadCap:conditionalText> page. An example for version 3.4.4. After clicking on the version, download the Windows 64 python 2.7 package. At time of writing: <a href="https://pypi.python.org/packages/2.7/l/lxml/lxml-3.4.4.win-amd64-py2.7.exe#md5=f1f2d5ec1be1ca9b73756676125de5ae" MadCap:conditions="Default.ScreenOnly">lxml-3.4.4.win-amd64-py2.7.exe</a>l<MadCap:conditionalText MadCap:conditions="Default.PrintOnly">xml-3.4.4.win-amd64-py2.7.exe</MadCap:conditionalText>. After downloading, double click on the exe file and follow onscreen instructions.</p>
+        <p style="font-weight: normal;font-style: italic;">Python-pptx</p>
+        <p style="font-weight: normal;font-style: normal;">Open a Command Prompt (press Windows+R, type in cmd, and hit enter) and run: <i>pip install python-pptx</i>.</p>
+        <p style="font-style: normal;font-weight: bold;">Linux</p>
+        <p style="font-style: normal;font-weight: normal;">Start by checking if python has been installed. Open a command line window and enter: python. If it's installed, you'll see some information in the terminal, like the version number. Note that currently python-pptx requires Python 2.6, 2.7, 3.3 or 3.4.</p>
+        <p style="font-style: normal; font-weight: normal;">If python is not installed, install using your distribution's package manager, or ask your system administrator. <i>python-pptx</i> is hosted on PyPI installing with pip is simple. First install lxml: <i>pip install lxml</i>. The install python-pptx: <i>pip install python-pptx</i> and you should be ready to go.</p>
+        <p style="font-style: normal;font-weight: bold;">How to make the presentation</p>
+        <p style="font-style: normal;font-weight: normal;">A presentation can be made in 2 different styles, as a blank presentation or by using a custom template (master) PowerPoint presentation. When you use a blank option, the template which is part of the python-pptx installation will be used and all slides will have a whit background. When you choose the custom option, you need to select an existing PowerPoint presentation. The plugin expects a PowerPoint file (a pptx file, not apotx!) with 2 slides. The first slide should be the title slide, i.e. a slide with the 'Title Slide' layout. The second slide should be a regular slide with 'Title and Content' layout. New slides will use the layout of the 2nd slide. Click on the settings icon to specify the slide format and the image margins.</p>
+        <p style="font-style: normal; font-weight: normal;">Three different images can be added as slides: Scene, Window or Desktop.</p>
+        <ul>
+            <li style="font-style: normal;font-weight: normal;">Scene: the scene will be captured in an image. if you have multiple scenes, choose the scene you'd like to add. The name of the selected tree item will be the name of the slide.</li>
+            <li style="font-style: normal; font-weight: normal;">Window: image of the selected window will be added. Note that windows on top of the selected window will also be captured in the image.</li>
+            <li style="font-style: normal; font-weight: normal;">Desktop: an image of the full desktop will be added.</li>
+        </ul>
+    </body>
+</html>

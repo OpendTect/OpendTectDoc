@@ -1070,6 +1070,9 @@
       <TocEntry
         Title="9.2.4 Command Driver"
         Link="/Content/Utilities/Tools/Command_Driver.htm" />
+      <TocEntry
+        Title="9.2.5 Presentation Maker Plugin"
+        Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
     </TocEntry>
     <TocEntry
       Title="9.3 Installation"
