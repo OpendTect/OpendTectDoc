@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1828" MadCap:lastWidth="1157">
+    <head>
+    </head>
+    <body>
+        <h4>3.7.7.1 Auto and Manual Horizon Tracking<MadCap:keyword term="3.7.7.1 Auto and Manual Horizon Tracking" /></h4>
+        <p>3D horizon interpretation in OpendTect can be conveniently started from the right-click menu of <i>3D&#160;Horizon</i> &gt; <i>New</i> &gt; <i>Auto and Manual Tracking</i> in the Tree of either 3D&#160;scene or 2D viewer.</p>
+        <p><b style="font-style: normal;">3D Auto-tracking</b> <![CDATA[ ]]></p>
+        <p>3D&#160;Auto-tracking is the primary, highly interactive workflow for horizon interpretation in OpendTect. The user starts with a few picked seeds, auto-tracks, interactively QCs,  as needed re-tracks with updated parameters and/or edits, and locks QC-ed interpretation. Then interpretation continues by iteratively repeating the steps. The advantage of this work flow is that the horizon is QC-ed while interpreting and, therefore, saves time on editing. Any remaining holes can be filled at a later stage using one of the gridding algorithms.</p>
+        <p>The workflow operates in the 3D scene via <i>Ctrl</i> + right-click menu and keyboard short keys (<i>Shift</i> + <i>?</i> to see all).</p>
+        <p>
+            <img src="../../../Resources/Images/Horizon tracking right click menu.png" /> and <img src="../../../Resources/Images/2 Getting Started/Shortkeys_HTML.png" class="General_Image" /></p>
+        <p>A seismic event  in 3D&#160;volume is tracked starting from user-picked seed locations following user-set rules  (<a href="Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" target="_self">Horizon Tracking Settings</a> window) on:</p>
+        <ul>
+            <li> which seismic event (min/max/zero-crossing)  to follow within a search window;</li>
+            <li>and when to stop auto-tracking by comparison of the current tracking position with either a user-picked seed location (<i>Seed Trace</i> method) or a preceding auto-tracked position (<i>Adjacent Parent</i> method) based on event amplitude (either relative difference threshold or absolute amplitude cut-off) and (optionally, but recommended) trace cross-correlation within comparison window. </li>
+        </ul>
+        <p class="tip">Optionally, seismic dips can be used to guide the auto-tracker (a Dip-Steering license is required). </p>
+        <p> The <i>Seed Trace</i> method is more conservative and is recommended in structurally complex areas. The <i>Adjacent Parent</i> method tracks larger areas with the same set of input seeds and tracking parameters, which makes it faster to produce horizons, but the risk of loop-skipping increases. It is recommended only for continuous horizons in the 3D&#160;auto-tracking workflow.</p>
+        <p><b style="font-style: normal;">Section auto-tracking</b> </p>
+        <p>Section auto-tracking is similar to the 3D Auto-tracking workflow. The main difference is that it operates only along seismic sections. The lines are either displayed in the 3D scene, or in a flat (2D) viewer. Use this tracker to interpret 2D seismic data and/or to interpret 3D seismic lines in a grid, e.g. to interpret every 10th inline and crossline.</p>
+    </body>
+</html>

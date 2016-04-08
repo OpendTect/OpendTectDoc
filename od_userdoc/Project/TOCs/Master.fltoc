@@ -182,8 +182,19 @@
         Title="3.7.6 Flattening"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Flattening.htm" />
       <TocEntry
-        Title="3.7.7 Tracking"
-        Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tracking.htm" />
+        Title="3.7.7 New Horizon"
+        Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon.htm">
+        <TocEntry
+          Title="3.7.7.1 Auto and Manual Horizon Tracking"
+          Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking.htm">
+          <TocEntry
+            Title="3.7.7.1.1 Horizon Tracking Settings"
+            Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="3.7.7.2 Create Horizon With Constant Z"
+          Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Create_Horizon_With_Constant_Z.htm" />
+      </TocEntry>
       <TocEntry
         Title="3.7.8 Shift"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Shift.htm" />
