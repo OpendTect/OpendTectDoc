@@ -54,7 +54,7 @@
     <Map Name="mSurveyInfoEditorHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
     <Map Name="mSurveyexportButPushedHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
-    <Map Name="mIOObjSelDlgHelpID" Link="/Content/Getting_Started/General_Selection_Window.htm" />
+    <Map Name="mIOObjSelDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
     <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm" />
     <Map Name="mColTabImportHelpID" Link="/Content/Survey/Import/Import_Color_Table.htm" />
     <Map Name="mImpPVDSHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
@@ -359,11 +359,11 @@
     <Map Name="mStorePicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Manual_Empty_Pickset.htm" />
     <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon.htm" />
     <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
-    <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
+    <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />
     <Map Name="mViewer2DPSPosDlgHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />
     <Map Name="mViewer2DPSSelDataDlgHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />
     <Map Name="mWellLogInterpolHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Well_Log_Interpolator.htm" />
-    <Map Name="mWellto2DLineDlgHelpID" Link="/Content/Analysis/Wells/Tie_Well_To_Seismic.htm" />
+    <Map Name="mWellto2DLineDlgHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D/Create_2D_Grid.htm" />
     <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics.htm" />
     <Map Name="mTrackingWizardHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
     <Map Name="mTrackingSetupGroupHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
