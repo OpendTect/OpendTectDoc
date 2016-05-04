@@ -82,13 +82,6 @@ ul
 	margin-bottom: 0px;
 }
 
-img
-{
-	border: none;
-	max-width: 100%;
-	background-image: url('../Images/General Images/Chain_OpendTect.png');
-}
-
 a.Popup
 {
 	
@@ -137,12 +130,6 @@ img.Icons
 	width: auto;
 	max-width: 20px;
 	max-height: 20px;
-}
-
-body.background_image
-{
-	background-repeat: no-repeat;
-	background-image: url('../Images/General Images/Chain_OpendTect.png');
 }
 
 a.MCBreadcrumbsLink
@@ -194,21 +181,6 @@ p.copyright
 	font-family: Arial;
 }
 
-p.caution
-{
-	margin-top: 0pt;
-	margin-bottom: 0pt;
-	font-size: inherit;
-	background-position: 0% 50%;
-	background-repeat: no-repeat;
-	font-family: Arial;
-	font-style: italic;
-	line-height: 30px;
-	margin-left: 3em;
-	padding-left: 40px;
-	background-image: url('../Images/General Images/caution_18w.png');
-}
-
 p.note
 {
 	font-size: inherit;
@@ -223,22 +195,7 @@ p.note
 	margin-bottom: 20px;
 	margin-top: 20px;
 	background-clip: padding-box;
-	background-image: url('../Images/General Images/note_18w.png');
-}
-
-p.tip
-{
-	font-size: inherit;
-	background-position: 0% 50%;
-	background-repeat: no-repeat;
-	font-family: Arial;
-	font-style: italic;
-	margin-left: 3em;
-	padding-left: 40px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	background-image: url('../Images/General Images/tip_18w.png');
-	background-position-y: 50%;
+	background-image: url('../Images/Icons/note.png');
 }
 
 MadCap|miniTocProxy

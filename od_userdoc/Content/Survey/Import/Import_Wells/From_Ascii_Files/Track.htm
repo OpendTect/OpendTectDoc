@@ -5,13 +5,13 @@
     <body>
         <h5>4.3.13.1.1 Track<MadCap:keyword term="Track" /></h5>
         <p>The track import is loading the core part of the well, required for the visualization of the well track, and further loading of the markers and logs. It requires the loading of the deviation survey, and a depth-to-time model for seismic surveys in time. The import is done from the menu <i>Survey -&gt; Import -&gt; Wells -&gt; Ascii -&gt; Track</i>. The input ASCII file(s) must be column sorted with one point per record (line).</p>
-        <img src="../../../../Resources/Images/5 Menu - Survey/Import wells ascii track.png" class="General_Image" />
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track.png" class="General_Image" />
         <p>The file containing the track information must contain the true vertical depth sub sea (Z), neither TVD nor TVD-SRD. The MD quantity (measured depth) is always referenced with respect to the reference datum elevation (thus equal to zero at KB, RT or DF).</p>
         <p>The file containing the time-to-depth model can either contain depth as TVDSS, TVD-SRD or MD. If the Seismic Reference Datum is not equal to zero and the time-depth model is using TVD-SRD then you must specify the SRD value in the advanced field.</p>
         <p>Select the input Ascii file of the deviation survey first. Optionally, a vertical well can be created by deselecting the check box at the left of this field, and entering the surface coordinates, top and bottom depth (measured depth).</p>
         <p>The main work is to specify the presence of a <i>file header</i> and the file <i>format definition</i> for the deviation survey. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
         <p>Predefined and saved file formats are available by pressing the <img src="../../../../Resources/Images/Icons/Open.png" class="Icons" /> icon. Otherwise the format must be manually specified. The Define button gives access to the format definition window.</p>
-        <img src="../../../../Resources/Images/5 Menu - Survey/Import wells ascii track format definition.png" class="General_Image" />
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track format definition.png" class="General_Image" />
         <p>You must specify in the format definition window the column numbers of the X and Y coordinates (absolute values, not relative to the surface coordinates), in the same unit as used when defining the OpendTect survey. The Z depths that must be provided are TVDSS depths, in meters or feet, increasing downwards and equal to zero at a height of zero (sea level, geoid). This is regardless of the reference datum elevation of the wells or any seismic reference datum of the seismic data. Optionally the fourth column can contain measured depths values to provide the link between MD and TVDSS. Data loading can be stopped at a specific line by providing the adequate keyword.</p>
         <p>The best way to ensure that the reference datum elevation is properly set is to have the deviation survey file start at MD=0. The first lines of the file would then look like:</p>
         <table style="width: 500px; text-align: center; border-spacing: 0px; border-collapse: collapse">
@@ -97,7 +97,7 @@
         <p>In this example the surface coordinates are X=623255.98,Y=6082586.87 and the reference datum elevation is equal to 34.10 m. Please note that the first point of this track is above the sea level, likely to happen in onshore situation, which is not a problem. The first line corresponds to the point with MD=0, while the second point corresponds to the point where TVDSS=TWT=0. (but both points are not mandatory to be present in the track file)</p>
         <p>The track file determines the size of the usable and displayed well data. Any log or marker outside of the track Z range will neither be usable nor be displayed. On the other hand the well track is not limited to the survey Z range, especially it can be loaded outside the survey box.</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../../Resources/Images/Icons/save.png" class="Icons" />icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage.</p>
-        <img src="../../../../Resources/Images/5 Menu - Survey/Import wells ascii track save format definition.png" class="General_Image" />
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track save format definition.png" class="General_Image" />
         <p>You also have the option to enter here the <i>Reference Datum Elevation [KB]</i> and / or the <i>Total Depth [TD]</i> (both in the default survey unit). </p>
         <p>Next the depth-time model must be specified. A constant interval velocity can be used instead of a file. The selection of a file will lead to the same need to provide the <i>header</i> settings and file <i>format definition</i>.</p>
         <p>Predefined and saved formats are again available by pressing the <img src="../../../../Resources/Images/Icons/open.png" class="Icons" />  icon. Otherwise the format must be manually specified. The <i>Define</i> button gives access to the <i>format definition</i> window.</p>
@@ -115,10 +115,10 @@
         <p>This would cause serious extrapolation problems of the time-depth model above TWT=0. It is highly recommended that the 2nd sample of the time-depth model corresponds to the start depth of your sonic log, unless the input is a measured checkshot survey.</p>
         <p>The Time/Depth model used during import can be either a checkshot model or a "normal" time depth curve. More information can be found in the well management chapter.</p>
         <p>Similarly the depth-time model reading settings can be saved:</p>
-        <img src="../../../../Resources/Images/5 Menu - Survey/Import wells ascii dt model save.png" class="General_Image" />
+        <img src="../../../../Resources/Images/Survey/Import wells ascii dt model save.png" class="General_Image" />
         <p>The <i>Advanced/Optional</i> button allows the user to provide optional additional parameters.</p>
         <p>First surface coordinates can be provided, alternatively to the coordinates written in the first line of the track file.</p>
         <p>Then the seismic reference datum (SRD) can be provided. Please note that SRD is not the Kelly Bushing (KB), Rotary table (RT) or drill floor (DF) elevations. Instead and despite being written in the wells header, it is the elevation between the seafloor and TWT=0 in the seismic volume.</p>
-        <img src="../../../../Resources/Images/5 Menu - Survey/Import wells ascii track advanced.png" class="General_Image" />
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track advanced.png" class="General_Image" />
     </body>
 </html>

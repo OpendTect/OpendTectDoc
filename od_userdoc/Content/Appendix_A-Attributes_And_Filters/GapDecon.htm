@@ -21,12 +21,12 @@
             <li><b>Output is</b> = The user may set the output to zero phase, then the inverse 90 degrees rotation is applied after the filtering.</li>
             <li><b>Check parameters</b> = check whether the (multiple) energy has indeed been removed. A QC of the parameters : the GapDecon-filter with the selected parameters, lag 44 and gap 100 (see example below), is applied on a user defined line and the auto-correlation of the filtered data is displayed in a 2d-viewer to check whether the parameters are correct. If they are not correct, the parameters can still be changed.</li>
         </ul>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D filters gapdecon.png" class="General_Image" />
         <p><b>Spiking Deconvolution.</b>
         </p>
         <p>The Gap Decon attribute can also be used for Spiking Deconvolution or Whitening. The goal of Spiking Deconvolution is to flatten the output spectrum. This is achieved by shortening the embedded wavelet and attempting to make it as close as possible to a spike (zero-lag spike). One should keep in mind that the frequency bandwith of the data might limit the extent to which this whitening is possible. At higher frequencies, Spiking Deconvolution might cause an increase in noise.</p>
         <p><b>Example</b>
         </p>
         <p>In the attribute defined above, we define an auto-correlation window between 300ms and 1200ms. After pressing '<i>Examine</i>' we can see that the following parameters could give us the result we desire: a lag of 44 ms and a gap of 100ms. Pressing 'Check Parameters' shows the effect this would have if we were to output this attribute with the current parameter settings:</p>
-        <img class="General_Image" src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example examine.png" /> <img src="../Resources/Images/Appendix A/Analysis attributes 3D filters gapdecon example check params.png" class="General_Image" /></body>
+        <img class="General_Image" src="../Resources/Images/Appendix_A/Analysis attributes 3D filters gapdecon example examine.png" /> <img src="../Resources/Images/Appendix_A/Analysis attributes 3D filters gapdecon example check params.png" class="General_Image" /></body>
 </html>

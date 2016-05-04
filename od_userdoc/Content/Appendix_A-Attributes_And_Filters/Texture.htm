@@ -15,7 +15,7 @@
         <p>Texture attributes in seismic interpretation are typically used in facies analysis. They can be used in their own right, or (when you have access to the Neural Network plugin) as inputs to a neural network to create 3D seismic facies volumes. This can be done in a supervised approach (MLP network), or in an unsupervised approach (UVQ network).</p>
         <p><b>Input Parameters</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic texture.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic texture.png" class="General_Image" />
         <p><b>Time-gate</b>, <b>step-out</b> and <b>Dip-steering</b> (optional; requires Dip-steering plugin) settings determine the input area (volume) for which the GLCM matrix is computed. Larger step-outs results in smoother outputs that will follow the stratigraphy better if dip-steering is used.</p>
         <p><b>GLCM-size</b> is the size of the GLCM matrix. 32 x 32 may give somewhat sharper outputs at the expense of more CPU time.</p>
         <p>Input Data <b>Minimum</b> and <b>Maximum</b> define the clipping range of the data, which is needed to rescale the data to 4-bits (16 x 16), or 5-bits (32 x 32).Input data range is automatically calculated from the compute option.In the "analysis" window number of traces need to be selected which computes the scaling range from the selected input traces.</p>
@@ -30,48 +30,48 @@
         <p>In all equations given below N denotes the size of the GLCM matrix; i refers to the column and j to the row. P is the GLCM Probability matrix.</p>
         <p><b>Contrast</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Contrast.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Contrast.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>When i and j are equal, the cell is on the diagonal and (i-j)=0. These values represent amplitudes entirely similar to their neighbor, so they are given a weight of 0.</p>
         <p>If i and j differ by 1, there is a small contrast, and the weight is 1.</p>
         <p>If i and j differ by 2, contrast is increasing and the weight is 4.</p>
         <p>The weights continue to increase exponentially as (i-j) increases.</p>
         <p><b>Dissimilarity</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Dissimilarity.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Dissimilarity.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>In Dissimilarity the weights with which GLCM probablities are multiplied increase linearly away from the diagonal (along which neighboring values are equal).</p>
         <p><b>Homogeneity</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Homogeneity.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Homogeneity.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>Dissimilarity and Contrast result in larger numbers for more contrasting windows. If weights decrease away from the diagonal, the result will be larger for input areas (volumes) with little contrast. Homogeneity weights values by the inverse of the Contrast weight, with weights decreasing exponentially away from the diagonal.</p>
         <p><b>Angular Second Moment</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Angular second moment.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Angular second moment.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>ASM and Energy use the GLCM probability as a weight for itself. The name for ASM comes from Physics, and reflects the similar form of Physics equations used to calculate the angular second moment, a measure of rotational acceleration. High values of ASM or Energy occur when the input area (volume) is very orderly.</p>
         <p><b>Energy</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Energy.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Energy.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>See above.</p>
         <p><b>Entropy</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Entropy.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/Entropy.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>Entropy is the opposite of energy; it is a measure of chaos. In physics (thermodynamics) entropy refers to the quantity of energy that is permanently lost to heat ("chaos") every time a reaction or a physical transformation occurs. Entropy cannot be recovered to do useful work. Because of this, the term is used in non technical speech to mean irremediable chaos or disorder. Also, as with ASM, the equation used to calculate physical entropy is very similar to the one used for the texture measure.</p>
         <p><b>GLCM Mean</b>
         </p>
-        <img src="../Resources/Images/Appendix A/GLCM main.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/GLCM main.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>The left hand equation calculates the mean based on the reference pixels, i. The right-hand equation calculates the mean over the the neighbor pixels, j. These two values are identical because OpendTect computes a symmetrical GLCM, where each amplitude is counted once as a reference and once as a neighbor.</p>
         <p><b>GLCM Variance</b>
         </p>
-        <img src="../Resources/Images/Appendix A/GLCM variance.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/GLCM variance.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>Variance is a measure of the dispersion of the values around the mean. It is similar to entropy. It answers the question "What is the dispersion of the difference between the reference and the neighbour pixels in this input area (volume)?"</p>
         <p>GLCM Variance in texture measures performs the same task as does the common descriptive statistic called variance. It relies on the mean, and the dispersion around the mean, of cell values within the GLCM. However, GLCM variance uses the GLCM, therefore it deals specifically with the dispersion around the mean of combinations of reference and neighbor amplitudes, so it is not the same as variance of input amplitudes that can be computed with the "Volume Statistics" attribute.</p>
         <p>Variance calculated using i or j gives the same result, since the GLCM is symmetrical.</p>
         <p><b>GLCM Standard Deviation</b>
         </p>
-        <img src="../Resources/Images/Appendix A/GLCM standard deviation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/GLCM standard deviation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>There is no particular advantage to using Standard Deviation over Variance, other than a different range of values.</p>
         <p><b>GLCM Correlation</b>
         </p>
-        <img src="../Resources/Images/Appendix A/GLCM correlation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
+        <img src="../Resources/Images/Appendix_A/GLCM correlation.png" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;" />
         <p>The Correlation texture measures the linear dependency of input amplitudes on those of neighboring amplitudes.</p>
         <p>GLCM Correlation is quite a different calculation from the other texture measures described above. As a result, it is independent of them (gives different information) and can often be used profitably in combination with another texture measure. It also has a more intuitive meaning to the actual calculated values: 0 is uncorrelated, 1 is perfectly correlated.</p>
         <p>GLCM Correlation can be calculated for successively larger window sizes. The window size at which the GLCM Correlation value declines suddenly may be taken as one definition of the size of definable objects within an image.</p>
@@ -86,53 +86,53 @@
             <tbody>
                 <tr>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS seismic.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS seismic.png" class="General_Image" />
                         <p>Seismic</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS contrast.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS contrast.png" class="General_Image" />
                         <p>Contrast: 3 x 3 x [-8,8], DS</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS dissimilarity.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS dissimilarity.png" class="General_Image" />
                         <p>Dissimilarity: 3 x 3 x [-8,8], DS</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS homogeneity.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS homogeneity.png" class="General_Image" />
                         <p>Homogeneity: 3 x 3 x [-8,8], DS</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS angular second moment.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS angular second moment.png" class="General_Image" />
                         <p>ASM: 3 x 3 x [-8,8], DS</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS energy.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS energy.png" class="General_Image" />
                         <p>Energy: 3 x 3 x [-8,8], DS</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS entropy.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS entropy.png" class="General_Image" />
                         <p>Entropy: 3 x 3 x [-8,8]</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS GLCM main.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS GLCM main.png" class="General_Image" />
                         <p>GLCM Mean: 3 x 3 x [-8,8], DS</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS GLCM variance.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS GLCM variance.png" class="General_Image" />
                         <p>GLCM Variance: 3 x 3 x [-8,8], DS</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS GLCM standard deviation.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS GLCM standard deviation.png" class="General_Image" />
                         <p>GLCM Standard Deviation: 3 x 3 x [-8,8]</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">
-                        <img src="../Resources/Images/Appendix A/DS GLCM correlation.png" class="General_Image" />
+                        <img src="../Resources/Images/Appendix_A/DS GLCM correlation.png" class="General_Image" />
                         <p>GLCM Correlation: 3 x 3 x [-8,8], DS</p>
                     </td>
                     <td style="text-align: center;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;">&#160;</td>

@@ -2,6 +2,10 @@
 <CatapultToc
   Version="1">
   <TocEntry
+    Title="OpendTect User Documentation - Version 6.0"
+    Link="/Content/HTML Front Page/od_userdoc_v6.htm"
+    conditions="Default.ScreenOnly" />
+  <TocEntry
     Title="pdf_cover"
     Link="/Content/PDF Front Page/pdf_cover.htm"
     conditions="Default.PrintOnly"
@@ -15,10 +19,6 @@
     Title="toc_proxy_only"
     Link="/Content/PDF Front Page/toc_proxy_only.htm"
     conditions="Default.PrintOnly" />
-  <TocEntry
-    Title="OpendTect User Documentation - Version 6.0"
-    Link="/Content/HTML Front Page/od_userdoc_v6.htm"
-    conditions="Default.ScreenOnly" />
   <TocEntry
     Title="1 Preface"
     Link="/Content/Preface.htm">

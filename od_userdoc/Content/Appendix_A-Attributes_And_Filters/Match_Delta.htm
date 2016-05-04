@@ -10,7 +10,7 @@
         <p><b>Description</b>
         </p>
         <p>This algorithm extracts the time difference <i>delta t</i> between peaks in different seismic volumes. A search window is set to avoid loop-skips. After extracting all delta t values, they are interpolated. The resulting cube is the delta cube in ms or meter/feet which can be used for the <a href="Delta_Resample.htm" MadCap:conditions="Default.ScreenOnly" target="_self">Delta Resample</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Delta Resample</MadCap:conditionalText> attribute.</p>
-        <img src="../Resources/Images/Appendix A/Delta t.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Delta t.png" class="General_Image" />
         <p><i>Extraction of delta t from two neighboring traces.</i>
         </p>
         <p style="page-break-before: always">In a little more detail, the algorithm proceeds along these lines:</p>
@@ -25,7 +25,7 @@
         <p>After using this attribute, it will be clear that there are many 'jumps' and 'skips' in the displayed sections. Because we know that the deltas should not vary that quickly - not going from trace to trace, but also not going from sample to sample, these can be effectively removed by utilizing a double filter: first a rather large median filter over many traces and a 2 to 3 samples, then an average or FFT-based filtering in all directions. The resulting output should now be relatively 'noise-free'.</p>
         <p><b>Input Parameters</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D trace match delta.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D trace match delta.png" class="General_Image" />
         <p><i>Besides the reference and the match cube, a maximum time-window must be defined in order to avoid loop-skips.</i>
         </p>
     </body>

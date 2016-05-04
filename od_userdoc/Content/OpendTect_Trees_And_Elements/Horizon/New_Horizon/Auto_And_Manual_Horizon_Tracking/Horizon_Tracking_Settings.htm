@@ -20,7 +20,7 @@
         <p>Right-click <i>3D&#160;Horizon</i> in the tree and select <i>New</i> &gt; <i>Auto and Manual Tracking</i>. This will launch <i>Horizon Tracking Settings</i> window which contains several tabs. Optionally, the dialog can be retrieved by right clicking on the horizon in the Tree and&#160;choosing <i>Tracking</i> &gt;&#160;<i>Change Settings</i>.</p>
         <p><b>Mode Tab</b>
         </p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracking.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking.png" class="General_Image" />
         <p>Choose the tracking mode:</p>
         <ul>
             <li><i>Section Auto-track </i>is used to auto-track a horizon along a section (inline, crossline, and random line) of a given volume. If a sub-volume is preloaded, only the sub-volume area will be auto-tracked. When this mode is selected, the volume auto-tracking icon <img src="../../../../Resources/Images/Icons/autotrack.png" class="Icons" /> will be active, which requires seeds.<ul><li><b>Seed Trace</b> is an auto-tracking method which only compares seeded traces to do auto-tracking.</li><li style="font-weight: normal;"><b>Adjacent parents </b>utilizes the last known trace positions to compare amplitudes to do auto-tracking. This increases chances of loop skipping.</li></ul></li>
@@ -28,7 +28,7 @@
         </ul>
         <p><b>Event Tab</b>
         </p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracker event.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker event.png" class="General_Image" />
         <p><i>Event Tab</i> contains the defining parameters for Section / Volume auto-tracking.</p>
         <ul>
             <li><u>Input data:</u> The input data is automatically selected when you pick on a section. This can be the original seismic volume, or a filtered seismic volume (preferred) or any other attribute. The horizon is linked to this input seismic. you can change the input seismic at any time: it won't change your saved interpretation. If you change the data during interpretation, the next click on the new data may show a warning message. If you continue, then the new data will be used to do auto-tracking.</li>
@@ -44,24 +44,24 @@
         </ul>
         <p class="tip">At the bottom of this tab, one may see a status note on picked/current data on which interpretation is being performed.</p>
         <p><u>Steps</u>: Step-wise tracking results in a better tracked horizons. Good parts of the horizon are tracked first, followed by the more difficult areas. The tracker will first track those part of the horizon that have a low difference to the seeds or parts that have a high amplitude. In subsequent steps the tracker settings become less strict. Therefore, the horizon will be of better quality and needs less editing. The user can define the subsequent percentage values (incremental: e.g. 1,2,5,10,20) , or subsequent amplitude values (decremental e.g. 2500,2000,1500,1000,500).</p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracker stepwise.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker stepwise.png" class="General_Image" />
         <p><b>Correlation Tab</b>
         </p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracker similarity.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker similarity.png" class="General_Image" />
         <p>A trace segment around the last tracked point is compared to all the trace segments on the neighboring traces around the points that lie within the Search window (See figure below). </p>
         <p>In this tab, one can do auto-tracking by turning the correlation ON. The correlation window should be small enough to ensure a waveform. The threshold is generally strict (80% or higher)&#160;to track only high quality amplitudes. The correlation window size can be changed by moving the green lines in the display window.</p>
         <p><b>Properties Tab</b>
         </p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracker properties.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker properties.png" class="General_Image" />
         <p>This tab is used to adjust the display properties of the horizon and corresponding seeds. Optionally, you can also change the color codes for various parts (parent paths, selection of a horizon if you intend to remove through a polygonal selection, locked tracking areas) of the horizon. </p>
         <p><b>Dip Steering Tab</b>
         </p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracker dipsteer.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker dipsteer.png" class="General_Image" />
         <p>A SteeringCube can be added as a constraint for horizon interpretation. This will improve the horizon tracking especially in the areas of dipping reflectors. Dip steering gives structural information.</p>
         <p style="font-size: 14pt;"><b>3D&#160;Auto-Tracking Menu</b>
         </p>
         <p>A dedicated 3D&#160;Auto-tracking menu is generally launched by CTRL&#160;+&#160;right click in 3D&#160;scene.</p>
-        <img src="../../../../Resources/Images/4 OpendTect Trees and Elements/Horizon tracking right click menu with comments.png" class="General_Image" />
+        <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking right click menu with comments.png" class="General_Image" />
         <p>Using this menu, you can control several tracking features.</p>
         <p style="font-size: 14pt;"><b>Tracking Workflow</b>
         </p>

@@ -27,27 +27,27 @@
             <li><i>Mexican Hat</i>
             </li>
         </ul>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition cwt.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D frequency spectral decomposition cwt.png" class="General_Image" />
         <p>In FFT only, the signal within the time-window will be transformed into frequency domain. The given step determines the output resolution, if necessary zeros will be added to acquire this resolution. The amplitude spectrum is calculated for the requested frequency. The time-window slides from top to bottom to cover the complete signal. In an ideal situation, the time-window encompasses one seismic event, which may be a superposition of multiple geological events which interfere in the seismic trace.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D frequency spectral decomposition.png" class="General_Image" />
         <p><b>Output and Examples</b>
         </p>
         <p>The CWT is defined as the sum over the signal multiplied by a scaled and shifted wavelet. The wavelet is shifted along the signal and at each position the correlation of the wavelet with the signal is calculated. The result is called a wavelet coefficient. The given frequency corresponds to the central wavelet frequency. The step determines the output resolution, which is especially interesting when evaluating this attribute.</p>
-        <img src="../Resources/Images/Appendix A/Output examples.png" class="General_Image" />
-        <img src="../Resources/Images/Appendix A/Output legend.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Output examples.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Output legend.png" class="General_Image" />
         <p><i>Spectral Decomposition (CWT) applied to a horizon. Notice that each index frequency is describing the specific parts of channels (NNE-SSW oriented). Also thinner and thicker parts of horizon along channels are highlighed clearly.</i>
         </p>
         <p style="page-break-before: always"><b>Time-frequency spectrum</b>
         </p>
         <p>The output frequency is best determined using the time-frequency spectrum panel. This panel displays the spectral decomposition output for all frequencies between 0 and the Nyquist frequency of the data, computed with a step of 1Hz. One must first select a position for this single trace analysis:</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition position.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D frequency spectral decomposition position.png" class="General_Image" />
         <p style="page-break-before: always">The time-frequency is then displayed in a 2D panel like this:</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D frequency spectral decomposition tf spectrum.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D frequency spectral decomposition tf spectrum.png" class="General_Image" />
         <p style="page-break-before: always"><b>Color blended display:</b>
         </p>
         <p><i>RGB(A)* blending attribute display</i> is used to create a normalized color-blended display that often show features with greater clarity and enhances a detail map view. Traditionally, it is used to blend the iso-frequency responses (Spectral Decomposition), but a user can blend three/four different attributes that define a spectrum that is comparable. For instance, spectral decomposition outputs the amplitude at discrete frequencies. So, it renders the same output (unit=amplitude). Depending upon a geological condition or the objective, FFT short window or CWT (continuous wavelet transform) can be chosen. Results are best displayed on time/horizon slices, volume.</p>
         <p>(* RGB(A)- Red, Green, Blue, (Alpha) -channel)</p>
-        <img src="../Resources/Images/Appendix A/Color blended display.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Color blended display.png" class="General_Image" />
         <p><i>A color blended map view (image on right) of the spectral decomposition (red-10hz, green-20Hz, blue-40hz). Compare the results with the coherency map (image on left). Note that the yellowish colored fault bounder region is thicker as compared to the surrounding regions. The faults throw (red-color) are also clearly observable. Coherency/similarity together with color blended spectral images can reveal better geological information.</i>
         </p>
     </body>

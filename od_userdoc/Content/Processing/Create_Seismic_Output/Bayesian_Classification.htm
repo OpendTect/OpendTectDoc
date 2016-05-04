@@ -6,17 +6,17 @@
         <h3>6.1.4 Bayesian Classification<MadCap:keyword term="Bayesian Classification" /></h3>
         <p>Bayesian classifications are used to link several attributes based on one or several <a href="../../Survey/Manage/Manage_Probability_Density_Functions.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Probability Density Functions</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Probability Density Functions</MadCap:conditionalText>.</p>
         <p>First, one or several PDF(s) need to be provided. <i>More</i> will allow to select more PDFs.</p>
-        <img src="../../Resources/Images/7 Processing/Processing bayesian classification main.png" class="General_Image" />
+        <img src="../../Resources/Images/Processing/Processing bayesian classification main.png" class="General_Image" />
         <p>After clicking on <i>Next &gt;&gt;</i>, the PDF(s) can then optionally be normalized based on a priori weights per PDF. The a priori weights can be provided by attribute volumes which will vary at every sample location.</p>
-        <img src="../../Resources/Images/7 Processing/Processing bayesian classification 2.png" class="General_Image" />
+        <img src="../../Resources/Images/Processing/Processing bayesian classification 2.png" class="General_Image" />
         <p>The processing will be based on (inverted) stored volumes that should correspond to the variables used for generating the PDF. Please note that OpendTect cannot make this check.</p>
-        <img src="../../Resources/Images/7 Processing/Processing bayesian classification 3.png" class="General_Image" />
+        <img src="../../Resources/Images/Processing/Processing bayesian classification 3.png" class="General_Image" />
         <p>If only one PDF was used as input, the Bayesian classification volume will generate two volumes:</p>
         <ol>
             <li>A probability volume "P:PDF name"</li>
             <li>A determination strength volume, mainly for QC.</li>
         </ol>
-        <img src="../../Resources/Images/7 Processing/Processing bayesian classification 4.png" class="General_Image" />
+        <img src="../../Resources/Images/Processing/Processing bayesian classification 4.png" class="General_Image" />
         <p>If more than one PDF were used as input, the Bayesian classification volume will generate:</p>
         <ol>
             <li>A probability volume "P:PDF1 name"</li>
@@ -24,6 +24,6 @@
             <li>Two classification volumes : Class (with the most likely class) and Confidence (the difference between the two most likely)</li>
             <li>A determination strength volume, mainly for QC.</li>
         </ol>
-        <img src="../../Resources/Images/7 Processing/Processing bayesian classification 4 multi.png" class="General_Image" />
+        <img src="../../Resources/Images/Processing/Processing bayesian classification 4 multi.png" class="General_Image" />
     </body>
 </html>

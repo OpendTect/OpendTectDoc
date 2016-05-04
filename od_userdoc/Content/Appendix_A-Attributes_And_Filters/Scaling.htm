@@ -19,7 +19,7 @@
             <li>Using Squeeze ('non-clipping' limiter of range input)</li>
             <li>Using Gain Correction (correct/apply gain)</li>
         </ul>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic scaling.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling.png" class="General_Image" />
         <p><b>Output</b>
         </p>
         <p>The output amplitudes are always the ratio of the input amplitudes over a weighting function w(i), i being the sample index.</p>
@@ -43,14 +43,14 @@
             <li>Detrend. This option removes the trend but rather than doing so following a constant α, it will detrend following αɣ + β. (See: <a href="http://en.wikipedia.org/wiki/Trend_estimation" target="_popup" MadCap:conditions="Default.ScreenOnly">Trend estimation</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Trend estimation</MadCap:conditionalText> for further info.)</li>
         </ul>
         <p>Please note that the window time/depths are float and do not need to be on a sample. The time/depths will be round to the nearest sample when defining the extraction window. Unlike most of the window definitions in the attribute engine you must provide in this scaling attribute absolute time/depths values and not values relative to the actual sample. A weight of 1 (no scaling) will be given to the samples not covered by a user-defined time gate. The weights are cumulative: If several windows overlap the output weight will be the sum of the "basis" output for the samples belonging to multiple windows.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic scaling window.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling window.png" class="General_Image" />
         <ol MadCap:continue="true">
             <li><b>Automatic Gain Control scaling</b>
             </li>
         </ol>
         <p>The AGC is a special case of the window scaling. In this case the window is defined relative to the actual sample and the "basis" is the energy value in that sliding window. The window width is a total size, i.e. the relative width corresponds to +/- half of the total window width. The low energy mute will mute the output samples that have an energy lower than a ratio of the trace energy distribution: The energy of the input trace is computed and the output values are sorted per increasing energy value. </p>
         <p>Given 1000 samples, the energy of sample 250 (for a low energy mute at 25%) corresponds to the mute level: If the energy computed in the AGC window is lower than this level the value 0 will be output. Otherwise the sum of the squares over the number of (valid) samples will be output. Undefined values are not used for the computation and a zero is output if all values of a time window are undefined. In other words, the energy of all elements within the defined window are calculated and then ranked, then the (user-defined) percentage of the lowest energy levels are muted out.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic scaling acg.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling acg.png" class="General_Image" />
         <ol MadCap:continue="true">
             <li><b>Squeeze</b>
             </li>
@@ -61,19 +61,19 @@
         <p>For example, Value range [0,10] and untouched range [2,8]. Values outside the [2,8] range will be modified to fit between [0,10]. This means the values in the range [-infinitiy,2] will be squeezed into the range [0,2] via a hyperbolic function. That function is continuous in value (and first derivative) at 2. Similarly, values higher than 8 will go somewhere between 8 and 10.</p>
         <p>Example application: predicted porosities. Predictions of porosity tend to have values below 0. To counter this, you could squeeze all values below 1%. Use value range [0, ] and untouched range [1, ]. If you also want a more fuzzy upper limit, starting at 25% to absolute maximum 30, you may specify [0,30] and [1,25].</p>
         <p>This is shown in the attribute set below:</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic scaling gain correction.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling gain correction.png" class="General_Image" />
         <ol MadCap:continue="true">
             <li><b>Gain Correction</b>
             </li>
         </ol>
         <p>This attribute is used to correct for any undesirable gain applied previously or to apply a new gain function on the seismic data. This is applied by first selecting the input data for gain correction and clicking on <i>Analyse</i> button.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic scaling gain correction.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling gain correction.png" class="General_Image" />
         <p>The newly popped <i>Select data</i> window requires specifying a number of random traces in the 'Nr of Traces for Examination' field for visually analyzing and defining the gain behavior in time/depth. The volume from which these random traces will be selected is outlined by modifying the inline, crossline and time ranges. Finally, <i>OK</i> is pressed to begin the examination of the random traces.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic gain correction analyse.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic gain correction analyse.png" class="General_Image" />
         <p>The <i>Analyse Gain</i> window has the 'Z' range (in seconds) of the seismic data as the horizontal axis, while the left vertical axis shows the 'Scale Factor' and the right vertical axis is the 'RMS Amplitude'. The amplitude scale can be set to 'Linear' or 'dB' (i.e. decibel) for visualization purposes. Further, the 'Scale Range' could be changed to use a different scale. The 'Gridline step' could be changed as the name says to modify the gridline steps.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic analyse gain.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic analyse gain.png" class="General_Image" />
         <div style="page-break-before: always">
-            <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic analyse gain db.png" class="General_Image" />
+            <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic analyse gain db.png" class="General_Image" />
         </div>
         <p>Finally, a 'Gain correction trend' can be defined by moving the red curve such that for any particular 'Z' interval a specific 'Scale Factor' range is used to scale the seismic amplitudes in that interval. For defining boundary points of these intervals user can double click on the red curve and move the curve as desired.</p>
         <p>Pressing <i>OK</i> will save the 'Gain correction curve'.</p>

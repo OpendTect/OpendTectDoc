@@ -14,7 +14,7 @@
         <p>The point about using the Similarity is that it's mathematically simple; it is very clear what is going on. Then, by combining different kinds of similarities and other attributes, you can always get much better results with lots less computing time.</p>
         <p>Consider the trace segments to be vectors in hyperspace. Similarity is then defined as one minus the Euclidean distance between the vectors, normalized over the vector lengths.</p>
         <p>The trace segments is defined by the <i>time-gate</i> in ms and the positions specified in relative co-ordinates. In case of using input from 2D data, the trace positions are defined by a trace step-out only, not by inline and crossline stepout. The <i>Extension</i> parameter determines how many trace pairs are used in the computation. This is visualized in the image below.</p>
-        <img src="../Resources/Images/Appendix A/Trace positions.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Trace positions.png" class="General_Image" />
         <p><i>Definition of trace positions relative to the reference point at (0,0).</i>
         </p>
         <p><b>Input Parameters</b>
@@ -32,11 +32,11 @@
         </ul>
         <p>The attribute returns the statistical property specified in <i>Output statistic</i>. The <i>Steering</i> option enables the user to follow the local dip to find trace segments that should be compared instead of comparing two horizontally extracted trace segments. The <i>Steering</i> option supports five different modes of data-driven steering: None, Central, Full, Constant direction Steering and Browse dip.]</p>
         <p>Similarity "None" Steering: This option is used when non SteeringCube algorithm is used. This is ok in the case the layering is mainly horizontal (with less dip).</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic similarity.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic similarity.png" class="General_Image" />
         <p>However, in very complex geology, the similarity result using "None" as steering option will deteriorate. Full steering should be used instead. The <a href="http://opendtect.org/rel/doc/User/dgb/chapter2.2_create_steering_data.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">Dip-Steering</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Dip-Steering</MadCap:conditionalText> plugin is required.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic similarity full.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic similarity full.png" class="General_Image" />
         <p>Another steering option to use is the "Browse dip". This is a similarity feature acting as a 'Coherency' attribute.</p>
-        <img src="../Resources/Images/Appendix A/Analysis attributes 3D basic similarity browse dip.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic similarity browse dip.png" class="General_Image" />
         <p>It enables the calculation of 'Similarity' by comparing one trace with the next trace.</p>
         <p>Then a value between 0 (not similar at all) to 1 (completely similar) is awarded. In order to compare traces, two variables should be specified:</p>
         <p>The 'Maximum dip' represents the maximum dip in microseconds per metre (μs/m), relative to an event in one trace, in which the algorithm will look for similar events along the neighbouring trace. Default is 250.</p>
@@ -47,10 +47,10 @@
         <p>Xi, i=1,15</p>
         <p>Yi, i=1,15</p>
         <p>The similarity is 1 minus the Euclidean distance between the vectors divided by the sum of the length of each vector. Please note that the length of a vector is its L2 norm, also called RMS value:</p>
-        <img src="../Resources/Images/Appendix A/Mathematical description similarity.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Mathematical description similarity.png" class="General_Image" />
         <p style="page-break-before: always"><b>Examples</b>
         </p>
-        <img src="../Resources/Images/Appendix A/Dip-steered non-steered minimum-steered.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Dip-steered non-steered minimum-steered.png" class="General_Image" />
         <p><i>An example timeslice is highlighting fault structure: (a) Dip-steered Filtered Seismic, (b) Non-Steered minimum Similarity, (c) Steered minimum Similarity. Notice that the definition of faults has been improved with the Similarity attributes. The steered minimum Similarity (c) is highlighting precise fault definitions as compared with the result of non-steered minimum Similarity (b).</i>
         </p>
     </body>
