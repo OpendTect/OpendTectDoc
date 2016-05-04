@@ -170,7 +170,7 @@
     <Map Name="mWellLogAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Log.htm" />
     <Map Name="mHorizonAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Horizon.htm" />
     <Map Name="mMatchDeltaHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Match_Delta.htm" />
-    <Map Name="mTextureAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
+    <Map Name="mTextureAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
     <Map Name="mSampleValueAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
     <Map Name="mConvolveAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
     <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon.htm" />
