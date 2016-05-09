@@ -147,7 +147,6 @@ external/doc_csh instance of it.
 #define         mGrubbsFilterAttribHelpID                       0x10100107
 #define         mVolProcAttribHelpID                            0x10100108
 #define         mEventFreqAttribHelpID                          0x10100109
-#define         mBulkFaultImportHelpID                          0x10100110
 // Attributes Selection 01
 #define		mAttribDescSetEdHelpID			        0x10101000
 #define		mAttrSelDlgNo_NNHelpID			        0x10101001
