@@ -367,4 +367,7 @@
     <Map Name="m2DDefSurvInfoDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics.htm" />
     <Map Name="mTrackingWizardHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
     <Map Name="mTrackingSetupGroupHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
+    <Map Name="mBulkFaultImportHelpID" Link="/Content/Survey/Import/Import_Faults.htm" />
+    <Map Name="mSlideLayoutDlgHelpID" Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
+    <Map Name="mPresentationMakerDlgHelpID" Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
 </CatapultAliasFile>
