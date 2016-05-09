@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5585" MadCap:lastWidth="1272">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5338" MadCap:lastWidth="1689">
     <head>
     </head>
     <body>
@@ -7,10 +7,8 @@
         <p>Well track (deviation survey) of a single well can be imported to OpendTect using a column sorted ASCII file  or defined as vertical via <i>Survey</i> &gt; <i>Import</i> &gt; <i>Wells</i> &gt; <i>ASCII</i> &gt; <i>Track...</i>  In time surveys,  time-depth model must be either imported using column sorted ASCII file or temporarily defined as constant velocity at this step. </p>
         <p class="note">The well track is the core part of a well, it is required for the visualization of well data in depth and further loading of markers and logs. The well track determines the size of the usable and displayed well data. Any log or marker outside of the track Z range will neither be usable nor be displayed. On the other hand the well track is not limited to the survey Z range and can be loaded outside the survey box.</p>
         <p class="note">A time-depth model is another core piece of information which is required for visualization and use of well data in time.</p>
-        <p class="note">For bulk import of well tracks and time-depth models please refer <a href="../Bulk/Bulk_Well_Track_Import.htm" target="_self">here</a> and <a href="../Bulk/Bulk_Well_Time-Depth_Model_Import.htm" target="_self">here</a>.</p>
-        <p>
-            <img src="../../../../Resources/Images/Survey/Import wells ascii track.png" class="General_Image" />
-        </p>
+        <p class="note" MadCap:conditions="Default.ScreenOnly">For bulk import of well tracks and time-depth models please refer <a href="../Bulk/Bulk_Well_Track_Import.htm" target="_self">here</a> and <a href="../Bulk/Bulk_Well_Time-Depth_Model_Import.htm" target="_self">here</a>.</p>
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track.png" class="General_Image" />
         <p><b>Well Track File</b>
         </p>
         <p>Checked box at the top of <i>Import Well Track</i> window allows to select an ASCII file containing a well track, vertical or deviated. </p>
@@ -63,9 +61,7 @@
         <p><b style="font-style: italic;">Format definition</b>
         </p>
         <p>Predefined and saved file formats are available by clicking on <img src="../../../../Resources/Images/Icons/open.png" class="Icons" /> icon. Otherwise the format must be manually specified by clicking on <i>Define</i> button and selecting column numbers corresponding to position information (X/Y or Inl/Crl), Z and MD.</p>
-        <p>
-            <img src="../../../../Resources/Images/Survey/Import wells ascii track format definition.png" class="General_Image" />
-        </p>
+        <img src="../../../../Resources/Images/Survey/Import wells ascii track format definition.png" class="General_Image" />
         <ul>
             <li><i>X</i> and <i>Y</i> are absolute coordinates (not relative to the surface coordinates) and must have same units as the OpendTect survey coordinates. </li>
             <li><i>Z</i> is TVDSS, increasing downwards and equal to zero at sea level.</li>
