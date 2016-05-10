@@ -370,4 +370,40 @@
     <Map Name="mBulkFaultImportHelpID" Link="/Content/Survey/Import/Import_Faults.htm" />
     <Map Name="mSlideLayoutDlgHelpID" Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
     <Map Name="mPresentationMakerDlgHelpID" Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
+    <Map Name="mBulkD2TModelImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Time-Depth_Model_Import.htm" />
+    <Map Name="mCreateHorizonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon.htm" />
+    <Map Name="mDataPointSetPickDlgHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />
+    <Map Name="mEditSEGYFileDataDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mEventFreqAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
+    <Map Name="mExp2DGeomHelpID" Link="/Content/Survey/Export/Export_Geometry_2D.htm" />
+    <Map Name="mFaultOptSelHelpID" Link="/Content/OpendTect_Trees_And_Elements/Fault.htm" />
+    <Map Name="mgetHorizonZAxisTransformHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Create_Horizon_With_Constant_Z.htm" />
+    <Map Name="mGrubbsFilterAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
+    <Map Name="mhandleExistingGeometryHelpID" Link="/Content/Survey/Import/Import_Horizons/Geometry_3D.htm" />
+    <Map Name="mImpAttrSetHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
+    <Map Name="mIsochronMakerBatchHelpID" Link="/Content/Utilities/Installation/Setup_Batch_Processing.htm" />
+    <Map Name="mLatLong2CoordFileTransDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mMarkerViewDlgHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
+    <Map Name="mNewSurveyByCopyHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
+    <Map Name="mPreStackMMProcHelpID" Link="/Content/Processing/Batch_Processing/Multi-Machine_Batch_Processing_Window.htm" />
+    <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
+    <Map Name="mProbDenFuncGenSampledHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
+    <Map Name="mrockPhysReqHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
+    <Map Name="mSEGYReadFinisherHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadStarterHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSEGYStoreImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSelObjFromOtherSurveyHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mSingleBatchJobDispatcherParsHelpID" Link="/Content/Processing/Batch_Processing/Single_Machine_Batch_Processing_Window.htm" />
+    <Map Name="mStartNewSurveySetupHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
+    <Map Name="mStratLayerModelDispIOHelpID" Link="/Content/Analysis/Layer_Modeling.htm" />
+    <Map Name="mStratUnitDivideDlgHelpID" Link="/Content/Analysis/Layer_Modeling.htm" />
+    <Map Name="mSurveyCompressButPushedHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mSurveySelectDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mSynthCorrAdvancedDlgHelpID" Link="/Content/Analysis/Wells/Tie_Well_To_Seismic/Well-Tie_Display_Panel.htm" />
+    <Map Name="mVolProcAttribHelpID" Link="/Content/Processing/Create_Seismic_Output/Volume_Builder_Output.htm" />
+    <Map Name="mWellLogEditorHelpID" Link="/Content/Analysis/Wells/Well_Log_Tools.htm" />
+    <Map Name="mWellMarkersDlgHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Markers.htm" />
+    <Map Name="mWellRockPhysLauncherHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
+    <Map Name="mWhereIsDotDlgHelpID" Link="/Content/Getting_Started/System_Overview.htm" />
 </CatapultAliasFile>
