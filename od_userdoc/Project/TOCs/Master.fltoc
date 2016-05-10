@@ -686,6 +686,9 @@
       <TocEntry
         Title="4.6.2 Preload Horizons"
         Link="/Content/Survey/Pre-Load/Preload_Horizons.htm" />
+      <TocEntry
+        Title="4.6.3 Preload HorizonCube"
+        Link="/Content/Survey/Pre-Load/Preload_HorizonCube.htm" />
     </TocEntry>
   </TocEntry>
   <TocEntry
