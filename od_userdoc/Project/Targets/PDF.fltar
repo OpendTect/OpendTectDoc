@@ -26,6 +26,9 @@
     CollapsedBookmarks="true"
     FullScreen="false"
     PageMode="UseOutlines"
-    ShowUsedBookmarks="false" />
+    ShowUsedBookmarks="false"
+    DownsampleImages="true"
+    ImageCompression="Automatic"
+    ImagePPIThreshold="576" />
   <RelationshipTables />
 </CatapultTarget>
