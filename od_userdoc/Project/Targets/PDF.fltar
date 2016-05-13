@@ -12,7 +12,8 @@
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
-  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl">
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
+  AutoSizeCaptureCaptions="false">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
@@ -27,8 +28,8 @@
     FullScreen="false"
     PageMode="UseOutlines"
     ShowUsedBookmarks="false"
-    DownsampleImages="true"
+    DownsampleImages="false"
     ImageCompression="Automatic"
-    ImagePPIThreshold="576" />
+    ImagePPIThreshold="300" />
   <RelationshipTables />
 </CatapultTarget>

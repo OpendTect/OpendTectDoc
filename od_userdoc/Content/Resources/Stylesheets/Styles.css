@@ -117,7 +117,8 @@ img.General_Image
 	height: auto;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	margin: 20px;
+	margin-right: 20px;
+	max-width: 100%;
 }
 
 img.Icons
