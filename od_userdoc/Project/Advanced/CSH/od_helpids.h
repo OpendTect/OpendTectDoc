@@ -1,4 +1,4 @@
-﻿#ifndef od_helpids_h
+#ifndef od_helpids_h
 #define od_helpids_h
 /*+
 ________________________________________________________________________
