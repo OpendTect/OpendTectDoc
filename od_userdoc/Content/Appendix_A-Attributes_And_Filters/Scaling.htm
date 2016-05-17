@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2574" MadCap:lastWidth="1392">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5020" MadCap:lastWidth="1426">
     <head>
     </head>
     <body>
@@ -61,7 +61,7 @@
         <p>For example, Value range [0,10] and untouched range [2,8]. Values outside the [2,8] range will be modified to fit between [0,10]. This means the values in the range [-infinitiy,2] will be squeezed into the range [0,2] via a hyperbolic function. That function is continuous in value (and first derivative) at 2. Similarly, values higher than 8 will go somewhere between 8 and 10.</p>
         <p>Example application: predicted porosities. Predictions of porosity tend to have values below 0. To counter this, you could squeeze all values below 1%. Use value range [0, ] and untouched range [1, ]. If you also want a more fuzzy upper limit, starting at 25% to absolute maximum 30, you may specify [0,30] and [1,25].</p>
         <p>This is shown in the attribute set below:</p>
-        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling gain correction.png" class="General_Image" />
+        <img src="../Resources/Images/Appendix_A/Analysis attributes 3D basic scaling squeeze.png" class="General_Image" />
         <ol MadCap:continue="true">
             <li><b>Gain Correction</b>
             </li>
