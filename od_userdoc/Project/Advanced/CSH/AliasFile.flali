@@ -38,7 +38,7 @@
     <Map Name="mFreqFilterAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Frequency_Filter.htm" />
     <Map Name="mFrequencyAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Frequency.htm" />
     <Map Name="mGapDeconHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/GapDecon.htm" />
-    <Map Name="mGenRanLinesByContourHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_Along_Contour.htm" />
+    <Map />
     <Map Name="mGenRanLinesFromPolygonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Polygons.htm" />
     <Map Name="mGenRanLinesByShiftHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Existing.htm" />
     <Map Name="mGetFileForAttrSetHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
@@ -79,7 +79,7 @@
     <Map Name="mWellImpSegyVspHelpID" Link="/Content/Survey/Import/Import_Wells/Import_Zero-Offset_VSP.htm" />
     <Map Name="mSimpleMultiWellCreateHelpID" Link="/Content/Survey/Import/Import_Wells/Simple_Multi-Well.htm" />
     <Map Name="mPreStackExportMuteHelpID" Link="/Content/Survey/Export/Export_Mute_Functions.htm" />
-    <Map Name="mSEGYExpHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y.htm" />
+    <Map Name="mSEGYExpHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_3D.htm" />
     <Map Name="mSeisIOSimpleExpHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_3D_Simple_File_Format.htm" />
     <Map Name="mColorTableManHelpID" Link="/Content/Survey/Manage/Manage_Color_Tables.htm" />
     <Map Name="mDataPointSetManHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />

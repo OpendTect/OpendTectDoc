@@ -110,8 +110,7 @@
         Title="3.4.2 Create from Existing"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Existing.htm" />
       <TocEntry
-        Title="3.4.3 Create Along Contour"
-        Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_Along_Contour.htm" />
+        Title="3.4.3 Create Along Contour" />
       <TocEntry
         Title="3.4.4 Create from Polygons"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Polygons.htm" />
