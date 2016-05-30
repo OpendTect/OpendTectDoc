@@ -1,9 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="444" MadCap:lastWidth="1418">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1229" MadCap:lastWidth="1196">
     <head>
     </head>
     <body>
         <h5>4.3.10.1.2 SEG-Y Revision<MadCap:keyword term="SEG-Y Revision" /></h5>
+        <p>The table in the <i>Import SEG-Y Data</i> window is auto-filled for a user by a quick scan of SEG-Y byte and trace headers. <i>Actually use</i> column lists suggested parameters for reading a SEG-Y file and <i>Quick scan result</i> displays scanned values.</p>
+        <ol>
+            <li>Inspect <i>Quick scan result</i> column.</li>
+            <li>If <i>SEG-Y Revision</i> is 1 or 2 and scanned IL/XL, Trace/SP, offset and/or X/Y values </li>
+        </ol>
+        <p><b>SEG-Y Revision</b> (default=value in byte 301 of the SEG-Y binary header):</p>
+        <ul>
+            <li><i>SEG-Y Rev. 0</i>: "traditional" SEG-Y conforming to the 1975 standard, </li>
+            <li><i>SEG-Y Rev. 1</i>:</li>
+            <li><i>SEG-Y Rev. 2</i>:</li>
+        </ul>
+        <p><b>Data format</b>:</p>
+        <p><b>Number of samples</b>:</p>
+        <p><b>Z Range</b>
+        </p>
+        <p><b>In-line range</b>:</p>
+        <p><b>Cross-line range</b>:</p>
+        <p><b>X-Coordinate range</b>:</p>
+        <p><b>Y-Coordinate range</b>:</p>
         <p>After preparing the SEG-Y import you will be asked to revise the type of your SEG-Y file(s). The time consumption and the smoothness of the import phase will depend on the answer.</p>
         <ol>
             <li><b>[No]:</b> the file is NOT SEG-Y Rev.1 - treat as legacy (i.e. Rev.0) - For un-lucky users the revision 1 flag might wrongly be set to "Yes" in the line header while obviously the file does not comply with the SEG-Y revision 1 norm. It may happen when the software blindly copies entire headers without refreshing all the necessary characters. "Rev.0" is an older way of loading SEG-Y files: The inline and crossline offset (bytes) must be present in the trace headers and their offsets must be provided to the software since it may vary from file to file.</li>
