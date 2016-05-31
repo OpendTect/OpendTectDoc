@@ -1,36 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1229" MadCap:lastWidth="1196">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1227" MadCap:lastWidth="1170">
     <head>
     </head>
     <body>
         <h5>4.3.10.1.2 SEG-Y Revision<MadCap:keyword term="SEG-Y Revision" /></h5>
-        <p>The table in the <i>Import SEG-Y Data</i> window is auto-filled for a user by a quick scan of SEG-Y byte and trace headers. <i>Actually use</i> column lists suggested parameters for reading a SEG-Y file and <i>Quick scan result</i> displays scanned values.</p>
-        <ol>
-            <li>Inspect <i>Quick scan result</i> column.</li>
-            <li>If <i>SEG-Y Revision</i> is 1 or 2 and scanned IL/XL, Trace/SP, offset and/or X/Y values </li>
-        </ol>
+        <p>The table in the <i>Import SEG-Y Data</i> window is auto-filled for a user by a quick scan of SEG-Y byte and trace headers. <i>Actually use</i> column lists suggested parameters for reading a SEG-Y file and <i>Quick scan result</i> displays scanned values for QC. Inspect these columns, do any appropriate changes in <i>Actually use</i> column and QC them in <i>Quick scan result</i>.</p>
         <p><b>SEG-Y Revision</b> (default=value in byte 301 of the SEG-Y binary header):</p>
         <ul>
-            <li><i>SEG-Y Rev. 0</i>: "traditional" SEG-Y conforming to the 1975 standard, </li>
-            <li><i>SEG-Y Rev. 1</i>:</li>
-            <li><i>SEG-Y Rev. 2</i>:</li>
+            <li><i>SEG-Y Rev. 0</i>:<ul style="list-style-type: circle;"><li>"traditional" SEG-Y conforming to the 1975 standard.</li><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning: bytes for applicable positioning info (IL/XL, Trace/SP, X/Y and offset) must be selected by a user.</li></ul></li>
+            <li><i>SEG-Y Rev. 1</i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning: bytes for applicable positioning info (IL/XL, Trace/SP, X/Y and offset) are read from standard locations as described in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText></li></ul></li>
+            <li><i>SEG-Y Rev. 2</i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning: bytes for IL/XL, Trace/SP, X/Y and offset are read from standard locations as described in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText></li></ul></li>
         </ul>
-        <p><b>Data format</b>:</p>
-        <p><b>Number of samples</b>:</p>
-        <p><b>Z Range</b>
+        <p><b>Data format</b> (default=read from byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
+        <p class="note">Most header values and data samples are written using several bytes for each word/sample. Therefore a correct byte order is a necessity. All SEG-Y standards (Rev. 0, 1 and 2) require using big-endian byte ordering. However, some vendors would still violate this requirement and use little-endian (reverse) byte order. Using standard SEG-Y data formats for reading such data results in unexpected scanned values of trace headers and unexpectedly large sample values  (check the histogram). In this case use data formats with <b>(byte swapped)</b> option.</p>
+        <p><b>Number of samples</b> (default=read from byte 21 of binary header): (optionally)&#160;overrule the number of samples per trace.</p>
+        <p><b>Z Range</b>: in seconds or meters. Negative times are allowed.</p>
+        <ul>
+            <li><b style="font-style: italic;">start</b> (default=read from trace headers <i>laga</i> and <i>delrt</i>): (optionally) overrule start of Z-range (in seconds or meters, negative start is allowed).</li>
+            <li><b style="font-style: italic;">interval</b> (default=read from byte 17 of binary header): (optionally) overrule Z-sampling, i.e. sampling rate  (in seconds or meters)</li>
+        </ul>
+        <p><b>Data positioning:</b>
         </p>
-        <p><b>In-line range</b>:</p>
-        <p><b>Cross-line range</b>:</p>
-        <p><b>X-Coordinate range</b>:</p>
-        <p><b>Y-Coordinate range</b>:</p>
-        <p>After preparing the SEG-Y import you will be asked to revise the type of your SEG-Y file(s). The time consumption and the smoothness of the import phase will depend on the answer.</p>
-        <ol>
-            <li><b>[No]:</b> the file is NOT SEG-Y Rev.1 - treat as legacy (i.e. Rev.0) - For un-lucky users the revision 1 flag might wrongly be set to "Yes" in the line header while obviously the file does not comply with the SEG-Y revision 1 norm. It may happen when the software blindly copies entire headers without refreshing all the necessary characters. "Rev.0" is an older way of loading SEG-Y files: The inline and crossline offset (bytes) must be present in the trace headers and their offsets must be provided to the software since it may vary from file to file.</li>
-            <li><b>[Mostly]:</b> It's Rev.1 but I may need to overrule some things - The file is 100% SEG-Y Rev.1 but you would like to overrule some particular information e.g. Coordinates, Sampling rate and Start time etc.</li>
-            <li><b>[Yes]:</b> I know the file is 100% correct SEG-Y Rev.1 - For lucky people, this is by far the most easy and quick way to import your SEG-Y file. No additional settings are required except the final output volume/line name in the OpendTect database.</li>
-        </ol>
-        <img src="../../../../Resources/Images/Survey/Import segy revision yes.png" class="General_Image" />
-        <p style="page-break-before: always">After selecting appropriate option, press OK to reach the import window.</p>
-        <p>You can save the answer to this question in your survey settings by activating the option "Don't ask again for this survey". If you set this flag by mistake and wish to go back you need to edit the ".defs" file (in the OpendTect survey directory) with a text editor and remove the line "SEG-Y Rev. 1 policy:".</p>
+        <p>3D&#160;post-stack data:</p>
+        <ul>
+            <li><b>In-line range</b> (default=read from trace header byte 189)</li>
+            <li><b>Cross-line range</b>  (default=read from trace header byte 193)</li>
+        </ul>
+        <blockquote>
+            <p>or</p>
+        </blockquote>
+        <ul>
+            <li><b>X-Coordinate range</b> (default=read from trace header byte 181)</li>
+            <li><b>Y-Coordinate range</b> (default=read from trace header byte 185)</li>
+        </ul>
+        <p>2D&#160;post-stack data:</p>
+        <ul>
+            <li><b>Trace number range</b> (default=read from trace header byte 21):<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>Generate</i>: generate trace numbers by providing the number of the first trace in a 2D&#160;line and step in trace numbers.</li></ul></li>
+            <li><b>Shot-Point number range</b>  (default=read from trace header byte 197)</li>
+            <li><b>X-Coordinate range</b> (default=read from trace header byte 181)</li>
+            <li><b>Y-Coordinate range</b> (default=read from trace header byte 185)</li>
+        </ul>
+        <p>2D&#160;and 3D&#160;pre-stack data:</p>
+        <ul>
+            <li><b>Offset range</b> (default=read from trace header byte 37)<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>From Src/Rcv (X/Y)</i>: calculate from source and receiver X/Y coordinates (standard byte locations 73 and 77 for source, 81 and 85 for receiver are used).</li><li><i>Generate</i>: generate offsets  by providing the offset of the first trace and step in offset values.</li></ul></li>
+        </ul>
     </body>
 </html>
