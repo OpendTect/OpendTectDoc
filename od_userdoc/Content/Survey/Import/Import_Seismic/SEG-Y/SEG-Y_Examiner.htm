@@ -1,22 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1954" MadCap:lastWidth="1222">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1783" MadCap:lastWidth="1465">
     <head>
     </head>
     <body>
         <h5>4.3.10.1.3 SEG-Y Examiner<MadCap:keyword term="SEG-Y Examiner" /></h5>
-        <p>SEG-Y examiner window is used to examine the textual, line and first trace headers. It is a useful tool that serves two purposes:</p>
-        <ol>
-            <li>Examination of the headers so that, if necessary, SEG-Y settings can be found and adjusted.</li>
-        </ol>
+        <p><i>SEG-Y Examiner</i> can be launched by pressing on <img src="../../../../Resources/Images/Icons/examine.png" class="Icons" /> icon in <i><a href="SEG-Y_Import_Preparation.htm" target="_self">Import SEG-Y Data window</a></i>. <i>SEG-Y Examiner</i> allows to check essential information about the data by inspecting text, binary and trace headers  as well as plotting seismic traces for QC. It is recommended to use this tool to check your SEG-Y import set-up and adjust it if needed.</p>
+        <p class="note">SEG-Y Examiner can stay open during import.</p>
         <img src="../../../../Resources/Images/Survey/Import segy examiner.png" class="General_Image" />
-        <p style="page-break-before: always">The plot between any individual trace header and the number of random traces examined is a very good tool to visualize its range and inspect for any discrepancy.</p>
-        <ol MadCap:continue="true">
-            <li>Viewing the first traces in a 2D viewer.</li>
-        </ol>
-        <img src="../../../../Resources/Images/Survey/Import segy examiner 2d viewer.png" class="General_Image" />
-        <p>It is strongly recommended to always display the traces in the 2D viewer. This is done from the examine window by using the <img src="../../../../Resources/Images/Icons/vd.png" class="Icons" /> icon. The examine window will show the entire textual header, the words in the line header that are different from zero, and the entire trace headers of the first traces. You can use the vertical scroll bar to browse through the file headers and locate the information to import.</p>
-        <p>Optionally, the save button  <img src="../../../../Resources/Images/Icons/Save.png" class="Icons" />can be used to store the textual header.</p>
-        <p>Use the lateral scroll bar at the bottom to locate the header words that change with the traces. They indicate traces, crosslines, offsets, coordinates etc. It is unlikely to see the inline number vary in the first traces. However, it is often at the bytes preceding the crossline number. Increasing the number of traces to examine will help finding the inline number.</p>
-        <p>Please note that the examine window can stay open during import.</p>
+        <p><b>File header information</b>:</p>
+        <ul>
+            <li><i>Text (<i>EBCDIC</i>) header</i> (3200 bytes: 40 lines, 80 symbols each): free-format text commonly containing processing history, data ranges,  and non-standard trace header byte locations.</li>
+            <li><i>Binary header</i> (400 bytes): scroll down to see a summary of non-zero values in the binary header which commonly includes info about data format, SEG-Y revision and Z-range (sampling rate and number of samples).</li>
+        </ul>
+        <p>
+            <img src="../../../../Resources/Images/Icons/Save.png" class="Icons" /> <b>Save textual header to a file</b>.</p>
+        <p><b>Trace header information</b>:</p>
+        <ul>
+            <li><i>Table</i>:<ul style="list-style-type: circle;"><li>trace header byte numbers and shortened field names are shown in the first column;</li><li>trace header values of examined traces are shown in the following columns.</li></ul></li>
+            <li><i>Graph</i>: plot between any individual trace header and the number of random traces examined is a very good tool to visualize its range and inspect for any discrepancy:<ul style="list-style-type: circle;"><li>highlight any trace header (a row) in the table to see its graph versus consecutive trace number;</li><li>extended explanation of a highlighted trace header is given above the graph (please see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> for more details);</li><li><i>Range: [...,...]</i>: values of a highlighted trace header in the examined traces.</li></ul></li>
+        </ul>
+        <p class="note">Use the lateral scroll bar at the bottom to locate the headers with changing values. Those might be trace numbers, crossline numbers, offsets, coordinates etc. Inline numbers are often written to the bytes preceding crosslines. Most 3D&#160;data is inline sorted, therefore choose sufficient number of traces  to examine (several times more than the number of crosslines per inline) in order to see the increasing inline numbering.</p>
+        <p style="page-break-before: always">
+            <img src="../../../../Resources/Images/Icons/vd.png" class="Icons" /> <b>Display traces</b>: It is strongly recommended to always view examined traces in the 2D viewer.</p>
+        <p>
+            <img src="../../../../Resources/Images/Icons/histogram.png" class="Icons" /> <b>Show histogram of sample values</b>.</p>
+        <img src="../../../../Resources/Images/Survey/Import segy examiner 2d viewer.png" class="General_Image" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" style="float: left;left: 328px;top: 1667px;" />
+        <blockquote>
+            <blockquote>
+                <p>&#160;</p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/rubbandzoom.png" class="Icons" /> <b>Rubberband zoom</b> <![CDATA[ ]]></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/zoomforward.png" class="Icons" /> <b>Zoom in</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/zoombackward.png" class="Icons" /> <b>Zoom out</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/cancelzoom.png" class="Icons" /> <b>Cancel zoom</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/flip_lr.png" class="Icons" /> <b>Flip left/right</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/snapshot.png" class="Icons" /> <b>Save image</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/printer.png" class="Icons" /> <b>Print image</b></p>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/disppars.png" class="Icons" /> <b>Set display parameters</b> </p>
+            </blockquote>
+        </blockquote>
     </body>
 </html>
