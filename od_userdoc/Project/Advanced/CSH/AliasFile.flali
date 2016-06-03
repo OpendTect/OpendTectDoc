@@ -38,7 +38,6 @@
     <Map Name="mFreqFilterAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Frequency_Filter.htm" />
     <Map Name="mFrequencyAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Frequency.htm" />
     <Map Name="mGapDeconHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/GapDecon.htm" />
-    <Map />
     <Map Name="mGenRanLinesFromPolygonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Polygons.htm" />
     <Map Name="mGenRanLinesByShiftHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Existing.htm" />
     <Map Name="mGetFileForAttrSetHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
@@ -67,7 +66,7 @@
     <Map Name="mPreStackImportMuteHelpID" Link="/Content/Survey/Import/Import_Mute_Functions.htm" />
     <Map Name="mImpPickSetHelpID" Link="/Content/Survey/Import/Import_PickSets_Polygons.htm" />
     <Map Name="mImpRokDocPDFHelpID" Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
-    <Map Name="mSEGYDefDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mSEGYDefDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
     <Map Name="mSeisIOSimpleImpHelpID" Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
     <Map Name="mSeisImpCBVSHelpID" Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
     <Map Name="mSeisImpCBVSFromOtherSurveyDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
@@ -123,9 +122,9 @@
     <Map Name="mIsopachMakerHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Isopach.htm" />
     <Map Name="mHorizonMergeDlgHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_3D.htm" />
     <Map Name="mHorizonRelationsDlgHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_3D.htm" />
-    <Map Name="mSEGYFileManipHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
-    <Map Name="mSEGYBinHdrEdDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
-    <Map Name="mSEGYFileManipHdrCalcEdHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mSEGYFileManipHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
+    <Map Name="mSEGYBinHdrEdDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
+    <Map Name="mSEGYFileManipHdrCalcEdHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
     <Map Name="mSetFontsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mPluginManHelpID" Link="/Content/Utilities/Installation/Plugins.htm" />
     <Map Name="mSurvTopBotImageDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Scene.htm" />
@@ -263,16 +262,16 @@
     <Map Name="mWellImportAscDataSelHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Track.htm" />
     <Map Name="mWellImpPptDlgHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Track.htm" />
     <Map Name="mSEGYExamineHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
-    <Map Name="mSEGYReadDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
-    <Map Name="mSEGYReadPreScannerHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
-    <Map Name="mSEGYReadRev1QuestionHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Revision.htm" />
+    <Map Name="mSEGYReadDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadPreScannerHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mSEGYReadRev1QuestionHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
     <Map Name="mPSViewerSettingDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pre-Stack_3D_Viewer.htm" />
     <Map Name="mODApplMgrDispatchersetAutoUpdatePolHelpID" Link="/Content/Utilities/Installation/Auto-Update_Policy.htm" />
     <Map Name="mPosFilterSetSelHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Data_Extraction/Location_Filters.htm" />
     <Map Name="mChangeSurfaceDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Filter.htm" />
     <Map Name="mSEGYExpMoreHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_2D.htm" />
     <Map Name="mSEGYExpTxtHeaderDlgHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_3D.htm" />
-    <Map Name="mSEGYImpSimilarDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSEGYImpSimilarDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
     <Map Name="mFPAdvancedDlgHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Fingerprint.htm" />
     <Map Name="mFaultStickTransferDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/FaultStickSet/FaultStickSet_To_Fault.htm" />
     <Map Name="mFlattenedCubeHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/Flattening.htm" />
@@ -373,7 +372,7 @@
     <Map Name="mBulkD2TModelImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Time-Depth_Model_Import.htm" />
     <Map Name="mCreateHorizonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon.htm" />
     <Map Name="mDataPointSetPickDlgHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />
-    <Map Name="mEditSEGYFileDataDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mEditSEGYFileDataDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
     <Map Name="mEventFreqAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
     <Map Name="mExp2DGeomHelpID" Link="/Content/Survey/Export/Export_Geometry_2D.htm" />
     <Map Name="mFaultOptSelHelpID" Link="/Content/OpendTect_Trees_And_Elements/Fault.htm" />
@@ -389,10 +388,10 @@
     <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mProbDenFuncGenSampledHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mrockPhysReqHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
-    <Map Name="mSEGYReadFinisherHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
-    <Map Name="mSEGYReadImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
-    <Map Name="mSEGYReadStarterHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
-    <Map Name="mSEGYStoreImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadFinisherHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadStarterHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+    <Map Name="mSEGYStoreImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
     <Map Name="mSelObjFromOtherSurveyHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mSingleBatchJobDispatcherParsHelpID" Link="/Content/Processing/Batch_Processing/Single_Machine_Batch_Processing_Window.htm" />
     <Map Name="mStartNewSurveySetupHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />

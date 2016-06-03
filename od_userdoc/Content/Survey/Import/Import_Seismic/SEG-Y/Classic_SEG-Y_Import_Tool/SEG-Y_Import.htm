@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2731" MadCap:lastWidth="954">
+    <head>
+    </head>
+    <body>
+        <h6>4.3.10.1.2.3 SEG-Y Import<MadCap:keyword term="SEG-Y Import" /></h6>
+        <p style="font-weight: normal;">&#160;</p>
+        <p style="font-weight: bold;">Import 3D&#160;Volume / Import Pre-Stack Volume</p>
+        <img src="../../../../../Resources/Images/Survey/Import segy 3D volume.png" class="General_Image" />
+        <blockquote>
+            <p><b>Copy data</b>:<ul><li><i>Yes (import)</i>:<ul style="list-style-type: circle;"><li>data is imported to CBVS&#160;format (internal OpendTect format for seismic data);</li></ul></li><li><i>No (scan&amp;link)</i>:<ul style="list-style-type: circle;"><li>link to a SEG-Y file, i.e. no data duplication;</li><li>if a SEG-Y file is moved or renamed  outside OpendTect, the link can be restored via <img src="../../../../../Resources/Images/Icons/browseseis.png" class="Icons" /> icon in <a href="../../../../Manage/Manage_Seismics/Manage_3D_Seismics.htm"><i>Manage 3D Seismics</i></a> window;</li><li> performance for pre-stack data may be lower than with OpendTect CBVS pre-stack datastore.</li></ul></li></ul></p>
+            <p><b>Volume Subselection</b> (default= '-', i.e. <i>All</i>): (optionally) a sub-set or a decimated volume can be imported.</p>
+            <p><b>Null traces</b>:<ul><li><i>Discard</i> (default): null traces are discarded, i.e.  shown as undefined.</li><li><i>Pass</i>: null traces are imported with amplitude values of 0.</li></ul></p>
+            <p><b>Scale values</b> (default=off): (optionally) shift and scale amplitude values:<ul><li><i>Shift</i>: add this shift to sample amplitudes.</li><li><i>Factor</i>: multiply sample amplitudes by this factor.</li></ul></p>
+            <p><b>Output Cube</b>: type in a cube name to be used in the OpendTect project and choose its format:<ul><li><i>CBVS</i>: internal OpendTect format for seismic data.</li><li><i>SEGYDirect</i>: link to a SEG-Y file.</li><li><i>PetrelDirect</i>: write directly to Petrel datastore with a PetrelDirect link to it in OpendTect.</li></ul></p>
+            <p><b>Depth/Time</b>: (optionally) depth volumes can be imported to time surveys by checking this box and vice versa.</p>
+            <p class="note">They can be visualized using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../../../../Scenes/Time_And_Depth-Converted_Scenes.htm" target="_self">transformed scenes</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">transformed scenes</MadCap:conditionalText>, providing that velocities are available.</p>
+            <p><b>Execute in Batch</b>: (optionally) import can be done in a <a href="../../../../../Processing/Batch_Processing/Single_Machine_Batch_Processing_Window.htm">single-machine batch mode.</a></p>
+        </blockquote>
+        <p class="note"> It is a good practice to display 3D seismic data on a z-slice after import to check for any gaps or null traces.</p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Import 2D&#160;Line(s) / Import Line 2D&#160;Pre-Stack(s)</p>
+        <img src="../../../../../Resources/Images/Survey/Import segy 2D line.png" class="General_Image" />
+        <blockquote>
+            <p><b>Line name</b>:<ul><li>Single 2D&#160;line: either type in a new line name or select one of the existing ones.</li><li>Multiple 2D lines: the field is greyed out, and line names come from parts of file names replaced by a wildcard *.</li></ul></p>
+            <p><b>Trace Subselection</b> (default= '-', i.e. <i>All</i>): (optionally) a sub-set or a decimated volume can be imported.</p>
+            <p><b>Null traces</b>:<ul><li><i>Discard</i> (default): null traces are discarded, i.e.  shown as undefined.</li><li><i>Pass</i>: null traces are imported with amplitude values of 0.</li></ul></p>
+            <p><b>Scale values</b> (default=off): (optionally) shift and scale amplitude values<ul><li><i>Shift</i>: add this shift to sample amplitudes.</li><li><i>Factor</i>: multiply sample amplitudes by this factor.</li></ul></p>
+            <p><b>Coordinate source</b> (default=The trace headers):<ul><li><i>The trace headers</i>: use trace headers as specified in<a href="SEG-Y_Import_Preparation.htm"> <i>Import SEG-Y Data</i></a> wizard.</li><li><i>A 'Nr X Y' file (bend=points needed)</i>: (optionally) the coordinates can be specified using an auxiliary navigation file. The format should be an  ascii file with one position per line in a fixed column format without header:  trace number, X and Y coordinates. Units to be used are the same as specified in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../../../Select_Setup_Survey/Edit_Survey_Window.htm">survey definition</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">survey definition</MadCap:conditionalText><ul style="list-style-type: circle;"><li>Single 2D&#160;line: select a file containing a navigation survey.</li><li>Multiple 2D lines: navigation files must have same names as corresponding SEG-Y files and different extension (such as <i>.crd</i>).</li></ul></li><li><i>Generate straight line</i>: manually enter X/Y coordinates of the first trace and regular steps in X/Y directions. Units to be used are the same as specified in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../../../Select_Setup_Survey/Edit_Survey_Window.htm">survey definition</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">survey definition</MadCap:conditionalText>.</li></ul></p>
+            <p><b>Output 2D&#160;Data (attribute)</b>: type in a 2D&#160;dataset name to be used in an OpendTect project and choose its format:<ul><li><i>CBVS</i>: internal OpendTect format for seismic data.</li><li><i>PetrelDirect</i>: write directly to Petrel datastore with a PetrelDirect link to it in OpendTect.</li></ul><p>Optionally press <i>Select</i> to see the list of existing 2D&#160;data in a project:</p><img src="../../../../../Resources/Images/Survey/Import segy 2D line select.png" class="General_Image" /></p>
+        </blockquote>
+        <p class="note">2D&#160;datasets are used  in OpendTect to group data of the same kind which can be processed and interpreted together (i.e. a particular 2D&#160;vintage or type of data). An OpendTect survey can have many 2D datasets, which can share common 2D&#160;geometries. </p>
+    </body>
+</html>

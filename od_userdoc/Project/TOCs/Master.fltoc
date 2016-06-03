@@ -337,20 +337,34 @@
           Title="4.3.10.1 SEG-Y"
           Link="/Content/Survey/Import/Import_Seismic/SEG-Y.htm">
           <TocEntry
-            Title="4.3.10.1.1 SEG-Y Import Preparation"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+            Title="4.3.10.1.1 SEG-Y Wizard"
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard.htm">
+            <TocEntry
+              Title="4.3.10.1.1.1 Import Window"
+              Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard/Import_Window.htm" />
+          </TocEntry>
           <TocEntry
-            Title="4.3.10.1.2 SEG-Y Revision"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Revision.htm" />
+            Title="4.3.10.1.2 Classic SEG-Y Import Tool"
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool.htm">
+            <TocEntry
+              Title="4.3.10.1.2.1 SEG-Y Import Preparation"
+              Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+            <TocEntry
+              Title="4.3.10.1.2.2 SEG-Y Revision"
+              Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
+            <TocEntry
+              Title="4.3.10.1.2.3 SEG-Y Import"
+              Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+            <TocEntry
+              Title="4.3.10.1.2.4 SEG-Y Scan"
+              Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" />
+          </TocEntry>
           <TocEntry
             Title="4.3.10.1.3 SEG-Y Examiner"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
           <TocEntry
-            Title="4.3.10.1.4 SEG-Y Import"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
-          <TocEntry
-            Title="4.3.10.1.5 SEG-Y Scan"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Scan.htm" />
+            Title="4.3.10.1.4 Manipulate SEG-Y File"
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
         </TocEntry>
         <TocEntry
           Title="4.3.10.2 SEG-Y Scanned"

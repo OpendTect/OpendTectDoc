@@ -329,19 +329,19 @@
           Link="/Content/Survey/Import/Import_Seismic/SEG-Y.htm">
           <TocEntry
             Title="4.3.10.1.1 SEG-Y Import Preparation"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import_Preparation.htm" />
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
           <TocEntry
             Title="4.3.10.1.2 SEG-Y Revision"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Revision.htm" />
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
           <TocEntry
             Title="4.3.10.1.3 SEG-Y Examiner"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
           <TocEntry
             Title="4.3.10.1.4 SEG-Y Import"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Import.htm" />
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
           <TocEntry
             Title="4.3.10.1.5 SEG-Y Scan"
-            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Scan.htm" />
+            Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" />
         </TocEntry>
         <TocEntry
           Title="4.3.10.2 SEG-Y Scanned"
