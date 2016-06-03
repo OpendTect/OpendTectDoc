@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="445" MadCap:lastWidth="1196">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="540" MadCap:lastWidth="980">
     <head>
     </head>
     <body>
         <h4>4.3.10.1 SEG-Y<MadCap:keyword term="SEG-Y" /></h4>
-        <p>SEG-Y is the standard way to share volumes/lines of data. In OpendTect the files are loaded with a rigorous respect to the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> using a loading wizard. Most SEG-Y files will be imported in a few clicks, and a number of exceptions can be set to load the most problematic data. Nevertheless there are a few guidelines that must be honoured:</p>
+        <p>SEG-Y is the standard way to share volumes/lines of data. In OpendTect the files are loaded with a rigorous respect to the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> using one of the two wizards:</p>
+        <ul>
+            <li> new <a href="SEG-Y/SEG-Y_Wizard.htm" target="_self" style="font-style: normal;">SEG-Y&#160;wizard</a> introduced in <i>OpendTect 6.0</i></li>
+            <li><a href="SEG-Y/Classic_SEG-Y_Import_Tool.htm" target="_self">Classic SEG-Y Import Tool</a> (used to be the main utility for import of SEG-Y data prior to <i>OpendTect 6.0</i>)</li>
+        </ul>
+        <p>Most SEG-Y files will be imported in a few clicks, and a number of exceptions can be set to load the most problematic data. Nevertheless there are a few guidelines that must be honored:</p>
         <ul>
             <li>The traces must be sorted either by inlines and then crosslines or by crosslines and then inlines.</li>
             <li>The gathers of pre-stack data must be consecutive and ordered by increasing offset (i.e. no common offset sorting).</li>
-            <li>Inline/crosslines or coordinates (and offset) must be written in every single trace header. Separate navigation data is not supported.</li>
+            <li>Inlines/crosslines or coordinates (and offset) must be written in every single trace header. Separate navigation data is only supported for 2D&#160;lines.</li>
             <li>The traces must have a fixed length.</li>
             <li>There is no support of extended textual headers.</li>
         </ul>
@@ -18,6 +23,6 @@
             <li>The traces can start at any time/depth, even negative.</li>
             <li>The files can be merged during import, re-scaled using linear equations, and the storage format can be changed.</li>
         </ul>
-        <p class="tip"><b>Note: </b><u>Please, read the entire chapter before asking for support.</u> If you need support please send us a screenshot of the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" target="_self">first step</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">first step</MadCap:conditionalText>, <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y/SEG-Y_Examiner.htm" target="_self">examine window</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">examine window</MadCap:conditionalText>, <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" target="_self">import window</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">import window</MadCap:conditionalText> and <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm#scan_report" target="_self">scan report</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">scan report</MadCap:conditionalText> together with a description of your problem.</p>
+        <p class="note"><u>Please, read the entire chapter before asking for support.</u> If you need support, please send us screenshots of each step and (of possible) a <a href="SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" target="_self">scan report</a>  together with a detailed description of your problem.</p>
     </body>
 </html>

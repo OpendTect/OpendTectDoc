@@ -1,117 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7627" MadCap:lastWidth="928">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1233" MadCap:lastWidth="928">
     <head>
     </head>
     <body>
         <h6>4.3.10.1.2.1 SEG-Y Import Preparation<MadCap:keyword term="SEG-Y Import Preparation" /></h6>
-        <p><b>Generic </b><i style="font-weight: bold;">Import SEG-Y Data</i><b> wizard</b> can be accessed by clicking on <img src="../../../../../Resources/Images/Icons/segy.png" /> icon in the toolbar of main OpendTect window.  The wizard supports import of 2D&#160;and 3D&#160;pre-stack and post-stack data from one or multiple SEG-Y files. The layout of this window dynamically changes depending on the user choice of <i>Data type</i>.</p>
-        <img src="../../../../../Resources/Images/Survey/Import segy data generic.png" class="General_Image" />
-        <p class="note">The generic wizard also supports <a href="../../../Import_Wells/Import_Zero-Offset_VSP.htm" target="_self">import of zero-offset VSP data</a>.</p>
-        <p><b>Data specific wizards</b> are available via <i>Survey</i> &gt; <i>Import</i> &gt; <i>Seismics</i> &gt; <i>SEG-Y</i>. The layouts are fixed for the data type selected via the menu (<i>Data type</i> option isn't available in these cases).</p>
-        <img src="../../../../../Resources/Images/Survey/Import segy data data-specific.png" />
-        <p style="font-weight: normal;"><b>Input file(s)</b>: <i>Select</i> a SEG-Y file to import. In case of importing multiple 2D&#160;or 3D&#160;SEG-Y files select any of them first and then use the wildcard *.</p>
-        <blockquote>
-            <p style="font-weight: normal;font-style: normal;"><b style="font-style: italic;">Import 3D data from multiple SEG-Y files</b>: files must contain consecutive blocks of inlines and be indexed as <i>filename_1.sgy</i>, <i>filename_2.sgy</i>...</p>
-            <ol style="font-style: normal;">
-                <li style="font-weight: normal; font-style: normal;"><i>Select</i> one of the files;</li>
-                <li style="font-weight: normal; font-style: normal;">replace the file index  by a wildcard * in the input field: <i>filepath/filename_*.sgy</i></li>
-            </ol>
-            <p style="font-weight: normal;font-style: normal;"><b style="font-style: italic;">Import multiple 2D lines</b>: files must contain individual 2D&#160;lines and be indexed with the respective line names as <i>filename_linename1.sgy</i>, <i>filename_linename2.sgy</i>...</p>
-            <ol>
-                <li><![CDATA[  ]]><i>Select</i> one of the files;</li>
-                <li> replace the line name  by a wildcard * in the input field: <i>filepath/filename_*.sgy</i>;</li>
-                <li>those parts of file names replaced by * are used as 2D&#160;line names (press <i>Next</i> and see that <i>Line name</i> option is greyed out and set to *).</li>
-            </ol>
-        </blockquote>
-        <p style="font-weight: normal;"><b>Edit</b>: (optionally) edit  text, binary and trace headers of a SEG-Y file in <i>Manipulate SEG-Y File</i> window.</p>
-        <p><b>Data Type</b>: the choice is only available in the generic <i>Import SEG-Y Data</i> window.<ul><li><i>3D&#160;seismic data</i> <![CDATA[ ]]></li><li><i>3D PreStack data</i></li><li><i>2D&#160;seismic data</i></li><li><i>2D PreStack data</i></li></ul></p>
-        <p><b>Table</b>: information required to import a SEG-Y file (therefore the table layout depends on the data type).<ul><li><i>Quick/Full scan result</i>: shows results of a quick/full scan of a SEG-Y file:<ul style="list-style-type: circle;"><li><i>Quick scan</i>: a partial scan of SEG-Y is performed upon file selection and after any change of SEG-Y import set-up.</li><li><i>Full scan</i>: press on <img src="../../../../../Resources/Images/Icons/fullscan.png" class="Icons" /> icon to scan the entire file.</li></ul></li><li><i>Actually use</i>: import parameters as confirmed/overruled by a user.</li></ul></p>
-        <blockquote>
-            <p style="font-weight: normal;"><b style="font-style: italic;">SEG-Y Revision</b> (default=byte 301 of binary header):  please refer to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> for details.</p>
-            <ul>
-                <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" target="_blank">SEG-Y Rev. 0</a></i>: <ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): byte locations can be selected by a user.</li></ul></li>
-                <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" target="_blank">SEG-Y Rev. 1</a></i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): standard byte locations are used.</li></ul></li>
-                <li><i>SEG-Y Rev. 2</i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): standard byte locations are used.</li></ul></li>
-            </ul>
-            <p><b style="font-style: italic;">Data format</b> (default=byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
-            <p class="note">Most header values and data samples are written using several bytes for each word/sample. Therefore knowing a correct byte order is a necessity. All SEG-Y standards (Rev. 0, 1 and 2) require using big-endian byte order. Occasionally one can run into data written using little-endian (reverse) one. Using standard SEG-Y data formats for reading such data results in unexpected scanned values of trace headers and unexpectedly large sample values  (check the histogram). In this case use data formats with <b>(byte swapped)</b> option.</p>
-            <p><b style="font-style: italic;">Number of samples</b> (default=byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
-            <p><b style="font-style: italic;">Z Range</b> (units=seconds or meters).</p>
-            <ul>
-                <li><b style="font-style: italic;">start</b> (default=bytes 105 <i>laga</i> and 109 <i>delrt</i> of trace headers): (optionally) overrule start of Z-range (negative start is allowed).</li>
-                <li><b style="font-style: italic;">interval</b> (default=byte 17 of binary header / byte 117 of trace header): (optionally) overrule Z-sampling, i.e. sampling rate  (in seconds or meters)</li>
-            </ul>
-            <p class="note">OpendTect doesn't support import of a SEG-Y file with varying trace lengths (i.e. Z range start and interval must be constant for all traces in a file). </p>
-            <p><b style="font-style: italic;">Data positioning</b> (default trace header byte locations as used in OpendTect following theSEG standards)</p>
-            <blockquote>
-                <p>3D&#160;post-stack data:</p>
-                <ul>
-                    <li><b style="font-style: italic;">In-line range</b> <ul style="list-style-type: circle;"><li><i>Rev.0</i> default = byte 9</li><li><i>Rev.1/2</i> default =  byte 189</li></ul></li>
-                    <li><b style="font-style: italic;">Cross-line range</b>
-                        <ul style="list-style-type: circle;">
-                            <li><i>Rev.0</i> default = byte 21</li>
-                            <li><i>Rev.1/2</i> default =  byte 193</li>
-                        </ul>
-                    </li>
-                </ul>
-                <blockquote>
-                    <p>or</p>
-                </blockquote>
-                <ul>
-                    <li><b style="font-style: italic;">X-Coordinate range</b> <ul style="list-style-type: circle;"><li><i>Rev.0</i> default = byte 73</li><li><i>Rev.1/2</i> =  byte 181</li></ul></li>
-                    <li><b style="font-style: italic;">Y-Coordinate range</b>
-                        <ul style="list-style-type: circle;">
-                            <li> <i>Rev.0</i> default = byte 77</li>
-                            <li><i>Rev.1/2</i> default = byte 185</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p>2D&#160;post-stack data:</p>
-                <ul>
-                    <li><b style="font-style: italic;">Trace number range</b> (default=byte 21):<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>Generate</i>: generate trace numbers by providing the number of the first trace in a 2D&#160;line and step in trace numbers.</li></ul></li>
-                    <li><b style="font-style: italic;">Shot-Point number range</b>  (default=byte 197)</li>
-                    <li><b style="font-style: italic;">X-Coordinate range</b> (default=byte 181)</li>
-                    <li><b style="font-style: italic;">Y-Coordinate range</b> (default=byte 185)</li>
-                </ul>
-                <p>2D&#160;and 3D&#160;pre-stack data:</p>
-                <ul>
-                    <li><b style="font-style: italic;">Offset range</b> (default=byte 37)<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>From Src/Rcv (X/Y)</i>: calculate from source and receiver X/Y coordinates (bytes 73 and 77 for source, 81 and 85 for receiver).</li><li><i>Generate</i>: generate offsets  by providing the offset of the first trace and step in offset values.</li></ul></li>
-                </ul>
-            </blockquote>
-        </blockquote>
-        <p style="font-weight: normal;">
-            <img src="../../../../../Resources/Images/Icons/save.png" class="Icons" /><b>Store this setup</b>: save a SEG-Y import setup at the survey data root level.</p>
+        <p>SEG-Y import preparation starts with the <i>SEG-Y tool</i> window.</p>
         <p>
-            <img src="../../../../../Resources/Images/Icons/open.png" /><b>Use saved SEG-Y setup</b>: retrieve one of the stored setups.</p>
-        <p style="font-weight: normal;">
-            <img src="../../../../../Resources/Images/Icons/fullscan.png" class="Icons" /> <b>Scan the entire input</b>: updates <i>Quick scan result</i> with <i>Full scan result</i> of the entire input file.</p>
-        <p style="font-weight: normal;">
-            <img src="../../../../../Resources/Images/Icons/examine.png" class="Icons" /> <b>Examine input file</b>: opens <a href="../SEG-Y_Examiner.htm"><i>SEG-Y Examiner</i></a> window for a specified <i>Number of traces to examine</i> (default=1000 traces).</p>
-        <p style="font-weight: normal;">
-            <img src="../../../../../Resources/Images/Survey/Import segy data scaleXY.png" /> (default = <i>empty</i>): (optionally) enter XY scalar to ignore <i>scalco</i> (byte 71 of the SEG-Y trace header). X/Y coordinates are multiplied by this factor.</p>
-        <p class="note">Note that scalco is the scale factor for all coordinate bytes with value plus or minus 10 to the power 0, 1, 2, 3, or 4 (if positive, multiply, if negative divide).</p>
-        <p style="font-weight: normal;"><b>Histogram</b>: displays a distribution of amplitudes after <i>Quick</i> (partial) or <i>Full</i> scan.</p>
-        <ul>
-            <li style="font-weight: normal;"><i>Percentage clip for display</i> (default=0.1%): amount of data in the histogram tails  excluded from the plot.</li>
-            <li style="font-weight: normal;"><i>Zeros</i> (default=unchecked): allows to include/exclude value 0 for histogram display.</li>
-        </ul>
-        <p><b style="font-style: italic;">Data specific options:</b>
+            <img src="../../../../../Resources/Images/Survey/Import segy classic tool.png" />
         </p>
-        <blockquote>
-            <p><b>3D (pre- and post-stack) data positioning</b> can be based either on Inline/Crossline or X/Y coordinates of each trace:<ul><li><b>Use I/C</b> (default): positioning of imported data is based on Inline/Crossline numbers, (X,Y) will therefore be calculated from a survey setup.</li><li><b>Use (X,Y)</b>: positioning of imported data is based on (X,Y) coordinates, Inline/Crossline numbers will therefore be calculated from a survey setup.</li></ul></p>
-            <p><b>2D (pre- and post-stack) data Z-range</b> can vary per SEG-Y file if multiple lines of different vintages are imported at the same time:<ul><li><b>File Z's</b> (available only when multiple 2D&#160;lines are imported): if checked, <i>Z Range</i> <i>start</i>/<i>interval</i> and <i>Number of samples</i>&#160;are used as they appear in each SEG-Y file. </li></ul><p class="note">Overruling of Z Range start/interval and Number of samples is possible only if File Z's is unchecked.</p></p>
-        </blockquote>
+        <p><b><u>Mandatory</u> workflow in the first step:</b>
+        </p>
+        <ol>
+            <li>Select your (first) file using the file browser.</li>
+            <li>Choose the correct file type:<ul><li><i>3D Volume</i></li><li><i>Pre-Stack Volume</i></li><li><i>2D Line</i></li><li><i>Line 2D Pre-Stack</i></li></ul></li>
+            <li>If multiple SEG-Y files representing one 3D volume (pre-stack or post-stack) have to be loaded you must specify the number of files to be merged during loading. The input SEG-Y files must contain blocks or inlines. File names must be indexed like file1.sgy, file2.sgy..., any file can be selected and the index must be replaced in the input field by a wildcard (*):</li>
+        </ol>
+        <p>In most cases you can press the<i>Next</i> button after you have done the two actions listed above. Only if you have a proiri knowledge that the file might be having some problems you would like to perform one of the following actions before pressing <i>Next</i>.</p>
+        <p><b><u>Optional</u> actions in the first step:</b>
+        </p>
+        <p>1. <a href="../Manipulate_SEG-Y_File.htm">Manipulate SEG-Y file</a>: allows to edit text, binary and trace headers of a SEG-Y file.</p>
+        <p>2. <i>Number of traces to examine</i>: A set of traces may be examined at the beginning of the file. Looking at the output is strongly recommended but not mandatory for a successful import. This can be disabled by entering "0". Pressing <i>Save as default</i> will save the number of traces to examine in your user settings.</p>
+        <p>3. <i>Overrule SEG-Y number of samples</i>: If the number of samples per trace is not or incorrectly written in the line and/or trace headers you can overrule it here.</p>
+        <p>4. <i>SEG-Y format</i>: If the format of the data samples is not or incorrectly written in the line header you can overrule it here.</p>
+        <p>5. <i>Bytes swapped</i>: Most header values and/or data samples are written using several bytes for each word/sample. Therefore a correct byte order is a necessity. Thus, if the trace headers don't seem correct or if the sample values are unexpectedly large numbers, byte swapping might be required.</p>
+        <p>After pressing <i>Next</i> a pop-up question (<a href="SEG-Y_Revision.htm">SEG-Y revision</a>) and the <a href="../SEG-Y_Examiner.htm"><i>SEG-Y examiner</i></a> window will appear. It is recommended to answer the questions and examine the traces before moving on to the second wizard window.</p>
         <p>&#160;</p>
-        <p><b>Manipulate SEG-Y File</b>
-        </p>
-        <p>This powerful utility allows to edit text, binary and trace headers of a SEG-Y file. All changes made to SEG-Y headers can only be saved to a new <i>Output file</i>.</p>
-        <img src="../../../../../Resources/Images/Survey/Import manipulate.png" class="General_Image" />
-        <ul>
-            <li><i>Text Header</i>: can be directly edited.</li>
-            <li><i>Binary header</i>: click on <i>Change...</i> button and in <i>SEG-Y Binary Header</i> window correct <i>Value</i> fields for <i>Bytes</i> as required.</li>
-        </ul>
-        <img src="../../../../../Resources/Images/Survey/Import manipulate change.png" class="General_Image" />
-        <ul>
-            <li><i>Trace headers</i>: follow the steps below to edit trace headers:<ol><li>Select a trace header to edit in the left list and press on <img src="../../../../../Resources/Images/Icons/rightarrow.png" class="Icons" /> icon;</li><li>In <i>Header Calculation</i> window type in a <i>Formula</i> and press <i>OK</i><ul style="list-style-type: circle;"><li>For information about the supported operators, functions and constants, please refer to the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../../../../Appendix_A-Attributes_And_Filters/Mathematics.htm" target="_self">Mathematics</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Mathematics</MadCap:conditionalText> attribute.</li><li>Other trace headers can be inserted in the formula by selecting them in the <i>Available</i> list and pressing <img src="../../../../../Resources/Images/Icons/rightarrow.png" class="Icons" />.</li></ul><p><img src="../../../../../Resources/Images/Survey/Import manipulate header calculation.png" class="General_Image" /></p></li><li>Trace header definitions appear in the right list and may be edited <img src="../../../../../Resources/Images/Icons/edit.png" class="Icons" /> or deleted <img src="../../../../../Resources/Images/Icons/trashcan.png" class="Icons" />. The set of definitions can be also saved <img src="../../../../../Resources/Images/Icons/save.png" class="Icons" /> for later use and restored <img src="../../../../../Resources/Images/Icons/open.png" class="Icons" /> when needed. Note, that the table on the right already reflects these changes for QC (see below).</li></ol><img src="../../../../../Resources/Images/Survey/Import manipulate header calculation save edit.png" /></li>
-        </ul> <p><b style="font-style: italic;">QC&#160;Trace Headers</b></p><ul><li><b>Table</b>: displays trace headers of an individual trace number <i>Trc</i>.<p><img src="../../../../../Resources/Images/Survey/Import manipulate trace header selection.png" class="General_Image" /></p></li></ul><ul><li><b>Plot</b>: <ol><li>Highlight trace header(s) in the table to plot against trace number.</li><li>Press on <img src="../../../../../Resources/Images/Icons/distmap.png" class="Icons" /> to create a plot.</li><li>If <i>All</i> is unchecked, specify the required range of traces:<p><img src="../../../../../Resources/Images/Survey/Import manipulate plot traces not all.png" class="General_Image" style="vertical-align: top" /></p></li></ol></li></ul><div style="page-break-before: always"><img src="../../../../../Resources/Images/Survey/Import manipulate header value plot.png" class="General_Image" /></div></body>
+    </body>
 </html>

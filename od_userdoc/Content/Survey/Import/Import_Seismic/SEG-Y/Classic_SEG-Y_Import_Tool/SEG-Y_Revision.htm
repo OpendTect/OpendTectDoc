@@ -1,57 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1388" MadCap:lastWidth="954">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="773" MadCap:lastWidth="954">
     <head>
     </head>
     <body>
         <h6>4.3.10.1.2.2 SEG-Y Revision<MadCap:keyword term="SEG-Y Revision" /></h6>
-        <p><b>SEG-Y Revision</b> (default=byte 301 of binary header):  please refer to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> for details.</p>
+        <p>After preparing the SEG-Y import you will be asked to revise the type of your SEG-Y file(s). The time consumption and the smoothness of the import phase will depend on the answer.</p>
+        <img src="../../../../../Resources/Images/Survey/Import segy revision yes.png" class="General_Image" />
         <ul>
-            <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" target="_blank">SEG-Y Rev. 0</a></i>: <ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): byte locations can be selected by a user.</li></ul></li>
-            <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" target="_blank">SEG-Y Rev. 1</a></i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): standard byte locations are used.</li></ul></li>
-            <li><i>SEG-Y Rev. 2</i>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): standard byte locations are used.</li></ul></li>
+            <li><b>[No]:</b> the file is NOT SEG-Y Rev.1 - treat as legacy (i.e. Rev.0) - For un-lucky users the revision 1 flag might wrongly be set to "Yes" in the line header while obviously the file does not comply with the SEG-Y revision 1 norm. It may happen when the software blindly copies entire headers without refreshing all the necessary characters. "Rev.0" is an older way of loading SEG-Y files: The inline and crossline offset (bytes) must be present in the trace headers and their offsets must be provided to the software since it may vary from file to file.</li>
+            <li><b>[Mostly]:</b> It's Rev.1 but I may need to overrule some things - The file is 100% SEG-Y Rev.1 but you would like to overrule some particular information e.g. Coordinates, Sampling rate and Start time etc.</li>
+            <li><b>[Yes]:</b> I know the file is 100% correct SEG-Y Rev.1 - For lucky people, this is by far the most easy and quick way to import your SEG-Y file. No additional settings are required except the final output volume/line name in the OpendTect database.</li>
         </ul>
-        <p><b>Data format</b> (default=byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
-        <p class="note">Most header values and data samples are written using several bytes for each word/sample. Therefore knowing a correct byte order is a necessity. All SEG-Y standards (Rev. 0, 1 and 2) require using big-endian byte order. Occasionally one can run into data written using little-endian (reverse) one. Using standard SEG-Y data formats for reading such data results in unexpected scanned values of trace headers and unexpectedly large sample values  (check the histogram). In this case use data formats with <b>(byte swapped)</b> option.</p>
-        <p><b>Number of samples</b> (default=byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
-        <p><b>Z Range</b> (units=seconds or meters).</p>
-        <ul>
-            <li><b style="font-style: italic;">start</b> (default=bytes 105 <i>laga</i> and 109 <i>delrt</i> of trace headers): (optionally) overrule start of Z-range (negative start is allowed).</li>
-            <li><b style="font-style: italic;">interval</b> (default=byte 17 of binary header / byte 117 of trace header): (optionally) overrule Z-sampling, i.e. sampling rate  (in seconds or meters)</li>
-        </ul>
-        <p class="note">OpendTect doesn't support import of a SEG-Y file with varying trace lengths (i.e. Z range start and interval must be constant for all traces in a file). </p>
-        <p><b>Data positioning</b> (default trace header byte locations as used in OpendTect following theSEG standards)</p>
-        <p>3D&#160;post-stack data:</p>
-        <ul>
-            <li><b>In-line range</b> <ul style="list-style-type: circle;"><li><i>Rev.0</i> default = byte 9</li><li><i>Rev.1/2</i> default =  byte 189</li></ul></li>
-            <li><b>Cross-line range</b>
-                <ul style="list-style-type: circle;">
-                    <li><i>Rev.0</i> default = byte 21</li>
-                    <li><i>Rev.1/2</i> default =  byte 193</li>
-                </ul>
-            </li>
-        </ul>
-        <blockquote>
-            <p>or</p>
-        </blockquote>
-        <ul>
-            <li><b>X-Coordinate range</b> <ul style="list-style-type: circle;"><li><i>Rev.0</i> default = byte 73</li><li><i>Rev.1/2</i> =  byte 181</li></ul></li>
-            <li><b>Y-Coordinate range</b>
-                <ul style="list-style-type: circle;">
-                    <li> <i>Rev.0</i> default = byte 77</li>
-                    <li><i>Rev.1/2</i> default = byte 185</li>
-                </ul>
-            </li>
-        </ul>
-        <p>2D&#160;post-stack data:</p>
-        <ul>
-            <li><b>Trace number range</b> (default=byte 21):<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>Generate</i>: generate trace numbers by providing the number of the first trace in a 2D&#160;line and step in trace numbers.</li></ul></li>
-            <li><b>Shot-Point number range</b>  (default=byte 197)</li>
-            <li><b>X-Coordinate range</b> (default=byte 181)</li>
-            <li><b>Y-Coordinate range</b> (default=byte 185)</li>
-        </ul>
-        <p>2D&#160;and 3D&#160;pre-stack data:</p>
-        <ul>
-            <li><b>Offset range</b> (default=byte 37)<ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>From Src/Rcv (X/Y)</i>: calculate from source and receiver X/Y coordinates (bytes 73 and 77 for source, 81 and 85 for receiver).</li><li><i>Generate</i>: generate offsets  by providing the offset of the first trace and step in offset values.</li></ul></li>
-        </ul>
+        <p>After selecting appropriate option, press <i>Next</i> to reach the import window.</p>
+        <p>You can save the answer to this question in your survey settings by activating the option "Don't ask again for this survey". If you set this flag by mistake and wish to go back you need to edit the ".defs" file (in the OpendTect survey directory) with a text editor and remove the line "SEG-Y Rev. 1 policy:".</p>
     </body>
 </html>
