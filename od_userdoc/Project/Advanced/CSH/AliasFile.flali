@@ -51,7 +51,7 @@
     <Map Name="mmcmddriverimpsHelpID" Link="/Content/Utilities/Tools/Command_Driver.htm" />
     <Map Name="mSurveyHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mSurveyInfoEditorHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
-    <Map Name="mSurveyexportButPushedHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mGenRanLinesByContourHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mIOObjSelDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
     <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm" />
@@ -388,10 +388,10 @@
     <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mProbDenFuncGenSampledHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mrockPhysReqHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
-    <Map Name="mSEGYReadFinisherHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
-    <Map Name="mSEGYReadImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
-    <Map Name="mSEGYReadStarterHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
-    <Map Name="mSEGYStoreImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
+    <Map Name="mSEGYReadFinisherHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard/Import_Window.htm" />
+    <Map Name="mSEGYReadImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard/Import_Window.htm" />
+    <Map Name="mSEGYReadStarterHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard.htm" />
+    <Map Name="mSEGYStoreImpParsDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard/Import_Window.htm" />
     <Map Name="mSelObjFromOtherSurveyHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mSingleBatchJobDispatcherParsHelpID" Link="/Content/Processing/Batch_Processing/Single_Machine_Batch_Processing_Window.htm" />
     <Map Name="mStartNewSurveySetupHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
