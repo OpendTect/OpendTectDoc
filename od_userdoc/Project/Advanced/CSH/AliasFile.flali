@@ -128,7 +128,7 @@
     <Map Name="mSetFontsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mPluginManHelpID" Link="/Content/Utilities/Installation/Plugins.htm" />
     <Map Name="mSurvTopBotImageDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Scene.htm" />
-    <Map Name="mAttrSelDlgNo_NNHelpID" Link="/Content/OpendTect_Trees_And_Elements/Inline_Crossline_Z-Slice.htm" />
+    <Map Name="mAttrSelDlgNo_NNHelpID" Link="/Content/Getting_Started/General_Selection_Window.htm" />
     <Map Name="mMultiMapperRangeEditWinHelpID" Link="/Content/OpendTect_Trees_And_Elements/Inline_Crossline_Z-Slice.htm" />
     <Map Name="mSliceSelHelpID" Link="/Content/OpendTect_Trees_And_Elements/Inline_Crossline_Z-Slice.htm" />
     <Map Name="mGridLinesDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Inline_Crossline_Z-Slice.htm" />
@@ -172,7 +172,7 @@
     <Map Name="mTextureAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
     <Map Name="mSampleValueAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
     <Map Name="mConvolveAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
-    <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon.htm" />
+    <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D.htm" />
     <Map Name="mWaveletExtractionHelpID" Link="/Content/Survey/Manage/Manage_Wavelets/Statitistical_Wavelet_Extraction.htm" />
     <Map Name="mRayTrcParamsDlgHelpID" Link="/Content/Analysis/Layer_Modeling/Synthetic_And_Property-Log_Generation/Ray_Tracing.htm" />
     <Map Name="mMadagascarMainHelpID" Link="/Content/Processing/Madagascar.htm" />
