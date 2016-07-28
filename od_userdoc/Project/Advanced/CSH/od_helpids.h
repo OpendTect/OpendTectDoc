@@ -486,5 +486,8 @@ external/doc_csh instance of it.
 #define		mPrepNLADataHelpID				0x11400000
 #define		mLithCodeManHelpID				0x11400001
 
+//GLCM 115
+#define		mTextuteDirectionalHelpID			0x11500000
+
 #endif
 
