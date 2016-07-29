@@ -4,7 +4,7 @@
   <TocEntry
     Title="OpendTect User Documentation - Version 6.0"
     Link="/Content/HTML Front Page/od_userdoc_v6.htm"
-    conditions="Default.ScreenOnly" />
+    conditions="Default.ScreenOnly"></TocEntry>
   <TocEntry
     Title="pdf_cover"
     Link="/Content/PDF Front Page/pdf_cover.htm"
@@ -1267,4 +1267,7 @@
   <TocEntry
     Title="15 Appendix E - Synthetic Data Generation"
     Link="/Content/Appendix_E-Synthetic_Data_Generation.htm"></TocEntry>
+  <TocEntry
+    Title="Glossary"
+    Link="/Content/Glossary.htm" />
 </CatapultToc>
