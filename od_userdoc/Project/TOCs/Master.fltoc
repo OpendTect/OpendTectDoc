@@ -1248,6 +1248,12 @@
     <TocEntry
       Title="11.27 Volume Statistics"
       Link="/Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
+    <TocEntry
+      Title="11.28 Intercept Gradient"
+      Link="/Content/Appendix_A-Attributes_And_Filters/Inercept_Gradient.htm" />
+    <TocEntry
+      Title="11.29 Near Far"
+      Link="/Content/Appendix_A-Attributes_And_Filters/Near_Far.htm" />
   </TocEntry>
   <TocEntry
     Title="12 Appendix B - Command Driver Manual"
