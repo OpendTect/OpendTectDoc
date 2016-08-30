@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2145" MadCap:lastWidth="1741">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2202" MadCap:lastWidth="1004">
     <head>
     </head>
     <body>
         <h3>9.3.5 Setup Batch Processing<MadCap:keyword term="Setup Batch Processing" /></h3>
-        <p>In order to utilize OpendTect's capability for Multi-Machine Processing (MMP), a <i>BatchHosts</i> file must be used. This file must contain  the list of remote machines (<i>host machines</i> or <i>nodes</i>) and some relevant details about these machines. Two BatchHosts_example files  come with the installation inside the OpendTect <i>data</i> folder, which may be amended for use. OpendTect will use this file to communicate to the remote hosts and launch processes remotely on them. Follow the example file format to add the list of remote machines and their details in the respective fields.</p>
+        <p>In order to utilize OpendTect's capability for Multi-Machine Processing (MMP), a <i>BatchHosts</i> file must be created and used. This file  contains the list of remote machines (<i>host machines</i> or <i>nodes</i>) and some relevant details about these machines and the path to the Survey Data Root.  OpendTect will use this file to communicate to the remote hosts and launch processes remotely on them. Follow the example  format (shown below) to add the list of remote machines and their details in the respective fields.</p>
         <p>In order to minimize complications, the Setup Batch Processing tool (<b>Start OpendTect as ADMIN</b>)&#160;can be used to create a tailor-made BatchHosts file (via <i>Utilities--&gt; Installation--&gt; Setup Batch Processing...</i>):</p>
         <img src="../../Resources/Images/Utilities/Installation setup batch proc.png" class="General_Image" />
         <p style="font-weight: normal;"><b>BatchHosts file:</b> This field is not editable in the User Interface. It is set as a user environment variable:</p>
         <img src="../../Resources/Images/Utilities/batchhost.png" class="General_Image" />
-        <p>This tool allows the user to enter the details necessary for functioning MMP. On pressing 'Close', the file is saved. These include:</p>
         <p><b>IP address:</b> IP address of the node machine(s)</p>
         <p><b>Hostname:</b> Hostname of the node machine(s)</p>
         <p><b>Display name:</b> Free-text field. Text entered here appears in the Multi-Machine Processing window.</p>
