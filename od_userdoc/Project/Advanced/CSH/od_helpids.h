@@ -148,7 +148,7 @@ external/doc_csh instance of it.
 #define         mGrubbsFilterAttribHelpID                       0x10100107
 #define         mVolProcAttribHelpID                            0x10100108
 #define         mEventFreqAttribHelpID                          0x10100109
-#define         mBulkFaultImportHelpID                          0x10100110
+#define		mReliefAttribHelpID				0x10100110
 // Attributes Selection 01
 #define		mAttribDescSetEdHelpID			        0x10101000
 #define		mAttrSelDlgNo_NNHelpID			        0x10101001
@@ -312,6 +312,7 @@ external/doc_csh instance of it.
 #define		mTableImpDataSelFaultStickSet2DHelpID	        0x10401007
 #define		mFaultStickTransferDlgHelpID		        0x10401008
 #define         mFaultOptSelHelpID                              0x10401009
+#define         mBulkFaultImportHelpID				0x10401010
 // Surfaces Manage 02
 #define		mSurfaceManHelpID				0x10402000
 #define		mSurface2DManHelpID				0x10402001
