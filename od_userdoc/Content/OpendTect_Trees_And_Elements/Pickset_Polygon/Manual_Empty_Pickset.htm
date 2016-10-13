@@ -1,13 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="300" MadCap:lastWidth="1616">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1376" MadCap:lastWidth="1770">
     <head>
     </head>
     <body>
         <h3>3.6.1 Manual &amp; Empty Picksets<MadCap:keyword term="Manual &amp; Empty Picksets" /></h3>
-        <p>An empty pickset is added so that the locations (of object) are picked manually. The empty picksets are generally used for supervised neural network training (see the dGB plugins help documentation). An empty pickset is defined by right-clicking on the <i>Pickset</i> element and selecting <i>New &gt; Empty</i> from the pop-up sub-menu. In the Pickset Creation window, write an appropriate name and press OK to insert an empty pickset in the tree. For instance, lets define an object by using manual picks that are representative of salt. Display the corresponding data (line/slice/horizon) in the scene. To start picking, please make it active by clicking on it (If active, it will be highlighted). Within the scene, start clicking on the displayed data (line/horizon). Each click will add a pick. If the pick is wrong, it can be removed by using <b>Ctrl</b> key and left mouse-button click.</p>
+        <p>When an empty pickset is added to the scene, the locations (of object) can be picked manually. This type of pickset is generally used for supervised neural network training (see the dGB plugins help documentation). </p>
+        <p>
+To create an empty pickset :
+</p>
+        <ol>
+            <li>Click on the <i>Pickset</i> element
+</li>
+            <li>Select <i>New &gt; Empty</i> from the drop down menu. 
+</li>
+            <li>In the Pickset Creation window, give a name and press OK to insert an empty pickset in the tree.</li>
+        </ol>
         <img src="../../Resources/Images/OpendTect_Trees_and_Elements/Pickset manual create.png" class="General_Image" />
-        <img src="../../Resources/Images/OpendTect_Trees_and_Elements/Pickset manual example.png" class="General_Image" style="height: auto;width: 100px;" />
-        <p><i>Pickset creation window plus example of picks from the manual creation option. These picks will be used in Neural Network training.</i>
+        <ol MadCap:continue="true">
+            <li>Start picking locations in the 3D scene on data displayed in the 3D scene (inline, crossline, z-slice or horizon).<ul><li>To start picking, please make the pickset active by clicking on it in the scene or in the tree (If active, it will be highlighted).</li><li>Each click will add a pick. If the pick is wrong, it can be removed by using <b>Ctrl</b> key and left mouse-button click.</li></ul></li>
+            <li>In the tree, right-click on the name of the pickset you are interpreting and select Save as… to save your pickset.</li>
+        </ol>
+        <img src="../../Resources/Images/OpendTect_Trees_and_Elements/Pickset manual example.png" class="General_Image" />
+        <p><i>Example of manual picking. These picks will be used in Neural Network training.</i>
         </p>
     </body>
 </html>

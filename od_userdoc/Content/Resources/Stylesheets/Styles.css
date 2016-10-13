@@ -279,3 +279,13 @@ MadCap|dropDown
 	margin-top: 20px;
 }
 
+table.noborders
+{
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin: 20px;
+	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+}
+
