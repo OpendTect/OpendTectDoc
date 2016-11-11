@@ -119,6 +119,7 @@ img.General_Image
 	margin-top: 20px;
 	margin-right: 20px;
 	max-width: 100%;
+	mc-printer-page-footer-margin: 20px;
 }
 
 img.Icons
@@ -164,6 +165,11 @@ p.toc_heading
 body.cover_page
 {
 	font-family: Arial;
+}
+
+img
+{
+	
 }
 
 @media print
@@ -287,5 +293,10 @@ table.noborders
 	width: 100%;
 	margin-left: 0;
 	margin-right: auto;
+}
+
+div.pagebreak
+{
+	page-break-before: always;
 }
 
