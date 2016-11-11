@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="599" MadCap:lastWidth="822">
+    <head>
+    </head>
+    <body>
+        <h2>16.4 Option 2: Usage Through the MEX Files in MATLAB Itself<MadCap:keyword term="Usage Through the MEX Files in MATLAB Itself" /></h2>
+        <p>In case you do not want to use the OpendTect GUI for data exchange with MATLAB, there is an alternative option. OpendTect provides functions that can be used in MATLAB to read/write arrays from/to an OpendTect datastore. The following setup is required:</p>
+        <ul>
+            <li>The binaries are located in <code>$DTECT_APPL/bin/$PLFSUBDIR/MATLAB</code>. Ensure they are executable.<ul><li><code>DTECT_APPL</code> stands for the OpendTect installation folder, e.g. <code>/apps/OpendTect/6.0.0</code> or <code>C:\Program Files\OpendTect\6.0.0\</code></li><li><code>PLFSUBDIR</code> stands for the platform directory. Possible values are <code>lux64</code> for Linux 64 bits and <code>win64</code> for Windows 64 bit.</li></ul></li>
+            <li>Copy or link these binaries in your <code>MATLABPATH</code>, for instance in <code>$HOME/Documents/MATLAB</code>, or add the path to the MEX files in MATLAB.</li>
+            <li>Provide the path to your OpendTect libraries before starting MATLAB:<ul><li>Linux: <code>setenv LD_LIBRARY_PATH $LD_LIBRARY_PATH:$DTECT_APPL/bin/lux64/Release</code></li><li>Windows: add <code>$DTECT_APPL\bin\win64\Release</code> to your system path</li></ul></li>
+            <li>Start MATLAB. Call the functions <code>readcbvs()</code> and <code>writecbvs()</code> in your MATLAB routine, to read/write seismic attribute volumes (CBVS files) from/to OpendTect project. Further, the <code>writesegyindex()</code> can be called to write the output as a SEG-Y file.</li>
+        </ul>
+        <p>Examples:</p>
+        <p><code>data = readcbvs( “pathtoparfile.par” )</code>
+        </p>
+        <p><code>writecbvs( “pathtoparfile.par”, data )</code>
+        </p>
+    </body>
+</html>

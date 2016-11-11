@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1871" MadCap:lastWidth="848">
+    <head>
+    </head>
+    <body>
+        <h3>16.3.1 Setting Up MATLAB Link<MadCap:keyword term="Setting Up MATLAB Link" /></h3>
+        <p style="font-weight: bold;">For both Linux* and Windows</p>
+        <p><code>setenv MATLAB_DIR /auto/users/appman/matlab/R2013a</code>
+        </p>
+        <p>This specifies location of the directory where MATLAB is installed. Illustration of setting up this environment variable in Windows is shown below. For Linux simply type the above command (<i>with your MATLAB installation path!</i>) in a terminal to set the environment variable.</p>
+        <p style="font-weight: bold;">Windows only</p>
+        <p><code>set PATH: %PATH%;%MATLAB_DIR%\bin\win64</code>
+        </p>
+        <p>The Path environment variable needs to be edited in Windows (<i>illustration below</i>).</p>
+        <p style="font-weight: bold;">Linux* only</p>
+        <p><code>setenv LD_LIBRARY_PATH $MATLAB_DIR/bin/glnxa64:$MATLAB_DIR/runtime/glnxa64</code>
+        </p>
+        <p>Set the <code>LD_LIBRARY_PATH</code> variable to the location of the MATLAB binaries and the compiler binaries. Simply type the above command in your Linux terminal.</p>
+        <p>*The script odinit.matlab (provided in the root of the software installation) automatically tries to set-up both the environment variables (<code>MATLAB_DIR</code> and <code>LD_LIBRARY_PATH</code>). However, if the automatic application of the script fails, the user should manually set-up the two environment variables in Linux as mentioned above.</p>
+        <p>It is also <i>mandatory</i> to either rename or remove <code>/bin/lux64/Release/libstdc++.so.6</code> and <code>/bin/lux64/Release/libgcc_s.so.1</code> files. The aforementioned script odinit.matlab prompts you to do it as well.</p>
+        <p>The user may also set the variable <code>MATLAB_BUILDDIR</code> to the prefered location of the shared libraries. This path is used to set the default folder when browsing shared libraries from OpendTect. It defaults to <code>MATLAB_DIR</code>.</p>
+        <p style="font-weight: bold;">Illustration of setting up environment variables In Windows</p>
+        <p>Control Panel &gt; System &gt; Advanced system settings &gt; Advanced (tab) &gt; Environment Variables</p>
+        <img src="../../Resources/Images/Appendix_F/setting_up_matlab_directory.png" class="General_Image" />
+        <p style="font-style: italic;">First environment variable: setting up MATLAB directory to C:\Program Files\MATLAB\R2013a</p>
+        <img src="../../Resources/Images/Appendix_F/edit_path_variable.png" class="General_Image" />
+        <p style="font-style: italic;">Second environment variable: Edit the path variable and add following entry C:\ProgramFiles\MATLAB\R2013a\bin\win64</p>
+    </body>
+</html>

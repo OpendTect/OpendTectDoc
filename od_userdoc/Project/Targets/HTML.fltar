@@ -18,7 +18,10 @@
   conditions="Default.ScreenOnly"
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
   BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs"
-  PreCompileScaledImages="false">
+  PreCompileScaledImages="false"
+  EnableSitemap="true"
+  SitemapWebUrl="http://doc.opendtect.org/6.0.0/doc/od_userdoc/"
+  EquationsOutputType="SVG">
   <PrintedOutput
     CollapseMargins="true" />
 </CatapultTarget>
