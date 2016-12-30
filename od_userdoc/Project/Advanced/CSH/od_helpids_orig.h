@@ -403,7 +403,6 @@ external/doc_csh instance of it.
 #define		mCheckShotEditHelpID			        0x10704004
 //Tracking 108
 // Trakcing I/O 00
-#define	        mTrackingWizardHelpID			        0x10800000
 #define		mTrackingSetupGroupHelpID			0x10800001
 
 //Random_lines 109
