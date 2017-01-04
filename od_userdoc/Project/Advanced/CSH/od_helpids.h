@@ -350,7 +350,6 @@ external/doc_csh instance of it.
 #define		mFetchPicksHelpID				0x10500000
 #define		mImpPickSetHelpID			        0x10500001
 #define		mExpPickSetHelpID			        0x10500002
-#define		mStorePicksHelpID				0x10500003
 #define		mMergePickSetsHelpID			        0x10500004
 #define		mTableImpDataSelpicksHelpID		        0x10500005
 #define		mPickSetManHelpID				0x10500006
