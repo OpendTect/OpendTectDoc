@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="23514" MadCap:lastWidth="1392">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="20904" MadCap:lastWidth="1756">
     <head>
     </head>
     <body>
@@ -76,13 +76,13 @@
         <p><b><a name="Executing_scripts_from_the_command_line"></a>Executing scripts from the command line</b>
         </p>
         <p>One does not necessarily have to run a command script from OpendTect's user interface. One or more scripts can also run straight from the command line, and with that they might be called from shell scripts as well. An example of the command line syntax on Linux:</p>
-        <p><code>start_dtect cmd=/full_path_1/my_script_1.odcmd ... cmd=/full_path_N/my_script_N.odcmd</code>
+        <p><code>start_dtect --cmd /full_path_1/my_script_1.odcmd ... /full_path_N/my_script_N.odcmd</code>
         </p>
         <p>This line opens a new instance of OpendTect and starts running the given scripts in there. OpendTect will not automatically close when all scripts are finished. If necessary, this must be done from the last script using the 'Close All' command. Note that command line execution is only possible if your OpendTect auto-loads the Command Driver plug-in at startup.</p>
-        <p>The user can also create command scripts named 'autoexec.odcmd'. If available, these scripts will be run at start-up before any script specified on the command line. The first autoexec-script to be run is searched in the settings directory. This is the '.od'-subdirectory of your personal home directory, unless the DTECT_SETTINGS or DTECT_WINSETTINGS environment variable specifies otherwise. The second autoexec-script to be run is searched in the 'Proc'-directory of the start-up survey. Next, the command line scripts will be run in order. Moreover, every time a new survey is selected in OpendTect, the 'Proc'-directory of this new survey will also be searched for an autoexec-script to be run at that moment.</p>
-        <p>Apart from the availability of autoexec-scripts, their execution can always be disabled by adding 'cmd=noautoexec', 'cmd=nosettingsautoexec' or 'cmd=nosurveyautoexec' as an extra argument on the command line. Command line argument 'cmdlog=/full_path/my_odcmdlog.txt' will override the location of the output log file. Its default name is 'odcmdlog.txt' and it is located in the 'Proc'-directory of the start-up survey, if writable, or in the personal user directory otherwise.</p>
-        <p>To run a command file other than 'autoexec.odcmd' on Windows, one has to create a DOS batch file. That file must contain a command line similar to this:</p>
-        <p><code>X:\full_path_0\bin\win64\od_main cmd="X:\full_path_1\my_script_1.odcmd" ...</code>
+        <p>The user can also create command scripts named <code>autoexec.odcmd</code>. If available, these scripts will be run at start-up before any script specified on the command line. The first autoexec-script to be run is searched in the settings directory. This is the <code>.od</code> subdirectory of your personal home directory, unless the <code>DTECT_SETTINGS</code> or <code>DTECT_WINSETTINGS</code> environment variable specifies otherwise. The second autoexec-script to be run is searched in the <code>Proc</code> directory of the start-up survey. Next, the command line scripts will be run in order. Moreover, every time a new survey is selected in OpendTect, the <code>Proc</code> directory of this new survey will also be searched for an autoexec-script to be run at that moment.</p>
+        <p>Apart from the availability of autoexec-scripts, their execution can always be disabled by adding <code>--noautoexec</code>, <code>--nosettingsautoexec</code> or <code>--nosurveyautoexec</code> as an extra argument on the command line. Command line argument <code>--cmdlog /full_path/my_odcmdlog.txt</code> will override the location of the output log file. Its default name is <code>odcmdlog.txt</code> and it is located in the <code>Proc</code> directory of the start-up survey, if writable, or in the personal user directory otherwise.</p>
+        <p>To run a command file other than <code>autoexec.odcmd</code> on Windows, one has to create a DOS batch file. That file must contain a command line similar to this:</p>
+        <p><code>X:\full_path_0\bin\win64\od_main --cmd "X:\full_path_1\my_script_1.odcmd" ...</code>
         </p>
         <p>Go to your OpendTect installation folder to ascertain the right name and location of the OpendTect executable (i.e. which disk, bin-path, win32 / win64, and '.exe'-file name?). Executing your DOS batch file will open a new instance of OpendTect and run the given script at startup.</p>
         <p><b><a name="Window_management"></a>Window management</b>
