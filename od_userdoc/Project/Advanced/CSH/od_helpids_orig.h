@@ -80,7 +80,6 @@ external/doc_csh instance of it.
 #define		mGridLinesDlgHelpID				0x05000003
 #define		mPropertiesDlgHelpID			        0x05000004
 #define		mScenePropertyDlgHelpID				0x05000005
-#define		mColorBarDialog					0x05000006
 #define		mZScaleDlgHelpID				0x05000007
 #define		mPSViewerSettingDlgHelpID			0x05000008
 #define		mPrintSceneDlgHelpID			        0x05000009
