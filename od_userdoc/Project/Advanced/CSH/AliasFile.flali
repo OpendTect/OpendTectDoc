@@ -30,7 +30,7 @@
     <Map Name="mExportFaultHelpID" Link="/Content/Survey/Export/Export_Faults.htm" />
     <Map Name="mExportFaultStickHelpID" Link="/Content/Survey/Export/Export_FaultStickSets.htm" />
     <Map Name="mExportHorizonHelpID" Link="/Content/Survey/Export/Export_Horizons.htm" />
-    <Map Name="mExpPickSetHelpID" Link="/Content/Survey/Export/Export_PickSets_Polygons.htm" />
+    <Map Name="mExpPickSetHelpID" Link="/Content/Survey/Export/Export_Pointsets_Polygons.htm" />
     <Map Name="mExpRokDocPDFHelpID" Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
     <Map Name="mFaultsManageHelpID" Link="/Content/Survey/Manage/Manage_Faults.htm" />
     <Map Name="mFaultStickSetsManageHelpID" Link="/Content/Survey/Manage/Manage_FaultStickSets.htm" />
@@ -64,7 +64,7 @@
     <Map Name="mImportHorizonHelpID" Link="/Content/Survey/Import/Import_Horizons/Geometry_3D.htm" />
     <Map Name="mImportHorAttribHelpID" Link="/Content/Survey/Import/Import_Horizons/Attributes_3D.htm" />
     <Map Name="mPreStackImportMuteHelpID" Link="/Content/Survey/Import/Import_Mute_Functions.htm" />
-    <Map Name="mImpPickSetHelpID" Link="/Content/Survey/Import/Import_PickSets_Polygons.htm" />
+    <Map Name="mImpPickSetHelpID" Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
     <Map Name="mImpRokDocPDFHelpID" Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
     <Map Name="mSEGYDefDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
     <Map Name="mSeisIOSimpleImpHelpID" Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
@@ -86,7 +86,7 @@
     <Map Name="mSurfaceManHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_3D.htm" />
     <Map Name="mSurface2DManHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_2D.htm" />
     <Map Name="mManPROPSHelpID" Link="/Content/Survey/Manage/Manage_Layer_Properties.htm" />
-    <Map Name="mPickSetManHelpID" Link="/Content/Survey/Manage/Manage_PickSets_Polygons.htm" />
+    <Map Name="mPickSetManHelpID" Link="/Content/Survey/Manage/Manage_Pointsets_Polygons.htm" />
     <Map Name="mProbDenFuncManHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions.htm" />
     <Map Name="mSeisFileMan2DHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics.htm" />
     <Map Name="mSeisFileMan3DHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics.htm" />
@@ -204,10 +204,10 @@
     <Map Name="mODEditAttribColorDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Seismic_2D.htm" />
     <Map Name="mAttrSrchProcFilesHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
     <Map Name="mArrowDialogHelpID" Link="/Content/OpendTect_Trees_And_Elements/Annotations.htm" />
-    <Map Name="mMergePickSetsHelpID" Link="/Content/Survey/Manage/Manage_PickSets_Polygons.htm" />
-    <Map Name="mFetchPicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Manual_Empty_Pickset.htm" />
-    <Map Name="mCalcPoly2HorVolHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Pop-Up_Menus.htm" />
-    <Map Name="mGoogleExportPolygonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Pop-Up_Menus.htm" />
+    <Map Name="mMergePickSetsHelpID" Link="/Content/Survey/Manage/Manage_Pointsets_Polygons.htm" />
+    <Map Name="mFetchPicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Manual_Empty_Pickset.htm" />
+    <Map Name="mCalcPoly2HorVolHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
+    <Map Name="mGoogleExportPolygonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     <Map Name="mContourParsDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/Display_Contours.htm" />
     <Map Name="mAddFunctionHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Velocity_Gridder.htm" />
     <Map Name="mProbGenFuncGenHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions.htm" />
@@ -233,7 +233,7 @@
     <Map Name="mDPSSelectednessDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window.htm" />
     <Map Name="mEvaluateDlgHelpID" Link="/Content/Analysis/Attributes/Attribute_Set_Toolbar.htm" />
     <Map Name="mGeom2DImpDlgHelpID" Link="/Content/Survey/Manage/Manage_Geometry_2D.htm" />
-    <Map Name="mGoogleExportRandomLineHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Pop-Up_Menus.htm" />
+    <Map Name="mGoogleExportRandomLineHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     <Map Name="mHor3DFrom2DDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Workflows.htm" />
     <Map Name="mImplBodyCalDlgHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Esitmate_Body_Volume.htm" />
     <Map Name="mImplicitBodyValueSwitchDlgHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Switch_Body_Values.htm" />
@@ -297,7 +297,7 @@
     <Map Name="mSeis2DMultiLineSelDlgHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Create_2D_Output.htm" />
     <Map Name="mSeisPartServerselect2DLinesHelpID" Link="/Content/OpendTect_Trees_And_Elements/Seismic_2D.htm" />
     <Map Name="mSelectPropRefsHelpID" Link="/Content/Analysis/Layer_Modeling/Layer_Description.htm" />
-    <Map Name="mSetPickDirsHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Pop-Up_Menus.htm" />
+    <Map Name="mSetPickDirsHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     <Map Name="mSimpleMultiWellCreateReadDataHelpID" Link="/Content/Survey/Manage/Manage_Wells/Simple_Multi-Well_Creation.htm" />
     <Map Name="mStartSynthOutSelHelpID" Link="/Content/Analysis/Layer_Modeling/Synthetic_And_Property-Log_Generation/Export_Synthetic_Datasets.htm" />
     <Map Name="mSingleAttribEdHelpID" Link="/Content/Analysis/Layer_Modeling/Cross-Plots.htm" />
@@ -315,7 +315,7 @@
     <Map Name="mSurfaceLimitedFillerHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Horizon-Based_Painter.htm" />
     <Map Name="mSynthToRealScaleHelpID" Link="/Content/Analysis/Layer_Modeling/Synthetic_And_Property-Log_Generation/Wavelet.htm" />
     <Map Name="mTableImpDataSelmarkersHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
-    <Map Name="mTableImpDataSelpicksHelpID" Link="/Content/Survey/Import/Import_PickSets_Polygons.htm" />
+    <Map Name="mTableImpDataSelpicksHelpID" Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
     <Map Name="mTableImpDataSelpvdsHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
     <Map Name="mTableImpDataSelwellsHelpID" Link="/Content/Survey/Import/Import_Wells/Simple_Multi-Well.htm" />
     <Map Name="mVelocityDescDlg" Link="/Content/Scenes/Time_And_Depth-Converted_Scenes.htm" />
@@ -355,8 +355,8 @@
     <Map Name="mSeis2DTo3DHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D.htm" />
     <Map Name="mSeisCopyHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics/Copy_Data Set.htm" />
     <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Format_Scaling.htm" />
-    <Map Name="mStorePicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Manual_Empty_Pickset.htm" />
-    <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon.htm" />
+    <Map Name="mStorePicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Manual_Empty_Pickset.htm" />
+    <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm" />
     <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />
     <Map Name="mViewer2DPSPosDlgHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />

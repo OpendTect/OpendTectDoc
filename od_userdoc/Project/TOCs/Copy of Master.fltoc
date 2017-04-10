@@ -129,22 +129,22 @@
       Link="/Content/OpendTect_Trees_And_Elements/Seismic_2D.htm" />
     <TocEntry
       Title="3.6 Pickset &amp; Polygon"
-      Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon.htm">
+      Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm">
       <TocEntry
         Title="3.6.1 Manual &amp; Empty Picksets"
-        Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Manual_Empty_Pickset.htm" />
+        Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Manual_Empty_Pickset.htm" />
       <TocEntry
         Title="3.6.2 Generate Random Picks (3D)"
-        Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Generate_Random_Picks_3D.htm" />
+        Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Generate_Random_Points_3D.htm" />
       <TocEntry
         Title="3.6.3 Generate Random Picks (2D)"
-        Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Generate_Random_Picks_2D.htm" />
+        Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Generate_Random_Points_2D.htm" />
       <TocEntry
         Title="3.6.4 Polygon"
-        Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Polygon.htm" />
+        Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Polygon.htm" />
       <TocEntry
         Title="3.6.5 Pop-Up Menus"
-        Link="/Content/OpendTect_Trees_And_Elements/Pickset_Polygon/Pop-Up_Menus.htm" />
+        Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     </TocEntry>
     <TocEntry
       Title="3.7 Horizon"
@@ -317,7 +317,7 @@
         Link="/Content/Survey/Import/Import_Mute_Functions.htm" />
       <TocEntry
         Title="4.3.8 Import PickSets &amp; Polygons"
-        Link="/Content/Survey/Import/Import_PickSets_Polygons.htm" />
+        Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
       <TocEntry
         Title="4.3.9 Import Probability Density Functions"
         Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
@@ -432,7 +432,7 @@
         Link="/Content/Survey/Export/Export_Mute_Functions.htm" />
       <TocEntry
         Title="4.4.6 Export PickSets &amp; Polygons"
-        Link="/Content/Survey/Export/Export_PickSets_Polygons.htm" />
+        Link="/Content/Survey/Export/Export_Pointsets_Polygons.htm" />
       <TocEntry
         Title="4.4.7 Export Probability Density Functions"
         Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
@@ -529,7 +529,7 @@
         Link="/Content/Survey/Manage/Manage_Layer_Properties.htm" />
       <TocEntry
         Title="4.5.10 Manage PickSets &amp; Polygons"
-        Link="/Content/Survey/Manage/Manage_PickSets_Polygons.htm" />
+        Link="/Content/Survey/Manage/Manage_Pointsets_Polygons.htm" />
       <TocEntry
         Title="4.5.11 Manage Probability Density Functions"
         Link="/Content/Survey/Manage/Manage_Probability_Density_Functions.htm">
