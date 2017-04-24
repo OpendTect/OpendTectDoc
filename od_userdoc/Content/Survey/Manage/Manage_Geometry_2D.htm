@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2994" MadCap:lastWidth="1478">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2975" MadCap:lastWidth="1826">
     <head>
     </head>
     <body>
@@ -14,14 +14,14 @@
         <img src="../../Resources/Images/Survey/Manage 2D line geometry.png" class="General_Image" />
         <p>The name of the selected line is specified on top of the window. To edit a field, click on it and type the new value. Changes will be saved on disk only after pressing <i>OK</i>. Optionally, the entire geometry of the selected 2D line can be updated by reading a text file by clicking on <i>Import New Geometry</i> (see section below).</p>
         <p style="font-weight: bold;">Line geometry import</p>
-        <p>In the selection window (see below), select the input Ascii file. The input file should be column sorted with one point per record (line).Optionally, you can display the input file by clicking on <i>Examine</i>: you will be able to check the values and it will help you filling it the remaining information.</p>
+        <p>In the selection window (see below), select the input Ascii file. The input file should be column sorted with one pick per record (line).Optionally, you can display the input file by clicking on <i>Examine</i>: you will be able to check the values and it will help you filling it the remaining information.</p>
         <img src="../../Resources/Images/Survey/Manage 2D read new line geometry.png" class="General_Image" />
         <p>You need to specify the presence/absence of a header and its size if present. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword.</p>
         <p>The file definition needs to be filed in to know which data corresponds to which column.</p>
         <img src="../../Resources/Images/Survey/Manage 2D format definition.png" class="General_Image" />
         <p>The   <img src="../../Resources/Images/Icons/define.png" class="Icons" /> Define button gives access to the format definition window (see above). You must specify in the format definition window:</p>
         <ul>
-            <li>­	the column numbers for the position: as X/Y coordinates or Inline/Crossline. The coordinate units must be in the same units as the coordinates of the survey corner points. Inline/crossline can be used but it is not recommended because of the grid spacing.</li>
+            <li>­	the column numbers for the position: as X/Y coordinates or Inline/Crossline. The coordinate units must be in the same units as the coordinates of the survey corner picks. Inline/crossline can be used but it is not recommended because of the grid spacing.</li>
             <li>­	Optionally the trace number column. It is not recommended to alter (re-specify) the trace numbers since it may corrupt the already loaded data.</li>
             <li>­	Optionally, the reading can be stopped at a specific line by providing the adequate keyword: the reading will stop at the first occurrence of that word.</li>
         </ul>

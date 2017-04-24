@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5133" MadCap:lastWidth="1377">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5000" MadCap:lastWidth="1800">
     <head>
     </head>
     <body>
@@ -36,7 +36,7 @@
             <li><u>Threshold type:</u>
                 <ul>
                     <li><i>Cut-off amplitude</i>: Here, an absolute amplitude is used as the stopping criteria for the tracker. When the tracker encounters a value below this threshold value it stops tracking. (For a max-event the tracker stops if the value is below this threshold value, and for a min-event when it is above this threshold value). Tip: point your mouse at the event and the amplitude value is displayed at the bottom of your screen.</li>
-                    <li><i>Relative difference</i>: The tracker will compare the amplitude of the last tracked point to the amplitude of the point that is candidate for tracking. If the difference exceeds the chosen percentage, the tracker stops tracking. Further explanation on Steps is given below.</li>
+                    <li><i>Relative difference</i>: The tracker will compare the amplitude of the last tracked pick to the amplitude of the pick that is candidate for tracking. If the difference exceeds the chosen percentage, the tracker stops tracking. Further explanation on Steps is given below.</li>
                 </ul>
             </li>
             <li><u>Search Window:</u> The tracker searches for the chosen event type based on amplitude in a time window relative to the last tracked sample.</li>
@@ -46,7 +46,7 @@
         <p><b>Correlation Tab</b>
         </p>
         <img src="../../../../Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker similarity.png" class="General_Image" />
-        <p>A trace segment around the last tracked point is compared to all the trace segments on the neighboring traces around the points that lie within the Search window (See figure below). </p>
+        <p>A trace segment around the last tracked pick is compared to all the trace segments on the neighboring traces around the picks that lie within the Search window (See figure below). </p>
         <p>In this tab, one can do auto-tracking by turning the correlation ON. The correlation window should be small enough to ensure a waveform. The threshold is generally strict (80% or higher)&#160;to track only high quality amplitudes. The correlation window size can be changed by moving the green lines in the display window.</p>
         <p><b>Properties Tab</b>
         </p>
