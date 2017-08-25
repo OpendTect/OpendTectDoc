@@ -38,7 +38,6 @@ external/doc_csh instance of it.
 #define		mCopySurveySIPHelpID			        0x00003006
 #define		mConvertPosHelpID				0x00003007
 #define		m2DDefSurvInfoDlgHelpID				0x00003008
-#define		mLatLong2CoordDlgHelpID				0x00003009
 #define		mGoogleExportSurveyHelpID			0x00003010
 #define		mSeisWvltMangetFromOtherSurveyHelpID	        0x00003011
 #define		mSurveyCompressButPushedHelpID			0x00003012
@@ -310,7 +309,6 @@ external/doc_csh instance of it.
 #define		mTableImpDataSelFaultStickSet2DHelpID	        0x10401007
 #define		mFaultStickTransferDlgHelpID		        0x10401008
 #define         mFaultOptSelHelpID                              0x10401009
-#define         mBulkFaultImportHelpID				0x10401010
 // Surfaces Manage 02
 #define		mSurfaceManHelpID				0x10402000
 #define		mSurface2DManHelpID				0x10402001
