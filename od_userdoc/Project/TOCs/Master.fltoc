@@ -1168,85 +1168,88 @@
     Title="11 Appendix A - Attributes and Filters"
     Link="/Content/Appendix_A-Attributes_And_Filters.htm">
     <TocEntry
-      Title="11.1 Convolve (2D &amp; 3D)"
+      Title="11.1 CEEMD - Spectral Decomposition"
+      Link="/Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
+    <TocEntry
+      Title="11.2 Convolve (2D &amp; 3D)"
       Link="/Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
     <TocEntry
-      Title="11.2 Delta Resample"
+      Title="11.3 Delta Resample"
       Link="/Content/Appendix_A-Attributes_And_Filters/Delta_Resample.htm" />
     <TocEntry
-      Title="11.3 Energy"
+      Title="11.4 Energy"
       Link="/Content/Appendix_A-Attributes_And_Filters/Energy.htm" />
     <TocEntry
-      Title="11.4 Event"
+      Title="11.5 Event"
       Link="/Content/Appendix_A-Attributes_And_Filters/Event.htm" />
     <TocEntry
-      Title="11.5 Fingerprint"
+      Title="11.6 Fingerprint"
       Link="/Content/Appendix_A-Attributes_And_Filters/Fingerprint.htm" />
     <TocEntry
-      Title="11.6 Frequency Filter"
+      Title="11.7 Frequency Filter"
       Link="/Content/Appendix_A-Attributes_And_Filters/Frequency_Filter.htm" />
     <TocEntry
-      Title="11.7 Frequency"
+      Title="11.8 Frequency"
       Link="/Content/Appendix_A-Attributes_And_Filters/Frequency.htm" />
     <TocEntry
-      Title="11.8 GapDecon"
+      Title="11.9 GapDecon"
       Link="/Content/Appendix_A-Attributes_And_Filters/GapDecon.htm" />
     <TocEntry
-      Title="11.9 Grubbs Filter"
+      Title="11.10 Grubbs Filter"
       Link="/Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
     <TocEntry
-      Title="11.10 Horizon"
+      Title="11.11 Horizon"
       Link="/Content/Appendix_A-Attributes_And_Filters/Horizon.htm" />
     <TocEntry
-      Title="11.11 Instantaneous"
+      Title="11.12 Instantaneous"
       Link="/Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
     <TocEntry
-      Title="11.12 Log"
+      Title="11.13 Log"
       Link="/Content/Appendix_A-Attributes_And_Filters/Log.htm" />
     <TocEntry
-      Title="11.13 Match Delta"
+      Title="11.14 Match Delta"
       Link="/Content/Appendix_A-Attributes_And_Filters/Match_Delta.htm" />
     <TocEntry
-      Title="11.14 Mathematics"
+      Title="11.15 Mathematics"
       Link="/Content/Appendix_A-Attributes_And_Filters/Mathematics.htm" />
     <TocEntry
-      Title="11.15 Position"
+      Title="11.16 Position"
       Link="/Content/Appendix_A-Attributes_And_Filters/Position.htm" />
     <TocEntry
-      Title="11.16 Prestack"
+      Title="11.17 Prestack"
       Link="/Content/Appendix_A-Attributes_And_Filters/Prestack.htm" />
     <TocEntry
-      Title="11.17 Pseudo Relief"
+      Title="11.18 Pseudo Relief"
       Link="/Content/Appendix_A-Attributes_And_Filters/Pseudo_Relief.htm" />
     <TocEntry
-      Title="11.18 Reference"
+      Title="11.19 Reference"
       Link="/Content/Appendix_A-Attributes_And_Filters/Reference.htm" />
     <TocEntry
-      Title="11.19 Reference Shift"
+      Title="11.20 Reference Shift"
       Link="/Content/Appendix_A-Attributes_And_Filters/Reference_Shift.htm" />
     <TocEntry
-      Title="11.20 Sample Value"
+      Title="11.21 Sample Value"
       Link="/Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
     <TocEntry
-      Title="11.21 Scaling"
+      Title="11.22 Scaling"
       Link="/Content/Appendix_A-Attributes_And_Filters/Scaling.htm" />
     <TocEntry
-      Title="11.22 Semblance"
+      Title="11.23 Semblance"
       Link="/Content/Appendix_A-Attributes_And_Filters/Semblance.htm" />
     <TocEntry
-      Title="11.23 Similarity"
+      Title="11.24 Similarity"
       Link="/Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
     <TocEntry
-      Title="11.24 Spectral Decomposition"
+      Title="11.25 Spectral Decomposition"
       Link="/Content/Appendix_A-Attributes_And_Filters/Spectral_Decomposition.htm" />
     <TocEntry
-      Title="11.25 Texture"
+      Title="11.26 Texture"
       Link="/Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
     <TocEntry
-      Title="11.26 Texture - Directional"
+      Title="11.27 Texture - Directional"
       Link="/Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
     <TocEntry
-      Title="11.27 Volume Statistics"
+      Title="11.28 Volume Statistics"
       Link="/Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
   </TocEntry>
   <TocEntry
