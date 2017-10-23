@@ -104,6 +104,7 @@ external/doc_csh instance of it.
 #define		mSessionManHelpID				0x05003002
 #define         mSlideLayoutDlgHelpID                           0x05003003
 #define         mPresentationMakerDlgHelpID                     0x05003004
+#define		mSessionSaveRestoreHelpID			0x05003005
 //Flat_displays 51
 // Flat_displays Display 00
 #define		mODViewer2DHelpID				0x05100000
