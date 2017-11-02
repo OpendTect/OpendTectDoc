@@ -54,7 +54,7 @@
     <Map Name="mGenRanLinesByContourHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mIOObjSelDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
-    <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm" />
+    <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm#autoloadsession" />
     <Map Name="mColTabImportHelpID" Link="/Content/Survey/Import/Import_Color_Table.htm" />
     <Map Name="mImpPVDSHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
     <Map Name="mImportFaultHelpID" Link="/Content/Survey/Import/Import_Faults/Import_Fault_Ascii_3D.htm" />
@@ -228,7 +228,6 @@
     <Map Name="mDataPointSetHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Table.htm" />
     <Map Name="mDataPointSetMergerHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />
     <Map Name="mdataPointSetSaveHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Table.htm" />
-    <Map />
     <Map Name="mDPSOverlayPropDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window/Overlay_From_A_Third_Attribute.htm" />
     <Map Name="mDPSSelectednessDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window.htm" />
     <Map Name="mEvaluateDlgHelpID" Link="/Content/Analysis/Attributes/Attribute_Set_Toolbar.htm" />
@@ -355,7 +354,6 @@
     <Map Name="mSeis2DTo3DHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D.htm" />
     <Map Name="mSeisCopyHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics/Copy_Data Set.htm" />
     <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Format_Scaling.htm" />
-    <Map Name="mStorePicksHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Manual_Empty_Pickset.htm" />
     <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm" />
     <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />
@@ -406,4 +404,7 @@
     <Map Name="mWellRockPhysLauncherHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
     <Map Name="mWhereIsDotDlgHelpID" Link="/Content/Getting_Started/System_Overview.htm" />
     <Map Name="mTextuteDirectionalHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
+    <Map Name="mSessionSaveRestoreHelpID" Link="/Content/Survey/Session.htm" />
+    <Map Name="mReliefAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Pseudo_Relief.htm" />
+    <Map Name="mDipFilterAttribHelpID" Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm#dipfilter" />
 </CatapultAliasFile>
