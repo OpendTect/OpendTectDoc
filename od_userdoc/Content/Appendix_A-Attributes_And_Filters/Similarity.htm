@@ -4,22 +4,27 @@
     </head>
     <body>
         <h2>11.23 Similarity<MadCap:keyword term="Similarity" /></h2>
-        <p><b>Name</b>
+        <p>
+            <b>Name</b>
         </p>
         <p>Similarity -- Multi-trace attribute that returns trace-to-trace similarity properties</p>
-        <p><b>Description</b>
+        <p>
+            <b>Description</b>
         </p>
         <p>Similarity is a form of "coherency" that expresses how much two or more trace segments look alike. A similarity of 1 means the trace segments are completely identical in waveform and amplitude. A similarity of 0 means they are completely dis-similar.</p>
         <p>In OpendTect, we favor a different approach. We first try to find the direction of best match at every position, which is a result by itself: the dip. By using this dip we can then calculate the best Similarity between adjacent traces. Similarity is based on fundamental mathematics: the samples of the trace are seen as components of a vector, and the Similarity is defined in terms of distance in hyperspace.</p>
         <p>The point about using the Similarity is that it's mathematically simple; it is very clear what is going on. Then, by combining different kinds of similarities and other attributes, you can always get much better results with lots less computing time.</p>
         <p>Consider the trace segments to be vectors in hyperspace. Similarity is then defined as one minus the Euclidean distance between the vectors, normalized over the vector lengths.</p>
-        <p>The trace segments is defined by the <i>time-gate</i> in ms and the positions specified in relative co-ordinates. In case of using input from 2D data, the trace positions are defined by a trace step-out only, not by inline and crossline stepout. The <i>Extension</i> parameter determines how many trace pairs are used in the computation. This is visualized in the image below.</p>
+        <p>The trace segments is defined by the <i>time-gate</i> in ms and the positions specified in relative coordinates. In case of using input from 2D data, the trace positions are defined by a trace step-out only, not by inline and crossline stepout. The <i>Extension</i> parameter determines how many trace pairs are used in the computation. This is visualized in the image below.</p>
         <img src="../Resources/Images/Appendix_A/Trace positions.png" class="General_Image" />
-        <p><i>Definition of trace positions relative to the reference point at (0,0).</i>
+        <p>
+            <i>Definition of trace positions relative to the reference point at (0,0).</i>
         </p>
-        <p><b>Input Parameters</b>
+        <p>
+            <b>Input Parameters</b>
         </p>
-        <p><b>Extension Definitions</b>
+        <p>
+            <b>Extension Definitions</b>
         </p>
         <ul>
             <li>None: Only the similarity between the pair of traces defined in 'Trace positions' is calculated.</li>
@@ -41,17 +46,20 @@
         <p>Then a value between 0 (not similar at all) to 1 (completely similar) is awarded. In order to compare traces, two variables should be specified:</p>
         <p>The 'Maximum dip' represents the maximum dip in microseconds per metre (μs/m), relative to an event in one trace, in which the algorithm will look for similar events along the neighbouring trace. Default is 250.</p>
         <p>The "Delta Dip" is a variable which represents the window in microseconds per metre (μs/m) which is shifted along the neighbouring trace to detect similar events whithin the earlier specified 'Maximum Dip'. The closer the value to 1 the more precise the results will be. The default value is 10. Using this value will result in a good balance between calculation time and quality of the results, this also depends on the quality of the data itself.</p>
-        <p><b>Mathematical description</b>
+        <p>
+            <b>Mathematical description</b>
         </p>
         <p>Let us assume two vectors X, Y of length N=15 samples:</p>
         <p>Xi, i=1,15</p>
         <p>Yi, i=1,15</p>
         <p>The similarity is 1 minus the Euclidean distance between the vectors divided by the sum of the length of each vector. Please note that the length of a vector is its L2 norm, also called RMS value:</p>
         <img src="../Resources/Images/Appendix_A/Mathematical description similarity.png" class="General_Image" />
-        <p style="page-break-before: always"><b>Examples</b>
+        <p style="page-break-before: always">
+            <b>Examples</b>
         </p>
         <img src="../Resources/Images/Appendix_A/Dip-steered non-steered minimum-steered.png" class="General_Image" />
-        <p><i>An example timeslice is highlighting fault structure: (a) Dip-steered Filtered Seismic, (b) Non-Steered minimum Similarity, (c) Steered minimum Similarity. Notice that the definition of faults has been improved with the Similarity attributes. The steered minimum Similarity (c) is highlighting precise fault definitions as compared with the result of non-steered minimum Similarity (b).</i>
+        <p>
+            <i>An example timeslice is highlighting fault structure: (a) Dip-steered Filtered Seismic, (b) Non-Steered minimum Similarity, (c) Steered minimum Similarity. Notice that the definition of faults has been improved with the Similarity attributes. The steered minimum Similarity (c) is highlighting precise fault definitions as compared with the result of non-steered minimum Similarity (b).</i>
         </p>
     </body>
 </html>
