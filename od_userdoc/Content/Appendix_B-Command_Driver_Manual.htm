@@ -5,41 +5,55 @@
     <body>
         <h1>12 Appendix B - Command Driver Manual<MadCap:keyword term="Appendix B - Command Driver Manual" /></h1>
         <ul>
-            <li><a href="#introduction" target="_self" MadCap:conditions="Default.ScreenOnly">Introduction</a>
+            <li>
+                <a href="#introduction" target="_self" MadCap:conditions="Default.ScreenOnly">Introduction</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Introduction</MadCap:conditionalText>
             </li>
-            <li><a href="#The_Command_Driver_control_window" target="_self" MadCap:conditions="Default.ScreenOnly">Command Driver control window</a>
+            <li>
+                <a href="#The_Command_Driver_control_window" target="_self" MadCap:conditions="Default.ScreenOnly">Command Driver control window</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Command Driver control window</MadCap:conditionalText>
             </li>
-            <li><a href="#Executing_scripts_from_the_command_line" target="_self" MadCap:conditions="Default.ScreenOnly">Execution from command line</a>
+            <li>
+                <a href="#Executing_scripts_from_the_command_line" target="_self" MadCap:conditions="Default.ScreenOnly">Execution from command line</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Execution from the command line</MadCap:conditionalText>
             </li>
-            <li><a href="#Window_management" target="_self" MadCap:conditions="Default.ScreenOnly">Window management</a>
+            <li>
+                <a href="#Window_management" target="_self" MadCap:conditions="Default.ScreenOnly">Window management</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Window management</MadCap:conditionalText>
             </li>
-            <li><a href="#Search_keys" target="_self" MadCap:conditions="Default.ScreenOnly">Search keys</a>
+            <li>
+                <a href="#Search_keys" target="_self" MadCap:conditions="Default.ScreenOnly">Search keys</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Search keys</MadCap:conditionalText>
             </li>
-            <li><a href="#Identifiers_and_expressions" target="_self" MadCap:conditions="Default.ScreenOnly">Identifiers and expressions</a>
+            <li>
+                <a href="#Identifiers_and_expressions" target="_self" MadCap:conditions="Default.ScreenOnly">Identifiers and expressions</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Identifiers and expressions</MadCap:conditionalText>
             </li>
-            <li><a href="#Command_specifications" target="_self" MadCap:conditions="Default.ScreenOnly">Command specifications</a>
+            <li>
+                <a href="#Command_specifications" target="_self" MadCap:conditions="Default.ScreenOnly">Command specifications</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Command specifications</MadCap:conditionalText>
             </li>
-            <li><a href="#Expressional" target="_self" MadCap:conditions="Default.ScreenOnly">Expressional specifications</a>
+            <li>
+                <a href="#Expressional" target="_self" MadCap:conditions="Default.ScreenOnly">Expressional specifications</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Expressional specifications</MadCap:conditionalText>
             </li>
-            <li><a href="#Repetitive_task_example" target="_self" MadCap:conditions="Default.ScreenOnly">Repetitive task example</a>
+            <li>
+                <a href="#Repetitive_task_example" target="_self" MadCap:conditions="Default.ScreenOnly">Repetitive task example</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Repetitive task example</MadCap:conditionalText>
             </li>
-            <li><a href="#Standard_test_scripts" target="_self" MadCap:conditions="Default.ScreenOnly">Standard test scripts</a>
+            <li>
+                <a href="#Standard_test_scripts" target="_self" MadCap:conditions="Default.ScreenOnly">Standard test scripts</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Standard test scripts</MadCap:conditionalText>
             </li>
-            <li><a href="#User_history_recording" target="_self" MadCap:conditions="Default.ScreenOnly">User history recording</a>
+            <li>
+                <a href="#User_history_recording" target="_self" MadCap:conditions="Default.ScreenOnly">User history recording</a>
                 <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">User history recording</MadCap:conditionalText>
             </li>
         </ul>
-        <p><b><a name="introduction"></a>Introduction</b>
+        <p>
+            <b>
+                <a name="introduction">
+                </a>Introduction</b>
         </p>
         <p>Around 2006, it became clear that OpendTect was growing so fast that extensive testing of every part was becoming a real big task. This is a well known issue in the Agile development literature. The usual approach is to implement automated testing.</p>
         <p>When designing the implementation, the main issues we had to cope with were:</p>
@@ -57,14 +71,21 @@
             <li>Scripts can call other scripts</li>
             <li>Variables can be set or used from the environment</li>
         </ul>
-        <p><b>Examples:</b>
-        </p><pre xml:space="preserve">ListClick "Calculated attri*" "F03-2" Double</pre><pre xml:space="preserve">Include "$SCRIPTSDIR$/EvalutionEnergyAttrib.odcmd"</pre>
-        <p>Almost immediately we noticed that finding out the names of the fields was very hard without some tool. Therefore, we made the 'Tooltip name guide', which will put OpendTect in a state where the name of a field is shown as a tool tip (overriding any existing tool tip). When it became clear that our automated test facility would be used as a scripting system for power users, we implemented a tool to record actions.</p>
-        <p>A webinar held in March 2010 gave an extensive overview on the use of OpendTect's Command Driver plug-in. A forty-minutes flash video is available here: <a href="http://www.youtube.com/watch?v=aWzoDH_treY" target="_blank" MadCap:conditions="Default.ScreenOnly">Command Driver webinar</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Command Driver webinar</MadCap:conditionalText></p>
-        <p><b><a name="The_Command_Driver_control_window"></a>The Command Driver control window</b>
+        <p>
+            <b>Examples:</b>
         </p>
-        <p>Provided that the CmdDriver plug-in has been (auto)-loaded, one can access the Command Driver control window in two ways. Firstly, it can be launched from the menu bar of OpendTect Main Window:</p>
-        <p><i>Utilities-&gt;Tools-&gt;Command Driver ...</i>
+        <pre xml:space="preserve">ListClick "Calculated attri*" "F03-2" Double</pre>
+        <pre xml:space="preserve">Include "$SCRIPTSDIR$/EvalutionEnergyAttrib.odcmd"</pre>
+        <p>Almost immediately we noticed that finding out the names of the fields was very hard without some tool. Therefore, we made the 'Tooltip name guide', which will put OpendTect in a state where the name of a field is shown as a tool tip (overriding any existing tool tip). When it became clear that our automated test facility would be used as a scripting system for power users, we implemented a tool to record actions.</p>
+        <p>A webinar held in March 2010 gave an extensive overview on the use of OpendTect's Command Driver plugin. A forty-minutes flash video is available here: <a href="http://www.youtube.com/watch?v=aWzoDH_treY" target="_blank" MadCap:conditions="Default.ScreenOnly">Command Driver webinar</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Command Driver webinar</MadCap:conditionalText></p>
+        <p>
+            <b>
+                <a name="The_Command_Driver_control_window">
+                </a>The Command Driver control window</b>
+        </p>
+        <p>Provided that the CmdDriver plugin has been (auto)-loaded, one can access the Command Driver control window in two ways. Firstly, it can be launched from the menu bar of OpendTect Main Window:</p>
+        <p>
+            <i>Utilities-&gt;Tools-&gt;Command Driver ...</i>
         </p>
         <p>Secondly, this so-called Command Controller also pops up when pressing Ctrl-R with the mouse pointer inside any OpendTect window or dialog. This is particularly useful if the Command Driver menu bar is greyed out or menu access is blocked after a modal dialog has been popped up. Only a few Qt-borrowed QDialogs like the QMessageBox, QFileDialog and QColorDialog will nevertheless prevent any user input to the Command Controller, and have to be clicked away first.</p>
         <img src="Resources/Images/Appendix_B/Utilities tools command driver.png" class="General_Image" />
@@ -73,19 +94,27 @@
         <p>The Command Controller has a combobox to switch between two appearances. One for running and one for recording a command file. The TooltipNameGuide checkbox can be (un)checked at both appearances. It sets a tooltip mode that displays the hidden name of any uiObject pointed to. Tooltip names are displayed double-quoted on a cyan background. Go to the Survey-&gt;Select/Setup window for a small demo-example. Click the '(X,Y) &lt;=&gt; I/C' -button and unveil the hidden names of buttons and input fields with your mouse pointer. OpendTect (plugin) developers might have a look in the file $WORK/src/uiIo/uiconvpos.cc to see how these names are annotated in the code.</p>
         <p>Running the Command Driver requires selecting an input command file with the extension '.odcmd', or the obsolete '.cmd'. Filenames without a full path are defined relative to the 'Proc'-directory of the current survey. The 'Edit'-button launches a simple text editor to view and edit the input command file directly from OpendTect. One can also specify an output log file to have the Command Driver write its progress and error messages. The 'Examine'-button launches a scroll window to view this log file even while running. The Command Driver starts running when pushing the 'Go'-button, after which 'Pause' and 'Abort'-buttons allow a temporary stop or premature termination.</p>
         <p>The Command Recorder is able to record a sequence of user interface actions performed by the user. One has to specify an output command file with the extension '.odcmd'. Filenames without a full path are defined relative to the 'Proc'-directory of the current survey. The 'Examine'-button launches a scroll window to view which commands are written during recording. Recording starts after pushing the 'Start'-button. Next perform a sequence of user actions and push the 'Finish'-button. The Command Controller will automatically switch to run-mode afterwards, so that one can play back the recorded script in order to verify its correct operation. View the log file for eventual errors. Finally, the recorded script can be edited to avoid these errors, improve robustness and general applicability, and insert auxiliary commands.</p>
-        <p><b><a name="Executing_scripts_from_the_command_line"></a>Executing scripts from the command line</b>
+        <p>
+            <b>
+                <a name="Executing_scripts_from_the_command_line">
+                </a>Executing scripts from the command line</b>
         </p>
         <p>One does not necessarily have to run a command script from OpendTect's user interface. One or more scripts can also run straight from the command line, and with that they might be called from shell scripts as well. An example of the command line syntax on Linux:</p>
-        <p><code>start_dtect --cmd /full_path_1/my_script_1.odcmd ... /full_path_N/my_script_N.odcmd</code>
+        <p>
+            <code>start_dtect --cmd /full_path_1/my_script_1.odcmd ... /full_path_N/my_script_N.odcmd</code>
         </p>
-        <p>This line opens a new instance of OpendTect and starts running the given scripts in there. OpendTect will not automatically close when all scripts are finished. If necessary, this must be done from the last script using the 'Close All' command. Note that command line execution is only possible if your OpendTect auto-loads the Command Driver plug-in at startup.</p>
+        <p>This line opens a new instance of OpendTect and starts running the given scripts in there. OpendTect will not automatically close when all scripts are finished. If necessary, this must be done from the last script using the 'Close All' command. Note that command line execution is only possible if your OpendTect auto-loads the Command Driver plugin at startup.</p>
         <p>The user can also create command scripts named <code>autoexec.odcmd</code>. If available, these scripts will be run at start-up before any script specified on the command line. The first autoexec-script to be run is searched in the settings directory. This is the <code>.od</code> subdirectory of your personal home directory, unless the <code>DTECT_SETTINGS</code> or <code>DTECT_WINSETTINGS</code> environment variable specifies otherwise. The second autoexec-script to be run is searched in the <code>Proc</code> directory of the start-up survey. Next, the command line scripts will be run in order. Moreover, every time a new survey is selected in OpendTect, the <code>Proc</code> directory of this new survey will also be searched for an autoexec-script to be run at that moment.</p>
         <p>Apart from the availability of autoexec-scripts, their execution can always be disabled by adding <code>--noautoexec</code>, <code>--nosettingsautoexec</code> or <code>--nosurveyautoexec</code> as an extra argument on the command line. Command line argument <code>--cmdlog /full_path/my_odcmdlog.txt</code> will override the location of the output log file. Its default name is <code>odcmdlog.txt</code> and it is located in the <code>Proc</code> directory of the start-up survey, if writable, or in the personal user directory otherwise.</p>
         <p>To run a command file other than <code>autoexec.odcmd</code> on Windows, one has to create a DOS batch file. That file must contain a command line similar to this:</p>
-        <p><code>X:\full_path_0\bin\win64\od_main --cmd "X:\full_path_1\my_script_1.odcmd" ...</code>
+        <p>
+            <code>X:\full_path_0\bin\win64\od_main --cmd "X:\full_path_1\my_script_1.odcmd" ...</code>
         </p>
         <p>Go to your OpendTect installation folder to ascertain the right name and location of the OpendTect executable (i.e. which disk, bin-path, win32 / win64, and '.exe'-file name?). Executing your DOS batch file will open a new instance of OpendTect and run the given script at startup.</p>
-        <p><b><a name="Window_management"></a>Window management</b>
+        <p>
+            <b>
+                <a name="Window_management">
+                </a>Window management</b>
         </p>
         <p>Commands always apply to the current window. This is OpendTect Main Window when starting the driver. Any modal window popping up will automatically become the current window. Modeless windows that pop up can be appointed current window by using the Window-command. In case a modal current window closes, its parent will become the current window. If a modeless current window closes, the latest former current window still existing will be restored as current window.</p>
         <p> Subwindows in the workspace of another window cannot become current window. No commands can be addressed to the progress window popped up by a uiTaskRunner, since the driver will await its decease before executing a next command. Neither addressible are the Command Controller window and its descendants.</p>
@@ -95,7 +124,10 @@
         <p>The benefit of window assertions is in error recovery. If OpendTect does not pop up a window that was expected by the command file or does pop up a window that was not expected by the command file, the Command Driver is able to proceed under guidance of these window assertions. This already solves a lot of cases in which the flow of OpendTect happens to be mildly data or environment dependent. For example, if an error message like "File already exist! Overwrite?" appears but is not handled in the command file (or the other way around), the Command Driver can continue as it was most probably intended by the user: close the window and write the file. Another example is any command to switch on/off a button or menu item. If it happens to be switched on/off already, window assertions enable the Command Driver to skip all commands following from that switch as well.</p>
         <p>Although not compulsory, it is advised to make systematical use of window assertions. It also improves the readability of your command file. See any file generated by the Command Recorder to get an idea.</p>
         <p>When using window assertions in combination with control flow commands, the most easy-going and efficacious method is having each individual command (If, ElseIf, Then, Fi, For, Rof, DoWhile, Od, Do, OdUntil) both preceded and succeeded by the window assertion in force. Wrongly omitting a window assertion around a control flow command will not result in an assertion violation error, but it does severely reduce the possibilities of the Command Driver to recover in case of other errors.</p>
-        <p style="page-break-before: always"><b><a name="Search_keys"></a>Search keys</b>
+        <p style="page-break-before: always">
+            <b>
+                <a name="Search_keys">
+                </a>Search keys</b>
         </p>
         <p>Many commands supported by the Command Driver use search keys to address window names, names of buttons, input fields and other GUI-elements, item names of menus, lists, trees and tables, etc. The matching of these search keys is strict where necessary and accommodating where practical. The matching process honors the following principles:</p>
         <p>The asterisk '*' is used as a wildcard character. It may appear any number of times in the search key to match an arbitrary substring.</p>
@@ -106,7 +138,10 @@
         <p>One example to demonstrate the use of escape characters. The table column header "* [All lines]" will be matched exactly by the search key "@* [All lines]". The asterisk must be escaped to prevent it from being interpreted as a wildcard for postfix matching, while the brackets do only need escapes when occurring inside window assertions.</p>
         <p>Any pair of bracket-like characters enclosing a name to match are ignored, unless the search key does explicitly specify them. Outer character pairs that may be stripped include "...", [...], &lt;...&gt;, and &gt;...&lt;. This matching protocol is recursive. If the match name and search key do not match, eventual outer brackets of the match name are removed, and the whole matching process is repeated.</p>
         <p>The Case-command allows the user to determine whether upper-case and lower-case alphabetical characters will match each other. The default is case-insensitive.</p>
-        <p><b><a name="Identifiers_and_expressions"></a>Identifiers and expressions</b>
+        <p>
+            <b>
+                <a name="Identifiers_and_expressions">
+                </a>Identifiers and expressions</b>
         </p>
         <p>Command scripts may contain identifiers to store data and (re)use its values. Every identifier consists of a letter followed by any sequence of letters, digits and underscores ('_'). Identifiers are treated case insensitive. Identifiers can represent constants, script variables, environment variables, built-in function names, or user-defined procedure names.</p>
         <p>The Command Driver has only one internal data type. All identifier values are represented as character strings. The string can be a boolean value, an integer value (even octal or hexadecimal), a fixed or floating point value, one single character or indeed a whole character string. The operator or built-in function using the identifier will define into which data type the string has to be converted, and will produce an error if the conversion fails. User-defined procedures should do the same. Boolean values are actually mapped onto numbers, where 0 is false and 1 is true, and any other number is also interpreted as true.</p>
@@ -117,9 +152,16 @@
         <p>Identifier substitution can also be used to simulate array variables (e.g. array[index]). The Command Driver does not explicitly support them, but index substitution can be applied for that purpose: array_$index$.</p>
         <p>The predefined directory identifiers BASEDIR, DATADIR, PROCDIR, APPLDIR, USERDIR, SCRIPTSDIR, SNAPSHOTDIR, IMPORTDIR and EXPORTDIR are environment variables that can be substituted in file-path specifications. Their purpose is defining a file-path relatively to either OpendTect, the current survey, user directories, etc. The Command Driver will automatically change Unix-style file-paths into Windows-style file-paths on Windows-platforms and vice versa. The special identifier FILEIDX represents an integer variable that is automatically incremented after every occurrence in the command stream. It may be substituted in file-paths to generate unique filenames, although meanwhile more sophisticated methods exist as well (see <a href="#Repetitive_task_example" target="_self" MadCap:conditions="Default.ScreenOnly">Repetitive task example</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Repetitive task example</MadCap:conditionalText>).</p>
         <p>The scope of any identifier used in the body of a command script is global. The scope of any identifier used inside a user-defined procedure is local by default, and may shadow a global identifier with the same name. Attach the scope operator '@' in front of an identifier to force access to its global namesake. That is all for (re)assigning an identifier or (re)defining a procedure. Two extra scope rules apply for reading an identifier or calling a procedure. If an unscoped identifier value is locally undefined, the search will continue at the global scope level directly. If an unscoped procedure call is locally undefined, the search will continue at the previous scope level, and recursively descend to the global level as long as no definition is found.</p>
-        <p><b><a name="Command_specifications"></a>Command specifications</b>
+        <p>
+            <b>
+                <a name="Command_specifications">
+                </a>Command specifications</b>
         </p>
-        <p>Any text editor can be used to produce or modify OpendTect scripts. Every command file has to start with the following four-lines header. The correctness of version number, date and time is not vital for a successful execution of the command file.</p><pre xml:space="preserve">dTect V4.0</pre><pre xml:space="preserve">OpendTect commands</pre><pre xml:space="preserve">Mon Apr 20 09:20:09 2009</pre><pre xml:space="preserve">!</pre>
+        <p>Any text editor can be used to produce or modify OpendTect scripts. Every command file has to start with the following four-lines header. The correctness of version number, date and time is not vital for a successful execution of the command file.</p>
+        <pre xml:space="preserve">dTect V4.0</pre>
+        <pre xml:space="preserve">OpendTect commands</pre>
+        <pre xml:space="preserve">Mon Apr 20 09:20:09 2009</pre>
+        <pre xml:space="preserve">!</pre>
         <p>The Command Driver expects one command per line and one line per command by default. Multiple commands on one line must be separated by a semicolon (';'). Long commands exceeding the width of one line may be broken by adding a backslash ('\') as last non-white character on the line. Never put a break before white space, since preceding white space on the next line will be considered indentation. Instead of using a backslash break, one can also leave the Enter-key unpressed at all and simply have the line run through the right margin. Empty lines and (commentary) lines starting with a '#'-symbol are allowed and ignored.</p>
         <p>One can make a quick start by having the first command file generated by the Command Recorder, and start editing from there.</p>
         <p>The specification of available commands is currently written in a top-to-bottom sequential form. This means that command arguments are explained only at their first appearance. Placeholders between angular brackets are used to specify the command syntax. If a syntax placeholder is not defined at a particular command, it has already been defined at an earlier command or is considered atomic. The online user documentation will provide a hyper-link in the former case. Our tabular representation might cause lengthy command (argument) specifications to be formatted over multiple lines. Beware that the Command Driver itself will not accept this, unless the lines are explicitly broken by backslashes. All syntax definitions are using the following tags:</p>
@@ -176,17 +218,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i MadCap:targetName="action">&lt;action&gt;</i>
+                        <p>
+                            <i MadCap:targetName="action">&lt;action&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><b>I. Basic commands (also generated by Command Recorder)</b>
+                        <p>
+                            <b>I. Basic commands (also generated by Command Recorder)</b>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><a name="window"></a><b MadCap:targetName="window">Window</b> "&lt;winname&gt;"</p>
+                        <p>
+                            <a name="window">
+                            </a>
+                            <b MadCap:targetName="window">Window</b> "&lt;winname&gt;"</p>
                         <p>&lt;winname&gt; = &lt;searchstr&gt;&lt;disambiguator&gt;?</p>
                         <p>&lt;searchstr&gt; = (&lt;wildcard&gt;?&lt;textstr&gt;)*&lt;wildcard&gt;?</p>
                         <p>&lt;wildcard&gt; = '*'</p>
@@ -209,7 +256,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="menu"><a name="menu"></a>Menu</b> "&lt;menupath&gt;" &lt;onofftag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="menu">
+                                <a name="menu">
+                                </a>Menu</b> "&lt;menupath&gt;" &lt;onofftag&gt;? </p>
                         <p>&lt;onofftag&gt; = (<b>On</b> | <b>1</b>) | (<b>Off</b> | <b>0</b>)</p>
                         <p>&lt;menupath&gt; = &lt;pathstr&gt;</p>
                         <p>&lt;pathstr&gt; = &lt;itemname&gt;( &lt;sep&gt;&lt;itemname&gt; )*</p>
@@ -223,7 +273,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="button"><a name="button"></a>Button</b> "&lt;keystr&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="button">
+                                <a name="button">
+                                </a>Button</b> "&lt;keystr&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                         <p>&lt;keystr&gt; = &lt;objname&gt;( &lt;<a href="#menu">sep</a>&gt;&lt;objname&gt; )*&lt;<a href="#window">disambiguator</a>&gt;?</p>
                         <p>&lt;objname&gt; = &lt;<a href="#window">searchstr</a>&gt;</p>
                     </td>
@@ -235,7 +288,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="buttonmenu"><a name="buttonmenu"></a>ButtonMenu</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" </p>
+                        <p>
+                            <b MadCap:targetName="buttonmenu">
+                                <a name="buttonmenu">
+                                </a>ButtonMenu</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" </p>
                         <p>&lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
@@ -244,7 +300,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="input"><a name="input"></a>Input</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;inpdata&gt;? &lt;entertag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="input">
+                                <a name="input">
+                                </a>Input</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;inpdata&gt;? &lt;entertag&gt;?</p>
                         <p>&lt;entertag&gt; = <b>Enter</b> | <b>Hold</b></p>
                         <p>&lt;inpdata&gt; = "&lt;inputstr&gt;" | &lt;number&gt; | <b>FilePath</b> "&lt;filepathstr&gt;"</p>
                     </td>
@@ -255,7 +314,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="spin"><a name="spin"></a>Spin</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;spinsteps&gt; &lt;<a href="#input">entertag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="spin">
+                                <a name="spin">
+                                </a>Spin</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;spinsteps&gt; &lt;<a href="#input">entertag</a>&gt;?</p>
                         <p>&lt;spinsteps&gt; = &lt;posint&gt; | &lt;negint&gt;</p>
                     </td>
                     <td>
@@ -265,7 +327,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="slider"><a name="slider"></a>Slider</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;percentage&gt; &lt;nrsteps&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="slider">
+                                <a name="slider">
+                                </a>Slider</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;percentage&gt; &lt;nrsteps&gt;?</p>
                         <p>&lt;nrsteps&gt; = &lt;posint&gt;</p>
                     </td>
                     <td>
@@ -275,7 +340,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="wheel"><a name="wheel"></a>Wheel</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;degrees&gt; &lt;<a href="#slider">nrsteps</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="wheel">
+                                <a name="wheel">
+                                </a>Wheel</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;degrees&gt; &lt;<a href="#slider">nrsteps</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Rotates a thumbwheel a specified number of degrees upwards/downwards or leftwards/rightwards. The number of degrees will only have a direct meaning if the thumbwheel represents an angular scale. It is optional to perform the rotation in more than one step, but it may yield nice animations on screen. Multiple steps are only supported as long as no action triggered in between does pop up a modal window. Selecting the thumbwheel is analogous to the button selection described above.</p>
@@ -283,7 +351,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="combo"><a name="combo"></a>Combo</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;itemsel&gt;</p>
+                        <p>
+                            <b MadCap:targetName="combo">
+                                <a name="combo">
+                                </a>Combo</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;itemsel&gt;</p>
                         <p>&lt;itemsel&gt; = "&lt;<a href="#menu">itemname</a>&gt;" | &lt;<a href="#window">selnr</a>&gt;</p>
                     </td>
                     <td>
@@ -292,7 +363,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="listclick"><a name="listclick"></a>ListClick</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;mousetag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="listclick">
+                                <a name="listclick">
+                                </a>ListClick</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;mousetag&gt;?</p>
                         <p>&lt;mousetag&gt; = &lt;ctrlclick&gt;?&lt;doubleclick&gt;?&lt;leftrightclick&gt;?</p>
                         <p>&lt;ctrlclick&gt; = <b>Ctrl</b></p>
                         <p>&lt;doubleclick&gt; = <b>Double</b></p>
@@ -305,7 +379,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="listbutton"><a name="listbutton"></a>ListButton</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; </p>
+                        <p>
+                            <b MadCap:targetName="listbutton">
+                                <a name="listbutton">
+                                </a>ListButton</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; </p>
                         <p>&lt;<a href="#listclick">mousetag</a>&gt;? &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
@@ -314,7 +391,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="listmenu"><a name="listmenu"></a>ListMenu</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="listmenu">
+                                <a name="listmenu">
+                                </a>ListMenu</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Selects a (sub)item from the menu attached to a listbox item. Checkable menu items are toggled, unless the optional On/Off-argument specifies their desired state. The selection of both listbox and item is analogous to the ListClick-command. However, since OpendTect is normally hiding its popup menus under the right mouse button, the default for no mousetag at all is set Right over here. Selection of the menu (sub)item is analogous to the Menu-command.</p>
@@ -322,7 +402,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="listselect"><a name="listselect"></a>ListSelect</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;firstitemsel&gt; &lt;lastitemsel&gt;? &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="listselect">
+                                <a name="listselect">
+                                </a>ListSelect</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;firstitemsel&gt; &lt;lastitemsel&gt;? &lt;<a href="#menu">onofftag</a>&gt;?</p>
                         <p>&lt;firstitemsel&gt; = &lt;lastitemsel&gt; = &lt;<a href="#combo">itemsel</a>&gt;</p>
                     </td>
                     <td>
@@ -331,7 +414,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tableclick"><a name="tableclick"></a>TableClick</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;tableitemsel&gt; &lt;<a href="#listclick">mousetag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="tableclick">
+                                <a name="tableclick">
+                                </a>TableClick</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;tableitemsel&gt; &lt;<a href="#listclick">mousetag</a>&gt;?</p>
                         <p>&lt;tableitemsel&gt; = &lt;headitemsel&gt; | &lt;cellsel&gt;</p>
                         <p>&lt;headitemsel&gt; = &lt;headtag&gt; &lt;<a href="#combo">itemsel</a>&gt;</p>
                         <p>&lt;headtag&gt; = <b>RowHead</b> | <b>ColHead</b></p>
@@ -345,7 +431,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tablefill"><a name="tablefill"></a>TableFill</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#input">inpdata</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="tablefill">
+                                <a name="tablefill">
+                                </a>TableFill</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#input">inpdata</a>&gt;</p>
                     </td>
                     <td>
                         <p>Fills one cell in a table with new text data. Alike the Input-command, this might be a text string, a file-path string or a number. The selection of both table and cell is analogous to the TableClick-command, except that table headers cannot be filled.</p>
@@ -353,7 +442,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tablemenu"><a name="tablemenu"></a>TableMenu</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="tablemenu">
+                                <a name="tablemenu">
+                                </a>TableMenu</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Selects a (sub)item from the menu attached to a table cell. Checkable menu items are toggled, unless the optional On/Off-argument specifies their desired state. The selection of both table and cell is analogous to the TableFill-command. Selection of the menu (sub)item is analogous to the Menu-command.</p>
@@ -361,17 +453,24 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tableexec"><a name="tableexec"></a>TableExec</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;action&gt;</p>
+                        <p>
+                            <b MadCap:targetName="tableexec">
+                                <a name="tableexec">
+                                </a>TableExec</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;action&gt;</p>
                     </td>
                     <td>
                         <p>Executes a local command driver action within one cell of a table (instead of within the current window). The selection of both table and cell is analogous to the TableFill-command. Only those commands accepting a keystring argument might be appropriate actions to execute within a cell. For example, if the top-left cell of a table contains a single combobox, its selection can be made as follows:</p>
-                        <p><b>TableExec</b> "my table" 1 1 <b>Combo</b> "*" "my item"</p>
+                        <p>
+                            <b>TableExec</b> "my table" 1 1 <b>Combo</b> "*" "my item"</p>
                         <p>Tables with cells containing multiple user-interface objects of the same or different kind can be handled too.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tableselect"><a name="tableselect"></a>TableSelect</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;tableitemrangesel&gt; &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="tableselect">
+                                <a name="tableselect">
+                                </a>TableSelect</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;tableitemrangesel&gt; &lt;<a href="#menu">onofftag</a>&gt;?</p>
                         <p>&lt;tableitemrangesel&gt; = &lt;headitemrangesel&gt; | &lt;cellrangesel&gt;</p>
                         <p>&lt;headitemrangesel&gt; = &lt;<a href="#tableclick">headtag</a>&gt; &lt;<a href="#listselect">firstitemsel</a>&gt; &lt;lastitemsel&gt;?</p>
                         <p>&lt;cellrangesel&gt; = &lt;firstcellsel&gt; &lt;lastcellsel&gt;?</p>
@@ -384,7 +483,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="tab"><a name="tab"></a>Tab</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;tabname&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="tab">
+                                <a name="tab">
+                                </a>Tab</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;tabname&gt;"</p>
                         <p>&lt;tabname&gt; = &lt;<a href="#menu">itemname</a>&gt;</p>
                     </td>
                     <td>
@@ -393,7 +495,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="treeclick"><a name="treeclick"></a>TreeClick</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;treenodesel&gt; &lt;<a href="#listclick">mousetag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="treeclick">
+                                <a name="treeclick">
+                                </a>TreeClick</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;treenodesel&gt; &lt;<a href="#listclick">mousetag</a>&gt;?</p>
                         <p>&lt;treenodesel&gt; = "&lt;treepath&gt;" | PathCol "&lt;treepath&gt;" &lt;colsel&gt;</p>
                         <p>&lt;treepath&gt; = &lt;<a href="#menu">pathstr</a>&gt;</p>
                     </td>
@@ -404,7 +509,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="treeexpand"><a name="treeexpand"></a>TreeExpand</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="treeexpand">
+                                <a name="treeexpand">
+                                </a>TreeExpand</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>(Un)expands the subtree of a node in a tree. The expander is toggled unless the optional On/Off-argument specifies its desired state. The selection of both tree and node is analogous to the TreeClick-command, except that column selection is not an issue here.</p>
@@ -412,7 +520,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="treebutton"><a name="treebutton"></a>TreeButton</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#listclick">mousetag</a>&gt;? &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="treebutton">
+                                <a name="treebutton">
+                                </a>TreeButton</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#listclick">mousetag</a>&gt;? &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Presses the button in front of a node in a tree. The button is toggled unless the optional On/Off-argument specifies its desired state. The selection of both tree and node is analogous to the TreeClick-command, except that column selection is not an issue here.</p>
@@ -420,7 +531,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="treemenu"><a name="treemenu"></a>TreeMenu</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="treemenu">
+                                <a name="treemenu">
+                                </a>TreeMenu</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; &lt;<a href="#listclick">mousetag</a>&gt;? "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Selects a (sub)item from the menu attached to a column of a tree node. Checkable menu items are toggled, unless the optional On/Off-argument specifies their desired state. The selection of tree, node and column is analogous to the TreeClick-command. Selection of the menu (sub)item is analogous to the Menu-command.</p>
@@ -428,7 +542,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="canvasmenu"><a name="canvasmenu"></a>CanvasMenu</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="canvasmenu">
+                                <a name="canvasmenu">
+                                </a>CanvasMenu</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#menu">onofftag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Selects a (sub)item from the menu popping up at a canvas area. Checkable menu items are toggled, unless the optional On/Off-argument specifies their desired state. Selection of the canvas area is analogous to the button selection described above. Selection of the menu (sub)item is analogous to the Menu-command.</p>
@@ -445,7 +562,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="close"><a name="close"></a>Close</b> &lt;closeoption&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="close">
+                                <a name="close">
+                                </a>Close</b> &lt;closeoption&gt;?</p>
                         <p>&lt;closeoption&gt; = <b>All</b> | &lt;subwinsel&gt;</p>
                         <p>&lt;subwinsel&gt; = "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#window">winname</a>&gt;"</p>
                     </td>
@@ -455,7 +575,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="show"><a name="show"></a>Show</b> &lt;<a href="#close">subwinsel</a>&gt;? &lt;showtag&gt;</p>
+                        <p>
+                            <b MadCap:targetName="show">
+                                <a name="show">
+                                </a>Show</b> &lt;<a href="#close">subwinsel</a>&gt;? &lt;showtag&gt;</p>
                         <p>&lt;showtag&gt; = <b>Minimized</b> | <b>Maximized</b> | <b>Normal</b></p>
                     </td>
                     <td>
@@ -464,7 +587,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="colorok"><a name="colorok"></a>ColorOk</b> &lt;colorsel&gt;</p>
+                        <p>
+                            <b MadCap:targetName="colorok">
+                                <a name="colorok">
+                                </a>ColorOk</b> &lt;colorsel&gt;</p>
                         <p>&lt;colorsel&gt; = "&lt;rgbtcolorstr&gt;" | &lt;color&gt; &lt;transparency&gt;?</p>
                         <p>&lt;color&gt; = "&lt;rgbcolorstr&gt;" | &lt;R&gt; &lt;G&gt; &lt;B&gt; | &lt;colortag&gt;</p>
                         <p>&lt;rgbtcolorstr&gt; = &lt;rgbstr&gt;&lt;<a href="#menu">sep</a>&gt;&lt;transparency&gt;</p>
@@ -478,7 +604,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="fileok"><a name="fileok"></a>FileOk</b> "&lt;filepathset&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="fileok">
+                                <a name="fileok">
+                                </a>FileOk</b> "&lt;filepathset&gt;"</p>
                         <p>&lt;filepathset&gt; = &lt;filepathstr&gt;( &lt;<a href="#menu">sep</a>&gt;&lt;filepathstr&gt; )*</p>
                     </td>
                     <td>
@@ -495,17 +624,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;action&gt;</i>
+                        <p>
+                            <i>&lt;action&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><b>II. Auxiliary commands (to be inserted by the user)</b>
+                        <p>
+                            <b>II. Auxiliary commands (to be inserted by the user)</b>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="include"><a name="include"></a>Include</b> "&lt;filepathstr&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="include">
+                                <a name="include">
+                                </a>Include</b> "&lt;filepathstr&gt;"</p>
                     </td>
                     <td>
                         <p>Inserts another command file into the command stream. The file-path will be interpreted platform independently. In order to specify the file-path relative to either OpendTect, current survey, or user directories, one of the predefined directory identifiers can be substituted ( $...DIR$ ).</p>
@@ -513,7 +647,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="greyouts"><a name="greyouts"></a>GreyOuts</b> &lt;greyoutstag&gt;</p>
+                        <p>
+                            <b MadCap:targetName="greyouts">
+                                <a name="greyouts">
+                                </a>GreyOuts</b> &lt;greyoutstag&gt;</p>
                         <p>&lt;greyoutstag&gt; = <b>Count</b> | <b>Skip</b></p>
                     </td>
                     <td>
@@ -522,7 +659,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="case"><a name="case"></a>Case</b> &lt;casetag&gt;</p>
+                        <p>
+                            <b MadCap:targetName="case">
+                                <a name="case">
+                                </a>Case</b> &lt;casetag&gt;</p>
                         <p>&lt;casetag&gt; = <b>Sensitive</b> | <b>Insensitive</b></p>
                     </td>
                     <td>
@@ -531,7 +671,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="onerror"><a name="oneerror"></a>OnError</b> &lt;errortag&gt;</p>
+                        <p>
+                            <b MadCap:targetName="onerror">
+                                <a name="oneerror">
+                                </a>OnError</b> &lt;errortag&gt;</p>
                         <p>&lt;errortag&gt; = <b>Stop</b> | <b>Recover</b></p>
                     </td>
                     <td>
@@ -540,7 +683,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="logmode"><a name="logmode"></a>LogMode</b> &lt;logtag&gt;</p>
+                        <p>
+                            <b MadCap:targetName="logmode">
+                                <a name="logmode">
+                                </a>LogMode</b> &lt;logtag&gt;</p>
                         <p>&lt;logtag&gt; = <b>Basic</b> | <b>Normal</b> | <b>All</b></p>
                     </td>
                     <td>
@@ -549,7 +695,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="snapshot"><a name="snapshot"></a>Snapshot</b> "&lt;imagefilepathstr&gt;" &lt;frametag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="snapshot">
+                                <a name="snapshot">
+                                </a>Snapshot</b> "&lt;imagefilepathstr&gt;" &lt;frametag&gt;?</p>
                         <p>&lt;frametag&gt; = <b>CurWin</b> | <b>ODMain</b> | <b>Desktop</b></p>
                         <p>&lt;imagefilepathstr&gt; = &lt;filepathstr&gt;&lt;imageext&gt;</p>
                         <p>&lt;imageext&gt; = <b>.bmp</b> | <b>.jpg</b> | <b>.jpeg</b> | <b>.png</b> | <b>.ppm</b> | <b>.xbm</b> | <b>.xpm</b></p>
@@ -560,7 +709,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="sleep"><a name="sleep"></a>Sleep</b> &lt;seconds&gt; &lt;sleeptag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="sleep">
+                                <a name="sleep">
+                                </a>Sleep</b> &lt;seconds&gt; &lt;sleeptag&gt;?</p>
                         <p>&lt;sleeptag&gt; = <b>Regular</b> | <b>Extra</b></p>
                     </td>
                     <td>
@@ -569,7 +721,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="wait"><a name="wait"></a>Wait</b> &lt;seconds&gt; &lt;<a href="#sleep">sleeptag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="wait">
+                                <a name="wait">
+                                </a>Wait</b> &lt;seconds&gt; &lt;<a href="#sleep">sleeptag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Tells the next command to wait a period of time only if it is uncertain whether it has finished processing. This can happen to any command closing a modal dialog that was already open when the Command Driver started. The Regular-option will allow this waiting time to every command until further notice. The Extra-option is the default and will allow an (additional) wait only to the next command.</p>
@@ -577,7 +732,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="pause"><a name="pause"></a>Pause</b> "&lt;textlines&gt;"?</p>
+                        <p>
+                            <b MadCap:targetName="pause">
+                                <a name="pause">
+                                </a>Pause</b> "&lt;textlines&gt;"?</p>
                         <p>&lt;textlines&gt; = &lt;<a href="#window">textstr</a>&gt;( &lt;<a href="#menu">sep</a>&gt;&lt;<a href="#window">textstr</a>&gt; )*</p>
                     </td>
                     <td>
@@ -586,7 +744,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="guide"><a name="guide"></a>Guide</b> "&lt;<a href="#pause">textlines</a>&gt;" ( &lt;guidetag&gt; "&lt;<a href="#window">winname</a>&gt;" )?</p>
+                        <p>
+                            <b MadCap:targetName="guide">
+                                <a name="guide">
+                                </a>Guide</b> "&lt;<a href="#pause">textlines</a>&gt;" ( &lt;guidetag&gt; "&lt;<a href="#window">winname</a>&gt;" )?</p>
                         <p>&lt;guidetag&gt; = <b>Existent</b> | <b>Inexistent</b> | <b>Accessible</b> | <b>Inaccessible</b></p>
                     </td>
                     <td>
@@ -595,7 +756,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="comment"><a name="comment"></a>Comment</b> "&lt;<a href="#pause">textlines</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="comment">
+                                <a name="comment">
+                                </a>Comment</b> "&lt;<a href="#pause">textlines</a>&gt;"</p>
                     </td>
                     <td>
                         <p>Inserts comment lines into the log file. Command lines starting with a '#'-symbol are containing comments that are not shown in log files.</p>
@@ -610,17 +774,26 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;action&gt;</i>
+                        <p>
+                            <i>&lt;action&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><b><a name="table_iii"></a></b><b>III. Control flow commands (to be inserted by the user)</b>
+                        <p>
+                            <b>
+                                <a name="table_iii">
+                                </a>
+                            </b>
+                            <b>III. Control flow commands (to be inserted by the user)</b>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="assign"><a name="assign"></a>Assign</b> &lt;ident&gt; &lt;expr&gt;</p>
+                        <p>
+                            <b MadCap:targetName="assign">
+                                <a name="assign">
+                                </a>Assign</b> &lt;ident&gt; &lt;expr&gt;</p>
                         <p>&lt;ident&gt; '=' &lt;expr&gt;</p>
                         <p>&lt;ident&gt; = &lt;scope&gt;?&lt;identstr&gt;</p>
                         <p>&lt;identstr&gt; = &lt;letter&gt;&lt;identchars&gt;*</p>
@@ -636,10 +809,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="if"><a name="if"></a>If</b> &lt;<a href="#assign">expr</a>&gt;&lt;actions&gt;</p>
+                        <p>
+                            <b MadCap:targetName="if">
+                                <a name="if">
+                                </a>If</b> &lt;<a href="#assign">expr</a>&gt;&lt;actions&gt;</p>
                         <p>( <b>ElseIf</b> &lt;<a href="#assign">expr</a>&gt;&lt;actions&gt; )*</p>
                         <p>( <b>Else</b>&lt;actions&gt; )?</p>
-                        <p><b>Fi</b>
+                        <p>
+                            <b>Fi</b>
                         </p>
                     </td>
                     <td>
@@ -648,9 +825,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="for"><a name="for"></a>For</b> &lt;<a href="#assign">ident</a>&gt; '=' &lt;<a href="#assign">expr</a>&gt; ( <b>To</b> &lt;<a href="#assign">expr</a>&gt; )? ( <b>Step</b> &lt;<a href="#assign">expr</a>&gt; )?</p>
+                        <p>
+                            <b MadCap:targetName="for">
+                                <a name="for">
+                                </a>For</b> &lt;<a href="#assign">ident</a>&gt; '=' &lt;<a href="#assign">expr</a>&gt; ( <b>To</b> &lt;<a href="#assign">expr</a>&gt; )? ( <b>Step</b> &lt;<a href="#assign">expr</a>&gt; )?</p>
                         <p>&lt;actions&gt;</p>
-                        <p><b>Rof</b>
+                        <p>
+                            <b>Rof</b>
                         </p>
                     </td>
                     <td>
@@ -659,9 +840,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="dowhile"><a name="dowhile"></a>DoWhile</b> &lt;<a href="#assign">expr</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="dowhile">
+                                <a name="dowhile">
+                                </a>DoWhile</b> &lt;<a href="#assign">expr</a>&gt;</p>
                         <p>&lt;actions&gt;</p>
-                        <p><b>Od</b>
+                        <p>
+                            <b>Od</b>
                         </p>
                     </td>
                     <td>
@@ -670,10 +855,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="do"><a name="do"></a>Do</b>
+                        <p>
+                            <b MadCap:targetName="do">
+                                <a name="do">
+                                </a>Do</b>
                         </p>
                         <p>&lt;actions&gt;</p>
-                        <p><b>OdUntil</b> &lt;<a href="#assign">expr</a>&gt;</p>
+                        <p>
+                            <b>OdUntil</b> &lt;<a href="#assign">expr</a>&gt;</p>
                     </td>
                     <td>
                         <p>Repeats the execution of a number of command actions until a boolean expression evaluates to true. </p>
@@ -681,7 +870,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="break"><a name="break"></a>Break</b>
+                        <p>
+                            <b MadCap:targetName="break">
+                                <a name="break">
+                                </a>Break</b>
                         </p>
                     </td>
                     <td>
@@ -690,7 +882,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="continue"><a name="continue"></a>Continue</b>
+                        <p>
+                            <b MadCap:targetName="continue">
+                                <a name="continue">
+                                </a>Continue</b>
                         </p>
                     </td>
                     <td>
@@ -699,7 +894,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="try"><a name="try"></a>Try</b> &lt;<a href="#assign">ident</a>&gt; &lt;action&gt;</p>
+                        <p>
+                            <b MadCap:targetName="try">
+                                <a name="try">
+                                </a>Try</b> &lt;<a href="#assign">ident</a>&gt; &lt;action&gt;</p>
                         <p>&lt;<a href="#assign">ident</a>&gt;? '~' &lt;action&gt;</p>
                     </td>
                     <td>
@@ -708,7 +906,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="questioncmd"><a name="questioncmd"></a>Questioncmd</b> &lt;<b>questioncmd</b>&gt; &lt;<a href="#assign">ident</a>&gt; &lt;questionargs&gt;</p>
+                        <p>
+                            <b MadCap:targetName="questioncmd">
+                                <a name="questioncmd">
+                                </a>Questioncmd</b> &lt;<b>questioncmd</b>&gt; &lt;<a href="#assign">ident</a>&gt; &lt;questionargs&gt;</p>
                         <p>&lt;<a href="#assign">ident</a>&gt; '?' &lt;<b>questioncmd</b>&gt;&lt;questionargs&gt;</p>
                     </td>
                     <td>
@@ -717,9 +918,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="def"><a name="def"></a>Def</b> ( &lt;returnpar&gt; '?' )? &lt;procname&gt;'(' &lt;valpars&gt;? ')' &lt;varpar&gt;*</p>
+                        <p>
+                            <b MadCap:targetName="def">
+                                <a name="def">
+                                </a>Def</b> ( &lt;returnpar&gt; '?' )? &lt;procname&gt;'(' &lt;valpars&gt;? ')' &lt;varpar&gt;*</p>
                         <p>&lt;actions&gt;</p>
-                        <p><b>Fed</b>
+                        <p>
+                            <b>Fed</b>
                         </p>
                         <p>&lt;returnpar&gt; = &lt;varpar&gt;</p>
                         <p>&lt;procname&gt; = &lt;<a href="#assign">ident</a>&gt;</p>
@@ -733,7 +938,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="return"><a name="return"></a>Return</b> &lt;<a href="#assign">expr</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="return">
+                                <a name="return">
+                                </a>Return</b> &lt;<a href="#assign">expr</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Escapes immediately from the current procedure. In case its definition includes a return parameter, it will be assigned with the optional expression that is returned. </p>
@@ -741,7 +949,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="procname"><a name="procname"></a>Procname</b>( &lt;<a href="#assign">ident</a>&gt; '?' )? &lt;<a href="#def">procname</a>&gt;'<b>(</b>' &lt;<a href="#assign">expressions</a>&gt;? '<b>)</b>' &lt;<a href="#assign">ident</a>&gt;*</p>
+                        <p>
+                            <b MadCap:targetName="procname">
+                                <a name="procname">
+                                </a>Procname</b>( &lt;<a href="#assign">ident</a>&gt; '?' )? &lt;<a href="#def">procname</a>&gt;'<b>(</b>' &lt;<a href="#assign">expressions</a>&gt;? '<b>)</b>' &lt;<a href="#assign">ident</a>&gt;*</p>
                     </td>
                     <td>
                         <p>Calls a user-defined procedure specified earlier by means of the Def-command above. Its optional value parameters will accept expressions. Its optional return and variable parameters only accept identifiers, and these might be modified. Notice that a procedure call allows no space between the procedure name and its opening parenthesis.</p>
@@ -749,7 +960,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="end"><a name="end"></a>End</b>
+                        <p>
+                            <b MadCap:targetName="end">
+                                <a name="end">
+                                </a>End</b>
                         </p>
                     </td>
                     <td>
@@ -765,16 +979,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i MadCap:targetName="table4">&lt;questioncmd&gt; &lt;questionargs&gt;</i>
+                        <p>
+                            <i MadCap:targetName="table4">&lt;questioncmd&gt; &lt;questionargs&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
-                        <p><a name="question_commands"></a>IV. Question commands (to be inserted by the user)</p>
+                        <p>
+                            <a name="question_commands">
+                            </a>IV. Question commands (to be inserted by the user)</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="ismatch"><a name="ismatch"></a>IsMatch</b> "&lt;<a href="#window">searchstr</a>&gt;" "&lt;<a href="#window">textstr</a>&gt;" &lt;<a href="#case">casetag</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="ismatch">
+                                <a name="ismatch">
+                                </a>IsMatch</b> "&lt;<a href="#window">searchstr</a>&gt;" "&lt;<a href="#window">textstr</a>&gt;" &lt;<a href="#case">casetag</a>&gt;</p>
                     </td>
                     <td>
                         <p>True (1) if the text string matches the search key according to the rules described in the Search keys paragraph, false (0) otherwise. The identifier constants TRUE and FALSE have been predefined for convenience. If the optional case-sensitivity of the match is not specified, the global settings defined by the Case-command will apply. The options are 'Insensitive' or 'Sensitive'. </p>
@@ -782,7 +1002,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="iswindow"><a name="iswindow"></a>IsWindow</b> "&lt;<a href="#window">winname</a>&gt;"? &lt;winproptag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="iswindow">
+                                <a name="iswindow">
+                                </a>IsWindow</b> "&lt;<a href="#window">winname</a>&gt;"? &lt;winproptag&gt;?</p>
                         <p>&lt;winproptag&gt; = <b>Existent</b> | <b>Accessible</b> | <b>Modal</b> | <b>QDialog</b> | &lt;<a href="#show">showtag</a>&gt;</p>
                     </td>
                     <td>
@@ -791,7 +1014,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="ismenuitemon"><a name="ismenuitemon"></a>IsMenuItemOn</b> "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="ismenuitemon">
+                                <a name="ismenuitemon">
+                                </a>IsMenuItemOn</b> "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The identifier constants ON, OFF and UNSWITCHABLE have been predefined for convenience. The selection of the menu (sub)item is analogous to the Menu-command.</p>
@@ -799,7 +1025,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrmenuitems"><a name="nrmenuitems"></a>NrMenuItems</b> "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrmenuitems">
+                                <a name="nrmenuitems">
+                                </a>NrMenuItems</b> "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu. The GreyOuts-command defines whether disabled items are counted as well. Selection of a sub-menu is analogous to the selection of menu items in the Menu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -807,7 +1036,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getmenuitem"><a name="getmenuitem"></a>GetMenuItem</b> "&lt;<a href="#menu">menupath</a>&gt;" &lt;formtag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getmenuitem">
+                                <a name="getmenuitem">
+                                </a>GetMenuItem</b> "&lt;<a href="#menu">menupath</a>&gt;" &lt;formtag&gt;?</p>
                         <p>&lt;formtag&gt; = <b>Text</b> | <b>Number</b></p>
                     </td>
                     <td>
@@ -816,7 +1048,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="isbuttonon"><a name="isbuttonon"></a>IsButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="isbuttonon">
+                                <a name="isbuttonon">
+                                </a>IsButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected radio-, check-, or toolbar button is checked, off (0) if it is unchecked, and unswitchable (-1) in case of a push button or a non-checkable toolbar button. The identifier constants ON, OFF and UNSWITCHABLE have been predefined for convenience. The button selection is analogous to the Button-command.</p>
@@ -824,7 +1059,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getbutton"><a name="getbutton"></a>GetButton</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;buttonformtag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="getbutton">
+                                <a name="getbutton">
+                                </a>GetButton</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;buttonformtag&gt;? </p>
                         <p>&lt;buttonformtag&gt; = <b>Text</b> | <b>Color</b></p>
                     </td>
                     <td>
@@ -833,7 +1071,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="isbuttonmenuitemon"><a name="isbuttonmenuitemon"></a>IsButtonMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="isbuttonmenuitemon">
+                                <a name="isbuttonmenuitemon">
+                                </a>IsButtonMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item of a button is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The selection of button and menu (sub)item is analogous to the ButtonMenu-command.</p>
@@ -841,7 +1082,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrbuttonmenuitems"><a name="nrbuttonmenuitems"></a>NrButtonMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrbuttonmenuitems">
+                                <a name="nrbuttonmenuitems">
+                                </a>NrButtonMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu of a button. The GreyOuts-command defines whether disabled items are counted as well. The selection of button and sub-menu is analogous to the ButtonMenu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -849,7 +1093,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getbuttonmenuitem"><a name="getbuttonmenuitem"></a>GetButtonMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getbuttonmenuitem">
+                                <a name="getbuttonmenuitem">
+                                </a>GetButtonMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the selected menu (sub)item of a button. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. Selection of button and menu (sub)item is analogous to the ButtonMenu-command.</p>
@@ -857,7 +1104,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getinput"><a name="getinput"></a>GetInput</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;inputformtag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getinput">
+                                <a name="getinput">
+                                </a>GetInput</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;inputformtag&gt;?</p>
                         <p>&lt;inputformtag&gt; = <b>Text</b> | <b>FilePath</b></p>
                     </td>
                     <td>
@@ -866,7 +1116,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getspin"><a name="getspin"></a>GetSpin</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;spinformtag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="getspin">
+                                <a name="getspin">
+                                </a>GetSpin</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;spinformtag&gt;? </p>
                         <p>&lt;spinformtag&gt; = <b>Text</b> | <b>Value</b> | <b>Minimum</b> | <b>Maximum</b> | <b>Step</b></p>
                     </td>
                     <td>
@@ -875,7 +1128,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getslider"><a name="getslider"></a>GetSlider</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;sliderformtag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="getslider">
+                                <a name="getslider">
+                                </a>GetSlider</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;sliderformtag&gt;? </p>
                         <p>&lt;sliderformtag&gt; = <b>Text</b> | <b>Value</b> | <b>Minimum</b> | <b>Maximum</b> | <b>Percentage</b></p>
                     </td>
                     <td>
@@ -884,7 +1140,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getwheel"><a name="getwheel"></a>GetWheel</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;wheelformtag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="getwheel">
+                                <a name="getwheel">
+                                </a>GetWheel</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;wheelformtag&gt;? </p>
                         <p>&lt;wheelformtag&gt; = <b>Text</b> | <b>Angle</b></p>
                     </td>
                     <td>
@@ -893,7 +1152,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrcomboitems"><a name="nrcomboitems"></a>NrComboItems</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="nrcomboitems">
+                                <a name="nrcomboitems">
+                                </a>NrComboItems</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
                     </td>
                     <td>
                         <p>Returns the number of items in a selected combobox. The selection of the combobox is analogous to the Combo-command.</p>
@@ -901,7 +1163,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curcomboitem"><a name="curcomboitem"></a>CurComboItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curcomboitem">
+                                <a name="curcomboitem">
+                                </a>CurComboItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the current combobox item. In which form is optional and textual by default. The selection of the combobox is analogous to the Combo-command. </p>
@@ -909,7 +1174,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="iscomboitemon"><a name="iscomboitemon"></a>IsComboItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="iscomboitemon">
+                                <a name="iscomboitemon">
+                                </a>IsComboItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
                     </td>
                     <td>
                         <p>On (1) if the specified combobox item is currently selected, and off (0) if it is currently deselected. Specification of the combobox and its item is analogous to the Combo-command.</p>
@@ -917,7 +1185,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getcomboitem"><a name="getcomboitem"></a>GetComboItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getcomboitem">
+                                <a name="getcomboitem">
+                                </a>GetComboItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of a selected combobox item. In which form is optional and textual by default. Selection of the combobox and its item is analogous to the Combo-command.</p>
@@ -925,7 +1196,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtabs"><a name="nrtabs"></a>NrTabs</b> "&lt;<a href="#button">keystr</a>&gt;"?</p>
+                        <p>
+                            <b MadCap:targetName="nrtabs">
+                                <a name="nrtabs">
+                                </a>NrTabs</b> "&lt;<a href="#button">keystr</a>&gt;"?</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) tabs in a selected tab-stack. The GreyOuts-command defines whether disabled tabs are counted as well. The optional selection of the tab-stack is analogous to the Tab-command.</p>
@@ -933,7 +1207,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtab"><a name="curtab"></a>CurTab</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtab">
+                                <a name="curtab">
+                                </a>CurTab</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the current tab. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled tabs are counted as well. The optional selection of the tab-stack is analogous to the Tab-command. </p>
@@ -941,7 +1218,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istabon"><a name="istabon"></a>IsTabOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#tab">tabname</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istabon">
+                                <a name="istabon">
+                                </a>IsTabOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#tab">tabname</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected tab is currently on top, and off (0) if it is currently underneath. Selection of tab-stack and tab-name is analogous to the Tab-command.</p>
@@ -949,7 +1229,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettab"><a name="gettab"></a>GetTab</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#tab">tabname</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettab">
+                                <a name="gettab">
+                                </a>GetTab</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#tab">tabname</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of a selected tab. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled tabs are counted as well. Selection of tab-stack and tab-name is analogous to the Tab-command.</p>
@@ -957,7 +1240,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="iscanvasmenuitemon"><a name="iscanvasmenuitemon"></a>IsCanvasMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="iscanvasmenuitemon">
+                                <a name="iscanvasmenuitemon">
+                                </a>IsCanvasMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item in the pop-up menu of a canvas area is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The selection of canvas area and menu (sub)item is analogous to the CanvasMenu-command.</p>
@@ -965,7 +1251,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrcanvasmenuitems"><a name="nrcanvasmenuitems"></a>NrCanvasMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrcanvasmenuitems">
+                                <a name="nrcanvasmenuitems">
+                                </a>NrCanvasMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu popping up at a canvas area. The GreyOuts-command defines whether disabled items are counted as well. The selection of canvas area and sub-menu is analogous to the CanvasMenu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -973,7 +1262,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getcanvasmenuitem"><a name="getcanvasmenuitem"></a>GetCanvasMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getcanvasmenuitem">
+                                <a name="getcanvasmenuitem">
+                                </a>GetCanvasMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the selected menu (sub)item in the pop-up menu of a canvas area. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. The selection of canvas area and menu (sub)item is analogous to the CanvasMenu-command.</p>
@@ -981,7 +1273,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="isshown"><a name="isshown"></a>IsShown</b> &lt;<a href="#close">subwinsel</a>&gt;? &lt;<a href="#show">showtag</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="isshown">
+                                <a name="isshown">
+                                </a>IsShown</b> &lt;<a href="#close">subwinsel</a>&gt;? &lt;<a href="#show">showtag</a>&gt;</p>
                     </td>
                     <td>
                         <p>True (1) if a selected subwindow in the workspace of the current window is minimized, maximized, or normal size respectively, and false (0) otherwise. Specification of size property and optional subwindow is analogous to the Show-command. Not selecting a subwindow will yield the size properties of the current window itself.</p>
@@ -996,17 +1291,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
+                        <p>
+                            <i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><b>V. List question commands (to be inserted by the user)</b>
+                        <p>
+                            <b>V. List question commands (to be inserted by the user)</b>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrlistitems"><a name="nrlistitems"></a>NrListItems</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="nrlistitems">
+                                <a name="nrlistitems">
+                                </a>NrListItems</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
                     </td>
                     <td>
                         <p>Returns the number of items in a selected listbox. The selection of the listbox is analogous to the ListClick-command.</p>
@@ -1014,7 +1314,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curlistitem"><a name="curlistitem"></a>CurListItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;curtag&gt;? &lt;listformtag&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curlistitem">
+                                <a name="curlistitem">
+                                </a>CurListItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;curtag&gt;? &lt;listformtag&gt;?</p>
                         <p>&lt;curtag&gt; = <b>Framed</b> | <b>Selected</b>&lt;listformtag&gt; = <b>Text</b> | <b>Number</b> | <b>Color</b></p>
                     </td>
                     <td>
@@ -1023,7 +1326,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="islistitemon"><a name="islistitemon"></a>IsListItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="islistitemon">
+                                <a name="islistitemon">
+                                </a>IsListItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
                     </td>
                     <td>
                         <p>On (1) if a specified item in a listbox has been selected (i.e. highlighted), off (0) if it has been deselected, and unswitchable (-1) if the listbox does not support item selection at all. The specification of listbox and item is analogous to the ListClick-command. </p>
@@ -1031,7 +1337,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getlistitem"><a name="getlistitem"></a>GetListItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#curlistitem">listformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getlistitem">
+                                <a name="getlistitem">
+                                </a>GetListItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; &lt;<a href="#curlistitem">listformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text, number or background color of a selected listbox item. In which form is optional and 'Text' by default. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. Selection of both listbox and item is analogous to the ListClick-command. </p>
@@ -1039,7 +1348,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="islistbuttonon"><a name="islistbuttonon"></a>IsListButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="islistbuttonon">
+                                <a name="islistbuttonon">
+                                </a>IsListButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt;</p>
                     </td>
                     <td>
                         <p>On (1) if the button in front of a listbox item is checked, and off (0) if it is unchecked. Selection of both listbox and item is analogous to the ListButton-command. </p>
@@ -1047,7 +1359,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="islistmenuitemon"><a name="islistmenuitemon"></a>IsListMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="islistmenuitemon">
+                                <a name="islistmenuitemon">
+                                </a>IsListMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item of a listbox item is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The selection of the listbox, its item and the menu (sub)item is analogous to the ListMenu-command.</p>
@@ -1055,7 +1370,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrlistmenuitems"><a name="nrlistmenuitems"></a>NrListMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrlistmenuitems">
+                                <a name="nrlistmenuitems">
+                                </a>NrListMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu of a listbox item. The GreyOuts-command defines whether disabled items are counted as well. Selection of the listbox, its item and a sub-menu is analogous to the ListMenu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -1063,7 +1381,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="getlistmenuitem"><a name="getlistmenuitem"></a>GetListMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="getlistmenuitem">
+                                <a name="getlistmenuitem">
+                                </a>GetListMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#combo">itemsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the selected menu (sub)item of a listbox item. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. The selection of the listbox, its item and the menu (sub)item is analogous to the ListMenu-command.</p>
@@ -1078,7 +1399,8 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
+                        <p>
+                            <i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
@@ -1087,7 +1409,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtablerows"><a name="nrtablerows"></a>NrTableRows</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="nrtablerows">
+                                <a name="nrtablerows">
+                                </a>NrTableRows</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
                     </td>
                     <td>
                         <p>Returns the number of rows in the selected table. The selection of the table is analogous to the TableClick-command.</p>
@@ -1095,7 +1420,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtablecols"><a name="nrtablecols"></a>NrTableCols</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="nrtablecols">
+                                <a name="nrtablecols">
+                                </a>NrTableCols</b> "&lt;<a href="#button">keystr</a>&gt;"</p>
                     </td>
                     <td>
                         <p>Returns the number of columns in the selected table. The selection of the table is analogous to the TableClick-command.</p>
@@ -1103,7 +1431,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtableitem"><a name="curtableitem"></a>CurTableItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;tableformtag&gt;? </p>
+                        <p>
+                            <b MadCap:targetName="curtableitem">
+                                <a name="curtableitem">
+                                </a>CurTableItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;tableformtag&gt;? </p>
                         <p>&lt;tableformtag&gt; = <b>Text</b> | <b>Number</b> | <b>Color</b></p>
                     </td>
                     <td>
@@ -1112,7 +1443,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtablerow"><a name="curtablerow"></a>CurTableRow</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtablerow">
+                                <a name="curtablerow">
+                                </a>CurTableRow</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the row-header text, number or background color of the current table row. In which form is optional and 'Text' by default. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. If the table has no row header or no current row, an empty string, zero or transparent white is returned respectively. Like the CurListItem-command, the current table row is by default defined by the item that is 'Framed'. Optionally, if precisely one (entire row of) item(s) is 'Selected' (i.e. highlighted), the row at issue can be requested as current table row instead. The selection of the table is analogous to the TableClick-command.</p>
@@ -1120,7 +1454,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtablecol"><a name="curtablecol"></a>CurTableCol</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtablecol">
+                                <a name="curtablecol">
+                                </a>CurTableCol</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the column-header text, number or background color of the current table column. In which form is optional and 'Text' by default. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. If the table has no column header or no current column, an empty string, zero or transparent white is returned respectively. Like the CurListItem-command, the current table column is by default defined by the item that is 'Framed'. Optionally, if precisely one (entire column of) item(s) is 'Selected' (i.e. highlighted), the column at issue can be requested as current table column instead. The selection of the table is analogous to the TableClick-command.</p>
@@ -1128,7 +1465,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istableitemon"><a name="istableitemon"></a>IsTableItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt;</p>
+                        <p>
+                            <b MadCap:targetName="istableitemon">
+                                <a name="istableitemon">
+                                </a>IsTableItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt;</p>
                     </td>
                     <td>
                         <p>On (1) if a specified item in a table has been selected (i.e. highlighted), off (0) if it has been deselected, and unswitchable (-1) if the table does not support item selection at all. The specification of table and item is analogous to the TableClick-command. A row-head or col-head item is considered selected only if all table cells in that row or column are selected.</p>
@@ -1136,7 +1476,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettableitem"><a name="gettableitem"></a>GetTableItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettableitem">
+                                <a name="gettableitem">
+                                </a>GetTableItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text, number or background color of a selected table cell. In which form is optional and 'Text' by default. In the 'Number' case, the table cells are counted row-by-row. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. Selection of both table and cell is analogous to the TableFill-command. </p>
@@ -1144,7 +1487,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettablerow"><a name="gettablerow"></a>GetTableRow</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettablerow">
+                                <a name="gettablerow">
+                                </a>GetTableRow</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the row-header text, number or background color of a selected table item. In which form is optional and 'Text' by default. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. Selection of both table and item is analogous to the TableClick-command. If the selected item is not a row-head item itself, it refers to the row-head item straight above it. </p>
@@ -1152,7 +1498,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettablecol"><a name="gettablecol"></a>GetTableCol</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettablecol">
+                                <a name="gettablecol">
+                                </a>GetTableCol</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">tableitemsel</a>&gt; &lt;<a href="#curtableitem">tableformtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the column-header text, number or background color of a selected table item. In which form is optional and 'Text' by default. The RGBt color string format returned in the 'Color' case is defined at the ColorOk-command. Selection of both table and item is analogous to the TableClick-command. If the selected item is not a col-head item itself, it refers to the col-head item left next to it.</p>
@@ -1160,7 +1509,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istablemenuitemon"><a name="istablemenuitemon"></a>IsTableMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istablemenuitemon">
+                                <a name="istablemenuitemon">
+                                </a>IsTableMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item of a table cell is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The selection of the table, its cell and the menu (sub)item is analogous to the TableMenu-command.</p>
@@ -1168,7 +1520,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtablemenuitems"><a name="nrtablemenuitems"></a>NrTableMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrtablemenuitems">
+                                <a name="nrtablemenuitems">
+                                </a>NrTableMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu of a table cell. The GreyOuts-command defines whether disabled items are counted as well. Selection of the table, its cell and a sub-menu is analogous to the TableMenu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -1176,7 +1531,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettablemenuitem"><a name="gettablemenuitem"></a>GetTableMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettablemenuitem">
+                                <a name="gettablemenuitem">
+                                </a>GetTableMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;" &lt;<a href="#tableclick">cellsel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the selected menu (sub)item of a table cell. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. The selection of the table, its cell and the menu (sub)item is analogous to the TableMenu-command.</p>
@@ -1191,17 +1549,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
+                        <p>
+                            <i>&lt;questioncmd&gt; &lt;questionargs&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><b>VII. Tree question commands (to be inserted by the user)</b>
+                        <p>
+                            <b>VII. Tree question commands (to be inserted by the user)</b>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtreeitems"><a name="nrtreeitems"></a>NrTreeItems</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrtreeitems">
+                                <a name="nrtreeitems">
+                                </a>NrTreeItems</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in a selected tree node. The GreyOuts-command defines whether disabled items are counted as well. The optional selection of the tree is analogous to the TreeClick-command. This also holds for its tree node, except that column selection is not an issue here. The root node is denoted by an empty tree path (""). Zero is returned if the tree path leads to a leaf tree item. </p>
@@ -1209,7 +1572,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtreecols"><a name="nrtreecols"></a>NrTreeCols</b> "&lt;<a href="#button">keystr</a>&gt;"?</p>
+                        <p>
+                            <b MadCap:targetName="nrtreecols">
+                                <a name="nrtreecols">
+                                </a>NrTreeCols</b> "&lt;<a href="#button">keystr</a>&gt;"?</p>
                     </td>
                     <td>
                         <p>Returns the number of columns in a tree. The optional selection of the tree is analogous to the TreeClick-command.</p>
@@ -1217,7 +1583,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtreeitem"><a name="curtreeitem"></a>CurTreeItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtreeitem">
+                                <a name="curtreeitem">
+                                </a>CurTreeItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the current tree item. In which form is optional and textual by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. If there is no current tree item, an empty string or zero is returned respectively. Like the CurListItem-command, the current tree item is by default the one that is 'Framed'. Optionally, if precisely one item is 'Selected' (i.e. highlighted), it can be requested as current tree item instead. The optional selection of the tree is analogous to the TreeClick-command.</p>
@@ -1225,7 +1594,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtreepath"><a name="curtreepath"></a>CurTreePath</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtreepath">
+                                <a name="curtreepath">
+                                </a>CurTreePath</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#curlistitem">curtag</a>&gt;? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the path to the current tree item. In which form is optional and textual by default. The 'Number' case is especially useful if 'Text' would yield an ambiguous tree path. The GreyOuts-command defines whether disabled items are counted as well. If there is no current tree item, an empty path ("") is returned. Like the CurListItem-command, the current tree item is by default the one that is 'Framed'. Optionally, if precisely one item is 'Selected' (i.e. highlighted), it can be requested as current tree item instead. The optional selection of the tree is analogous to the TreeClick-command.</p>
@@ -1233,7 +1605,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="curtreecol"><a name="curtreecol"></a>CurTreeCol</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="curtreecol">
+                                <a name="curtreecol">
+                                </a>CurTreeCol</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the column text or number of the current tree item. In which form is optional and textual by default. Note that the current tree item is merely column-specific in case of the default 'Framed' setting. The optional selection of the tree is analogous to the TreeClick-command.</p>
@@ -1241,7 +1616,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istreeitemon"><a name="istreeitemon"></a>IsTreeItemOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istreeitemon">
+                                <a name="istreeitemon">
+                                </a>IsTreeItemOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if a specified item in a tree has been selected (i.e. highlighted), off (0) if it has been deselected, and unswitchable (-1) if the tree does not support item selection at all. Specification of the tree and its node is analogous to the TreeClick-command, except that column selection is not an issue here.</p>
@@ -1249,7 +1627,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istreeitemexpanded"><a name="istreeitemexpanded"></a>IsTreeItemExpanded</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istreeitemexpanded">
+                                <a name="istreeitemexpanded">
+                                </a>IsTreeItemExpanded</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>True (1) if a specified item in a tree has been expanded, false (0) if it has been collapsed, and unexpandable (-1) if it is a leaf node. Beware that an expanded tree node can have a collapsed ancestor. Specification of the tree and its node is analogous to the TreeClick-command, except that column selection is not an issue here.</p>
@@ -1257,7 +1638,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettreeitem"><a name="gettreeitem"></a>GetTreeItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettreeitem">
+                                <a name="gettreeitem">
+                                </a>GetTreeItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the item number of a tree node or the text in one of its columns. In which form is optional and textual by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. The selection of the tree, its node and column is analogous to the TreeClick-command.</p>
@@ -1265,7 +1649,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettreepath"><a name="getreepatch"></a>GetTreePath</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettreepath">
+                                <a name="getreepatch">
+                                </a>GetTreePath</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the path to a selected tree node. In which form is optional and textual by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. It can be used for converting a path from one form to another. Specification of the tree and its node is analogous to the TreeClick-command, except that column selection is not an issue here.</p>
@@ -1273,7 +1660,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettreecol"><a name="getreecol"></a>GetTreeCol</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;treecolsel&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettreecol">
+                                <a name="getreecol">
+                                </a>GetTreeCol</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;treecolsel&gt; &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                         <p>&lt;treecolsel&gt; = &lt;colsel&gt; | <b>PathCol</b> "&lt;<a href="#treeclick">treepath</a>&gt;" &lt;colsel&gt;</p>
                     </td>
                     <td>
@@ -1282,7 +1672,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istreebuttonon"><a name="istreebuttonon"></a>IsTreeButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istreebuttonon">
+                                <a name="istreebuttonon">
+                                </a>IsTreeButtonOn</b> "&lt;<a href="#button">keystr</a>&gt;"? "&lt;<a href="#treeclick">treepath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the button in front of a tree node is checked, and off (0) if it is unchecked. Selection of both the tree and its node is analogous to the TreeButton-command.</p>
@@ -1290,7 +1683,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="istreemenuitemon"><a name="istreemenuitemon"></a>IsTreeMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
+                        <p>
+                            <b MadCap:targetName="istreemenuitemon">
+                                <a name="istreemenuitemon">
+                                </a>IsTreeMenuItemOn</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;"</p>
                     </td>
                     <td>
                         <p>On (1) if the selected menu (sub)item attached to a column of a tree node is checked, off (0) if it is unchecked, and unswitchable (-1) if it is not checkable at all. The selection of the tree, its node and column, and the menu (sub)item is analogous to the TreeMenu-command.</p>
@@ -1298,7 +1694,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="nrtreemenuitems"><a name="nrtreemenuitems"></a>NrTreeMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
+                        <p>
+                            <b MadCap:targetName="nrtreemenuitems">
+                                <a name="nrtreemenuitems">
+                                </a>NrTreeMenuItems</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;?"</p>
                     </td>
                     <td>
                         <p>Returns the number of (enabled) items in the selected (sub)menu attached to a column of a tree node. The GreyOuts-command defines whether disabled items are counted as well. Selection of the tree, its node and column, and a sub-menu is analogous to the TreeMenu-command. The root menu is denoted by an empty menu-path (""). Zero is returned if the menu-path leads to a leaf menu item. </p>
@@ -1306,7 +1705,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b MadCap:targetName="gettreemenuitem"><a name="gettreemenuitem"></a>GetTreeMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
+                        <p>
+                            <b MadCap:targetName="gettreemenuitem">
+                                <a name="gettreemenuitem">
+                                </a>GetTreeMenuItem</b> "&lt;<a href="#button">keystr</a>&gt;"? &lt;<a href="#treeclick">treenodesel</a>&gt; "&lt;<a href="#menu">menupath</a>&gt;" &lt;<a href="#getmenuitem">formtag</a>&gt;?</p>
                     </td>
                     <td>
                         <p>Returns the text or number of the selected menu (sub)item attached to a column of a tree node. In which form is optional and 'Text' by default. In the 'Number' case, the GreyOuts-command defines whether disabled items are counted as well. The selection of the tree, its node and column, and the menu (sub)item is analogous to the TreeMenu-command.</p>
@@ -1314,7 +1716,10 @@
                 </tr>
             </tbody>
         </table>
-        <p><b><a name="Expressional"></a>Expressional specifications</b>
+        <p>
+            <b>
+                <a name="Expressional">
+                </a>Expressional specifications</b>
         </p>
         <p>The logical and mathematical operators to be applied in Command Driver expressions are almost equivalent to those used in OpendTect's <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">mathematics attribute</MadCap:conditionalText> <a href="Appendix_A-Attributes_And_Filters/Mathematics.htm" target="_self" MadCap:conditions="Default.ScreenOnly">mathematics attribute</a> definitions. Only the |x| operator is not provided to keep the parsing of expressions straightforward. Use the abs()-function instead. The AND-operator, OR-operator and conditional operator only evaluate their second (or third) sub-expression if needed for the result. For example, the reciprocal expression ( x==0 ? UNDEF : 1/x ) will not generate a division-by-zero error. The list of operators is sorted in order of precedence.</p>
         <table style="border-spacing: 0px 0px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
@@ -1325,14 +1730,16 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>Precedence</i>
+                        <p>
+                            <i>Precedence</i>
                         </p>
                     </td>
                     <td style="font-style: italic;">
                         <p>Associativity</p>
                     </td>
                     <td>
-                        <p><i MadCap:targetName="operatorexpr">&lt;operatorexpr&gt;</i>
+                        <p>
+                            <i MadCap:targetName="operatorexpr">&lt;operatorexpr&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
@@ -1594,7 +2001,8 @@
             <tbody>
                 <tr>
                     <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
-                        <p><i>&lt;<a href="#assign">functioncall</a>&gt;</i>
+                        <p>
+                            <i>&lt;<a href="#assign">functioncall</a>&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
@@ -1762,7 +2170,8 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;<a href="#assign">functioncall</a>&gt;</i>
+                        <p>
+                            <i>&lt;<a href="#assign">functioncall</a>&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
@@ -1826,7 +2235,8 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;<a href="#assign">functioncall</a>&gt;</i>
+                        <p>
+                            <i>&lt;<a href="#assign">functioncall</a>&gt;</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
@@ -1995,11 +2405,13 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i>&lt;<a href="#assign">ident</a>&gt;</i>
+                        <p>
+                            <i>&lt;<a href="#assign">ident</a>&gt;</i>
                         </p>
                     </td>
                     <td>
-                        <p><i>$&lt;<a href="#assign">ident</a>&gt;$</i>
+                        <p>
+                            <i>$&lt;<a href="#assign">ident</a>&gt;$</i>
                         </p>
                     </td>
                     <td style="font-weight: bold;">
@@ -2177,13 +2589,17 @@
                 </tr>
             </tbody>
         </table>
-        <p><b><a name="Repetitive_task_example"></a>Repetitive task example</b>
+        <p>
+            <b>
+                <a name="Repetitive_task_example">
+                </a>Repetitive task example</b>
         </p>
         <p>One of the recurring user questions about OpendTect is whether there is a quick way to do some kind of repetitive task. Loading a huge amount of wells, importing multiple 2D line SEG-Y data, etc. Such a service can only be offered by OpendTect itself if the task is very simple, common and straightforward. For example, one does have the possibility to select multiple horizons with the mouse in order to load them in one go. However, if the repetitive task is more complex, unique, or variant, the workflow can be automatized by means of a command script.</p>
         <p>The current Command Driver capabilities are demonstrated by automizing a case raised by Magnus Lidgren. His scene contained a big number of 2D lines, and a number of attributes on each line. He needed to generate a picture for every attribute of every 2D line, and wanted to avoid doing that manually.</p>
         <p>Automizing a repetitive task consists of three stages. Firstly, the Command Recorder is applied to record the mouse and keyboard actions needed to perform the task once. Secondly, a text editor is used to modify the recorded script. Some of the recorded actions have to be generalized, and a few new commands have to be added to make the script iterative. These commands are listed in <a href="#table_iii" target="_self" MadCap:conditions="Default.ScreenOnly">Table III</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Table III</MadCap:conditionalText>. Thirdly, the Command Driver is applied to run the modified script, initially to debug it and finally to perform the repetitive task.</p>
         <p>Listed below is the recorded command script that makes a snapshot of one attribute on one 2D line. The passages that need to be generalized have been printed in red.</p>
-        <hr /><pre xml:space="preserve">[OpendTect Main Window]
+        <hr />
+        <pre xml:space="preserve">[OpendTect Main Window]
 TreeMenu "2D Seismics`<span style="color: #ff0000;">LS 5k`i5007`Seis</span>" "Display in a 2D Viewer as`VD"
 
 [2D Viewer - Line: <span style="color: #ff0000;">i5007</span>]
@@ -2200,7 +2616,9 @@ Close
 [OpendTect Main Window]</pre>
         <hr />
         <p>Listed below is the modified command script after it has been generalized and made iterative. All changes with regard to the originally recorded script have been printed in green.</p>
-        <hr /><pre xml:space="preserve"><span style="color: #3d8b40;">Def res ? dumpAttribute( setnr, namenr, attrnr )</span>
+        <hr />
+        <pre xml:space="preserve">
+            <span style="color: #3d8b40;">Def res ? dumpAttribute( setnr, namenr, attrnr )</span>
     [OpendTect Main Window]
     res ~ TreeMenu "2D Seismics<span style="color: #3d8b40;">`*#$setnr$`*#$namenr$`*#$attrnr$" \</span>
                    "Display`2D Viewer - VD"
@@ -2255,7 +2673,9 @@ Rof</span></pre>
         </ul>
         <p>Note that different operators are used to store the result of an expression (=), a command action (~), or either a user-defined procedure (?) or a question command (?) into an identifier. This eases the parsing of commands by the Command Driver, and it should make the user aware that the allowed complexity of (sub)-expressions does not go beyond the built-in function calls. The results of command actions, user-defined procedure calls, and question commands have to be assigned to auxiliary identifiers first.</p>
         <p>The introduction of <a href="#question_commands" target="_self" MadCap:conditions="Default.ScreenOnly">question commands</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">question commands</MadCap:conditionalText> allows the body of the previous script to be written in a different style. An identifier can take the answer to one of the many questions (Nr..., Cur..., Is..., Get...) from <a href="#question_commands" target="_self" MadCap:conditions="Default.ScreenOnly">Table IV to VII</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Table IV to VII</MadCap:conditionalText> about some property of a user-interface element. Instead of applying the Break-command to escape from loops when the procedure call to dumpAttribute(...,...) fails, now the number of items to iterate over can be asked and set before entering a loop ( nritems ? NrTreeItems ... ). Note that a procedure defined with a return parameter can also be called without. Listed below is the restyled body of the command script above.</p>
-        <hr /><pre><span style="color: #3d8b40;">nrsets ? NrTreeItems "2D Seismics"
+        <hr />
+        <pre>
+            <span style="color: #3d8b40;">nrsets ? NrTreeItems "2D Seismics"
 For setidx = 1 To nrsets
 
 	nrnames ? NrTreeItems "2D Seismics`*#$setidx$"
@@ -2267,15 +2687,22 @@ For setidx = 1 To nrsets
 			dumpAttribute( setidx, nameidx, attridx )
 		Rof
 	Rof
-Rof</span></pre>
+Rof</span>
+        </pre>
         <hr />
-        <p><b><a name="Standard_test_scripts"></a>Standard test scripts</b>
+        <p>
+            <b>
+                <a name="Standard_test_scripts">
+                </a>Standard test scripts</b>
         </p>
         <p>In the 'doc' directory of the release, you can find a 'Scripts' subdirectory. It contains the standard test scripts for OpendTect. These test scripts all work on a survey 'F3_Demo', the demo data set for OpendTect.</p>
         <p>The directory contains several scripts, many of which can be run stand-alone, but certainly not all. There is also an execute-all script: 'AllScripts.cmd'. Another composite script is 'AllAttributes.cmd', which will make snapshots in the Snapshots directory. This Snapshots directory is created automatically; the location is your_surveys/F3_Demo/Snapshots. The snapshots are created as an index followed by the file name.</p>
         <p>Another script is 'ExportData.cmd'. While running this script an 'Export' directory is automatically created as a subdirectory of 'F3_Demo'. All the exported data will be stored in the above directory.</p>
         <p>Some scripts are dependent on PlugIns like SSIS, VMB etc. These scripts are located in dgb/doc/Scripts. To run these scripts you should make sure the related plugins are loaded.</p>
-        <p><b><a name="User_history_recording"></a>User history recording</b>
+        <p>
+            <b>
+                <a name="User_history_recording">
+                </a>User history recording</b>
         </p>
         <p>The CmdDriver plugin also offers the possibility to record the user action history in the background from the moment OpendTect is started. It will be stored in the file userhistory.odcmdin the Proc directory of the starting survey. It is not guaranteed that the Command Driver can offer a full reproduction of the past by running this file, since not all possible user actions are covered yet. Mouse actions performed in 3D scenes or 2D viewers are recorded nor executed for the time being. Actions performed in the Command Controller window are recorded, but not executed as long as the difficulty of calling the Command Driver recursively has not been solved. Nevertheless, the recorded history can be of great help in reproducing a bug or crash reported by the user.</p>
         <p>In order to enable recording of the user history, the user setting dTect.User history buffer must be set with a value other than zero. The magnitude of this value defines the size (in characters) of the buffer in which the user actions are stored temporarily. A positive size value means flushing the content of the buffer to file every time it overflows. A negative size value means dropping the oldest content once the buffer starts overflowing, and flushing only the newest actions to file when OpendTect finally exits or crashes. The menu item Utilities-&gt;Settings-&gt;Advanced-&gt;Personal settings will pop-up a dialog in which this user setting can be added or adapted.</p>

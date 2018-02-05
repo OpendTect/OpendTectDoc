@@ -208,11 +208,11 @@ See: http://en.wikipedia.org/wiki/Madagascar_(software)</Definition>
         </Terms>
         <Definition Link="">A pointset group is a collection of different pointsets. Usually pointsets are grouped because they refer to the same object, e.g. Chimney_yes or Chimney_no.</Definition>
     </GlossaryEntry>
-    <GlossaryEntry glossTerm="Glossary.Term34">
+    <GlossaryEntry glossTerm="Glossary.Term34" Stem="" IgnoreCase="false">
         <Terms>
             <Term>Regression</Term>
         </Terms>
-        <Definition Link="">Seaward shoreline &amp; facies shift. Regression can be Normal (base level rises) or Forced (base level falls).</Definition>
+        <Definition Link="">Seaward shoreline and facies shift. Regression can be Normal (base level rises) or Forced (base level falls).</Definition>
     </GlossaryEntry>
     <GlossaryEntry glossTerm="Glossary.Term35">
         <Terms>
@@ -230,9 +230,9 @@ See: http://en.wikipedia.org/wiki/Madagascar_(software)</Definition>
         <Terms>
             <Term>SEG-Y</Term>
         </Terms>
-        <Definition Link="">A file format for exchanging seismic or seismic-like data. It is used for both 2D and 3D pre- or post-stack data. A file being SEG-Y compliant does not mean that it can be loaded into OpendTect. There are several possible problems. One of these is missing trace identification and/or positioning. Another issue is lack of true compliance -&gt;SEG-Y Rev 0, -&gt; SEG-Y Rev 1).
+        <Definition Link="">A file format for exchanging seismic or seismic-like data. It is used for both 2D and 3D pre- or poststack data. A file being SEG-Y compliant does not mean that it can be loaded into OpendTect. There are several possible problems. One of these is missing trace identification and/or positioning. Another issue is lack of true compliance -&gt;SEG-Y Rev 0, -&gt; SEG-Y Rev 1).
 
-The different types of SEGY are shown below:
+The different types of SEG-Y are shown below:
 
 * SEG-Y Rev 0: The initial SEG-Y specification in 1975. It is very precise in some areas but totally unspecified in other, crucial areas. This has led to an almost uncountable number of variants. Some are sort-of SEG-Y standard, others blatantly non-compliant.
 
@@ -246,9 +246,9 @@ The different types of SEGY are shown below:
 
 * SEG-Y Binary header: The second part of the SEG-Y Tape header contains binary information about, amongst others, values for number of samples per trace, byte encoding, sample interval, and SEG-Y Revision.
 
-* Trace identification: Every trace in OpendTect needs to have an identification in form of a trace number (2D data) or inline/crossline (3D data). For pre-stack data the offset forms and extra trace identification.
+* Trace identification: Every trace in OpendTect needs to have an identification in form of a trace number (2D data) or inline/crossline (3D data). For prestack data the offset forms and extra trace identification.
 
-* Trace positioning: In OpendTect, every seismic trace needs to be located in 3D space. For 3D data, the position can be derived from the-&gt;Trace identification (inline- and crossline numbers). Traces in 2D lines have their own, separate X- and Y- coordinate. For pre-stack data there must also be an offset available.</Definition>
+* Trace positioning: In OpendTect, every seismic trace needs to be located in 3D space. For 3D data, the position can be derived from the-&gt;Trace identification (inline- and crossline numbers). Traces in 2D lines have their own, separate X- and Y- coordinate. For prestack data there must also be an offset available.</Definition>
     </GlossaryEntry>
     <GlossaryEntry glossTerm="Glossary.Term38">
         <Terms>
@@ -272,19 +272,19 @@ The different types of SEGY are shown below:
         <Terms>
             <Term>Trace Identification</Term>
         </Terms>
-        <Definition Link="">Every trace in OpendTect needs to have an identification in form of a trace number (2D data) or inline/crossline (3D data). For pre-stack data the offset forms and extra trace identification.</Definition>
+        <Definition Link="">Every trace in OpendTect needs to have an identification in form of a trace number (2D data) or inline/crossline (3D data). For prestack data the offset forms and extra trace identification.</Definition>
     </GlossaryEntry>
     <GlossaryEntry glossTerm="Glossary.Term42">
         <Terms>
             <Term>Trace Positioning</Term>
         </Terms>
-        <Definition Link="">In OpendTect, every seismic trace needs to be located in 3D space. For 3D data, the position can be derived from the-&gt;Trace identification (inline- and crossline numbers). Traces in 2D lines have their own, separate X- and Y- coordinate. For pre-stack data there must also be an offset available.</Definition>
+        <Definition Link="">In OpendTect, every seismic trace needs to be located in 3D space. For 3D data, the position can be derived from the-&gt;Trace identification (inline- and crossline numbers). Traces in 2D lines have their own, separate X- and Y- coordinate. For prestack data there must also be an offset available.</Definition>
     </GlossaryEntry>
-    <GlossaryEntry glossTerm="Glossary.Term43">
+    <GlossaryEntry glossTerm="Glossary.Term43" Stem="" IgnoreCase="false">
         <Terms>
             <Term>Transgression</Term>
         </Terms>
-        <Definition Link="">Landward shoreline &amp; facies shift characterized by aggradation and retrogradation. The base-level is rising and more accommodation space is created than is consumed by sedimentation</Definition>
+        <Definition Link="">Landward shoreline and facies shift characterized by aggradation and retrogradation. The base-level is rising and more accommodation space is created than is consumed by sedimentation</Definition>
     </GlossaryEntry>
     <GlossaryEntry glossTerm="Glossary.Term44">
         <Terms>

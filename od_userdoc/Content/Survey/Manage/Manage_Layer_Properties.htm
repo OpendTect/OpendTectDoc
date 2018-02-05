@@ -4,22 +4,26 @@
     </head>
     <body>
         <h3>4.5.9 Manage Layer Properties<MadCap:keyword term="Manager Layer Properties" /></h3>
-        <p><i>Layer Properties - Definition</i> window is accessible: </p>
+        <p>
+            <i>Layer Properties - Definition</i> window is accessible: </p>
         <ul>
             <li>by clicking the <img src="../../Resources/Images/Icons/man_props.png" class="Icons" /> icon in the <a href="../../Analysis/Layer_Modeling/Layer_Description.htm" target="_self" MadCap:conditions="Default.ScreenOnly"><i>Layer Properties - Selection</i> window</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>Layer Properties - Selection</i> window</MadCap:conditionalText> of the <i>Layer Modeling</i> module;</li>
             <li> via <i>Survey</i> &gt; <i>Manage</i> &gt; <i>Layer Properties...</i> menu.</li>
         </ul>
         <img src="../../Resources/Images/Survey/Manage layer properties main.png" class="General_Image" />
         <ul>
-            <li><i style="font-weight: bold; font-style: normal;">Available property types</i>: a hard-coded list of available property types.</li>
+            <li>
+                <i style="font-weight: bold; font-style: normal;">Available property types</i>: a hard-coded list of available property types.</li>
         </ul>
         <p class="note">Please contact <a href="http://opendtect.org/index.php/contact/support" target="_blank" MadCap:conditions="Default.ScreenOnly">support</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">support</MadCap:conditionalText> if you would like to extend the list of <i style="font-weight: bold;">Available property types</i>. </p>
         <ul>
-            <li><b>Defined usable properties</b>: a list that contains layer properties available in the current OpendTect project. Some of the most commonly used properties are pre-defined for a user (for example, <i>Acoustic impedance</i> property of the <i>Impedance</i> type).</li>
+            <li>
+                <b>Defined usable properties</b>: a list that contains layer properties available in the current OpendTect project. Some of the most commonly used properties are pre-defined for a user (for example, <i>Acoustic impedance</i> property of the <i>Impedance</i> type).</li>
         </ul>
         <p class="note">The type of an existing property can not be changed. A new property of the desired type has to be created instead.</p>
         <ul>
-            <li><b>Store</b>: a level at which layer properties are stored.<ul style="list-style-type: circle;"><li><b>For this survey only:</b> (<i>default option</i>) properties are saved at the root of the survey, applicable for all users only for this survey.</li><li><b>As default for all surveys:</b> properties are saved in the parent survey root directory (where all OpendTect surveys are located), applicable for all users and all surveys.</li><li><b>As default for my user ID only:</b> properties are saved to <i>home/.od</i> file, which has the priority over the two other sources.</li></ul></li>
+            <li>
+                <b>Store</b>: a level at which layer properties are stored.<ul style="list-style-type: circle;"><li><b>For this survey only:</b> (<i>default option</i>) properties are saved at the root of the survey, applicable for all users only for this survey.</li><li><b>As default for all surveys:</b> properties are saved in the parent Survey Data Root directory (where all OpendTect surveys are located), applicable for all users and all surveys.</li><li><b>As default for my user ID only:</b> properties are saved to <i>home/.od</i> file, which has the priority over the two other sources.</li></ul></li>
         </ul>
         <p class="note">The only way to restore the default OpendTect list of properties is to delete the Properties files at all levels.</p>
         <p>Available actions include:</p>
@@ -32,15 +36,22 @@
                 <img src="../../Resources/Images/Icons/remove.png" /> <i>Remove usable property</i>: select a property in the list and click on <img src="../../Resources/Images/Icons/remove.png" /> icon.</li>
         </ul>
         <p class="note"> The minimum possible list of properties must include at least one log for each of the following types: Density, Velocity and Impedance.</p>
-        <p style="font-weight: bold;"><i>Property definition</i> window:</p>
+        <p style="font-weight: bold;">
+            <i>Property definition</i> window:</p>
         <img src="../../Resources/Images/Survey/Manage layer properties property definition.png" class="General_Image" />
         <ul>
-            <li><b>Name</b>: a unique layer property name.</li>
-            <li><b>Aliases</b> (optional):  specify possible aliases (useful to associate the correct log to a property: logs with different names can thus be related to the same property).</li>
-            <li><b>Default Display Color</b>: a default color for a log display.</li>
-            <li><b>Typical value range</b>: a typical value range for a property with associated units.</li>
-            <li><b>Default Value</b> (optional, but recommended):   type in a numeric value or click on <i>Formula ...</i> to set a mathematical formula in the <i>Math property</i> window (use RockPhysics library <img src="../../Resources/Images/Icons/rockphys.png" class="Icons" src-original="../../Resources/Images/Icons/rockphys.png" /> to retrieve standard ones). <i>Default Value</i> is used to auto-fill property values in layer definition windows (see <a href="../../Analysis/Layer_Modeling/Layer_Description.htm" target="_self">Layer Modeling chapter</a>), and the auto-filled value can be changed for individual layers.</li>
-            <li><b>Fixed definition</b> (optional, but recommended for some properties: see the tip below):    type in a numeric value or click on <i>Formula ...</i> to set a mathematical formula in the <i>Math property</i> window (use RockPhysics library <img src="../../Resources/Images/Icons/rockphys.png" class="Icons" src-original="../../Resources/Images/Icons/rockphys.png" /> to retrieve standard ones). A property with <i>Fixed definition</i> doesn't appear in layer definition windows (see <a href="../../Analysis/Layer_Modeling/Layer_Description.htm" target="_self">Layer Modeling chapter</a>) as it is always auto-computed in the background.</li>
+            <li>
+                <b>Name</b>: a unique layer property name.</li>
+            <li>
+                <b>Aliases</b> (optional):  specify possible aliases (useful to associate the correct log to a property: logs with different names can thus be related to the same property).</li>
+            <li>
+                <b>Default Display Color</b>: a default color for a log display.</li>
+            <li>
+                <b>Typical value range</b>: a typical value range for a property with associated units.</li>
+            <li>
+                <b>Default Value</b> (optional, but recommended):   type in a numeric value or click on <i>Formula ...</i> to set a mathematical formula in the <i>Math property</i> window (use RockPhysics library <img src="../../Resources/Images/Icons/rockphys.png" class="Icons" src-original="../../Resources/Images/Icons/rockphys.png" /> to retrieve standard ones). <i>Default Value</i> is used to auto-fill property values in layer definition windows (see <a href="../../Analysis/Layer_Modeling/Layer_Description.htm" target="_self">Layer Modeling chapter</a>), and the auto-filled value can be changed for individual layers.</li>
+            <li>
+                <b>Fixed definition</b> (optional, but recommended for some properties: see the tip below):    type in a numeric value or click on <i>Formula ...</i> to set a mathematical formula in the <i>Math property</i> window (use RockPhysics library <img src="../../Resources/Images/Icons/rockphys.png" class="Icons" src-original="../../Resources/Images/Icons/rockphys.png" /> to retrieve standard ones). A property with <i>Fixed definition</i> doesn't appear in layer definition windows (see <a href="../../Analysis/Layer_Modeling/Layer_Description.htm" target="_self">Layer Modeling chapter</a>) as it is always auto-computed in the background.</li>
         </ul>
         <p class="note">A combination of well chosen <b>Default Values</b> and <b>Fixed definitions</b> can significantly ease and speed up the modeling process. <b>Default Values</b> should be preferably set for all properties and should be chosen such that they roughly represent most of the modeled media. For example, specify the default density corresponding to encasing shales and later in the modeling workflow modify the auto-filled values only for target sand layers. <b>Fixed definition</b> is recommended for the properties which are defined by specific formulas (i.e. never modeled directly, irrespective of a geological setting): Acoustic and Shear Impedances, Vp/Vs and Poisson’s Ratios, Lambda-Rho, Mu-Rho, etc.</p>
         <p> The example below shows Density with a <i>Fixed definition</i> using Gardner's empirical relation from Sonic values.</p>

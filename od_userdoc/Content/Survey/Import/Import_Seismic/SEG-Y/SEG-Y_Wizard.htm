@@ -4,63 +4,97 @@
     </head>
     <body>
         <h5>4.3.10.1.1 SEG-Y Wizard<MadCap:keyword term="SEG-Y Wizard" /></h5>
-        <p><b>Generic </b><i style="font-weight: bold;">Import SEG-Y Data</i><b> wizard</b> can be accessed by clicking on <img src="../../../../Resources/Images/Icons/segy.png"></img> icon in the toolbar of main OpendTect window.  The wizard supports import of 2D&#160;and 3D&#160;pre-stack and post-stack data from one or multiple SEG-Y files. The layout of this window dynamically changes depending on the user choice of <i>Data type</i>.</p>
+        <p>
+            <b>Generic </b>
+            <i style="font-weight: bold;">Import SEG-Y Data</i>
+            <b> wizard</b> can be accessed by clicking on <img src="../../../../Resources/Images/Icons/segy.png"></img> icon in the toolbar of main OpendTect window.  The wizard supports import of 2D&#160;and 3D&#160;prestack and poststack data from one or multiple SEG-Y files. The layout of this window dynamically changes depending on the user choice of <i>Data type</i>.</p>
         <img src="../../../../Resources/Images/Survey/Import segy data generic.png" class="General_Image">
         </img>
         <p class="note">The generic wizard also supports <a href="../../Import_Wells/Import_Zero-Offset_VSP.htm" target="_self" MadCap:conditions="Default.ScreenOnly">import of zero-offset VSP data</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">import of zero-offset VSP</MadCap:conditionalText>.</p>
-        <p><b>Data specific wizards</b> are available via <i>Survey</i> &gt; <i>Import</i> &gt; <i>Seismics</i> &gt; <i>SEG-Y</i>. The layouts are fixed for the data type selected via the menu (<i>Data type</i> option isn't available in these cases).</p>
+        <p>
+            <b>Data specific wizards</b> are available via <i>Survey</i> &gt; <i>Import</i> &gt; <i>Seismics</i> &gt; <i>SEG-Y</i>. The layouts are fixed for the data type selected via the menu (<i>Data type</i> option isn't available in these cases).</p>
         <img src="../../../../Resources/Images/Survey/Import segy data data-specific.png" class="General_Image">
         </img>
-        <p style="font-weight: normal;"><b>Input file(s)</b>: <i>Select</i> a SEG-Y file to import. In case of importing multiple 2D&#160;or 3D&#160;SEG-Y files select any of them first and then use the wildcard *.</p>
-        <p style="font-weight: normal;font-style: normal;"><b style="font-style: italic;">Import 3D pre- or post-stack data from multiple SEG-Y files</b>: files must contain consecutive blocks of inlines and be indexed as <i>filename_1.sgy</i>, <i>filename_2.sgy</i>...</p>
+        <p style="font-weight: normal;">
+            <b>Input file(s)</b>: <i>Select</i> a SEG-Y file to import. In case of importing multiple 2D&#160;or 3D&#160;SEG-Y files select any of them first and then use the wildcard *.</p>
+        <p style="font-weight: normal;font-style: normal;">
+            <b style="font-style: italic;">Import 3D pre- or poststack data from multiple SEG-Y files</b>: files must contain consecutive blocks of inlines and be indexed as <i>filename_1.sgy</i>, <i>filename_2.sgy</i>...</p>
         <ol style="font-style: normal;">
-            <li style="font-weight: normal; font-style: normal;"><i>Select</i> one of the files;</li>
+            <li style="font-weight: normal; font-style: normal;">
+                <i>Select</i> one of the files;</li>
             <li style="font-weight: normal; font-style: normal;">replace the file index  by a wildcard * in the input field: <i>filepath/filename_*.sgy</i></li>
         </ol>
-        <p style="font-weight: normal;font-style: normal;"><b style="font-style: italic;">Import multiple 2D lines with pre- or post-stack data</b>: files must contain individual 2D&#160;lines and be indexed with the respective line names as <i>filename_linename1.sgy</i>, <i>filename_linename2.sgy</i>...</p>
+        <p style="font-weight: normal;font-style: normal;">
+            <b style="font-style: italic;">Import multiple 2D lines with pre- or poststack data</b>: files must contain individual 2D&#160;lines and be indexed with the respective line names as <i>filename_linename1.sgy</i>, <i>filename_linename2.sgy</i>...</p>
         <ol>
             <li><![CDATA[  ]]><i>Select</i> one of the files;</li>
             <li> replace the line name  by a wildcard * in the input field: <i>filepath/filename_*.sgy</i>;</li>
             <li>those parts of file names replaced by * are used as 2D&#160;line names (press <i>Next</i> and see that <i>Line name</i> option is greyed out and set to *).</li>
         </ol>
-        <p style="font-weight: normal;"><b>Edit</b>: (optionally) edit  text, binary and trace headers of a SEG-Y file in <i>Manipulate SEG-Y File</i> window.</p>
-        <p><b>Data Type</b>: the choice is only available in the generic <i>Import SEG-Y Data</i> window.</p>
+        <p style="font-weight: normal;">
+            <b>Edit</b>: (optionally) edit  text, binary and trace headers of a SEG-Y file in <i>Manipulate SEG-Y File</i> window.</p>
+        <p>
+            <b>Data Type</b>: the choice is only available in the generic <i>Import SEG-Y Data</i> window.</p>
         <ul>
-            <li><i>3D&#160;seismic data</i> <![CDATA[ ]]></li>
-            <li><i>3D PreStack data</i>
+            <li>
+                <i>3D&#160;seismic data</i> <![CDATA[ ]]></li>
+            <li>
+                <i>3D PreStack data</i>
             </li>
-            <li><i>2D&#160;seismic data</i>
+            <li>
+                <i>2D&#160;seismic data</i>
             </li>
-            <li><i>2D PreStack data</i>
+            <li>
+                <i>2D PreStack data</i>
             </li>
         </ul>
-        <p><b>Table</b>: information required to import a SEG-Y file (therefore the table layout depends on the data type).</p>
+        <p>
+            <b>Table</b>: information required to import a SEG-Y file (therefore the table layout depends on the data type).</p>
         <ul>
-            <li><i>Quick/Full scan result</i>: shows results of a quick/full scan of a SEG-Y file:<ul style="list-style-type: circle;"><li><i>Quick scan</i>: a partial scan of SEG-Y is performed upon file selection and after any change of SEG-Y import set-up.</li><li><i>Full scan</i>: press on <img src="../../../../Resources/Images/Icons/fullscan.png" class="Icons"></img> icon to scan the entire file.</li></ul></li>
-            <li><i>Actually use</i>: import parameters as confirmed/overruled by a user.</li>
+            <li>
+                <i>Quick/Full scan result</i>: shows results of a quick/full scan of a SEG-Y file:<ul style="list-style-type: circle;"><li><i>Quick scan</i>: a partial scan of SEG-Y is performed upon file selection and after any change of SEG-Y import set-up.</li><li><i>Full scan</i>: press on <img src="../../../../Resources/Images/Icons/fullscan.png" class="Icons"></img> icon to scan the entire file.</li></ul></li>
+            <li>
+                <i>Actually use</i>: import parameters as confirmed/overruled by a user.</li>
         </ul>
-        <p style="font-weight: normal;"><b style="font-style: italic;">SEG-Y Revision</b> (default = byte 301 of binary header):  please refer to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> for details.</p>
+        <p style="font-weight: normal;">
+            <b style="font-style: italic;">SEG-Y Revision</b> (default = byte 301 of binary header):  please refer to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="http://www.seg.org/resources/publications/misc/technical-standards" target="_blank">SEG standards</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG standards</MadCap:conditionalText> for details.</p>
         <ul>
-            <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" target="_blank" MadCap:conditions="Default.ScreenOnly">SEG-Y Rev. 0</a></i>
-                <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Rev. 0</i>
+            <li>
+                <i>
+                    <a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" target="_blank" MadCap:conditions="Default.ScreenOnly">SEG-Y Rev. 0</a>
+                </i>
+                <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+                    <i>SEG-Y Rev. 0</i>
                 </MadCap:conditionalText>: <ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): byte locations can be selected by a user.</li></ul></li>
-            <li><i><a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" target="_blank" MadCap:conditions="Default.ScreenOnly">SEG-Y Rev. 1</a></i>
-                <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Rev. 1</i>
+            <li>
+                <i>
+                    <a href="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" target="_blank" MadCap:conditions="Default.ScreenOnly">SEG-Y Rev. 1</a>
+                </i>
+                <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+                    <i>SEG-Y Rev. 1</i>
                 </MadCap:conditionalText>:<ul style="list-style-type: circle;"><li><i>Data format</i>, <i>Number of samples</i>, <i>Z Range start/interval</i> can be overruled.</li><li>Data positioning (IL/XL, Trace/SP, X/Y and offset): standard byte locations are used.</li></ul></li>
-            <li><i>SEG-Y Rev. 2</i>:<ul style="list-style-type: circle;"><li>File format options and standard trace header bytes are same as Rev.1.</li></ul></li>
+            <li>
+                <i>SEG-Y Rev. 2</i>:<ul style="list-style-type: circle;"><li>File format options and standard trace header bytes are same as Rev.1.</li></ul></li>
         </ul>
-        <p><b style="font-style: italic;">Data format</b> (default = byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
+        <p>
+            <b style="font-style: italic;">Data format</b> (default = byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
         <p class="note">Most header values and data samples are written using several bytes for each word/sample. Therefore knowing a correct byte order is a necessity. All SEG-Y standards (Rev. 0, 1 and 2) require using big-endian byte order. Occasionally one can run into data written using little-endian (reverse) one. Using standard SEG-Y data formats for reading such data results in unexpected scanned values of trace headers and unexpectedly large sample values  (check the histogram). In this case use data formats with <b>(byte swapped)</b> option.</p>
-        <p><b style="font-style: italic;">Number of samples</b> (default = byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
-        <p><b style="font-style: italic;">Z Range</b> (units = seconds or meters).</p>
+        <p>
+            <b style="font-style: italic;">Number of samples</b> (default = byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
+        <p>
+            <b style="font-style: italic;">Z Range</b> (units = seconds or meters).</p>
         <ul>
-            <li><b style="font-style: italic;">start</b> (default = bytes 105 <i>laga</i> and 109 <i>delrt</i> of trace headers): (optionally) overrule start of Z-range (negative start is allowed).</li>
-            <li><b style="font-style: italic;">interval</b> (default = byte 17 of binary header / byte 117 of trace header): (optionally) overrule Z-sampling (sampling rate).</li>
+            <li>
+                <b style="font-style: italic;">start</b> (default = bytes 105 <i>laga</i> and 109 <i>delrt</i> of trace headers): (optionally) overrule start of Z-range (negative start is allowed).</li>
+            <li>
+                <b style="font-style: italic;">interval</b> (default = byte 17 of binary header / byte 117 of trace header): (optionally) overrule Z-sampling (sampling rate).</li>
         </ul>
         <p class="note">OpendTect doesn't support import of a SEG-Y file with varying trace lengths (i.e. Z range start and interval must be constant for all traces in a file). </p>
-        <p><b style="font-style: italic;">Data positioning</b>:  </p>
+        <p>
+            <b style="font-style: italic;">Data positioning</b>:  </p>
         <p class="note">Rev.1/Rev.2: trace header byte locations are standard, i.e. can't be selected by a user. If the file is wrongly tagged as Rev.1/Rev.2, over-rule it as 0 in Actually use column in order to be able to select non-standard trace header bytes.</p>
-        <p><b style="font-style: italic;">3D&#160;post-stack data</b> is loaded based either on Inline/Crossline numbers or X/Y coordinates (see below <i>Use I/C</i> and <i>Use (X,Y)</i> options).</p>
+        <p>
+            <b style="font-style: italic;">3D&#160;poststack data</b> is loaded based either on Inline/Crossline numbers or X/Y coordinates (see below <i>Use I/C</i> and <i>Use (X,Y)</i> options).</p>
         <table style="width: 480px;">
             <col style="width: 177px;" />
             <col style="width: 118px;" />
@@ -69,44 +103,52 @@
                 <tr>
                     <td>&#160;</td>
                     <td style="text-align: center;">
-                        <p><b style="font-style: italic;">Rev.0</b> <i>defaults</i></p>
+                        <p>
+                            <b style="font-style: italic;">Rev.0</b> <i>defaults</i></p>
                     </td>
                     <td style="text-align: center;">
-                        <p><b style="font-style: italic;">Rev.1</b>/<b style="font-style: italic;">Rev.2</b> <i>hard-coded standard bytes</i></p>
+                        <p>
+                            <b style="font-style: italic;">Rev.1</b>/<b style="font-style: italic;">Rev.2</b> <i>hard-coded standard bytes</i></p>
                     </td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">In-line range</b>
+                    <td>
+                        <b style="font-style: italic;">In-line range</b>
                     </td>
                     <td style="text-align: center;">9</td>
                     <td style="text-align: center;">189</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Cross-line range</b>
+                    <td>
+                        <b style="font-style: italic;">Cross-line range</b>
                     </td>
                     <td style="text-align: center;">21</td>
                     <td style="text-align: center;">193</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">X-Coordinate range</b>
+                    <td>
+                        <b style="font-style: italic;">X-Coordinate range</b>
                     </td>
                     <td style="text-align: center;">73</td>
                     <td style="text-align: center;">181</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Y-Coordinate range</b>
+                    <td>
+                        <b style="font-style: italic;">Y-Coordinate range</b>
                     </td>
                     <td style="text-align: center;">77</td>
                     <td style="text-align: center;">185</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Offset range</b> (pre-stack only)</td>
+                    <td>
+                        <b style="font-style: italic;">Offset range</b> (prestack only)</td>
                     <td style="text-align: center;">37</td>
                     <td style="text-align: center;">37</td>
                 </tr>
             </tbody>
         </table>
-        <p><b style="font-style: italic;">2D&#160;post-stack data</b> is loaded based on trace numbers, reference numbers (SP) and X/Y coordinates.</p>
+        <p>
+            <b style="font-style: italic;">2D&#160;poststack data</b> is loaded based on trace numbers, reference numbers (SP) and X/Y coordinates.</p>
         <table style="width: 480px;">
             <col style="width: 182px;" />
             <col style="width: 113px;" />
@@ -115,80 +157,103 @@
                 <tr>
                     <td>&#160;</td>
                     <td style="text-align: center;">
-                        <p><b style="font-style: italic;">Rev.0</b> <i>defaults</i></p>
+                        <p>
+                            <b style="font-style: italic;">Rev.0</b> <i>defaults</i></p>
                     </td>
                     <td style="text-align: center;">
-                        <p><b style="font-style: italic;">Rev.1</b>/<b style="font-style: italic;">Rev.2</b> <i>hard-coded standard bytes</i></p>
+                        <p>
+                            <b style="font-style: italic;">Rev.1</b>/<b style="font-style: italic;">Rev.2</b> <i>hard-coded standard bytes</i></p>
                     </td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Trace number range</b>
+                    <td>
+                        <b style="font-style: italic;">Trace number range</b>
                     </td>
                     <td style="text-align: center;">5</td>
                     <td style="text-align: center;">5 (can be over-ruled)</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Shot-Point number range</b>
+                    <td>
+                        <b style="font-style: italic;">Shot-Point number range</b>
                     </td>
                     <td style="text-align: center;">197</td>
                     <td style="text-align: center;">197</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">X-Coordinate range</b>
+                    <td>
+                        <b style="font-style: italic;">X-Coordinate range</b>
                     </td>
                     <td style="text-align: center;">73</td>
                     <td style="text-align: center;">181</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Y-Coordinate range</b>
+                    <td>
+                        <b style="font-style: italic;">Y-Coordinate range</b>
                     </td>
                     <td style="text-align: center;">77</td>
                     <td style="text-align: center;">185</td>
                 </tr>
                 <tr>
-                    <td><b style="font-style: italic;">Offset range</b> (pre-stack only)</td>
+                    <td>
+                        <b style="font-style: italic;">Offset range</b> (prestack only)</td>
                     <td style="text-align: center;">37</td>
                     <td style="text-align: center;">37</td>
                 </tr>
             </tbody>
         </table>
         <ul>
-            <li><b style="font-style: italic;">Trace number range</b>:<ul style="list-style-type: circle;"><li><i>In file</i>: from a  specified trace header byte.</li></ul><ul style="list-style-type: circle;"><li><i>Generate</i>: generate trace numbers by providing the number of the first trace in a 2D&#160;line and step in trace numbers.</li></ul></li>
+            <li>
+                <b style="font-style: italic;">Trace number range</b>:<ul style="list-style-type: circle;"><li><i>In file</i>: from a  specified trace header byte.</li></ul><ul style="list-style-type: circle;"><li><i>Generate</i>: generate trace numbers by providing the number of the first trace in a 2D&#160;line and step in trace numbers.</li></ul></li>
         </ul>
         <p class="note">Trace number must be unique for each trace along the line, therefore it can be either sequential trace number (byte 5) or CDP trace number (byte 21). A user is always allowed to select a non-standard byte even when the file is Rev.1.</p>
-        <p><b style="font-style: italic;">2D&#160;and 3D&#160;pre-stack data</b> additionally requires offset information.</p>
+        <p>
+            <b style="font-style: italic;">2D&#160;and 3D&#160;prestack data</b> additionally requires offset information.</p>
         <ul>
-            <li><b style="font-style: italic;">Offset range</b> <ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>From Src/Rcv (X/Y)</i>: calculate from source and receiver X/Y coordinates (standard byte locations are used: 73 and 77 for source, 81 and 85 for receiver).</li><li><i>Generate</i>: generate offsets  by providing the offset of the first trace in a gather and step in offset values.</li></ul></li>
+            <li>
+                <b style="font-style: italic;">Offset range</b> <ul style="list-style-type: circle;"><li><i>In file</i>: from a specified trace header byte.</li><li><i>From Src/Rcv (X/Y)</i>: calculate from source and receiver X/Y coordinates (standard byte locations are used: 73 and 77 for source, 81 and 85 for receiver).</li><li><i>Generate</i>: generate offsets  by providing the offset of the first trace in a gather and step in offset values.</li></ul></li>
         </ul>
         <p style="font-weight: normal;">
             <img src="../../../../Resources/Images/Icons/save.png" class="Icons">
-            </img><b>Store this setup</b>: save a SEG-Y import setup at the survey data root level.</p>
+            </img>
+            <b>Store this setup</b>: save a SEG-Y import setup at the survey data root level.</p>
         <p>
             <img src="../../../../Resources/Images/Icons/open.png">
-            </img><b>Use saved SEG-Y setup</b>: retrieve one of the stored setups.</p>
+            </img>
+            <b>Use saved SEG-Y setup</b>: retrieve one of the stored setups.</p>
         <p style="font-weight: normal;">
             <img src="../../../../Resources/Images/Icons/fullscan.png" class="Icons">
-            </img><b>Scan the entire input</b>: updates <i>Quick scan result</i> with <i>Full scan result</i> of the entire input file.</p>
+            </img>
+            <b>Scan the entire input</b>: updates <i>Quick scan result</i> with <i>Full scan result</i> of the entire input file.</p>
         <p style="font-weight: normal;">
-            <img src="../../../../Resources/Images/Icons/examine.png" class="Icons" /><b>Examine input file</b>: opens <i><a href="SEG-Y_Examiner.htm" MadCap:conditions="Default.ScreenOnly">SEG-Y Examiner</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Examiner</i></MadCap:conditionalText> window for a specified <i>Number of traces to examine</i> (default=1000 traces).</p>
+            <img src="../../../../Resources/Images/Icons/examine.png" class="Icons" />
+            <b>Examine input file</b>: opens <i><a href="SEG-Y_Examiner.htm" MadCap:conditions="Default.ScreenOnly">SEG-Y Examiner</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Examiner</i></MadCap:conditionalText> window for a specified <i>Number of traces to examine</i> (default=1000 traces).</p>
         <p style="font-weight: normal;">
             <img src="../../../../Resources/Images/Survey/Import segy data scaleXY.png" /> (default = <i>empty</i>): (optionally) enter XY scalar to ignore <i>scalco</i> (byte 71 of trace header). X/Y coordinates are multiplied by this factor.</p>
         <p class="note">Note that scalco is the scale factor for all coordinate bytes with value plus or minus 10 to the power 0, 1, 2, 3, or 4 (if positive, multiply, if negative divide).</p>
-        <p style="font-weight: normal;"><b>Histogram</b>: displays a distribution of amplitudes after <i>Quick</i> (partial) or <i>Full</i> scan.</p>
+        <p style="font-weight: normal;">
+            <b>Histogram</b>: displays a distribution of amplitudes after <i>Quick</i> (partial) or <i>Full</i> scan.</p>
         <ul>
-            <li style="font-weight: normal;"><i>Percentage clip for display</i> (default=0.1%): amount of data in the histogram tails  excluded from the plot.</li>
-            <li style="font-weight: normal;"><i>Zeros</i> (default=unchecked): allows to include/exclude value 0 for histogram display.</li>
+            <li style="font-weight: normal;">
+                <i>Percentage clip for display</i> (default=0.1%): amount of data in the histogram tails  excluded from the plot.</li>
+            <li style="font-weight: normal;">
+                <i>Zeros</i> (default=unchecked): allows to include/exclude value 0 for histogram display.</li>
         </ul>
-        <p><b style="font-style: italic;">Data specific options:</b>
+        <p>
+            <b style="font-style: italic;">Data specific options:</b>
         </p>
-        <p><b>3D (pre- and post-stack) data positioning</b> can be based either on Inline/Crossline or X/Y coordinates of each trace:</p>
+        <p>
+            <b>3D (pre- and poststack) data positioning</b> can be based either on Inline/Crossline or X/Y coordinates of each trace:</p>
         <ul>
-            <li><b>Use I/C</b> (default): positioning of imported data is based on Inline/Crossline numbers, (X,Y) coordinates are therefore calculated from a survey setup.</li>
-            <li><b>Use (X,Y)</b>: positioning of imported data is based on (X,Y) coordinates, Inline/Crossline numbers are therefore calculated from a survey setup.</li>
+            <li>
+                <b>Use I/C</b> (default): positioning of imported data is based on Inline/Crossline numbers, (X,Y) coordinates are therefore calculated from a survey setup.</li>
+            <li>
+                <b>Use (X,Y)</b>: positioning of imported data is based on (X,Y) coordinates, Inline/Crossline numbers are therefore calculated from a survey setup.</li>
         </ul>
-        <p><b>2D (pre- and post-stack) data Z-range</b> can vary per SEG-Y file if multiple lines of different vintages are imported at the same time:</p>
+        <p>
+            <b>2D (pre- and poststack) data Z-range</b> can vary per SEG-Y file if multiple lines of different vintages are imported at the same time:</p>
         <ul>
-            <li><b>File Z's</b> (available only when multiple 2D&#160;lines are imported): if checked, <i>Z Range</i><i>start</i>/<i>interval</i> and <i>Number of samples</i>&#160;are used as they appear in each SEG-Y file. </li>
+            <li>
+                <b>File Z's</b> (available only when multiple 2D&#160;lines are imported): if checked, <i>Z Range</i><i>start</i>/<i>interval</i> and <i>Number of samples</i>&#160;are used as they appear in each SEG-Y file. </li>
         </ul>
         <p class="note">Overruling of Z Range start/interval and Number of samples is possible only if File Z's is unchecked.</p>
     </body>

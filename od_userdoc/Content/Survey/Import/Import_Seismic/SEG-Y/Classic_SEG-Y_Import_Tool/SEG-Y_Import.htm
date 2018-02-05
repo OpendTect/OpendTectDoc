@@ -4,38 +4,48 @@
     </head>
     <body>
         <h6>4.3.10.1.2.3 SEG-Y Import<MadCap:keyword term="SEG-Y Import" /></h6>
-        <p><i>Import SEG-Y</i> window layout depends on the user-selected <a href="SEG-Y_Revision.htm" target="_self" MadCap:conditions="Default.ScreenOnly">SEG-Y Revision</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG-Y Revision</MadCap:conditionalText>. </p>
-        <p><b>Rev.1</b>
+        <p>
+            <i>Import SEG-Y</i> window layout depends on the user-selected <a href="SEG-Y_Revision.htm" target="_self" MadCap:conditions="Default.ScreenOnly">SEG-Y Revision</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG-Y Revision</MadCap:conditionalText>. </p>
+        <p>
+            <b>Rev.1</b>
         </p>
         <p>If the file is <b>Rev 1</b> standard then the import is almost complete: You must provide an output name and can optionally sub-select a range of the volume to be loaded and/or change the output format and/or re-scale the amplitudes. Pressing <i>Go</i> will launch the import. </p>
         <p class="note">Depth volumes can be imported in time surveys and vice versa by using the depth/time toggle. They can be visualized using <a href="../../../../../Scenes/Time_And_Depth-Converted_Scenes.htm" target="_self" MadCap:conditions="Default.ScreenOnly">transformed scenes</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">transformed scenes</MadCap:conditionalText>, providing that velocities are available.</p>
         <img src="../../../../../Resources/Images/Survey/Import segy main.png" class="General_Image" />
         <p>
             <img src="../../../../../Resources/Images/Icons/prescan.png" class="Icons" /> <b>Pre-scan file(s)</b>: launch a partial or a full <a href="SEG-Y_Scan.htm" target="_self" MadCap:conditions="Default.ScreenOnly">SEG-Y scan</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG-Y scan</MadCap:conditionalText>.</p>
-        <p><b>Mostly Rev.1</b>
+        <p>
+            <b>Mostly Rev.1</b>
         </p>
         <p>If the file is mostly Rev 1 but with <b>changed parameters</b> you will receive three additional fields that can overrule the values to be found in the headers:</p>
         <img src="../../../../../Resources/Images/Survey/Import segy mostly.png" class="General_Image" />
         <ul>
-            <li><i>Overrule SEG-Y coordinate scaling</i>:  all trace coordinates are multiplied by this scalar.</li>
-            <li><i>Overrule SEG-Y start time/depth</i> (units: ms, m or ft): time/depth of the first sample of the traces (can be negative).</li>
-            <li><i>Overrule SEG-Y sample rate</i> (units: ms, m or ft):  provide the data sampling rate.</li>
+            <li>
+                <i>Overrule SEG-Y coordinate scaling</i>:  all trace coordinates are multiplied by this scalar.</li>
+            <li>
+                <i>Overrule SEG-Y start time/depth</i> (units: ms, m or ft): time/depth of the first sample of the traces (can be negative).</li>
+            <li>
+                <i>Overrule SEG-Y sample rate</i> (units: ms, m or ft):  provide the data sampling rate.</li>
         </ul>
         <p>Those parameters constitute a SEG-Y setup that can be saved and retrieved using the yellow folder icon on the right. This setup will not only contain the parameters but also the path of the input files and settings of the <a href="SEG-Y_Import_Preparation.htm" target="_self" MadCap:conditions="Default.ScreenOnly">preparation step</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">preparation step</MadCap:conditionalText>. The setups are data dependent therefore they are stored in your survey.</p>
-        <p><b>Not Rev.1</b>
+        <p>
+            <b>Not Rev.1</b>
         </p>
-        <p>If the file is not Rev 1 you will get the overrule fields described above in a tab and two additional tabs to provide the byte locations of either the pair inline/crossline or the pair of X and Y coordinates. In the case of pre-stack data an additional tab will be present to provide the offsets/azimuth byte locations.</p>
+        <p>If the file is not Rev 1 you will get the overrule fields described above in a tab and two additional tabs to provide the byte locations of either the pair inline/crossline or the pair of X and Y coordinates. In the case of prestack data an additional tab will be present to provide the offsets/azimuth byte locations.</p>
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations.png" class="General_Image" />
         <img src="../../../../../Resources/Images/Survey/Import segy revision no coordinates.png" class="General_Image" />
-        <p><i style="font-weight: bold;">You need to look at the trace headers</i> in the <a href="../SEG-Y_Examiner.htm" target="_self" MadCap:conditions="Default.ScreenOnly">examine</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">examine</MadCap:conditionalText> window and assign the correct settings in this import window. Once again the entire import setup may be saved or retrieved. Once this is done you must provide an output name and can optionally sub-select a range of the volume to be loaded and/or change the output format and/or re-scale the amplitudes. Pressing <i>Ok</i> will launch the import.</p>
+        <p>
+            <i style="font-weight: bold;">You need to look at the trace headers</i> in the <a href="../SEG-Y_Examiner.htm" target="_self" MadCap:conditions="Default.ScreenOnly">examine</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">examine</MadCap:conditionalText> window and assign the correct settings in this import window. Once again the entire import setup may be saved or retrieved. Once this is done you must provide an output name and can optionally sub-select a range of the volume to be loaded and/or change the output format and/or re-scale the amplitudes. Pressing <i>Ok</i> will launch the import.</p>
         <p>The <b>import of 2D lines</b> is somewhat different: Inlines and Crosslines are replaced by trace numbers, that must be unique for each trace (therefore it can be the CDP but not the Shot Point).</p>
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations 2D.png" class="General_Image" />
         <p>Coordinates can be imported from one auxiliary file or specified manually and generated during import coordinates if missing or wrong in the trace headers (see below on the right hand-side). This can be done by toggling off the X-coord byte field.</p>
-        <p><b>Generate XYs</b>
+        <p>
+            <b>Generate XYs</b>
         </p>
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations 2D generate.png" class="General_Image" />
         <p>The coordinates are generated for each trace position by providing the X and Y coordinates of the first trace, and a regular step in both directions. Units to be used are the same as specified in the <a href="../../../../Select_Setup_Survey/Edit_Survey_Window.htm" target="_self" MadCap:conditions="Default.ScreenOnly">survey definition</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">survey definition</MadCap:conditionalText>.</p>
-        <p><b>Input Auxiliary file</b>
+        <p>
+            <b>Input Auxiliary file</b>
         </p>
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations 2D auxillary file.png" class="General_Image" />
         <p>Optionally the coordinates can be specified using an auxiliary file. The format should be an input ascii file with one position per line in a <b style="font-style: italic;">fixed column format without header</b>: File column should have the trace number, second column the X coordinate, third column the Y coordinate. Units to be used are the same as specified in the <a href="../../../../Select_Setup_Survey/Edit_Survey_Window.htm" target="_self" MadCap:conditions="Default.ScreenOnly">survey definition</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">survey definition</MadCap:conditionalText>.</p>
@@ -45,10 +55,12 @@
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations 2D trace subselection.png" class="General_Image" />
         <p>A <b>default attribute name</b> "seis" will be given to each line of the loaded data set. This can be changed by pressing "Select" and filling the empty "Attribute" field, like in the example below:</p>
         <img src="../../../../../Resources/Images/Survey/Import segy 2D line select.png" class="General_Image" />
-        <p><b>Multiple 2D lines</b> loading must be enabled using the button "Import more, similar file" on the last line before pressing "OK". Any line can be used to go through the wizard, and the settings must be the same for all lines. If that is not the case then it is best to run the wizard several times per group of lines of similar SEG-Y settings.</p>
+        <p>
+            <b>Multiple 2D lines</b> loading must be enabled using the button "Import more, similar file" on the last line before pressing "OK". Any line can be used to go through the wizard, and the settings must be the same for all lines. If that is not the case then it is best to run the wizard several times per group of lines of similar SEG-Y settings.</p>
         <img src="../../../../../Resources/Images/Survey/Import segy revision no locations 2D more similar.png" class="General_Image" />
         <p>This additional window is used to specify the generic line name out of the SEG-Y filenames. The line name must be replaced by "#L", while everything else (including the path and the extension) is shown as text, like in the above example:</p>
-        <p><b>$DATAPATH/Line_#L.sgy</b>
+        <p>
+            <b>$DATAPATH/Line_#L.sgy</b>
         </p>
         <p>There will be one progress bar per input file during loading.</p>
         <p class="note">It is a good practice to display the 3D seismic data on a z-slice to check for any gaps in inline/cross-lines or null traces, after importing it.</p>
