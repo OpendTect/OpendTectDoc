@@ -293,7 +293,6 @@ external/doc_csh instance of it.
 #define		mImportHorizon2DHelpID			        0x10400014
 #define		mHorizonShiftDialogHelpID			0x10400015
 #define		mBulkHorizonImportHelpID			0x10400016
-#define		mHorizonSettingsHelpID				0x10400017
 #define		mHorizonPreLoadDlgHelpID		        0x10400018
 #define         mCreateHorizonHelpID                            0x10400019
 #define         mgetHorizonZAxisTransformHelpID                 0x10400020
