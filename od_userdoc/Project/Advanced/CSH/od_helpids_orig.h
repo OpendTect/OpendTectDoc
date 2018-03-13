@@ -275,6 +275,7 @@ external/doc_csh instance of it.
 #define		mVoxelConnectivityFilterHelpID		        0x10306010
 #define		mWellLogInterpolHelpID				0x10306011
 #define		mHorInterFillerHelpID				0x10306012
+#define		mVolProcUdfReplacerHelpID			0x10306013
 //Surfaces 104
 // Surfaces Horizons 00
 #define		mImportHorizonHelpID			        0x10400000
