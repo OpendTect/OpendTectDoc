@@ -407,4 +407,5 @@
     <Map Name="mSessionSaveRestoreHelpID" Link="/Content/Survey/Session.htm" />
     <Map Name="mReliefAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Pseudo_Relief.htm" />
     <Map Name="mDipFilterAttribHelpID" Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm#dipfilter" />
+    <Map Name="mCEEMDAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
 </CatapultAliasFile>
