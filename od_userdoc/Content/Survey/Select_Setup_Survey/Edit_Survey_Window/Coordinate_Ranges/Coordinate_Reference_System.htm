@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2370" MadCap:lastWidth="1007">
+    <head>
+    </head>
+    <body>
+        <h1>Coordinate Reference System</h1>
+        <p>OpendTect supports only orthogonal coordinates. Coordinate System of an OpendTect project can be defined in one of the three ways:
+
+
+</p>
+        <p><b>Unlocated XY</b> - spatially unaware, based on three points, two of which must be on the same inline.</p>
+        <img src="../../../../Resources/Images/unlocated-xy.png" class="General_Image" />
+        <p><b>Anchor Point Based XY</b> - an approximate way to convert XY coordinates to geographical latitude and longitude. Error increases with the distance from the defined point.</p>
+        <img src="../../../../Resources/Images/anchor-point-based-xy.png" class="General_Image" />
+        <p><b>Project Based System</b> can be selected  when a coordinate system is known. The list of projections was created using <a href="http://proj4.org/index.html">Proj.4 filter function</a>.</p>
+        <img src="../../../../Resources/Images/project-based-system.png" class="General_Image" />
+        <p>Convert Geographical Positions option is available if Project Based System is selected. This utility allows conversion of XY coordinate pair to geographical latitude and longitude, and vice versa.</p>
+        <img src="../../../../Resources/Images/convert-geographical-positions.png" class="General_Image" />
+        <p>In the Convert Geographical Positions window, there are two modes available for coordinate conversion: Manual/File.</p>
+        <ul>
+            <li>In <i>Manual mode</i>, the user specifies an X/Y pair (or Lat/Long pair), then press the corresponding arrow key to obtain the position in the other domain.</li>
+            <li>In <i>File mode</i>, the user browses the input file and create a new output file. By specifying the corresponding type conversion (XY to Lat/Long or Lat/Long to XY) and pressing the Convert button, the desired conversion is written on output file.</li>
+        </ul>
+    </body>
+</html>
