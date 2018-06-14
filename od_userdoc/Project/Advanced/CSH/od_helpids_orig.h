@@ -27,7 +27,6 @@ external/doc_csh instance of it.
 #define		mLooknFeelSettingsHelpID			0x00002003
 #define		mPluginManHelpID				0x00002005
 #define		mPluginSelHelpID				0x00002006
-#define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
 #define		mSurveySettingsHelpID				0x00002008
 // General Survey 03
 #define         mSurveyHelpID				        0x00003001
