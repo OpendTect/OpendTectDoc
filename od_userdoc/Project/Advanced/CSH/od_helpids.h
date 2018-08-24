@@ -1,4 +1,4 @@
-﻿#ifndef od_helpids_h
+#ifndef od_helpids_h
 #define od_helpids_h
 /*+
 ________________________________________________________________________
@@ -492,3 +492,4 @@ external/doc_csh instance of it.
 #define		mTextuteDirectionalHelpID			0x11500000
 
 #endif
+#define mSeisPreLoad2D3DDataHelpID 0x10300014
