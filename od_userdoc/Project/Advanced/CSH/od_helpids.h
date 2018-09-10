@@ -493,4 +493,3 @@ external/doc_csh instance of it.
 #define		mTextuteDirectionalHelpID			0x11500000
 
 #endif
-#define mSeisPreLoad2D3DDataHelpID 0x10300014
