@@ -193,6 +193,7 @@ external/doc_csh instance of it.
 #define		mSEGYBinHdrEdDlgHelpID			        0x10300020
 #define		mSEGYFileManipHdrCalcEdHelpID		        0x10300021
 #define		mSeisImpCBVSFromOtherSurveyDlgHelpID	        0x10300022
+#define		mSeisExpCubePosDlgHelpID			0x10300023
 // Seismics Manage 01
 #define		mSeisFileMan3DHelpID			        0x10301000
 #define		mSeisCopyHelpID					0x10301001
