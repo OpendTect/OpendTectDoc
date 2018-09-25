@@ -408,4 +408,5 @@
     <Map Name="mReliefAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Pseudo_Relief.htm" />
     <Map Name="mDipFilterAttribHelpID" Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm#dipfilter" />
     <Map Name="mCEEMDAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
+    <Map Name="mSeisPreLoad2D3DDataHelpID" Link="/Content/Survey/Pre-Load/Preload_Seismics.htm#preload2d3ddata" />
 </CatapultAliasFile>

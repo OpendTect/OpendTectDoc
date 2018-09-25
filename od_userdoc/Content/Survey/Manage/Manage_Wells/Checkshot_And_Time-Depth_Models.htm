@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="621" MadCap:lastWidth="1418">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1823" MadCap:lastWidth="906">
     <head>
     </head>
     <body>
@@ -15,10 +15,12 @@
             <li>If a Time/Depth model is not flagged as being a checkshot model during import there will be no checkshot model for this well.</li>
             <li>Checkshot models may be used during synthetic-to-seismic ties to constraint the output Time/Depth model. On the contrary the time/depth model provides the actual input mapping when starting the well tie.</li>
         </ul>
-        <p>Both types have a similar editing window. It shows the mapping between measured depths and two-way traveltime, respectively in the first and second columns. Depths are displayed either in meters or in feet (toggle at the bottom of the window), and times are always displayed in milliseconds. These tables are fully editable: Double-click on a cell to edit it, type and new number and press enter or select another cell. The "<i>Update display</i>" button allows the user to update the displayed well data (track, markers and logs) in the scene to be updated based on the actual table content.</p>
+        <p>Both types have a similar editing window. It shows the mapping between measured depths and two-way travel time, respectively in the first and second columns. Depths are displayed either in meters or in feet (toggle at the bottom of the window), and times are always displayed in milliseconds. These tables are fully editable: Double-click on a cell to edit it, type and new number and press enter or select another cell. The "<i>Update display</i>" button allows the user to update the displayed well data (track, markers and logs) in the scene to be updated based on the actual table content.</p>
         <img src="../../../Resources/Images/Survey/Manage wells edit checkshot model.png" class="General_Image" />
         <img src="../../../Resources/Images/Survey/Manage wells edit time depth model.png" class="General_Image" />
-        <p>The following window appears after having clicking on "<i>Import</i>" in the edit Checkshot or Time-Depth model window. The import settings are fully similar to that the <a href="../../Import/Import_Wells/From_Ascii_Files/Track.htm" target="_self" MadCap:conditions="Default.ScreenOnly">import step</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">import step</MadCap:conditionalText>. The <i>Export</i> button allows to export the table in the same format to an output ASCII file.</p>
+        <p>The following window appears after having clicking on "<i>Import</i>" in the edit Checkshot or Time-Depth model window. The import settings are fully similar to that the <a href="../../Import/Import_Wells/From_Ascii_Files/Track.htm" target="_self" MadCap:conditions="Default.ScreenOnly">import step</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">import step</MadCap:conditionalText>.<br /></p>
+        <p class="note"> Please note that a user can expect to get less imported time-depth pairs, as, in order to maintain a decent search speed in the imported table, the software protects against duplicated time and/or depth values in the input TD table by removing duplicated velocities. There should be no concern about loosing time-depth pairs, as the underlying velocity function is kept, although potentially converted to a more compact form. This compaction greatly improves the performance of most search operations done on the time-depth model. This applies for both OpendTect objects checkshot and time-depth model, but in practice checkshot surveys hardly ever have redundant data points. <br /></p>
+        <p>The <i>Export</i> button allows to export the table in the same format to an output ASCII file.</p>
         <img src="../../../Resources/Images/Survey/Manage wells edit time depth model read new.png" class="General_Image" />
     </body>
 </html>
