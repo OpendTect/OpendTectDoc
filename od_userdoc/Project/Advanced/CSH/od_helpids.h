@@ -151,6 +151,7 @@ external/doc_csh instance of it.
 #define         mEventFreqAttribHelpID                          0x10100109
 #define		mReliefAttribHelpID				0x10100110
 #define		mCEEMDAttribHelpID				0x10100111
+#define		mTextureDirectionalHelpID			0x10100112
 // Attributes Selection 01
 #define		mAttribDescSetEdHelpID			        0x10101000
 #define		mAttrSelDlgNo_NNHelpID			        0x10101001
@@ -193,7 +194,7 @@ external/doc_csh instance of it.
 #define		mSEGYBinHdrEdDlgHelpID			        0x10300020
 #define		mSEGYFileManipHdrCalcEdHelpID		        0x10300021
 #define		mSeisImpCBVSFromOtherSurveyDlgHelpID	        0x10300022
-#define		mSeisExpCubePosDlgHelpID			0x10300023
+#define		mSeisExpCubePosDlgHelpID		        0x10300023
 // Seismics Manage 01
 #define		mSeisFileMan3DHelpID			        0x10301000
 #define		mSeisCopyHelpID					0x10301001
@@ -488,8 +489,5 @@ external/doc_csh instance of it.
 //NLA 114
 #define		mPrepNLADataHelpID				0x11400000
 #define		mLithCodeManHelpID				0x11400001
-
-//GLCM 115
-#define		mTextuteDirectionalHelpID			0x11500000
 
 #endif
