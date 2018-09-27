@@ -188,6 +188,7 @@ external/doc_csh instance of it.
 #define		mSeisIOSimpleImpHelpID			        0x10300011
 #define		mSeisIOSimpleExpHelpID			        0x10300012
 #define		mSeisPreLoadMgrHelpID			        0x10300013
+#define		mSeisPreLoad2D3DDataHelpID			0x10300014
 #define		mDZTImporterHelpID				0x10300016
 #define		mSeisFmtScaleDlgHelpID			        0x10300017
 #define		mSEGYFileManipHelpID			        0x10300019
