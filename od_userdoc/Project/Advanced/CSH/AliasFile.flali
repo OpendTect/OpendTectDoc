@@ -403,10 +403,11 @@
     <Map Name="mWellMarkersDlgHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Markers.htm" />
     <Map Name="mWellRockPhysLauncherHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
     <Map Name="mWhereIsDotDlgHelpID" Link="/Content/Getting_Started/System_Overview.htm" />
-    <Map Name="mTextuteDirectionalHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
+    <Map Name="mTextureDirectionalHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
     <Map Name="mSessionSaveRestoreHelpID" Link="/Content/Survey/Session.htm" />
     <Map Name="mReliefAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Pseudo_Relief.htm" />
     <Map Name="mDipFilterAttribHelpID" Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm#dipfilter" />
     <Map Name="mCEEMDAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
     <Map Name="mSeisPreLoad2D3DDataHelpID" Link="/Content/Survey/Pre-Load/Preload_Seismics.htm#preload2d3ddata" />
+    <Map Name="mSeisExpCubePosDlgHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
 </CatapultAliasFile>
