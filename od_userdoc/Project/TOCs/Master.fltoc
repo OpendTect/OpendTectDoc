@@ -492,6 +492,9 @@
             Title="4.4.8.2.3 Export PreStack Simple File"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_PreStack_Simple_File.htm" />
         </TocEntry>
+        <TocEntry
+          Title="4.4.8.3 Export Cube Positions"
+          Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
       </TocEntry>
       <TocEntry
         Title="4.4.9 Export Wavelets"
