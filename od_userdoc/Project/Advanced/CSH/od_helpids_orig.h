@@ -146,6 +146,7 @@ external/doc_csh instance of it.
 #define         mEventFreqAttribHelpID                          0x10100109
 #define		mReliefAttribHelpID				0x10100110
 #define		mCEEMDAttribHelpID				0x10100111
+#define		mTextureDirectionalHelpID			0x10100112
 // Attributes Selection 01
 #define		mAttribDescSetEdHelpID			        0x10101000
 #define		mAttrSelDlgNo_NNHelpID			        0x10101001
@@ -182,6 +183,7 @@ external/doc_csh instance of it.
 #define		mSeisIOSimpleImpHelpID			        0x10300011
 #define		mSeisIOSimpleExpHelpID			        0x10300012
 #define		mSeisPreLoadMgrHelpID			        0x10300013
+#define		mSeisPreLoad2D3DDataHelpID			0x10300014
 #define		mDZTImporterHelpID				0x10300016
 #define		mSeisFmtScaleDlgHelpID			        0x10300017
 #define		mSEGYFileManipHelpID			        0x10300019
