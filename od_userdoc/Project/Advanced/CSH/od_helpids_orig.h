@@ -439,7 +439,6 @@ external/doc_csh instance of it.
 // Stratigraphy BasicModelling 02
 #define		mSingleLayerGeneratorEdHelpID		        0x11002000
 #define		mSynthToRealScaleHelpID				0x11002001
-#define		mStratLayerModelcheckUnscaledWaveletHelpID	0x11002002
 #define         mStratLayerModelDispIOHelpID                    0x11002003
 // Stratigraphy Crossplotting 03
 #define		mStratSynthCrossplotHelpID			0x11003000
