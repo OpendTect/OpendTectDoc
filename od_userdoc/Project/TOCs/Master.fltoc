@@ -2,7 +2,7 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="OpendTect User Documentation - Version 6.2"
+    Title="OpendTect User Documentation - Version 6.4"
     Link="/Content/HTML Front Page/od_userdoc_v6.htm"
     conditions="Default.ScreenOnly"></TocEntry>
   <TocEntry
@@ -1281,7 +1281,7 @@
     Title="15 Appendix E - Synthetic Data Generation"
     Link="/Content/Appendix_E-Synthetic_Data_Generation.htm"></TocEntry>
   <TocEntry
-    Title="16 Appendix F - MATLAB Link Plugin for OpendTect v6.0"
+    Title="16 Appendix F - MATLAB Link Plugin for OpendTect v6.4"
     Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect.htm">
     <TocEntry
       Title="16.1 Background"
