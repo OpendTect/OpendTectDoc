@@ -327,15 +327,18 @@
       </TocEntry>
       <TocEntry
         Title="4.3.7 Import Mute Functions"
-        Link="/Content/Survey/Import/Import_Mute_Functions.htm" />
+        Link="/Content/Survey/Import/Import_Mute_Functions.htm"></TocEntry>
       <TocEntry
-        Title="4.3.8 Import Pointsets &amp; Polygons"
+        Title="4.3.8 Navigation Data / 2D Geometry"
+        Link="/Content/Survey/Import/Import_Navigation_Data_2D_Geometry.htm" />
+      <TocEntry
+        Title="4.3.9 Import Pointsets &amp; Polygons"
         Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
       <TocEntry
-        Title="4.3.9 Import Probability Density Functions"
+        Title="4.3.10 Import Probability Density Functions"
         Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.3.10 Import Seismic"
+        Title="4.3.11 Import Seismic"
         Link="/Content/Survey/Import/Import_Seismic.htm">
         <TocEntry
           Title="4.3.10.1 SEG-Y"
@@ -387,13 +390,13 @@
           Link="/Content/Survey/Import/Import_Seismic/Tagged_Seismic_Data.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.3.11 Import Velocity Functions"
+        Title="4.3.12 Import Velocity Functions"
         Link="/Content/Survey/Import/Import_Velocity_Functions.htm" />
       <TocEntry
-        Title="4.3.12 Import Wavelets"
+        Title="4.3.13 Import Wavelets"
         Link="/Content/Survey/Import/Import_Wavelets.htm" />
       <TocEntry
-        Title="4.3.13 Import Wells"
+        Title="4.3.14 Import Wells"
         Link="/Content/Survey/Import/Import_Wells.htm">
         <TocEntry
           Title="4.3.13.1 From Ascii Files"

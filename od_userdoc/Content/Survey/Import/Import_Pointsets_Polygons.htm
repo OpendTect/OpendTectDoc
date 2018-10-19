@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1978" MadCap:lastWidth="1834">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2223" MadCap:lastWidth="1414">
     <head>
     </head>
     <body>
-        <h3>4.3.8 Import Pointsets &amp; Polygons<MadCap:keyword term="Import Pointsets &amp; Polygons" /></h3>
+        <h3>4.3.9 Import Pointsets &amp; Polygons<MadCap:keyword term="Import Pointsets &amp; Polygons" /></h3>
         <p>Point/vector data can be loaded in OpendTect from <i>Survey -&gt; Import -&gt; pointset/Polygon</i>.</p>
         <img src="../../Resources/Images/Survey/Import pickset polygon popout menu.png" class="General_Image" />
         <p>Select the input Ascii file. You can display the input file by pressing the <i>Examine</i> button. The input file should be column sorted with one position per record (line).</p>
@@ -12,6 +12,7 @@
         <p>Predefined and saved file formats are available by pressing the <img src="../../Resources/Images/Icons/Open.png" class="Icons" />  icon. Otherwise the format must be manually specified. The <i>Define</i> button gives access to the format definition window.</p>
         <img src="../../Resources/Images/Survey/Import pickset polygon format definition.png" class="General_Image" />
         <p>You must specify in the format definition window the column numbers for the position, in terms of an X/Y pair or an inline-crossline pair, and the point column. points that should not be read must all have the same numerical value, which is to be filled in as the "Undefined value". The Z units can be seconds, milliseconds or microseconds. Reading may be stopped at a specific line by providing the adequate keyword.</p>
+        <p>If Coordinate Reference System (CRS) is defined for the survey, CRS conversion will be available in the import window.</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../Resources/Images/Icons/save.png" class="Icons" /> icon . In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage.</p>
         <img src="../../Resources/Images/Survey/Import pickset polygon save format.png" class="General_Image" />
         <p>The option <i>Import as polygon</i> will flag this specific datatype to the loaded data. It also adds as constraint during loading that the points are ordered in the expected way. The import tool will not apply any sorting.</p>

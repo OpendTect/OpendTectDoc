@@ -3,7 +3,7 @@
     <Map Name="mAttribCrossPlotHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Data_Extraction/Attribute-Based_Extraction_Window.htm" />
     <Map Name="mBodyOperatorDlgHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Body_Operator.htm" />
     <Map Name="mBodyRegionDlgHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Body_Region_Constructor.htm" />
-    <Map Name="mBulkHorizonImportHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Grid.htm" />
+    <Map Name="mBulkHorizonImportHelpID" Link="/Content/Survey/Import/Import_Horizons/Bulk_3D.htm" />
     <Map Name="mBulkLogImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Log_Import.htm" />
     <Map Name="mBulkMarkerImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Marker_Import.htm" />
     <Map Name="mBulkTrackImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Track_Import.htm" />
@@ -231,7 +231,7 @@
     <Map Name="mDPSOverlayPropDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window/Overlay_From_A_Third_Attribute.htm" />
     <Map Name="mDPSSelectednessDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window.htm" />
     <Map Name="mEvaluateDlgHelpID" Link="/Content/Analysis/Attributes/Attribute_Set_Toolbar.htm" />
-    <Map Name="mGeom2DImpDlgHelpID" Link="/Content/Survey/Manage/Manage_Geometry_2D.htm" />
+    <Map Name="mGeom2DImpDlgHelpID" Link="/Content/Survey/Import/Import_Navigation_Data_2D_Geometry.htm" />
     <Map Name="mGoogleExportRandomLineHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     <Map Name="mHor3DFrom2DDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Workflows.htm" />
     <Map Name="mImplBodyCalDlgHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Esitmate_Body_Volume.htm" />
