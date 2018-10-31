@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1009" MadCap:lastWidth="1392">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1993" MadCap:lastWidth="1312">
     <head>
     </head>
     <body>
@@ -8,15 +8,12 @@
         <p>In the <i>Export Horizon</i> window: select a 3D horizon; optionally include available <i>Calculated attributes</i>; specify the output format; type an output file name (to save to Survey Data Root folder) or provide a full path by clicking <i>Select</i>; and press <i>Export</i>.</p>
         <img src="../../../Resources/Images/Survey/Export horizons 3D main.png" class="General_Image" />
         <p>A successful export is confirmed with a message, and the export window stays open to export more horizons.</p>
-        <p>
-            <b>Output Format options.</b>
+        <p><b>Output Format options.</b>
         </p>
-        <p>
-            <b>Calculated attributes</b>: one or more attributes from the stored horizon data can be exported along with a horizon.</p>
+        <p><b>Calculated attributes</b>: one or more attributes from the stored horizon data can be exported along with a horizon.</p>
         <p class="tip">Horizon data can be <a href="../../../Processing/Create_Horizon_Output.htm" target="_self" MadCap:conditions="Default.ScreenOnly">created via Processing &gt; Create Horizon Output</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">created via Processing &gt; Create Horizon Output</MadCap:conditionalText>, or an attribute calculated on-the-fly on a horizon in the 3D scene can be <a href="../../../OpendTect_Trees_And_Elements/Horizon/Add_Attribute.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Saved as Horizon Data</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Saved as Horizon Data</MadCap:conditionalText>. More information about calculating attributes in OpendTect can be found <a href="../../../Analysis/Attributes/Calculate_Attributes.htm" target="_self" MadCap:conditions="Default.ScreenOnly">here</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">here</MadCap:conditionalText>.</p>
         <p class="tip">Use <a href="../../Manage/Manage_Horizons/Horizon_Manager_3D.htm" target="_self" MadCap:conditions="Default.ScreenOnly">Manage 3D Horizons</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Manage 3D Horizons</MadCap:conditionalText> window to manage stored horizon data.</p>
-        <p>
-            <b>Output Type</b>:</p>
+        <p><b>Output Type</b>:</p>
         <ul>
             <li>default OpendTect horizon export format: based on either <i>X/Y</i> or <i>Inl/Crl</i> coordinates;</li>
         </ul>
@@ -25,25 +22,18 @@
             <li> pre-defined GeoFrame <i>IESX (3d_ci7m)</i> format: <i>Settings</i> button  appears and allows to change <i>Horizon name in file</i> and add <i>Comment</i>.</li>
         </ul>
         <img src="../../../Resources/Images/Survey/Export horizons 3D iesx.png" class="General_Image" />
-        <p>
-            <b>Output Z</b>: available if the <i>Output Type</i> is set to either <i>X/Y</i> or <i>Inl/Crl</i>. </p>
+        <p><b>Output Z</b>: available if the <i>Output Type</i> is set to either <i>X/Y</i> or <i>Inl/Crl</i>. </p>
         <ul>
-            <li>
-                <i>Yes</i>: by default Z is written to the output file in <i>Z Unit</i> specified by a user;</li>
-            <li>
-                <i>No</i>: this option can be used when exporting attribute grids only;</li>
-            <li>
-                <i>Transformed</i>: allows domain conversion based on one of the following:<ul><li><i>Velocity Volume</i>: selected interval velocity model;</li><li><i>Well's Depth model</i>: a time-depth model of a chosen well;</li><li><i>Linear velocity</i>: a linear velocity function based on a starting interval velocity <i>Vint</i> and a velocity gradient <i>Gradient</i></li></ul></li>
+            <li><i>Yes</i>: by default Z is written to the output file in <i>Z Unit</i> specified by a user;</li>
+            <li><i>No</i>: this option can be used when exporting attribute grids only;</li>
+            <li><i>Transformed</i>: allows domain conversion based on one of the following:<ul><li><i>Velocity Volume</i>: selected interval velocity model;</li><li><i>Well's Depth model</i>: a time-depth model of a chosen well;</li><li><i>Linear velocity</i>: a linear velocity function based on a starting interval velocity <i>Vint</i> and a velocity gradient <i>Gradient</i></li></ul></li>
         </ul>
-        <p>
-            <b>Header</b>: available if the <i>Output Type</i> is set to either <i>X/Y</i> or <i>Inl/Crl</i>.</p>
+        <p><b>Coordinate System</b>: select a coordinate system of the output file (the option is available only if  the current survey has a defined projection based coordinate system).</p>
+        <p><b>Header</b>: available if the <i>Output Type</i> is set to either <i>X/Y</i> or <i>Inl/Crl</i>.</p>
         <ul>
-            <li>
-                <i>No</i>: no header is written to the file by default;</li>
-            <li>
-                <i>Single line</i>: the 1st line contains column names,  the 2nd line is a separator, while data starts from the 3rd line only;</li>
-            <li>
-                <i>Multi line</i>: column names are listed in the individual lines followed by a separating line.</li>
+            <li><i>No</i>: no header is written to the file by default;</li>
+            <li><i>Single line</i>: the 1st line contains column names,  the 2nd line is a separator, while data starts from the 3rd line only;</li>
+            <li><i>Multi line</i>: column names are listed in the individual lines followed by a separating line.</li>
         </ul>
     </body>
 </html>
