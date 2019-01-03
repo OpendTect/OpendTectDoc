@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2824" MadCap:lastWidth="1800">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3278" MadCap:lastWidth="1346">
     <head>
     </head>
     <body>
@@ -9,7 +9,14 @@
         <p>GapDecon -- Attribute that aims to attenuate repetitions of primary reflections (multiples).<br /></p>
         <p><b>Description</b>
         </p>
-        <p>The type of multiple removal algorithm chosen for this application is the well known inversed filtering method also known as Gap deconvolution. This filter aims to attenuate a user-defined part of an auto-correlation function. The underlying idea is that multiples in the data are secondary reflections, i.e repetitions of the primary reflections that show up in the auto-correlation function at a time that corresponds with the extra travel time. The filter can be applied on-the-fly or in batch-mode to produce a filtered output cube. The user defines the <i>GapDecon</i> attribute from the list and specifies a number of input parameters.</p>
+        <p>The type of multiple removal algorithm chosen for this application is the well known inversed filtering method also known as Gap deconvolution. This filter aims to attenuate a user-defined part of an auto-correlation function. The underlying idea is that multiples in the data are secondary reflections, i.e repetitions of the primary reflections that show up in the auto-correlation function at a time that corresponds with the extra travel time. The filter can be applied on-the-fly or in batch-mode to produce a filtered output cube. </p>
+        <p>This attribute consists of 3 steps:</p>
+        <ul>
+            <li>The energy attribute is first calculated in the user mentioned window(by default [0,0])</li>
+            <li>A Hilbert transform is applied on this Energy amplitude</li>
+            <li>The output of the above step is multiplied by -1 to get the phase rotation of +90 degree</li>
+        </ul>
+        <p>The user defines the <i>GapDecon</i> attribute from the list and specifies a number of input parameters.</p>
         <ul>
             <li><b>Correlation window</b> = the window for calculating the auto-correlation function.</li>
             <li><b>Examine</b> = pressing this button will open a new window where the user selects a subset of the data (e.g one inline, or one cross-line) on which the result of the auto-correlation will be calculated and displayed for filter design purposes. This result can be used to determine the lag and gap size (see example below).</li>
