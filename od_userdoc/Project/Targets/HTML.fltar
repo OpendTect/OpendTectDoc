@@ -20,8 +20,9 @@
   BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs"
   PreCompileScaledImages="false"
   EnableSitemap="true"
-  SitemapWebUrl="http://doc.opendtect.org/6.0.0/doc/od_userdoc/"
-  EquationsOutputType="SVG">
+  SitemapWebUrl="http://doc.opendtect.org/6.4.0/doc/od_userdoc/"
+  EquationsOutputType="SVG"
+  SearchEngine="MadCapSearch">
   <PrintedOutput
     CollapseMargins="true" />
 </CatapultTarget>
