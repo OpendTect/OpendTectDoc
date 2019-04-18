@@ -200,7 +200,6 @@ external/doc_csh instance of it.
 #define		mSeisBrowserHelpID				0x10301005
 #define		mPosProvSelHelpID				0x10301006
 #define		mSeisMultiCubePSHelpID			        0x10301007
-#define		mSeisCopyLineSetHelpID			        0x10301008
 #define		mSeis2DFileManMergeDlgHelpID		        0x10301009
 #define		mSeis2DExtractFrom3DHelpID			0x10301010
 #define		mSeisFileMan2DHelpID			        0x10301011
