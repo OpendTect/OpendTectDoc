@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Read this first">
+    <TocEntry
+      Title="Toolbars" />
+    <TocEntry
+      Title="Mouse Controls - Scenes and Graphical Interaction" />
+    <TocEntry
+      Title="Color Tables" />
+    <TocEntry
+      Title="General Selection Window" />
+    <TocEntry
+      Title="2D Viewer" />
+  </TocEntry>
+  <TocEntry
+    Title="Then this">
+    <TocEntry
+      Title="Setup 2D &amp; 3D Survey" />
+    <TocEntry
+      Title="Load Seismic (2D &amp; 3D)" />
+    <TocEntry
+      Title="Interpret Horizons" />
+  </TocEntry>
+</CatapultToc>

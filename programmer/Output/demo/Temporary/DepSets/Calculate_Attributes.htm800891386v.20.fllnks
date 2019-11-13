@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/evalattr.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.youtube.com/watch" />
+    <Link
+      Url="Content/Processing/Create_Seismic_Output.htm" />
+    <Link
+      Url="Content/Processing/Create_Horizon_Output.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate on the fly workflow.png" />
+    <Link
+      Url="Content/Survey/Session.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate attributes add attribute horizon2.png" />
+    <Link
+      Url="Content/Survey/Manage/Manage_Horizons.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate attributes add attribute horizon save as horizon data.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute select horizon data.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/evalattr.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.youtube.com/watch?v=STDUoDX8Cc0" />
+    <Link
+      Url="Content/Processing/Create_Seismic_Output.htm" />
+    <Link
+      Url="Content/Processing/Create_Horizon_Output.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate on the fly workflow.png" />
+    <Link
+      Url="Content/Survey/Session.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate attributes add attribute horizon2.png" />
+    <Link
+      Url="Content/Survey/Manage/Manage_Horizons.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute calculate attributes add attribute horizon save as horizon data.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute select horizon data.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Calculate Attributes"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

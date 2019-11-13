@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Survey/Survey selection window.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/addnew.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/info.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/notes.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey data root .png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey set data root.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/edit.png" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/copyobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/import.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey pack into zip.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/export.png" />
+    <Link
+      Url="http://opendtect.org/index.php/share-seismic-data/osr.html" />
+    <Link
+      Url="Content/Resources/Images/Icons/share.png" />
+    <Link
+      Url="https://opendtect.org/osr/" />
+    <Link
+      Url="Content/Resources/Images/Icons/xy2ic.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey xy to ic manual.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey xy to ic file.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/google.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey export to google earth.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/spherewire.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey lat long vs coords decimal.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey lat long vs coords dms.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Survey/Survey selection window.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/addnew.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/info.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/notes.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey data root .png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey set data root.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/edit.png" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/copyobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/import.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey pack into zip.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/export.png" />
+    <Link
+      Url="http://opendtect.org/index.php/share-seismic-data/osr.html" />
+    <Link
+      Url="Content/Resources/Images/Icons/share.png" />
+    <Link
+      Url="https://opendtect.org/osr/" />
+    <Link
+      Url="Content/Resources/Images/Icons/xy2ic.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey xy to ic manual.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey xy to ic file.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/google.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey export to google earth.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/spherewire.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey lat long vs coords decimal.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Survey lat long vs coords dms.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Survey Selection Window"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Wells.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi main blank.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi read file.png" />
+    <Link
+      Url="Content/Survey/Manage/Manage_Wells/Checkshot_And_Time-Depth_Models.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage wells simple multi well read file format definition.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi main.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Wells.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi main blank.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi read file.png" />
+    <Link
+      Url="Content/Survey/Manage/Manage_Wells/Checkshot_And_Time-Depth_Models.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage wells simple multi well read file format definition.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import wells simple multi main.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Simple Multi-Well Creation"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

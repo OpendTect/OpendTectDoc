@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/examine.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy examiner.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Save.png" />
+    <Link
+      Url="http://www.seg.org/resources/publications/misc/technical-standards" />
+    <Link
+      Url="Content/Resources/Images/Icons/vd.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/histogram.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rubbandzoom.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/zoomforward.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/zoombackward.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/cancelzoom.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/flip_lr.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/snapshot.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/printer.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/disppars.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy examiner 2d viewer.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/examine.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy examiner.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Save.png" />
+    <Link
+      Url="http://www.seg.org/resources/publications/misc/technical-standards" />
+    <Link
+      Url="Content/Resources/Images/Icons/vd.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/histogram.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rubbandzoom.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/zoomforward.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/zoombackward.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/cancelzoom.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/flip_lr.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/snapshot.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/printer.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/disppars.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy examiner 2d viewer.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="SEG-Y Examiner"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set active popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set example with seeds.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set active popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Fault stick set example with seeds.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="FaultStickSet"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

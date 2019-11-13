@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/renameobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/unlock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/trashcan.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/makedefault.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/mergeseis.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data merge selection.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data merge main.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/renameobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/unlock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/trashcan.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/makedefault.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/mergeseis.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data merge selection.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage crossplot data merge main.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Manage Cross-Plot Data"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

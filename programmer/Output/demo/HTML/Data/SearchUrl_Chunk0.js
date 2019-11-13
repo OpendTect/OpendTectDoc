@@ -1,0 +1,1 @@
+define({"../content/glossary.htm":7,"../content/html_front_page/od_userdoc_v6.htm":0,"../content/preface.htm":1,"../content/preface/about_opendtect.htm":4,"../content/preface/about_this_manual.htm":2,"../content/preface/acknowledgements.htm":6,"../content/preface/copyright.htm":5,"../content/preface/release_notes.htm":3,});

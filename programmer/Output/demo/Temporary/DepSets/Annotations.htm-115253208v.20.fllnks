@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations arrows properties.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text group add.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text gas filled sands.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text move.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations scale bar inl crl.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations scale bar z slice.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations arrows properties.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text group add.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text gas filled sands.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations text move.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations scale bar inl crl.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Annotations scale bar z slice.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Annotations"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

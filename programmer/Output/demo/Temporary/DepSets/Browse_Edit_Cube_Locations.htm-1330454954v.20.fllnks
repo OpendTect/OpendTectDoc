@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/browseseis.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage seismics browse edit 3d volume.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/gotopos.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/info.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/crlwise.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/leftarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rightarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/wva.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/browseseis.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage seismics browse edit 3d volume.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/gotopos.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/info.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/crlwise.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/leftarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rightarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/wva.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Browse &amp; Edit Cube Locations"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

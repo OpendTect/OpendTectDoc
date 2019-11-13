@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/man_props.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Analysis/Layer_Modeling/Layer_Description.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties main.png" />
+    <Link
+      Url="http://opendtect.org/index.php/contact/support" />
+    <Link
+      Url="Content/Resources/Images/Icons/rightarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/edit.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/remove.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property definition.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rockphys.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property fixed def.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property fixed def set.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/man_props.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Analysis/Layer_Modeling/Layer_Description.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties main.png" />
+    <Link
+      Url="http://opendtect.org/index.php/contact/support" />
+    <Link
+      Url="Content/Resources/Images/Icons/rightarrow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/edit.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/remove.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property definition.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/rockphys.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property fixed def.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage layer properties property fixed def set.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Manager Layer Properties"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

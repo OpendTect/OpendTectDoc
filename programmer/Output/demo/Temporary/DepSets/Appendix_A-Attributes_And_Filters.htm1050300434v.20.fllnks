@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://doc.opendtect.org/6.2.0/doc/dgb_userdoc/Default.htm" />
+    <Link
+      Url="https://dgbes.com/index.php/support" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Energy.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Delta_Resample.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Event.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Fingerprint.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Frequency.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Frequency_Filter.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/GapDecon.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Horizon.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Log.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Match_Delta.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Mathematics.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Position.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Prestack.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Reference.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Reference_Shift.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Scaling.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Spectral_Decomposition.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://doc.opendtect.org/6.2.0/doc/dgb_userdoc/Default.htm" />
+    <Link
+      Url="https://dgbes.com/index.php/support" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Energy.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Delta_Resample.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Event.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Fingerprint.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Frequency.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Frequency_Filter.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/GapDecon.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Horizon.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Log.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Match_Delta.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Mathematics.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Position.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Prestack.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Reference.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Reference_Shift.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Scaling.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Spectral_Decomposition.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Texture-Directional.htm" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Appendix A - Attributes And Filters"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

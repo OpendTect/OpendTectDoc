@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
+    <Link
+      Url="Content/Scenes/Time_And_Depth-Converted_Scenes.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/prescan.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy mostly.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no coordinates.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D generate.png" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D auxillary file.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D trace subselection.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy 2D line select.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D more similar.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
+    <Link
+      Url="Content/Scenes/Time_And_Depth-Converted_Scenes.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/prescan.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy mostly.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no coordinates.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D generate.png" />
+    <Link
+      Url="Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D auxillary file.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D trace subselection.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy 2D line select.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy revision no locations 2D more similar.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="SEG-Y Import"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Analysis attributes 3D basic texture.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Contrast.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Dissimilarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Homogeneity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Angular second moment.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Energy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Entropy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM main.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM variance.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM standard deviation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM correlation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS seismic.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS contrast.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS dissimilarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS homogeneity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS angular second moment.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS energy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS entropy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM main.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM variance.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM standard deviation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM correlation.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Analysis attributes 3D basic texture.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Contrast.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Dissimilarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Homogeneity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Angular second moment.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Energy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/Entropy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM main.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM variance.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM standard deviation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/GLCM correlation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS seismic.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS contrast.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS dissimilarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS homogeneity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS angular second moment.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS energy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS entropy.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM main.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM variance.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM standard deviation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_A/DS GLCM correlation.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Texture"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/segy.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data generic.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Wells/Import_Zero-Offset_VSP.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data data-specific.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/fullscan.png" />
+    <Link
+      Url="http://www.seg.org/resources/publications/misc/technical-standards" />
+    <Link
+      Url="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" />
+    <Link
+      Url="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/open.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/examine.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data scaleXY.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/segy.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data generic.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Wells/Import_Zero-Offset_VSP.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data data-specific.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/fullscan.png" />
+    <Link
+      Url="http://www.seg.org/resources/publications/misc/technical-standards" />
+    <Link
+      Url="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev0.pdf" />
+    <Link
+      Url="http://seg.org/Portals/0/SEG/News and Resources/Technical Standards/seg_y_rev1.pdf" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/open.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/examine.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import segy data scaleXY.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="SEG-Y Wizard"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

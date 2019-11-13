@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.dgbes.com/index.php/dip-steering.html" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute set 3d main window.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Default_Attribute_Sets.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute set 3d file options.png" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/new.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/defset.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/impset.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/job2set.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save as.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/showattrnow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/evalattr.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Attribute_Set_Toolbar.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/evalcrossattr.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/xplot.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="http://www.dgbes.com/index.php/dip-steering.html" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute set 3d main window.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Default_Attribute_Sets.htm" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute set 3d file options.png" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/new.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/defset.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/impset.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/job2set.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm#Reconstruct_set_from_job_file" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save as.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/showattrnow.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/evalattr.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Attribute_Set_Toolbar.htm#Evaluate_Attribute" />
+    <Link
+      Url="Content/Resources/Images/Icons/evalcrossattr.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/xplot.png" />
+    <Link
+      Url="Content/Analysis/Attributes/Attribute_Set_Toolbar.htm#Crossplot_attributes" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Attribute Set Window"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

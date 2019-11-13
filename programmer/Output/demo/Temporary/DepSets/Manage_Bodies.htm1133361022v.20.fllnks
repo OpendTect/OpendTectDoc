@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/man_body.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Getting_Started/General_Selection_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/set_union.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/set_implicit.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/bodyvolume.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/switch_implicit.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage body.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/man_body.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Getting_Started/General_Selection_Window.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/set_union.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/set_implicit.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/bodyvolume.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/switch_implicit.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Manage body.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Manage Bodies"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

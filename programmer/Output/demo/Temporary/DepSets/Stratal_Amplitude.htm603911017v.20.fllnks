@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 1.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 2.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 3.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Appendix_A-Attributes_And_Filters/Volume_Statistics.htm" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 1.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 2.png" />
+    <Link
+      Url="Content/Resources/Images/Processing/Create horizon stratal amplitude z offset 3.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Stratal Amplitude"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

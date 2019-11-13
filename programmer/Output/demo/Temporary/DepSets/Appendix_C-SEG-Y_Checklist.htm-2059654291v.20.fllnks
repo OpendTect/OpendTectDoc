@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y.htm" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y checklist.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y checklist2.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info2.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info3.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/Error message.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/Trace header info.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y_file_size.xls" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y size computation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y trace computation.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y.htm" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#textual_header" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#line_header" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#no_headers" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#first_but_no_others" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#examine_scan" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#loaded_wrong_amp" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#loaded_holes" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#loaded_shifted" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#excel_utilities" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#segy_file_size_comp" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#segy_trace_number_comp" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y checklist.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y checklist2.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info.png" />
+    <Link
+      Url="Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info2.png" />
+    <Link
+      Url="Content/Appendix_C-SEG-Y_Checklist.htm#soluton_one" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/File header info3.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/Error message.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/Trace header info.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y_file_size.xls" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y size computation.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_C/SEG-Y trace computation.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="textual_header" />
+    <Anchor
+      Name="line_header" />
+    <Anchor
+      Name="soluton_one" />
+    <Anchor
+      Name="no_headers" />
+    <Anchor
+      Name="first_but_no_others" />
+    <Anchor
+      Name="examine_scan" />
+    <Anchor
+      Name="loaded_wrong_amp" />
+    <Anchor
+      Name="loaded_holes" />
+    <Anchor
+      Name="loaded_shifted" />
+    <Anchor
+      Name="excel_utilities" />
+    <Anchor
+      Name="segy_file_size_comp" />
+    <Anchor
+      Name="segy_trace_number_comp" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Appendix C - SEG-Y Checklist"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

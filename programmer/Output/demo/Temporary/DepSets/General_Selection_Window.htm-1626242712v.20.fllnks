@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Getting_Started/General selection window.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/renameobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/lock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/delete.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/makedefault.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Getting_Started/General selection window.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/renameobj.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/lock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/delete.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/makedefault.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="General Selection Window"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Icons/impset.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from file.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from survey.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from survey select.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/job2set.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from existing cube.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from existing cube select file.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Icons/impset.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from file.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from survey.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from survey select.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/job2set.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from existing cube.png" />
+    <Link
+      Url="Content/Resources/Images/Analysis/Analysis attribute import attribute set from existing cube select file.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Reconstruct_set_from_job_file" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Import An Attribute Set From"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

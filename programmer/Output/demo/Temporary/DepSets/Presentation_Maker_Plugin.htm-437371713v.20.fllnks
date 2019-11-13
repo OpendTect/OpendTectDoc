@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="https://python-pptx.readthedocs.org/en/latest/user/install.html" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="https://www.python.org/downloads/release/python-2710/" />
+    <Link
+      Url="http://www.computerhope.com/issues/ch000549.htm" />
+    <Link
+      Url="https://pypi.python.org/pypi/lxml" />
+    <Link
+      Url="https://pypi.python.org/packages/2.7/l/lxml/lxml-3.4.4.win-amd64-py2.7.exe" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="https://python-pptx.readthedocs.org/en/latest/user/install.html" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="https://www.python.org/downloads/release/python-2710/" />
+    <Link
+      Url="http://www.computerhope.com/issues/ch000549.htm" />
+    <Link
+      Url="https://pypi.python.org/pypi/lxml" />
+    <Link
+      Url="https://pypi.python.org/packages/2.7/l/lxml/lxml-3.4.4.win-amd64-py2.7.exe#md5=f1f2d5ec1be1ca9b73756676125de5ae" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Presentation Maker Plugin"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

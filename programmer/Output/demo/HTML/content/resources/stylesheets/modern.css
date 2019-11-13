@@ -1,0 +1,212 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.7em;
+	margin: 17px;
+	max-width: 750px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-weight: bold;
+	color: #749AB6;
+}
+
+p.example
+{
+	color: #546C7F;
+	border: solid 1px #BECFDC;
+	background-color: #DEE8F0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+p.note
+{
+	color: #616E14;
+	border: solid 1px #BFD62F;
+	background-color: #DAE691;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+a
+{
+	color: #5B8EC1;
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/minus.png');
+	mc-closed-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/plus.png');
+	mc-image-position: left;
+}
+
+MadCap|dropDown
+{
+	mc-open-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/minus.png');
+	mc-closed-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/plus.png');
+}
+
+MadCap|toggler
+{
+	mc-open-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/minus.png');
+	mc-closed-image: url('../../../../../../program_files/madcap_software/madcap_flare_15/flare.app/resources/images/webhelp/plus.png');
+	color: inherit;
+}
+
+MadCap|popupHead
+{
+	color: #5B8EC1;
+}
+
+MadCap|popupBody
+{
+	color: #EBEBEB;
+	border: none;
+	background-color: rgba(0, 0, 0, .85);
+	padding: 11px 15px;
+}
+
+MadCap|glossaryTerm
+{
+	
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	color: inherit;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: #5B8EC1;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: #5B8EC1;
+	font-weight: normal;
+}
+
+MadCap|conceptLink
+{
+	color: #000000;
+}
+
+MadCap|keywordLink
+{
+	color: #000000;
+}
+
+MadCap|relatedTopics
+{
+	color: #000000;
+}
+
+MadCap|helpControlMenu
+{
+	color: #707070;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+MadCap|helpControlMenuItem
+{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	color: #000000;
+	background-color: #E5EFF7;
+}
+
+h1
+{
+	font-family: Arial;
+	font-size: 32pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h2
+{
+	font-size: 22pt;
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+h3
+{
+	color: #000000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 14pt;
+	font-family: Arial;
+}
+
+h4
+{
+	color: #000000;
+	font-size: 12pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	mc-heading-level: 0;
+	font-family: Arial;
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+h6
+{
+	mc-heading-level: 0;
+}
+
+p
+{
+	font-size: 12pt;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+div.antipagebreak
+{
+	page-break-before: always;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+img
+{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data format definition.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data save format.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data popout menu.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data main.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Open.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data format definition.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/save.png" />
+    <Link
+      Url="Content/Resources/Images/Survey/Import crossplot data save format.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Import Cross-Plot Data"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

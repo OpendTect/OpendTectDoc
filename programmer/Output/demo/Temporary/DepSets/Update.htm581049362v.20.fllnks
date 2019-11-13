@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="https://dgbes.com/index.php/download" />
+    <Link
+      Url="Content/Resources/Images/Utilities/dload_page.png" />
+    <Link
+      Url="Content/Resources/Images/Utilities/03_inst_man_main.png" />
+    <Link
+      Url="Content/Resources/Images/Utilities/04_inst_man_main_expnd.png" />
+    <Link
+      Url="Content/Utilities/Installation/Update/Package Manager/Offline_Installation.htm" />
+    <Link
+      Url="Content/Resources/Images/Utilities/05_pkg_slctn.png" />
+    <Link
+      Url="http://opendtect.org/index.php/products/triple-licensing-policy" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="https://dgbes.com/index.php/download" />
+    <Link
+      Url="Content/Resources/Images/Utilities/dload_page.png" />
+    <Link
+      Url="Content/Resources/Images/Utilities/03_inst_man_main.png" />
+    <Link
+      Url="Content/Resources/Images/Utilities/04_inst_man_main_expnd.png" />
+    <Link
+      Url="Content/Utilities/Installation/Update/Package Manager/Offline_Installation.htm" />
+    <Link
+      Url="Content/Resources/Images/Utilities/05_pkg_slctn.png" />
+    <Link
+      Url="http://opendtect.org/index.php/products/triple-licensing-policy" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Update (Installation Manager)"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

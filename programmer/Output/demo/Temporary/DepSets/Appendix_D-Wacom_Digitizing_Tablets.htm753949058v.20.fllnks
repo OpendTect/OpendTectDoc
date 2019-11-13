@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Wacom.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Pen.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Inline add.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Pop-up menus.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/create new polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/View.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Close polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Polygon channel.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Orthogonal icon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/View inline.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Load horizon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Event.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Similarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Icons.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Keys.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Show tracking icon.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/autotrack.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Line manual.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/selectsticks.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Map view.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/trashcan.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Horizon outline.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Tracking.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/VD.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/2D viewer.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Save horizon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Interpret faults.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault steps.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/New fault.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Save fault.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Position.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Positioning.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Scrolling.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault sticks.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Icons2.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault planes.png" />
+    <Link
+      Url="http://sourceforge.net/apps/mediawiki/linuxwacom/index.php" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#Introduction" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#pen_device" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#basic_interaction" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#draw_polygons" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#create_bodies" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#interpret_horizons" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#man_edit_horizons" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#interpret_faults" />
+    <Link
+      Url="Content/Appendix_D-Wacom_Digitizing_Tablets.htm#supported_platforms" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Wacom.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Pen.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Inline add.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Pop-up menus.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/create new polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/View.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Close polygon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Polygon channel.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Orthogonal icon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/View inline.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Load horizon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Event.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Similarity.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Icons.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Keys.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Show tracking icon.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/autotrack.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Line manual.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/Save.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/selectsticks.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Map view.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/trashcan.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Horizon outline.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Tracking.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/VD.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/2D viewer.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Save horizon.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Interpret faults.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault steps.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/New fault.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Save fault.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Position.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Positioning.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Scrolling.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault sticks.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Icons2.png" />
+    <Link
+      Url="Content/Resources/Images/Appendix_D/Fault planes.png" />
+    <Link
+      Url="http://sourceforge.net/apps/mediawiki/linuxwacom/index.php?title=Main_Page" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Introduction" />
+    <Anchor
+      Name="pen_device" />
+    <Anchor
+      Name="basic_interaction" />
+    <Anchor
+      Name="draw_polygons" />
+    <Anchor
+      Name="create_bodies" />
+    <Anchor
+      Name="interpret_horizons" />
+    <Anchor
+      Name="man_edit_horizons" />
+    <Anchor
+      Name="interpret_faults" />
+    <Anchor
+      Name="supported_platforms" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Appendix D - Wacom Digitizing Tablets"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.ScreenOnly" />
+    <Condition
+      Tag="Default.PrintOnly" />
+  </AllConditions>
+  <Stylesheets />
+</CatapultFileLinkSet>

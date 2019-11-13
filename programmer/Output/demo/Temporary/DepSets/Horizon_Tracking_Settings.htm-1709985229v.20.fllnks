@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/autotrack.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker event.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker similarity.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker properties.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker dipsteer.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking right click menu with comments.png" />
+    <Link
+      Url="http://www.opendtect.org/600/doc/HTML_WF/Default.htm" />
+    <Link
+      Url="Content/Resources/Images/Icons/lock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/unlock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/retrackhorizon.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/autotrack.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker event.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker similarity.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker properties.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracker dipsteer.png" />
+    <Link
+      Url="Content/Resources/Images/OpendTect_Trees_and_Elements/Horizon tracking right click menu with comments.png" />
+    <Link
+      Url="http://www.opendtect.org/600/doc/HTML_WF/Default.htm" />
+    <Link
+      Url="http://www.opendtect.org/600/doc/HTML_WF/Default.htm#TM6/workflows/General_Interpretation/Auto-track_3D.htm?TocPath=General%2520Interpretation|_____3" />
+    <Link
+      Url="http://www.opendtect.org/600/doc/HTML_WF/Default.htm#TM6/workflows/General_Interpretation/Tracking_In_2D_Viewer.htm?TocPath=General%2520Interpretation|_____2" />
+    <Link
+      Url="Content/Resources/Images/Icons/lock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/unlock.png" />
+    <Link
+      Url="Content/Resources/Images/Icons/retrackhorizon.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Horizon Tracking Settings"
+      Conditions=""
+      LocalConditions=""
+      Position="4" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>
