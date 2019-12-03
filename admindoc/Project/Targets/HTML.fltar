@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="OpendTect Admin Documentation"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ReplaceSpacesWithUnderscores="true"
+  MakeFileLowerCase="true"
+  MoveOutputContentToRoot="false"
+  GetLatestBeforeCompile="false"
+  PartialWordSearch="false"
+  MinimumWordSize="3"
+  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  Skin="/Project/Skins/HTML5.flskn"
+  conditions="Default.ScreenOnly"
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
+  PreCompileScaledImages="false"
+  EnableSitemap="true"
+  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/od_userdoc/"
+  EquationsOutputType="SVG"
+  SearchEngine="MadCapSearch">
+  <PrintedOutput
+    CollapseMargins="true" />
+</CatapultTarget>

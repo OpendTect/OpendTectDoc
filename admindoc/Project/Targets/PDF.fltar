@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  PatchHeadingLevels="true"
+  conditions="Default.PrintOnly"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.ScreenOnly] "
+  InjectEmptyPages="false"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  Medium="print"
+  MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
+  AutoSizeCaptureCaptions="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <DocumentProperties
+    Title="OpendTect User Documentation - Version 6.6"
+    Author="dGB Earth Sciences" />
+  <PDF
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    FullScreen="false"
+    PageMode="UseOutlines"
+    ShowUsedBookmarks="false"
+    DownsampleImages="false"
+    ImageCompression="Automatic"
+    ImagePPIThreshold="300" />
+  <RelationshipTables />
+</CatapultTarget>
