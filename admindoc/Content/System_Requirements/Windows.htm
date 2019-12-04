@@ -3,7 +3,40 @@
     <head>
     </head>
     <body>
-        <h1>Windows</h1>
-        <p>Delete this text and replace it with your own content.</p>
+        <h1>Windows </h1>
+        <h2>Minimum</h2>
+        <ul>
+            <li>Version:&#160;7/8.1/10; Server 2012, Server 2016 may work</li>
+            <li>CPU:&#160;Intel/AMD, preferably 64 bits</li>
+            <li>GPU:&#160;Nvidia (e.g. recent GeForce/Quadro/NVS series) graphics cards; AMD graphics cards may work</li>
+            <li>Memory:&#160;8 GB of RAM, OpendTect itself needs at least 2 GB RAM. Therefore, 8 GB will almost certainly be the absolute minimum.</li>
+            <li>Storage:&#160;Hard Disk</li>
+        </ul>
+        <h2>Recommended</h2>
+        <ul>
+            <li>Version: 8.1/10</li>
+            <li>CPU: Intel/AMD processor with 64 bit support, 3+&#160;GHz multi-core. Note that OpendTect uses all processors if necessary. The more cores and speed, the better. OpendTect will automatically use multiple threads in many situations. This depends on the type of attribute, display, etc. We put a lot of effort to get time-consuming tasks  multi-threaded.</li>
+            <li>GPU: Nvidia (e.g. recent main-stream up to high-end GeForce series) graphics cards. Quadro or NVS series cards could give the bit extra you want. In doubt, buy the best GeForce card you can find. When buying a laptop make sure that it has a Nvidia chipset.</li>
+            <li>Memory: on the safe side don't go for less than 32 GB. Buy as much memory that you can afford and fits in the system. The big clients for example use nothing less than 512 GB.</li>
+            <li>Storage:&#160; SSD is best, other options are Hard Disk or Network Drive. This is usually under-valued, but it's often the crucial performance component. SSD disks will give a tremendous boost in performance; essentially, data on SSD disks loads almost as fast as pre-loaded, in-memory data. Performance could be miserable if data needed to stream through (relatively) slow networks.</li>
+        </ul>
+        <h2>For Machine Learning</h2>
+        <ul>
+            <li>Version:&#160;8.1/10</li>
+            <li>CPU: Intel/AMD, 64 bits.  Ideally you want the system to be expendable to 4 GPUs. The CPU will need to support all GPUs.  Important to look for is how many PCIe lanes the CPU supports and how many PCIe lanes the GPUs and M.2 NVMe SSDs requires. We recommend to get a CPU with at least 8 cores, 16 threads and 40 PCIe lanes.</li>
+            <li>GPU: Nvidia, GeForce or Quadro series. The GPU needs to be fast enough and able to fit the model and data batch in memory. When in doubt choose the one with more memory.&#160;Other things to look for is the number of CUDA cores, tensor cores and GB memory bandwidth per second. We recommend the Nvidia GeForce RTX 2080 Ti with 11 GB memory.</li>
+            <li>Memory: DDR4 memory, don't go for less than 32 GB. Buy as much memory that you can afford and fits in the system.</li>
+            <li>Storage:&#160;The best choice is M.2 NVMe SSD that is big enough for the data. The advantage of M.2&#160;NMVe SSD is that it is plugged into the motherboard and is super fast. <br /></li>
+        </ul>
+        <p><i>Please note that:</i>
+        </p>
+        <ul>
+            <li><i>For best performance OpenGL&#160;drivers should be up-to-date.</i>
+            </li>
+            <li><i>Windows needs to be updated with the latest updates from Microsoft.</i>
+            </li>
+            <li><i>Windows 7 will no longer be supported after 6.6 release</i>
+            </li>
+        </ul>
     </body>
 </html>

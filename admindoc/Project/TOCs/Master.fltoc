@@ -5,9 +5,13 @@
     Title="1.0 System Requirements"
     Link="/Content/System_Requirements.htm">
     <TocEntry
-      Title="New Entry" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System_Requirements/Windows.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System_Requirements/Linux.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System_Requirements/Mac_OS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
-  <TocEntry
-    Title="1.0 System Requirements"
-    Link="/Content/System_Requirements.htm" />
 </CatapultToc>
