@@ -14,4 +14,17 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/System_Requirements/Mac_OS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
+  <TocEntry
+    Title="2.0 Installation"
+    Link="/Content/Installation.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Installation/OpendTect.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Installation/Petrel_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Installation/Presentation_Maker_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
 </CatapultToc>

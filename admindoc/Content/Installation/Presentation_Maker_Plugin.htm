@@ -4,6 +4,39 @@
     </head>
     <body>
         <h1>Presentation Maker Plugin</h1>
-        <p>&#160;</p>
+        <h2>Introduction</h2>
+        <p>python-pptx is a Python library for creating and updating PowerPoint (.pptx) files. The OpendTect 'Presentation Maker' plugin uses this library to create a PowerPoint presentation from scene, window or desktop screenshots. Up to OpendTect 6.4 it was required to install Python and all required Python libraries separately to get the Presentation Maker Plugin working. From OpendTect 6.6 and onwards OpendTect will come with Python and libraries. Therefore it is no longer needed to install Python separately. Of course this is still possible and might be what you want.</p>
+        <h2>python-pptx installation</h2>
+        <p>General information can be found in the <a href="https://python-pptx.readthedocs.io/en/latest/user/install.html" target="_blank">installing chapter</a> of the python-pptx documentation.</p>
+        <h3>Windows</h3>
+        <p>On Windows, three packages need to be installed. First of all <i>python</i> itself, then <i>lxml</i> and finally <i>python-pptx</i>. The three packages have to be installed in the given order and installation instructions are given below. At the time of writing python-pptx requires Python 2.7, 3.3, 3.4, or 3.6. </p>
+        <p style="font-weight: bold;">Python</p>
+        <ol>
+            <li> Before you start, create a new folder to store the Python installation, e.g. <i>C:\apps</i>.</li>
+            <li>Download the Python installer from the <a href="https://www.python.org/downloads/release/python-374/" target="_blank">Python download page</a>. At the time of writing the version 3.7.4 is the preferred version to install. Choose Windows x86-64 executable installer for Windows 64 bits and Windows x86 executable installer for Windows 32 bits.</li>
+            <li>During installation, choose C:\apps as the installation folder and select the option to add Python to the <i>PATH</i> environment variable. If you don't get this option, or missed it, edit the <i>PATH</i> environment variable and add the following:<br /><i>C:\apps\Python37\;C:\apps\Python37\Scripts;</i><br />More information on setting environment variables on Windows can be found at this <a href="https://www.computerhope.com/issues/ch000549.htm" target="_blank">Computer Hope page</a>.</li>
+        </ol>
+        <p style="font-weight: normal;"><b>lxml</b>
+        </p>
+        <p style="font-weight: normal;">The package python-pptx requires the lxml tools. At the time of writing the most recent version is 4.4.2. </p>
+        <ol>
+            <li style="font-weight: normal;">Download lxml library installer from this the <a href="https://pypi.org/project/lxml/#files" target="_blank">lxml download page</a>. Choose lxml-4.4.2-cp37-cp37m-win32.whl for Windows 32 bits and lxml-4.4.2-cp37-cp37m-win_amd64.whl for Windows 64 bits.</li>
+            <li style="font-weight: normal;">Open the Command Prompt (press Windows+R, type in cmd, and hit enter), change the current directory into the download directory and run command:<br /><code>pip install  lxml-4.4.2-cp37-cp37m-win_amd64.whl</code> or<br /><code>pip install lxml-4.4.2-cp37-cp37m-win32.whl</code></li>
+        </ol>
+        <p style="font-weight: normal;"><b>python-pptx</b>
+        </p>
+        <ol>
+            <li style="font-weight: normal;">Open the Command Prompt (press Windows+R, type in cmd, and hit enter),  and run command:<br /><code>pip install python-pptx</code></li>
+        </ol>
+        <h3>Linux</h3>
+        <p>Start by checking whether Python has been installed.</p>
+        <ol>
+            <li>Open the terminal and enter:<code> python --version</code>. If it's installed, you'll see the version number.  At the time of writing python-pptx requires Python 2.7, 3.3, 3.4, or 3.6. </li>
+            <li>If Python is not installed, install using your distribution's package manager. </li>
+            <li>First install lxml:<br /><code>pip install lxml</code></li>
+            <li>Then install python-pptx:<br /><code>pip install python-pptx</code></li>
+        </ol>
+        <h2>Presentation Maker User documentation</h2>
+        <p>For information about Presentation Maker go to <a href="http://doc.opendtect.org/6.4.0/doc/od_userdoc/Default.htm#utilities/tools/presentation_maker_plugin.htm" target="_blank">the Presentation Maker Plugin chapter</a> of the OpendTect Pro and dGB Plugins Documentation.</p>
     </body>
 </html>

@@ -5,20 +5,22 @@
     <body>
         <h1>OpendTect</h1>
         <h2>Windows</h2>
-        <p>OpendTect, the dGB&#160;Commercial plugins and Python packages can be installed via the OpendTect Installation Manager.</p>
+        <p>OpendTect, the dGB&#160;Commercial plugins, Python packages and offline User documentation and dGB&#160;Plugins documentation can be installed via the OpendTect Installation Manager (OpendTect_Installer_win64.exe) or via an offline package.</p>
         <h3>Firewall rules and ports</h3>
-        <p>The installer will ask to add the following firewall rules to the Windows Firewall:</p>
+        <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on which packages have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall:</p>
         <ul>
-            <li>od_deeplearning_cc.exe</li>
-            <li>od_main.exe</li>
-            <li>%OD&#160;install dir%\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
-            <li>%OD&#160;install dir%\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
-            <li>%OD install dir%\Python\python.exe</li>
-            <li>%OD install dir%\Python\envs\odmlpython-cpu-mkl\python.exe</li>
+            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_main.exe</li>
+            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
+            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
+            <li>%OpendTectDir%\6.6.0\v7\bin\win64\Release\od_deeplearning_cc.exe</li>
+            <li>%OpendTectDir%\Python\python.exe</li>
+            <li>%OpendTectDir%\Python\envs\odmlpython-cpu-mkl\python.exe</li>
+            <li>%OpendTectDir%\Python\envs\odmlpython-cuda10\python.exe</li>
         </ul>
         <p>OpendTect will need to open ports on the localhost for Batch Processing and Machine Learning. As default OpendTect starts with port 20050 and for every service try to use the next free one. Therefore it is best to reserve the ports 20050 up to 20070 for OpendTect.</p>
         <h2>Linux</h2>
-        <p>text</p>
+        <p>OpendTect, the dGB&#160;Commercial plugins, Python packages and offline User documentation and dGB&#160;Plugins documentation can be installed via the OpendTect Installation Manager (OpendTect_Installer_lux64.sh) or via an offline package.</p>
+        <p>OpendTect will need to open ports on the localhost for Batch Processing and Machine Learning. As default OpendTect starts with port 20050 and for every service try to use the next free one. Therefore it is best to reserve the ports 20050 up to 20070 for OpendTect.</p>
         <h2>Mac</h2>
         <p>Please do the following before installation:</p>
         <ul>
