@@ -1,88 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5418" MadCap:lastWidth="1346" MadCap:conditions="Default.ScreenOnly">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Default.ScreenOnly">
     <head>
     </head>
-    <body style="text-align: center;">
-        <h1>OpendTect Pro &amp; dGB&#160;Plugins Documentation - 6.4<MadCap:keyword term="OpendTect Pro &amp; dGB Plugins Documentation - 6.4" /></h1>
-        <center><a href="http://www.opendtect.org/" target="_blank"><img src="../Resources/Images/Introduction/od_pro_blkhat_redtype.png" class="image" /></a>
-        </center>
-        <p><b>Definitions:</b>
+    <body>
+        <h1>OpendTect Administrator's Manual - 6.6<MadCap:keyword term="OpendTect Administrator's Manual - 6.6" /></h1>
+        <img src="../Resources/Images/od-dgb-logo.png" class="image" />
+        <p><i>Copyright © 2002-2019 by dGB Beheer B.V.</i>
         </p>
-        <ul style="text-align: left;">
-            <li><b>OpendTect</b> is a complete Open Source seismic interpretation system, created by <a href="http://dgbes.com/" target="_blank" style="font-weight: normal;">dGB&#160;Earth Sciences B.V.</a>, that is released free-of-charge, also for commercial usage, under the open source GPL license. It runs without license managing software.</li>
-            <li><b>OpendTect Pro</b> is OpendTect extended with a closed source layer that offers extra functionality for professional users. OpendTect Pro is released under the OpendTect Pro license to commercial users and under the Academic license to academic users.</li>
-            <li>OpendTect Pro users can further extend their system with a range of closed source <b>plugins</b> for special work. These plugins are developed by dGB&#160;and by other software vendors. </li>
-            <li>OpendTect Pro and the commercial plugins are protected by <b>FlexNet</b> license managing software. To obtain an evaluation license key please contact dGB</li>
-            <li>OpendTect Pro and the commercial licenses can be evaluated without the need for license keys when the software is run on two training data sets. <b>F3 Demo</b> and <b>Penobscot</b> are free surveys that are released by dGB&#160;via the <a href="http://opendtect.org/osr/" target="_blank" style="font-weight: normal;">Open Seismic Repository (OSR)</a></li>
-            <li>This document only describes the functionality in OpendTect Pro and in the plugins that are developed by dGB. For a description of functionality in OpendTect, please see the <a href="http://doc.opendtect.org/6.4.0/doc/od_userdoc/Default.htm" target="_blank" style="font-weight: normal;">OpendTect User Documentation</a></li>
-            <li> For plugins by ARK&#160;CLS, ARK&#160;CLS&#160;and&#160;Earthworks and SITFAL please see the respective user documentations. </li>
-        </ul>
-        <p><b>OpendTect Pro and Plugins by dGB&#160;</b> (Described in this Document.)</p>
-        <center><a href="http://dgbes.com/" target="_blank"><img src="../Resources/Images/Introduction/DGBlogo_transparent_background.png" class="image" /></a>
-        </center>
+        <p style="page-break-before: always">All rights reserved. No part of this publication may be reproduced and/or published by print, photo print, microfilm or any other means without the written consent of dGB Beheer B.V.</p>
+        <p>Under the terms and conditions of any of the following three license types, license holders are permitted to make hard copies for internal use:</p>
         <ul>
-            <li><i><a href="../OpendTect_Pro.htm" target="_self" style="font-style: normal; font-weight: normal;">OpendTect Pro</a></i>: is the commercial layer on top of OpendTect with PetrelDirect link to Petrel*, basemap + mapping, PDF3D for sharing 3D images, Thalweg tracker for seismic facies tracking and Ray-tracer for AVA Attributes and Angle Stacks.</li>
-            <li><i><a href="../HorizonCube.htm" target="_self" style="font-style: normal; font-weight: normal;">HorizonCube</a></i>: Game-changing plugin that generates a dense set of horizons (e.g. a seismic event every 4ms). HorizonCube impacts all aspects of seismic interpretation work and allows the interpreter to extract more geology from the data. HorizonCube is used for: detailed geologic model building, improving seismic inversion, sequence stratigraphic interpretation (SSIS) and correlating wells (Well Correlation Panel plugin).</li>
-            <li><i><a href="../Well_Correlation_Panel.htm" target="_self" style="font-style: normal; font-weight: normal;">Well Correlation Panel</a></i><i> (WCP)</i>: an interactive viewer to pick well markers and correlate these from well-to-well using seismic data to guide the correlations. Provided the user has access to the HorizonCube, the HorizonCube slider can be used for detailed seismic-steered correlations.</li>
-            <li><i><a href="../Dip-Steering.htm" target="_self" style="font-weight: normal; font-style: normal;">Dip-Steering</a></i>: allows the user to create and use "(dip-)steering cubes". A SteeringCube contains the local dip and azimuth of the seismic events at every sample position. The cube is used for:
-			<ol style="list-style-type: lower-alpha;"><li>Structurally oriented filtering (e.g. dip-steered median filter)</li><li>Improving multi-trace attributes by extracting attribute input along reflectors (e.g. dip-steered similarity)</li><li>To calculate some unique attributes (e.g. Dip and Azimuth, 3D-Curvature, and Variance of the dip).</li><li>To auto-track unconformities.</li><li>To create HorizonCubes.</li></ol></li>
-            <li><i><a href="../Sequence_Stratigraphic_Interpretation_System.htm" target="_self" style="font-weight: normal; font-style: normal;">Sequence Stratigraphic Interpretation System</a></i><i> (SSIS)</i> is an add-on to the HorizonCube. SSIS supports Wheeler transformations and sequence stratigraphic (systems tracts) interpretations based on chrono-stratigraphic horizons from the HorizonCube. The Wheeler transformation is one of the key features of SSIS Plugin. A Wheeler transformation is a flattening of seismic data according to the calculated chrono-stratigraphy. In the Wheeler domain we see when (in relative geologic time) and where (spatially) events were deposited, how the depositional center shifted over time (basin-wards or landwards) and how events are related in time. Gaps in the Wheeler domain are caused either by erosion or non-deposition</li>
-            <li><i><a href="../SynthRock.htm" target="_self" style="font-style: normal; font-weight: normal;">SynthRock</a></i> A powerful toolkit for creating and using forward models in qualitative and quantitative seismic interpretation studies by integrating Rock Physics, Geology and Seismic data SynthRock makes full use of the power of OpendTect to support a range of cutting edge modeling and inversion work flows. The following functions are supported:
-			<ol><li>Rock-physics library (Castagna, Krief, Garder, Biot-Gassmann, etc.) and possibility to define any rock physics formula using math and logic.</li><li>Prestack synthetics; PP, PS, optionally with multiples; Near, mid, far, full, angle, AVO and&#160;AVA attributes etc.</li><li>Profile module: create cross-sections from existing wells with manual updates of model parameters.</li><li>Stochastic module: stochastically varying pseudo-wells.</li><li>Inversion possibilities: HIT Cube (cross-matching procedure to create probability volumes), Probability Density Functions (derived from cross-plots), and Neural Networks(non-linear approach to predict rock property volumes)</li></ol></li>
-            <li><i><a href="../Fluid_Contact_Finder.htm" target="_self" style="font-style: normal; font-weight: normal;">Fluid Contact Finder</a></i><i> (FCF)</i> is used to detect subtle hydrocarbon-related seismic anomalies and to pin-point gas-water, gas-oil, and oil-water contacts. FCF uses the power of stacking to enhance such anomalies. If we stack all traces along the same contour line, we can expect the hydrocarbon effect to stack up while stratigraphic variations and random noise will be canceled out. A local FCF filter is available for smoothing 4D anomalies.</li>
-            <li><i><a href="../Neural_Networks.htm" target="_self" style="font-style: normal; font-weight: normal;">Neural Networks</a></i> Both Supervised and Unsupervised NN are supported. Unsupervised networks are used for 2D (waveform segmentation) and 3D  clustering of attributes. Supervised networks are used for creating seismic object "probability" volumes (e.g. Chimney Cubes)  and to predict rock properties from seismic data and well logs.</li>
-            <li><i><a href="../Velocity_Model_Building.htm" target="_self" style="font-style: normal; font-weight: normal;">Velocity Model Builder</a></i><i> (VMB)</i>:  Uses the travel time of the acoustic waves to image the subsurface.</li>
-            <li><i><a href="../Faults_And_Fractures.htm" target="_self" style="font-style: normal; font-weight: normal;">Faults &amp;&#160;Fractures</a></i><i> (FF)</i>: is a plugin to compute various fault attributes (such as Thinned Fault Likelihood, Fracture Density, ...), to extract fault planes and to un-fault the data. In combination with Dip-Steering FF&#160;features more attributes and filters (e.g. volume curvature, dip-steered similarity, dip-steered median filter, ...).</li>
+            <li>GNU GPL</li>
+            <li>OpendTect Pro License</li>
+            <li>Academic License</li>
         </ul>
-        <p><b>Plugins by ARK&#160;CLS</b>&#160;(for the user doc open Help in the respective plugin.)  </p>
-        <center><a href="http://www.arkcls.com/" target="_blank"><img src="../Resources/Images/Introduction/arkcls.jpg" class="image" /></a>
-        </center>
-        <ul>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/seismic-spectral-blueing" target="_blank" style="font-weight: normal; font-style: normal;">Seismic Spectral Blueing</a></i><i> (SSB)</i>: A technique that shapes the seismic spectrum to optimize the vertical resolution without boosting noise to an unacceptable level. The spectrum is reshaped to 'match' observed behavior of reflectivity data obtained from wells. In a global sense, the well-reflectivity spectrum shows that the higher the frequency the higher the amplitude. We refer to this as the spectrum being blued.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/seismic-coloured-inversion" target="_blank" style="font-weight: normal; font-style: normal;">Seismic Coloured Inversion</a></i><i> (SCI</i>: enables rapid band-limited inversion of seismic data. A single convolution inversion operator is derived which optimally inverts the data. The spectrum of the inverted data honours the available well data spectra in a global sense. Generally, traditional inversion methods (e.g. sparse-spike) are time consuming, expensive, require specialists and are not performed routinely by the Interpretation Geophysicist, whereas SCI is rapid, easy to use, inexpensive, robust and does not require expert users. SCI and unconstrained sparse-spike appear to give broadly equivalent results.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/seismic-net-pay" target="_blank" style="font-weight: normal; font-style: normal;">Seismic Net Pay</a></i><i> (SNP)</i> is an improved method to estimate net pay from seismic colour inverted data. It generates net pay and net-to-gross maps with uncertainties.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/seismic-feature-enhancement" target="_blank" style="font-weight: normal; font-style: normal;">Seismic Feature Enhancement</a></i><i> (SFE)</i>: is a flat-spot utility that enhances the signal of consistent flat events and reduces the "noise" of the channel reflections.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/seismic-broadband" target="_blank" style="font-weight: normal; font-style: normal;">Frequency Shaping</a></i> (formerly known as Seismic Broadband) is an innovative technique that integrates well data into your seismic analysis. By using acoustic impedance logs and reflectivity two operators are simultaneously derived, once applied, they effectively broaden the amplitude spectrum of the seismic data at both ends, low and high.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/spotlight" target="_blank" style="font-weight: normal; font-style: normal;">Spotlight</a></i>can rapidly combine up to four different coloured seismic datasets into a single cube that resembles the behaviour of a given elastic attribute. The relationship between the input data and the desired output is established from prior well log analysis. </li>
-            <li><i><a href="https://dgbes.com/index.php/software/plugins/workstation-access" target="_blank" style="font-weight: normal; font-style: normal;">Workstation Access</a></i><i> (WA)</i>: Based on the Ideal toolkit from ARK CLS . It supports direct import and export of seismic volumes, horizons and well data to and from Landmark's SeisWorks** and Schlumberger's GeoFrame-IESX*** workstations. The Workstation Access plugin supports connection with GeoFrame v4.2 and v4.3 on Linux and connection with v4.0.4, v4.0.4.1, v4.0.4.2, v4.2 and v4.3 on Solaris.....</li>
-            <li><a href="https://dgbes.com/index.php/software/plugins/xfield" target="_blank">Xfield</a> (XF): Integrated potential field modelling software built from the seismic interpreter’s perspective.</li>
-        </ul>
-        <p><b>Plugins by ARK&#160;CLS and&#160;EarthWorks</b>&#160;(for the user doc open Help in the respective plugin.) </p>
-        <center>
-            <img src="../Resources/Images/Introduction/earthworks.png" class="image" />
-            <p style="text-align: center; font-style: italic;">In conjunction with</p>
-            <img src="../Resources/Images/Introduction/arkcls.jpg" class="image" />
-        </center>
-        <ul>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/deterministic-inversion" target="_blank" style="font-weight: normal; font-style: normal;">Deterministic Inversion</a></i> includes a 3D model builder for constructing a priori impedance models using well log and seismic horizon data; a 2D error grid generation module for providing spatial inversion constraints and a model-based deterministic inversion module.</li>
-            <li style="font-style: normal;"><i><a href="https://dgbes.com/index.php/software/plugins/stochastic-inversion" target="_blank" style="font-weight: normal; font-style: normal;">Multi-Point Stochastic Inversion</a></i> (MPSI): includes the MPSI ultraFast stochastic inversion module for generating multiple geostatistical realizations and the utilities for processing the multiple realizations to represent the inversion uncertainty for lithology, porosity, saturation or other attributes as probability cubes. This plugin also requires the purchase of the deterministic inversion plugin.</li>
-        </ul>
-        <p style="font-weight: normal;"><b>Plugins by Estimages</b>&#160;(for the user doc open Help in the respective plugin.) </p>
-        <center>
-            <img src="../Resources/Images/Introduction/estimages_logo.png" class="image" />
-        </center>
-        <ul>
-            <li style="font-weight: normal;"><a href="https://dgbes.com/index.php/software/plugins/mgs-destriping" target="_blank">MGS-Destriping</a> (MGSD): 2D automated destriping solution based on factorial kriging technique. Runs on slices of volumes and horizons.</li>
-        </ul>
-        <p style="font-weight: normal;"><b>Plugins by The Visual Wavefield Project</b>&#160;(for the user doc open Help in the respective plugin.) </p>
-        <center>
-            <img src="../Resources/Images/Introduction/the_visual_wavefield_project_logo.png" class="image" />
-        </center>
-        <ul>
-            <li><a href="https://dgbes.com/index.php/software/plugins/seismic-terrain-explorer" target="_blank">Seismic Terrain Explorer</a> (STE): The first program in the history of exploration whose sole purpose is the visual communication of seismic information.</li>
-        </ul>
-        <p><b>Plugins by Geo5</b>
-        </p>
-        <ul>
-            <li><a href="https://dgbes.com/index.php/software/plugins/fractex" target="_blank">FracTex</a> plugin computes grey level co-occurrence matrix (GLCM) based attributes in different directions and compares these results.</li>
-        </ul>
-        <p style="font-weight: bold;">Plugins by LTrace</p>
-        <ul>
-            <li>
-                <p><a href="https://dgbes.com/index.php/software/plugins/bayesian-linear-inversion" target="_blank">Bayesian Linear Inversion</a> provides a deterministic elastic seismic inversion using the linearized Bayesian methodology for estimating velocities or impedances and density.</p>
-            </li>
-        </ul>
-        <p><b>Plugins by Stark Reality</b>&#160;(coming shortly.) </p>
-        <p>Stark Reality has developed a range of innovative plugging to OpendTect that will hit the market shortly.</p>
     </body>
 </html>

@@ -1,14 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-	Comment="MadCap HTML5 Target"
-	Type="WebHelp2"
-	Destinations=""
+  Comment="OpendTect Administrator's Manual"
+  Type="WebHelp2"
+  Destinations=""
   ShowMadCapBacklink="true"
-  GlossaryTermConversion="marked">
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5.flskn"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  BrowseSequence="/Project/Advanced/Browse Sequences/BrowseSequence.flbrs"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  EnableSitemap="true"
+  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/admindoc/"
+  PreCompileScaledImages="false"
+  MakeFileLowerCase="true"
+  ReplaceSpacesWithUnderscores="true"
+  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
-    GenerateGlossaryProxy="true"/>
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="Variables/CompanyName">dGB Earth Sciences</Variable>
+    <Variable
+      Name="Variables/PhoneNumber">+31 53 4315155</Variable>
+  </Variables>
 </CatapultTarget>
