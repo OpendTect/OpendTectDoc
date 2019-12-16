@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Appendix A - FlexNet Licenses Explained</h1>
+        <p>Let us suppose you have received a 2-user license for a module. Normally you will have obtained a floating license, meaning that you will be able to use the module from any machine, and two users can be busy with it at the same time.</p>
+        <p><b>Server side: The License Manager Daemon</b>
+        </p>
+        <p>To be able to enforce the license, there must be a piece of software somewhere that keeps track of who is using the module. That is the License Manager Daemon (LMD). The LMD can run on any machine, also on machines that you will never use the module itself on. Good candidates are stable UNIX servers.</p>
+        <p>When the LMD is started, it looks at a file containing the information about what should be supported. This file is called the License File. Actually, the LMD can only be started on the machine indicated in the license file. The license file could look like this:</p>
+        <p><code>SERVER licserv 000347e8b845<br />DAEMON dgbld /apps/opendtect/6.6.0/bin/lux64/lm.dgb/dgbld<br />FEATURE dTect dgbld 6.600 1-jan-2020 2 6592FDC619EA DUP_<br />GROUP=D<br />FEATURE dTectDS dgbld 6.600 1-jan-2020 2 011D5153D870 DUP_<br />GROUP=D</code>
+        </p>
+        <p>The first line tells us that the LMD must be started on the machine licserv, with FlexNet ID <code>000347e8b845</code>. The second line is interesting for the LMD only but then you see two actual license FEATURE lines (<code>dTect </code>and <code>dTectDS</code>). These licenses are valid for versions 6.6 and lower, until the 1st of January 2020, for two users (6.600 1-jan-2020 2).</p>
+        <p><b>The Client side: Your program</b>
+        </p>
+        <p>Now let's look at the machine that you run your software on. The program will at some point in time need to check whether there is a license for what you are trying to do. For this, the program looks at the same license file. It sees that it has to contact the machine 'licserv' to ask for permission. The LMD keeps track of the number of users already using the license feature. If a license is granted, your program will go on, otherwise you'll get an error message.</p>
+    </body>
+</html>

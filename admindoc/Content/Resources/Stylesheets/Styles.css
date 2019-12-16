@@ -151,7 +151,7 @@ MadCap|breadcrumbsProxy
 	font-size: 0.85em;
 	mc-breadcrumbs-count: 7;
 	font-weight: bold;
-	mc-breadcrumbs-prefix: 'Access this in OpendTect 6.6 via: ';
+	mc-breadcrumbs-prefix: '';
 }
 
 p.toc_heading

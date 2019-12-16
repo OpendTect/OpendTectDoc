@@ -2,7 +2,7 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="1.0 System Requirements"
+    Title="1 System Requirements"
     Link="/Content/System_Requirements.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
@@ -15,11 +15,15 @@
       Link="/Content/System_Requirements/Mac_OS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="2.0 Installation"
+    Title="2 Installation"
     Link="/Content/Installation.htm">
     <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/Installation/OpendTect.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Title="OpendTect"
+      Link="/Content/Installation/OpendTect.htm">
+      <TocEntry
+        Title="Setup Batch Processing"
+        Link="/Content/Installation/Setup-Batch_Processing.htm" />
+    </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/Petrel_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
@@ -27,4 +31,7 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/Presentation_Maker_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
+  <TocEntry
+    Title="Appendix A - FlexNet Licenses Explained"
+    Link="/Content/Appendix/AppendixA-FlexNet-Licenses-Explained.htm" />
 </CatapultToc>
