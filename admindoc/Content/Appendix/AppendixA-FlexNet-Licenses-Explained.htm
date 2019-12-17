@@ -15,5 +15,25 @@
         <p><b>The Client side: Your program</b>
         </p>
         <p>Now let's look at the machine that you run your software on. The program will at some point in time need to check whether there is a license for what you are trying to do. For this, the program looks at the same license file. It sees that it has to contact the machine 'licserv' to ask for permission. The LMD keeps track of the number of users already using the license feature. If a license is granted, your program will go on, otherwise you'll get an error message.</p>
+        <p><b>Non-floating licenses</b>
+        </p>
+        <p>In some cases the software will never be used other than on a certain machine. In that case a node-locked license can be issued. For such a license you do not need to start a license manager daemon - an unlimited number of users can use the module at the same time provided they work on that particular machine. A special case is the unlimited demo license, which grants unlimited access for any number of users on any machine. It goes without saying that this kind of license is always for short periods.</p>
+        <p><b>Host identification</b>
+        </p>
+        <p>For the above schemes to work, the license server or the running machine must be uniquely identified. Therefore, you will be asked to provide a unique host ID and a hostname when you want to obtain a license. Different operating systems require different ways to obtain this information:</p>
+        <ul>
+            <li style="font-weight: normal;"><b>Windows:</b> On windows, there is a FlexNet utility that delivers both in a simple file that can be sent by email. It is delivered together with commercial plugins so you need to install one of those first. From the Start menu, select OpendTect &gt; License Manager Tools. Select the tab 'System Settings'. Then push the 'Save HOSTID Info to a File' button.</li>
+            <li style="font-weight: normal;"><b>Linux and Mac OS X</b>: The hostname is obtained with the command <code>hostname</code>. The host ID differs per distribution, but can always be obtained by the 'lmhostid' tool. This tool is delivered with OpendTect, and can be run from the Utilities &gt;&#160;Batch Programs dialog.</li>
+        </ul>
+        <p style="font-weight: normal;">If you need to obtain the host ID before OpendTect is installed:</p>
+        <ul>
+            <li><b>Windows:</b> Open a 'command prompt' (For example, by running <code>cmd</code>) and issue a command like: <code>ipconfig /all &gt; c:\Temp\ipcfg.txt</code> You can send ipcfg.txt or look for the 'Physical address'.</li>
+            <li><b>Linux and Mac OS X:</b>&#160;Run <code>ifconfig</code> in a terminal. Or if ifconfig is not installed run <code>ip a</code>. Look for HWAddr or ether. You want the MAC address, looking like xx:xx:xx:xx:xx:xx - that's 6 groups of 2 hex numbers. Example: 00:1C:C0:38:22:F1. Usually you would want to provide the one that is reported with devicename eth0 or eno1. In doubt you can provide all.</li>
+        </ul>
+        <p>If for some reason one of these commands does not work: we need the MAC address of the main network card. Sending the IP address of a machine is never helpful.</p>
+        <p><b>Conclusion (Manager's summary)</b>
+        </p>
+        <p>The FlexNet license system is based upon internet technology. Therefore you can run your software on any machine, using any operating system, to get licenses from any other machine regardless of operating system or physical location. Thus, a Linux license server in Houston can manage the licenses for Windows, Linux and Mac OS X machines in Houston, Caracas and Paris. The only restriction is the number of users actually using the 'feature' at a certain time, but that is what you pay for.</p>
+        <p>For more information, see the <a href="http://static.dgbes.com/images/PDF/flexnet_licensing_end_user_guide.pdf" target="_blank">FlexNet Licensing End User Guide</a>.</p>
     </body>
 </html>

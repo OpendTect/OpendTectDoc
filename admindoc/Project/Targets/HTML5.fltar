@@ -4,7 +4,7 @@
   Comment="OpendTect Administrator's Manual"
   Type="WebHelp2"
   Destinations=""
-  ShowMadCapBacklink="true"
+  ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5.flskn"
   MasterToc="/Project/TOCs/Master.fltoc"

@@ -2,6 +2,9 @@
 <CatapultToc
   Version="1">
   <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/cover/OpendTect_6.htm" />
+  <TocEntry
     Title="1 System Requirements"
     Link="/Content/System_Requirements.htm">
     <TocEntry
@@ -21,8 +24,23 @@
       Title="OpendTect"
       Link="/Content/Installation/OpendTect.htm">
       <TocEntry
+        Title="Installing OpendTect on Windows"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Windows.htm" />
+      <TocEntry
+        Title="Installing OpendTect on Linux"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
+      <TocEntry
+        Title="Installing OpendTect on Mac OS X"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOSX.htm" />
+      <TocEntry
+        Title="Licensing and Host ID's"
+        Link="/Content/Installation/OpendTect/Licensing-and-Host-IDs.htm" />
+      <TocEntry
+        Title="Installing Licenses"
+        Link="/Content/Installation/OpendTect/Installing-licenses.htm" />
+      <TocEntry
         Title="Setup Batch Processing"
-        Link="/Content/Installation/Setup-Batch_Processing.htm" />
+        Link="/Content/Installation/OpendTect/Setup-Batch_Processing.htm" />
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
