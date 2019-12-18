@@ -6,4 +6,8 @@
   <Variable
     Comment=""
     Name="PhoneNumber">+31 (0) 53 431 5155</Variable>
+  <Variable
+    Name="VersionNumber"
+    Comment=""
+    EvaluatedDefinition="6.6">6.6</Variable>
 </CatapultVariableSet>

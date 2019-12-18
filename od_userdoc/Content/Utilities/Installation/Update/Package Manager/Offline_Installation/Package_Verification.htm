@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="707" MadCap:lastWidth="1750">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
         <h6>9.3.1.1.2.1 Package Verification<MadCap:keyword term="Package Verification" /></h6>
-        <p>We generate signature files for all packages. Normally, a package is a zip file downloadable from our website:</p>
-        <p>For OpendTect version 4.6, please visit:&#160;<a href="http://www.opendtect.org/relman/4.6.0/" target="_blank" MadCap:conditions="Default.ScreenOnly">OD version 4.6</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">OD version 4.6</MadCap:conditionalText> page.</p>
-        <p>For OpendTect version 5.0, please visit:&#160;<a href="http://www.opendtect.org/relman/5.0.0/" target="_blank" MadCap:conditions="Default.ScreenOnly">OD version 5.0</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">OD version 5.0</MadCap:conditionalText> page.</p>
+        <p>We generate signature files for all packages. Normally, a package is a zip file downloadable from our website.</p>
         <p>For each zip-file, there is a zip.sig file containing a digital certificate that can be used to verify that the package has not been tampered with during transit.</p>
         <p>To verify a package, download the corresponding zip.sig file and place it in the same directory as the package file. gpg (or pgp) must be used (an encryption program). These programs are normally installed in most linux installations, and can be found at&#160;the <a href="http://www.gnu.org/" target="_blank" MadCap:conditions="Default.ScreenOnly">GNU license</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GNU license</MadCap:conditionalText> page</p>
         <p>dGB's public key has to be downloaded to your keyring. This is only necessary for the initial verification. To obtain the key, use gpg itself:</p>

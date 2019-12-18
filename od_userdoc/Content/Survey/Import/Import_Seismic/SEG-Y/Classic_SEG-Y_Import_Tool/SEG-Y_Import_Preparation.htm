@@ -1,74 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1524" MadCap:lastWidth="1400">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
-        <h6>4.3.10.1.2.1 SEG-Y Import Preparation<MadCap:keyword term="SEG-Y Import Preparation" /></h6>
+        <h6>4.3.11.1.2.1 SEG-Y Import Preparation<MadCap:keyword term="SEG-Y Import Preparation" /></h6>
         <p>SEG-Y import preparation starts with the <i>SEG-Y tool</i> window.</p>
         <img src="../../../../../Resources/Images/Survey/Import segy classic tool.png" class="General_Image" />
-        <p>
-            <b>Input&#160;SEG-Y file(s)</b>: <i>Select</i> a SEG-Y file to import.</p>
-        <p>
-            <b style="font-style: italic;">Import 3D pre- or poststack  data from multiple SEG-Y files</b>: files must contain consecutive blocks of inlines and be indexed as <i>filename_1.sgy</i>, <i>filename_2.sgy</i>...</p>
+        <p><b>Input&#160;SEG-Y file(s)</b>: <i>Select</i> a SEG-Y file to import.</p>
+        <p><b style="font-style: italic;">Import 3D pre- or poststack  data from multiple SEG-Y files</b>: files must contain consecutive blocks of inlines and be indexed as <i>filename_1.sgy</i>, <i>filename_2.sgy</i>...</p>
         <ol style="font-style: normal;">
-            <li style="font-weight: normal; font-style: normal;">
-                <i>Select</i> one of the files;</li>
+            <li style="font-weight: normal; font-style: normal;"><i>Select</i> one of the files;</li>
             <li style="font-weight: normal; font-style: normal;">replace the file index  by a wildcard * in the input field: <i>filepath/filename_*.sgy</i>;</li>
             <li>toggle on <i>Multiple files</i> option and specify the number of files to be merged. </li>
         </ol>
-        <p>
-            <b style="font-style: italic;">Import multiple 2D lines with pre- or poststack data</b>: files must contain individual 2D&#160;lines and be indexed with the respective line names as <i>filename_linename1.sgy</i>, <i>filename_linename2.sgy</i>...</p>
+        <p><b style="font-style: italic;">Import multiple 2D lines with pre- or poststack data</b>: files must contain individual 2D&#160;lines and be indexed with the respective line names as <i>filename_linename1.sgy</i>, <i>filename_linename2.sgy</i>...</p>
         <ol>
             <li><![CDATA[  ]]><i>Select</i> one of the files;</li>
             <li>continue through the wizard with just one file selected until <i>SEG-Y Import</i> window (last step);</li>
             <li> <i>SEG-Y Import</i> window: check option <i>Import more, similar files</i>;</li>
-            <li>
-                <i>2D&#160;SEG-Y multi-import</i> window replace line name in the file name with a wildcard <i>#L</i> (see <i><a href="SEG-Y_Import.htm" target="_self" MadCap:conditions="Default.ScreenOnly">SEG-Y Import</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Import</i></MadCap:conditionalText> page for more details)</li>
+            <li><i>2D&#160;SEG-Y multi-import</i> window replace line name in the file name with a wildcard <i>#L</i> (see <i><a href="SEG-Y_Import.htm" target="_self" MadCap:conditions="Default.ScreenOnly">SEG-Y Import</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Import</i></MadCap:conditionalText> page for more details)</li>
         </ol>
-        <p>
-            <b>Manipulate...</b>: opens <a href="../Manipulate_SEG-Y_File.htm" style="font-style: italic;" MadCap:conditions="Default.ScreenOnly">Manipulate SEG-Y file</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Manipulate SEG-Y file</MadCap:conditionalText> window where text, binary and trace headers of a SEG-Y file can be edited.</p>
-        <p>
-            <b>Multiple files</b> (default = toggled off): toggle on if a single 3D&#160;dataset (pre- or poststack) is imported from multiple SEG-Y files (see above how to <b style="font-style: italic;">Import 3D pre- or poststack  data from multiple SEG-Y files</b>):</p>
+        <p><b>Manipulate...</b>: opens <a href="../Manipulate_SEG-Y_File.htm" style="font-style: italic;" MadCap:conditions="Default.ScreenOnly">Manipulate SEG-Y file</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Manipulate SEG-Y file</MadCap:conditionalText> window where text, binary and trace headers of a SEG-Y file can be edited.</p>
+        <p><b>Multiple files</b> (default = toggled off): toggle on if a single 3D&#160;dataset (pre- or poststack) is imported from multiple SEG-Y files (see above how to <b style="font-style: italic;">Import 3D pre- or poststack  data from multiple SEG-Y files</b>):</p>
         <ul>
-            <li>
-                <i>Numbers</i>: specify indexes of the first and the last files as well as index <i>Step</i>.</li>
+            <li><i>Numbers</i>: specify indexes of the first and the last files as well as index <i>Step</i>.</li>
         </ul>
-        <p>
-            <b>File Type</b>: specify which data is contained in a SEG-Y file(s).</p>
+        <p><b>File Type</b>: specify which data is contained in a SEG-Y file(s).</p>
         <ul>
-            <li>
-                <i>3D&#160;Volume</i> <![CDATA[ ]]></li>
-            <li>
-                <i>Pre-Stack Volume</i>
+            <li><i>3D&#160;Volume</i> </li>
+            <li><i>Pre-Stack Volume</i>
             </li>
-            <li>
-                <i>2D&#160;Line</i>
+            <li><i>2D&#160;Line</i>
             </li>
-            <li>
-                <i>Line 2D Pre-Stack</i>
+            <li><i>Line 2D Pre-Stack</i>
             </li>
         </ul>
-        <p>
-            <b>Number of traces to examine</b> (default=100 traces): a number of traces at the beginning of the file to be analyzed in <i><a href="../SEG-Y_Examiner.htm" MadCap:conditions="Default.ScreenOnly">SEG-Y Examiner</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Examiner</i></MadCap:conditionalText>. Looking at the output is strongly recommended but not mandatory for a successful import. Enter 0 to skip <i>SEG-Y Examiner</i>.</p>
+        <p><b>Number of traces to examine</b> (default=100 traces): a number of traces at the beginning of the file to be analyzed in <i><a href="../SEG-Y_Examiner.htm" MadCap:conditions="Default.ScreenOnly">SEG-Y Examiner</a></i><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><i>SEG-Y Examiner</i></MadCap:conditionalText>. Looking at the output is strongly recommended but not mandatory for a successful import. Enter 0 to skip <i>SEG-Y Examiner</i>.</p>
         <ul>
-            <li>
-                <i>Save as default</i>: (optionally) check to save the <i>Number of traces to examine</i> in your user settings.</li>
+            <li><i>Save as default</i>: (optionally) check to save the <i>Number of traces to examine</i> in your user settings.</li>
         </ul>
         <p class="note">In most cases you can press <i>Next</i> after you have selected input file(s). Consider overruling options listed below (information coming from the file(s) itself) only if you have a proiri knowledge about problems with the file(s). </p>
-        <p>
-            <b>Overrule SEG-Y number of samples</b> (default = toggled off, i.e. standard locations are used: byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
-        <p>
-            <b style="font-style: normal;">SEG-Y 'format'</b> (default = byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
-        <p>
-            <b>Bytes swapped</b> (default = toggled off, i.e. big-endian byte order used): (optionally) toggle on to use little-endian byte order for reading data.</p>
+        <p><b>Overrule SEG-Y number of samples</b> (default = toggled off, i.e. standard locations are used: byte 21 of binary header / byte 115 of trace header): (optionally)&#160;overrule the number of samples per trace.</p>
+        <p><b style="font-style: normal;">SEG-Y 'format'</b> (default = byte 25 of binary header):  (optionally)&#160;overrule data format.</p>
+        <p><b>Bytes swapped</b> (default = toggled off, i.e. big-endian byte order used): (optionally) toggle on to use little-endian byte order for reading data.</p>
         <p class="note">Most header values and data samples are written using several bytes for each word/sample. Therefore knowing a correct byte order is a necessity. All SEG-Y standards (Rev. 0, 1 and 2) require using big-endian byte order. Occasionally one can run into data written using little-endian (reverse) one. Using standard SEG-Y data formats for reading such data results in unexpected scanned values of trace headers and unexpectedly large sample values  (check the histogram in <a href="../SEG-Y_Examiner.htm" MadCap:conditions="Default.ScreenOnly">SEG-Y Examiner</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">SEG-Y Examiner</MadCap:conditionalText>).</p>
         <p style="font-weight: normal;">
             <img src="../../../../../Resources/Images/Icons/save.png" class="Icons">
-            </img>
-            <b>Store this setup</b>: save a SEG-Y import setup at the survey data root level.</p>
+            </img><b>Store this setup</b>: save a SEG-Y import setup at the survey data root level.</p>
         <p>
             <img src="../../../../../Resources/Images/Icons/open.png">
-            </img>
-            <b>Use saved SEG-Y setup</b>: retrieve one of the stored setups.</p>
+            </img><b>Use saved SEG-Y setup</b>: retrieve one of the stored setups.</p>
     </body>
 </html>
