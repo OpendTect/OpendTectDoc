@@ -20,11 +20,26 @@
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
-    GenerateGlossaryProxy="true" />
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
   <Variables>
     <Variable
       Name="Variables/CompanyName">dGB Earth Sciences</Variable>
     <Variable
       Name="Variables/PhoneNumber">+31 53 4315155</Variable>
   </Variables>
+  <MetaTags>
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="description"
+      content="OpendTect Administrator's Manual - Version 6.6" />
+    <meta
+      name="keywords"
+      content="seismic interpretation, open source, opendtect, open, source, machine learning, d-tect , dtect, survey, analyses, research, geo-sciences, geology, geophysics, petrophysics, seismic, stochastic, modeling, monte carlo, simulation, quantitative, interpretation, inversion, integration, framework, neural network, supervised, unsupervised, reservoir characterisation, reservoir characterization, object detection, software, seismic software, free software, open software, free, application, linux, windows, solaris, mac os, data, SSIS, GDI, rock, studies, plugins, tutorials, users, support, training, documentation, manual, faq, visualization, horizon, faults, madagascar, crossplotting" />
+    <meta
+      name="robots"
+      content="index,follow" />
+  </MetaTags>
 </CatapultTarget>

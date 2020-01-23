@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
-	<Variable Comment="" Name="CompanyName">MadCap Software</Variable>
-	<Variable Comment="" Name="PhoneNumber">858 123 4567</Variable>	
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="dGB Earth Sciences">dGB Earth Sciences</Variable>
+  <Variable
+    Comment=""
+    Name="PhoneNumber"
+    EvaluatedDefinition="+31 53 4315155">+31 53 4315155</Variable>
+  <Variable
+    Name="VersionNumber"
+    Comment=""
+    EvaluatedDefinition="6.6">6.6</Variable>
 </CatapultVariableSet>

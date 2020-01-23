@@ -8,7 +8,7 @@
         <ul>
             <li><b>Modern Linux distro</b>. <ul><li>&#160;We have tested:<ul><li>RedHat/CentOS 6.0 and higer</li><li>Ubuntu 16.04 and higher</li><li>OpenSUSE Leap 42.1 and higher</li></ul></li><li>Other distros will probably work, possibly with as small tweak</li></ul></li>
             <li><b>CPU</b>: Intel/AMD processor with 64 bit support</li>
-            <li><b>GPU</b>: Nvidia (e.g. recent GeForce/Quadro/NVS series) graphics cards; AMD graphics cards may work</li>
+            <li><b>GPU</b>: Basic Intel Graphics cards or Nvidia (e.g. recent GeForce/Quadro/NVS series) graphics cards; AMD graphics cards may work.</li>
             <li><b>Memory</b>:&#160;8 GB of RAM, OpendTect itself needs at least 2 GB RAM. Therefore, 8 GB will almost certainly be the absolute minimum.</li>
             <li><b>Storage</b>: Hard Disk</li>
         </ul>
@@ -30,6 +30,8 @@
         </ul>
         <p>Please note that:</p>
         <ul>
+            <li><i>OpendTect may work when using the <a href="https://en.wikipedia.org/wiki/Nouveau_(software)" target="_blank">Nouveau</a> driver, however for best performance the Nvidia driver should be installed. The nouveau driver does not support CUDA.</i>
+            </li>
             <li><i>For best performance OpenGL&#160;drivers should be up-to-date. For Machine Learning on GPU we provide a Python package with CUDA 10.0. Please see this <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#major-components__table-cuda-toolkit-driver-versions" target="_blank">table</a> on the Nvidia CUDA&#160;Tookit documentation page for the minimum compatible driver version.</i>
             </li>
             <li><i>Low-level GPUs keep showing poor performances through the generations. Shading functionality requires special GPU features, present in the main-stream and high-end GeForce, Quadro and NVS cards. Nevertheless, under Linux, only Nvidia provides drivers capable of running the shading feature. If you can't see any colors on graphic elements, try disabling shading (Utilities &gt;&#160;Settings &gt;&#160;Look and Feel).</i>
