@@ -40,7 +40,7 @@
         Link="/Content/Installation/OpendTect/Installing-licenses.htm" />
       <TocEntry
         Title="Setup Batch Processing"
-        Link="/Content/Installation/OpendTect/Setup-Batch_Processing.htm" />
+        Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm" />
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
