@@ -10,4 +10,12 @@
     Name="VersionNumber"
     Comment=""
     EvaluatedDefinition="6.6">6.6</Variable>
+  <Variable
+    Name="PubYear"
+    Comment=""
+    EvaluatedDefinition="2020">2020</Variable>
+  <Variable
+    Name="DocTitle"
+    Comment=""
+    EvaluatedDefinition="OpendTect User Documentation">OpendTect User Documentation</Variable>
 </CatapultVariableSet>

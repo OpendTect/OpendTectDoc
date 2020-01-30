@@ -6,6 +6,6 @@
         <MadCap:breadcrumbsProxy class="Styles.css" />
         <MadCap:bodyProxy />
         <MadCap:miniTocProxy style="mc-toc-depth: 1;" />
-        <p class="copyright">© dGB&#160;Beheer B.V. 2002 - 2020</p>
+        <p class="copyright">© dGB&#160;Beheer B.V. 2002 - <MadCap:variable name="Variables.PubYear" /></p>
     </body>
 </html>

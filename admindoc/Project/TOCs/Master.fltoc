@@ -39,15 +39,12 @@
         Title="Installing Licenses"
         Link="/Content/Installation/OpendTect/Installing-licenses.htm" />
       <TocEntry
-        Title="Setup Batch Processing"
+        Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm" />
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/Petrel_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/Installation/Presentation_Maker_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Appendix A - FlexNet Licenses Explained"
