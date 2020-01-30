@@ -43,6 +43,22 @@
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm" />
     </TocEntry>
     <TocEntry
+      Title="License server"
+      Link="/Content/Installation/License_server.htm"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      ReplaceMergeNode="false">
+      <TocEntry
+        Title="Installing a license server on Linux"
+        Link="/Content/Installation/License_server/Installing-license-server-on-Linux.htm" />
+      <TocEntry
+        Title="Installing a license server on Windows"
+        Link="/Content/Installation/License_server/Installing-license-server-on-Windows.htm" />
+    </TocEntry>
+    <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/Petrel_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
