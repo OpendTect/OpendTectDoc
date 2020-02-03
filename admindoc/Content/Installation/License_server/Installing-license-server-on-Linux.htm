@@ -6,14 +6,15 @@
         <h1>Installing a license server on Linux</h1>
         <p>The FlexNet vendor package with the binaries that are needed can be downloaded from the <a href="https://dgbes.com/index.php/download/flexnet-vendors-packages" target="_blank">FlexNet Vendor Packages download page</a>.</p>
         <ol>
-            <li>Download the <a href="http://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.15.1.0_dgb_lux64.zip" target="_blank">Linux 64 (FlexNet v11.15.1.0) zip-file</a>.</li>
-            <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/dgb_licserver</code></li>
-            <li>Unzip the zip-file in the directory that has been created in previous step.</li>
-            <li>The zip-file has the following files:<br /><b>dgbld</b> :&#160;The dGB vendor daemon<br /><b>lmgrd</b> :&#160;The FlexNet license  manager daemon <br /><b>lmutil</b> :&#160;The FlexNet license management utilities</li>
-            <li>The final thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.</li>
+            <li>Download the <a href="http://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.15.1.0_dgb_lux64.zip" target="_blank">Linux 64 (FlexNet v11.15.1.0) zip-file</a> for OpendTect Pro &amp; dGB&#160;Plugins for OpendTect 6.4 and newer.<br /><br /></li>
+            <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/dgb_licserver</code><br /><br /></li>
+            <li>Unzip the zip-file in the directory that has been created in previous step.<br /><br /></li>
+            <li>The zip-file has the following files:<br /><b>dgbld</b> :&#160;The dGB vendor daemon<br /><b>lmgrd</b> :&#160;The FlexNet license  manager daemon <br /><b>lmutil</b> :&#160;The FlexNet license management utilities<br /><br /></li>
+            <li>The final thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.<br />Best is to place the license file in the same directory.</li>
         </ol>
         <h2>Starting a license server</h2>
-        <p>The license server can be started by executing commands:<br /><code>cd /opt/dgb_licserver<br />lmgrd -c licensefile.lic -l lmgrd.log</code></p>
-        <p>&#160;</p>
+        <p>The license server can be started by executing commands:<br /><code>cd /opt/dgb_licserver<br />./lmgrd -c licensefile.lic -l debug.log</code></p>
+        <p>Please refer to the lmgrd.log file in case of issues.</p>
+        <p>To see the license server status you may run:<br /><code>./lmutil lmstat -a</code><br />You will then see the port number the server uses, the path to the license file(s) that are in use, whether the license server is up or down, how many licenses for the features are issued and in use.</p>
     </body>
 </html>
