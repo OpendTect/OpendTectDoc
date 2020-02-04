@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Environment variables</h1>
+        <p>There are several environment variables that can be set. OpendTect will look for these environment variables. They can be set to get special features working or to use custom paths for certain functionality.</p>
+        <table style="width: 100%;">
+            <col style="width: 312px;" />
+            <col style="width: 184px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td><b>Environment variable</b>
+                    </td>
+                    <td><b>Expected Values</b>
+                    </td>
+                    <td><b>Description</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DTECT_BATCH_HOSTS_FILEPATH</td>
+                    <td>Path to a BatchHosts file</td>
+                    <td>This sets the path to a tailor-made BatchHosts file. If it is not set then OpendTect will use the default BatchHosts file in the OpendTect installation directory, e.g. C:\Program Files\OpendTect\6.6.0\data\BatchPrograms .</td>
+                </tr>
+                <tr>
+                    <td>DTECT_CLUSTER_PROC</td>
+                    <td>yes or no</td>
+                    <td>When set to <i>yes</i> OpendTect will have cluster processing enabled.</td>
+                </tr>
+                <tr>
+                    <td>DTECT_SETTINGS</td>
+                    <td>Path to the OpendTect settings home directory</td>
+                    <td>This sets the path to the OpendTect settings home directory. Use this if you do not want to use the .od directory in the user's home folder. Use this environment variable for Linux and Mac.</td>
+                </tr>
+                <tr>
+                    <td>DTECT_WINSETTINGS</td>
+                    <td>Path to the OpendTect settings home directory</td>
+                    <td>This sets the path to the OpendTect settings home directory. Use this if you do not want to use the .od directory in the user's home folder. Use this environment variable for Windows.</td>
+                </tr>
+                <tr>
+                    <td>LM_LICENSE_FILE</td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>OD_USE_VIRTUALMEM</td>
+                    <td>yes or no</td>
+                    <td>When set to <i>yes</i> OpendTect will support using virtual memory.</td>
+                </tr>
+                <tr>
+                    <td>RSFROOT</td>
+                    <td>Path to the installation directory of Madagascar</td>
+                    <td>This sets the path to the Madagascar installation directory. If it is not set then and one would try to start Madagascar from OpendTect an error message would be displayed.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

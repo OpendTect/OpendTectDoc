@@ -37,10 +37,13 @@
         Link="/Content/Installation/OpendTect/Licensing-and-Host-IDs.htm" />
       <TocEntry
         Title="Installing Licenses"
-        Link="/Content/Installation/OpendTect/Installing-licenses.htm" />
+        Link="/Content/Installation/OpendTect/Installing-licenses.htm"></TocEntry>
       <TocEntry
         Title="Setup Distributed Computing"
-        Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm" />
+        Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Installation/OpendTect/Environment-variables.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="License server"

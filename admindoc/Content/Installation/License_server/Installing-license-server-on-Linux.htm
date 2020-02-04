@@ -10,11 +10,13 @@
             <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/dgb_licserver</code><br /><br /></li>
             <li>Unzip the zip-file in the directory that has been created in previous step.<br /><br /></li>
             <li>The zip-file has the following files:<br /><b>dgbld</b> :&#160;The dGB vendor daemon<br /><b>lmgrd</b> :&#160;The FlexNet license  manager daemon <br /><b>lmutil</b> :&#160;The FlexNet license management utilities<br /><br /></li>
-            <li>The final thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.<br />Best is to place the license file in the same directory.</li>
+            <li>The next thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.<br />Best is to place the license file in the same directory.<br /><br /></li>
+            <li>Now the license file needs to be edited. Hence, open the license file with a text editor like Vim.<br /><br /></li>
+            <li>In the top of the license file there is a line with text <i>DAEMON dgbld full_path_to/dgbld</i> . Replace the fullpath_to/dgbld with the path to the dgbld file. In this example we will change it into:&#160;<i>DAEMON dgbld /opt/dgb_licserver/dgbld</i> . Save the license file.</li>
         </ol>
         <h2>Starting a license server</h2>
         <p>The license server can be started by executing commands:<br /><code>cd /opt/dgb_licserver<br />./lmgrd -c licensefile.lic -l debug.log</code></p>
-        <p>Please refer to the lmgrd.log file in case of issues.</p>
+        <p>Please refer to the debug.log file in case of issues.</p>
         <p>To see the license server status you may run:<br /><code>./lmutil lmstat -a</code><br />You will then see the port number the server uses, the path to the license file(s) that are in use, whether the license server is up or down, how many licenses for the features are issued and in use.</p>
     </body>
 </html>
