@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>5.2 Design principles<MadCap:concept term="Design principles" /></h2>
+        <p>There are many aspects of software that can be categorised as 'good'. These include robustness, flexibility, high performance, compactness, maintainability, understandability. Software engineering is all about making choices - every aspect costs resources and there's always a limit to that. So, even if one tries to optimise all 'good' aspects, there will be different degrees of emphasis on each of them.</p>
+        <p>As OpendTect was developed in a research-minded environment, flexibility is a high priority. The Object-Oriented toolkit delivers many tricks to make software more flexible. Some of these tricks nowadays have labels - 'Design patterns' - like the ones in the 'Design Patterns' book (Factories,Singletons,etc.). Many constructs in the software are fit to match the problem though, always with a number of design principles in mind:</p>
+        <p>•	OCP Open/Closed: classes and modules should be open for extension, but closed for modification.</p>
+        <p>•	SRP Single responsibility: only one class or module does one thing well and complete.</p>
+        <p>•	LSP Substititutability: inheritance for interfaces makes classes substitutable.</p>
+        <p>•	DIP Dependency inversion: depending on abstract base classes inverts dependencies from high-level on low-level into dependency on stable high-level abstractions.</p>
+        <p>•	DIF Don't Implement the Future: All source code present should actually be used now.</p>
+        <p>•	NBS No BullShit: Create constructs if needed, not because they're cool or anything.</p>
+        <p>The last two are, [cough] of our own making. DIF ensures that there are no large amounts of unused code lying around to be maintained, NBS delivers a system that is as simple as possible given the constraints.</p>
+        <p>You may also want to look at the design/coding rules described in Chapter 6.</p>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>3.3 Tut plugin<MadCap:concept term="Tut plugin" /></h2>
+        <p>The responsibility of uiTut is limited to talking to the user and getting the input parameters. The real work is done behind the scene by the non-UI Tut plugin. And that is the reason why it is of type EARLY. This particular plugin tells OpendTect's application manager that it wants to be loaded early - i.e. before any build of tables, data structures or user interfaces are made. That is typical of 'Real Work' plugins. The alternatives are NONE (which is very uncommon) and LATE, which is typical for UI plugins that want to start working when all objects have already been created. In this case, we need to specify that we have an EARLY plugin:</p>
+        <p><span style="font-family: monospace;">mDefODPluginEarlyLoad(Tut)</span>
+        </p>
+    </body>
+</html>

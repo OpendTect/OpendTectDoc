@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>2.1 Introduction to building a stand alone plugin<MadCap:keyword term="Introduction to building a stand alone plugin" /></h2>
+        <p>Making your own software within OpendTect is in principle pretty easy. You could change the software by modifying existing classes and functions, and adding your own stuff to the libs. The advantage is total control. The problem with this approach, however, is that you have to keep the OpendTect sources in sync with new releases. Furthermore, if you cannot convince the opendtect.org people to also make those changes, OpendTect users may not be happy with your work.
+</p>
+        <p>
+An easy way to overcome this is to make your own plugins. Plugins make use of all the facilities of OpendTect but are loaded at run-time and can therefore be developed in a completely independent way. If you then find things that can't be done without modifying the OpendTect environment, it should be much easier to convince the opendtect.org people to take over or even implement those things themselves.
+
+One thing you cannot do, is use another compiler than gcc/g++ on Linux/Mac or VC++ on Windows. OpendTect is built with it, if you want to use another compiler (why?) you'll have to make all libs and supporting libs (Qt, OpenSceneGraph) yourself. The make itself should be pretty easy to get started, but there will probably be some porting to do, too.</p>
+        <p>Requirements:</p>
+        <p><i>All platforms:</i>
+        </p>
+        <p>OpendTect - <a href="http://download.opendtect.org/">download.opendtect.org</a></p>
+        <p>CMake - <a href="https://cmake.org/download/">cmake.org/download</a></p>
+        <p><i>Windows:</i>
+        </p>
+        <p>Visual Studio 2017 (Community Edition is sufficient) - <a href="https://visualstudio.microsoft.com/downloads/">visualstudio.microsoft.com/downloads/</a></p>
+    </body>
+</html>

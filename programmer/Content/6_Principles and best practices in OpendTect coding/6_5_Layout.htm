@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>6.5 Layout<MadCap:concept term="Layout" /></h2>
+        <p>No other subject brings up this many discussions. While it's simple: choose a policy and stick to it. The end result is what counts: readability, compactness, understandability. Thus all rules can be broken if it really helps those properties, but they rarely are.</p>
+        <p><b>•	Indentation:</b>
+        </p>
+        <p>4 spaces per level, 8 spaces = one tab. Use tabs whenever possible, also inside a line.</p>
+        <p><b>•	Alignment:</b>
+        </p>
+        <p style="text-align: left;">The maximum number of characters on one line is 80. So when you exceed this number, start on the new line with a couple of tabs. Align function arguments as much as possible.</p>
+        <p style="text-align: left;"><![CDATA[		]]><span style="font-family: monospace;">MyClass::functionWithLongName( const char* arg1,</span><br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;			const char* arg2 ) const</span></p>
+        <p>&#160;</p>
+        <p>When implementing functions in header files, align the implementations.</p>
+        <p><span style="font-family: monospace;">getPtr() const	&#160;&#160;&#160;&#160;&#160;&#160;	{ return ptr; }</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">getValue() const	&#160;&#160;&#160;&#160;&#160;{ return val; }</span>
+        </p>
+        <p>&#160;</p>
+        <p><b>•	Braces '{ }':</b>
+        </p>
+        <p>On a line by themselves.</p>
+        <p><span style="font-family: monospace;">if ( b )</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">{</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;stmt1();</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;stmt2();</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">}</span>
+        </p>
+        <p>Single statements need not be braced.</p>
+        <p><span style="font-family: monospace;">if ( b )</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;stmt1();</span>
+        </p>
+        <p>Two or three small statements may be packed on one line with braces.</p>
+        <p><span style="font-family: monospace;">if ( b )</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;{ stmt(); return; }</span>
+        </p>
+        <p>&#160;</p>
+        <p><b>•	Parentheses:</b>
+        </p>
+        <p>Pad with a space on both sides, except when this would make things unclear because it would become too spacy.</p>
+        <p><![CDATA[		]]><span style="font-family: monospace;">if ( x )</span><br style="font-family: monospace;" /><span style="font-family: monospace;">if ( (x &amp;&amp; y) || (z1 &amp;&amp; z2) )</span></p>
+        <p>&#160;</p>
+        <p><b>•	Array brackets:</b>
+        </p>
+        <p>No space between array and first bracket. Pad index if that makes things more clear.</p>
+        <p><![CDATA[		]]><span style="font-family: monospace;">x = arr[0];</span></p>
+        <p><b>•	Equality-type operators:</b>
+        </p>
+        <p>Pad with spaces, unless it really helps seeing the grouping.</p>
+        <p><span style="font-family: monospace;">if ( a == b )</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">x = 15;</span>
+        </p>
+        <p>&#160;</p>
+        <p>If more clear, use:</p>
+        <p><span style="font-family: monospace;">if ( c&lt;d &amp;&amp; e&gt;f )</span>
+        </p>
+        <p>rather than:</p>
+        <p><span style="font-family: monospace;">if ( c &lt; d &amp;&amp; e &gt; f )</span>
+        </p>
+        <p>&#160;</p>
+        <p><b>•	Semicolons:</b>
+        </p>
+        <p>Attach to last character of statement:</p>
+        <p><span style="font-family: monospace;">doIt();</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">for ( int idx=0; idx&lt;10; idx++ )</span>
+        </p>
+        <p><b>•	'?'-statements:</b>
+        </p>
+        <p>Use only and always if the same thing must be done or used depending on a condition:</p>
+        <p><![CDATA[		]]><span style="font-family: monospace;">return isOK() ? 10 : 20;</span><br style="font-family: monospace;" /><span style="font-family: monospace;">x = a &gt; 10 ? 10 : a;</span><br style="font-family: monospace;" /><span style="font-family: monospace;">prTxt( isOK() ? "Yes" : "No" );</span></p>
+        <p><b>•	Class declarations:</b>
+        </p>
+        <p>Just look at examples, but a nice template may be:</p>
+        <p style="font-family: monospace;">class Y;<br />class Z;<br /><br />namespace X<br />{<br /><br />class A : public B<br />{<br />public:<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;A( const C&amp; c )<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: B(c)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;, var_(0)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{}<br /><br />&#160;&#160;&#160;&#160;enum Type &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ T1, T2 };<br />&#160;&#160;&#160;&#160;void &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;setType(Type);<br /><br />&#160;&#160;&#160;&#160;bool&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;isNice() const&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ return true; }<br />&#160;&#160;&#160;&#160;bool&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;isOK(float) const:<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//!&lt; will not handle values &lt; 0 well!<br /><br />&#160;&#160;&#160;&#160;void&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;doIt(int base_count,const Y&amp;);<br /><br />protected:<br /><br />&#160;&#160;&#160;&#160;float&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var_;<br /><br />private:<br /><br />&#160;&#160;&#160;&#160;void&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;init();<br />&#160;&#160;&#160;&#160;friend class&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Z;<br /><br />};</p>
+        <p>&#160;</p>
+        <p>Remarks:</p>
+        <ul>
+            <li>The tab alignment can be 2, 3 or 4 tabs, dependent on the length of things.</li>
+            <li>functions implemented immediately get a normal space padding for the arguments. Functions only declared get no padding for the arguments. Put variable names only if it adds to the understanding.</li>
+            <li>Comments can help but can also make things a mess. Use them sparingly, only to clearly specify what a method does, or to indicate pre-conditions etc.</li>
+        </ul>
+    </body>
+</html>

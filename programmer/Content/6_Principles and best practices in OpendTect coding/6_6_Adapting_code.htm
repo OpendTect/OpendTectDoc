@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>6.6 Adapting code<MadCap:concept term="Adapting code" /></h2>
+        <p>From now on, new code will be as described above. What to do if the code you're changing is not good according to these standards? That depends on the amount of work vs the amount of time vs the importance of the deviation.</p>
+        <p>The rules are:</p>
+        <p>•	Make sure the code is, after you're done with it, 'internally consistent'. For example, when adding a member to a class with already 20 members without an underscore you will likely add a member without an underscore, rather than changing all the other members. In no case make your new member the only one with an underscore. That is even more confusing to the reader of the .cc code.</p>
+        <p>•	If you doubt whether to re-do parts, give changing it the benefit of the doubt unless it's really horribly dangerous to do so. But the rule is: In doubt =&gt; Change.</p>
+        <p>•	Functions or members that seem to be unused but non-trivial: always try removing them or flagging them with messages (e.g. copy constructors and the like will be made by the compiler after you remove them and then you still don't know whether they are used). An unused non-trivial fuction must be considered 'unbearable' (see next item).</p>
+        <p>•	Some things are 'unbearable'. Unbearably bad naming. Spaces instead of tabs. Unused code. Replace this kind of stuff where you see it. If these things happen too much, consider asking the producer of the crap to remove it him/herself.</p>
+    </body>
+</html>

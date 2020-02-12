@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>6.2.1 Nice and neat<MadCap:concept term="Nice and neat" /></h3>
+        <p style="text-align: left;">Good code should look good. You have to find joy in making the things you deliver look as good as (reasonably) possible, and as easy to understand as possible. Compare these two class definitions:</p>
+        <p style="text-align: left;"><span style="font-family: monospace;">class SizeKeeper</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">{</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">public:</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SizeKeeper() : sz_(0)	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	{}<br /></span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;int	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;size() const			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ return sz_; }</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;void	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;setSize( int n )		&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ sz_ = n; }<br /></span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">protected:<br /></span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;int	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	sz_;</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">};</span>
+        </p>
+        <p style="text-align: left;">and:</p>
+        <p style="text-align: left;"><span style="font-family: monospace;">class X { public: X() : n(0) {}</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">protected: int n;</span>
+            <br style="font-family: monospace;" /><span style="font-family: monospace;">public: int N() const { return n; } void sn(int p) { n = p; } };</span>
+        </p>
+        <p>The second class definition looks like crap, and is difficult to understand, especially when you imagine the code where the class is used. Maybe the first definition isn't that clear for everybody immediately at the start, but it's easy to see that once you get used to the style, it will be easy and fun to work with this kind of code.</p>
+        <p>For this to work, a team must agree on a style. The style characteristics are chosen so they match the requirements of esthetics/pleasure and time minimisation.</p>
+        <p>It may look like the second class definition has an advantage over the first in the time spent creating it. Nothing is more true. Time in software development is spent on many things, and actually typing the code is just a tiny component:</p>
+        <p>•	Time spent typing</p>
+        <p>•	Time spent thinking/designing/creating</p>
+        <p>•	Time spent changing</p>
+        <p>•	Time spent understanding</p>
+        <p>•	Time spent reworking</p>
+        <p>•	Time spent debugging</p>
+        <p>For most practical purposes, the influence of typing time on the total time spent can be neglected.</p>
+        <p>That leads to an important principle:</p>
+        <p>Rule (1): Make your code look good right from the start.</p>
+        <p>Waiting for a clean-up stage is a serious mistake. Already during creation of the software, from the very start, the effects of sloppy code will hit you where it hurts. Even if you have to re-type sections 10 times, it is better to have the code really neat at all times. Only then you can see that the re-working is necessary. The earlier you detect that constructions are not intuitive, logical, and easy to understand the earlier you detect that your code is actually bad.</p>
+    </body>
+</html>

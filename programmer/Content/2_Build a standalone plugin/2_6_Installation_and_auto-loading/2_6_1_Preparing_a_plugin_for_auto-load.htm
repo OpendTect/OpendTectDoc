@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>2.6.1 Preparing a plugin for auto-load<MadCap:concept term="Preparing a plugin for auto-load" /></h3>
+        <p><span style="font-family: monospace;">#include "odplugin.h"</span> is needed for the PluginInfo structure and the PI_AUTO_INIT_xxx defines.</p>
+        <p>The GetxxxxPluginType() specifies when a plugin is loaded:</p>
+        <p>•	<span style="font-family: monospace;">PI_AUTO_INIT_EARLY : Plugin is loaded before construction of main window</span></p>
+        <p>•	<span style="font-family: monospace;">PI_AUTO_INIT_LATE : Plugin is loaded after construction of main window</span></p>
+        <p>The default is <span style="font-family: monospace;">PI_AUTO_INIT_LATE</span>, so you only have to define anything if the plugin needs to be loaded early: then use <span style="font-family: monospace;">mDefODPluginEarlyLoad(YourPluginName).</span></p>
+    </body>
+</html>

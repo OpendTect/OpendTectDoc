@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>2.6.2 Installing plugins for auto-load<MadCap:concept term="Installing plugins for auto-load" /></h3>
+        <p>The auto-load tool of OpendTect looks for plugins to load in two places:</p>
+        <p>1) Where are the .ALO files stored? The two locations searched are (in this order):</p>
+        <p>•	<span style="font-family: monospace;">&lt;userdir&gt;/plugins/&lt;platform_dir&gt;</span></p>
+        <p>•	<span style="font-family: monospace;">&lt;systemdir&gt;/plugins/&lt;platform_dir&gt;</span></p>
+        <p>2) Where are the plugin libraries? Locations are:</p>
+        <p>•	<span style="font-family: monospace;">&lt;userdir&gt;/bin/&lt;platform_dir&gt;/[Release|Debug]</span></p>
+        <p>•	<span style="font-family: monospace;">&lt;systemdir&gt;/bin/&lt;platform_dir&gt;/[Release|Debug]</span></p>
+        <p>The &lt;userdir&gt; is determined as follows:</p>
+        <p>•	<span style="font-family: monospace;">If it is set, $OD_USER_PLUGIN_DIR</span></p>
+        <p>•	<span style="font-family: monospace;">Else, the user settings directory is used: ~/.od</span></p>
+        <p>On Windows, your 'Personal directory' is located at $HOME if this is defined. Otherwise, $USERPROFILE is used. Also see the specific notes in the windows documentation.</p>
+    </body>
+</html>

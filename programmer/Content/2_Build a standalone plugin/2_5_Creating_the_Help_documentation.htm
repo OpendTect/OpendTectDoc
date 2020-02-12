@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>2.5 Creating the Help documentation<MadCap:concept term="Creating the Help documentation" /></h2>
+        <p>Like any other commercial application, our plugin also needs a help document which a user can see by clicking on a button in the user interface. The OpendTect help system is quite flexible and allows a plugin to define its own way of showing help information. But in most cases, all you want is to open an HTML file either stored locally or on the web. For this purpose, we have a class called SimpleHelpProvider that provides a key-link based help system. The idea is to have a common base URL (can be a local file path) and then append links for individual help documents to this base URL, based on keys.</p>
+        <p>So, you need to define your own HelpProvider class as a subclass of SimpleHelpProvider and initialize it when the plugin loads. A good example is the TutHelpProvider defined in uitutpi.cc:</p>
+        <p style="font-family: monospace;text-align: left;">class TutHelpProvider : public SimpleHelpProvider<br />{<br />public:<br />TutHelpProvider( const char* baseurl, const char* linkfnm )<br /> &#160;&#160;&#160;: SimpleHelpProvider(baseurl,linkfnm)<br />{}</p>
+        <p style="font-family: monospace;text-align: left;">static void initClass()<br />{<br />&#160;&#160;&#160;&#160;HelpProvider::factory().addCreator( TutHelpProvider::createInstance, "tut");<br />}</p>
+        <p style="font-family: monospace;text-align: left;">static HelpProvider* createInstance()<br />{<br />&#160;&#160;&#160;&#160;FilePath fp( GetDocFileDir(""), "User", "tut" );<br />&#160;&#160;&#160;&#160;BufferString baseurl( "file:///" );<br />&#160;&#160;&#160;&#160;baseurl.add( fp.fullPath() ).add( "/" );<br /><br />&#160;&#160;&#160;&#160;fp.add( "KeyLinkTable.txt" );<br />&#160;&#160;&#160;&#160;BufferString tablefnm = fp.fullPath();<br /><br />&#160;&#160;&#160;&#160;return new TutHelpProvider( baseurl.buf(), tablefnm.buf() );<br />}<br /><br />};</p>
+        <p>The three key elements of this class are:</p>
+        <p>•	The provider key: 'tut' in this case.</p>
+        <p>•	The base URL: Here it is a local path inside the OpendTect installation. But it can as well be a web URL like 'http://doc.opendtect.org/'</p>
+        <p>•	The key-link table, which is read from a file 'KeyLinkTable.txt' here. But you can also make it on-the-fly using the function addKeyLink. That is rather convenient if you are doing it just for a couple of plugins.</p>
+        <p>Then in the UI you can use a HelpKey comprising of two parts: the provider key ('tut' for example) and the key for the individual UI, like 'hor' in uiHorTools:</p>
+        <p style="font-family: monospace;text-align: left;">uiTutHorTools::uiTutHorTools( uiParent* p )<br />&#160;&#160;&#160;&#160;: uiDialog( p, Setup( tr("Tut Horizon tools"),<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tr("Specify process parameters"),<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;HelpKey("tut","hor") ) )</p>
+        <p>When the user clicks on the help button the HelpProvider will look for the link for the corresponding key, append the link to the base URL and open the document</p>
+    </body>
+</html>

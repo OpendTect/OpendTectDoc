@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>6.4 Semantical/typographical rules<MadCap:concept term="Semantical/typographical rules" /></h2>
+        <p>First of all: the naming of classes, variables, namespaces, etc. is extremely important. You want to optimise understandability and compactness, in doubt always go for understandability. Naming should be as intuitive as possible. If you cannot find an intuitive name, consider the possibility that your design is not right. Well designed classes and methods hardly ever have non-intuitive names. If you are really convinced you're right but still you can't find anything intuitive, make sure you explain the meaning in comments.</p>
+        <p>•	Classes and name spaces have a well-chosen name. Very well chosen. Do not rest before you have a name that really suits the class well. Name spaces tend to have short names, classes tend to be longer. If you cannot find a good name you probably have to split up or redefine the class. Typographically, every syllable of the class/namespace name starts with an upper case character.</p>
+        <p>•	Class methods also need carefully designed names. First of all, we have adopted the early Smalltalk rules: * First syllable: all lower case * further syllables: start with upper case. Then, how the method is named is dependent on what it does. The rule is that the resulting code must read as if it is English text, and that it does what it says. most often <span style="font-family: monospace;">verbNoun</span> is OK. Bad are:</p>
+        <ul>
+            <li><span style="font-family: monospace;">bool moderator()</span> - bool functions must be usable directly in '<span style="font-family: monospace;">if</span>' or '?' statements. Imagine <span style="font-family: monospace;">'if ( moderator() )</span>'. Depending on what it does, consider '<span style="font-family: monospace;">isModerator()</span>' or '<span style="font-family: monospace;">moderate()</span>'.</li>
+            <li><span style="font-family: monospace;">void wordChanger()</span> - a word changer could be an object but not a function. Consider '<span style="font-family: monospace;">changeWord()</span>' or '<span style="font-family: monospace;">changeWords()'</span> or a re-design.</li>
+            <li><span style="font-family: monospace;">int applesAndPears()</span> - what does this thing do? Make sure there is at least one verb.</li>
+        </ul>
+        <p>•	Variables are in lowercase. Class members should get an underscore at the end, further variables should generally be free of underscores. Special cases are Keys, 'hard' constants and Notifier names. There is a namespace '<span style="font-family: monospace;">sKey</span>' and there are variables '<span style="font-family: monospace;">sKeyXxx</span>' for key strings. Examples are '<span style="font-family: monospace;">sKey::Yes</span>' and '<span style="font-family: monospace;">sKeyTraceLength</span>'. Hard constants are like '<span style="font-family: monospace;">cMaxNrPatches</span>'. Notifiers are defined in Basic/callback.h.</p>
+        <p>•	Macros are like constants but with prefix '<span style="font-family: monospace;">m</span>': '<span style="font-family: monospace;">mErrRet(msg)</span>'. As usual, inline funtions, constants and templates are preferred but macros are still indispensible in real C++.</p>
+    </body>
+</html>

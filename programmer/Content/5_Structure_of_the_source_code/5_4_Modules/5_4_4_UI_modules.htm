@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>5.4.4 UI modules<MadCap:concept term="UI modules" /></h3>
+        <p>For most of the RW-modules, there is a UI counterpart. This is made possible by the basic UI modules uiBase, uiTools and uiIo, the basic 3D visualisation module visBase and the basic combined stuff in uiOSG. On top of everything is the UI application logic in uiODMain.</p>
+        <p>The uiBase module is one of the two modules that access Qt services. Where uiOSG specifically handles the bridge bewteen Qt and OpenSceneGraph, uiBase is Qt only. These two are therefore isolation layers. uiBase's main task is to provide access to Qt widgets and implement the dynamic layout concept. In short, the OpendTect user interface was not painted with a paint tool, but rather programmed by attaching elements to each other. See the uiBase class documentation.</p>
+        <p>The uiTools module depends on uiBase only. It provides some general UI elements from the uiBase basic objects. Most notably, the uiGenInput class, providing generalised data input.</p>
+        <p>The uiIo module is intended mainly for object selection (in the data store).</p>
+        <p>The OpenSceneGraph-based visualisation services are made available in the visBase layer. Based on that, visSurvey delivers OpendTect-specific functionality.</p>
+        <p>It all comes together in the uiODMain module. Being the top-level module it is dependent on all other modules. To keep the amount of knowledge contained in this module low, much of the functionality is obtained from the 'UI Part servers'. For example, the uiSeisPartServer is the isolation class for all seismic-related user interface work. The uiODApplMgr object is only coordinating the flow of information between the various part servers.</p>
+    </body>
+</html>

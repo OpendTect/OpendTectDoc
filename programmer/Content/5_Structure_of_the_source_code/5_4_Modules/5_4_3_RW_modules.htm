@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>5.4.3 RW modules<MadCap:concept term="RW modules" /></h3>
+        <p>First of all, there are the Basic, Algo and General modules. General depends on Algo, which in turn depends on Basic. The separation is a bit arbitrary, and the idea was that Basic would be tools also usable outside OpendTect. It's easy to find a counterexample like survinfo which was placed there to provide other Basic classes with good defaults.</p>
+        <p>In any case, Basic handles basic stuff like file-related, extra string utils, Ascii keyword-value files, positions (coords, inline/crossline), our own 'string' class the BufferString (not just a relict: it works better with C environments), sets: TypeSet, ObjectSet and BufferStringSet, OS dependent things like threads, stream opening, and a variety of basic algorithms.</p>
+        <p>Algo is for, well, Algorithmic stuff. General handles all sorts of things, like fast dynamic large N-D arrays (ArrayND etc.), the CBVS format for volumestorage, the IOObj, IOMan and other data store related classes, Translators enabling different formats, transforms and a few more things.</p>
+        <p>The domain-specific modules like Well, EarthModel, Seis etc. will be recognized by a geoscientist. There's also the Attribute and AttributeEngine, the seismic attribute modules, and the engine that does the work.</p>
+    </body>
+</html>

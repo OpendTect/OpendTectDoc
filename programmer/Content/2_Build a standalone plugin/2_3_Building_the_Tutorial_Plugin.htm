@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>2.3 Building the Tutorial Plugin<MadCap:concept term="Building the Tutorial plugin" /></h2>
+        <p>After creating the folder, run CMake and select the WORK directory you just created, put the location in both the "source" and "output" fields. Then press the 'Configure' button</p>
+        <p>
+            <img src="../Resources/Images/Plugins/CMAKE.jpg" style="max-width: 100%;" MadCap:mediastyle="@media print { max-width: 100%; }" />
+        </p>
+        <p>Select Visual Studio 15 2017 as the generator and choose x64 as the platform. Click Finish.</p>
+        <p>The first configuration will probably fail, do not worry, click ok.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/CMake-error.jpg" MadCap:mediastyle="@media print { max-width: 100%; }" style="max-width: 100%;" />
+        </p>
+        <p>And set OpendTect_DIR to point to your installed OpendTect directory, after this you can click Generate to create the necessary project files. </p>
+        <p>If successful you will see the created files in your WORK folder, and can open the OpendTect_Tutorial_Plugin.sln file to run Visual Studio.</p>
+        <p>For a more in depth view of the code in the tutorial plugin, please review Chapter 3 of this manual, this chapter will continue with ways to debug and install a plugin.</p>
+    </body>
+</html>

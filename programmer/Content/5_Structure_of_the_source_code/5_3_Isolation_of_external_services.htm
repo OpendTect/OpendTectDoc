@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>5.3 Isolation of external services<MadCap:concept term="Isolation of external services" /></h2>
+        <p>When services from another package (Qt, OpenSceneGraph, ...) are used, there is always an isolating layer - either a complete module or a class that uniquely uses those services. For software engineers this is an obvious action were it only to reduce the dependency problems.</p>
+        <p>There is however more to it. External services tend to be designed for much more general purposes than what is needed by OpendTect. Furthermore, some services that will be very important for us won't be available. And, we may not like the form in which the services are presented; moreover, the data structures used in the external package seldomly fit nicely with ours.</p>
+        <p>To overcome all this, and get a nice insulation at the same time, all external services are embedded in service layers that:</p>
+        <p>•	Do exactly what we need</p>
+        <p>•	Don't expose the external package's header files</p>
+        <p>•	Use data structures that are common in OpendTect</p>
+        <p>Isolation like this is present for a variety of subjects, from threads, sockets, file handling to User Interface building and Data loading.</p>
+    </body>
+</html>

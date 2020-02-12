@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>6.3.2 OO and general rules<MadCap:concept term="OO and general rules" /></h3>
+        <p>•	Try to avoid pure implementation inheritance. Inheritance of 'mainly interface' is usually OK. In all cases, ask yourself whether there really is a 'isA' relation between the classes. Prefer delegation in any doubt.</p>
+        <p>•	Be very aware of dependency management. Avoid using services from classes that were designed for something else. In doubt, split that class into the common part and the part that you are not interested in.</p>
+        <p>•	Anything adding to the complexity has to be justified. Don't use patterns or other nifty tricks without a good reason. Certainly, there are often good reasons. Factories for example are almost always there for a good reason. But, always ask yourself: is it worth the extra effort? The simple alternative may not be as flexible, but do I really need that extra flexibility?</p>
+        <p>•	Do not implement anything that isn't used (yet). Don't go for 'complete classes' or that kind of mumbo-jumbo. Figure out which methods are indispensible (like copy constructors) and then add functions when they are needed. Things that seem to be sure to be used tend to never be used, instead they add to the burden of the maintainer. Sometimes pre-cooked stuff is removed in a re-work without ever being used. On the other hand, if you think something is needed later, you need to design the interface in such a way that if necessary, it is not unnecessarily hard to add. 'Prepare, don't implement'.</p>
+        <p>•	Jokes and surprises are not funny. They may seem to you at the time but they are not. A mildly ironic comment once a year should be enough.</p>
+    </body>
+</html>

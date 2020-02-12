@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>6.3.3 C++ rules<MadCap:concept term="C++ rules" /></h3>
+        <p>•	We do not use exceptions. Exceptions are the horror story of C++, try looking at C++ report, November-December 1994, Tom Cargill: "Exception handling: A false sense of security". There are more reasons, for example that you have to use a certain paradigm throughout: RAII (Not a bad principle but not always easy to do and never enforcable). If you want to I can explain a lot of those reasons by e-mail. The bottom line is: don't use exceptions. External software using exceptions must be isolated with try { } catch (...) {}.</p>
+        <p>•	We are not using all the STL stuff and the std::string class. This is not because we don't like it, but more because we don't see the need. Using this is not a problem but will not work well with the rest of the system so in general the classes are not used. For external software try moving to our own classes as quickly as possible and beware of problems with exceptions.</p>
+        <p>•	All code must be const-correct except in specific areas where that would not give any gain: there it's optional. Learn the subtleties of const in various places. Don't cast away const unless you are certain about it, consider the possibility you need to use 'mutable'. Caching variables etc. should always be declared mutable. In OD, GUI classes and classes working with legacy stuff can be non-const correct. We do make them const-aware, which means they smoothly work together with classes that are const-correct.</p>
+        <p>•	Operator overloading can be used very sparingly, in situations of simple classes with absolutely trivial usage. In any doubt, don't use it. It does more harm (sometimes a lot more) than it returns benefit. Even the ubiquitous examples like matrix calcutations are almost surely better made with good old-fashioned method calls.</p>
+        <p>•	In cases that you don't know whether a language feature can be used, do not give the feature the benefit of the doubt. You can always ask your team members first. A C++ language feature should only be used if you can prove that it is useful, clear, fitting in our style and not easily possible with other means.</p>
+        <p>•	We increasingly try to use name spaces. In many places namespaces should have been used and this is a legacy problem which we want to gradually get rid of.</p>
+        <p>•	Do not pollute with things that are not C++, like M$-windows directives. If absolutely unavoidable design a strategy to minimise the impact of these horrible things.</p>
+        <p>•	Consider implementing in a header file only if unavoidable (templates), or:</p>
+        <p>•	Is the implementation stable? If not, dependencies will trigger each time the implementation is changed.</p>
+        <p>•	The implementation must be completely trivial or useful for a reader. In the latter case, it replaces comments with something that is fundamentally up-to-date.</p>
+        <p>•	The space taken may not be huge - then implement in the .cc file anyway.</p>
+    </body>
+</html>

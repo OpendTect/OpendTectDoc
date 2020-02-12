@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>5.4.2 The separation<MadCap:concept term="The separation" /></h3>
+        <p>The separation of include and src is first of all a visibility issue. The include files can be 'seen' by other modules, the src files not. Conceptually, the separation is roughly interface versus implementation. Roughly, because small functions are often implemented in the header file.</p>
+        <p>Another separation that is very important is between UI- and 'Real Work' modules. No (direct) user interface work is done in the RW-modules. The amount of Real Work in the UI modules is minimised. Within the user interface part, there is a separation between basic UI (Qt-based in OpendTect) and 3D visualistion (OpenSceneGraph-based). Both types of user interface modules have a prefix: 'ui' and 'vis' respectively.</p>
+        <p>Making all these modules as opposed to just dumping everything in one big directory does have the effect that it becomes necessary to precisely know what's dependent on what. That's exactly what's described in the data/ModDeps.od file. This file is used by OpendTect to automatically load module libraries.</p>
+    </body>
+</html>
