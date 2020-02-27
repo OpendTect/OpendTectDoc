@@ -2,7 +2,7 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="OpendTect User Documentation - Version 6.6"
+    Title="OpendTect Progammer's Manual - Version 6.6"
     Link="/Content/HTML Front Page/od_progman_v6.htm"
     conditions="Default.ScreenOnly"></TocEntry>
   <TocEntry
@@ -39,7 +39,7 @@
       Link="/Content/1_Preface/1_5_Acknowledgements.htm" />
   </TocEntry>
   <TocEntry
-    Title="2_Build a standalone plugin"
+    Title="2 Build a standalone plugin"
     Link="/Content/2_Build_a_standalone_plugin.htm">
     <TocEntry
       Title="2.1 Introduction to building a stand alone plugin"
@@ -62,7 +62,7 @@
       Link="/Content/2_Build a standalone plugin/2_5_Creating_the_Help_documentation.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="2_6_Installation_and_auto-loading"
+      Title="2.6 Installation and auto-loading"
       Link="/Content/2_Build a standalone plugin/2_6_Installation_and_auto-loading.htm">
       <TocEntry
         Title="2.6.1 Preparing a plugin for auto-load"
@@ -83,7 +83,7 @@
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="3_The tutorial Plugin"
+    Title="3 The tutorial Plugin"
     Link="/Content/3_The_Tutorial_Plugin.htm">
     <TocEntry
       Title="3.1 Introduction"
@@ -115,23 +115,23 @@
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="4_Build OpendTect from source"
+    Title="4 Build OpendTect from source"
     Link="/Content/4_Build_OpendTect_from_source.htm">
     <TocEntry
-      Title="Introduction"
+      Title="4.1 Introduction"
       Link="/Content/4_Build OpendTect from source/4_1_Introduction.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="Setting up the environment"
+      Title="4.2 Setting up the environment"
       Link="/Content/4_Build OpendTect from source/4_2_Setting_up_the_environment.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="Building OpendTect"
+      Title="4.3 Building OpendTect"
       Link="/Content/4_Build OpendTect from source/4_3_Building_OpendTect.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="5_Structure_of_the_source_code"
+    Title="5 Structure of the source code"
     Link="/Content/5_Contributing_to_the_Source_Code.htm">
     <TocEntry
       Title="5.1 Introduction"
@@ -146,7 +146,7 @@
       Link="/Content/5_Structure_of_the_source_code/5_3_Isolation_of_external_services.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="5_4_Modules"
+      Title="5.4 Modules"
       Link="/Content/5_Structure_of_the_source_code/5_4_Modules.htm">
       <TocEntry
         Title="5.4.1 Intro"
@@ -171,14 +171,14 @@
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="6_Principles and best practices in OpendTect coding"
+    Title="6 Principles and best practices in OpendTect coding"
     Link="/Content/6_Principles_and_best_practices_in_OpendTect_coding.htm">
     <TocEntry
       Title="6.1 Introduction"
       Link="/Content/6_Principles and best practices in OpendTect coding/6_1_Introduction.htm"
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="6_2_Requirements"
+      Title="6.2 Requirements"
       Link="/Content/6_Principles and best practices in OpendTect coding/6_2_Requirements.htm">
       <TocEntry
         Title="6.2.1 Nice and neat"
@@ -194,10 +194,10 @@
         MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
-      Title="6_3_Explicit_Rules"
+      Title="6.3 Explicit Rules"
       Link="/Content/6_Principles and best practices in OpendTect coding/6_3_Explicit_Rules.htm">
       <TocEntry
-        Title="6_3_1_Introduction"
+        Title="6.3.1 Introduction"
         Link="/Content/6_Principles and best practices in OpendTect coding/6_3_Explicit_Rules/6_3_1_Introduction.htm"
         MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
@@ -223,7 +223,7 @@
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="7_Useful links and resources"
+    Title="7 Useful links and resources"
     Link="/Content/7_Useful_links_and_resources.htm" />
   <TocEntry
     Title="Glossary"

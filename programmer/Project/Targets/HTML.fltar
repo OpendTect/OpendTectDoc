@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="OpendTect User Documentation"
+  Comment="OpendTect Programmer's Documentation"
   Type="WebHelp2"
   Destinations=""
   GlossaryTermConversion="marked"
@@ -20,9 +20,23 @@
   BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs"
   PreCompileScaledImages="false"
   EnableSitemap="true"
-  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/od_userdoc/"
+  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/Programmer/"
   EquationsOutputType="SVG"
   SearchEngine="MadCapSearch">
   <PrintedOutput
     CollapseMargins="true" />
+  <MetaTags>
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="description"
+      content="OpendTect Programmer's Manual - Version 6.6" />
+    <meta
+      name="keywords"
+      content="seismic interpretation, open source, opendtect, open, source, machine learning, d-tect , dtect, survey, analyses, research, geo-sciences, geology, geophysics, petrophysics, seismic, stochastic, modeling, monte carlo, simulation, quantitative, interpretation, inversion, integration, framework, neural network, supervised, unsupervised, reservoir characterisation, reservoir characterization, object detection, software, seismic software, free software, open software, free, application, linux, windows, solaris, mac os, data, SSIS, GDI, rock, studies, plugins, tutorials, users, support, training, documentation, manual, faq, visualization, horizon, faults, madagascar, crossplotting" />
+    <meta
+      name="robots"
+      content="index,follow" />
+  </MetaTags>
 </CatapultTarget>
