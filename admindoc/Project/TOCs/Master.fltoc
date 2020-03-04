@@ -42,6 +42,9 @@
         Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
       <TocEntry
+        Title="Setup the Preferred GPU with NVIDIA Control Panel"
+        Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-nvidia-control-panel.htm" />
+      <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Environment-variables.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>

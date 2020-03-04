@@ -5,19 +5,22 @@
     <body>
         <h1>Setup the preferred GPU with NVIDIA&#160;Control Panel</h1>
         <p> Laptops with an Intel CPU usually come with two integrated graphic cards.&#160;The default one the laptop starts up with would be one such as Intel HD graphics. OpendTect however will have the best performance when using the Nvidia GPU. Therefore that one should be used instead.</p>
-        <p>When OpendTect starts it will scan your graphics card. If it finds an Intel card there will be a message: 'Intel card found. If your computer has multiple graphics cards, consider switching from the integrated graphics.'</p>
+        <p>When OpendTect starts it will scan your graphics card. If it finds an Intel card there will be a warning message: 'Intel card found. If your computer has multiple graphics cards, consider switching from the integrated graphics.'</p>
+        <p>
+            <img src="../../Resources/Images/setup-preferred-GPU-1.png" style="width: 222px;height: 331px;" />
+            <br /><small>Figure:&#160;Warning message about the Intel card</small>
+            <br />
+        </p>
         <p>On Windows the Nvidia GPU can be made the preferred GPU with the NVIDIA&#160;Control Panel. We assume that you have installed the latest Nvidia driver that is available for your GPU. If not then please go to the <a href="https://www.nvidia.com/drivers">Nvidia website</a> and download and install the latest driver for your type of GPU. </p>
         <p>Please do the following:</p>
         <ol>
-            <li>Search for NVIDIA Control Panel</li>
-            <li>Launch the NVIDIA&#160;Control Panel</li>
-            <li>In the toolbar on the left choose Manage 3D&#160;settings</li>
-            <li>At Tab Program Settings click the Add button</li>
-            <li>In the new window it should show you OpendTect as a recently used application. Select it and click on Add Selected Program.</li>
-            <li>Select the preferred graphics processor:&#160;High-performance NVIDIA processor.</li>
-            <li>Click Apply to confirm the OpendTect program customization.</li>
-            <li>The next time you start OpendTect it should no longer show the Intel card found message popup. To check the graphics card used in OpendTect you might want to check Utilities &gt;&#160;Installation &gt;&#160;Graphics Information. It should now show the Nvidia card information and driver version.</li>
+            <li>Search for NVIDIA Control Panel, then start it<br /><img src="../../Resources/Images/setup-preferred-GPU-2.png" style="width: 638px;height: 518px;" /><br /><small>Figure:&#160;Starting NVIDIA&#160;Control Panel on Windows 10</small><br /><br /></li>
+            <li>In the toolbar on the left choose Manage 3D&#160;settings<br /><img src="../../Resources/Images/setup-preferred-GPU-3.png" style="width: 265px;height: 200px;" /><br /><small>Figure:&#160;NVIDIA&#160;Control Panel:&#160;3D&#160;Settings &gt; Manage 3D&#160;settings</small><br /><br /></li>
+            <li>At Tab Program Settings click the Add button<br /><img src="../../Resources/Images/setup-preferred-GPU-4.png" style="width: 447px;height: 291px;" /><br /><small>Figure:&#160;Add a program for customization of the 3D settings</small><br /><br /></li>
+            <li>In the new window it should show you OpendTect as a recently used program. Select it and click on Add Selected Program.<br /><img src="../../Resources/Images/setup-preferred-GPU-5.png" style="width: 588px;height: 205px;" /> <img src="../../Resources/Images/setup-preferred-GPU-6.png" style="width: 548px;height: 204px;" /><br /><small>Figure: List of recently used programs in NVIDIA&#160;Control Panel, add OpendTect</small> <br /><br /><br /></li>
+            <li>Select the preferred graphics processor:&#160;High-performance NVIDIA processor.<br /><img src="../../Resources/Images/setup-preferred-GPU-7.png" style="width: 528px;height: 323px;" /><br />Figure:&#160;Customize OpendTect to use the NVIDIA&#160;GPU<br /><br /></li>
+            <li>Click Apply to confirm the OpendTect program customization.<br /><br /></li>
+            <li>The next time you start OpendTect it should no longer show the Intel card found message popup. To check the graphics card used in OpendTect you might want to check <i>Utilities &gt;&#160;Installation &gt;&#160;Graphics Information</i>. It should now show the Nvidia card information and driver version.<br /><img src="../../Resources/Images/setup-preferred-GPU-8.png" style="width: 384px;height: 264px;" /> <img src="../../Resources/Images/setup-preferred-GPU-9.png" style="width: 228px;height: 259px;" /><br /><small>Figure: Check which graphics card OpendTect uses</small><br /></li>
         </ol>
-        <p>&#160;</p>
     </body>
 </html>
