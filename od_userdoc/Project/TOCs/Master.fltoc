@@ -324,6 +324,9 @@
         <TocEntry
           Title="4.3.6.4 Bulk 3D"
           Link="/Content/Survey/Import/Import_Horizons/Bulk_3D.htm" />
+        <TocEntry
+          Title="4.3.4.5 From ZMap"
+          Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
       </TocEntry>
       <TocEntry
         Title="4.3.7 Import Mute Functions"

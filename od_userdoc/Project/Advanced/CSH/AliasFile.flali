@@ -410,4 +410,5 @@
     <Map Name="mCEEMDAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/CEEMD-Spectral_Decomposition.htm" />
     <Map Name="mSeisPreLoad2D3DDataHelpID" Link="/Content/Survey/Pre-Load/Preload_Seismics.htm#preload2d3ddata" />
     <Map Name="mSeisExpCubePosDlgHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
+    <Map Name="mFromZMap" Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
 </CatapultAliasFile>

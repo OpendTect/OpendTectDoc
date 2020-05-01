@@ -291,7 +291,7 @@ external/doc_csh instance of it.
 #define		mChangeSurfaceDlgHelpID				0x10400003
 #define		mHor3DFrom2DDlgHelpID			        0x10400005
 #define		mArr2DFilterParsDlgHelpID			0x10400007
-#define		mTableImpDataSel3DSurfacesHelpID		0x10400008
+#define mTableImpDataSel3DSurfacesHelpID 0x10400008
 #define		mTableImpDataSel2DSurfacesHelpID		0x10400009
 #define		mFlattenedCubeHelpID			        0x10400010
 #define		mSnapToEventHelpID				0x10400011
@@ -492,3 +492,4 @@ external/doc_csh instance of it.
 #define		mLithCodeManHelpID				0x11400001
 
 #endif
+#define mFromZMap 0x10400023
