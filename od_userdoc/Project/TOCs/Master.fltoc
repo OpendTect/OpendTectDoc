@@ -503,7 +503,10 @@
           Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.4.9 Export Wavelets"
+        Title="4.4.9 Survey Setup"
+        Link="/Content/Survey/Export/Export_Survey_Setup.htm" />
+      <TocEntry
+        Title="4.4.10 Export Wavelets"
         Link="/Content/Survey/Export/Export_Wavelets.htm" />
     </TocEntry>
     <TocEntry
