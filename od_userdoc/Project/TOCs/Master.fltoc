@@ -341,7 +341,7 @@
         Title="4.3.10 Import Probability Density Functions"
         Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.3.11 Import Seismic"
+        Title="4.3.11 Import Seismic Data"
         Link="/Content/Survey/Import/Import_Seismic.htm">
         <TocEntry
           Title="4.3.11.1 SEG-Y"
@@ -470,7 +470,7 @@
         Title="4.4.7 Export Probability Density Functions"
         Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.4.8 Export Seismics"
+        Title="4.4.8 Export Seismic Data"
         Link="/Content/Survey/Export/Export_Seismics.htm">
         <TocEntry
           Title="4.4.8.1 Export SEG-Y"
@@ -577,7 +577,7 @@
           Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.5.12 Manage Seismics"
+        Title="4.5.12 Manage Seismic Data"
         Link="/Content/Survey/Manage/Manage_Seismics.htm">
         <TocEntry
           Title="4.5.12.1 Manage 3D Seismics"
