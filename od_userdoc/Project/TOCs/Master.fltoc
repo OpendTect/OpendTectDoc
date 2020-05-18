@@ -1032,8 +1032,8 @@
         Title="6.6.1 Single Machine Batch Processing Window"
         Link="/Content/Processing/Batch_Processing/Single_Machine_Batch_Processing_Window.htm" />
       <TocEntry
-        Title="6.6.2 Multi-Machine Batch Processing Window"
-        Link="/Content/Processing/Batch_Processing/Multi-Machine_Batch_Processing_Window.htm" />
+        Title="6.6.2 Distributed Computing Window"
+        Link="/Content/Processing/Batch_Processing/Distributed_Computing_Window.htm" />
       <TocEntry
         Title="6.6.3 Batch Log File"
         Link="/Content/Processing/Batch_Processing/Batch_Log_File.htm" />
@@ -1157,8 +1157,8 @@
         Title="9.3.4 Plugins"
         Link="/Content/Utilities/Installation/Plugins.htm" />
       <TocEntry
-        Title="9.3.5 Setup Batch Processing"
-        Link="/Content/Utilities/Installation/Setup_Batch_Processing.htm" />
+        Title="9.3.5 Setup Distributed Computing"
+        Link="/Content/Utilities/Installation/Setup_Distributed_Computing.htm" />
       <TocEntry
         Title="9.3.6 Licenses"
         Link="/Content/Utilities/Installation/Licenses.htm">
