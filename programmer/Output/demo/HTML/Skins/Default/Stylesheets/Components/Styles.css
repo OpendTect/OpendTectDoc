@@ -62,7 +62,7 @@ input[type="search"]
         background-position: center center;
     }
    
-.search-bar .search-filter.open
+.search-bar .search-filter-wrapper.open
 {
     background-repeat: no-repeat;
     background-position: center center;
@@ -145,7 +145,6 @@ ul.menu.mc-component
 ul.menu a
 {
     text-decoration: none;
-    outline: none;
     color: #000;
 }
 
@@ -334,7 +333,10 @@ a.activityText:visited
 .micro-content-container > .micro-content > .micro-content-expand
 {
     height: 40px;
+	width: 100%;
 	background: #ffffff url('../Images/arrow-down.png') no-repeat center center;
+	border-left: none;
+	border-right: none;
     border-top: solid 1px #b9bec1;
     border-bottom: solid 1px #b9bec1;
     cursor: pointer;

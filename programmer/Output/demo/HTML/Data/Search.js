@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/glossary.htm'],s:['1'],p:[['1',1]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/1_preface.htm'],s:['$dtect_appl','mail'],p:[['$dtect_appl',17],['c++',4],['folder',10],['main',24],['programming',22],['thickness',23]]});

@@ -223,8 +223,8 @@
       MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="7 Useful links and resources"
-    Link="/Content/7_Useful_links_and_resources.htm" />
+    Title="7 Class documentation and other resources"
+    Link="/Content/7_Class_documentation_and_other_resources.htm" />
   <TocEntry
     Title="Glossary"
     Link="/Content/Glossary.htm"></TocEntry>

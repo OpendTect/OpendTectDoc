@@ -208,7 +208,15 @@ html.right-layout #navigationResizeBar.nav-closed
 
 #show-hide-navigation
 {
+	border: none;
+	padding: 0;
 	background-color: #f5f5f5;
+}
+
+.showOnFocus:not(:focus)
+{
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
 }
 
 html.left-layout #show-hide-navigation
@@ -1315,6 +1323,7 @@ iframe.content
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
+	background-position: center;
 	/* Old browsers */
 	/* FF3.6+ */
 	/* Chrome,Safari4+ */
@@ -1328,7 +1337,6 @@ iframe.content
 	cursor: pointer;
 	height: 28px;
 	color: #dadada;
-	border-left: solid 1px #363636;
 	background: -moz-linear-gradient(top, #6F6F6F 0%, #555555 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6F6F6F), color-stop(100%,#555555));
 	background: -webkit-linear-gradient(top, #6F6F6F 0%, #555555 100%);
@@ -1336,6 +1344,7 @@ iframe.content
 	background: -ms-linear-gradient(top, #6F6F6F 0%,#555555 100%);
 	background: linear-gradient(top, #6F6F6F 0%,#555555 100%);
 	-pie-background: linear-gradient(#6F6F6F, #555555);
+	border-left: solid 1px #363636;
 }
 
 .search-field::-ms-clear
@@ -1343,7 +1352,7 @@ iframe.content
 	display: none;
 }
 
-.search-filter.open
+.search-filter-wrapper.open
 {
 	background-color: #3f3f3f;
 }
@@ -1374,6 +1383,14 @@ iframe.content
 {
 	display: none;
 	float: left;
+	color: #dadada;
+	background: -moz-linear-gradient(top, #6F6F6F 0%, #555555 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6F6F6F), color-stop(100%,#555555));
+	background: -webkit-linear-gradient(top, #6F6F6F 0%, #555555 100%);
+	background: -o-linear-gradient(top, #6F6F6F 0%,#555555 100%);
+	background: -ms-linear-gradient(top, #6F6F6F 0%,#555555 100%);
+	background: linear-gradient(top, #6F6F6F 0%,#555555 100%);
+	-pie-background: linear-gradient(#6F6F6F, #555555);
 }
 
 .search-filter-content
@@ -1504,83 +1521,8 @@ iframe.content
 	text-decoration: none;
 }
 
-#resultList .glossary .term a:visited
-{
-	
-}
-
-.micro-content-container > .micro-content > .micro-response-title a:visited
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .title a:visited
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .glossary .term a:focus
-{
-	
-}
-
-.micro-content-container > .micro-content > .micro-response-title a:focus
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .title a:focus
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
 #communityResultList a:hover
 {
-	text-decoration: underline;
-}
-
-#pagination a:hover
-{
-	border: solid 1px #e2e2e6;
-	background-color: #fff;
-	border-top: solid 1px #e2e2e6;
-}
-
-#resultList .glossary .term a:hover
-{
-	
-}
-
-.micro-content-container > .micro-content > .micro-response-title a:hover
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .title a:hover
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .glossary .term a:active
-{
-	
-}
-
-.micro-content-container > .micro-content > .micro-response-title a:active
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-#resultList .title a:active
-{
-	color: #2200c1;
 	text-decoration: underline;
 }
 
@@ -1618,6 +1560,14 @@ iframe.content
 	padding-top: 2px;
 	padding-bottom: 2px;
 	text-decoration: none;
+	color: inherit;
+}
+
+#pagination a:hover
+{
+	border: solid 1px #e2e2e6;
+	background-color: #fff;
+	border-top: solid 1px #e2e2e6;
 }
 
 .activityInfo
@@ -1756,6 +1706,9 @@ a.activityText
 
 .micro-content-container > .micro-content > .micro-content-expand
 {
+	width: 100%;
+	border-left: none;
+	border-right: none;
 	cursor: pointer;
 	border-top: solid 1px #b9bec1;
 	border-bottom: solid 1px #b9bec1;
@@ -1846,6 +1799,19 @@ a.activityText
 .MCWebHelpFramesetLink .MCWebHelpFramesetLinkTop a
 {
 	
+}
+
+#navigation[role="complementary"]
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	background: linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	-pie-background: linear-gradient(#ffffff, #ffffff);
 }
 
 #browseSequences.tabs-panel-content
@@ -2348,6 +2314,26 @@ a.activityText
 	
 }
 
+#resultList .glossary .term a:visited
+{
+	
+}
+
+#resultList .glossary .term a:focus
+{
+	
+}
+
+#resultList .glossary .term a:hover
+{
+	
+}
+
+#resultList .glossary .term a:active
+{
+	
+}
+
 #search-field::-webkit-input-placeholder
 {
 	color: #000000;
@@ -2368,10 +2354,58 @@ a.activityText
 	color: #000000;
 }
 
+.micro-content-container > .micro-content > .micro-response-title a:visited
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+.micro-content-container > .micro-content > .micro-response-title a:focus
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+.micro-content-container > .micro-content > .micro-response-title a:hover
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+.micro-content-container > .micro-content > .micro-response-title a:active
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
 #pagination a#selected
 {
 	border-top: solid 1px #e2e2e6;
 	font-weight: bold;
+}
+
+#resultList .title a:visited
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+#resultList .title a:focus
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+#resultList .title a:hover
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+#resultList .title a:active
+{
+	color: #2200c1;
+	text-decoration: underline;
 }
 
 #search-field-sidebar
@@ -2387,5 +2421,15 @@ a.activityText
 #responsive-search-glossary
 {
 	background-image: url('Images/magnifying_glass.png');
+}
+
+.skip-to-content
+{
+	color: #808080;
+	font-family: Arial;
+	font-size: 16pt;
+	font-weight: normal;
+	font-style: normal;
+	background-color: #ffffff;
 }
 

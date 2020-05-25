@@ -72,6 +72,7 @@
 	{
 		display: block;
 		height: 60px;
+		text-align: center;
 		background: transparent url('Images/background_black.png') repeat;
 		background: url('Images/background_black.png') repeat, -moz-linear-gradient(top, #000000 0%, #000000 100%);
 		background: url('Images/background_black.png') repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#000000));
@@ -80,6 +81,11 @@
 		background: url('Images/background_black.png') repeat, -ms-linear-gradient(top, #000000 0%,#000000 100%);
 		background: url('Images/background_black.png') repeat, linear-gradient(top, #000000 0%,#000000 100%);
 		-pie-background: url('Skins/Default/Stylesheets/Images/background_black.png') repeat, linear-gradient(#000000, #000000);
+	}
+
+	#responsiveHeader > a.homeLink
+	{
+		
 	}
 
 	#responsiveHeader .logo
@@ -111,7 +117,7 @@
 		width: 60px;
 	}
 
-	.toggle-topbar a
+	.toggle-topbar button
 	{
 		position: relative;
 		display: block;
@@ -127,15 +133,7 @@
 	{
 		overflow-y: auto;
 		overflow-x: hidden;
-		background-repeat: repeat;
-		background: transparent;
-		background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
-		background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
-		background: -o-linear-gradient(top, #ffffff 0%,#ffffff 100%);
-		background: -ms-linear-gradient(top, #ffffff 0%,#ffffff 100%);
-		background: linear-gradient(top, #ffffff 0%,#ffffff 100%);
-		-pie-background: linear-gradient(#ffffff, #ffffff);
+		background-color: #f1f1f1;
 	}
 
 	#normalLoginBtn
@@ -556,7 +554,7 @@
 		display: block;
 	}
 
-	.menu-icon a span
+	.menu-icon button span
 	{
 		background: transparent url('Images/ResponsiveMenuButton.png') no-repeat center center;
 		-pie-background: transparent url('Skins/Default/Stylesheets/Images/ResponsiveMenuButton.png') no-repeat center center;
@@ -749,6 +747,19 @@
 		background: url('Images/background_black.png') repeat, -ms-linear-gradient(top, #000000 0%,#000000 100%);
 		background: url('Images/background_black.png') repeat, linear-gradient(top, #000000 0%,#000000 100%);
 		-pie-background: url('Skins/Default/Stylesheets/Images/background_black.png') repeat, linear-gradient(#000000, #000000);
+	}
+
+	#navigation[role="complementary"]
+	{
+		background-repeat: repeat;
+		background: transparent;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+		background: linear-gradient(top, #ffffff 0%,#ffffff 100%);
+		-pie-background: linear-gradient(#ffffff, #ffffff);
 	}
 
 	#browseSequences.tabs-panel-content
