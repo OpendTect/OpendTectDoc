@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2019 r2 Generated HTML.fltar" Date="2020-05-25T10:59:19.4002018+02:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2019 r2 Generated HTML.fltar" Date="2020-05-25T11:21:37.8367229+02:00">
     <Messages>Compiling target HTML...
 Removing previously generated content...
 Loading skin info...
@@ -177,8 +177,8 @@ Processing topic: 6_Principles and best practices in OpendTect coding\6_6_Adapti
 Applying master page MasterPage.flmsp...
 Generated 6_principles_and_best_practices_in_opendtect_coding\6_6_adapting_code.htm
 Processing topic: 7_Class_documentation_and_other_resources.htm...
-Missing linked source file: C:\Documentations\OpendTectDoc\programmer\Content\Generated\html\annotated.html
-Missing linked source file: C:\Documentations\OpendTectDoc\programmer\Content\odpy\Generated\html\annotated.html
+Link points outside project file:///C:/Documentations/OpendTectDoc/programmer/Generated/html/annotated.html
+Link points outside project file:///C:/Documentations/OpendTectDoc/programmer/odpy/Generated/html/annotated.html
 Applying master page MasterPage.flmsp...
 Generated 7_class_documentation_and_other_resources.htm
 Processing topic: Glossary.htm...
@@ -223,14 +223,14 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 9
-Output generated in 21 second(s).
+Output generated in 18 second(s).
 
 Done
 Saving log to "C:\Documentations\OpendTectDoc\programmer\Output\demo\HTML\HTML.mclog"
 </Messages>
     <Warnings>
-        <LogEntry File="../../../Content/7_Class_documentation_and_other_resources.htm" Message="Missing linked source file: C:\Documentations\OpendTectDoc\programmer\Content\Generated\html\annotated.html&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML" ErrorID="10001" />
-        <LogEntry File="../../../Content/7_Class_documentation_and_other_resources.htm" Message="Missing linked source file: C:\Documentations\OpendTectDoc\programmer\Content\odpy\Generated\html\annotated.html&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML" ErrorID="10001" />
+        <LogEntry File="../../../Content/7_Class_documentation_and_other_resources.htm" Message="Link points outside project file:///C:/Documentations/OpendTectDoc/programmer/Generated/html/annotated.html&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML" ErrorID="10056" />
+        <LogEntry File="../../../Content/7_Class_documentation_and_other_resources.htm" Message="Link points outside project file:///C:/Documentations/OpendTectDoc/programmer/odpy/Generated/html/annotated.html&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML" ErrorID="10056" />
     </Warnings>
     <Errors />
 </MadCapLog>
