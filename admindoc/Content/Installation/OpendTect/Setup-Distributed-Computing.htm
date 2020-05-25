@@ -5,22 +5,52 @@
     <body>
         <h1>Setup Distributed Computing</h1>
         <p>In order to utilize OpendTect's capability for Multi-Machine Processing (MMP), a <i>BatchHosts</i> file must be created and used. This file contains the list of remote machines (<i>host machines</i> or <i>nodes</i>) and some relevant details about these machines and the path to the Survey Data Root. OpendTect will use this file to communicate to the remote hosts and launch processes remotely on them. Follow the example format (shown below) to add the list of remote machines and their details in the respective fields.</p>
-        <p>In order to minimize complications, the Setup Distributed Computing tool (formerly known as Setup Batch Processing tool) (<b>Start OpendTect as ADMIN</b>) can be used to create a tailor-made BatchHosts file (via <i>Utilities &gt; Installation &gt; Setup Distributed Computing</i>...):</p>
-        <p>&#160;</p>
-        <p><b>BatchHosts file</b>: This field is not editable in the User Interface. It is set as environment variable DTECT_BATCH_HOSTS_FILEPATH. <br /></p>
-        <p><b>IP address</b>: IP address of the node machine(s)</p>
-        <p><b>Hostname</b>: Hostname of the node machine(s)</p>
-        <p><b>Display name</b>: Free-text field. Text entered here appears in the Multi-Machine Processing window.</p>
-        <p><b>Platform</b>: Select platform type.</p>
+        <p>In order to minimize complications, the Setup Distributed Computing tool (formerly known as Setup Batch Processing tool) can be used to create a tailor-made BatchHosts file (via <i>Utilities &gt; Installation &gt; Setup Distributed Computing</i>...).</p>
+        <p>
+            <img src="../../Resources/Images/setup-distributed-computing-1.png" style="width: 453px;height: 311px;" />
+            <br /><small>Figure:&#160;Launching Setup Distributed Computing tool</small>
+            <br />
+        </p>
+        <p>As default OpendTect will try to create a new or edit the existing BatchHosts file in it's <MadCap:variable name="Variables.VersionNumber" />.0/data directory. If this directory is not writable OpendTect will advise to launch this process with administrator rights. </p>
+        <p>
+            <img src="../../Resources/Images/setup-distributed-computing-2.png" style="width: 427px;height: 155px;" />
+            <br /><small>Figure:&#160;Selected Batch Host Directory is not writable</small>
+            <br />
+        </p>
+        <p>It is also possible to use a custom BatchHosts filepath by setting environment variable DTECT_BATCH_HOSTS_FILEPATH . </p>
+        <p>
+            <img src="../../Resources/Images/setup-distributed-computing-3.png" style="width: 498px;height: 144px;" />
+            <br /><small>Figure:&#160;Setting DTECT_BATCH_HOSTS_FILEPATH environment variable</small>
+        </p>
+        <p>
+            <img src="../../Resources/Images/setup-distributed-computing-4.png" style="width: 828px;height: 346px;" />
+            <br /><small>Figure:&#160;Setup Distributed Computing window</small>
+            <br />
+        </p>
+        <p><b>BatchHosts file</b>: This field is not editable in the User Interface.<br /></p>
+        <p><b>IP address</b>: IP address of the node machine(s). If the background of this field is in red then there is a problem with the resolving of the hostname into the IP&#160;address. </p>
+        <p><b>Hostname</b>: Hostname of the node machine(s). If the background of this field is in red then there is a problem with the resolving of the hostname.</p>
+        <p><b>Display name</b>: Free-text field. Text entered here appears in the Distributed Computing window.</p>
+        <p><b>Platform</b>: Select platform type, the options are:&#160;Linux (64 bits), Windows (32 bits), Windows (64 bits) and Mac OS&#160;X.</p>
         <p><b>Survey data root</b>: Location of the survey (the path to the survey data root folder</p>
         <p>from the host machine)</p>
-        <p><b>Advanced Settings</b>: Here you may change the first port value (in the case that it is blocked or in use). Linux users may decide to change the shell command from the default ssh to rsh. The Nice level sets the priority on the host machines, 19 being nicest and 1 being least nice). Finally, the Default Data Root can be set per platform:</p>
+        <p>
+            <img src="../../Resources/Images/setup-distributed-computing-5.png" style="width: 490px;height: 348px;" />
+            <br /><small>Figure:&#160;Advanced Settings window</small>
+            <br />
+        </p>
+        <p><b>Advanced Settings</b>: Here you may change the first port value (in the case that it is blocked or in use). Linux users may decide to change the shell command from the default ssh to rsh. The Nice level sets the priority on the host machines, 19 being nicest and 1 being least nice). Finally, the Default Data Root can be set per platform.</p>
         <p>&#160;</p>
         <p>Description of icons:</p>
-        <p><b>Add</b> new host.</p>
-        <p><b>Remove</b> selected host.</p>
-        <p><b>Move</b> host up or down.</p>
-        <p><b>Test hosts</b>. Will perform tests to ensure that the server and nodes can communicate to the necessary extent to perform the MMP. (ie: can the nodes find the data root folder and read/write into it)</p>
+        <p>
+            <img src="../../Resources/Images/Icons/addnew.png" style="width: 32px;height: 32px;" /> <b>Add</b> new host.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/delete.png" style="width: 32px;height: 32px;" /><b>Remove</b> selected host.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/uparrow.png" style="width: 32px;height: 32px;" />
+            <img src="../../Resources/Images/Icons/downarrow.png" style="width: 32px;height: 32px;" /><b>Move</b> host up or down.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/checkgreen.png" style="width: 32px;height: 32px;" /><b>Test hosts</b>. Will perform tests to ensure that the server and nodes can communicate to the necessary extent to perform the MMP. (ie: can the nodes find the data root folder and read/write into it)</p>
         <p>&#160;</p>
         <p>For more information on this topic, please refer to <a href="https://www.youtube.com/channel/UCiaLX2p5rCcovOK_NAwpaOQ" target="_blank">OpendTect's Youtube Channel</a> where you may find the webinar: <a href="https://www.youtube.com/watch?v=9bEXxZ0RyxU" target="_blank">Multi-Machine Processing Setup</a>.</p>
     </body>
