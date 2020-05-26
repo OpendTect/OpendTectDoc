@@ -32,19 +32,25 @@
             <br />
             <br />
         </ol>
-        <h2><a name="Firewall"></a>Firewall rules and ports</h2>
-        <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. %OpendTectDir% represents the path of the OpendTect installation directory on the system. This may be C:\Program Files\OpendTect or another directory that is chosen for the installation:</p>
+        <h2>Installer logging</h2>
+        <p>The installer logs to a logfile. If something during installation goes wrong please look into the following files:</p>
         <ul>
-            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_main.exe</li>
-            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
-            <li>%OpendTectDir%\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
-            <li>%OpendTectDir%\6.6.0\v7\bin\win64\Release\od_DeepLearning_CC.exe</li>
-            <li>%OpendTectDir%\6.6.0\v7\bin\win64\Release\od_DeepLearning_EM.exe</li>
-            <li>%OpendTectDir%\6.6.0\v7\bin\win64\Release\od_DeepLearning_TM.exe</li>
-            <li>%OpendTectDir%\6.6.0\v7\bin\win64\Release\od_LogPlot.exe</li>
-            <li>%OpendTectDir%\Python\python.exe</li>
-            <li>%OpendTectDir%\Python\envs\odmlpython-cpu-mkl\python.exe</li>
-            <li>%OpendTectDir%\Python\envs\odmlpython-cuda10\python.exe</li>
+            <li>%TEMP%\username_od_instmgr_install_log.txt</li>
+            <li>%TEMP%\username_od_instmgr_updcheck_log.txt</li>
+        </ul>
+        <h2><a name="Firewall"></a>Firewall rules and ports</h2>
+        <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. The default OpendTect base directory is C:\Program Files\OpendTect. The base directory can be another directory if that is chosen during installation. If that is the case then replace the default base directory in below list with the actual base directory.</p>
+        <ul>
+            <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_main.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_CC.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_EM.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_TM.exe</li>
+            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_LogPlot.exe</li>
+            <li> C:\Program Files\OpendTect\Python\python.exe</li>
+            <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cpu-mkl\python.exe</li>
+            <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cuda10\python.exe</li>
         </ul>
         <p>OpendTect will need to open ports on the localhost for Batch Processing and Machine Learning. As default OpendTect starts with port 20050 and for every service try to use the next free one. Therefore it is best to reserve the ports 20050 up to 20070 for OpendTect.</p>
     </body>
