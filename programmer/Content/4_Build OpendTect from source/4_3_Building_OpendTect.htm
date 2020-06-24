@@ -2,7 +2,11 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
-    <body>
-        <h2>4.3 Building OpendTect<MadCap:concept term="Building OpendTect" /></h2>
-    </body>
+	<body>
+		<h2>4.3 Building OpendTect<MadCap:concept term="Building OpendTect" /></h2>
+		<p>Building in CMAKE</p>
+		<p>Run CMAKE and select the folders for the source code and where to build the binaries (for example C:\dev\od for both). Press configure, it will give an error, do not worry, and click OK. Fill in the QTDIR with the path to your installed QT folder. Give the whole path including the folder msvc2017_64 and configure again.</p>
+		<p>Press OK on the error warning, and now give the path to your OSG 3.6.3 release directory and configure again.</p>
+		<p>If it says configuring done, press the generate button to build the solution files. Now you can open the OpendTect.sln file!</p>
+	</body>
 </html>
