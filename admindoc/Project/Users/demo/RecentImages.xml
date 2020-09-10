@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UrlList>
+    <Url Source="Resources/Images/installation-manager-66-linux.png" />
+    <Url Source="Resources/Images/installation-package-selection-complete-linux.png" />
+    <Url Source="Resources/Images/installation-package-manager-66-linux.png" />
+    <Url Source="Resources/Images/installation-download-installer-windows.png" />
+    <Url Source="Resources/Images/installation-manage-firewall-rule.png" />
+    <Url Source="Resources/Images/installation-installed-information-windows.png" />
+    <Url Source="Resources/Images/installation-archive-unpacker-windows.png" />
+    <Url Source="Resources/Images/installation-downloading-files-windows.png" />
+    <Url Source="Resources/Images/installation-stopped-accessing-windows.png" />
+    <Url Source="Resources/Images/installation-manager-right-panel-ml-windows.png" />
+    <Url Source="Resources/Images/installation-package-manager-66-windows.png" />
+    <Url Source="Resources/Images/installation-manager-66-windows.png" />
     <Url Source="Resources/Images/installation-archive-unpacker-linux.png" />
     <Url Source="Resources/Images/installation-downloading-files-linux.png" />
     <Url Source="Resources/Images/installation-manager-right-panel-ml-linux.png" />
     <Url Source="Resources/Images/installation-package-manager-64-linux.png" />
-    <Url Source="Resources/Images/installation-package-selection-complete-linux.png" />
     <Url Source="Resources/Images/installation-manager-64-linux.png" />
-    <Url Source="Resources/Images/installation-download-installer-windows.png" />
-    <Url Source="Resources/Images/installation-manager-right-panel-ml-windows.png" />
     <Url Source="Resources/Images/installation-package-manager-64-windows.png" />
     <Url Source="Resources/Images/installation-package-selection-complete-windows.png" />
     <Url Source="Resources/Images/installation-manager-64-windows.png" />
-    <Url Source="Resources/Images/Icons/checkgreen.png" />
-    <Url Source="Resources/Images/Icons/uparrow.png" />
-    <Url Source="Resources/Images/Icons/downarrow.png" />
-    <Url Source="Resources/Images/Icons/delete.png" />
-    <Url Source="Resources/Images/Icons/addnew.png" />
-    <Url Source="Resources/Images/setup-distributed-computing-5.png" />
-    <Url Source="Resources/Images/setup-distributed-computing-4.png" />
-    <Url Source="Resources/Images/setup-distributed-computing-3.png" />
-    <Url Source="Resources/Images/setup-distributed-computing-1.png" />
 </UrlList>
