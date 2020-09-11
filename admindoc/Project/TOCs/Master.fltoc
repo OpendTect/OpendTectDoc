@@ -28,7 +28,11 @@
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Windows.htm" />
       <TocEntry
         Title="Installing OpendTect on Linux"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm">
+        <TocEntry
+          Title="Installing OpendTect on RHEL 6.x"
+          Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux/Installing-OpendTect-on-RHEL-6.x.htm" />
+      </TocEntry>
       <TocEntry
         Title="Installing OpendTect on Mac OS X"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOSX.htm" />
@@ -46,7 +50,13 @@
         Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-nvidia-control-panel.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
+        Link="/Content/Installation/OpendTect/Setup-nvidia-gpu-perfomance-counters.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Environment-variables.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Firewall rules and open ports"
+        Link="/Content/Installation/OpendTect/Firewall-Rules-and-Open-Ports.htm" />
     </TocEntry>
     <TocEntry
       Title="License server"

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Setup NVIDIA GPU Performance Counters</h1>
+        <p>When running jobs with the Machine Learning plugin you might get the following error message:&#160;CUPTI_ERROR_INSUFFICIENT_PRIVILEGES</p>
+        <p>To fix this please follow the <a href="https://developer.nvidia.com/nvidia-development-tools-solutions-ERR_NVGPUCTRPERM-permission-issue-performance-counters" target="_blank">instructions</a> from the NVIDIA site. It will be a good idea to do this anyway to prevent of getting the above mentioned error message.</p>
+        <p>In short the way to set this on Windows is:</p>
+        <ol>
+            <li>Open the NVIDIA&#160;Control Panel<br /><br /></li>
+            <li>From the menu select <i>Desktop</i> and ensure that <i>Enable Developer Settings</i> is checked<br /><br /></li>
+            <li>From the tray select <i>Developer</i> &gt;&#160;<i>Manage GPU Perfomance Counters</i><br /><br /></li>
+            <li>Select <i>Allow access to the GPU performance counter to all users</i> to enable unrestricted profiling</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

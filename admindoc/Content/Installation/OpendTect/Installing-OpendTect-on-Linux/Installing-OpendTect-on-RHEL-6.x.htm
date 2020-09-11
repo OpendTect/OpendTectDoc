@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Installing OpendTect on RHEL 6.x</h1>
+        <p>The OpendTect Installation Manager and 6.6 are not supported for RHEL 6.x. It is however possible to install and run OpendTect 6.4 on RHEL 6.x and CentOS 6.x by installing via an offline installation package. This offline installation package can be created with the OpendTect Installation Manager. This can be done on a supported Linux Distribution or Windows.</p>
+        <p>To install the offline package:</p>
+        <ol>
+            <li>Transfer the od_offline_lux64 folder to the RHEL6.x or CentOS 6.x system<br /><br />Then on the destination system in terminal:<br /></li>
+            <li><code>cd  od_offline_lux64</code>
+                <br />
+                <br />
+            </li>
+            <li><code>./unix_install.csh</code>
+                <br /><b>Please note:</b> to be able to run the installer <i>csh</i> needs to be installed<br /><br /></li>
+            <li>The installer asks for the path of where to install OpendTect, e.g. /home/user/OpendTect<br /><br /></li>
+            <li>After installation is finished change the directory to the OpendTect installation directory<br /><br /></li>
+            <li>Run <code>./start_dtect</code> to start OpendTect</li>
+        </ol>
+        <p>On RHEL 6.x and CentOS 6.x there can be error messages that will prevent you from starting OpendTect.</p>
+        <p>You might get:<br /><code>/usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.14' not found (required by /home/user/OpendTect/6.4.0/bin/lux64/Release/libosgQt5.so.145)</code><br />You might be able to solve this by installing a newer libstdc++ package. Here are some instructions to get it installed. There are no guarantees these instructions will work for your RHEL6.x or CentOS 6.x system. However, please note that it worked on our CentOS 6.x system:</p>
+        <ul>
+            <li><code>wget https://rpmfind.net/linux/centos/7.8.2003/os/x86_64/Packages/libstdc++-4.8.5-39.el7.x86_64.rpm</code>
+                <br />
+                <br />
+            </li>
+            <li><code>yum install libstdc++-4.8.5-39.el7.x86_64.rpm</code>
+            </li>
+        </ul>
+        <p>When installing the newer libstdc++ package you will probably get the issue that you need a newer libc.so.6. Here are some instructions to get it installed. There are no guarantees these instructions will work for your RHEL6.x or CentOS 6.x system. However, please note that it worked on our CentOS 6.x system:</p>
+        <ul>
+            <li><code>wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-2.17-55.el6.x86_64.rpm</code>
+                <br />
+                <br />
+            </li>
+            <li><code>wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-common-2.17-55.el6.x86_64.rpm</code>
+                <br />
+                <br />
+            </li>
+            <li><code>wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-devel-2.17-55.el6.x86_64.rpm</code>
+                <br />
+                <br />
+            </li>
+            <li><code>wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-headers-2.17-55.el6.x86_64.rpm</code>
+                <br />
+                <br />
+            </li>
+            <li><code>yum install glibc-2.17-55.el6.x86_64.rpm glibc-common-2.17-55.el6.x86_64.rpm glibc-devel-2.17-55.el6.x86_64.rpm glibc-headers-2.17-55.el6.x86_64.rpm</code>
+            </li>
+        </ul>
+    </body>
+</html>

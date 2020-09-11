@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ObjectList>
+    <Object Value="Variables.DocTitle" />
     <Object Value="Variables.VersionNumber" />
 </ObjectList>

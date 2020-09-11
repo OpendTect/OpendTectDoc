@@ -294,6 +294,7 @@ table.noborders
 	width: 100%;
 	margin-left: 0;
 	margin-right: auto;
+	border: solid 0px #000000;
 }
 
 div.pagebreak
