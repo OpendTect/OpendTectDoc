@@ -703,6 +703,9 @@
           Title="4.5.17.8 Export Well Surface Positions to Google Earth"
           Link="/Content/Survey/Manage/Manage_Wells/Export_Well_Surface_Positions_To_Google_Earth.htm" />
       </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Manage/Well_Data_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="4.6 Pre-load"

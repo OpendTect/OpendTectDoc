@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2>4.5.18 Well Data Management</h2>
+        <p>&#160;</p>
+        <p>The new Well Data Management table can be accessed from the small drop-down menu on the ‘Manage Wells’        icon <img src="../../Resources/Images/Survey/Well_data_mgmt_well_manager_icon.png" class="Icons" />  in the Manage Toolbar (right edge of scene).</p>
+        <p>This opens a spreadsheet containing all the wells imported into the project, along with their info (UWI, X, Y, TD, KB and GL), all the logs and all markers present in these wells.</p>
+        <p>The wells are along the rows with their details, logs and markers in their corresponding columns. The logs which are present in the particular well have the corresponding cell coloured green, in different shades, depending upon the availability of logs in the selected zone(s) (decided by markers) and those unavailable are highlighted in red. Similarly, available markers have their corresponding cell coloured with the marker colour along with their depth.</p>
+        <p>The colour coding for availability of logs follow a four-tier system and goes from deep green to light green. The four tiers are: &gt;75%, (75 - 50)%, (50 – 25)%, and &lt;25%</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_table.png" class="General_Image" style="width: 764px;height: 171px;" />
+            </p>
+        </blockquote>
+        <p>The top toolbar of the Well Data Management table contains a number of menus for data management. They are described below, from left to right:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_table_sort_icon.png" class="Icons" />Enable sorting by activating column. Default sorts the wells alphabetically.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_table_filter_icon.png" class="Icons" /> Set Display Filters: set filter on which data (Wells, Logs and/or Markers) you wish to see displayed in the table (below image)</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_table_filtered_table.png" class="General_Image" style="width: 719px;height: 432px;" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_log_crossplot_icon.png" class="Icons" /> Log CrossPlot (Bokeh): Cross-plot logs within specific depth range or with the markers’ depth.</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_log_crossplot_bokeh.png" class="General_Image" style="width: 933px;height: 490px;" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_icon.png" class="Icons" /> LogPlot (Bokeh): Plot logs and markers for a selected well within specific depth range. Modify display setting e.g. plot width, lines width, colors, etc.</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_table.png" class="General_Image" style="width: 884px;height: 573px;" />
+            </p>
+        </blockquote>
+        <p>On the right of the LogPlot Window, there are a number of menus:</p>
+        <blockquote>
+            <blockquote>
+                <p>
+                    <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_reload_icon.png" class="Icons" /> Reload and refresh the data in the tab</p>
+                <p>
+                    <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_terminate_bokeh_icon.png" class="Icons" /> Terminate bokeh server</p>
+                <p>
+                    <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_restart_bokeh_icon.png" /> Restart bokeh server</p>
+                <p>
+                    <img src="../../Resources/Images/Survey/Well_data_mgmt_log_logplot_view_bokeh_log_icon.png" /> View Bokeh server Log file</p>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_view_selected_logs_icon.png" /> View Selected logs: The selected logs in the table can be viewed using this menu in the Log Plot Viewer:</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_view_selected_logs_table.png" class="General_Image" style="width: 705px;height: 548px;" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_merge_logs_same_well_icon.png" /> Merge Well Logs from the same well: This icon will merge the selected logs for a particular well into one which can then be added to the database using the Save icon.</p>
+        <p>Options are available to: extrapolate and/or interpolate when there are gaps, use average or one of the logs in the overlap area:</p>
+        <blockquote>
+            <p>
+                <img src="../../Resources/Images/Survey/Well_data_mgmt_merge_logs_same_well_table.png" class="General_Image" style="width: 534px;height: 414px;" />
+            </p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_edit_well_info_icon.png" /> Enable editing well information (Well name, UWI, X, Y, TD, KB, GL): Wells can be renamed, locked, removed or set as default. If the option is toggled off, then the info cannot be edited.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_export_well_icon.png" /> Exports Well information in ASCII format.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_save_well_icon.png" class="Icons" /> Save: This writes all the changes made in the well table into the disc.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_reset_well_icon.png" /> Reset Well Table: This button resets the table to its initial format.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_rselected_zone_icon.png" /> This field allows the selection of a zone of interest (between two markers). Once a zone is set, the availability of logs displayed in the table might change depending on the zone.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/Well_data_mgmt_domain_icon.png" /> This field allows the selection of a depth domain to work with. The three options currently supported are MD (Measured Depth), TVD (True Vertical Depth), TVDSS (Truth Vertical Depth Sub-Sea).</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>
