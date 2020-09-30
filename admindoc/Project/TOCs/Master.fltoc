@@ -50,7 +50,7 @@
         Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-nvidia-control-panel.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Installation/OpendTect/Setup-nvidia-gpu-perfomance-counters.htm" />
+        Link="/Content/Installation/OpendTect/Setup-nvidia-gpu-performance-counters.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Environment-variables.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
