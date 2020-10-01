@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Clear license installation</h1>
+        <p>Under <i>Utilities &gt; Installation &gt; Licenses</i> you will see the option Clear&#160;license installation:</p>
+        <p>
+            <img src="../../../Resources/Images/clear-license-installation1.png" style="width: 664px;height: 332px;" />
+            <br /><small>Figure:&#160;Clear license installation option</small>
+        </p>
+        <p>This option (Windows only) will clear:</p>
+        <ul>
+            <li>
+                <p>Demo or node-locked licenses installed via any route, including the 'Install demo license' option.</p>
+            </li>
+            <li>
+                <p>Floating (or 'server') licenses that may have been installed (without stopping the license server).</p>
+            </li>
+        </ul>
+        <p>You will get this window explaining that all commercial licenses will be deacivated and that the plugins will stop working. To remove click Remove or else Cancel.</p>
+        <p>
+            <img src="../../../Resources/Images/clear-license-installation2.png" />
+            <br /><small>Figure:&#160;Are you sure to remove the licenses?</small>
+        </p>
+        <p>Once cleared, you will be prompted to restart:</p>
+        <p>
+            <img src="../../../Resources/Images/clear-license-installation3.png" />
+            <br /><small>Figure:&#160;All installed licenses cleared</small>
+        </p>
+        <p>Users of Linux systems wishing to clear their license installation will need to do the following:</p>
+        <ul>
+            <li>
+                <p>Locate the .flexlmrc file in your HOME directory (eg: $HOME/.flexlmrc)</p>
+            </li>
+            <li>
+                <p>Check in the file for specific lines referring to the OpendTect vendors (dGB, ARKCLS)</p>
+            </li>
+            <li>
+                <p>If the file contains lines relevant to other software, then just delete the individual lines. Otherwise, you may choose to delete the file.</p>
+            </li>
+        </ul>
+        <p>This method also applies to both demo/node-locked and floating licenses and will also not stop the server.</p>
+    </body>
+</html>

@@ -37,11 +37,18 @@
         Title="Installing OpendTect on Mac OS X"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOSX.htm" />
       <TocEntry
-        Title="Licensing and Host IDs"
-        Link="/Content/Installation/OpendTect/Licensing-and-Host-IDs.htm" />
-      <TocEntry
-        Title="Installing Licenses"
-        Link="/Content/Installation/OpendTect/Installing-licenses.htm"></TocEntry>
+        Title="Licenses"
+        Link="/Content/Installation/OpendTect/Licenses.htm">
+        <TocEntry
+          Title="Licensing and Host IDs"
+          Link="/Content/Installation/OpendTect/Licenses/Licensing-and-Host-IDs.htm" />
+        <TocEntry
+          Title="Installing Licenses"
+          Link="/Content/Installation/OpendTect/Licenses/Installing-licenses.htm"></TocEntry>
+        <TocEntry
+          Title="Clear License Installation"
+          Link="/Content/Installation/OpendTect/Licenses/Clear-license-installation.htm" />
+      </TocEntry>
       <TocEntry
         Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
