@@ -332,10 +332,8 @@
     <Map Name="mBodyManHelpID" Link="/Content/Survey/Manage/Manage_Bodies.htm" />
     <Map Name="mAttrVolOut2DHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Create_2D_Output.htm" />
     <Map Name="mODInstMgrHelpID" Link="/Content/Utilities/Installation/Update.htm" />
-    <Map />
     <Map Name="mODInstMgrgetPackageChoiceHelpID" Link="/Content/Utilities/Installation/Update.htm" />
     <Map Name="mProxyDlgHelpID" Link="/Content/Utilities/Installation/Connection_Settings.htm" />
-    <Map />
     <Map Name="mSemblanceAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Semblance.htm" />
     <Map Name="mCoherencyAttrib" Link="/Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
     <Map Name="mColorBarDialog" Link="/Content/Getting_Started/Color_Tables.htm" />
@@ -407,4 +405,5 @@
     <Map Name="mSeisPreLoad2D3DDataHelpID" Link="/Content/Survey/Pre-Load/Preload_Seismics.htm#preload2d3ddata" />
     <Map Name="mSeisExpCubePosDlgHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
     <Map Name="mFromZMap" Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
+    <Map Name="mPythonSettingsHelpID" Link="/Content/Utilities/Installation/Python Settings, Data Flow and Data Management.htm" />
 </CatapultAliasFile>
