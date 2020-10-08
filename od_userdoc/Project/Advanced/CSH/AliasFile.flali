@@ -44,8 +44,6 @@
     <Map Name="mGMTMainWinHelpID" Link="/Content/Processing/GMT.htm" />
     <Map Name="mLooknFeelSettingsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mShortcutsDlgHelpID" Link="/Content/Utilities/Settings/Keyboard_Shortcuts.htm" />
-    <Map Name="mSettingsHelpID" Link="/Content/Utilities/Settings/Advanced_Settings/Personal_Settings.htm" />
-    <Map Name="mSurveySettingsHelpID" Link="/Content/Utilities/Settings/Advanced_Settings/Survey_Defaults.htm" />
     <Map Name="mBatchProgLaunchHelpID" Link="/Content/Utilities/Tools/Batch_Programs.htm" />
     <Map Name="mConvertPosHelpID" Link="/Content/Utilities/Tools/Position_Conversion.htm" />
     <Map Name="mmcmddriverimpsHelpID" Link="/Content/Utilities/Tools/Command_Driver.htm" />
@@ -240,7 +238,6 @@
     <Map Name="mMarkerDlgHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
     <Map Name="mNewWellTrackDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Well.htm" />
     <Map Name="mODRandomLineTreeItemHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Table.htm" />
-    <Map Name="mODSceneMgrsetKeyBindingsHelpID" Link="/Content/Utilities/Settings/Mouse_Controls.htm" />
     <Map Name="mPreStackAGCHelpID" Link="/Content/Processing/Create_Seismic_Output/Pre-Stack_Processing/Automatic_Gain_Control.htm" />
     <Map Name="mPreStackEventExportHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm" />
     <Map Name="mPreStackEventImportHelpID" Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
@@ -335,11 +332,10 @@
     <Map Name="mBodyManHelpID" Link="/Content/Survey/Manage/Manage_Bodies.htm" />
     <Map Name="mAttrVolOut2DHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Create_2D_Output.htm" />
     <Map Name="mODInstMgrHelpID" Link="/Content/Utilities/Installation/Update.htm" />
-    <Map Name="mODInstPkgMgrHelpID" Link="/Content/Utilities/Installation/Update/Package_Manager.htm" />
+    <Map />
     <Map Name="mODInstMgrgetPackageChoiceHelpID" Link="/Content/Utilities/Installation/Update.htm" />
-    <Map Name="mODInstMgrcheckInstDirHelpID" Link="/Content/Utilities/Installation/Update/Package Manager/Offline_Installation.htm" />
     <Map Name="mProxyDlgHelpID" Link="/Content/Utilities/Installation/Connection_Settings.htm" />
-    <Map Name="mHandleDLSiteFailHelpID" Link="/Content/Utilities/Installation/Update/Package_Manager.htm" />
+    <Map />
     <Map Name="mSemblanceAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Semblance.htm" />
     <Map Name="mCoherencyAttrib" Link="/Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
     <Map Name="mColorBarDialog" Link="/Content/Getting_Started/Color_Tables.htm" />

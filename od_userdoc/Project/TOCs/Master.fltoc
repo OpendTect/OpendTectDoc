@@ -1084,21 +1084,11 @@
         Title="9.1.1 Look and feel"
         Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
       <TocEntry
-        Title="9.1.2 Mouse Controls"
-        Link="/Content/Utilities/Settings/Mouse_Controls.htm" />
-      <TocEntry
-        Title="9.1.3 Keyboard Shortcuts"
+        Title="9.1.2 Keyboard Shortcuts"
         Link="/Content/Utilities/Settings/Keyboard_Shortcuts.htm" />
       <TocEntry
-        Title="9.1.4 Advanced Settings"
-        Link="/Content/Utilities/Settings/Advanced_Settings.htm">
-        <TocEntry
-          Title="9.1.4.1 Personal Settings"
-          Link="/Content/Utilities/Settings/Advanced_Settings/Personal_Settings.htm" />
-        <TocEntry
-          Title="9.1.4.2 Survey Defaults"
-          Link="/Content/Utilities/Settings/Advanced_Settings/Survey_Defaults.htm" />
-      </TocEntry>
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Settings/Language.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="9.2 Tools"
@@ -1110,74 +1100,61 @@
         Title="9.2.2 Position Conversion"
         Link="/Content/Utilities/Tools/Position_Conversion.htm" />
       <TocEntry
-        Title="9.2.3 Create Plugin Development Environment"
-        Link="/Content/Utilities/Tools/Create_Plugin_Development_Environment.htm" />
-      <TocEntry
-        Title="9.2.4 Command Driver"
+        Title="9.2.3 Command Driver"
         Link="/Content/Utilities/Tools/Command_Driver.htm" />
       <TocEntry
-        Title="9.2.5 Presentation Maker Plugin"
+        Title="9.2.4 Presentation Maker Plugin"
         Link="/Content/Utilities/Tools/Presentation_Maker_Plugin.htm" />
     </TocEntry>
     <TocEntry
-      Title="9.3 Installation"
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Utilities/User Commands.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="9.4 Installation"
       Link="/Content/Utilities/Installation.htm">
       <TocEntry
-        Title="9.3.1 Update (Installation Manager)"
-        Link="/Content/Utilities/Installation/Update.htm">
-        <TocEntry
-          Title="9.3.1.1 Package Manager"
-          Link="/Content/Utilities/Installation/Update/Package_Manager.htm">
-          <TocEntry
-            Title="9.3.1.1.1 Utilities Menu"
-            Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu.htm">
-            <TocEntry
-              Title="9.3.1.1.1.1 Export Download List"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Export_Download_List.htm" />
-            <TocEntry
-              Title="9.3.1.1.1.2 Rollback"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Rollback.htm" />
-            <TocEntry
-              Title="9.3.1.1.1.3 Show Log File"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Show_Log_File.htm" />
-          </TocEntry>
-          <TocEntry
-            Title="9.3.1.1.2 Offline Installation"
-            Link="/Content/Utilities/Installation/Update/Package Manager/Offline_Installation.htm">
-            <TocEntry
-              Title="9.3.1.1.2.1 Package Verification"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Offline_Installation/Package_Verification.htm" />
-          </TocEntry>
-        </TocEntry>
-      </TocEntry>
+        Title="9.4.1 Update (Installation Manager)"
+        Link="/Content/Utilities/Installation/Update.htm"></TocEntry>
       <TocEntry
-        Title="9.3.2 Auto-Update Policy"
+        Title="9.4.2 Auto-Update Policy"
         Link="/Content/Utilities/Installation/Auto-Update_Policy.htm" />
       <TocEntry
-        Title="9.3.3 Connection Settings"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Installation/Python Settings, Data Flow and Data Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="9.3.4 Connection Settings"
         Link="/Content/Utilities/Installation/Connection_Settings.htm" />
       <TocEntry
-        Title="9.3.4 Plugins"
+        Title="9.4.5 Plugins"
         Link="/Content/Utilities/Installation/Plugins.htm" />
       <TocEntry
-        Title="9.3.5 Setup Distributed Computing"
+        Title="9.4.6 Setup Distributed Computing"
         Link="/Content/Utilities/Installation/Setup_Distributed_Computing.htm" />
       <TocEntry
-        Title="9.3.6 Licenses"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Installation/Graphics Information.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Installation/Show_HostID.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Installation/Firewall Add or Remove Process.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="9.4.10 Licenses"
         Link="/Content/Utilities/Installation/Licenses.htm">
         <TocEntry
-          Title="9.3.6.1 Install demo/node-locked license"
+          Title="9.4.10.1 Install demo/node-locked license"
           Link="/Content/Utilities/Installation/Licenses/Install_Demo_Node-Locked_License.htm" />
         <TocEntry
-          Title="9.3.6.2 Clear License Installation"
-          Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Utilities/Installation/Licenses/Open License Manager Tools.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
-          Title="9.3.6.3 Show HostID"
-          Link="/Content/Utilities/Installation/Licenses/Show_HostID.htm" />
+          Title="9.4.10.3 Clear License Installation"
+          Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="9.4 Show Log File"
+      Title="9.5 Show Log File"
       Link="/Content/Utilities/Show_Log_File.htm" />
   </TocEntry>
   <TocEntry

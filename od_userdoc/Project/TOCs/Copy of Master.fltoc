@@ -1038,20 +1038,16 @@
         Title="9.1.1 Look and feel"
         Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
       <TocEntry
-        Title="9.1.2 Mouse Controls"
-        Link="/Content/Utilities/Settings/Mouse_Controls.htm" />
+        Title="9.1.2 Mouse Controls" />
       <TocEntry
         Title="9.1.3 Keyboard Shortcuts"
         Link="/Content/Utilities/Settings/Keyboard_Shortcuts.htm" />
       <TocEntry
-        Title="9.1.4 Advanced Settings"
-        Link="/Content/Utilities/Settings/Advanced_Settings.htm">
+        Title="9.1.4 Advanced Settings">
         <TocEntry
-          Title="9.1.4.1 Personal Settings"
-          Link="/Content/Utilities/Settings/Advanced_Settings/Personal_Settings.htm" />
+          Title="9.1.4.1 Personal Settings" />
         <TocEntry
-          Title="9.1.4.2 Survey Defaults"
-          Link="/Content/Utilities/Settings/Advanced_Settings/Survey_Defaults.htm" />
+          Title="9.1.4.2 Survey Defaults" />
       </TocEntry>
     </TocEntry>
     <TocEntry
@@ -1064,8 +1060,7 @@
         Title="9.2.2 Position Conversion"
         Link="/Content/Utilities/Tools/Position_Conversion.htm" />
       <TocEntry
-        Title="9.2.3 Create Plugin Development Environment"
-        Link="/Content/Utilities/Tools/Create_Plugin_Development_Environment.htm" />
+        Title="9.2.3 Create Plugin Development Environment" />
       <TocEntry
         Title="9.2.4 Command Driver"
         Link="/Content/Utilities/Tools/Command_Driver.htm" />
@@ -1077,27 +1072,20 @@
         Title="9.3.1 Update (Installation Manager)"
         Link="/Content/Utilities/Installation/Update.htm">
         <TocEntry
-          Title="9.3.1.1 Package Manager"
-          Link="/Content/Utilities/Installation/Update/Package_Manager.htm">
+          Title="9.3.1.1 Package Manager">
           <TocEntry
-            Title="9.3.1.1.1 Utilities Menu"
-            Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu.htm">
+            Title="9.3.1.1.1 Utilities Menu">
             <TocEntry
-              Title="9.3.1.1.1.1 Export Download List"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Export_Download_List.htm" />
+              Title="9.3.1.1.1.1 Export Download List" />
             <TocEntry
-              Title="9.3.1.1.1.2 Rollback"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Rollback.htm" />
+              Title="9.3.1.1.1.2 Rollback" />
             <TocEntry
-              Title="9.3.1.1.1.3 Show Log File"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Utilities_Menu/Show_Log_File.htm" />
+              Title="9.3.1.1.1.3 Show Log File" />
           </TocEntry>
           <TocEntry
-            Title="9.3.1.1.2 Offline Installation"
-            Link="/Content/Utilities/Installation/Update/Package Manager/Offline_Installation.htm">
+            Title="9.3.1.1.2 Offline Installation">
             <TocEntry
-              Title="9.3.1.1.2.1 Package Verification"
-              Link="/Content/Utilities/Installation/Update/Package Manager/Offline_Installation/Package_Verification.htm" />
+              Title="9.3.1.1.2.1 Package Verification" />
           </TocEntry>
         </TocEntry>
       </TocEntry>
@@ -1124,7 +1112,7 @@
           Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
         <TocEntry
           Title="9.3.6.3 Show HostID"
-          Link="/Content/Utilities/Installation/Licenses/Show_HostID.htm" />
+          Link="/Content/Utilities/Installation/Show_HostID.htm" />
       </TocEntry>
     </TocEntry>
     <TocEntry
