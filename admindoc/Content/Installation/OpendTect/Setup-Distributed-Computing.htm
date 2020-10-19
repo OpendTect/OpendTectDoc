@@ -39,7 +39,13 @@
             <br /><small>Figure:&#160;Advanced Settings window</small>
             <br />
         </p>
-        <p><b>Advanced Settings</b>: Here you may change the first port value (in the case that it is blocked or in use). Linux users may decide to change the shell command from the default ssh to rsh. The Nice level sets the priority on the host machines, 19 being nicest and 1 being least nice). Finally, the Default Data Root can be set per platform.</p>
+        <p><b>Advanced Settings</b>: </p>
+        <ul>
+            <li>Here you may change the first port value (in the case that it is blocked or in use). By default this first TCP port is 37500. We advise to open up to 5 ports, e.g. 37500-37504.</li>
+            <li>Linux users may decide to change the remote shell command from the default ssh to rsh. <br />When setting to ssh it is required that the user who is running OpendTect is able to login to the other nodes without a password. This can be done by setting up public key authentication between the nodes. We will not go into detail of how to do this. In short this is done by generating the SSH key on the machine you are using to start the jobs, the public key then needs to be uploaded to the nodes and added to the user's .ssh/authorized_keys file.</li>
+            <li>The Nice level sets the priority on the host machines, 19 being nicest and 1 being least nice). </li>
+            <li>Finally, the Default Data Root can be set per platform.</li>
+        </ul>
         <p>&#160;</p>
         <p>Description of icons:</p>
         <p>
