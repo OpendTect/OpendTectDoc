@@ -1108,7 +1108,7 @@
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Utilities/User Commands.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/Utilities/User_Commands.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="9.4 Installation"
       Link="/Content/Utilities/Installation.htm">
@@ -1120,7 +1120,7 @@
         Link="/Content/Utilities/Installation/Auto-Update_Policy.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Installation/Python Settings, Data Flow and Data Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Installation/Python_Settings_Data_Flow_and_Data_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="9.3.4 Connection Settings"
         Link="/Content/Utilities/Installation/Connection_Settings.htm" />
@@ -1132,13 +1132,13 @@
         Link="/Content/Utilities/Installation/Setup_Distributed_Computing.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Installation/Graphics Information.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Installation/Graphics_Information.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Utilities/Installation/Show_HostID.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Installation/Firewall Add or Remove Process.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Installation/Firewall_Add_or_Remove_Process.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="9.4.10 Licenses"
         Link="/Content/Utilities/Installation/Licenses.htm">
@@ -1147,7 +1147,7 @@
           Link="/Content/Utilities/Installation/Licenses/Install_Demo_Node-Locked_License.htm" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/Utilities/Installation/Licenses/Open License Manager Tools.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/Utilities/Installation/Licenses/Open_License_Manager_Tools.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="9.4.10.3 Clear License Installation"
           Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
@@ -1159,7 +1159,35 @@
   </TocEntry>
   <TocEntry
     Title="10 Help"
-    Link="/Content/Help.htm" />
+    Link="/Content/Help.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Documentation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/How-To_Instructions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Training_Manual.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Videos.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Attributes_Table.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Online_Support.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Keyboard_Shortcuts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Legal.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/About_OpendTect.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
   <TocEntry
     Title="11 Appendix A - Attributes and Filters"
     Link="/Content/Appendix_A-Attributes_And_Filters.htm">

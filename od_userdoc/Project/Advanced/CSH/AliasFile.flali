@@ -405,5 +405,5 @@
     <Map Name="mSeisPreLoad2D3DDataHelpID" Link="/Content/Survey/Pre-Load/Preload_Seismics.htm#preload2d3ddata" />
     <Map Name="mSeisExpCubePosDlgHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
     <Map Name="mFromZMap" Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
-    <Map Name="mPythonSettingsHelpID" Link="/Content/Utilities/Installation/Python Settings, Data Flow and Data Management.htm" />
+    <Map Name="mPythonSettingsHelpID" Link="/Content/Utilities/Installation/Python_Settings_Data_Flow_and_Data_Management.htm" />
 </CatapultAliasFile>
