@@ -6,12 +6,9 @@
         <h2>4.2 <MadCap:concept term="Setting up the environment" />Setting up the environment</h2>
         <p>To build OpendTect from source you need to pull the source code from https://github.com/OpendTect/OpendTect. Then build the solution with CMake. In this case launch CMake and browse to your OpendTect source folder and start configuring and generating from CMake. CMake will prompt for Qt and OpenSceneGraph directory location, select them from CMake itself and continue. Once the projects and solution are generated you can start building OpendTect.</p>
         <p>Qt</p>
-        <p>Go to https://www.qt.io/download to download the required QT binaries by using their online installation tool. Be sure to select only the components you require, as it is very space consuming to install all components of QT. For building the master branch QT 5.12.3 is required, for branches 6.6, 6.4.4, and 6.4 QT 5.9.6 is required. For building with Visual studio download the MSVC 2017 64-bit component, also select the appropriate QT WebEngine for installation in the same version.</p>
-        <p>
-            <img src="../Resources/Images/Plugins/QT_install.png" style="width: 689px;height: 487px;" />
-        </p>
+        <p>Go to <a href="https://www.qt.io/download" target="_blank">https://www.qt.io/download</a> to download the required QT binaries by using their online installation tool. Be sure to select only the components you require, as it is very space consuming to install all components of QT. For building the master branch QT 5.12.3 is required, for branches 6.6, 6.4.4, and 6.4 QT 5.9.6 is required. For building with Visual studio download the MSVC 2017 64-bit component, also select the appropriate QT WebEngine for installation in the same version.</p>
         <p>&#160;</p>
-        <p>Get the OSG binaries here: https://objexx.com/OpenSceneGraph.html , the 3.6.3 release version is needed for building all the latest branches of OpendTect.</p>
+        <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a> , the 3.6.3 release version is needed for building all the latest branches of OpendTect.</p>
         <p>You can use the following git commands to clone the repositories to your local machine.</p>
         <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch master od</p>
         <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch od6.6 od6.6</p>
