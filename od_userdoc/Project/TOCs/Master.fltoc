@@ -45,8 +45,8 @@
       Title="2.1 System Overview"
       Link="/Content/Getting_Started/System_Overview.htm">
       <TocEntry
-        Title="2.1.1 Multi-Machine &amp; Parallelization"
-        Link="/Content/Getting_Started/System_Overview/Multi-Machine_Parallelization.htm" />
+        Title="2.1.1 Distributed Computing &amp; Parallelization"
+        Link="/Content/Getting_Started/System_Overview/Distributed_Computing_Parallelization.htm" />
     </TocEntry>
     <TocEntry
       Title="2.2 Toolbars"

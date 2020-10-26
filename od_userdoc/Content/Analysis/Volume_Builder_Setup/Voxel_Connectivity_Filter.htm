@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1615" MadCap:lastWidth="1366">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
         <h3>5.2.7 Voxel Connectivity Filter<MadCap:keyword term="Voxel Connectivity Filter" /></h3>
-        <p><i>Voxel Connextivity Filter</i> is a special tool to create continuous bodies based on the amplitudes in a stored volume. A '<a href="http://en.wikipedia.org/wiki/Voxel" target="_blank" MadCap:conditions="Default.ScreenOnly">voxel</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">voxel</MadCap:conditionalText>' is defined as the volume around one sample. It is thus linked to the survey bin size and sampling rate.</p>
+        <p><i>Voxel Connextivity Filter</i> is a special tool to create continuous bodies based on the amplitudes in a stored volume. A '<a href="https://en.wikipedia.org/wiki/Voxel" target="_blank" MadCap:conditions="Default.ScreenOnly">voxel</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">voxel</MadCap:conditionalText>' is defined as the volume around one sample. It is thus linked to the survey bin size and sampling rate.</p>
         <p class="tip"> This volume builder step must be preceded by a step providing the necessary input data, like "Stored volume".</p>
         <p class="tip">This volume builder step implies a volumetric calculation. The result of the application on a single inline will differ from the result of the application to the whole volume.</p>
         <p>The filter is based on a user-defined amplitude selection to compute the bodies. The samples interconnection is computed based on an amplitude criteria and geometrical spreading settings. It is a very useful tool to visualize seismic attributes in 3D. Other benefits of this tool are to get a volume of several bodies and visualize them in 3D or use it as an input to supervised Neural Network. A general and most popular use of this tool can be the DHIs detection. For instance, if creating a volume that represents DHIs only, it may be interesting to clip the amplitudes to visualize the DHIs present in the seismic data. For such case, when having the seismic amplitude attribute as a volume, this filter can be used to create new DHI volume.</p>

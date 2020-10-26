@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="6464" MadCap:lastWidth="1013">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
@@ -9,7 +9,7 @@
         <p>Texture -- Group of attributes that return statistical properties of a Grey-Level Co-occurrence Matrix (GLCM)</p>
         <p><b>Description</b>
         </p>
-        <p>The texture attributes implemented in OpendTect are described in detail in the <a href="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText> by Mryka Hall-Beyer.</p>
+        <p>The texture attributes implemented in OpendTect are described in detail in the <a href="https://prism.ucalgary.ca/handle/1880/51900" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText> by Mryka Hall-Beyer.</p>
         <p>GLCM texture attributes come from image processing and were developed to capture roughness / smoothness of an image. The attribute response is calculated in two steps: First the GLCM is computed for an area (volume) around the evaluation point. Secondly a statistical property from the GLCM is returned. The GLCM is a 2D matrix that captures how often the neighbor values A and B occur in an image. Look at the GLCM as a matrix of N x N dimensions that captures the amplitude response of the reference position in the columns and the amplitudes of the neighboring position in the rows. N is the range of all values the data can have. Let's say we have a data set in which amplitudes can have values 0,1,2,or 3 (GLCM matrix is 4 x 4). We then fill the matrix by comparing each amplitude in the input area (volume) with its direct neighbor and increase the occurrence of the corresponding matrix cell. The matrix is made symmetrical by comparing neighbors in both directions: reference vs neighbor and neighbor vs reference, and it is normalized by dividing through the total number of occurrences. The normalized GLCM matrix is a kind of a probability matrix that tells us how probable it is to find pairs of neighboring amplitudes in the area (volume) around the evaluation point.</p>
         <p>In OpendTect the GLCM is computed on re-scaled data. The input data is re-scaled linearly to 4-bits (values ranging from 0 to 15; GLCM 16 x 16), or to 5-bits (values from 0 to 31; GLCM matrix 32 x 32). To re-scale the data the user must give the clipping range of the input data. Neighbors are compared in the inline and cross-line directions. The matrix is further filled by looping over the user-defined time-gate. Note that when dip-steering is used the input extraction area (volume) follows the local stratigraphy, which leads to better responses in dipping strata.</p>
         <p>Texture attributes in seismic interpretation are typically used in facies analysis. They can be used in their own right, or (when you have access to the Neural Network plugin) as inputs to a neural network to create 3D seismic facies volumes. This can be done in a supervised approach (MLP network), or in an unsupervised approach (UVQ network).</p>
@@ -143,7 +143,7 @@
         </p>
         <ul>
             <li>Chopra, S. and Alexeev, V., 2005. Application of texture attribute analysis to 3D seismic data. CSEG Recorder, Sep. 2005 pp 29-32.</li>
-            <li>Hall-Beyer, M. <a href="http://www.fp.ucalgary.ca/mhallbey/tutorial.htm" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText>. Available: Online [Accessed 9 Oct. 2012].</li>
+            <li>Hall-Beyer, M. <a href="https://prism.ucalgary.ca/handle/1880/51900" target="_blank" MadCap:conditions="Default.ScreenOnly">GLCM Texture Tutorial</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">GLCM Texture Tutorial</MadCap:conditionalText>. Available: Online [Accessed 9 Oct. 2012].</li>
         </ul>
     </body>
 </html>
