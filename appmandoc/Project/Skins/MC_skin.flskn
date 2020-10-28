@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultSkin
-  Version="1"
-  SkinType="WebHelpMobile"
-  Comment="Mobile skin"
-  Tabs="TOC,Search">
-  <Stylesheet />
-</CatapultSkin>
