@@ -12,6 +12,48 @@
         </blockquote>
         <p>OpendTect Machine Learning comes with its own Miniconda Python environment. Users who prefer to work in a private Python environment can change the <b>Python environment</b> here. If a <b>Custom</b> environment is selected you need to specify the root of the environment. The <b>Virtual</b> <b>environment</b>: odmlpython-cuda10 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
         <p>The <b>Custom Module Path</b> is the path for Python developers in which they develop private Machine Learning Models in this environment. All models in the given directory, which are named: ‘<b>mlmodel</b>….” will appear in the UI of the Machine Learning Control Center and can thus be applied to other data sets.</p>
+        <p>&#160;</p>
+        <p>When the Python ecosystem has been installed, the link between OpendTect and Python can be set up and customized through a dedicated settings dialog in the OpendTect utilities menu (above image).</p>
+        <p>&#160;</p>
+        <p>The default Python environment will point to the Python packages installed using the installation manager, if they have been installed.</p>
+        <p>&#160;</p>
+        <p>Three options are available:</p>
+        <blockquote>
+            <ol>
+                <li>
+                    <p><b>Internal</b>(default option) if the environments provided by the installer are installed.</p>
+                </li>
+                <li>
+                    <p><b>System</b> installation of Python </p>
+                </li>
+                <li>
+                    <p><b>Custom</b> if a user has their own Python environment installed:</p>
+                </li>
+            </ol>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <ul>
+                    <li>
+                        <p>For advanced users who have their own Python environment or which are using a distribution of Python such as anaconda, the Python settings can be altered to have OpendTect to use it directly instead of the Python distribution provided with OpendTect.</p>
+                    </li>
+                    <li>
+                        <p>The user must ensure that the selected “Custom” environment contains all the Python modules required by the OpendTect Machine Learning plugin. These are specified in the <a href="https://doc.opendtect.org/6.6.0/doc/dgb_userdoc/Default.htm#machine_learning.htm?TocPath=3%2520Machine%2520Learning%257C_____0" target="_blank">plugin’s documentation</a>.</p>
+                    </li>
+                    <li>
+                        <p>The user can add the path of its Python source code, to locally installed Python modules in the “Custom Module Path”. Such that it becomes accessible to extend the capabilities of the Machine Learning plugin by adding new custom models to train on. This path will be added to the PYTHONPATH of Python environments launched by OpendTect. The default location is under ($HOME, or $HOME/.od).</p>
+                    </li>
+                    <li>
+                        <p>The <b>Edit</b> button allow easy editing of the file without leaving OpendTect.</p>
+                    </li>
+                </ul>
+            </blockquote>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Utilities/utils_python_settings_test_icon.png" class="General_Image" style="width: 109px;height: 36px;" /> This testing tool option, checks if OpendTect can run Python commands and retrieve their output. It shows a list of the installed modules for the selected setup.</p>
+        <p>The user can also launch a terminal/ console prompt with the selected environment activated. Such window can be launched anywhere in OpendTect using the short-key CTRL-T.</p>
+        <p>&#160;</p>
         <p>The <b>Python IDE Command</b> is the Python editor you wish to use. You can launch the IDE using the specified <b>Command</b>, Optionally with some <b>Arguments</b> from a <b>Python Command Window</b>. Alternatively, you can add an <b>icon</b> to your plugin toolbar by pressing the corresponding icon in this window. In this case the <b>Spyder icon</b> with Spyder <b>Tool Tip</b> is added to the icon toolbar, as seen in the image below:</p>
         <blockquote>
             <p>
