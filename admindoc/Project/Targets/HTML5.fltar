@@ -11,7 +11,7 @@
   BrowseSequence="/Project/Advanced/Browse Sequences/BrowseSequence.flbrs"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   EnableSitemap="true"
-  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/admindoc/"
+  SitemapWebUrl="https://doc.opendtect.org/6.6.0/doc/admindoc/"
   PreCompileScaledImages="false"
   MakeFileLowerCase="true"
   ReplaceSpacesWithUnderscores="true"

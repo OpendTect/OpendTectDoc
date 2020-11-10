@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Prepare offline installation packages</h1>
+        <p>Offline installation packages can be created with the OpendTect Installation Manager. It is useful to do this if you want to install OpendTect on a system that has no access to Internet. Please follow these steps to create such offline installation packages:</p>
+        <ol>
+            <li>
+                <p>Download the OpendTect Installation Manager for Linux or Windows from the <a href="https://dgbes.com/index.php/download" target="_blank">OpendTect download page</a>.</p>
+            </li>
+            <li>
+                <p>Run the installer</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>On Linux in the terminal run <code>sh OpendTect_Installer_lux64.sh</code></p>
+                    </li>
+                    <li>
+                        <p>On Windows simply double click on OpendTect_Installer_win64.exe</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the Installation Manager window select Prepare offline installation packages. </p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>On Linux the default path of where the od_offline_lux64 or od_offline_win64 Download directory will be created will be /tmp/ . On Windows this is the user's AppData\Local\Temp. It is possible to select another path.</p>
+                    </li>
+                    <li>
+                        <p>At platform choose between Linux (64 bits) or Windows (64 bits).</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the Proceed button to start creating the offline installation package.<br /><img src="../../Resources/Images/prepare-offline-installation1.png" style="width: 524px;height: 259px;" /><br /><small>Figure:&#160;Prepare offline installation packages</small><br /></p>
+            </li>
+            <li>
+                <p>The rest of the setup is identical to the usual way of installing OpendTect. You pick the packages that need to be included in the installation and click the <i>Proceed</i> button.</p>
+            </li>
+            <li>
+                <p>When the offline installation package has been created this will be shown in the information window.<br /><img src="../../Resources/Images/prepare-offline-installation2.png" style="width: 434px;height: 131px;" /><br /><small>Figure:&#160;OpendTect offline-installation packages created successfully</small><br /></p>
+            </li>
+            <li>
+                <p>The offline installation folder can now be transferred to the offline system by copying the folder via an USB stick or some other way onto the offline system.</p>
+            </li>
+        </ol>
+    </body>
+</html>

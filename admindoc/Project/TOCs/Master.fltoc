@@ -50,6 +50,12 @@
           Link="/Content/Installation/OpendTect/Licenses/Clear-license-installation.htm" />
       </TocEntry>
       <TocEntry
+        Title="Prepare offline installation packages"
+        Link="/Content/Installation/OpendTect/Prepare-offline-installation-packages.htm"></TocEntry>
+      <TocEntry
+        Title="Installing OpendTect via offline installation package"
+        Link="/Content/Installation/OpendTect/Install-OpendTect-via-offline-installation-package.htm" />
+      <TocEntry
         Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
       <TocEntry
