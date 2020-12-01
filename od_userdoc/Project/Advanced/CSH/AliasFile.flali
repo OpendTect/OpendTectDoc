@@ -346,7 +346,7 @@
     <Map Name="mProgressViewerHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mRandomLineManHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mSeis2DTo3DHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D.htm" />
-    <Map Name="mSeisCopyHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics/Copy_Data Set.htm" />
+    <Map Name="mSeisCopyHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube.htm" />
     <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Format_Scaling.htm" />
     <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm" />
     <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
