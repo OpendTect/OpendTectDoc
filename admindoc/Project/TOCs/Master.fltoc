@@ -72,6 +72,19 @@
         Link="/Content/Installation/OpendTect/Firewall-Rules-and-Open-Ports.htm" />
     </TocEntry>
     <TocEntry
+      Title="Python environments"
+      Link="/Content/Installation/Python_environments.htm">
+      <TocEntry
+        Title="Information about the OpendTect Python environments"
+        Link="/Content/Installation/Python_environments/Information-about-the-OpendTect-Python-environments.htm" />
+      <TocEntry
+        Title="Installing Python environments with the OpendTect installer"
+        Link="/Content/Installation/Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm" />
+      <TocEntry
+        Title="Installing Python environments from YAML files"
+        Link="/Content/Installation/Python_environments/Installing-Python-environments-from-YAML-files.htm" />
+    </TocEntry>
+    <TocEntry
       Title="License server"
       Link="/Content/Installation/License_server.htm"
       StartSection="false"
