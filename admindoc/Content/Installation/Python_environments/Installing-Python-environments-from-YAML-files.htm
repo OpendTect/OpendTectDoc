@@ -154,5 +154,30 @@
                 <p>Or you can download and install <a href="https://developer.nvidia.com/cuda-10.1-download-archive-update2?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10&amp;target_type=exelocal" target="_blank">CUDA&#160;Toolkit 10.1 update 2 from the Nvidia CUDA site</a>.<br />After installation add <span style="font-family: 'Courier New'; font-size: 10pt;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\lib64</span> to the System environment variable Path.</p>
             </li>
         </ol>
+        <h2>Setting Python environment in OpendTect</h2>
+        <p>To use the environment that has been installed with the YAML file, please do the following:</p>
+        <ol>
+            <li>
+                <p>Start OpendTect <MadCap:variable name="Variables.VersionNumber" /></p>
+            </li>
+            <li>
+                <p>From the menu choose Utilities &gt; Installation &gt;&#160;Python Settings</p>
+            </li>
+            <li>
+                <p>Set Python environment to Custom</p>
+            </li>
+            <li>
+                <p>As Custom environment root choose the root directory of your own miniconda3 or anaconda3 installation.</p>
+            </li>
+            <li>
+                <p>As Virtual environment choose odmlpython-cpu-mkl or odmlpython-cuda10</p>
+            </li>
+            <li>
+                <p>If you want to use a Python IDE you can choose spyder or idle3 that come with the environment or choose your own IDE.</p>
+            </li>
+            <li>
+                <p>Press OK&#160;to save the Python settings.</p>
+            </li>
+        </ol>
     </body>
 </html>
