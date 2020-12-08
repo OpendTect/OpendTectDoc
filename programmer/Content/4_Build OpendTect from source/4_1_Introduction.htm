@@ -9,15 +9,43 @@
         <p><b>Requirements</b>
         </p>
         <p>A C++ compiler and compilation tool chain:</p>
-        <p><i>Windows</i>: msvc2017 64 bit. The free community edition is sufficient.</p>
-        <p><i>macOS</i>:</p>
-        <p><i>Linux:</i> gcc 64 bit version 4.8.5 or higher</p>
-        <p>CMake version 2.8 or higher</p>
+        <ul>
+            <li>
+                <p><i>Windows</i>: msvc2019 64 bit. The free community edition is sufficient.</p>
+            </li>
+            <li>
+                <p><i>macOS</i>: SDK 10.14</p>
+            </li>
+            <li>
+                <p><i>Linux:</i> gcc 64 bit version 5.4.0 or higher</p>
+            </li>
+        </ul>
+        <p>CMake version 3.14 or higher</p>
+        <p>The c++14 version is enabled by default on all platforms.</p>
         <p><b>Dependencies</b>
         </p>
         <p>To build the software you need to also download and install/build a few dependencies which probably are not installed in your system. The version of dependencies varies between the branches. The Qt dependencies are available in binary installers, the others have to be built from source.</p>
-        <p>BRANCH	DEPENDENCIES</p>
-        <p>od6.4.4, od6.4, od6.5	Qt 5.9.6, OpenSceneGraph 3.6.3, osgQt 3.5.7</p>
-        <p>master	Qt 5.12.3, OpenSceneGraph 3.6.3, osgQt 3.5.7</p>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">BRANCH	</td>
+                    <td style="font-weight: bold;">DEPENDENCIES</td>
+                </tr>
+                <tr>
+                    <td>main</td>
+                    <td>Qt 5.15.0, OpenSceneGraph 3.6.5, HDF5 1.12.0 (optional)</td>
+                </tr>
+                <tr>
+                    <td>od6.6.0, od6.6</td>
+                    <td>Qt 5.15.0, OpenSceneGraph 3.6.5, HDF5 1.12.0 (optional)</td>
+                </tr>
+                <tr>
+                    <td>od6.4.5, od6.4, od6.5</td>
+                    <td>Qt 5.9.6, OpenSceneGraph 3.6.3</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>

@@ -4,13 +4,20 @@
     </head>
     <body>
         <h2>4.2 <MadCap:concept term="Setting up the environment" />Setting up the environment</h2>
-        <p>To build OpendTect from source you need to pull the source code from https://github.com/OpendTect/OpendTect. Then build the solution with CMake. In this case launch CMake and browse to your OpendTect source folder and start configuring and generating from CMake. CMake will prompt for Qt and OpenSceneGraph directory location, select them from CMake itself and continue. Once the projects and solution are generated you can start building OpendTect.</p>
-        <p>Qt</p>
-        <p>Go to <a href="https://www.qt.io/download" target="_blank">https://www.qt.io/download</a> to download the required QT binaries by using their online installation tool. Be sure to select only the components you require, as it is very space consuming to install all components of QT. For building the master branch QT 5.12.3 is required, for branches 6.6, 6.4.4, and 6.4 QT 5.9.6 is required. For building with Visual studio download the MSVC 2017 64-bit component, also select the appropriate QT WebEngine for installation in the same version.</p>
-        <p>&#160;</p>
-        <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a> , the 3.6.3 release version is needed for building all the latest branches of OpendTect.</p>
+        <h3>OpendTect source code</h3>
+        <p>To build OpendTect from source you need to pull the source code from <a href="http://the OpendTect GitHub respository">https://github.com/OpendTect/OpendTect</a>. Then build the solution with CMake. In this case launch CMake and browse to your OpendTect source folder and start configuring and generating from CMake. CMake will prompt for Qt and OpenSceneGraph directory location, select them from CMake itself and continue. Once the projects and solution are generated you can start building OpendTect.</p>
         <p>You can use the following git commands to clone the repositories to your local machine.</p>
-        <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch master od</p>
+        <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch main od</p>
         <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch od6.6 od6.6</p>
+        <h3>CMake</h3>
+        <p>Download CMake from <a href="https://cmake.org/download/">https://cmake.org/download/</a>.</p>
+        <h3>Qt</h3>
+        <p>Go to <a href="https://www.qt.io/download" target="_blank">https://www.qt.io/download</a> to download the required QT binaries by using their online installation tool. Be sure to select only the components you require, as it is very space consuming to install all components of QT.</p>
+        <p> For building the main, od6.6.0 and od6.6 branch QT 5.15.0 is required. For branches od6.4.5, od6.4 and od6.5 QT 5.9.6 is required. </p>
+        <p>For building with Visual studio select the MSVC 2019 64-bit component (Windows), SDK 10.14 (MacOS) or gcc 64 bit (Linux). Also select the appropriate Q WebEngine for installation in the same version. Optionally you can also install source code and/or debug information files.</p>
+        <h3>OSG</h3>
+        <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a>. The 3.6.5 release version is needed for building the main, od6.6.0 and od6.6 branches of OpendTect. The 3.6.3 release version is needed for building the od6.4.5, od6.4 and od6.5 branches.</p>
+        <h3>HDF5 (optional)</h3>
+        <p>The link to HDF5 requires to provide the path to an existing HDF5 installation. All versions above 1.10.3 are supported, but using the current API 1.12 is preferred. Installation is best done using their binary installations (on Windows especially), or from the package manager on Linux. Windows developpers however need to recompile the sources since no debug binary libraries can be downloaded.</p>
     </body>
 </html>
