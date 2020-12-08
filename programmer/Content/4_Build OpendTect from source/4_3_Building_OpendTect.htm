@@ -4,9 +4,58 @@
     </head>
     <body>
         <h2>4.3 Building OpendTect<MadCap:concept term="Building OpendTect" /></h2>
-        <p>Building in CMAKE</p>
-        <p>Run CMAKE and select the folders for the source code and where to build the binaries (for example C:\dev\od for both). Press configure, it will give an error, do not worry, and click OK. Fill in the QTDIR with the path to your installed QT folder. Give the whole path including the folder msvc2019_64 and configure again.</p>
-        <p>Press OK on the error warning, and now give the path to your OSG 3.6.5 release directory and configure again.</p>
-        <p>If it says configuring done, press the generate button to build the solution files. Now you can open the OpendTect.sln file!</p>
+        <h3>Windows</h3>
+        <p>Run CMake and select the folders for the source code and where to build the binaries (for example C:\dev\od for both).</p>
+        <p>Configure CMake. Select generator Visual Studio 16 2019 and platform x64. Then set the following variables:</p>
+        <ul>
+            <li>
+                <p>QTDIR= set this to the Qt install path for the appropriate version of Qt for the OpendTect version, e.g. C:\Qt\5.15.0\msvc2019_64</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>OSG_DIR="OpenSceneGraph install path"</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>HDF5_ROOT="HDF5 install location" (optional)</p>
+            </li>
+        </ul>
+        <p> Press configure.  If it says configuring done, press the generate button to build the solution files.</p>
+        <p>Start Visual Studio 2019, open the OpendTect build solution (OpendTect.sln file) and build.</p>
+        <h3>Linux</h3>
+        <p>Configure CMake ensuring to set the following variables:</p>
+        <ul>
+            <li>
+                <p>QTDIR= set this to the Qt install location for the appropriate version of Qt for the OpendTect version</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>OSG_DIR="OpenSceneGraph install location"</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>HDF5_ROOT="HDF5 install location" (optional)</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>OpenGL_GL_PREFERENCE=LEGACY</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>ZLIB_INCLUDE_DIR= set this if not being found by CMake</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>ZLIB_LIBRARY= set this if not being found by CMake</p>
+            </li>
+        </ul>
+        <p>Run make in the toplevel folder (i.e. where this README.MD file is located)</p>
     </body>
 </html>
