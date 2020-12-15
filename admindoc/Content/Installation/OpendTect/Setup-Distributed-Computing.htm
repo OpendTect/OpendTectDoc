@@ -57,7 +57,28 @@
             <img src="../../Resources/Images/Icons/downarrow.png" style="width: 32px;height: 32px;" /><b>Move</b> host up or down.</p>
         <p>
             <img src="../../Resources/Images/Icons/checkgreen.png" style="width: 32px;height: 32px;" /><b>Test hosts</b>. Will perform tests to ensure that the server and nodes can communicate to the necessary extent to perform the MMP. (ie: can the nodes find the data root folder and read/write into it)</p>
-        <p>&#160;</p>
+        <h2>Tips &amp; tricks</h2>
+        <p>In case you are having issues with the Distributed Computing between the server that launches the scheduler and the nodes please check the following:</p>
+        <ul>
+            <li>
+                <p>Can you ssh into the node(s) without having to type a password? e.g. run:&#160;<span style="font-family: 'Courier New'; font-size: 10pt;">ssh nodehostname ls -la</span></p>
+            </li>
+            <li>
+                <p>Can you the access the data project on the node(s)?&#160;e.g. run:&#160;<span style="font-family: 'Courier New'; font-size: 10pt;">ssh nodehostname ls -la /pathto/dataproject</span></p>
+            </li>
+            <li>
+                <p>Can you access OpendTect on the node(s)?&#160;e.g. run:&#160;<span style="font-family: 'Courier New'; font-size: 10pt;">ssh nodehostname ls -la /pathto/opendtect</span></p>
+            </li>
+            <li>
+                <p>When you run the scheduler is it listening on the port you set in the BatchHosts file? e.g. run: <span style="font-family: 'Courier New'; font-size: 10pt;">netstat -antpu | grep 37500</span></p>
+            </li>
+            <li>
+                <p>Is their a time difference on the server that is starting the scheduler and node(s)? It is a good idea to sync them via a ntp server.</p>
+            </li>
+            <li>
+                <p>Is the hostname resolution correct? Do the nodes get the correct IP&#160;address to which they need to connect?</p>
+            </li>
+        </ul>
         <p>For more information on this topic, please refer to <a href="https://www.youtube.com/channel/UCiaLX2p5rCcovOK_NAwpaOQ" target="_blank">OpendTect's Youtube Channel</a> where you may find the webinar: <a href="https://www.youtube.com/watch?v=9bEXxZ0RyxU" target="_blank">Multi-Machine Processing Setup</a>.</p>
     </body>
 </html>
