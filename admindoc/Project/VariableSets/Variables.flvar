@@ -15,7 +15,7 @@
   <Variable
     Name="PubYear"
     Comment=""
-    EvaluatedDefinition="2020">2020</Variable>
+    EvaluatedDefinition="2021">2021</Variable>
   <Variable
     Name="DocTitle"
     Comment=""
