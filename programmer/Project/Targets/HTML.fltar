@@ -39,4 +39,8 @@
       name="robots"
       content="index,follow" />
   </MetaTags>
+  <Variables>
+    <Variable
+      Name="Variables/PubYear">2021</Variable>
+  </Variables>
 </CatapultTarget>

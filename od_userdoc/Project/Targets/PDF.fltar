@@ -32,4 +32,8 @@
     ImageCompression="Automatic"
     ImagePPIThreshold="300" />
   <RelationshipTables />
+  <Variables>
+    <Variable
+      Name="Variables/PubYear">2021</Variable>
+  </Variables>
 </CatapultTarget>
