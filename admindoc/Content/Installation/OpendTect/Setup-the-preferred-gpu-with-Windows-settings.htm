@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Setup the preferred GPU with Windows settings</h1>
+        <p> Laptops with an Intel CPU usually come with two integrated graphic cards.&#160;The default one the laptop starts up with would be one such as Intel HD graphics. OpendTect however will have the best performance when using the Nvidia GPU. Therefore that one should be used instead.</p>
+        <p>When OpendTect starts it will scan your graphics card. If it finds an Intel card there will be a warning message: 'Intel card found. If your computer has multiple graphics cards, consider switching from the integrated graphics.'</p>
+        <p>
+            <img src="../../Resources/Images/setup-preferred-GPU-1.png" style="width: 222px;height: 331px;" />
+            <br /><small>Figure:&#160;Warning message about the Intel card</small>
+            <br />
+        </p>
+        <p>On Windows 10 feature release 20H2 and newer the Nvidia GPU can be made the preferred GPU with the Windows settings. We assume that you have installed the latest Nvidia driver that is available for your GPU. If not then please go to the <a href="https://www.nvidia.com/drivers">Nvidia website</a> and download and install the latest driver for your type of GPU. </p>
+        <p>In case you are running Windows 8.1 or 10 feature release 2004 or older the preferred GPU has to be <a href="Setup-the-preferred-gpu-with-nvidia-control-panel.htm">set with the NVIDIA Control Panel</a>.</p>
+        <p>Please do the following:</p>
+        <ol>
+            <li>Click the Start icon and then go to Settings &gt;&#160;System<br /><img src="../../Resources/Images/Windows10_set_graphics_preference1.png" /> <img src="../../Resources/Images/Windows10_set_graphics_preference2.png" /><br /><small>Figure:&#160;Navigating to the Windows system settings</small><br /><br /></li>
+            <li>Windows settings should open the display settings. Browse down to Graphics settings and click it.<br /><img src="../../Resources/Images/Windows10_set_graphics_preference3.png" /><br /><small>Figure:&#160;Display &gt;&#160;Graphics settings</small><br /><br /></li>
+            <li>Now choose an app to set the preference. OpendTect is a desktop app, so make sure that the drop down bar has "Desktop app" selected. Now click the&#160;"Browse" button and navigate to the OpendTect installation directory, e.g.:&#160;C:\Program&#160;Files\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release and add od_main.exe<br /><img src="../../Resources/Images/Windows10_set_graphics_preference4.png" /><img src="../../Resources/Images/Windows10_set_graphics_preference5.png" style="width: 422px;height: 334px;" /><br /><small>Figure:&#160;Choosing od_main.exe to set the GPU preferences</small><br /><br /></li>
+            <li>Now click the "Options" button and choose the High performance option and clicking the "Save" button for setting the Nvidia GPU as default for OpendTect.<br /><img src="../../Resources/Images/Windows10_set_graphics_preference6.png" /><img src="../../Resources/Images/Windows10_set_graphics_preference7.png" /><br /><small>Figure:&#160;Setting the Nvidia card as high performance graphics preference for OpendTect</small><br /><br /></li>
+            <li>The next time you start OpendTect it should no longer show the Intel card found message popup. To check the graphics card used in OpendTect you might want to check <i>Utilities &gt;&#160;Installation &gt;&#160;Graphics Information</i>. It should now show the Nvidia card information and driver version.<br /><img src="../../Resources/Images/setup-preferred-GPU-8.png" style="width: 384px;height: 264px;" /> <img src="../../Resources/Images/setup-preferred-GPU-9.png" style="width: 228px;height: 259px;" /><br /><small>Figure: Check which graphics card OpendTect uses</small><br /></li>
+        </ol>
+    </body>
+</html>

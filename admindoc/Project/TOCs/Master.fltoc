@@ -62,6 +62,9 @@
         Title="Setup the Preferred GPU with NVIDIA Control Panel"
         Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-nvidia-control-panel.htm" />
       <TocEntry
+        Title="Setup the preferred GPU with Windows settings"
+        Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-Windows-settings.htm" />
+      <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Setup-nvidia-gpu-performance-counters.htm" />
       <TocEntry
