@@ -47,6 +47,11 @@
                     <br />This error message occurs if the user has not enough permissions to create the log file in the path specified. To solve this error message either become a user that has permissions to create the log file in the specified path or create it in a path where the user has sufficient permissions, e.g. in the user's home directory. Debian/Ubuntu users may want to run <code>sudo ./lmgrd -c licensefile.lic -l debug.log</code><br /></p>
             </li>
             <li>
+                <p><code>license manager:&#160;can't initialize:&#160;Cannot read license file.</code>
+                    <br />
+                    <br />This error occurs if the user who starts the license server has no permissions to read the license file. To solve this change the owner of the license file.<br /></p>
+            </li>
+            <li>
                 <p><code>Can't make directory /usr/tmp/.flexlm, errno: 2(No such file or directory)</code>
                     <br />
                     <br />This error message occurs if there is no /usr/tmp folder on the system. It can be solved by creating a symbolic link /usr/tmp that points to /tmp, for example run as root user:<br /><br /><code>ln -s /tmp /usr/tmp</code><br /></p>

@@ -4,7 +4,22 @@
     </head>
     <body>
         <h1>Environment variables</h1>
-        <p>There are several environment variables that can be set. OpendTect will look for these environment variables. They can be set to get special features working or to use custom paths for certain functionality.</p>
+        <p>There are several environment variables that can be set. OpendTect will look for these environment variables. They can be set to:</p>
+        <ul>
+            <li>
+                <p> let OpendTect use the dGB license from the FlexNet license server,</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>get special features working,</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>or to use custom paths for certain functionality.</p>
+            </li>
+        </ul>
         <table style="width: 100%;">
             <col style="width: 312px;" />
             <col style="width: 184px;" />
@@ -17,6 +32,16 @@
                     </td>
                     <td><b>Description</b>
                     </td>
+                </tr>
+                <tr>
+                    <td>DGBLD_LICENSE_FILE</td>
+                    <td>port@host<br /><br />f.i. 27000@myserver</td>
+                    <td>Used on clients to use a dGB FlexNet&#160;server license.<br />- port = the TCP/IP port the license server is using<br />- host = the hostname of the license server<br /></td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>@host<br /><br />f.i. @myserver</td>
+                    <td>Used on clients to use a dGB FlexNet&#160;server license.<br />- host = the hostname of the license server<br />- port = not specified. A default TCP/IP port number in the range of 27000-27009 is used.<br /></td>
                 </tr>
                 <tr>
                     <td>DTECT_BATCH_HOSTS_FILEPATH</td>
@@ -45,8 +70,8 @@
                 </tr>
                 <tr>
                     <td>LM_LICENSE_FILE</td>
-                    <td>&#160;</td>
-                    <td>&#160;</td>
+                    <td>port@host or @host</td>
+                    <td>Although it works it is preferred to set DGBLD_LICENSE_FILE&#160;instead.</td>
                 </tr>
                 <tr>
                     <td>OD_USE_VIRTUALMEM</td>
