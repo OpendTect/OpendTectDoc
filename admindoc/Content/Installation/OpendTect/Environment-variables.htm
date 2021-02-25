@@ -44,6 +44,11 @@
                     <td>Used on clients to use a dGB FlexNet&#160;server license.<br />- host = the hostname of the license server<br />- port = not specified. A default TCP/IP port number in the range of 27000-27009 is used.<br /></td>
                 </tr>
                 <tr>
+                    <td>&#160;</td>
+                    <td>path to license file<br /></td>
+                    <td>Used on clients to use a  node-locked or floating license.<br />- path to license file = exactly that. Place the license file in a network location available to all machines running OpendTect or copy it to all of the machines running OpendTect (Typically:&#160;C:\Licenses)<br /></td>
+                </tr>
+                <tr>
                     <td>DTECT_BATCH_HOSTS_FILEPATH</td>
                     <td>Path to a BatchHosts file</td>
                     <td>This sets the path to a tailor-made BatchHosts file. If it is not set then OpendTect will use the default BatchHosts file in the OpendTect installation directory, e.g. C:\Program Files\OpendTect\6.6.0\data\BatchHosts .</td>
@@ -70,7 +75,7 @@
                 </tr>
                 <tr>
                     <td>LM_LICENSE_FILE</td>
-                    <td>port@host or @host</td>
+                    <td>port@host or @host or path to the license file</td>
                     <td>Although it works it is preferred to set DGBLD_LICENSE_FILE&#160;instead.</td>
                 </tr>
                 <tr>

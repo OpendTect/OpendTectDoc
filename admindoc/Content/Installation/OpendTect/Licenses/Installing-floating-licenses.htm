@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Installing floating licenses</h1>
+        <p>A floating license is to be installed on a server. This license server can be Linux, Mac or Windows. See here for instructions on <a href="../../License_server/Installing-license-server-on-Linux.htm">how to install the license server on Linux</a> and <a href="../../License_server/Installing-license-server-on-Windows.htm">how to install the license server on Windows</a>.</p>
+        <p>There are two ways for installing the floating license on a client:</p>
+        <ol>
+            <li>
+                <p>By setting the DGBLD_LICENSE_FILE environment variable</p>
+            </li>
+            <li>
+                <p>By using the FlexNet lmpath tool via console/command prompt or on Windows through the License Manager Tools (lmtools.exe)</p>
+            </li>
+        </ol>
+        <h2>Setting the DGBLD_LICENSE_FILE environment variable</h2>
+        <p>The DGBLD_LICENSE_FILE environment variable can be set to a license file or to the server host.</p>
+        <p>On Linux the variable can be set with the export or setenv command.</p>
+        <p>On Windows the variable can be set via Control Panel &gt;&#160;System&#160;&gt;&#160;Advanced system settings&#160;&gt;&#160;Environment Variables. Please note that a user environment variable is only available for the user who sets the variable. It might be a better choice to set the variable as a system environment variable. It then can be globally accessed by all users.</p>
+        <p>The possible values are:</p>
+        <ul>
+            <li>
+                <p>port@host</p>
+            </li>
+            <li>
+                <p>@host</p>
+            </li>
+            <li>
+                <p>path to license file</p>
+            </li>
+        </ul>
+        <p>- port = the TCP/IP port the license server is using. If port is not specified in front of @home a default TCP/IP port number in the range of 27000-27009 is used.<br />- host = the hostname of the license server. This comes from the SERVER line in the license file.<br />- path to license file = exactly that. Place the license file in a network location available to all machines running OpendTect or copy it to all of the machines running OpendTect (Typically:&#160;C:\Licenses)</p>
+        <h2>Using the FlexNet lmpath tool</h2>
+        <p>The lmpath tool can be used to add to, override, or get the current license path settings.<br />This and other FlexNet tools are packaged in a single executable lmutil or lmutil.exe.<br />OpendTect <MadCap:variable name="Variables.VersionNumber" />.0 ships these tools. They can be found in the following paths:&#160;</p>
+        <ul>
+            <li>
+                <p>For Linux:&#160;OpendTect/<MadCap:variable name="Variables.VersionNumber" />.0/bin/lux64/lm.dgb</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>For Windows: OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\lm.dgb</p>
+            </li>
+        </ul>
+        <p>To set it on Linux run:<br /><code>./lmutil lmpath -override dgbld port@host</code> or <code>./lmutil lmpath -override dgbld licensefile</code><br /><br />On Windows run:<br /><code>lmutil.exe lmpath -override dgbld port@host</code> or <code>lmutil.exe lmpath -override dgbld licensefile</code><br /></p>
+        <p>Note: lmpath sets the file $HOME/.flexlmrc on Linux and the FlexNet Licensing registry entry on Windows platforms.</p>
+        <p>To display the current license path setting, use on Linux the command: <br /><code>./lmutil lmpath -status</code><br />Or on Windows:<br /><code>lmutil.exe lmpath -status</code><br /></p>
+        <p>For a status of the currently in use licenses, use on Linux the command: <br /><code>./lmutil lmstat -a -c port@host</code><br />Or on Windows:<br /><code>lmutil.exe lmstat -a -c port@host</code></p>
+    </body>
+</html>

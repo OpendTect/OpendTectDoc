@@ -43,8 +43,12 @@
           Title="Licensing and Host IDs"
           Link="/Content/Installation/OpendTect/Licenses/Licensing-and-Host-IDs.htm" />
         <TocEntry
-          Title="Installing Licenses"
-          Link="/Content/Installation/OpendTect/Licenses/Installing-licenses.htm"></TocEntry>
+          Title="Installing demo/node-locked Licenses"
+          Link="/Content/Installation/OpendTect/Licenses/Installing-demo-node-locked-licenses.htm"
+          StartSection="false"></TocEntry>
+        <TocEntry
+          Title="Installing floating licenses"
+          Link="/Content/Installation/OpendTect/Licenses/Installing-floating-licenses.htm" />
         <TocEntry
           Title="Clear License Installation"
           Link="/Content/Installation/OpendTect/Licenses/Clear-license-installation.htm" />
