@@ -51,7 +51,7 @@
     <Map Name="mSurveyInfoEditorHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
     <Map Name="mGenRanLinesByContourHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
-    <Map Name="mIOObjSelDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Input Selection.htm" />
+    <Map Name="mIOObjSelDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Input_Selection.htm" />
     <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm#autoloadsession" />
     <Map Name="mColTabImportHelpID" Link="/Content/Survey/Import/Import_Color_Table.htm" />
     <Map Name="mImpPVDSHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
@@ -189,7 +189,7 @@
     <Map Name="mGoogleExport2DSeisHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics/Manage_2D_Seismic_Lines/Export_2D_Geometry_To_Google_Earth.htm" />
     <Map Name="mSeis2DManHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics/Manage_2D_Seismic_Lines.htm" />
     <Map Name="mMergeSeisHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Merge_Files.htm" />
-    <Map Name="mPosProvSelHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Volume_Sub-Selection.htm" />
+    <Map Name="mPosProvSelHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Volume_Sub-Selection.htm" />
     <Map Name="mHorInterFillerHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Horizon-Based_Painter.htm" />
     <Map Name="mVoxelConnectivityFilterHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Voxel_Connectivity_Filter.htm" />
     <Map Name="mVelocityGridderHelpID" Link="/Content/Analysis/Volume_Builder_Setup/Velocity_Gridder.htm" />
@@ -347,7 +347,7 @@
     <Map Name="mRandomLineManHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mSeis2DTo3DHelpID" Link="/Content/Processing/Create_Seismic_Output/Conversions_2D_To_3D.htm" />
     <Map Name="mSeisCopyHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube.htm" />
-    <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Format_Scaling.htm" />
+    <Map Name="mSeisFmtScaleDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Format_Scaling.htm" />
     <Map Name="muiEMDataPointSetPickDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm" />
     <Map Name="mViewer2DPSMainWindisplayAngleHelpID" Link="/Content/Getting_Started/Viewer_2D.htm" />
     <Map Name="mViewer2DPSMainWinHelpID" Link="/Content/Getting_Started/Viewer_2D/Pre-Stack_2D_Viewer.htm" />

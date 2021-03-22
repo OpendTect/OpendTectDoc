@@ -548,10 +548,10 @@
             Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube.htm">
             <TocEntry
               Title="4.5.12.1.1.1 Copy - Volume Sub-Selection"
-              Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Volume_Sub-Selection.htm" />
+              Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Volume_Sub-Selection.htm" />
             <TocEntry
               Title="4.5.12.1.1.2 Copy - Format &amp; Scaling"
-              Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Copy-Format_Scaling.htm" />
+              Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Format_Scaling.htm" />
           </TocEntry>
           <TocEntry
             Title="4.5.12.1.2 Merge Files"
