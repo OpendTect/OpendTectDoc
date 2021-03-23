@@ -580,7 +580,7 @@
         Title="4.5.12 Manage Seismic Data"
         Link="/Content/Survey/Manage/Manage_Seismics.htm">
         <TocEntry
-          Title="4.5.12.1 Manage 3D Seismics"
+          Title="4.5.12.1 Manage 3D Seismic Data"
           Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics.htm">
           <TocEntry
             Title="4.5.12.1.1 Copy Cube"
@@ -606,7 +606,7 @@
             Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Browse_Edit_Cube_Locations.htm" />
         </TocEntry>
         <TocEntry
-          Title="4.5.12.2 Manage 2D Seismics"
+          Title="4.5.12.2 Manage 2D Seismic Data"
           Link="/Content/Survey/Manage/Manage_Seismics/Manage_2D_Seismics.htm">
           <TocEntry
             Title="4.5.12.2.1 Manage 2D Seismic Lines"
@@ -630,13 +630,13 @@
         </TocEntry>
       </TocEntry>
       <TocEntry
-        Title="4.5.13 Manage Seismics Prestack"
+        Title="4.5.13 Manage Seismic Prestack Data"
         Link="/Content/Survey/Manage/Manage_Seismics_Prestack.htm">
         <TocEntry
-          Title="4.5.13.1 Manage 3D Prestack"
+          Title="4.5.13.1 Manage 3D Prestack Data"
           Link="/Content/Survey/Manage/Manage_Seismics_Prestack/Manage_3D_Prestack.htm" />
         <TocEntry
-          Title="4.5.13.2 Manage 2D Prestack"
+          Title="4.5.13.2 Manage 2D Prestack Data"
           Link="/Content/Survey/Manage/Manage_Seismics_Prestack/Manage_2D_Prestack.htm" />
       </TocEntry>
       <TocEntry
