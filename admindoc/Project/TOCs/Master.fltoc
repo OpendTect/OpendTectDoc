@@ -60,6 +60,9 @@
         Title="Installing OpendTect via offline installation package"
         Link="/Content/Installation/OpendTect/Install-OpendTect-via-offline-installation-package.htm" />
       <TocEntry
+        Title="Setup Python Settings"
+        Link="/Content/Installation/OpendTect/Setup-Python-Settings.htm" />
+      <TocEntry
         Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
       <TocEntry
