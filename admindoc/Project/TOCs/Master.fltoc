@@ -115,6 +115,9 @@
       Link="/Content/Installation/Petrel_Plugin.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
+    Title="3 Troubleshooting"
+    Link="/Content/Troubleshooting.htm" />
+  <TocEntry
     Title="Appendix A - FlexNet Licenses Explained"
     Link="/Content/Appendix/AppendixA-FlexNet-Licenses-Explained.htm" />
 </CatapultToc>

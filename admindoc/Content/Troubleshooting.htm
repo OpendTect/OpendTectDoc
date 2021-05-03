@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Troubleshooting</h1>
+        <p>When experiencing issues with OpendTect there are several ways to troubleshoot:</p>
+        <p>You can </p>
+        <ul>
+            <li>
+                <p>look in the log file(s) inside the <i>Survey Data Root\LogFiles</i> and %TEMP% folder;</p>
+            </li>
+            <li>
+                <p>review, modify and/or delete the OpendTect settings in the <i>$HOME/.od</i> folder on Linux or <i>%UserProfile%\.od</i> on Windows;</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>set environment variable DTECT_DEBUG to yes to get more information from OpendTect in terminal or Command Prompt when starting OpendTect.</p>
+            </li>
+            <li>
+                <p>set environment variable QT_DEBUG_PLUGINS to 1 to get more information about Qt in terminal or Command Prompt when starting OpendTect or for the OpendTect installer (Linux only).</p>
+            </li>
+        </ul>
+        <p>You can also</p>
+        <ul>
+            <li>
+                <p>look for an answer on the <a href="https://groups.google.com/a/opendtect.org/forum/#!forum/users" target="_blank">OpendTect Users Group</a> or use your favorite search engine;</p>
+            </li>
+            <li>
+                <p>send an email to the OpendTect Users Group via <a href="mailto:users@opendtect.org">users@opendtect.org</a>. To post one needs to be a member. Please read the <a href="https://dgbes.com/index.php/support/faq-users-google-group" target="_blank">dgbes.com Users Group Q&amp;A page</a> for the FAQ on how to become a member. Perhaps someone in the group experienced the same issue and/or can tell you how to fix the issue;</p>
+            </li>
+            <li>
+                <p>get priority support for commercial users by sending an email to <a href="mailto:support@dgbes.com">support@dgbes.com</a>.</p>
+            </li>
+        </ul>
+        <h2>Log files</h2>
+        <p>Every time OpendTect starts a logfile is created in the <i>Survey Data Root\LogFiles</i> folder. The naming of the log file is username_datetime.txt file. </p>
+        <p>
+            <img src="Resources/Images/troubleshooting-LogFiles.png" />
+            <br /><small>Figure:&#160;log files in LogFiles folder </small>
+            <br />
+        </p>
+        <p>The OpendTect Installer writes logfiles into the <i>/tmp</i> folder on Linux or <i>%TEMP%</i> folder on Windows, the naming of these files are:</p>
+        <ul>
+            <li>
+                <p>username_od_instmgr_install_log.txt</p>
+            </li>
+            <li>
+                <p>username_od_instmgr_updcheck_log.txt</p>
+            </li>
+        </ul>
+        <p>
+            <img src="Resources/Images/troubleshooting-installer-logs.png" />
+            <br /><small>Figure:&#160;OpendTect installer log files </small>
+            <br />
+        </p>
+        <h2>Settings files in .od folder</h2>
+        <p>OpendTect writes it's settings into the <i>$HOME/.od</i> folder on Linux or <i>%UserProfile%\.od</i> on Windows. You can find the following files:</p>
+        <ul>
+            <li>
+                <p>qtsettings_odver; e.g. qtsettings_660</p>
+            </li>
+            <li>
+                <p>settings</p>
+            </li>
+            <li>
+                <p>settings_coltabs</p>
+            </li>
+            <li>
+                <p>settings_dataroot</p>
+            </li>
+            <li>
+                <p>settings_presentation</p>
+            </li>
+            <li>
+                <p>settings_python</p>
+            </li>
+            <li>
+                <p>settings_snapshot</p>
+            </li>
+            <li>
+                <p>settings_welldisp</p>
+            </li>
+            <li>
+                <p>settings_welltie</p>
+            </li>
+            <li>
+                <p>survey</p>
+            </li>
+        </ul>
+        <p>If one or more of the above listed settings files does not exist in your .od directory this means that OpendTect had not any reason to create the settings file. </p>
+        <p>Edit these files is on your own risk. If you delete them OpendTect will create a new file when needed. If a file gets corrupt then that is exactly what you want to do.</p>
+        <h2>Debugging OpendTect</h2>
+        <p>The default setting is that OpendTect only shows minimum debug info when starting OpendTect via the <i>start_dtect</i> script on Linux. Windows users will not see any debug info when starting <i>od_main.exe</i>. </p>
+        <p>In order to get more debug information an environment variable DTECT_DEBUG needs to be set to yes.</p>
+        <p>It is also possible to get debug information from Qt by setting an environment variable QT_DEBUG_PLUGINS to 1. On Linux one can also get Qt debug information when launching the OpendTect Installer.</p>
+        <p>When launching <i>start_dtect</i> from terminal on Linux the debug messages will be visible in the terminal.</p>
+        <p>Windows users will have to launch the Command Prompt, change the directory to <i>path_to\OpendTect\6.6.0\bin\win64\Release</i> directory and from there run <i>od_main_console.exe</i></p>
+        <p>
+            <img src="Resources/Images/troubleshooting-start-od_main_console.png" />
+            <br /><small>Figure:&#160;starting od_main_console.exe </small>
+        </p>
+    </body>
+</html>
