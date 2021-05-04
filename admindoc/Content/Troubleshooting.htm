@@ -19,7 +19,7 @@
                 <p>set environment variable DTECT_DEBUG to yes to get more information from OpendTect in terminal or Command Prompt when starting OpendTect.</p>
             </li>
             <li>
-                <p>set environment variable QT_DEBUG_PLUGINS to 1 to get more information about Qt in terminal or Command Prompt when starting OpendTect or for the OpendTect installer (Linux only).</p>
+                <p>set environment variable QT_DEBUG_PLUGINS to 1 to get more information about Qt in terminal or Command Prompt when starting OpendTect (Linux and Windows) or for the OpendTect installer (Linux only).</p>
             </li>
         </ul>
         <p>You can also</p>
@@ -31,7 +31,24 @@
                 <p>send an email to the OpendTect Users Group via <a href="mailto:users@opendtect.org">users@opendtect.org</a>. To post one needs to be a member. Please read the <a href="https://dgbes.com/index.php/support/faq-users-google-group" target="_blank">dgbes.com Users Group Q&amp;A page</a> for the FAQ on how to become a member. Perhaps someone in the group experienced the same issue and/or can tell you how to fix the issue;</p>
             </li>
             <li>
-                <p>get priority support for commercial users by sending an email to <a href="mailto:support@dgbes.com">support@dgbes.com</a>.</p>
+                <p>get priority support for commercial users by sending an email to the OpendTect Support: <a href="mailto:support@dgbes.com">support@dgbes.com</a>;</p>
+            </li>
+            <li>
+                <p>choose to submit a crash report in the event of a malfunction of OpendTect. This crash report contains information that will help OpendTect's developers to locate and fix the issue. If you choose to identify yourself in the comments, the crash report will be added to your file by OpendTect developers, and OpendTect support may contact you for more information, or inform you about the fixes of the issue.<br /><br />The crash report is a text-file that contains:</p>
+                <ul>
+                    <li>
+                        <p>Technical information about the crash.</p>
+                    </li>
+                    <li>
+                        <p>Technical information about the computer such as amount of memory, number of computer cores and a unique system ID. The unique system ID is hashed, and cannot be used to identify the user.</p>
+                    </li>
+                    <li>
+                        <p>Any comments and/or email you add to the crash report before sending it.</p>
+                    </li>
+                    <li>
+                        <p>The IP address of the user.</p>
+                    </li>
+                </ul>
             </li>
         </ul>
         <h2>Log files</h2>
@@ -89,8 +106,8 @@
                 <p>survey</p>
             </li>
         </ul>
-        <p>If one or more of the above listed settings files does not exist in your .od directory this means that OpendTect had not any reason to create the settings file. </p>
-        <p>Editing of these files is at your own risk. If you delete them OpendTect will create a new file when needed. If a file gets corrupt then that is exactly what you want to do.</p>
+        <p>If one or more of the above listed settings files, like the settings_coltabs, does not exist in your .od directory this means that OpendTect had not any reason to create the settings file. </p>
+        <p>Editing of these files is at your own risk. If you delete them OpendTect will create a new file when needed. If a file gets corrupt then deleting is exactly what you want to do.</p>
         <h2>Debugging OpendTect</h2>
         <p>The default setting is that OpendTect only shows minimum debug info when starting OpendTect via the <i>start_dtect</i> script on Linux. Windows users will not see any debug info when starting <i>od_main.exe</i>. </p>
         <p>In order to get more debug information an environment variable DTECT_DEBUG needs to be set to yes.</p>
