@@ -51,7 +51,7 @@
                 </ul>
             </li>
         </ul>
-        <h2>Log files</h2>
+        <h2 style="page-break-before: avoid">Log files</h2>
         <p>Every time OpendTect starts a logfile is created in the <i>Survey Data Root\LogFiles</i> folder. The naming of the log file is username_datetime.txt file. </p>
         <p>
             <img src="Resources/Images/troubleshooting-LogFiles.png" />
@@ -72,7 +72,7 @@
             <br /><small>Figure:&#160;OpendTect installer log files </small>
             <br />
         </p>
-        <h2>Settings files in .od folder</h2>
+        <h2 style="page-break-before: avoid">Settings files in .od folder</h2>
         <p>OpendTect writes its settings into the <i>$HOME/.od</i> folder on Linux or <i>%UserProfile%\.od</i> on Windows. You can find the following files:</p>
         <ul>
             <li>
@@ -108,7 +108,7 @@
         </ul>
         <p>If one or more of the above listed settings files, like the settings_coltabs, does not exist in your .od directory this means that OpendTect hadn't (yet) had any reason to create that particular settings file. </p>
         <p>Editing of these files is at your own risk. If you delete them OpendTect will create a new file when needed. If a file gets corrupt then deleting is exactly what you should do.</p>
-        <h2>Debugging OpendTect</h2>
+        <h2 style="page-break-before: avoid">Debugging OpendTect</h2>
         <p>The default setting is that OpendTect only shows minimum debug info when starting OpendTect via the <i>start_dtect</i> script on Linux. Windows users will not see any debug info when starting <i>od_main.exe</i>. </p>
         <p>In order to get more debug information an environment variable DTECT_DEBUG needs to be set to yes.</p>
         <p>It is also possible to get debug information from Qt by setting an environment variable QT_DEBUG_PLUGINS to 1. On Linux one can also get Qt debug information when launching the OpendTect Installer.</p>

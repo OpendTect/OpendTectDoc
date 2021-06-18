@@ -18,7 +18,7 @@
             <li>On <i>Service/License File</i> tab toggle on Configuration using&#160;Services and LMTOOLS ignores license file path environment variables.<br /><img src="../../Resources/Images/lmtools-1.png" /><br /><small>Figure:&#160;LMTOOLS utility:&#160;Service/License File tab</small><br /><br /></li>
             <li>Click the Config Services tab.<br /><br /><ol type="a"><li>At <i>Service Name</i> drop down create a new service name that will manage your OpendTect Pro &amp; dGB plugins licenses. The default service name is <i>Flexlm Service 1</i>. Best is to change this into a name like dGB License Service or OpendTect Pro License Service.<br /><br /></li><li>At <i>Path to the lmgrd.exe file</i> browse to the directory that contains the lmgrd.exe file. Select lmgrd.exe and then click button <i>Open</i>.<br /><br /></li><li>At <i>Path to the license file</i> browse to the directory that contains the license file. Select the license file and then click button <i>Open</i>.<br /><br /></li><li>At <i>Path to the debug log file</i> browse to the directory in which you created the debug.log file. Select the log file and then click button <i>Open</i>.<br /><br /></li><li>Toggle on <i>Use Services</i> and then toggle on <i>Start Server at Power Up</i>. This will make sure that the license server will start automatically at power up or reboot.<br /><img src="../../Resources/Images/lmtools-2.png" /><br /><small>Figure:&#160;LMTOOLS utility:&#160;Config Services tab</small><br /><br /></li><li>Click button Save Service and <i>Yes</i> in the confirmation window.<br /><img src="../../Resources/Images/lmtools-3.png" /><br /><small>Figure:&#160;Save the service</small><br /><br /></li><li>LMTOOLS will show a warning window that the preferred path &lt;SystemDrive&gt;\ProgramData to store service data is not set. You get this because debug.log is not configured in the ProgramData folder. You can ignore this as we should have enough permissions to read from and write to the C:\dgb_licserver directory. <br /><img src="../../Resources/Images/lmtools-4.png" /><br /><small>Figure:&#160;Warning about Windows preferred path for service data</small><br /></li><br /></ol></li>
         </ol>
-        <h2>Starting a license server</h2>
+        <h2 style="page-break-before: avoid">Starting a license server</h2>
         <ol>
             <li>Start LMTOOLS by double-clicking the <i>lmtools.exe</i> file.<br /><br /></li>
             <li>Click the <i>Start/Stop/Reread</i> tab.<br /><br /></li>
@@ -27,7 +27,7 @@
             <li>If the license server start is successful LMTOOLS will show the message: <i>Server Start Successful</i>.<br /><br /></li>
             <li>Please refer to the debug.log file in case of issues.<br /><br />This is an indication that the dgbld vendor daemon is not able to start:<br /><code>(lmgrd) License server manager (lmgrd) startup failed:<br />(lmgrd) CreateProcess error code: 0x5 File= C:\dgb_licserver\dgbld.exe<br />License server manager (lmgrd) startup failed:<br />(lmgrd) CreateProcess error code: 0x5   File= dgbld.exe</code><br /><br /></li>
         </ol>
-        <h2>Client installation</h2>
+        <h2 style="page-break-before: avoid">Client installation</h2>
         <p>Please see the <a href="../OpendTect/Licenses/Installing-floating-licenses.htm">installing floating licenses</a> chapter for more information on how to instruct the client on how to borrow the license from the server.</p>
         <p>&#160;</p>
     </body>
