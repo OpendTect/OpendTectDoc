@@ -15,7 +15,8 @@
   PreCompileScaledImages="false"
   MakeFileLowerCase="true"
   ReplaceSpacesWithUnderscores="true"
-  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp">
+  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp"
+  ConditionTagExpression="exclude[Default.PrintOnly]">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

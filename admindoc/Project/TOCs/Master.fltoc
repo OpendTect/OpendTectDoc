@@ -3,7 +3,18 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/cover/OpendTect_6.htm" />
+    Link="/Content/cover/OpendTect_6.htm"
+    conditions="Default.ScreenOnly"></TocEntry>
+  <TocEntry
+    Title="PDF cover"
+    Link="/Content/cover/PDF_OpendTect_6.htm"
+    conditions="Default.PrintOnly"
+    StartSection="false">
+    <TocEntry
+      Title="TOC"
+      Link="/Content/cover/TOC.htm"
+      conditions="Default.PrintOnly" />
+  </TocEntry>
   <TocEntry
     Title="1 System Requirements"
     Link="/Content/System_Requirements.htm">
