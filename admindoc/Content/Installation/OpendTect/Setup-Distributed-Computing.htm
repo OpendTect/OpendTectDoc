@@ -3,8 +3,14 @@
     <head>
     </head>
     <body>
-		<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Setup Distributed Computing</h1></MadCap:conditionalText>
-        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Setup Distributed Computing</h3></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Setup Distributed Computing</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Setup Distributed Computing</h3>
+        </MadCap:conditionalText>
         <p>In order to utilize OpendTect's capability for Multi-Machine Processing (MMP), a <i>BatchHosts</i> file must be created and used. This file contains the list of remote machines (<i>host machines</i> or <i>nodes</i>) and some relevant details about these machines and the path to the Survey Data Root. OpendTect will use this file to communicate to the remote hosts and launch processes remotely on them. Follow the example format (shown below) to add the list of remote machines and their details in the respective fields.</p>
         <p>In order to minimize complications, the Setup Distributed Computing tool (formerly known as Setup Batch Processing tool) can be used to create a tailor-made BatchHosts file (via <i>Utilities &gt; Installation &gt; Setup Distributed Computing</i>...).</p>
         <p>
@@ -24,7 +30,12 @@
             <br /><small>Figure:&#160;Setting DTECT_BATCH_HOSTS_FILEPATH environment variable</small>
         </p>
         <p>
-            <img src="../../Resources/Images/setup-distributed-computing-4.png" style="width: 828px;height: 346px;" />
+            <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+                <img src="../../Resources/Images/setup-distributed-computing-4.png" />
+            </MadCap:conditionalText>
+            <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+                <img src="../../Resources/Images/setup-distributed-computing-4.png" style="width: 668px;height: 278px;" />
+            </MadCap:conditionalText>
             <br /><small>Figure:&#160;Setup Distributed Computing window</small>
             <br />
         </p>
@@ -58,8 +69,14 @@
             <img src="../../Resources/Images/Icons/downarrow.png" style="width: 32px;height: 32px;" /><b>Move</b> host up or down.</p>
         <p>
             <img src="../../Resources/Images/Icons/checkgreen.png" style="width: 32px;height: 32px;" /><b>Test hosts</b>. Will perform tests to ensure that the server and nodes can communicate to the necessary extent to perform the MMP. (ie: can the nodes find the data root folder and read/write into it)</p>
-		<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Tips &amp; tricks</h2></MadCap:conditionalText>
-        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Tips &amp; tricks</h4></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Tips &amp; tricks</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4 style="page-break-before: avoid">Tips &amp; tricks</h4>
+        </MadCap:conditionalText>
         <p>In case you are having issues with the Distributed Computing between the server that launches the scheduler and the nodes please check the following:</p>
         <ul>
             <li>
