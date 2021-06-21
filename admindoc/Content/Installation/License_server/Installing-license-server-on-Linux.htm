@@ -3,7 +3,8 @@
     <head>
     </head>
     <body>
-        <h1 style="page-break-before: avoid">Installing a license server on Linux</h1>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Installing a license server on Linux</h1></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3 style="page-break-before: avoid">Installing a license server on Linux</h3></MadCap:conditionalText>
         <p>The FlexNet vendor package with the binaries that are needed can be downloaded from the <a href="https://dgbes.com/index.php/download/flexnet-vendors-packages" target="_blank">FlexNet Vendor Packages download page</a>.</p>
         <ol>
             <li>Download the <a href="https://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.18.1.0_dgb_lux64.zip" target="_blank">Linux 64 (FlexNet v11.18.1.0) zip-file</a> for OpendTect Pro &amp; dGB&#160;Plugins for OpendTect 6.4 and newer.<br /><br /></li>
@@ -14,11 +15,13 @@
             <li>Now the license file needs to be edited. Hence, open the license file with a text editor like Vim.<br /><br /></li>
             <li>In the top of the license file there is a line with text <i>DAEMON dgbld full_path_to/dgbld</i> . <br />Replace the fullpath_to/dgbld with the path to the dgbld file. <br />In this example we will change it into:&#160;<i>DAEMON dgbld /opt/dgb_licserver/dgbld</i> . <br />Save the license file.</li>
         </ol>
-        <h2 style="page-break-before: avoid">Starting a license server</h2>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Starting a license server</h2></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Starting a license server</h4></MadCap:conditionalText>
         <p>The license server can be started by executing commands:<br /><code>cd /opt/dgb_licserver<br />./lmgrd -c licensefile.lic -l debug.log</code></p>
         <p>Please refer to the debug.log file in case of issues.</p>
         <p>To see the license server status you may run:<br /><code>./lmutil lmstat -a</code><br />You will then see the port number the server uses, the path to the license file(s) that are in use, whether the license server is up or down, how many licenses for the features are issued and in use.</p>
-        <h2 style="page-break-before: avoid">Error messages</h2>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Error messages</h2></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Error messages</h4></MadCap:conditionalText>
         <p>You may encounter error messages when starting the license server. Listed here are the most common ones and how to solve them.</p>
         <ul>
             <li>
@@ -62,7 +65,8 @@
                     <br />This error message occurs when you run run <code>./lmutil lmstat -a</code>, but there is no license manager daemon running. It could be that the license manager daemon failed to start. More information can be found in the debug.log file.<br /><br /></p>
             </li>
         </ul>
-        <h2 style="page-break-before: avoid">Client installation</h2>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Client installation</h2></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Client installation</h4></MadCap:conditionalText>
         <p>Please see the <a href="../OpendTect/Licenses/Installing-floating-licenses.htm">installing floating licenses</a> chapter for more information on how to instruct the client on how to borrow the license from the server.</p>
         <p>&#160;</p>
     </body>

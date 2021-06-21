@@ -3,7 +3,8 @@
     <head>
     </head>
     <body>
-        <h1>Setup NVIDIA GPU Performance Counters</h1>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Setup NVIDIA GPU Performance Counters</h1></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Setup NVIDIA GPU Performance Counters</h3></MadCap:conditionalText>
         <p>When running jobs with the Machine Learning plugin you might get the following error message:&#160;CUPTI_ERROR_INSUFFICIENT_PRIVILEGES</p>
         <p>To fix this please follow the <a href="https://developer.nvidia.com/nvidia-development-tools-solutions-ERR_NVGPUCTRPERM-permission-issue-performance-counters" target="_blank">instructions</a> from the NVIDIA site. It will be a good idea to do this anyway to prevent of getting the above mentioned error message.</p>
         <p>In short the way to set this on Windows is:</p>

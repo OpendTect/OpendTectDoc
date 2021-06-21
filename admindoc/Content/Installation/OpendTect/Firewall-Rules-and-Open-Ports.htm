@@ -3,8 +3,10 @@
     <head>
     </head>
     <body>
-        <h1>Firewall Rules and Open Ports</h1>
-        <h2 style="page-break-before: avoid"><a name="Firewall"></a>Firewall rules For OpendTect 6.6 (Windows)</h2>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Firewall Rules and Open Ports</h1></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Firewall Rules and Open Ports</h3></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Firewall rules For OpendTect 6.6 (Windows)</h2></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid"><a name="Firewall"></a>Firewall rules For OpendTect 6.6 (Windows)</h4></MadCap:conditionalText>
         <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. The default OpendTect base directory is C:\Program Files\OpendTect. The base directory can be another directory if that is chosen during installation. If that is the case then replace the default base directory in below list with the actual base directory.</p>
         <ul>
             <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_start_dtect.exe</li>
@@ -20,7 +22,8 @@
             <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cpu-mkl\python.exe</li>
             <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cuda10\python.exe</li>
         </ul>
-        <h2 style="page-break-before: avoid">Open Ports</h2>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Open Ports</h2></MadCap:conditionalText>
+		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Open Ports</h4></MadCap:conditionalText>
         <p>OpendTect will need to open TCP ports on the localhost for Batch Processing and Machine Learning. Here is a list of ports that OpendTect needs to open if you run a certain job:</p>
         <table style="width: 100%; margin: 20px;" class="noborders">
             <col style="width: 138px;" />
