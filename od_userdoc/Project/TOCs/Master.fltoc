@@ -1095,6 +1095,9 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Utilities/Settings/Language.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Utilities/Settings/Petrel_Connection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="9.2 Tools"
