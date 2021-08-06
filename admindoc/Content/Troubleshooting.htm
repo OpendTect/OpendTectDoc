@@ -21,6 +21,12 @@
             <li>
                 <p>set the environment variable QT_DEBUG_PLUGINS to 1 to get more information about Qt in the terminal or the Command Prompt when starting OpendTect (Linux and Windows) or for the OpendTect installer (Linux only).</p>
             </li>
+            <li>
+                <p>set the environment variable OSG_NOTIFY_LEVEL to DEBUG to get more information about OSG in the terminal or the Command Prompt when starting OpendTect.<br /></p>
+            </li>
+            <li>
+                <p>set the environment variable OD_NOSCENE_AT_STARTUP to 1 to start OpendTect without a scene. This is to determine whether there is a GPU driver issue.</p>
+            </li>
         </ul>
         <p>You can also</p>
         <ul>
@@ -51,8 +57,14 @@
                 </ul>
             </li>
         </ul>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Log files</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h2 style="page-break-before: avoid">Log files</h2></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Log files</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h2 style="page-break-before: avoid">Log files</h2>
+        </MadCap:conditionalText>
         <p>Every time OpendTect starts a logfile is created in the <i>Survey Data Root\LogFiles</i> folder. The naming of the log file is username_datetime.txt file. </p>
         <p>
             <img src="Resources/Images/troubleshooting-LogFiles.png" />
@@ -73,8 +85,14 @@
             <br /><small>Figure:&#160;OpendTect installer log files </small>
             <br />
         </p>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Settings files in .od folder</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h2 style="page-break-before: avoid">Settings files in .od folder</h2></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Settings files in .od folder</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h2 style="page-break-before: avoid">Settings files in .od folder</h2>
+        </MadCap:conditionalText>
         <p>OpendTect writes its settings into the <i>$HOME/.od</i> folder on Linux or <i>%UserProfile%\.od</i> on Windows. You can find the following files:</p>
         <ul>
             <li>
@@ -110,8 +128,14 @@
         </ul>
         <p>If one or more of the above listed settings files, like the settings_coltabs, does not exist in your .od directory this means that OpendTect hadn't (yet) had any reason to create that particular settings file. </p>
         <p>Editing of these files is at your own risk. If you delete them OpendTect will create a new file when needed. If a file gets corrupt then deleting is exactly what you should do.</p>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Debugging OpendTect</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h2 style="page-break-before: avoid">Debugging OpendTect</h2></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Debugging OpendTect</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h2 style="page-break-before: avoid">Debugging OpendTect</h2>
+        </MadCap:conditionalText>
         <p>The default setting is that OpendTect only shows minimum debug info when starting OpendTect via the <i>start_dtect</i> script on Linux. Windows users will not see any debug info when starting <i>od_main.exe</i>. </p>
         <p>In order to get more debug information an environment variable DTECT_DEBUG needs to be set to yes.</p>
         <p>It is also possible to get debug information from Qt by setting an environment variable QT_DEBUG_PLUGINS to 1. On Linux one can also get Qt debug information when launching the OpendTect Installer.</p>
