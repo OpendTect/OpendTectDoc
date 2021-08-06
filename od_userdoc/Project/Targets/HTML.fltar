@@ -22,7 +22,8 @@
   EnableSitemap="true"
   SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/od_userdoc/"
   EquationsOutputType="SVG"
-  SearchEngine="MadCapSearch">
+  SearchEngine="MadCapSearch"
+  DisableAutoSync="true">
   <PrintedOutput
     CollapseMargins="true" />
   <MetaTags>
