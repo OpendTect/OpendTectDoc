@@ -1147,7 +1147,7 @@
         Link="/Content/Utilities/Installation/Show_HostID.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Installation/Firewall_Add_or_Remove_Process.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Installation/Firewall_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="9.4.10 Licenses"
         Link="/Content/Utilities/Installation/Licenses.htm">

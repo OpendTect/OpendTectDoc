@@ -4,11 +4,15 @@
     </head>
     <body>
         <h2>9.4.3 Python Settings, Data Flow and Data Management<MadCap:keyword term="Python Settings, Data Flow and Data Management" /></h2>
-        <p>The Python Settings Window is started from the Utilities -&gt; Installation -&gt; Python Settings Window.</p>
         <blockquote>
             <p>
-                <img src="../../Resources/Images/Utilities/ml_set_pythin_settings.png" class="General_Image" style="width: 909px;height: 504px;" />
+                <img src="../../Resources/Images/Utilities/utilities_inst_set_python_dd.png" class="General_Image" style="width: 491px;height: 342px;" />
             </p>
+            <blockquote>
+                <p>
+                    <img src="../../Resources/Images/Utilities/utilities_inst_python_settings.png" class="General_Image" style="width: 975px;height: 594px;" />
+                </p>
+            </blockquote>
         </blockquote>
         <p>OpendTect Machine Learning comes with its own Miniconda Python environment. Users who prefer to work in a private Python environment can change the <b>Python environment</b> here. If a <b>Custom</b> environment is selected you need to specify the root of the environment. The <b>Virtual</b> <b>environment</b>: odmlpython-cuda10 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
         <p>The <b>Custom Module Path</b> is the path for Python developers in which they develop private Machine Learning Models in this environment. All models in the given directory, which are named: ‘<b>mlmodel</b>….” will appear in the UI of the Machine Learning Control Center and can thus be applied to other data sets.</p>
