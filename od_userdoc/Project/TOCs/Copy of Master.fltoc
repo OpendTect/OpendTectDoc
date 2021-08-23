@@ -1106,7 +1106,7 @@
         Link="/Content/Utilities/Installation/Licenses.htm">
         <TocEntry
           Title="9.3.6.1 Install demo/node-locked license"
-          Link="/Content/Utilities/Installation/Licenses/Install_Demo_Node-Locked_License.htm" />
+          Link="/Content/Utilities/Installation/Licenses/Install_or_Edit_Licenses.htm" />
         <TocEntry
           Title="9.3.6.2 Clear License Installation"
           Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
