@@ -1157,9 +1157,6 @@
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Utilities/Installation/Licenses/Open_License_Manager_Tools.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="9.4.10.3 Clear License Installation"
-          Link="/Content/Utilities/Installation/Licenses/Clear_License_Installation.htm" />
       </TocEntry>
     </TocEntry>
     <TocEntry
