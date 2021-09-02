@@ -32,5 +32,13 @@
         <p>In the background of the opacity panel, a histogram is shown in light grey. This histogram shows the distribution of attribute values in the selected element. This helps you to tune the colorbar to the value range you may want to highlight. To alter the histogram see <i>Show Histogram</i> in the Inline, Crossline &amp; Zslice sub-chapter.</p>
         <p><b>Segmentation</b> allows the user to segment the colorbar into a user-defined discrete number of colors. This can be done in a <i>Fixed</i> or <i>Variable</i> manner. <i>Fixed</i> allows the user to define the number of segments they would like to have, but does not allow the marker boundaries to be moved. <i>Variable</i> allows the user to both define the number of segments, and move the marker boundaries to suit specific needs. Fixed is good for purposes such as velocity and contour lines, while <i>Variable</i> is good for use with waveform segmentation.</p>
         <p><b>Undefined color</b> specifies the color that will be used to display undefined values in the data.</p>
+        <p>&#160;</p>
+        <p><b>Color Table Manual Creation</b>
+        </p>
+        <p>Color tables can be created manually from the <a href="../Survey/Manage/Manage_Color_Tables.htm" target="_blank">color table manager</a>, and can be <a href="../Survey/Import/Import_Color_Table.htm" target="_blank">imported</a> from external files, provided that the relevant format is used.</p>
+        <p>The easiest method by far for adding a new colorbar would be to copy one from the software template: the file <i>ColTabs</i> is in the root of the application folder (ie: <i>C:\Program Files\OpendTect\6.6.0\data </i>or equivalent<i></i>). Note that the color tables are discrete, i.e. it is encoded by a fixed number of points for which a color (RGB) and transparency (Alpha) is provided. Values in between are interpolated. It is up to the creator of the color table to decide how many points are needed to correctly represent it.</p>
+        <p>For one point, each row should be looking like:</p>
+        <p>XX.Value-Color.YY: POS`Red`Green`Blue`Alpha</p>
+        <p>where XX is the colorbar index within the file, YY is the sequential point index within a colorbar (0 to N-1), and POS is the relative point position, from 0 (left/bottom) to 1 (right/top).</p>
     </body>
 </html>
