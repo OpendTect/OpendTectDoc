@@ -13,7 +13,8 @@
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
-  AutoSizeCaptureCaptions="false">
+  AutoSizeCaptureCaptions="false"
+  OutputFile="OpendTect-User-Documentation">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
