@@ -3,12 +3,18 @@
     <head>
     </head>
     <body>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Information about the OpendTect Python environments</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3 style="page-break-before: avoid">Information about the OpendTect Python environments</h3></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Information about the OpendTect Python environments</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3 style="page-break-before: avoid">Information about the OpendTect Python environments</h3>
+        </MadCap:conditionalText>
         <p><b>Miniconda3</b> is a basic Python environment. It allows using the Presentation Maker plugin without having to install Python yourself. Provides libraries, including:</p>
         <ul>
             <li>
-                <p>Python 3.7</p>
+                <p>Python 3.8</p>
             </li>
             <li>
                 <p>pandas</p>
@@ -21,10 +27,10 @@
         <p style="font-weight: normal;">Provides libraries, including:</p>
         <ul>
             <li>
-                <p style="font-weight: normal;">Python 3.7</p>
+                <p style="font-weight: normal;">Python 3.8</p>
             </li>
             <li>
-                <p>tensorflow-mkl</p>
+                <p>intel-tensorflow</p>
             </li>
             <li>
                 <p>keras</p>
@@ -51,24 +57,33 @@
                 <p>psutil</p>
             </li>
             <li>
-                <p>spyder</p>
-            </li>
-            <li>
                 <p>xgboost</p>
             </li>
             <li>
                 <p>python-pptx</p>
             </li>
+            <li>
+                <p>jupyterlab</p>
+            </li>
+            <li>
+                <p>onnxruntime</p>
+            </li>
+            <li>
+                <p>pytorch</p>
+            </li>
+            <li>
+                <p>matplotlib</p>
+            </li>
         </ul>
-        <p><b>Python CUDA 10.1</b> is a complete Python environment for Machine Learning on the GPU with CUDA 10.1. </p>
-        <p>Requires minimum driver version 418.XX, for specifics see this <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions__table-cuda-toolkit-driver-versions" target="_blank">table on the Nvidia CUDA&#160;Toolkit documentation page</a>.</p>
+        <p><b>Python CUDA 11</b> is a complete Python environment for Machine Learning on the GPU with CUDA 11.3. </p>
+        <p>Requires minimum driver version 466.XX, for specifics see this <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions__table-cuda-toolkit-driver-versions" target="_blank">table on the Nvidia CUDA&#160;Toolkit documentation page</a>.<br />Will fallback automatically on the CPU if the hardware/driver requirements are not met.</p>
         <p>Provides libraries, including:</p>
         <ul>
             <li>
-                <p>Python 3.7</p>
+                <p>Python 3.8</p>
             </li>
             <li>
-                <p>tensorflow-gpu</p>
+                <p>tensorflow</p>
             </li>
             <li>
                 <p>keras</p>
@@ -95,13 +110,22 @@
                 <p>psutil</p>
             </li>
             <li>
-                <p>spyder</p>
-            </li>
-            <li>
                 <p>xgboost</p>
             </li>
             <li>
                 <p>python-pptx</p>
+            </li>
+            <li>
+                <p>jupyterlab</p>
+            </li>
+            <li>
+                <p>onnxruntime</p>
+            </li>
+            <li>
+                <p>pytorch</p>
+            </li>
+            <li>
+                <p>matplotlib</p>
             </li>
         </ul>
     </body>
