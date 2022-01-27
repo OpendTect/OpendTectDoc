@@ -3,9 +3,15 @@
     <head>
     </head>
     <body>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Installing Python environments with the OpendTect installer</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Installing Python environments with the OpendTect installer</h3></MadCap:conditionalText>
-        <p>When running the OpendTect installer there is the option to install the Python environments. The installer will auto select the Miniconda3 environment and also auto select the Math Kernel Library (MKL) and CUDA 10 when selecting the Machine Learning plugin.</p>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Installing Python environments with the OpendTect installer</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Installing Python environments with the OpendTect installer</h3>
+        </MadCap:conditionalText>
+        <p>When running the OpendTect installer there is the option to install the Python environments. The installer will auto select the Miniconda3 environment and also auto select the Python CUDA 11 environment for training on the Nvidia GPU. For training on CPU only the Math Kernel Library (MKL) Python environment should be selected. The Python CUDA 10 environment is now obsolete and will no longer receive security updates. Users are encouraged to uninstall it, and replace it with either CUDA 11 or CPU only Python environment. Also note that OpendTect does not support the Python CUDA 10 environment from 6.6.6 and onwards.</p>
         <p>
             <img src="../../Resources/Images/installation-package-manager-python-packages.png" />
             <br /><small>Figure:&#160;Install Python environments with the OpendTect installer</small>

@@ -2,28 +2,42 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
-    <body>		
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Firewall Rules and Open Ports</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Firewall Rules and Open Ports</h3></MadCap:conditionalText>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Firewall rules For OpendTect 6.6 (Windows)</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Firewall rules For OpendTect 6.6 (Windows)</h4></MadCap:conditionalText>
+    <body>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Firewall Rules and Open Ports</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Firewall Rules and Open Ports</h3>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Firewall rules For OpendTect 6.6 (Windows)</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4 style="page-break-before: avoid">Firewall rules For OpendTect 6.6 (Windows)</h4>
+        </MadCap:conditionalText>
         <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. The default OpendTect base directory is C:\Program Files\OpendTect. The base directory can be another directory if that is chosen during installation. If that is the case then replace the default base directory in below list with the actual base directory.</p>
         <ul>
             <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_start_dtect.exe</li>
             <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_main.exe</li>
             <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
             <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_LogPlot.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_CC.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_EM.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_TM.exe</li>
-            <li>C:\Program Files\OpendTect\6.6.0\v7\bin\win64\Release\od_DeepLearning_ModelImport.exe</li>
             <li> C:\Program Files\OpendTect\Python\python.exe</li>
             <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cpu-mkl\python.exe</li>
             <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cuda10\python.exe</li>
+            <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cuda113\python.exe</li>
         </ul>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Open Ports</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4 style="page-break-before: avoid">Open Ports</h4></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Open Ports</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4 style="page-break-before: avoid">Open Ports</h4>
+        </MadCap:conditionalText>
         <p>OpendTect will need to open TCP ports on the localhost for Batch Processing and Machine Learning. Here is a list of ports that OpendTect needs to open if you run a certain job:</p>
         <table style="width: 100%; margin: 20px;" class="noborders">
             <col style="width: 138px;" />
@@ -42,6 +56,10 @@
                     <td style="border: 0px;">
                         Starting from OpendTect 6.6 these ports are used for communication between OpendTect and Python, starting at port 20050. <br />We advise to have a broad range to be open, e.g. until 20080.
                     </td>
+                </tr>
+                <tr style="border: 0px;">
+                    <td style="border: 0px;">27000</td>
+                    <td style="border: 0px;">Port 27000 is the default port for the FlexNet license server. It only needs to be opened on the server that runs the FlexNet license server.</td>
                 </tr>
                 <tr style="border: 0px;">
                     <td style="border: 0px;">37500-37504</td>
