@@ -29,29 +29,30 @@
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
             <h4 style="page-break-before: avoid">Download the OpendTect Python YAML files</h4>
         </MadCap:conditionalText>
+        <p>Version 1.4.0 is the current version.</p>
         <p>For Linux:</p>
         <ul>
             <li>
-                <p><a href="https://download.opendtect.org/relman/Python/1.2.6/odmlpython-cpu-mkl_lux64.yml">odmlpython-cpu-mkl_lux64.yml</a>
+                <p><a href="https://download.opendtect.org/relman/Python/1.4.0/odmlpython-cpu-mkl_lux64.yml">odmlpython-cpu-mkl_lux64.yml</a>
                 </p>
             </li>
             <li>
-                <p><a href="https://download.opendtect.org/relman/Python/1.2.6/odmlpython-cuda10_lux64.yml">odmlpython-cuda10_lux64.yml</a>
+                <p><a href="https://download.opendtect.org/relman/Python/1.4.0/odmlpython-cuda113_lux64.yml">odmlpython-cuda113_lux64.yml</a>
                 </p>
             </li>
         </ul>
         <p>For Windows:</p>
         <ul>
             <li>
-                <p><a href="https://download.opendtect.org/relman/Python/1.2.6/odmlpython-cpu-mkl_win64.yml">odmlpython-cpu-mkl_win64.yml</a>
+                <p><a href="https://download.opendtect.org/relman/Python/1.4.0/odmlpython-cpu-mkl_win64.yml">odmlpython-cpu-mkl_win64.yml</a>
                 </p>
             </li>
             <li>
-                <p><a href="https://download.opendtect.org/relman/Python/1.2.6/odmlpython-cuda10_win64.yml">odmlpython-cuda10_win64.yml</a>
+                <p><a href="https://download.opendtect.org/relman/Python/1.4.0/odmlpython-cuda113_win64.yml">odmlpython-cuda113_win64.yml</a>
                 </p>
             </li>
         </ul>
-        <p>The YAML files contain a list of essential packages that are needed inside the Python environment. You can choose to install either the cpu-mkl or cuda10 one or both. The cpu-mkl one is for running the Machine Learning jobs on the CPU only. In most cases the Cuda10 one would be the best option so that the Machine Learning jobs can be run on the Nvidia GPU.</p>
+        <p>The YAML files contain a list of essential packages that are needed inside the Python environment. You can choose to install either the CPU only (odmlpython-cpu-mkl) or CUDA 11 one or both.  In most cases the CUDA 11 one would be the best option so that the Machine Learning jobs can be run on the Nvidia GPU.</p>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Install the environments</h2>
         </MadCap:conditionalText>
@@ -84,17 +85,14 @@
                         </p>
                     </li>
                     <li>
-                        <p><span style="font-family: 'Courier New'; font-size: 10pt;">conda env create --file /pathto/odmlpython-cuda10_lux64.yml</span>
+                        <p><span style="font-family: 'Courier New'; font-size: 10pt;">conda env create --file /pathto/odmlpython-cuda113_lux64.yml</span>
                         </p>
                     </li>
                     <li>
                         <p>Conda will collect the packages it needs to install from the YAML file.</p>
                     </li>
                     <li>
-                        <p>Then it will download and extract the packages, and do the transaction.</p>
-                    </li>
-                    <li>
-                        <p>To make the Python environments completely operational with OpendTect <MadCap:variable name="Variables.VersionNumber" />'s Machine Learning plugin it is necessary to replace a callbacks.py of keras on the system. </p>
+                        <p>Then it will download and extract the packages, do the transaction and install remaining packages with pip.</p>
                     </li>
                 </ol>
             </li>
@@ -123,7 +121,7 @@
                         </p>
                     </li>
                     <li>
-                        <p><span style="font-family: 'Courier New'; font-size: 10pt;">conda env create --file C:\pathto\odmlpython-cuda10_win64.yml</span>
+                        <p><span style="font-family: 'Courier New'; font-size: 10pt;">conda env create --file C:\pathto\odmlpython-cuda113_win64.yml</span>
                             <br />
                             <br />
                             <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
@@ -139,50 +137,29 @@
                         <p>Conda will collect the packages it needs to install from the YAML file.</p>
                     </li>
                     <li>
-                        <p>Then it will download and extract the packages, do the transaction and install xgboost with pip.</p>
+                        <p>Then it will download and extract the packages, do the transaction and install remaining packages with pip.</p>
                     </li>
                     <li>
-                        <p>To make the Python environments completely operational with OpendTect <MadCap:variable name="Variables.VersionNumber" />'s Machine Learning plugin it is necessary to replace a callbacks.py of keras and to get the cupti library on the system. The cupti library is only needed for the cuda10 environment.</p>
+                        <p>To make the Python environments completely operational with OpendTect <MadCap:variable name="Variables.VersionNumber" />'s Machine Learning plugin it is necessary to get the cupti library on the system. The cupti library is only needed for the CUDA&#160;11 environment.</p>
                     </li>
                 </ol>
             </li>
         </ol>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
-            <h2>Fixes for callbacks.py and cupti</h2>
+            <h2>Cupti library</h2>
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
             <p>
             </p>
-            <h4 style="page-break-before: avoid">Fixes for callbacks.py and cupti</h4>
+            <h4 style="page-break-before: avoid">Cupti library</h4>
         </MadCap:conditionalText>
-        <p style="font-weight: normal;"><b>callbacks.py</b>
-        </p>
-        <p>For Linux:</p>
-        <ul>
-            <li>
-                <p>Download <a href="https://download.opendtect.org/relman/Python/1.2.6/extras-custom/lux64/callbacks.py">callbacks.py</a>.</p>
-            </li>
-            <li>
-                <p>It needs to be copied into <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cpu-mkl/lib/python3.7/site-packages/tensorflow_core/python/keras</span> and/or <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cuda10/lib/python3.7/site-packages/tensorflow_core/python/keras</span> so that it overwrites the existing callbacks.py file.</p>
-            </li>
-        </ul>
-        <p>For Windows:</p>
-        <ul>
-            <li>
-                <p>Download <a href="https://download.opendtect.org/relman/Python/1.2.6/extras-custom/win64/callbacks.py">callbacks.py</a>.</p>
-            </li>
-            <li>
-                <p>It needs to be copied into <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cpu-mkl\Lib\site-packages\tensorflow_core\python\keras</span> and/or <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cuda10\Lib\site-packages\tensorflow_core\python\keras</span> so that it overwrites the existing callbacks.py file.</p>
-            </li>
-        </ul>
-        <p style="font-weight: bold;">cupti libraries (Windows only)</p>
-        <p style="font-weight: normal;">There are two ways to apply the fix:</p>
+        <p style="font-weight: normal;">For Windows there are two ways to get the cupti library:</p>
         <ol>
             <li>
-                <p style="font-weight: normal;">You can download <a href="https://download.opendtect.org/relman/Python/1.2.6/extras-custom/win64/cupti.lib">cupti.lib</a> and <a href="https://download.opendtect.org/relman/Python/1.2.6/extras-custom/win64/cupti64_101.dll">cupti64_101.dll</a>.<br />Then copy them into <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cuda10\Library\bin</span>.</p>
+                <p style="font-weight: normal;">You can download <a href="https://download.opendtect.org/relman/Python/1.4.0/extras/win64/cupti.lib">cupti.lib</a> and <a href="https://download.opendtect.org/relman/Python/1.4.0/extras/win64/cupti64_2021.1.1.dll">cupti64_2021.1.1.dll</a>.<br />Then copy them into <span style="font-family: 'Courier New'; font-size: 10pt;">odmlpython-cuda113\Library\bin</span>.</p>
             </li>
             <li>
-                <p>Or you can download and install <a href="https://developer.nvidia.com/cuda-10.1-download-archive-update2?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10&amp;target_type=exelocal" target="_blank">CUDA&#160;Toolkit 10.1 update 2 from the Nvidia CUDA site</a>.<br />After installation add <span style="font-family: 'Courier New'; font-size: 10pt;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\lib64</span> to the System environment variable Path.</p>
+                <p>Or you can download and install <a href="https://developer.nvidia.com/cuda-11-3-1-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10" target="_blank">CUDA&#160;Toolkit 11.3 update 1 from the Nvidia CUDA site</a>.<br />After installation add <span style="font-family: 'Courier New'; font-size: 10pt;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\extras\CUPTI\lib64</span> to the System environment variable Path.</p>
             </li>
         </ol>
         <p>For information about how to use the custom environment in OpendTect <MadCap:variable name="Variables.VersionNumber" /> please see the chapter <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../OpendTect/Setup-Python-Settings.htm">Setup Python Settings</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Setup Python Settings" target="_parent">Setup Python Settings</a></MadCap:conditionalText>.</p>
