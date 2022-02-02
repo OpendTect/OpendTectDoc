@@ -125,7 +125,7 @@
                             <br />
                             <br />
                             <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
-                                <img src="../../Resources/Images/install-python-environments-windows.png" style="width: 1046px;height: 386px;" />
+                                <img src="../../Resources/Images/install-python-environments-windows.png" style="width: 1014px;height: 374px;" />
                             </MadCap:conditionalText>
                             <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
                                 <img src="../../Resources/Images/install-python-environments-windows.png" style="width: 815px;height: 300px;" />
@@ -163,5 +163,21 @@
             </li>
         </ol>
         <p>For information about how to use the custom environment in OpendTect <MadCap:variable name="Variables.VersionNumber" /> please see the chapter <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../OpendTect/Setup-Python-Settings.htm">Setup Python Settings</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Setup Python Settings" target="_parent">Setup Python Settings</a></MadCap:conditionalText>.</p>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Scipy missing DLL dependencies bug</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4 style="page-break-before: avoid">Scipy missing DLL dependencies bug</h4>
+        </MadCap:conditionalText>
+        <p>On Windows you might experience a missing DLL bug in the scipy library. When this happens the Machine Learning plugin will give an error message <i>Inadequate Python environment for Machine Learning plugin</i> and the details will show a traceback. This traceback includes a <i>FileNotFoundError: Could not find module...gfortran-win_amd64.dll</i> error.</p>
+        <p>
+            <img src="../../Resources/Images/install-python-environments-scipy-error-windows.png" />
+            <br /><small>Figure:&#160;Python environments scipy error when installed via YAML&#160;file</small>
+            <br />
+        </p>
+        <p>Scipy knows about this bug and the <a href="https://github.com/scipy/scipy/issues/14002" target="_blank">issue</a> can be viewed on their GitHub page.</p>
+        <p>The following workaround has been tested and might also work for your Python environment:<br />Set environment variable CONDA_DLL_SEARCH_MODIFICATION_ENABLE to 1</p>
     </body>
 </html>
