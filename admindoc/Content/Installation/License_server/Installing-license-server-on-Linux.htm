@@ -14,12 +14,13 @@
         <p>The FlexNet vendor package with the binaries that are needed can be downloaded from the <a href="https://dgbes.com/index.php/download/flexnet-vendors-packages" target="_blank">FlexNet Vendor Packages download page</a>.</p>
         <ol>
             <li>Download the <a href="https://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.18.3.1-dgb-lux64.zip" target="_blank">Linux 64 (FlexNet v11.18.3.1) zip-file</a> for OpendTect Pro &amp; dGB&#160;Plugins for OpendTect 6.4 and newer.<br /><br /></li>
-            <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/dgb_licserver</code><br /><br /></li>
+            <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/flexlm/opendtect</code><br /><br /></li>
             <li>Unzip the zip-file in the directory that has been created in previous step.<br /><br /></li>
             <li>The zip-file has the following files:<br /><b>dgbld</b> :&#160;The dGB vendor daemon<br /><b>lmgrd</b> :&#160;The FlexNet license  manager daemon <br /><b>lmutil</b> :&#160;The FlexNet license management utilities<br /><br /></li>
-            <li>The next thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.<br />Best is to place the license file in the same directory.<br /><br /></li>
-            <li>Now the license file needs to be edited. Hence, open the license file with a text editor like Vim.<br /><br /></li>
-            <li>In the top of the license file there is a line with text <i>DAEMON dgbld full_path_to/dgbld</i> . <br />Replace the fullpath_to/dgbld with the path to the dgbld file. <br />In this example we will change it into:&#160;<i>DAEMON dgbld /opt/dgb_licserver/dgbld</i> . <br />Save the license file.</li>
+            <li>The next thing that is needed is the server license file. This license file will be provided by the dGB support via support@dgbes.com.<br />Best is to place the license file in the same directory as lmgrd.<br /><br /></li>
+            <li>The license file needs to be edited. Hence, open the license file with a text editor like Vim.<br /><br /></li>
+            <li>In the top of the license file there is the SERVER&#160;line. The SERVER&#160;line format is:<br /><code>SERVER host hostid [port]</code><br />For example:<br /><code>SERVER myserver 123456abcdef 27050</code><br /><br />Note that if no port is specified then the FlexNet server will listen on the first available TCP port in the range of 27000-27009. A valid port number is any unused port number in the range of 1024 to 65535. Ports below 1024 are privileged port numbers.<br /><br />Below the SERVER&#160;line is the DAEMON line. The DAEMON&#160;line format is:<br /><code>DAEMON dgbld full_path_to/dgbld [PORT=port]</code><br />For example<br /><code>DAEMON dgbld /opt/flexlm/opendtect/dgbld port=43454</code><br /><br />It is important that you replace on the DAEMON&#160;line <i>fullpath_to/dgbld</i> with the path to the dgbld file. In this example we will change it into:&#160;<i>/opt/flexlm/opendtect/dgbld</i> . <br /><br />Note that if <i>port</i> is not specified then the vendor daemon will listen on an ephemeral random port at run time.  A valid port number is any unused port number in the range of 1024 to 65535. Ports below 1024 are privileged port numbers.<br /><br />Save the license file.</li>
+            <li>Ensure that the proper firewall exceptions are in place. There should be two exceptions for:<ol><li>The server TCP port, e.g. 27050</li><li>The vendor daemon TCP port, e.g. 43454</li></ol></li>
         </ol>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Starting a license server</h2>
@@ -29,9 +30,13 @@
             </p>
             <h4 style="page-break-before: avoid">Starting a license server</h4>
         </MadCap:conditionalText>
-        <p>The license server can be started by executing commands:<br /><code>cd /opt/dgb_licserver<br />./lmgrd -c licensefile.lic -l debug.log</code></p>
+        <p>The license server can be started by executing commands:<br /><code>cd /opt/flexlm/opendtect<br />./lmgrd -c licensefile.lic -l dgbld_debug.log</code></p>
         <p>Please refer to the debug.log file in case of issues.</p>
         <p>To see the license server status you may run:<br /><code>./lmutil lmstat -a</code><br />You will then see the port number the server uses, the path to the license file(s) that are in use, whether the license server is up or down, how many licenses for the features are issued and in use.</p>
+        <p>You may want to start the license server with crontab, e.g. add line (with crontab -e):<br /><code>@reboot /opt/flexlm/opendtect/lmgrd -c /opt/flexlm/opendtect/licensefile.lic -l /opt/flexlm/opendtect/dgbld_debug.log</code></p>
+        <p>
+            <br />
+        </p>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Error messages</h2>
         </MadCap:conditionalText>

@@ -38,7 +38,7 @@
             </p>
             <h4 style="page-break-before: avoid">Open Ports</h4>
         </MadCap:conditionalText>
-        <p>OpendTect will need to open TCP ports on the localhost for Batch Processing and Machine Learning. Here is a list of ports that OpendTect needs to open if you run a certain job:</p>
+        <p>OpendTect will need open TCP ports on the localhost for Batch Processing and Machine Learning. Here is a list of ports that OpendTect needs to open if you run a certain job:</p>
         <table style="width: 100%; margin: 20px;" class="noborders">
             <col style="width: 138px;" />
             <col style="width: 80%;" />
@@ -52,22 +52,37 @@
                     <td style="border: 0px;">Is used by executable od_remoteservice, which needs to be started on the compute node before job is submitted to it, but only when the job is started from Windows.</td>
                 </tr>
                 <tr style="border: 0px;">
-                    <td style="border: 0px;">20050-20080</td>
+                    <td style="border: 0px;">20050 - 20080</td>
                     <td style="border: 0px;">
                         Starting from OpendTect 6.6 these ports are used for communication between OpendTect and Python, starting at port 20050. <br />We advise to have a broad range to be open, e.g. until 20080.
                     </td>
                 </tr>
                 <tr style="border: 0px;">
-                    <td style="border: 0px;">27000</td>
-                    <td style="border: 0px;">Port 27000 is the default port for the FlexNet license server. It only needs to be opened on the server that runs the FlexNet license server.<br />It is possible to let the license server listen on a different port, e.g. on 27010. Usually dgbld and arkclsld will listen on a random port, it is possible to set this to a static port. <br /></td>
-                </tr>
-                <tr style="border: 0px;">
-                    <td style="border: 0px;">37500-37504</td>
+                    <td style="border: 0px;">37500 - 37504</td>
                     <td style="border: 0px;">Ports used for the Distributed Computing, starting at port 37500. We advise to have a port range size of 5 open. <br />That allows a user to start several Distributed Computing jobs from the same client machine.</td>
                 </tr>
                 <tr style="border: 0px;">
                     <td style="border: 0px;">57375</td>
                     <td style="border: 0px;">Is used for the OpendTect Petrel* plugin access.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When using the FlexNet license server for the OpendTect license(s) it will need open ports for the license server and vendor daemon(s). Here is a list of ports that need to be open on the server that is running the FlexNet license server:</p>
+        <table style="width: 100%; margin: 20px;" class="noborders">
+            <col style="width: 138px;" />
+            <col style="width: 80%;" />
+            <tbody>
+                <tr style="border: 0px;">
+                    <td style="font-weight: bold; border: 0px;">Ports</td>
+                    <td style="font-weight: bold; border: 0px;">Description</td>
+                </tr>
+                <tr style="border: 0px;">
+                    <td style="border: 0px;">27000 - 27009<br />or<br />specified port</td>
+                    <td style="border: 0px;">If no TCP&#160;port is specified in the license file the FlexNet license server will use an unused port in the range of 27000 - 27009.<br /></td>
+                </tr>
+                <tr style="border: 0px;">
+                    <td style="border: 0px;">random ephemeral port<br />or<br />specified port<br /></td>
+                    <td style="border: 0px;">If no TCP port is specified in the license file the dgbld and arkclsld vendor daemons will listen on an ephemeral random port.</td>
                 </tr>
             </tbody>
         </table>
