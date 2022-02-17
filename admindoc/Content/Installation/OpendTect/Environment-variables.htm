@@ -3,8 +3,14 @@
     <head>
     </head>
     <body>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Environment variables</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Environment variables</h3></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Environment variables</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Environment variables</h3>
+        </MadCap:conditionalText>
         <p>There are several environment variables that can be set. OpendTect will look for these environment variables. They can be set to:</p>
         <ul>
             <li>
@@ -36,7 +42,7 @@
                 </tr>
                 <tr>
                     <td>DGBLD_LICENSE_FILE</td>
-                    <td>port@host<br /><br />f.i. 27000@myserver</td>
+                    <td>port@host<br /><br />f.i. 27005@myserver</td>
                     <td>Used on clients to use a dGB FlexNet&#160;server license.<br />- port = the TCP/IP port the license server is using<br />- host = the hostname of the license server<br /></td>
                 </tr>
                 <tr>
