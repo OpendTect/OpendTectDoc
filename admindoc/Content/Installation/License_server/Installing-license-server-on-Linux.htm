@@ -53,12 +53,12 @@
                     <br />This error occurs when either the file or the executable's loader is not present. To find the executable's loader run the following command:<br /><code>file lmgrd</code><br />It should show something like:<br /><code>lmgrd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-lsb-x86-64.so.3, for GNU/Linux 2.6.18, stripped</code><br />Now check whether the file <i>/lib64/ld-lsb-x86-64.so.3</i> exists. If not then lsb needs to be installed.<br /><br />How to install lsb?&#160;This differs per distro:</p>
                 <ul>
                     <li>
-                        <p>Debian/Ubuntu: <code>sudo apt-get install lsb</code></p>
+                        <p>Debian/Ubuntu: <code>sudo apt install lsb</code></p>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <p>RHEL/CentOS: <code>yum install redhat-lsb</code></p>
+                        <p>RHEL/CentOS/Rocky: <code>yum install redhat-lsb</code></p>
                     </li>
                 </ul>
                 <ul>

@@ -13,6 +13,67 @@
         </MadCap:conditionalText>
         <p>OpendTect and OpendTect Pro, the Commercial plugins, Python packages, offline OpendTect and dGB&#160;Plugins documentation and Developer Tools can be installed via the OpendTect Installation Manager (OpendTect_Installer_lux64.sh) or via an offline package.<br /><br /></p>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Required system libraries</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4 style="page-break-before: avoid">Required system libraries</h4>
+        </MadCap:conditionalText>
+        <p>As written in the <a href="../../System_Requirements/Linux.htm">Linux System Requirements</a>, OpendTect requires several system libraries . To be able to successfully launch the OpendTect Installer and OpendTect itself you have to make sure that these system libraries are present:</p>
+        <ul>
+            <li>
+                <p>lsb</p>
+            </li>
+            <li>
+                <p>xcb</p>
+            </li>
+        </ul>
+        <h3>lsb</h3>
+        <p> You can check this using the command <code>lsb_release</code>.</p>
+        <p>How to install lsb?&#160;This differs per distro:</p>
+        <ul>
+            <li>
+                <p>Debian/Ubuntu: <code>sudo apt install lsb</code></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>RHEL/CentOS/Rocky: <code>yum install redhat-lsb</code></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>OpenSUSE: <code>zypper install lsb</code></p>
+            </li>
+        </ul>
+        <h3>xcb</h3>
+        <p>How to check for xcb?&#160;This differs per distro:</p>
+        <ul>
+            <li>
+                <p>Debian/Ubuntu: <code>sudo apt list --installed | grep xcb</code></p>
+            </li>
+            <li>
+                <p>RHEL/CentOS/Rocky: <code>yum list installed |&#160;grep xcb</code></p>
+            </li>
+            <li>
+                <p>OpenSUSE: <code>zypper search --installed-only xcb</code></p>
+            </li>
+        </ul>
+        <p>How to install xcb?&#160;This differs per distro:</p>
+        <ul>
+            <li>
+                <p>Debian/Ubuntu: <code>sudo apt install libx11-xcb1 libxcb-util1 libxcb1</code></p>
+            </li>
+            <li>
+                <p>RHEL/CentOS/Rocky: <code>yum install libxcb xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm</code></p>
+            </li>
+            <li>
+                <p>OpenSUSE: <code>zypper install libX11-xcb1 libxcb-util1 libxcb1</code></p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Installation via Installation Manager</h2>
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
