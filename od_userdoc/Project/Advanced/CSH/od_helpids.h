@@ -2,9 +2,8 @@
 /*+
 ________________________________________________________________________
 
- (C) dGB Beheer B.V.; (LICENSE) http://opendtect.org/OpendTect_license.txt
- Author:	K. TIngdahl
- Date:		March 2014
+ Copyright:	(C) 1995-2022 dGB Beheer B.V.
+ License:	https://dgbes.com/licensing
 ________________________________________________________________________
 
 -*/
@@ -20,7 +19,7 @@ ________________________________________________________________________
 #define		mLooknFeelSettingsHelpID			0x00002003
 #define		mShortcutsDlgHelpID				0x00002004
 #define		mPluginManHelpID				0x00002005
-#define		mPluginSelHelpID				0x00002006
+
 #define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
 #define		mSurveySettingsHelpID				0x00002008
 #define		mPythonSettingsHelpID				0x00002009
@@ -61,7 +60,7 @@ ________________________________________________________________________
 // Object-Management Basic 00
 #define		mSetDataDirHelpID				0x00800001
 // Object-Management Selection 01
-#define		mIOObjSelDlgHelpID				0x00801001
+#define		mIOObjInputSelDlgHelpID				0x00801001
 #define		mIOObjOutputSelDlgHelpID			0x00801002
 //Visualization 50
 // Visualization 3D 00
@@ -239,6 +238,8 @@ ________________________________________________________________________
 #define		mAngleCompAdvParsDlgHelpID			0x10302026
 #define		mProcSettingsHelpID				0x10302027
 #define		mSurfaceLimitedFillerHelpID			0x10302028
+#define		mRayTracerAdvancedDlgHelpID			0x10302029
+#define		mSynthGenAdvancedDlgHelpID			0x10302030
 // Seismics Wavelets 03
 #define		mSeisWvltManHelpID				0x10303000
 #define		mSeisWvltImpHelpID				0x10303001

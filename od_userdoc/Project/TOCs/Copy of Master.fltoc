@@ -17,7 +17,7 @@
     conditions="Default.PrintOnly" />
   <TocEntry
     Title="OpendTect User Documentation - Version 6.0"
-    Link="/Content/HTML Front Page/od_userdoc_v6.htm"
+    Link="/Content/HTML Front Page/od_userdoc_v7.htm"
     conditions="Default.ScreenOnly" />
   <TocEntry
     Title="1 Preface"

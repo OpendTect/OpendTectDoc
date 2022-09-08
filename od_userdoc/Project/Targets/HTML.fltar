@@ -25,14 +25,15 @@
   SearchEngine="MadCapSearch"
   DisableAutoSync="true">
   <PrintedOutput
-    CollapseMargins="true" />
+    CollapseMargins="true"
+    OutputFormat="doc" />
   <MetaTags>
     <meta
       http-equiv="X-UA-Compatible"
       content="IE=edge" />
     <meta
       name="description"
-      content="OpendTect User Documentation - Version 6.6" />
+      content="OpendTect User Documentation - Version 7.0" />
     <meta
       name="keywords"
       content="seismic interpretation, open source, opendtect, open, source, machine learning, d-tect , dtect, survey, analyses, research, geo-sciences, geology, geophysics, petrophysics, seismic, stochastic, modeling, monte carlo, simulation, quantitative, interpretation, inversion, integration, framework, neural network, supervised, unsupervised, reservoir characterisation, reservoir characterization, object detection, software, seismic software, free software, open software, free, application, linux, windows, solaris, mac os, data, SSIS, GDI, rock, studies, plugins, tutorials, users, support, training, documentation, manual, faq, visualization, horizon, faults, madagascar, crossplotting" />
