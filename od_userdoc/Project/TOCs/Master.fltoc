@@ -508,6 +508,16 @@
       <TocEntry
         Title="4.4.10 Export Wavelets"
         Link="/Content/Survey/Export/Export_Wavelets.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export Well.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Export/Export_Well/Export Well Data to ASCII.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Export/Export_Well/Export Well Log Data to LAS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="4.5 Manage"
