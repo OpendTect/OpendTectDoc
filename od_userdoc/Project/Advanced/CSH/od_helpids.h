@@ -391,7 +391,7 @@ ________________________________________________________________________
 #define		mDispEditMarkerDlgHelpID			0x10702001
 #define		mMarkerViewDlgHelpID				0x10702002
 #define		mWellMarkersDlgHelpID				0x10702003
-#define		mSynthCorrAdvancedDlgHelpID			0x10702004
+
 // Wells Attributes 03
 #define		mCreateAttribLogDlgHelpID			0x10703000
 #define		mWellLogToolWinMgrHelpID			0x10703001
