@@ -19,7 +19,6 @@ ________________________________________________________________________
 #define		mLooknFeelSettingsHelpID			0x00002003
 #define		mShortcutsDlgHelpID				0x00002004
 #define		mPluginManHelpID				0x00002005
-
 #define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
 #define		mSurveySettingsHelpID				0x00002008
 #define		mPythonSettingsHelpID				0x00002009
@@ -391,7 +390,6 @@ ________________________________________________________________________
 #define		mDispEditMarkerDlgHelpID			0x10702001
 #define		mMarkerViewDlgHelpID				0x10702002
 #define		mWellMarkersDlgHelpID				0x10702003
-
 // Wells Attributes 03
 #define		mCreateAttribLogDlgHelpID			0x10703000
 #define		mWellLogToolWinMgrHelpID			0x10703001
@@ -484,5 +482,3 @@ ________________________________________________________________________
 //NLA 114
 #define		mPrepNLADataHelpID				0x11400000
 #define		mLithCodeManHelpID				0x11400001
-
-
