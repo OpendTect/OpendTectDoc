@@ -37,4 +37,18 @@
       <microContentSubset />
     </KnowledgePanel>
   </MicroContentSearch>
+  <MetaTags>
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="description"
+      content="OpendTect Admin Documentation - Version 7.0" />
+    <meta
+      name="keywords"
+      content="OpendTect, OpendTect Pro, Machine Learning, System Requirements, Windows, Linux, Mac OS, Installation, Python environments, FlexNet License Server, Petrel Plugin, Host IDs, Demo/node-locked licenses, Floating licenses, Offline installation, Python settings, Distributed Computing, NVIDIA, NVIDIA GPU Performance Counters, Environment variables, Firewall rules, Open ports, YAML, Troubleshooting" />
+    <meta
+      name="robots"
+      content="index,follow" />
+  </MetaTags>
 </CatapultTarget>
