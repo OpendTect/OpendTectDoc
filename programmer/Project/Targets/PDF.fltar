@@ -21,7 +21,7 @@
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false" />
   <DocumentProperties
-    Title="OpendTect User Documentation - Version 6.6"
+    Title="OpendTect User Documentation - Version 7.0"
     Author="dGB Earth Sciences" />
   <PDF
     TitleBar="DocumentTitle"
@@ -36,5 +36,7 @@
   <Variables>
     <Variable
       Name="Variables/PubYear">2022</Variable>
+    <Variable
+      Name="Variables/Version">7.0</Variable>
   </Variables>
 </CatapultTarget>
