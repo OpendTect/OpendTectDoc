@@ -21,7 +21,7 @@
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false" />
   <DocumentProperties
-    Title="OpendTect User Documentation - Version 6.6"
+    Title="OpendTect User Documentation - Version 7.0"
     Author="dGB Earth Sciences" />
   <PDF
     TitleBar="DocumentTitle"

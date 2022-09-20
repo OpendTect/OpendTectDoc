@@ -20,7 +20,7 @@
   BrowseSequence="/Project/Advanced/Browse Sequences/Getting Started.flbrs"
   PreCompileScaledImages="false"
   EnableSitemap="true"
-  SitemapWebUrl="http://doc.opendtect.org/6.6.0/doc/od_userdoc/"
+  SitemapWebUrl="http://doc.opendtect.org/7.0.0/doc/od_userdoc/"
   EquationsOutputType="SVG"
   SearchEngine="MadCapSearch"
   DisableAutoSync="true">
@@ -45,4 +45,16 @@
     <Variable
       Name="Variables/PubYear">2022</Variable>
   </Variables>
+  <MicroContentSearch>
+    <FeaturedSnippets
+      type="AllFiles"
+      numberOfResults="1">
+      <microContentSubset />
+    </FeaturedSnippets>
+    <KnowledgePanel
+      type="Empty"
+      numberOfResults="1">
+      <microContentSubset />
+    </KnowledgePanel>
+  </MicroContentSearch>
 </CatapultTarget>
