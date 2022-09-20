@@ -3,11 +3,11 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/cover/OpendTect_6.htm"
+    Link="/Content/cover/OpendTect_7.htm"
     conditions="Default.ScreenOnly"></TocEntry>
   <TocEntry
     Title="PDF cover"
-    Link="/Content/cover/PDF_OpendTect_6.htm"
+    Link="/Content/cover/PDF_OpendTect_7.htm"
     conditions="Default.PrintOnly"
     StartSection="false">
     <TocEntry

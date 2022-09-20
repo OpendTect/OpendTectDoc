@@ -18,10 +18,23 @@
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
   PreCompileScaledImages="false"
   EnableSitemap="true"
-  SitemapWebUrl="https://doc.opendtect.org/6.6.0/doc/admindoc/"
-  EquationsOutputType="SVG"
+  SitemapWebUrl="https://doc.opendtect.org/7.0.0/doc/admindoc/"
+  EquationsOutputType="PNG"
   SearchEngine="MadCapSearch"
-  ResultsPerPage="20">
+  ResultsPerPage="20"
+  AbstractLength="306">
   <PrintedOutput
     CollapseMargins="true" />
+  <MicroContentSearch>
+    <FeaturedSnippets
+      type="AllFiles"
+      numberOfResults="1">
+      <microContentSubset />
+    </FeaturedSnippets>
+    <KnowledgePanel
+      type="Empty"
+      numberOfResults="1">
+      <microContentSubset />
+    </KnowledgePanel>
+  </MicroContentSearch>
 </CatapultTarget>
