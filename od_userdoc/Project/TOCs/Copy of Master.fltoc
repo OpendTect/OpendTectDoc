@@ -35,8 +35,7 @@
       Title="1.4 Copyright"
       Link="/Content/Preface/Copyright.htm" />
     <TocEntry
-      Title="1.5 Acknowledgements"
-      Link="/Content/Preface/Acknowledgements.htm" />
+      Title="1.5 Acknowledgements" />
   </TocEntry>
   <TocEntry
     Title="2 Getting Started"
@@ -478,7 +477,7 @@
         Link="/Content/Survey/Manage/Manage_Attribute_Sets.htm" />
       <TocEntry
         Title="4.5.2 Manage Bodies"
-        Link="/Content/Survey/Manage/Manage_Bodies.htm">
+        Link="/Content/Survey/Manage/Manage_Geobodies.htm">
         <TocEntry
           Title="4.5.2.1 Body Operator"
           Link="/Content/Survey/Manage/Manage_Bodies/Body_Operator.htm" />

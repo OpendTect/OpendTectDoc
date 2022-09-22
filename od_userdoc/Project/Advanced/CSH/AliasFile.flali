@@ -329,7 +329,7 @@
     <Map Name="mSessionManHelpID" Link="/Content/Survey/Manage/Manage_Sessions.htm" />
     <Map Name="mOpenCossplotHelpID" Link="/Content/Analysis/Cross-Plot/Open_Cross-Plot.htm" />
     <Map Name="mHorizonPreLoadDlgHelpID" Link="/Content/Survey/Pre-Load/Preload_Horizons.htm" />
-    <Map Name="mBodyManHelpID" Link="/Content/Survey/Manage/Manage_Bodies.htm" />
+    <Map Name="mBodyManHelpID" Link="/Content/Survey/Manage/Manage_Geobodies.htm" />
     <Map Name="mAttrVolOut2DHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Create_2D_Output.htm" />
     <Map Name="mODInstMgrHelpID" Link="/Content/Utilities/Installation/Update.htm" />
     <Map Name="mODInstMgrgetPackageChoiceHelpID" Link="/Content/Utilities/Installation/Update.htm" />
