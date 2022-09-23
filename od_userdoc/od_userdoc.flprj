@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultProject Version="1" MasterStylesheet="/Content/Resources/Stylesheets/Styles.css" MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl" xml:lang="en-us" SourceControlBound="false" Comment="This template contains a minimum number of content and project files, including a single topic. It is the best choice for those who want to begin with a skeleton project." MasterToc="/Project/TOCs/Master.fltoc">
     <Synchronize>
-        <Mapping ProjectPath="Content/Resources/Images/Analysis layer modelling layer description.png" ExternalPath="file:///C:/separate_repositories/ODDoc6/od_userdoc/Content/Resources/Images/2 Getting Started/Analysis layer modelling layer description.png" />
+        <Mapping ProjectPath="Content/Resources/Images/Analysis/Analysis layer modelling layer description.png" ExternalPath="file:///C:/separate_repositories/ODDoc6/od_userdoc/Content/Resources/Images/2 Getting Started/Analysis layer modelling layer description.png" />
     </Synchronize>
 </CatapultProject>

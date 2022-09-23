@@ -12,7 +12,6 @@ ________________________________________________________________________
 // General_support 01
 #define		mProgressViewerHelpID				0x00001003
 #define		mBatchProgLaunchHelpID				0x00001005
-#define		mBatchHostsDlgHelpID				0x00001006
 // General Setup 02
 #define		mSettingsHelpID					0x00002001
 #define		mSetFontsHelpID					0x00002002
@@ -209,7 +208,6 @@ ________________________________________________________________________
 #define		mImplicitBodyValueSwitchDlgHelpID		0x10301021
 #define		mImplBodyCalDlgHelpID				0x10301022
 // Seismics Processing 02
-#define		mSeisMMProcHelpID				0x10302000
 #define		mPreStackAGCHelpID				0x10302001
 #define		mPreStackMuteHelpID				0x10302002
 #define		mPreStackVerticalStackHelpID			0x10302003
@@ -255,7 +253,6 @@ ________________________________________________________________________
 #define		mPreStackCopyDlgHelpID				0x10304002
 #define		mPreStackMergeDlgHelpID				0x10304003
 #define		mRayTrcParamsDlgHelpID				0x10304004
-#define		mPreStackMMProcHelpID				0x10304005
 // Seismics LINKS 05
 #define		mMadagascarMainHelpID				0x10305000
 #define		mMadIOSelDlgHelpID				0x10305001
@@ -295,7 +292,6 @@ ________________________________________________________________________
 #define		mCreateHorizonHelpID				0x10400019
 #define		mgetHorizonZAxisTransformHelpID			0x10400020
 #define		mDataPointSetPickDlgHelpID			0x10400021
-#define		mIsochronMakerBatchHelpID			0x10400022
 #define		mFromZMap					0x10400023
 // Surfaces Faults 01
 #define		mImportFaultHelpID				0x10401000
