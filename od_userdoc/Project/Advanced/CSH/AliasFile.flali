@@ -13,7 +13,7 @@
     <Map Name="mZScaleDlgHelpID" Link="/Content/View/Z-Scale.htm" />
     <Map Name="mRestartBatchDialogHelpID" Link="/Content/Processing/Start_Batch_Job.htm" />
     <Map Name="mBatchTime2DepthSetupHelpID" Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion.htm" />
-    <Map Name="mBatchHostsDlgHelpID" Link="/Content/Utilities/Installation/Setup_Batch_Processing.htm" />
+    <Map Name="mODSceneMgrsetKeyBindingsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mBodyFillerHelpID" Link="/Content/Survey/Manage/Manage_Bodies/Switch_Body_Values.htm" />
     <Map Name="mAttrSetManHelpID" Link="/Content/Survey/Manage/Manage_Attribute_Sets.htm" />
     <Map Name="mCopySurface2DHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_2D.htm" />
@@ -245,7 +245,7 @@
     <Map Name="mPreStackVerticalStackHelpID" Link="/Content/Processing/Create_Seismic_Output/Pre-Stack_Processing/Super_Gather.htm" />
     <Map Name="mProcSettingsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mReadMarkerFileHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
-    <Map Name="mSeisMMProcHelpID" Link="/Content/Processing/Batch_Processing/Multi-Machine_Batch_Processing_Window.htm" />
+    <Map Name="mSettingsHelpID" Link="/Content/Utilities/Settings/Advanced Settings/Personal Settings.htm" />
     <Map Name="mSeisMultiCubePSHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Multi-Component_Outputs.htm" />
     <Map Name="mSeisRandTo2DLineDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
     <Map Name="mSelColorDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window/Well-Based_Color_Coding.htm" />
@@ -331,8 +331,8 @@
     <Map Name="mHorizonPreLoadDlgHelpID" Link="/Content/Survey/Pre-Load/Preload_Horizons.htm" />
     <Map Name="mBodyManHelpID" Link="/Content/Survey/Manage/Manage_Bodies.htm" />
     <Map Name="mAttrVolOut2DHelpID" Link="/Content/Processing/Create_Seismic_Output/Attributes/Create_2D_Output.htm" />
-    <Map Name="mODInstMgrHelpID" Link="/Content/Utilities/Installation/Update.htm" />
-    <Map Name="mODInstMgrgetPackageChoiceHelpID" Link="/Content/Utilities/Installation/Update.htm" />
+    <Map Name="mWellCopyHelpID" Link="/Content/Survey/Manage/Manage_Wells/Copy Well.htm" />
+    <Map Name="mHandleDLSiteFailHelpID" Link="/Content/Help/Installation Manager.htm" />
     <Map Name="mProxyDlgHelpID" Link="/Content/Utilities/Installation/Connection_Settings.htm" />
     <Map Name="mSemblanceAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Semblance.htm" />
     <Map Name="mCoherencyAttrib" Link="/Content/Appendix_A-Attributes_And_Filters/Similarity.htm" />
@@ -372,11 +372,11 @@
     <Map Name="mGrubbsFilterAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
     <Map Name="mhandleExistingGeometryHelpID" Link="/Content/Survey/Import/Import_Horizons/Geometry_3D.htm" />
     <Map Name="mImpAttrSetHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
-    <Map Name="mIsochronMakerBatchHelpID" Link="/Content/Utilities/Installation/Setup_Batch_Processing.htm" />
+    <Map Name="mSurveySettingsHelpID" Link="/Content/Utilities/Settings/Advanced Settings/Survey Defaults.htm" />
     <Map Name="mLatLong2CoordFileTransDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mMarkerViewDlgHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
     <Map Name="mNewSurveyByCopyHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
-    <Map Name="mPreStackMMProcHelpID" Link="/Content/Processing/Batch_Processing/Multi-Machine_Batch_Processing_Window.htm" />
+    <Map Name="mWellExpDlg" Link="/Content/Survey/Export/Export_Well/Export Well Data to ASCII.htm" />
     <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mProbDenFuncGenSampledHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mrockPhysReqHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />

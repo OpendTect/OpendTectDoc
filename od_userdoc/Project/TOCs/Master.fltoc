@@ -508,6 +508,16 @@
       <TocEntry
         Title="4.4.10 Export Wavelets"
         Link="/Content/Survey/Export/Export_Wavelets.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export Wells.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Export/Export_Wells/Export Well Data to ASCII.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Export/Export_Wells/Export Well Log Data to LAS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="4.5 Manage"
@@ -707,7 +717,10 @@
           Link="/Content/Survey/Manage/Manage_Wells/Logs_Export.htm" />
         <TocEntry
           Title="4.5.17.8 Export Well Surface Positions to Google Earth"
-          Link="/Content/Survey/Manage/Manage_Wells/Export_Well_Surface_Positions_To_Google_Earth.htm" />
+          Link="/Content/Survey/Manage/Manage_Wells/Export_Well_Surface_Positions_To_Google_Earth.htm"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Manage/Manage_Wells/Copy Well.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
@@ -1094,10 +1107,17 @@
         Link="/Content/Utilities/Settings/Keyboard_Shortcuts.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Settings/Language.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Settings/Advanced.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Utilities/Settings/Advanced Settings/Personal Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Utilities/Settings/Advanced Settings/Survey Defaults.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Utilities/Settings/Petrel_Connection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Utilities/Settings/Language.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="9.2 Tools"
@@ -1193,6 +1213,9 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Help/About_OpendTect.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Installation Manager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="11 Appendix A - Attributes and Filters"
