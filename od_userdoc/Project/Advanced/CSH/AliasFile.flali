@@ -376,7 +376,6 @@
     <Map Name="mLatLong2CoordFileTransDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mMarkerViewDlgHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
     <Map Name="mNewSurveyByCopyHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
-    <Map Name="mWellExpDlg" Link="/Content/Survey/Export/Export_Well/Export Well Data to ASCII.htm" />
     <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mProbDenFuncGenSampledHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
     <Map Name="mrockPhysReqHelpID" Link="/Content/Survey/Manage/Manage_Wells/Logs_Creation/Rock_Physics_Library.htm" />
@@ -407,4 +406,5 @@
     <Map Name="mFromZMap" Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
     <Map Name="mPythonSettingsHelpID" Link="/Content/Utilities/Installation/Python_Settings_Data_Flow_and_Data_Management.htm" />
     <Map Name="mIOObjOutputSelDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Output_Cube.htm" />
+    <Map Name="mWellExpDlg" Link="/Content/Survey/Export/Export_Wells/Export Well Data to ASCII.htm" />
 </CatapultAliasFile>
