@@ -19,5 +19,4 @@ ________________________________________________________________________
 #define		mODInstPkgMgrHelpID				0x20001002
 #define		mODInstMgrcheckInstDirHelpID			0x20001003
 #define		mODInstMgrgetPackageChoiceHelpID		0x20001004
-
-#define mODInstMgrHandleDLSiteFailHelpID 0x20001005
+#define		mODInstMgrHandleDLSiteFailHelpID		0x20001005
