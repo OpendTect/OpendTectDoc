@@ -12,11 +12,25 @@
         <h3>CMake</h3>
         <p>Download CMake from <a href="https://cmake.org/download/">https://cmake.org/download/</a>.</p>
         <h3>Qt</h3>
-        <p>Go to <a href="https://www.qt.io/download" target="_blank">https://www.qt.io/download</a> to download the required QT binaries by using their online installation tool. Be sure to select only the components you require, as it is very space consuming to install all components of QT.</p>
-        <p> For building the main, od6.6.0 and od6.6 branch QT 5.15.0 is required. For branches od6.4.5, od6.4 and od6.5 QT 5.9.6 is required. </p>
-        <p>For building with Visual studio select the MSVC 2019 64-bit component (Windows), SDK 10.14 (MacOS) or gcc 64 bit (Linux). Also select the appropriate Q WebEngine for installation in the same version. Optionally you can also install source code and/or debug information files.</p>
+        <p>For the Qt install, <a href="https://www.qt.io/download-qt-installer" target="_blank">Qt Online Installer</a> is the easiest and recommended way. The following components must be selected depending on your build platform:</p>
+        <ul>
+            <li>
+                <p>Desktop msvc2019 64- bit (Windows), SDK 10.14 (macOS) or gcc 64 bit (Linux)<br /></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>QtWebEngine</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Optionally source code or debug information files</p>
+            </li>
+        </ul>
+        <p> For building the main branch Qt 5.15.2 is required. For od6.6_rel and od6.6 branch Qt 5.15.1 is required. For branches od6.4.5 and od6.4 Qt 5.9.6 is required. </p>
         <h3>OSG</h3>
-        <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a>. The 3.6.5 release and/or debug version is needed for building the main, od6.6.0 and od6.6 branches of OpendTect. The 3.6.3 release and/or debug version is needed for building the od6.4.5, od6.4 and od6.5 branches. </p>
+        <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a>. The 3.6.5 release and/or debug version is needed for building the main, od6.6_rel and od6.6 branches of OpendTect. The 3.6.3 release and/or debug version is needed for building the od6.4.5 and od6.4 branches.</p>
         <h3>HDF5 (optional)</h3>
         <p>Get HDF5 here:&#160;<a href="https://www.hdfgroup.org/downloads/hdf5">https://www.hdfgroup.org/downloads/hdf5</a>. The link to HDF5 requires to provide the path to an existing HDF5 installation. All versions above 1.10.3 are supported, but using the current API 1.12 is preferred. Installation is best done using their binary installations (on Windows especially), or from the package manager on Linux. Windows developers however need to recompile the sources since no debug binary libraries can be downloaded.</p>
     </body>
