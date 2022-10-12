@@ -28,35 +28,42 @@
                 <p>Make sure that PATH is set correctly for Python and the non Python libraries </p>
             </li>
         </ul>
-        <p style="font-weight: bold;">Python supported version</p>
-        <p style="font-weight: normal;">Currently OpendTect and the Machine Learning plugin supports Python 3.8.</p>
-        <p style="font-weight: bold;">Windows recommendations</p>
+        <h2>Supported versions</h2>
+        <p style="font-weight: normal;">Currently OpendTect and the Machine Learning plugin support:</p>
         <ul>
             <li>
-                <p style="font-weight: normal;">To check whether Python has been installed open the Command Prompt and run:<br /><span style="font-family: 'Courier New';">where.exe python</span><br />If it has been installed it will give the path to python.exe</p>
+                <p style="font-weight: normal;">Python 3.8</p>
+            </li>
+            <li>
+                <p>CUDA&#160;Toolkit 11.3</p>
+            </li>
+            <li>
+                <p>cuDNN v8.2.1</p>
+            </li>
+            <li>
+                <p>HDF5 1.12.2</p>
+            </li>
+        </ul>
+        <h2>Windows recommendations
+        </h2>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">To check whether Python has been installed open the Command Prompt and run:<br /><span style="font-family: 'Courier New';">where.exe python</span><br />If it has been installed it will give the path to python.exe<br /></p>
+            </li>
+            <li>
+                <p>For finding out which Python version is installed open the Command Prompt and run:<br /><span style="font-family: 'Courier New';">python --version</span><br /></p>
             </li>
         </ul>
         <ul>
             <li>
-                <p style="font-weight: normal;">We recommend to install Python with the full installer from Python.org <a href="https://www.python.org/downloads/windows/" target="_blank">Downloads page for Windows</a>. The other options to install Python are from the Microsoft Store and via the Windows Subsystem for Linux (WSL). The reason for not recommending the Microsoft Store package is that it has <a href="https://docs.python.org/3/using/windows.html#known-issues" target="_blank">limitations</a> that make it not suited for a professional development environment. <br /></p>
+                <p style="font-weight: normal;">We recommend to install Python with the <a href="https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe" target="_blank">full 64 bits installer</a> from Python.org <a href="https://www.python.org/downloads/windows/" target="_blank">Downloads page for Windows</a>. The other options to install Python are from the Microsoft Store and via the Windows Subsystem for Linux (WSL). The reason for not recommending the Microsoft Store package is that it has <a href="https://docs.python.org/3/using/windows.html#known-issues" target="_blank">limitations</a> that make it not suited for a professional development environment. <br /><br />To make it easier it is recommended to toggle on <i>Add Python 3.8 to PATH</i> before clicking <i>Install Now</i><br /><img src="../../Resources/Images/Install-Windows-Python-38.png" style="width: 525px;height: 322px;" /><br /><small>Figure: Install Python 3.8 to the system and add to path</small><br /></p>
             </li>
             <li>
-                <p>Make sure that you toggle off <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings.<br /><br /><img src="../../Resources/Images/windows-settings-app-execution-aliases.png" style="width: 328px;height: 321px;" /><br /><small>Figure: Settings &gt; Manage app execution aliases</small><br /></p>
+                <p>Make sure that you toggle off <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings.<br /><br /><img src="../../Resources/Images/windows-settings-app-execution-aliases.png" style="width: 328px;height: 321px;" /><br /><small>Figure: Settings &gt; Manage app execution aliases</small></p>
             </li>
         </ul>
-        <p style="font-weight: bold;">Installations with pip</p>
-        <p style="font-weight: normal;">In the Command&#160;Prompt or Terminal run:</p>
-        <p style="font-weight: normal;"><span style="font-family: 'Courier New'; font-size: 10pt;">pip install --upgrade pip</span>
-            <br /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install wheel</span></span>
-            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install python-docx python-pptx</span></span>
-            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install safety</span></span>
-            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install bokeh==2.4.2 h5py humanfriendly jupyterlab keras matplotlib numba numpy onnx onnxmltools onnxruntime pandas psutil scikit-learn scipy spyder tensorboard==2.7.0 tensorflow==2.7.0 torch torchaudio torchvision xgboost</span></span>
-        </p>
-        <p style="font-weight: bold;">Installing CUDA Toolkit, cuDNN and HDF5</p>
-        <p style="font-weight: normal;">CUDA Toolkit can be downloaded from the <a href="https://developer.nvidia.com/cuda-11.3.0-download-archive" target="_blank">CUDA&#160;Toolkit</a> download page. Currently we support CUDA&#160;Toolkit 11.3. </p>
-        <p style="font-weight: normal;">cuDNN can be downloaded from the <a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" title="NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks" alt="cuDNN Archive">cuDNN Archive</a>. Currently we advise to download and install cuDNN v8.2.1 (June 7th, 2021), for CUDA 11.x</p>
-        <p style="font-weight: normal;">HDF5 can be downloaded from the <a href="https://www.hdfgroup.org/downloads/hdf5/" target="_blank">hdfgroup.org downloads page</a>. Currently we advise to download and install HDF5 1.12.2.</p>
-        <p style="font-weight: bold;">Check whether all paths are set</p>
+        <h3>Check whether all paths are set
+        </h3>
         <p style="font-weight: normal;">The paths to the Python and Python Scripts directory should have been set in environment variable Path, e.g:</p>
         <ul>
             <li>
@@ -66,13 +73,13 @@
                 <p>C:\Users\your_username\AppData\Local\Programs\Python\Python38\Scripts</p>
             </li>
         </ul>
-        <p style="font-weight: normal;">The following paths should be listed in the System Environment Path variable for Windows:</p>
+        <p style="font-weight: normal;">The following paths should be listed in the System Environment Path variable:</p>
         <ul>
             <li>
                 <p style="font-weight: normal;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\bin</p>
             </li>
             <li>
-                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\extras\CUPTI\lib64<br /><i>Please note that this path the CUDA&#160;Toolkit installer will not set. It is recommended to set this one manually so that Python can use CUPTI.</i></p>
+                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\extras\CUPTI\lib64<br></br><i>Please note that this path the CUDA&#160;Toolkit installer will not set. It is recommended to set this one manually so that Python can use CUPTI.</i></p>
             </li>
         </ul>
         <ul>
@@ -82,11 +89,26 @@
         </ul>
         <ul>
             <li>
-                <p style="font-weight: normal;">C:\Program Files\HDF_Group\HDF5\1.12.2\bin</p>
+                <p style="font-weight: normal;">C:\Program Files\HDF_Group\HDF5\1.12.2\bin<br /></p>
             </li>
         </ul>
-        <p style="font-weight: normal;"><b>Use the system Python environment in OpendTect</b>
+        <h2>Installations
+        </h2>
+        <h3>Installing Python packages with pip
+        </h3>
+        <p style="font-weight: normal;">In the Command&#160;Prompt or Terminal run:</p>
+        <p style="font-weight: normal;"><span style="font-family: 'Courier New'; font-size: 10pt;">python -m ensurepip --upgrade</span>
+            <br /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install wheel</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install python-docx python-pptx</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install safety</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install bokeh h5py humanfriendly jupyterlab keras matplotlib numba numpy onnx onnxmltools onnxruntime pandas psutil scikit-learn scipy spyder tensorboard tensorflow torch torchaudio torchvision xgboost</span></span>
         </p>
+        <h3><span style="font-weight: normal;">Installing CUDA Toolkit, cuDNN and HDF5</span>
+        </h3>
+        <p style="font-weight: normal;">CUDA Toolkit can be downloaded from the <a href="https://developer.nvidia.com/cuda-11.3.0-download-archive" target="_blank">CUDA&#160;Toolkit</a> download page. Our advise is to download and install CUDA&#160;Toolkit 11.3. </p>
+        <p style="font-weight: normal;">cuDNN can be downloaded from the <a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" title="NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks" alt="cuDNN Archive">cuDNN Archive</a>. Our advise is to download  cuDNN v8.2.1 (June 7th, 2021), for CUDA 11.x. It is best to unzip the downloaded zip-file's cuda folder content into the path C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3</p>
+        <p style="font-weight: normal;">HDF5 can be downloaded from the <a href="https://www.hdfgroup.org/downloads/hdf5/" target="_blank">hdfgroup.org downloads page</a>. Our advise is to download and install HDF5 1.12.2.</p>
+        <h2 style="font-weight: normal;">Use the system Python environment in OpendTect</h2>
         <p style="font-weight: normal;">To use the system Python environment select <b>System</b> as Python environment in the <i>Set Python settings</i> window. When the system Python has been succesfully installed the Test button should give the list of Python packages that are available in the system Python environment.<br /></p>
         <p style="font-weight: normal;">If the Test button gives the below error we suggest that you first check whether <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings are toggled on. If so then toggle them off and run the test again.</p>
         <p style="font-weight: normal;">
