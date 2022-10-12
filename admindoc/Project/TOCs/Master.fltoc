@@ -102,6 +102,9 @@
         Title="Installing Python environments with the OpendTect installer"
         Link="/Content/Installation/Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm" />
       <TocEntry
+        Title="Installing Python on your system for use in OpendTect"
+        Link="/Content/Installation/Python_environments/Installing-Python-on-your-system-for-use-in-OpendTect.htm" />
+      <TocEntry
         Title="Installing Python environments from YAML files"
         Link="/Content/Installation/Python_environments/Installing-Python-environments-from-YAML-files.htm" />
     </TocEntry>

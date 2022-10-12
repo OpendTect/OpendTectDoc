@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Installing  Python on your system for use in OpendTect</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Installing  Python on your system for use in OpendTect</h3>
+        </MadCap:conditionalText>
+        <p>It is possible to use a system Python installation  in OpendTect. In this scope such a Python installation is not a miniconda or anaconda installation, and is generally installed by the System Administrator or by the user. </p>
+        <p>In order for OpendTect to use a system Python installation the following things need to be done:</p>
+        <ul>
+            <li>
+                <p>Several packages need to be installed with pip, we will give a list below</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Non Python libraries CUDA, cuDNN and HDF5 need to be installed</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Make sure that PATH is set correctly for Python and the non Python libraries </p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Python supported version</p>
+        <p style="font-weight: normal;">Currently OpendTect and the Machine Learning plugin supports Python 3.8.</p>
+        <p style="font-weight: bold;">Windows recommendations</p>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">To check whether Python has been installed open the Command Prompt and run:<br /><span style="font-family: 'Courier New';">where.exe python</span><br />If it has been installed it will give the path to python.exe</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">We recommend to install Python with the full installer from Python.org <a href="https://www.python.org/downloads/windows/" target="_blank">Downloads page for Windows</a>. The other options to install Python are from the Microsoft Store and via the Windows Subsystem for Linux (WSL). The reason for not recommending the Microsoft Store package is that it has <a href="https://docs.python.org/3/using/windows.html#known-issues" target="_blank">limitations</a> that make it not suited for a professional development environment. <br /></p>
+            </li>
+            <li>
+                <p>Make sure that you toggle off <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings.<br /><br /><img src="../../Resources/Images/windows-settings-app-execution-aliases.png" style="width: 328px;height: 321px;" /><br /><small>Figure: Settings &gt; Manage app execution aliases</small><br /></p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Installations with pip</p>
+        <p style="font-weight: normal;">In the Command&#160;Prompt or Terminal run:</p>
+        <p style="font-weight: normal;"><span style="font-family: 'Courier New'; font-size: 10pt;">pip install --upgrade pip</span>
+            <br /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install wheel</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install python-docx python-pptx</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install safety</span></span>
+            <br style="font-family: 'Courier New';font-size: 10pt;" /><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">pip install bokeh==2.4.2 h5py humanfriendly jupyterlab keras matplotlib numba numpy onnx onnxmltools onnxruntime pandas psutil scikit-learn scipy spyder tensorboard==2.7.0 tensorflow==2.7.0 torch torchaudio torchvision xgboost</span></span>
+        </p>
+        <p style="font-weight: bold;">Installing CUDA Toolkit, cuDNN and HDF5</p>
+        <p style="font-weight: normal;">CUDA Toolkit can be downloaded from the <a href="https://developer.nvidia.com/cuda-11.3.0-download-archive" target="_blank">CUDA&#160;Toolkit</a> download page. Currently we support CUDA&#160;Toolkit 11.3. </p>
+        <p style="font-weight: normal;">cuDNN can be downloaded from the <a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" title="NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks" alt="cuDNN Archive">cuDNN Archive</a>. Currently we advise to download and install cuDNN v8.2.1 (June 7th, 2021), for CUDA 11.x</p>
+        <p style="font-weight: normal;">HDF5 can be downloaded from the <a href="https://www.hdfgroup.org/downloads/hdf5/" target="_blank">hdfgroup.org downloads page</a>. Currently we advise to download and install HDF5 1.12.2.</p>
+        <p style="font-weight: bold;">Check whether all paths are set</p>
+        <p style="font-weight: normal;">The paths to the Python and Python Scripts directory should have been set in environment variable Path, e.g:</p>
+        <ul>
+            <li>
+                <p>C:\Users\your_username\AppData\Local\Programs\Python\Python38</p>
+            </li>
+            <li>
+                <p>C:\Users\your_username\AppData\Local\Programs\Python\Python38\Scripts</p>
+            </li>
+        </ul>
+        <p style="font-weight: normal;">The following paths should be listed in the System Environment Path variable for Windows:</p>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\bin</p>
+            </li>
+            <li>
+                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\extras\CUPTI\lib64<br /><i>Please note that this path the CUDA&#160;Toolkit installer will not set. It is recommended to set this one manually so that Python can use CUPTI.</i></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\libnvvp</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p style="font-weight: normal;">C:\Program Files\HDF_Group\HDF5\1.12.2\bin</p>
+            </li>
+        </ul>
+        <p style="font-weight: normal;"><b>Use the system Python environment in OpendTect</b>
+        </p>
+        <p style="font-weight: normal;">To use the system Python environment select <b>System</b> as Python environment in the <i>Set Python settings</i> window. When the system Python has been succesfully installed the Test button should give the list of Python packages that are available in the system Python environment.<br /></p>
+        <p style="font-weight: normal;">If the Test button gives the below error we suggest that you first check whether <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings are toggled on. If so then toggle them off and run the test again.</p>
+        <p style="font-weight: normal;">
+            <img src="../../Resources/Images/error-cannot-detect-python-version-microsoft-store.png" style="width: 503px;height: 189px;" />
+            <br /><small>Figure:&#160;Error cannot detect Python version:&#160;Microsoft Store / disable shortcut</small>
+            <br />
+        </p>
+    </body>
+</html>
