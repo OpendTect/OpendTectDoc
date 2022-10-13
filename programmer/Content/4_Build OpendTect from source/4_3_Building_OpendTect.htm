@@ -6,7 +6,7 @@
         <h2>4.3 Building OpendTect<MadCap:concept term="Building OpendTect" /></h2>
         <h3>Windows</h3>
         <p>Run CMake and select the folders for the source code and where to build the binaries (for example C:\dev\od for both).</p>
-        <p>Configure CMake. Select generator Visual Studio 17 2022 and platform x64. Then set the following variables:</p>
+        <p>Configure CMake. Select generator Visual Studio 16 2019 or Visual Studio 17 2022 and platform x64. Then set the following variables:</p>
         <ul>
             <li>
                 <p>QTDIR= set this to the Qt install path for the appropriate version of Qt for the OpendTect version, e.g. C:\Qt\5.15.2\msvc2019_64</p>
@@ -29,7 +29,7 @@
             </li>
         </ul>
         <p> Press configure.  If it says configuring done, press the generate button to build the solution files.</p>
-        <p>Start Visual Studio 2022 and open the OpendTect build solution (OpendTect.sln file). Before starting the build it is a good idea to set od_main as the Startup Project. Then start the build.</p>
+        <p>Start Visual Studio 2019 or Visual Studio 2022 and open the OpendTect build solution (OpendTect.sln file). Before starting the build it is a good idea to set od_main as the Startup Project. Then start the build.</p>
         <h3>Linux</h3>
         <p>Configure CMake ensuring to set the following variables:</p>
         <ul>
