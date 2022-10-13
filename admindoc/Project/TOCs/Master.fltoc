@@ -99,14 +99,14 @@
         Title="Information about the OpendTect Python environments"
         Link="/Content/Installation/Python_environments/Information-about-the-OpendTect-Python-environments.htm" />
       <TocEntry
-        Title="Installing Python environments with the OpendTect installer"
-        Link="/Content/Installation/Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm" />
+        Title="Internal Python installation for use in OpendTect"
+        Link="/Content/Installation/Python_environments/Internal-Python-installation-for-use-in-OpendTect.htm" />
       <TocEntry
-        Title="Installing Python on your system for use in OpendTect"
-        Link="/Content/Installation/Python_environments/Installing-Python-on-your-system-for-use-in-OpendTect.htm" />
+        Title="System Python installation for use in OpendTect"
+        Link="/Content/Installation/Python_environments/System-Python-installation-for-use-in-OpendTect.htm" />
       <TocEntry
-        Title="Installing Python environments from YAML files"
-        Link="/Content/Installation/Python_environments/Installing-Python-environments-from-YAML-files.htm" />
+        Title="Custom Python installation from YAML files"
+        Link="/Content/Installation/Python_environments/Custom-Python-installation-from-YAML-files.htm" />
     </TocEntry>
     <TocEntry
       Title="License server"

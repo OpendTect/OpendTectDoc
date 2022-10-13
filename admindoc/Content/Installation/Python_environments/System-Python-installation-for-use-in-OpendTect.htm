@@ -4,14 +4,14 @@
     </head>
     <body>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
-            <h1>Installing  Python on your system for use in OpendTect</h1>
+            <h1>System Python installation for use in OpendTect</h1>
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
             <p>
             </p>
-            <h3>Installing  Python on your system for use in OpendTect</h3>
+            <h3>System Python installation for use in OpendTect</h3>
         </MadCap:conditionalText>
-        <p>It is possible to use a system Python installation  in OpendTect. In this scope such a Python installation is not a miniconda or anaconda installation, and is generally installed by the System Administrator or by the user. </p>
+        <p>It is possible to use a system Python installation  in OpendTect. In this scope such a Python installation is not a miniconda or anaconda installation.<br />Note that this is more complicated than the <a href="Internal-Python-installation-for-use-in-OpendTect.htm">Internal</a> and <a href="Custom-Python-installation-from-YAML-files.htm">Custom</a> Python installation options.</p>
         <p>In order for OpendTect to use a system Python installation the following things need to be done:</p>
         <ul>
             <li>
@@ -111,7 +111,7 @@
         <h2>Use the system Python environment in OpendTect
         </h2>
         <p style="font-weight: normal;">To use the system Python environment select <b>System</b> as Python environment in the <i>Set Python settings</i> window. When the system Python has been succesfully installed the Test button should give the list of Python packages that are available in the system Python environment.<br /></p>
-        <p style="font-weight: normal;">If the Test button gives the below error we suggest that you first check whether <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings are toggled on. If so then toggle them off and run the test again.</p>
+        <p style="font-weight: normal;">Up to 6.6.8 the Test button may give the below error. If that happens we suggest that you first check whether <i>App Installer python.exe</i> and <i>App Installer python3.exe</i> in the <i>App execution aliases</i> settings are toggled on. If so then toggle them off and run the test again.</p>
         <p style="font-weight: normal;">
             <img src="../../Resources/Images/error-cannot-detect-python-version-microsoft-store.png" style="width: 503px;height: 189px;" />
             <br /><small>Figure:&#160;Error cannot detect Python version:&#160;Microsoft Store / disable shortcut</small>
