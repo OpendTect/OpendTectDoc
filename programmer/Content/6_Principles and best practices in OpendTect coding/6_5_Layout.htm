@@ -31,14 +31,14 @@
         <p><span style="font-family: monospace;">if ( b )</span>
             <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;stmt1();</span>
         </p>
-        <p>Two or three small statements may be packed on one line with braces.</p>
+        <p>Two or three small statements should not be packed on one line with braces. Although that this is good for readability, it should be avoided due to that it is not good for debugging.</p>
         <p><span style="font-family: monospace;">if ( b )</span>
             <br style="font-family: monospace;" /><span style="font-family: monospace;">&#160;&#160;&#160;&#160;{ stmt(); return; }</span>
         </p>
         <p>&#160;</p>
         <p><b>•	Parentheses:</b>
         </p>
-        <p>Pad with a space on both sides, except when this would make things unclear because it would become too spacy.</p>
+        <p>Pad with a space on both sides, for outer parentheses.<br />For inner parentheses, no spaces should be provided.<br />When using <span style="font-family: 'Courier New';">tr("&lt;STRING&gt;")</span>, no spaces should be used.</p>
         <p><![CDATA[		]]><span style="font-family: monospace;">if ( x )</span><br style="font-family: monospace;" /><span style="font-family: monospace;">if ( (x &amp;&amp; y) || (z1 &amp;&amp; z2) )</span></p>
         <p>&#160;</p>
         <p><b>•	Array brackets:</b>
