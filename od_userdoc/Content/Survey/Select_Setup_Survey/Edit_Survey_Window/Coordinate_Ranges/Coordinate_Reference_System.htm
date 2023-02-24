@@ -3,19 +3,40 @@
     <head>
     </head>
     <body>
-        <h4>4.1.3.2 Coordinate Ranges<MadCap:keyword term="Coordinate Ranges" /></h4>
-        <p>OpendTect supports only orthogonal coordinates. Coordinate System of an OpendTect project can be defined in one of the three ways:
-
-
+        <h4>4.1.3.2.1 Coordinate Reference System<MadCap:keyword term="Coordinate Ranges" /></h4>
+        <p>OpendTect supports only orthogonal coordinates.</p>
+        <p>The Coordinate System of an OpendTect project can be defined in one of the three ways and will be applied to all data imported into the project:
 </p>
-        <p><b>Unlocated XY</b> - spatially unaware, based on three points, two of which must be on the same inline.</p>
-        <img src="../../../../Resources/Images/unlocated-xy.png" class="General_Image" />
-        <p><b>Anchor Point Based XY</b> - an approximate way to convert XY coordinates to geographical latitude and longitude. Error increases with the distance from the defined point.</p>
-        <img src="../../../../Resources/Images/anchor-point-based-xy.png" class="General_Image" />
-        <p><b>Project Based System</b> can be selected  when a coordinate system is known. The list of projections was created using <a href="https://proj4.org/">Proj.4 filter function</a>.</p>
-        <img src="../../../../Resources/Images/project-based-system.png" class="General_Image" />
-        <p>Convert Geographical Positions option is available if Project Based System is selected. This utility allows conversion of XY coordinate pair to geographical latitude and longitude, and vice versa.</p>
-        <img src="../../../../Resources/Images/convert-geographical-positions.png" class="General_Image" />
+        <blockquote>
+            <p>
+                <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_general.png" style="width: 793px; height: 525px;" class="General_Image" />
+            </p>
+        </blockquote>
+        <p><![CDATA[
+]]></p>
+        <p><b>Unlocated XY</b> - spatially unaware, based on three points, two of which must be on the same inline:</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_unlocated.png" style="width: 783px;height: 518px;" class="General_Image" />
+        </p>
+        <p><b>Anchor Point Based XY</b> - an approximate way to convert XY coordinates to geographical latitude and longitude. Error increases with the distance from the defined point:</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_anchor.png" style="width: 790px;height: 522px;" class="General_Image" />
+        </p>
+        <p><b>Project Based System</b> can be selected  when a coordinate system is known. The list of projections was created using <a href="https://proj4.org/" target="_blank">Proj.4 filter function</a>.:</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_projection_based.png" style="width: 793px;height: 525px;" class="General_Image" />
+        </p>
+        <p>The search field provides a quick way to find the projection system by ID or name</p>
+        <p>The <img src="../../../../Resources/Images/Icons/info.png" class="Icons" /> icon provides useful information about the selected projection:</p>
+        <blockquote>
+            <p>
+                <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_projection_based_view_details.png" style="width: 419px; height: 208px;" class="General_Image" />
+            </p>
+        </blockquote>
+        <p>The <img src="../../../../Resources/Images/Icons/xy2ic.png" /> icon allows, under the Projection Based System, conversion of XY coordinate pair to geographical latitude and longitude, and vice versa:</p>
+        <blockquote>
+            <img src="../../../../Resources/Images/Survey/Survey_setup_coord_ref_system_convert_positions.png" style="width: 512px; height: 388px;" class="General_Image" />
+        </blockquote>
         <p>In the Convert Geographical Positions window, there are two modes available for coordinate conversion: Manual/File.</p>
         <ul>
             <li>In <i>Manual mode</i>, the user specifies an X/Y pair (or Lat/Long pair), then press the corresponding arrow key to obtain the position in the other domain.</li>
