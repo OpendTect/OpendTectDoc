@@ -3,9 +3,15 @@
     <head>
     </head>
     <body>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Installing floating licenses</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h4>Installing floating licenses</h4></MadCap:conditionalText>
-        <p>A floating license file is to be used by the dGB FlexNet license server. This license server can run on Linux, Mac or Windows. See here for instructions on <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../License_server/Installing-license-server-on-Linux.htm">how to install the license server on Linux</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing a license server on Linux" target="_parent">how to install the license server on Linux</a></MadCap:conditionalText> and <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../License_server/Installing-license-server-on-Windows.htm">how to install the license server on Windows</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing a license server on Windows" target="_parent">how to install the license server on Windows</a></MadCap:conditionalText>.</p>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Installing floating licenses</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h4>Installing floating licenses</h4>
+        </MadCap:conditionalText>
+        <p>A floating license file is to be used by the dGB FlexNet license server. This license server can run on Linux, MacOS or Windows. See here for instructions on <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../License_server/Installing-license-server-on-Linux.htm">how to install the license server on Linux</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing a license server on Linux" target="_parent">how to install the license server on Linux</a></MadCap:conditionalText> and <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../License_server/Installing-license-server-on-Windows.htm">how to install the license server on Windows</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing a license server on Windows" target="_parent">how to install the license server on Windows</a></MadCap:conditionalText>.</p>
         <p>Once the license server is running we can then instruct the client on how to borrow the license. There are two ways for installing the floating license on a client:</p>
         <ol>
             <li>
@@ -15,10 +21,16 @@
                 <p>By using the FlexNet lmpath tool via console/command prompt or on Windows through the License Manager Tools (lmtools.exe)</p>
             </li>
         </ol>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Setting the DGBLD_LICENSE_FILE environment variable</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h5 style="page-break-before: avoid">Setting the DGBLD_LICENSE_FILE environment variable</h5></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Setting the DGBLD_LICENSE_FILE environment variable</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h5 style="page-break-before: avoid">Setting the DGBLD_LICENSE_FILE environment variable</h5>
+        </MadCap:conditionalText>
         <p>The DGBLD_LICENSE_FILE environment variable can be set to a license file or to the server host.</p>
-        <p>On a Linux client the variable can be set with the export or setenv command.</p>
+        <p>On a Linux client the variable can be set with the <code>export</code> or <code>setenv</code> command.</p>
         <p>On a Windows client the variable can be set via Control Panel &gt;&#160;System&#160;&gt;&#160;Advanced system settings&#160;&gt;&#160;Environment Variables. Please note that a user environment variable is only available for the user who sets the variable. It might be a better choice to set the variable as a system environment variable. It then can be globally accessed by all users.</p>
         <p>The possible values are:</p>
         <ul>
@@ -33,8 +45,14 @@
             </li>
         </ul>
         <p>- port = the TCP/IP port the license server is using. If port is not specified in front of @home a default TCP/IP port number in the range of 27000-27009 is used.<br />- host = the hostname of the license server. This comes from the SERVER line in the license file.<br />- path to license file = exactly that. Place the license file in a network location available to all machines running OpendTect or copy it to all of the machines running OpendTect (Typically:&#160;C:\Licenses)</p>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h2>Using the FlexNet lmpath tool</h2></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h5 style="page-break-before: avoid">Using the FlexNet lmpath tool</h5></MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Using the FlexNet lmpath tool</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h5 style="page-break-before: avoid">Using the FlexNet lmpath tool</h5>
+        </MadCap:conditionalText>
         <p>The lmpath tool can be used to add to, override, or get the current license path settings.<br />This and other FlexNet tools are packaged in a single executable lmutil or lmutil.exe.<br />OpendTect <MadCap:variable name="Variables.VersionNumber" />.0 ships these tools. They can be found in the following paths:&#160;</p>
         <ul>
             <li>

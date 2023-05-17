@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>System Python installation for use in OpendTect</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>System Python installation for use in OpendTect</h3>
+        </MadCap:conditionalText>
+        <p>It is possible to use a system Python installation in OpendTect. In this scope such a Python installation is not a miniconda or anaconda installation.<br />Note that this is more complicated than the <a href="Internal-Python-installation-for-use-in-OpendTect.htm">Internal Python installation</a>. If you have your own miniconda3 or anaconda3 environment you might want to consider to do the <a href="Custom-Python-installation-from-YAML-files.htm">Custom Python installation</a>.</p>
+        <p>In order for OpendTect to use a system Python installation the following things need to be done:</p>
+        <ul>
+            <li>
+                <p>Several packages need to be installed with pip, the requirements are listed below</p>
+            </li>
+            <li>
+                <p>Non Python libraries CUDA, cuDNN and HDF5 needs to be installed</p>
+            </li>
+            <li>
+                <p>Make sure that the PATH is set correctly for Python and the non Python libraries</p>
+            </li>
+        </ul>
+        <h2>Supported versions</h2>
+        <p>Currently OpendTect and the Machine Learning plugin support:</p>
+        <ul>
+            <li>
+                <p>Python 3.9 and 3.10</p>
+            </li>
+            <li>
+                <p>CUDA&#160;Toolkit 11.3</p>
+            </li>
+            <li>
+                <p>cuDNN v8.2.1</p>
+            </li>
+            <li>
+                <p>HDF5 1.12.2</p>
+            </li>
+        </ul>
+        <h2>Windows recommendations</h2>
+        <ul>
+            <li>
+                <p>To check whether Python has been installed open the Command Prompt and run:<br /><code>where.exe python</code><br />If it has been installed it will give the path to python.exe</p>
+            </li>
+            <li>
+                <p>To find out which Python version is installed open the Command Prompt and run:<br /><code>python --version</code></p>
+            </li>
+            <li>
+                <p>We recommend to install Python with the Python 3.9 full 64 bits installer or Python 3.10 full 64 bits installer from Python.org <a href="https://www.python.org/downloads/windows/" target="_blank">Downloads page for Windows</a>. The other options to install Python are from the Microsoft Store and via the Windows Subsystem for Linux (WSL). The reason for not recommending the Microsoft Store package is that it has <a href="https://docs.python.org/3/using/windows.html#known-issues" target="_blank">limitations</a> that make it not suited for a professional development environment.<br /><br />To make it easier it is recommended to toggle on <i>Add Python 3.10 to PATH</i> before clicking <i>Install Now</i></p>
+            </li>
+        </ul>
+        <h3>Check whether all paths are set</h3>
+        <p>The paths to the Python and Python Scripts directory should have been set in environment variable Path, e.g:</p>
+        <ul>
+            <li>
+                <p>C:\Users\your_username\AppData\Local\Programs\Python\Python310</p>
+            </li>
+            <li>
+                <p>C:\Users\your_username\AppData\Local\Programs\Python\Python310\Scripts</p>
+            </li>
+        </ul>
+        <p>The following paths should be listed in the System Environment Path variable:</p>
+        <ul>
+            <li>
+                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\bin</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\extras\CUPTI\lib64<br /><i>Please note that this path the CUDA Toolkit installer will not set. It is recommended to set this one manually so that Python can use CUPTI.</i></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\libnvvp</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>C:\Program Files\HDF_Group\HDF5\1.12.2\bin</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Optionally a manual path has to be set to the cuDNN libraries if these have not been unzipped into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3</p>
+            </li>
+        </ul>
+        <h2>Installations</h2>
+        <h3>Installing Python packages with pip</h3>
+        <p>In the OpendTect <MadCap:variable name="Variables.VersionNumber" />.0\data\Python directory are several requirements.txt files that pip can use to install the required Python packages.<br />Please note that not all requirements.txt files might be present in your installation. As example: for the machine_learning_requirements.txt to be present the Machine Learning plugin needs to be installed.</p>
+        <p>The pip installations have to be done via the Command Prompt, Windows PowerShell or Terminal.</p>
+        <p>First make sure to update pip and install wheel to make your life easier:</p>
+        <p><code>python -m pip install --upgrade pip<br></br>pip install wheel</code>
+        </p>
+        <p>Then run to install the basic packages:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\basic_requirements.txt</code></p>
+        <p>To install the Python libraries that are required for OpendTect Pro run:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\dgbpro_requirements.txt</code></p>
+        <p>To install the Python libraries that are required for the presentation maker run:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\presentation_maker_requirements.txt</code></p>
+        <p>To install the Python libraries that are required the Machine Learning plugin run:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\machine_learning_requirements.txt</code></p>
+        <p>To install the Python libraries that are optional for the Machine Learning plugin run:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\machine_learning_requirements_optional.txt</code></p>
+        <p>To install Python libraries that provide Spyder, Jupyter notebook and related libraries run:<br /><code>pip install -r path_to_OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\data\Python\notebooks_requirements.txt</code></p>
+        <h3>Installing CUDA&#160;Toolkit, cuDNN and HDF5</h3>
+        <p>CUDA Toolkit can be downloaded from the <a href="https://developer.nvidia.com/cuda-11.3.0-download-archive">CUDA Toolkit</a> download page. Our advise is to download and install CUDA Toolkit 11.3.</p>
+        <p>cuDNN can be downloaded from the <a href="https://developer.nvidia.com/rdp/cudnn-archive">cuDNN Archive</a>. Our advise is to download cuDNN v8.2.1 (June 7th, 2021), for CUDA 11.x.<br />An easy way to install is to unzip the downloaded zip-file's CUDA folder content into the path C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3<br />When unzipping into another folder an extra step will need to be done by adding PATH to the cuDNN libraries.</p>
+        <p>HDF5 can be downloaded from the <a href="https://www.hdfgroup.org/downloads/hdf5/">hdfgroup.org downloads page</a>. Our advise is to download and install HDF5 1.12.2.</p>
+        <h2>Use the system Python environment in OpendTect</h2>
+        <p>To use the system Python environment select <b>System</b> as Python environment in the <i>Set Python settings</i> window. When the system Python has been successfully installed the Test button should give the list of Python packages that are available in the system Python environment.</p>
+    </body>
+</html>

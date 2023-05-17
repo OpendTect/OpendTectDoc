@@ -26,7 +26,7 @@
       Link="/Content/System_Requirements/Linux.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/System_Requirements/Mac_OS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/System_Requirements/MacOS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="2 Installation"
@@ -41,8 +41,9 @@
         Title="Installing OpendTect on Linux"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
       <TocEntry
-        Title="Installing OpendTect on Mac OS"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOS.htm" />
+        Title="Installing OpendTect on MacOS"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOS.htm"
+        ReplaceMergeNode="false" />
       <TocEntry
         Title="Licenses"
         Link="/Content/Installation/OpendTect/Licenses.htm">
@@ -92,11 +93,14 @@
         Title="Information about the OpendTect Python environments"
         Link="/Content/Installation/Python_environments/Information-about-the-OpendTect-Python-environments.htm" />
       <TocEntry
-        Title="Installing Python environments with the OpendTect installer"
-        Link="/Content/Installation/Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm" />
+        Title="Internal Python installation for use in OpendTect"
+        Link="/Content/Installation/Python_environments/Internal-Python-installation-for-use-in-OpendTect.htm" />
       <TocEntry
-        Title="Installing Python environments from YAML files"
-        Link="/Content/Installation/Python_environments/Installing-Python-environments-from-YAML-files.htm" />
+        Title="System Python installation for use in OpendTect"
+        Link="/Content/Installation/Python_environments/System-Python-installation-for-use-in-OpendTect.htm" />
+      <TocEntry
+        Title="Custom Python installation from YAML files"
+        Link="/Content/Installation/Python_environments/Custom-Python-installation-from-YAML-files.htm" />
     </TocEntry>
     <TocEntry
       Title="License server"

@@ -11,10 +11,11 @@
             </p>
             <h3 style="page-break-before: avoid">Information about the OpendTect Python environments</h3>
         </MadCap:conditionalText>
+        <p>OpendTect Machine Learning comes with its own Miniconda Python environment. The default <b>Internal</b> Python environment will point to the Python packages <a href="Internal-Python-installation-for-use-in-OpendTect.htm">installed using the installation manager</a>, if they have been installed.</p>
         <p><b>Miniconda3</b> is a basic Python environment. It allows using the Presentation Maker plugin without having to install Python yourself. Provides libraries, including:</p>
         <ul>
             <li>
-                <p>Python 3.8</p>
+                <p>Python 3.10</p>
             </li>
             <li>
                 <p>pandas</p>
@@ -27,7 +28,7 @@
         <p style="font-weight: normal;">Provides libraries, including:</p>
         <ul>
             <li>
-                <p style="font-weight: normal;">Python 3.8</p>
+                <p style="font-weight: normal;">Python 3.10</p>
             </li>
             <li>
                 <p>intel-tensorflow</p>
@@ -76,11 +77,11 @@
             </li>
         </ul>
         <p><b>Python CUDA 11</b> is a complete Python environment for Machine Learning on the GPU with CUDA 11.3. </p>
-        <p>Requires minimum driver version 466.XX, for specifics see this <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions__table-cuda-toolkit-driver-versions" target="_blank">table on the Nvidia CUDA&#160;Toolkit documentation page</a>.<br />Will fallback automatically on the CPU if the hardware/driver requirements are not met.</p>
+        <p>Requires minimum driver version 466.XX, for specifics see this <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id3" target="_blank">table on the Nvidia CUDA&#160;Toolkit documentation page</a>.<br />Will fallback automatically on the CPU if the hardware/driver requirements are not met.</p>
         <p>Provides libraries, including:</p>
         <ul>
             <li>
-                <p>Python 3.8</p>
+                <p>Python 3.10</p>
             </li>
             <li>
                 <p>tensorflow</p>
@@ -128,6 +129,6 @@
                 <p>matplotlib</p>
             </li>
         </ul>
-        <p><b>Please note:</b> The Python CUDA 10 environment is now obsolete and will no longer receive security updates. Also note that OpendTect does not support the Python CUDA 10 environment from 6.6.6 and onwards.</p>
+        <p><b>Please note:</b> The Python CUDA 10 environment is now obsolete and will no longer receive security updates. Also note that OpendTect <MadCap:variable name="Variables.VersionNumber" />.0 does not support the Python CUDA 10 environment.</p>
     </body>
 </html>
