@@ -3,8 +3,14 @@
     <head>
     </head>
     <body>
-        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><h1>Install OpendTect via offline installation package</h1></MadCap:conditionalText>
-		<MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><p></p><h3>Install OpendTect via offline installation package</h3></MadCap:conditionalText>	
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Install OpendTect via offline installation package</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3>Install OpendTect via offline installation package</h3>
+        </MadCap:conditionalText>
         <p>On Linux:</p>
         <ol>
             <li>Transfer the od_offline_lux64 folder to the offline system.<br /><br />Then on the offline system in terminal:<br /></li>
@@ -18,7 +24,7 @@
             <li>The questions about a previous installed version of OpendTect and the initial Project data folder can be answered or ignored.<br /><br /></li>
             <li>After a while the installation will be finished. <br /><br /></li>
             <li>If the Python packages have been installed then in the terminal run the following to prepare the Python environment(s)&#160;on the system:<br /><span style="font-family: 'Courier New';">cd OpendTect/Python </span><br style="font-family: 'Courier New';" /><span style="font-family: 'Courier New';">./setup.Python</span><br /><br /></li>
-            <li>OpendTect can be started by running the <span style="font-family: 'Courier New';">start_dtect</span> script, which can be found in the OpendTect/6.6.0 folder.<br /><br /></li>
+            <li>OpendTect can be started by running the <span style="font-family: 'Courier New';">start_dtect</span> script, which can be found in the OpendTect/<MadCap:variable name="Variables.VersionNumber" />.0 folder.<br /><br /></li>
         </ol>
         <p>On Windows:</p>
         <ol>
@@ -38,7 +44,7 @@
                 <p>After a while the installation will be finished.</p>
             </li>
             <li>
-                <p>OpendTect can be started by running the od_main.exe executable, which can be found in the OpendTect\6.6.0\bin\win64\Release folder.</p>
+                <p>OpendTect can be started by running the od_main.exe executable, which can be found in the OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release folder.</p>
             </li>
         </ol>
     </body>

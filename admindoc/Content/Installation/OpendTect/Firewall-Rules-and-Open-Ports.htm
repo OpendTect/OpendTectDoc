@@ -12,21 +12,21 @@
             <h3>Firewall Rules and Open Ports</h3>
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
-            <h2>Firewall rules For OpendTect 6.6 (Windows)</h2>
+            <h2>Firewall rules For OpendTect <MadCap:variable name="Variables.VersionNumber" /> (Windows)</h2>
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
             <p>
             </p>
-            <h4 style="page-break-before: avoid">Firewall rules For OpendTect 6.6 (Windows)</h4>
+            <h4 style="page-break-before: avoid">Firewall rules For OpendTect <MadCap:variable name="Variables.VersionNumber" /> (Windows)</h4>
         </MadCap:conditionalText>
         <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. The default OpendTect base directory is C:\Program Files\OpendTect. The base directory can be another directory if that is chosen during installation. If that is the case then replace the default base directory in below list with the actual base directory.</p>
         <ul>
-            <li>  C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_main.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_SeisMMBatch.exe</li>
-            <li> C:\Program Files\OpendTect\6.6.0\bin\win64\Release\od_remoteservice.exe</li>
-            <li> C:\Program Files\OpendTect\Python\python.exe</li>
-            <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cpu-mkl\python.exe</li>
-            <li> C:\Program Files\OpendTect\Python\envs\odmlpython-cuda113\python.exe</li>
+            <li>  C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_main.exe</li>
+            <li> C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_SeisMMBatch.exe</li>
+            <li> C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_remoteservice.exe</li>
+            <li> C:\Program Files\OpendTect\Python_1.4.4\python.exe</li>
+            <li> C:\Program Files\OpendTect\Python_1.4.4\envs\odmlpython-cpu-mkl\python.exe</li>
+            <li> C:\Program Files\OpendTect\Python_1.4.4\envs\odmlpython-cuda113\python.exe</li>
         </ul>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Open Ports</h2>
@@ -52,7 +52,7 @@
                 <tr style="border: 0px;">
                     <td style="border: 0px;">20050 - 20080</td>
                     <td style="border: 0px;">
-                        Starting from OpendTect 6.6 these ports are used for communication between OpendTect and Python, starting at port 20050. <br />We advise to have a broad range to be open, e.g. until 20080.
+                        These ports are used for communication between OpendTect and Python, starting at port 20050. <br />We advise to have a broad range to be open, e.g. until 20080.
                     </td>
                 </tr>
                 <tr style="border: 0px;">

@@ -23,17 +23,25 @@
             </li>
             <li>
                 <p>
-                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm">Installing Python environments with the OpendTect installer</a>
+                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm">Internal Python installation for use in OpendTect</a>
                     </MadCap:conditionalText>
-                    <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing Python environments with the OpendTect installer" target="_parent">Installing Python environments with the OpendTect installer</a>
+                    <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing Python environments with the OpendTect installer" target="_parent">Internal Python installation for use in OpendTect</a>
                     </MadCap:conditionalText>
                 </p>
             </li>
             <li>
                 <p>
-                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Python_environments/Installing-Python-environments-from-YAML-files.htm">Installing Python environments from YAML files</a>
+                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Python_environments/Installing-Python-environments-with-the-OpendTect-installer.htm">System Python installation for use in OpendTect</a>
                     </MadCap:conditionalText>
-                    <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing Python environments from YAML files" target="_parent">Installing Python environments from YAML files</a>
+                    <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing Python environments with the OpendTect installer" target="_parent">System Python installation for use in OpendTect</a>
+                    </MadCap:conditionalText>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Python_environments/Installing-Python-environments-from-YAML-files.htm">Custom Python installation from YAML files</a>
+                    </MadCap:conditionalText>
+                    <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="#Installing Python environments from YAML files" target="_parent">Custom Python installation from YAML files</a>
                     </MadCap:conditionalText>
                 </p>
             </li>
@@ -61,7 +69,7 @@
                 <p>As Custom environment root choose the root directory of your own miniconda3 or anaconda3 installation, e.g. <i>C:\ProgramData\Anaconda3</i>.</p>
             </li>
             <li>
-                <p>With anaconda3 it is possible to install the environments into a different path than the root directory. From OpendTect 6.6.3 and onwards OpendTect will allow this by reading out the paths from  <i>%UserProfile%\.conda\environments.txt</i> on Windows or <i>$HOME/.conda/environments.txt</i> on Linux.</p>
+                <p>With anaconda3 it is possible to install the environments into a different path than the root directory. OpendTect will allow this by reading out the paths from  <i>%UserProfile%\.conda\environments.txt</i> on Windows or <i>$HOME/.conda/environments.txt</i> on Linux.</p>
             </li>
             <li>
                 <p>As Virtual environment choose odmlpython-cpu-mkl or odmlpython-cuda113. The virtual environments are shown as full paths when they have been read from the environments.txt file.<br /><br /><img src="../../Resources/Images/install-python-settings-custom-env-path-windows.png" /><br /><small>Figure:&#160;Set Python Settings window with a selected custom Python environment</small><br /></p>
