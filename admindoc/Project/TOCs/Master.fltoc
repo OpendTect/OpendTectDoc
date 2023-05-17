@@ -39,14 +39,10 @@
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Windows.htm" />
       <TocEntry
         Title="Installing OpendTect on Linux"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm">
-        <TocEntry
-          Title="Installing OpendTect on RHEL 6.x"
-          Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux/Installing-OpendTect-on-RHEL-6.x.htm" />
-      </TocEntry>
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
       <TocEntry
-        Title="Installing OpendTect on Mac OS X"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOSX.htm" />
+        Title="Installing OpendTect on Mac OS"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOS.htm" />
       <TocEntry
         Title="Licenses"
         Link="/Content/Installation/OpendTect/Licenses.htm">
@@ -76,9 +72,6 @@
       <TocEntry
         Title="Setup Distributed Computing"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
-      <TocEntry
-        Title="Setup the Preferred GPU with NVIDIA Control Panel"
-        Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-nvidia-control-panel.htm" />
       <TocEntry
         Title="Setup the preferred GPU with Windows settings"
         Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-Windows-settings.htm" />
