@@ -1311,64 +1311,6 @@
     Title="15 Appendix E - Synthetic Data Generation"
     Link="/Content/Appendix_E-Synthetic_Data_Generation.htm"></TocEntry>
   <TocEntry
-    Title="16 Appendix F - MATLAB Link Plugin for OpendTect v7.0"
-    Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect.htm"
-    StartSection="false"
-    SectionNumberReset="continue"
-    VolumeNumberReset="same"
-    ChapterNumberReset="continue"
-    ComputeToc="false"
-    ReplaceMergeNode="false">
-    <TocEntry
-      Title="16.1 Background"
-      Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Background.htm" />
-    <TocEntry
-      Title="16.2 MATLAB Versions/Platforms"
-      Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/MATLAB_Versions-Platforms.htm" />
-    <TocEntry
-      Title="16.3 Option 1: Usage Through OpendTect's GUI"
-      Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI.htm">
-      <TocEntry
-        Title="16.3.1 Setting Up MATLAB Link"
-        Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/Setting_Up_MATLAB_Link.htm" />
-      <TocEntry
-        Title="16.3.2 Example 1: MATLAB Function to Multiply"
-        Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Multiply.htm">
-        <TocEntry
-          Title="16.3.2.1 OD Get Parameters"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Multiply/OD_Get_Parameters.htm" />
-        <TocEntry
-          Title="16.3.2.2 OD Do Process"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Multiply/OD_Do_Process.htm" />
-        <TocEntry
-          Title="16.3.2.3 Multiply"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Multiply/Multiply.htm" />
-      </TocEntry>
-      <TocEntry
-        Title="16.3.3 Example 2: MATLAB Function to Subtract"
-        Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Subtract.htm">
-        <TocEntry
-          Title="16.3.3.1 OD Get Parameters"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Subtract/OD_Get_Parameters.htm" />
-        <TocEntry
-          Title="16.3.3.2 OD Do Process"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Subtract/OD_Do_Process.htm" />
-        <TocEntry
-          Title="16.3.3.3 Substract"
-          Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/MATLAB_Function_to_Subtract/Subtract.htm" />
-      </TocEntry>
-      <TocEntry
-        Title="16.3.4 Compilation of MATLAB Functions"
-        Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/Compilation_of_MATLAB_Functions.htm" />
-      <TocEntry
-        Title="16.3.5 Accessing Compiled MATLAB Functions in OpendTect's GUI"
-        Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_OpendTects_GUI/Accessing_Compiled_MATLAB_Functions_in_OpendTects_GUI.htm" />
-    </TocEntry>
-    <TocEntry
-      Title="16.4 Option 2: Usage Through the MEX Files in MATLAB Itself"
-      Link="/Content/Appendix_F-MATLAB_Link_Plugin_for_OpendTect/Usage_Through_the_MEX_Files_in_MATLAB_Itself.htm" />
-  </TocEntry>
-  <TocEntry
     Title="Glossary"
     Link="/Content/Glossary.htm"></TocEntry>
 </CatapultToc>
