@@ -14,7 +14,7 @@
                 </p>
             </blockquote>
         </blockquote>
-        <p>OpendTect Machine Learning comes with its own Miniconda Python environment. Users who prefer to work in a private Python environment can change the <b>Python environment</b> here. If a <b>Custom</b> environment is selected you need to specify the root of the environment. The <b>Virtual</b> <b>environment</b>: odmlpython-cuda10 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
+        <p>OpendTect Machine Learning comes with its own Miniconda Python environment. Users who prefer to work in a private Python environment can change the <b>Python environment</b> here. If a <b>Custom</b> environment is selected you need to specify the root of the environment. The <b>Virtual</b> <b>environment</b>: odmlpython-cuda113 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
         <p>The <b>Custom Module Path</b> is the path for Python developers in which they develop private Machine Learning Models in this environment. All models in the given directory, which are named: ‘<b>mlmodel</b>….” will appear in the UI of the Machine Learning Control Center and can thus be applied to other data sets.</p>
         <p>&#160;</p>
         <p>When the Python ecosystem has been installed, the link between OpendTect and Python can be set up and customized through a dedicated settings dialog in the OpendTect utilities menu (above image).</p>
@@ -42,7 +42,7 @@
                         <p>For advanced users who have their own Python environment or which are using a distribution of Python such as anaconda, the Python settings can be altered to have OpendTect to use it directly instead of the Python distribution provided with OpendTect.</p>
                     </li>
                     <li>
-                        <p>The user must ensure that the selected “Custom” environment contains all the Python modules required by the OpendTect Machine Learning plugin. These are specified in the <a href="https://doc.opendtect.org/6.6.0/doc/dgb_userdoc/Default.htm#machine_learning.htm?TocPath=3%2520Machine%2520Learning%257C_____0" target="_blank">plugin’s documentation</a>.</p>
+                        <p>The user must ensure that the selected “Custom” environment contains all the Python modules required by the OpendTect Machine Learning plugin. These are specified in the <a href="https://doc.opendtect.org/7.0.0/doc/dgb_userdoc/Default.htm#machine_learning.htm?TocPath=3%2520Machine%2520Learning%257C_____0" target="_blank">plugin’s documentation</a>.</p>
                     </li>
                     <li>
                         <p>The user can add the path of its Python source code, to locally installed Python modules in the “Custom Module Path”. Such that it becomes accessible to extend the capabilities of the Machine Learning plugin by adding new custom models to train on. This path will be added to the PYTHONPATH of Python environments launched by OpendTect. The default location is under ($HOME, or $HOME/.od).</p>
