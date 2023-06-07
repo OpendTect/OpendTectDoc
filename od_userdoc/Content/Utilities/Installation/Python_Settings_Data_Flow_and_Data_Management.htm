@@ -8,19 +8,20 @@
             <p>
                 <img src="../../Resources/Images/Utilities/utilities_inst_set_python_dd.png" class="General_Image" style="width: 491px;height: 342px;" />
             </p>
-            <blockquote>
-                <p>
-                    <img src="../../Resources/Images/Utilities/utilities_inst_python_settings.png" class="General_Image" style="width: 975px;height: 594px;" />
-                </p>
-            </blockquote>
+            <p>
+                <img src="../../Resources/Images/Utilities/ml-set-python-settings.png" class="General_Image" style="width: 626px;height: 470px;" />
+            </p>
         </blockquote>
-        <p>OpendTect Machine Learning comes with its own Miniconda Python environment. Users who prefer to work in a private Python environment can change the <b>Python environment</b> here. If a <b>Custom</b> environment is selected you need to specify the root of the environment. The <b>Virtual</b> <b>environment</b>: odmlpython-cuda113 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
+        <p>Users can change the <b>Python environment</b> here. OpendTect Machine Learning comes with its own Miniconda Python environment. If it has been installed then make sure that the Python environment is set to <b>Internal</b>. Users who prefer to work in a private Python environment will have to change the Python environment to <b>Custom</b>. When Custom environment is selected you need to specify the root of the environment. The remaining option <b>System</b> can be used if you want to use a system Python installation that is not a miniconda or anaconda installation. If you want more information about installing the Python environments please take a look in the <a href="https://doc.opendtect.org/7.0.0/doc/admindoc/Default.htm#installation/python_environments.htm" target="_blank">Administrator's Manual</a>.</p>
+        <p>The <b>Virtual</b> <b>environment</b>: odmlpython-cuda113 runs models on the GPU; odmlpython-cpu-mkl runs on the CPU. Computations on a GPU are many factors faster than computations on a CPU. If the GPU in your environment is too small for certain jobs to run you can switch virtual environments to CPU usage.</p>
         <p>The <b>Custom Module Path</b> is the path for Python developers in which they develop private Machine Learning Models in this environment. All models in the given directory, which are named: ‘<b>mlmodel</b>….” will appear in the UI of the Machine Learning Control Center and can thus be applied to other data sets.</p>
         <p>&#160;</p>
         <p>When the Python ecosystem has been installed, the link between OpendTect and Python can be set up and customized through a dedicated settings dialog in the OpendTect utilities menu (above image).</p>
         <p>&#160;</p>
         <p>The default Python environment will point to the Python packages installed using the installation manager, if they have been installed.</p>
-        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Utilities/ml-set-python-settings-python-environments.png" class="General_Image" style="width: 394px;height: 79px;" />
+        </p>
         <p>Three options are available:</p>
         <blockquote>
             <ol>
@@ -56,6 +57,9 @@
         <p>&#160;</p>
         <p>
             <img src="../../Resources/Images/Utilities/utils_python_settings_test_icon.png" class="General_Image" style="width: 109px;height: 36px;" /> This testing tool option, checks if OpendTect can run Python commands and retrieve their output. It shows a list of the installed modules for the selected setup.</p>
+        <p>
+            <img src="../../Resources/Images/Utilities/ml-set-python-settings-test.png" class="General_Image" style="width: 405px;height: 233px;" />
+        </p>
         <p>The user can also launch a terminal/ console prompt with the selected environment activated. Such window can be launched anywhere in OpendTect using the short-key CTRL-T.</p>
         <p>&#160;</p>
         <p>The <b>Python IDE Command</b> is the Python editor you wish to use. You can launch the IDE using the specified <b>Command</b>, Optionally with some <b>Arguments</b> from a <b>Python Command Window</b>. Alternatively, you can add an <b>icon</b> to your plugin toolbar by pressing the corresponding icon in this window. In this case the <b>Spyder icon</b> with Spyder <b>Tool Tip</b> is added to the icon toolbar, as seen in the image below:</p>
@@ -66,6 +70,14 @@
             <p>&#160;</p>
         </blockquote>
         <p>Pressing this icon from the toolbar will launch Spyder with the correct settings. The Python environment can be tested with the <b>Test icon</b>.</p>
+        <p>The Python modules in the Python environment can be scanned for vulnerabilities and checked for licenses with the <b>Safety Check</b> button. You can either use PyUp's <b>Commercial</b> or <b>Open-source</b> database. The free open-source database is 30 days old and limited. The Commercial database provides real-time enhanced vulnerability data and fix recommendations. In order to use the Commercial database or the scan for licenses feature you need a valid <b>API key</b>, which can be filled in the API key field. For more information about the API key please send an email to <a href="mailto:info@dgbes.com?subject=Request information about Safety API key">info@dgbes.com</a>. With the <img src="../../Resources/Images/Icons/save.png" /> icon the safety report can be saved.</p>
+        <p>
+            <img src="../../Resources/Images/Utilities/ml-set-python-settings-scan-for-vuln-opensource-check.png" style="width: 796px;height: 562px;" class="General_Image" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Utilities/ml-set-python-settings-scan-for-vuln-commercial-licenses.png" class="General_Image" style="width: 646px;height: 467px;" />
+        </p>
+        <p>&#160;</p>
         <p>The general flow of a Machine Learning workflow is as follows:</p>
         <ol>
             <li>Based on the data you have and the problem you want to solve: <b>Select a workflow</b> from the control center</li>
