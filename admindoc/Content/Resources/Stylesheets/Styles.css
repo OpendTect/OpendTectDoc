@@ -302,3 +302,8 @@ div.pagebreak
 	page-break-before: always;
 }
 
+figcaption.figuretext
+{
+	margin-left: 20px;
+}
+
