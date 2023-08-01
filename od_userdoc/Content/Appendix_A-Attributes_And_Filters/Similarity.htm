@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4647" MadCap:lastWidth="1013">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
@@ -43,10 +43,10 @@
         <p>The "Delta Dip" is a variable which represents the window in microseconds per metre (μs/m) which is shifted along the neighbouring trace to detect similar events whithin the earlier specified 'Maximum Dip'. The closer the value to 1 the more precise the results will be. The default value is 10. Using this value will result in a good balance between calculation time and quality of the results, this also depends on the quality of the data itself.</p>
         <p><b>Mathematical description</b>
         </p>
-        <p>Let us assume two vectors X, Y of length N=15 samples:</p>
-        <p>Xi, i=1,15</p>
-        <p>Yi, i=1,15</p>
-        <p>The similarity is 1 minus the Euclidean distance between the vectors divided by the sum of the length of each vector. Please note that the length of a vector is its L2 norm, also called RMS value:</p>
+        <p>The similarity function has as input two vectors with the same dimension N.</p>
+        <p>N is the vertical running window length of the similarity attribute in samples, thus N = (timegate_max - timegate_min) / sample interval  + 1</p>
+        <p>The similarity is 1 minus the Euclidean distance between the vectors divided by the sum of the length of each vector.</p>
+        <p>Please note that the length of a vector is its L2 norm, also called RMS value:</p>
         <img src="../Resources/Images/Appendix_A/Mathematical description similarity.png" class="General_Image" />
         <p style="page-break-before: always"><b>Examples</b>
         </p>
