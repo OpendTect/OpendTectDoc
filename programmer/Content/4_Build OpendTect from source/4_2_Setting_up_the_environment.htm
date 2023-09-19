@@ -3,15 +3,23 @@
     <head>
     </head>
     <body>
+		<div class="antipagebreak">
         <h2>4.2 <MadCap:concept term="Setting up the environment" />Setting up the environment</h2>
+		</div>
+		<div class="antipagebreak">
         <h3>OpendTect source code</h3>
+		</div>
         <p>To build OpendTect from source you need to pull the source code from <a href="https://github.com/OpendTect/OpendTect" target="_blank">https://github.com/OpendTect/OpendTect</a>. Then build the solution with CMake. In this case launch CMake and browse to your OpendTect source folder and start configuring and generating from CMake. CMake will prompt for Qt and OpenSceneGraph directory location, select them from CMake itself and continue. Once the projects and solution are generated you can start building OpendTect.</p>
         <p>You can use the following git commands to clone the repositories to your local machine.</p>
         <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch main od</p>
         <p style="font-family: monospace;">git clone https://github.com/OpendTect/OpendTect.git --single-branch --branch od<MadCap:variable name="Variables.Version" /> od<MadCap:variable name="Variables.Version" /></p>
+		<div class="antipagebreak">
         <h3>CMake</h3>
+		</div>
         <p>Download CMake from <a href="https://cmake.org/download/" target="_blank">https://cmake.org/download/</a>.</p>
+		<div class="antipagebreak">
         <h3>Qt</h3>
+		</div>
         <p>For the Qt install, <a href="https://www.qt.io/download-qt-installer" target="_blank">Qt Online Installer</a> is the easiest and recommended way. The following components must be selected depending on your build platform:</p>
         <ul>
             <li>
@@ -28,14 +36,22 @@
             </li>
         </ul>
         <p> For building the main, od7.0, od6.6_rel and od6.6 branch Qt 5.15.2 is required. For branches od6.4.5 and od6.4 Qt 5.9.6 is required. </p>
+		<div class="antipagebreak">
         <h3>OSG</h3>
+		</div>
         <p>Get the OSG binaries here: <a href="https://objexx.com/OpenSceneGraph.html" target="_blank">https://objexx.com/OpenSceneGraph.html</a>. The 3.6.5 release and/or debug version is needed for building the main, od7.0, od6.6_rel and od6.6 branches of OpendTect. The 3.6.3 release and/or debug version is needed for building the od6.4.5, od6.4 and od6.5 branches. </p>
         <p>Configure using CMake, compile and install.</p>
+		<div class="antipagebreak">
         <h3>Proj (optional)</h3>
+		</div>
         <p>Configure using CMake, compile and install.</p>
+		<div class="antipagebreak">
         <h3>Sqlite (optional)</h3>
+		</div>
         <p>Retrieve from their download site or the OpendTect SDK.</p>
+		<div class="antipagebreak">
         <h3>HDF5 (optional)</h3>
+		</div>
         <p>Get HDF5 here:&#160;<a href="https://www.hdfgroup.org/downloads/hdf5" target="_blank">https://www.hdfgroup.org/downloads/hdf5</a>. The link to HDF5 requires to provide the path to an existing HDF5 installation. All versions above 1.10.3 are supported, but using the current API 1.12 is preferred. Installation is best done using their binary installations (on Windows especially), or from the package manager on Linux. Windows developers however need to recompile the sources since no debug binary libraries can be downloaded.</p>
     </body>
 </html>
