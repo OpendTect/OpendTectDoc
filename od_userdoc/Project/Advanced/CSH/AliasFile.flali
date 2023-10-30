@@ -400,4 +400,5 @@
     <Map Name="mIOObjOutputSelDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Copy_Cube/Output_Cube.htm" />
     <Map Name="mWellExpDlg" Link="/Content/Survey/Export/Export_Well/Export Well Data to ASCII.htm" />
     <Map Name="mSeisMMProcHelpID" Link="/Content/Utilities/Installation/Setup_Distributed_Computing.htm" />
+    <Map Name="mSurveyFileDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Read from Survey Setup file.htm" />
 </CatapultAliasFile>
