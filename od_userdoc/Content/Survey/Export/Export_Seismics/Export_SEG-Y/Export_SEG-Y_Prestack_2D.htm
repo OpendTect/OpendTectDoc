@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h5>4.4.8.1.4 Export SEG-Y Prestack 2D</h5>
+        <p>Prestack 2D data may be exported from OpendTect in SEG-Y format.</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../../Resources/Images/Survey/Export seismics prestack 2D main.png" class="General_Image" style="width: 700px;max-height: auto;" />
+        </p>
+        <p>All fields are optional, except the output filename that must be provided.</p>
+        <ul>
+            <li><b>Input Prestack 2D Data:</b> Select the 2D prestack data set to be exported.</li>
+            <li><b>Line name:</b> The lines available in the data set are listed here. Only one line can be selected.</li>
+            <li><b>Trace subselection:</b> Can be defined here in various ways.</li>
+            <li><b>Null traces:</b> They can be either discarded or written in the SEG-Y file. </li>
+            <li><b>Scale values:</b> A linear scaling can be applied while exporting the data: a simple linear scaling that’s applied to the trace values. Formula is: y=ax+b where a is the factor, b is the shift, x is the original value, y is the new scaled value. Useful when storing 32 bit data as 16 bit.</li>
+            <li><b>Adjust Z range to survey range: </b>Opt for limit to survey Z range (or not).</li>
+            <li><b>Export to other CRS</b>: By default the SEG-Y will be exported in the CRS of the current survey. Choose 'No' to select a different coordinate system for the output file. (The option is available only if  the current survey has a defined projection based coordinate system).</li>
+            <li><b>SEG-Y format:</b> Please note that this option may clip your data if the output format has less bytes than the input OpendTect format.</li>
+            <li><b>Text header:</b> The SEG-Y textual header is automatically created, but may be provided by the user, either from a text file or directly from a SEG-Y file.</li>
+            <li><b>Text header format:</b> Choose between (default) American Standard Code for Information Interchange (ASCII), or Extended Binary Coded Decimal Interchange Code (EBCDIC)</li>
+            <li><b>Manipulate output file after creation:</b> Checking this box opens the <a href="../../../Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" target="_blank">Manipulate SEG-Y file</a> window, allowing for the editing of the text, binary and trace headers of the exported SEG-Y file. All changes made to SEG-Y headers can only be saved to a new <i>Output file</i>.</li>
+        </ul>
+    </body>
+</html>
