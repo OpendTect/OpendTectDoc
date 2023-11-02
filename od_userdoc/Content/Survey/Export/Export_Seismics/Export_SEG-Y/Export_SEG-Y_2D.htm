@@ -1,21 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1016" MadCap:lastWidth="1346">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
         <h5>4.4.8.1.2 Export SEG-Y 2D<MadCap:keyword term="Export SEG-Y 2D" /></h5>
         <p>Stored 2D data can be exported from OpendTect in SEG-Y format.</p>
-        <img src="../../../../Resources/Images/Survey/Export seismics 2D main.png" class="General_Image" />
-        <p>All fields are optional, except the output filename that must be provided. For 2D you also need to select a specific line. More lines can be exported if the option '<i>Export more from same dataset</i>' on the last line is selected.The export will be launched when pressing Ok. </p>
+        <img src="../../../../Resources/Images/Survey/Export seismics 2D main.png" class="General_Image" style="width: 790px;max-height: auto;" />
+        <p>All fields are optional, except the output filename that must be provided.</p>
         <ul>
             <li><b>Input Data Set:</b> Select the data set to be exported.</li>
             <li><b>Line name:</b> The lines available in the data set are listed here. Only one line can be selected.</li>
             <li><b>Trace subselection:</b> Can be defined here in various ways.</li>
             <li><b>Null traces:</b> They can be either discarded or written in the SEG-Y file. </li>
-            <li><b>Scale values:</b> A linear scaling can be applied while exporting the data.</li>
-            <li><b>Coordinate System</b>: select a coordinate system of the output file (the option is available only if  the current survey has a defined projection based coordinate system).</li>
+            <li><b>Scale values:</b> A linear scaling can be applied while exporting the data: a simple linear scaling that’s applied to the trace values. Formula is: y=ax+b where a is the factor, b is the shift, x is the original value, y is the new scaled value. Useful when storing 32 bit data as 16 bit.</li>
+            <li><b>Export to other CRS</b>: By default the SEG-Y will be exported in the CRS of the current survey. Choose 'No' to select a different coordinate system for the output file. (The option is available only if  the current survey has a defined projection based coordinate system).</li>
             <li><b>SEG-Y format:</b> Please note that this option may clip your data if the output format has less bytes than the input OpendTect format.</li>
             <li><b>Text header:</b> The SEG-Y textual header is automatically created, but may be provided by the user, either from a text file or directly from a SEG-Y file.</li>
+            <li><b>Export more lines from the same dataset:</b> Checking this option removes the Line Name and Trace Subselection options from the main window (above) and, on pressing <i>Export</i>, the <i>2D SEG-Y&#160;multi-export</i> window appears wherein the specify the file details to be exported:</li>
         </ul>
+        <blockquote>
+            <p>
+                <img src="../../../../Resources/Images/Survey/Export seismics 2D more lines.png" style="width: 525px;height: auto;max-height: auto;" class="General_Image" />
+            </p>
+            <p>Pressing <i>OK</i> will then, in one batch, export each selected line from the dataset as an individual SEG-Y&#160;file to the specified location.</p>
+            <p>&#160;</p>
+        </blockquote>
     </body>
 </html>

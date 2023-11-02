@@ -72,7 +72,7 @@
     <Map Name="mImportLogsHelpID" Link="/Content/Survey/Import/Import_Wells/From_Ascii_Files/Logs.htm" />
     <Map Name="mWellManHelpID" Link="/Content/Survey/Manage/Manage_Wells.htm" />
     <Map Name="mWellImpSegyVspHelpID" Link="/Content/Survey/Import/Import_Wells/Import_Zero-Offset_VSP.htm" />
-    <Map Name="mSimpleMultiWellCreateHelpID" Link="/Content/Survey/Import/Import_Wells/Simple_Multi-Well.htm" />
+    <Map Name="mSimpleMultiWellCreateHelpID" Link="/Content/Survey/Import/Import_Wells/Import Well Locations.htm" />
     <Map Name="mPreStackExportMuteHelpID" Link="/Content/Survey/Export/Export_Mute_Functions.htm" />
     <Map Name="mSEGYExpHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_3D.htm" />
     <Map Name="mSeisIOSimpleExpHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_3D_Simple_File_Format.htm" />
@@ -309,7 +309,7 @@
     <Map Name="mTableImpDataSelmarkersHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
     <Map Name="mTableImpDataSelpicksHelpID" Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
     <Map Name="mTableImpDataSelpvdsHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
-    <Map Name="mTableImpDataSelwellsHelpID" Link="/Content/Survey/Import/Import_Wells/Simple_Multi-Well.htm" />
+    <Map Name="mTableImpDataSelwellsHelpID" Link="/Content/Survey/Import/Import_Wells/Import Well Locations.htm" />
     <Map Name="mVelocityDescDlg" Link="/Content/Scenes/Time_And_Depth-Converted_Scenes.htm" />
     <Map Name="mVolrenTreeItemHelpID" Link="/Content/OpendTect_Trees_And_Elements/Volume.htm" />
     <Map Name="mWellTieInfoDlgHelpID" Link="/Content/Analysis/Wells/Tie_Well_To_Seismic/Well-Tie_Display_Panel.htm" />
