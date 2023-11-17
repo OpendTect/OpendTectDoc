@@ -402,4 +402,7 @@
     <Map Name="mSeisMMProcHelpID" Link="/Content/Processing/Batch_Processing/Distributed_Computing_Window.htm" />
     <Map Name="mSurveyFileDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Read from Survey Setup file.htm" />
     <Map Name="mBatchHostsDlgHelpID" Link="/Content/Utilities/Installation/Setup_Distributed_Computing.htm" />
+    <Map Name="mSEGYExpLineHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_2D.htm" />
+    <Map Name="mSEGYExpLinePSHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_2D.htm" />
+    <Map Name="mSEGYExpVolPSHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm" />
 </CatapultAliasFile>
