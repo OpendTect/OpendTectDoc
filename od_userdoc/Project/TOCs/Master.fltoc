@@ -990,7 +990,17 @@
         Link="/Content/Processing/Create_Seismic_Output/Velocity.htm">
         <TocEntry
           Title="6.1.8.1 Time-Depth Conversion"
-          Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion.htm" />
+          Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion/Simple Time-Depth Model.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion/Velocity Volume.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion/Well's Depth Model.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
         <TocEntry
           Title="6.1.8.2 Velocity Conversion"
           Link="/Content/Processing/Create_Seismic_Output/Velocity/Velocity_Conversion.htm" />
@@ -1009,8 +1019,8 @@
         Title="6.2.2 Stratal Amplitude"
         Link="/Content/Processing/Create_Horizon_Ouptut/Stratal_Amplitude.htm" />
       <TocEntry
-        Title="6.2.3 Isopach"
-        Link="/Content/Processing/Create_Horizon_Ouptut/Isopach.htm" />
+        Title="6.2.3 Isochron"
+        Link="/Content/Processing/Create_Horizon_Ouptut/Isochron.htm" />
     </TocEntry>
     <TocEntry
       Title="6.3 (Re-)Start Batch Job"

@@ -115,7 +115,7 @@
     <Map Name="mScenePropertyDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Scene.htm" />
     <Map Name="mStereoDlgHelpID" Link="/Content/View/Stereo_Viewing.htm" />
     <Map Name="mStratAmpCalcHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Stratal_Amplitude.htm" />
-    <Map Name="mIsopachMakerHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Isopach.htm" />
+    <Map Name="mIsopachMakerHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Isochron.htm" />
     <Map Name="mHorizonMergeDlgHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_3D.htm" />
     <Map Name="mHorizonRelationsDlgHelpID" Link="/Content/Survey/Manage/Manage_Horizons/Horizon_Manager_3D.htm" />
     <Map Name="mSEGYFileManipHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
@@ -405,4 +405,6 @@
     <Map Name="mSEGYExpLineHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_2D.htm" />
     <Map Name="mSEGYExpLinePSHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_2D.htm" />
     <Map Name="mSEGYExpVolPSHelpID" Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm" />
+    <Map Name="mIsochronMakerBatchHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Isochron.htm" />
+    <Map Name="mIOObjInputSelDlgHelpID" Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion/Velocity Volume.htm" />
 </CatapultAliasFile>

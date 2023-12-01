@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="297" MadCap:lastWidth="1490">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
         <h4>6.1.8.1 Time-Depth Conversion<MadCap:keyword term="Time-Depth Conversion" /></h4>
         <p>To create an time-depth converted output, follow: <i>Processing &gt; Create Seismic Output &gt; Time-Depth Conversion...</i></p>
         <p>Time-depth conversion is done by applying Dix's equation, based on a interval- or RMS velocity volume. A <a href="../../../Survey/Import/Import_Seismic/Tagged_Seismic_Data.htm" target="_self" MadCap:conditions="Default.ScreenOnly">velocity model</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">velocity model</MadCap:conditionalText> and input time volume must be provided, and the direction of the conversion has to be set.</p>
-        <img src="../../../Resources/Images/Processing/Processing time depth conversion.png" class="General_Image" />
-        <p>It is also possible to convert from Depth to Time. Instead of an input Time volume, a input Depth model has to be provided.</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../Resources/Images/Processing/Processing time depth conversion.png" class="General_Image" style="width: 800px;height: auto;max-width: auto;max-height: auto;" />
+        </p>
+        <p>The Z transform options are as follows:</p>
+        <p style="text-indent: 0.5in;">
+            <img src="../../../Resources/Images/Processing/Processing time depth conversion Z transform options.png" style="width: 800px;height: auto;max-width: auto;max-height: auto;" />
+        </p>
+        <p>Each options has various additional choices:</p>
+        <ul>
+            <li>
+                <p><a href="Time-Depth_Conversion/Simple Time-Depth Model.htm" target="_blank">Simple Time-Depth Model</a>: <i>Select</i> or <i>Create/Edit</i></p>
+            </li>
+            <li>
+                <p>Velocity Volume: <i>Select</i> or <i>Edit</i> an existing model</p>
+            </li>
+            <li>
+                <p>Well's Depth model: <i>Select</i> (though these may be edited via the <a href="../../../Survey/Manage/Manage_Wells.htm" target="_blank">Well Manager</a>)</p>
+            </li>
+            <li>
+                <p>Linear Velocity: set an Interval Velocity and Gradient directly in this UI.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>It is also possible to convert from Depth to Time, where, instead of an input Time volume, a input Depth model has to be provided.</p>
     </body>
 </html>
