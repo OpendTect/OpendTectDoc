@@ -10,16 +10,27 @@
 </p>
         <p><b>Unlocated XY</b> - spatially unaware, based on three points, two of which must be on the same inline.</p>
         <img src="../../../../Resources/Images/unlocated-xy.png" class="General_Image" />
-        <p><b>Anchor Point Based XY</b> - an approximate way to convert XY coordinates to geographical latitude and longitude. Error increases with the distance from the defined point.</p>
-        <img src="../../../../Resources/Images/anchor-point-based-xy.png" class="General_Image" />
-        <p><b>Project Based System</b> can be selected  when a coordinate system is known. The list of projections was created using <a href="https://proj.org/">Proj.4 filter function</a>.</p>
+        <p><b>Projection Based System</b> can be selected  when a coordinate system is known. The list of projections was created using <a href="https://proj.org/">Proj.4 filter function</a>.</p>
         <img src="../../../../Resources/Images/project-based-system.png" class="General_Image" />
-        <p>Convert Geographical Positions option is available if Project Based System is selected. This utility allows conversion of XY coordinate pair to geographical latitude and longitude, and vice versa.</p>
+        <p>For the Projection Based System, two additional options are available:</p>
+        <ul>
+            <li>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/info.png" style="height: auto; width: auto;" class="Icons" /> View Details: pops up a dialog with concise information on the selected Projection System.</p>
+            </li>
+            <li>
+                <p>
+                    <img src="../../../../Resources/Images/Icons/xy2ic.png" class="Icons" style="max-width: auto;max-height: auto;" /> Convert Geographical Positions option is available if Project Based System is selected. This utility allows conversion of XY coordinate pair to geographical latitude and longitude, and vice versa.</p>
+            </li>
+        </ul>
         <img src="../../../../Resources/Images/convert-geographical-positions.png" class="General_Image" />
         <p>In the Convert Geographical Positions window, there are two modes available for coordinate conversion: Manual/File.</p>
         <ul>
             <li>In <i>Manual mode</i>, the user specifies an X/Y pair (or Lat/Long pair), then press the corresponding arrow key to obtain the position in the other domain.</li>
             <li>In <i>File mode</i>, the user browses the input file and create a new output file. By specifying the corresponding type conversion (XY to Lat/Long or Lat/Long to XY) and pressing the Convert button, the desired conversion is written on output file.</li>
+            <li>&#160;</li>
         </ul>
+        <p><b>Anchor Point Based XY</b> - an approximate way to convert XY coordinates to geographical latitude and longitude. Error increases with the distance from the defined point. Due to its inherent inaccuracies, this feature has been deprecated. For new surveys, a user can no longer choose this option - it is only show this option if a survey was set up using this system.<img src="../../../../Resources/Images/anchor-point-based-xy.png" class="General_Image" /></p>
+        <p>&#160;</p>
     </body>
 </html>
