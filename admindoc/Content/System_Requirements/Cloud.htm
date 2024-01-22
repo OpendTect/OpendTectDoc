@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h1>Cloud</h1>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h2 style="page-break-before: avoid">Cloud</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <h2>Amazon Web Services (AWS)</h2>
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <p>
+            </p>
+            <h3 style="page-break-before: avoid">Amazon Web Services (AWS)</h3>
+        </MadCap:conditionalText>
+        <ul>
+            <li><b>OS / AMI</b>:&#160;Amazon Linux 2023 is not supported, official AWS documentation says that AL2023 is cloud-centered and optimized for Amazon EC2 usage and currently does not include a graphical or desktop environment.<br /><br /></li>
+            <li><b>Architecture</b>:&#160;For Linux and Windows: The 64-bit (x86) architecture is supported. Note that the 64-bit (Arm) architecture <b>is not</b> supported.<br /><br /></li>
+            <li><b>Instance Type</b>:&#160;We tested OpendTect on the following instance types: g3s, g5<br /><br /></li>
+            <li><b>GPU</b>:&#160; We recommend either creating the instance with an AMI that comes with the NVIDIA driver pre-installed or installing the NVIDIA GRID driver on an instance that comes with a NVIDIA GPU. Please note that the basic Microsoft render driver is not supported.<br /><br /></li>
+            <li><b>Display</b>:&#160;We recommend to use NICE DCV for the remote display. More information and the downloads for Server and Client can be found on the <a href="https://aws.amazon.com/hpc/dcv/" target="_blank">NICE DCV website</a>.</li>
+        </ul>
+        <p><i>Please note that:</i>
+        </p>
+        <ul>
+            <li><i>We have known clients using OpendTect on AWS, Azure and Google Cloud. The requirements are no different compared to the on-prem requirements. Same OS, amount of memory and same graphics requirements apply.</i>
+                <br />
+                <br />
+            </li>
+        </ul>
+    </body>
+</html>

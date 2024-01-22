@@ -13,7 +13,7 @@
         </MadCap:conditionalText>
         <p>The FlexNet vendor package with the binaries that are needed can be downloaded from the <a href="https://dgbes.com/download/flexnet-vendors-packages" target="_blank">FlexNet Vendor Packages download page</a>.</p>
         <ol>
-            <li>Download the <a href="https://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.19.4.1-dgb-lux64.zip" target="_blank">Linux 64 (FlexNet v11.19.4.1) zip-file</a> for OpendTect Pro &amp; dGB&#160;Plugins for OpendTect 6.4 and newer.<br /><br /></li>
+            <li>Download the <a href="https://download.opendtect.org/flexnet/dGB/v6.4-and-newer/flexnet11.19.5.0-dgb-lux64.zip" target="_blank">Linux 64 (FlexNet v11.19.5.0) zip-file</a> for OpendTect Pro &amp; dGB&#160;Plugins for OpendTect 6.4 and newer.<br /><br /></li>
             <li>Create a directory on the server that is to be used as license server for OpendTect. E.g. <code>mkdir /opt/flexlm/opendtect</code><br /><br /></li>
             <li>Unzip the zip-file in the directory that has been created in previous step.<br /><br /></li>
             <li>The zip-file has the following files:<br /><b>dgbld</b> :&#160;The dGB vendor daemon<br /><b>lmgrd</b> :&#160;The FlexNet license  manager daemon <br /><b>lmutil</b> :&#160;The FlexNet license management utilities<br /><br /></li>
@@ -50,22 +50,7 @@
             <li>
                 <p><code>./lmgrd:&#160;No such file or directory</code>
                     <br />
-                    <br />This error occurs when either the file or the executable's loader is not present. To find the executable's loader run the following command:<br /><code>file lmgrd</code><br />It should show something like:<br /><code>lmgrd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-lsb-x86-64.so.3, for GNU/Linux 2.6.18, stripped</code><br />Now check whether the file <i>/lib64/ld-lsb-x86-64.so.3</i> exists. If not then lsb needs to be installed.<br /><br />How to install lsb?&#160;This differs per distro:</p>
-                <ul>
-                    <li>
-                        <p>Debian/Ubuntu: <code>sudo apt install lsb</code></p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>RHEL/CentOS/Rocky: <code>yum install redhat-lsb</code></p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>OpenSUSE: <code>zypper install lsb</code><br /></p>
-                    </li>
-                </ul>
+                    <br />This error occurs when either the file or the executable's loader is not present. To find the executable's loader run the following command:<br /><code>file lmgrd</code><br />It should show something like:<br /><code>lmgrd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-lsb-x86-64.so.3, for GNU/Linux 2.6.18, stripped</code><br /><br /></p>
             </li>
             <li>
                 <p><code>Cannot open "debug.log" as log file (-1)</code>

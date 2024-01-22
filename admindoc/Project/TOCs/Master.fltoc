@@ -26,7 +26,10 @@
       Link="/Content/System_Requirements/Linux.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/System_Requirements/MacOS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/System_Requirements/macOS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Cloud"
+      Link="/Content/System_Requirements/Cloud.htm" />
   </TocEntry>
   <TocEntry
     Title="2 Installation"
@@ -41,8 +44,8 @@
         Title="Installing OpendTect on Linux"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
       <TocEntry
-        Title="Installing OpendTect on MacOS"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-MacOS.htm"
+        Title="Installing OpendTect on macOS"
+        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-macOS.htm"
         ReplaceMergeNode="false" />
       <TocEntry
         Title="Licenses"
