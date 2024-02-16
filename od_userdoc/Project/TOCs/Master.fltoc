@@ -1180,8 +1180,11 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="9.5 Show Log File"
-      Link="/Content/Utilities/Show_Log_File.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Utilities/Plugin Development.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Utilities/Show_Log_File.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="10 Help"
