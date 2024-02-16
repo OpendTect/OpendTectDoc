@@ -59,6 +59,7 @@ ________________________________________________________________________
 #define		mTrc2SPHelpID					0x00004017
 #define		mSimpleTimeDepthTableHelpID			0x00004018
 #define		mSEGYHdrEntrySettingsHelpID			0x00004019
+#define		mCreateDevEnvHelpID				0x00004020
 //Object-Management 008
 // Object-Management Basic 00
 #define		mSetDataDirHelpID				0x00800001
@@ -323,6 +324,11 @@ ________________________________________________________________________
 #define		mFault2FaultSelHeplID				0x10401011
 #define		mCopyFaultSetHelpID				0x10401012
 #define		mFltSetManHelpID				0x10401013
+#define		mImportFaultSetHelpID				0x10401014
+#define		mExportFaultSetHelpID				0x10401015
+#define		mProcessFaultTime2DepthID			0x10401016
+#define		mProcessFaultSetTime2DepthID			0x10401017
+#define		mProcessFaultStickSetTime2DepthID		0x10401018
 // Surfaces Manage 02
 #define		mSurfaceManHelpID				0x10402000
 #define		mSurface2DManHelpID				0x10402001
