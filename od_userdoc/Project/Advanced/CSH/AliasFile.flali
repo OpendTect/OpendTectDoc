@@ -44,12 +44,12 @@
     <Map Name="mLooknFeelSettingsHelpID" Link="/Content/Utilities/Settings/Look_And_Feel.htm" />
     <Map Name="mShortcutsDlgHelpID" Link="/Content/Utilities/Settings/Keyboard_Shortcuts.htm" />
     <Map Name="mBatchProgLaunchHelpID" Link="/Content/Utilities/Tools/Batch_Programs.htm" />
-    <Map Name="mConvertPosHelpID" Link="/Content/Utilities/Tools/Position_Conversion.htm" />
+    <Map Name="mConvertPosHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mmcmddriverimpsHelpID" Link="/Content/Utilities/Tools/Command_Driver.htm" />
     <Map Name="mSurveyHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
-    <Map Name="mSurveyInfoEditorHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window.htm" />
+    <Map Name="mSurveyInfoEditorHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Parameters_Window.htm" />
     <Map Name="mGenRanLinesByContourHelpID" Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm" />
-    <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
+    <Map Name="mLatLong2CoordDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate_System.htm" />
     <Map Name="mODMainAutoSessionDlgHelpID" Link="/Content/Survey/Session.htm#autoloadsession" />
     <Map Name="mColTabImportHelpID" Link="/Content/Survey/Import/Import_Color_Table.htm" />
     <Map Name="mImpPVDSHelpID" Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
