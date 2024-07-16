@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1909" MadCap:lastWidth="1834">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
-        <h3>4.3.7 Import Mute Functions<MadCap:keyword term="Import Mute Functions" /></h3>
+        <h3 style="text-align: justify; page-break-before: avoid">4.3.7 Import Mute Functions<MadCap:keyword term="Import Mute Functions" /></h3>
         <p>Mute definitions can be used for <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Processing/Create_Seismic_Output/Pre-Stack_Processing/Mute.htm" target="_self">pre-processing</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">pre-processing</MadCap:conditionalText> prestack seismic data.</p>
-        <img src="../../Resources/Images/Survey/Import mute popout menu.png" class="General_Image" />
+        <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+            <img src="../../Resources/Images/Survey/Import mute popout menu.png" class="General_Image" />
+        </MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+            <img src="../../Resources/Images/Survey/Import mute popout menu.png" class="General_Image" style="width: 357px;height: 308px;" />
+        </MadCap:conditionalText>
         <p>Mute definitions can be imported in OpendTect using Ascii files. The import window is launched from the OpendTect main menu (<i>Survey &gt; Import &gt; Mute definitions &gt; Ascii</i>). Select the input Ascii file. You can display the input file by pressing the <i>Examine</i> button. The input file should be column sorted with one point per record (line).</p>
         <img src="../../Resources/Images/Survey/Import mute main.png" class="General_Image" />
         <p>The main work is to specify the presence of a <i>file header</i> and the file <i>format definition</i>. The header, if present, can be of fixed length (number of lines), or delimited on its last line by a keyword. The mute definition can be either variable throughout the survey, in which case a position must be provided in the input file for all data points, or fixed. In this latter case, toggle <i>File contains position</i> to <i>No</i>  and provide any location for the mute definition.</p>
