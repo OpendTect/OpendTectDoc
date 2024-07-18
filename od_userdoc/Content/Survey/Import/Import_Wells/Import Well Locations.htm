@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <h4>4.3.14.3 Import Well Locations<MadCap:keyword term="Import Well Locations" /></h4>
+        <h4 style="text-align: justify; page-break-before: avoid">4.3.14.3 Import Well Locations<MadCap:keyword term="Import Well Locations" /></h4>
         <p>This utility window allows the quick creation of multiple vertical wells with a constant velocity as depth-time model provider. The table window below can either be filled manually or by reading a file.</p>
         <p>The following parameters are mandatory:</p>
         <ul>
@@ -26,6 +26,15 @@
         <img src="../../../Resources/Images/Survey/Import wells simple multi format definition.png" class="General_Image" />
         <p>You must specify in the format definition window the column numbers of the X and Y coordinates (absolute values, not relative to the surface coordinates), in the same unit as used when defining the OpendTect survey. Reference datum elevation and TD should also be provided, while the SRD and UWI are less frequently used. Please note that KB and SRD both increase upwards and are positive above sea level, whereas MD is a depth and increases downwards (MD is never negative).</p>
         <p>It is recommended to save the format definition for a later use and QC, by clicking on the <img src="../../../Resources/Images/Icons/save.png" class="Icons" /> icon. In pop-up window, write the name of the format and store it. The format can be stored at different levels (All surveys, Current survey, Current OpendTect user level) depending on the usage.</p>
-        <img src="../../../Resources/Images/Survey/Import wells simple multi save format.png" class="General_Image" />
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
+                <img src="../../../Resources/Images/Survey/Import wells simple multi save format.png" class="General_Image" />
+            </MadCap:conditionalText>
+        </p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
+                <img src="../../../Resources/Images/Survey/Import wells simple multi save format.png" class="General_Image" style="width: 270px;height: 332px;" />
+            </MadCap:conditionalText>
+        </p>
     </body>
 </html>
