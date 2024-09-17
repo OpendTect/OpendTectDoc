@@ -21,12 +21,16 @@
         </MadCap:conditionalText>
         <p>The installer will ask to add firewall rules to the Windows Firewall. Which .exe programs it adds to Windows&#160;Firewall depends on the packages that have been installed. Here is the full list of .exe files that require a rule in the Inbound Rules in the Windows Firewall. You may also do this manually. The default OpendTect base directory is C:\Program Files\OpendTect. The base directory can be another directory if that is chosen during installation. If that is the case then replace the default base directory in below list with the actual base directory.</p>
         <ul>
-            <li>  C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_main.exe</li>
-            <li> C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_SeisMMBatch.exe</li>
-            <li> C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_remoteservice.exe</li>
-            <li> C:\Program Files\OpendTect\Python_1.4.4\python.exe</li>
-            <li> C:\Program Files\OpendTect\Python_1.4.4\envs\odmlpython-cpu-mkl\python.exe</li>
-            <li> C:\Program Files\OpendTect\Python_1.4.4\envs\odmlpython-cuda113\python.exe</li>
+            <li>OpendTect Main Window: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_main.exe</li>
+			<li>Machine Learning plugin : Control Center: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_DeepLearning_CC.exe</li>
+			<li>Machine Learning plugin : Example Manager: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_DeepLearning_EM.exe</li>
+			<li>Machine Learning plugin : Model Import: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_DeepLearning_ModelImport.exe</li>
+			<li>Machine Learning plugin : Model Manager: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_DeepLearning_TM.exe</li>
+			<li>Machine Learning plugin : Main Application: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_DeepLearning.exe</li>
+			<li>Distributed Computing Service: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_remoteservice.exe</li>
+            <li>Distributed Computing Client: C:\Program Files\OpendTect\<MadCap:variable name="Variables.VersionNumber" />.0\bin\win64\Release\od_SeisMMBatch.exe</li>
+            <li>Machine Learning Environment: C:\Program Files\OpendTect\Python\envs\odmlpython-cpu-mkl\python.exe</li>
+            <li>Machine Learning Environment: C:\Program Files\OpendTect\Python\envs\odmlpython-cuda113\python.exe</li>
         </ul>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
             <h2>Open Ports</h2>
