@@ -101,9 +101,6 @@
       <TocEntry
         Title="System Python installation for use in OpendTect"
         Link="/Content/Installation/Python_environments/System-Python-installation-for-use-in-OpendTect.htm" />
-      <TocEntry
-        Title="Custom Python installation from YAML files"
-        Link="/Content/Installation/Python_environments/Custom-Python-installation-from-YAML-files.htm" />
     </TocEntry>
     <TocEntry
       Title="License server"
