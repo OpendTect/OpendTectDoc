@@ -14,7 +14,7 @@
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
   AutoSizeCaptureCaptions="false"
-  OutputFile="OpendTect-Administrators-Manual-7-0">
+  OutputFile="OpendTect-Administrators-Manual-2025">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
