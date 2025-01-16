@@ -11,11 +11,11 @@
   <Variable
     Name="VersionNumber"
     Comment=""
-    EvaluatedDefinition="7.0">7.0</Variable>
+    EvaluatedDefinition="2025">2025</Variable>
   <Variable
     Name="PubYear"
     Comment=""
-    EvaluatedDefinition="2024">2024</Variable>
+    EvaluatedDefinition="2025">2025</Variable>
   <Variable
     Name="DocTitle"
     Comment=""

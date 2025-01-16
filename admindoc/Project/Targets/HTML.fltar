@@ -18,11 +18,12 @@
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
   PreCompileScaledImages="false"
   EnableSitemap="true"
-  SitemapWebUrl="https://doc.opendtect.org/7.0.0/doc/admindoc/"
+  SitemapWebUrl="https://doc.opendtect.org/2025/doc/admindoc/"
   EquationsOutputType="PNG"
   SearchEngine="MadCapSearch"
   ResultsPerPage="20"
-  AbstractLength="306">
+  AbstractLength="306"
+  MobileBreakpoint="773">
   <PrintedOutput
     CollapseMargins="true" />
   <MicroContentSearch>
@@ -43,7 +44,7 @@
       content="IE=edge" />
     <meta
       name="description"
-      content="OpendTect Admin Documentation - Version 7.0" />
+      content="OpendTect Admin Documentation - Version 2025" />
     <meta
       name="keywords"
       content="OpendTect, OpendTect Pro, Machine Learning, System Requirements, Windows, Linux, Mac OS, Installation, Python environments, FlexNet License Server, Petrel Plugin, Host IDs, Demo/node-locked licenses, Floating licenses, Offline installation, Python settings, Distributed Computing, NVIDIA, NVIDIA GPU Performance Counters, Environment variables, Firewall rules, Open ports, YAML, Troubleshooting" />
@@ -53,6 +54,6 @@
   </MetaTags>
   <Variables>
     <Variable
-      Name="Variables/PubYear">2024</Variable>
+      Name="Variables/PubYear">2025</Variable>
   </Variables>
 </CatapultTarget>
