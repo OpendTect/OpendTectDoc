@@ -11,17 +11,16 @@
   InjectEmptyPages="false"
   MasterToc="/Project/TOCs/Master.fltoc"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
   AutoSizeCaptureCaptions="false"
-  OutputFile="OpendTect-User-Documentation-7-0">
+  OutputFile="OpendTect-User-Documentation-2025">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false" />
   <DocumentProperties
-    Title="OpendTect User Documentation - Version 7.0"
+    Title="OpendTect User Documentation - Version 2025"
     Author="dGB Earth Sciences" />
   <PDF
     TitleBar="DocumentTitle"
@@ -35,6 +34,6 @@
   <RelationshipTables />
   <Variables>
     <Variable
-      Name="Variables/PubYear">2024</Variable>
+      Name="Variables/PubYear">2025</Variable>
   </Variables>
 </CatapultTarget>
