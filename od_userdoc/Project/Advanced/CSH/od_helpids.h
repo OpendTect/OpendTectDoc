@@ -22,6 +22,7 @@ ________________________________________________________________________
 #define		mODSceneMgrsetKeyBindingsHelpID			0x00002007
 #define		mSurveySettingsHelpID				0x00002008
 #define		mPythonSettingsHelpID				0x00002009
+#define		mInformationHelpID				0x00002010
 // General Survey 03
 #define		mSurveyHelpID					0x00003001
 #define		mSurveyInfoEditorHelpID				0x00003002
@@ -95,6 +96,7 @@ ________________________________________________________________________
 #define		mAutoRangeClipDlgHelpID				0x05001003
 #define		mColTabImportHelpID				0x05001004
 #define		mODEditAttribColorDlgHelpID			0x05001005
+#define		mColTabExportHelpID				0x05001006
 // Visualization Sessions 03
 #define		mODMainAutoSessionDlgHelpID			0x05003001
 #define		mSessionManHelpID				0x05003002
@@ -475,7 +477,7 @@ ________________________________________________________________________
 //Crossplots 111
 // Crossplots General 00
 #define		mDataPointSetHelpID				0x11100000
-#define		mdataPointSetSaveHelpID				0x11100001
+#define		mDataPointSetSaveHelpID				0x11100001
 #define		mDataPointSetCrossPlotterPropDlgHelpID		0x11100002
 #define		mCreateDPSPDFHelpID				0x11100003
 #define		mSelectionSettDlgHelpID				0x11100004
@@ -489,6 +491,7 @@ ________________________________________________________________________
 #define		mVariogramDlgHelpID				0x11100012
 #define		mVariogramDisplayHelpID				0x11100013
 #define		mOpenCossplotHelpID				0x11100014
+#define		mDataPointSetExportHelpID			0x11100015
 // Crossplots Extraction 01
 #define		mAttribCrossPlotHelpID				0x11101000
 #define		mWellAttribCrossPlotHelpID			0x11101001
