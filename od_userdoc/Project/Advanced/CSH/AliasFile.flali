@@ -222,7 +222,6 @@
     <Map Name="mDataPointSetCrossPlotterPropDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window.htm" />
     <Map Name="mDataPointSetHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Table.htm" />
     <Map Name="mDataPointSetMergerHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />
-    <Map Name="mdataPointSetSaveHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Table.htm" />
     <Map Name="mDPSOverlayPropDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window/Overlay_From_A_Third_Attribute.htm" />
     <Map Name="mDPSSelectednessDlgHelpID" Link="/Content/Analysis/Cross-Plot/Cross-Plot_Window.htm" />
     <Map Name="mEvaluateDlgHelpID" Link="/Content/Analysis/Attributes/Attribute_Set_Toolbar.htm" />
