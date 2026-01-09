@@ -35,7 +35,7 @@
   <RelationshipTables />
   <Variables>
     <Variable
-      Name="Variables/PubYear">2024</Variable>
+      Name="Variables/PubYear">2026</Variable>
     <Variable
       Name="Variables/Version">7.0</Variable>
   </Variables>
