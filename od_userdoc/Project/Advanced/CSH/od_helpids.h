@@ -30,7 +30,6 @@ ________________________________________________________________________
 #define		mCopySurveySIPHelpID				0x00003006
 #define		mConvertPosHelpID				0x00003007
 #define		m2DDefSurvInfoDlgHelpID				0x00003008
-#define		mLatLong2CoordDlgHelpID				0x00003009
 #define		mGoogleExportSurveyHelpID			0x00003010
 #define		mSeisWvltMangetFromOtherSurveyHelpID		0x00003011
 #define		mSurveyCompressButPushedHelpID			0x00003012
@@ -45,10 +44,8 @@ ________________________________________________________________________
 #define		mmcmddriverimpsHelpID				0x00004003
 #define		mODApplMgraddTimeDepthSceneHelpID		0x00004004
 #define		mODApplMgrDispatchersetAutoUpdatePolHelpID	0x00004005
-#define		mHandleDLSiteFailHelpID				0x00004006
 #define		mProxyDlgHelpID					0x00004007
 #define		mExp2DGeomHelpID				0x00004008
-#define		mLatLong2CoordFileTransDlgHelpID		0x00004009
 #define		mEditSEGYFileDataDlgHelpID			0x00004010
 #define		mSEGYReadImpParsDlgHelpID			0x00004011
 #define		mSEGYStoreImpParsDlgHelpID			0x00004012
