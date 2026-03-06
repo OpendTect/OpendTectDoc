@@ -365,7 +365,6 @@
     <Map Name="mGrubbsFilterAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Grubbs_Filter.htm" />
     <Map Name="mhandleExistingGeometryHelpID" Link="/Content/Survey/Import/Import_Horizons/Geometry_3D.htm" />
     <Map Name="mImpAttrSetHelpID" Link="/Content/Analysis/Attributes/Import_An_Attribute_Set_From.htm" />
-    <Map Name="mLatLong2CoordFileTransDlgHelpID" Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
     <Map Name="mMarkerViewDlgHelpID" Link="/Content/Survey/Manage/Manage_Wells/Manage_Markers.htm" />
     <Map Name="mNewSurveyByCopyHelpID" Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
     <Map Name="mProbDenFuncGenGaussianHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions/Generate_Probability_Density_Functions.htm" />
