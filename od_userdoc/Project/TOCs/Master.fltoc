@@ -267,7 +267,7 @@
           Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Survey_Ranges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate_Ranges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate_Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Inline-Crossline to X-Y Transformation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
