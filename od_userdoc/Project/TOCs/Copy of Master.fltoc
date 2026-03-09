@@ -440,10 +440,10 @@
       Link="/Content/Survey/Export.htm">
       <TocEntry
         Title="4.4.1 Export Faults"
-        Link="/Content/Survey/Export/Export_Faults.htm" />
+        Link="/Content/Survey/Export/Export_Faults/Export_Faults.htm" />
       <TocEntry
         Title="4.4.2 Export FaultStickSets"
-        Link="/Content/Survey/Export/Export_FaultStickSets.htm" />
+        Link="/Content/Survey/Export/Export_FaultStickSets/Export_FaultStickSets.htm" />
       <TocEntry
         Title="4.4.3 Export Geometry 2D"
         Link="/Content/Survey/Export/Export_Geometry_2D.htm" />

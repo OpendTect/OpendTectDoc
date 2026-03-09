@@ -273,7 +273,11 @@
           Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Inline-Crossline to X-Y Transformation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate_System.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate_System.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Window/Coordinate System/Convert Geographical Positions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
       </TocEntry>
     </TocEntry>
     <TocEntry
@@ -445,77 +449,80 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="4.4 Export"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Export.htm">
       <TocEntry
-        Title="4.4.1 Export Faults"
-        Link="/Content/Survey/Export/Export_Faults.htm" />
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_Faults/Export_Faults.htm" />
       <TocEntry
-        Title="4.4.2 Export FaultStickSets"
-        Link="/Content/Survey/Export/Export_FaultStickSets.htm" />
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_FaultStickSets/Export_FaultStickSets.htm" />
       <TocEntry
-        Title="4.4.3 Export Geometry 2D"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_FaultSet/Export FaultSet.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Geometry_2D.htm" />
       <TocEntry
-        Title="4.4.4 Export Horizons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Horizons.htm">
         <TocEntry
-          Title="4.4.4.1 Export Ascii 3D Horizons"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Horizons/Export_Ascii_3D_Horizons.htm" />
         <TocEntry
-          Title="4.4.4.2 Export Ascii 2D Horizons"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Horizons/Export_Ascii_2D_Horizons.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.4.5 Export Mute Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Mute_Functions.htm" />
       <TocEntry
-        Title="4.4.6 Export Pointsets &amp; Polygons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Pointsets_Polygons.htm" />
       <TocEntry
-        Title="4.4.7 Export Probability Density Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.4.8 Export Seismic Data"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Seismics.htm">
         <TocEntry
-          Title="4.4.8.1 Export SEG-Y"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y.htm">
           <TocEntry
-            Title="4.4.8.1.1 Export SEG-Y 3D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_3D.htm" />
           <TocEntry
-            Title="4.4.8.1.2 Export SEG-Y 2D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_2D.htm" />
           <TocEntry
-            Title="4.4.8.1.3 Export SEG-Y Prestack 3D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm"></TocEntry>
           <TocEntry
             Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_2D.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
         <TocEntry
-          Title="4.4.8.2 Export Simple File"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File.htm">
           <TocEntry
-            Title="4.4.8.2.1 Export 3D Simple File Format"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_3D_Simple_File_Format.htm" />
           <TocEntry
-            Title="4.4.8.2.2 Export 2D Simple File Format"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_2D_Simple_File_Format.htm" />
           <TocEntry
-            Title="4.4.8.2.3 Export PreStack Simple File"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_PreStack_Simple_File.htm" />
         </TocEntry>
         <TocEntry
-          Title="4.4.8.3 Export Cube Positions"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.4.9 Survey Setup"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Survey_Setup.htm" />
       <TocEntry
-        Title="4.4.10 Export Wavelets"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Wavelets.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
