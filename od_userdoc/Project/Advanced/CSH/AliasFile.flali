@@ -357,7 +357,7 @@
     <Map Name="mBulkD2TModelImportHelpID" Link="/Content/Survey/Import/Import_Wells/Bulk/Bulk_Well_Time-Depth_Model_Import.htm" />
     <Map Name="mCreateHorizonHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon.htm" />
     <Map Name="mDataPointSetPickDlgHelpID" Link="/Content/Survey/Manage/Manage_Cross-Plot_Data.htm" />
-    <Map Name="mEditSEGYFileDataDlgHelpID" Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
+    <Map Name="mEditSEGYFileDataDlgHelpID" Link="/Content/Survey/Manage/Manage_Seismics/Manage_3D_Seismics/Browse_Edit_Cube_Locations.htm" />
     <Map Name="mEventFreqAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Instantaneous.htm" />
     <Map Name="mExp2DGeomHelpID" Link="/Content/Survey/Export/Export_Geometry_2D.htm" />
     <Map Name="mFaultOptSelHelpID" Link="/Content/OpendTect_Trees_And_Elements/Fault.htm" />
