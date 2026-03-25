@@ -19,7 +19,8 @@
     CollapseMargins="true"
     GenerateTOCProxy="false"
     GenerateIndexProxy="false"
-    GenerateGlossaryProxy="false" />
+    GenerateGlossaryProxy="false"
+    OutputFormat="doc" />
   <DocumentProperties
     Title="OpendTect User Documentation - Version 7.0"
     Author="dGB Earth Sciences" />

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>2.3.2 Working on Unix</h3>
+        <p>After creating the folder, open CMakeUserPresets.json in the directory you just created (e.g., /home/users/ODWork/CMakeUserPresets.json) using a text editor.</p>
+        <ul>
+            <li>
+                <p>
+On Line 39, update the value to point to your Ninja directory (e.g., /home/users/appman/lux64/qt/Qt/Tools/Ninja/ninja).
+</p>
+            </li>
+            <li>
+                <p>On Line 40, update the value to your OpendTect installation directory (e.g., /home/users/OpendTect).</p>
+            </li>
+            <li>
+                <p>On Line 41, update the value to your Qt installation directory (e.g., /home/users/appman/lux64/qt/Qt/6.8.1/gcc_64).</p>
+            </li>
+        </ul>
+        <p>After ensuring that all values are correct, save the file.
+</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/unix_terminal_directory.png" style="width: 506px;height: 544px;" />
+        </p>
+        <p>Next, open the Terminal. Point to the directory you just created previously (e.g., /home/users/ODWork)</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/unix_terminal_directory_odwork.png" style="width: 436px;height: 156px;" />
+        </p>
+        <p>Then, run the following command:</p>
+        <blockquote>
+            <p style="font-family: 'Courier New';">cmake --preset default-ninja-unix</p>
+        </blockquote>
+        <p>Press Enter, and CMake will automatically start the configuration and generation process.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/unix_terminal_directory_cmake.png" style="width: 444px;height: 289px;" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

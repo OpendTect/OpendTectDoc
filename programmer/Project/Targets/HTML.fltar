@@ -21,9 +21,11 @@
   EnableSitemap="true"
   SitemapWebUrl="http://doc.opendtect.org/7.0.0/doc/Programmer/"
   EquationsOutputType="SVG"
-  SearchEngine="MadCapSearch">
+  SearchEngine="MadCapSearch"
+  TopNavTocPath="true">
   <PrintedOutput
-    CollapseMargins="true" />
+    CollapseMargins="true"
+    OutputFormat="doc" />
   <MetaTags>
     <meta
       http-equiv="X-UA-Compatible"
