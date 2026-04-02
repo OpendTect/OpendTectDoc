@@ -234,7 +234,7 @@
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
+      Link="/Content/OpendTect_Trees_And_Elements/Geobody.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Well.htm" />
