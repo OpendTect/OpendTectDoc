@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:breadcrumbsProxy class="Styles.css" />
+        <MadCap:bodyProxy />
+        <MadCap:miniTocProxy style="mc-toc-depth: 1;" />
+        <p class="copyright">© dGB&#160;Beheer B.V. 2002 - <MadCap:variable name="Variables.PubYear" /></p>
+    </body>
+</html>

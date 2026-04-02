@@ -4,7 +4,28 @@
     </head>
     <body>
         <h2>2.4 Debugging your plugin<MadCap:concept term="Debugging your plugin" /></h2>
-        <p>Open the plugin solution in Visual Studio, and right-click on the solution item, and open the solution properties window. Here you can specify the debug source file location, so in your case add the location of the OpendTect source files which are installed by the installation manager, i.e. C:\Program Files\OpendTect\<MadCap:variable name="Variables.Version" />. Now select the "od_main" project which is a launcher project to launch od_main debug executable that comes with the developers package. Right click on this project and set to "Set as startup project". When you press F5 for debugging this project will be started. Ignore if you see any Visual studio warnings. The OpendTect main program, od_main.exe will be launched.</p>
-        <p>From Utilities-Installation-Plugins OpendTect try to load your plugin by browsing to the WORK(D:\WORK)\bin\win64\Debug folder. To debug something, just set a break point in the code. So when the control comes to the break-point it will stop there and you can debug your code. You can also browse into OpendTect source files if you have specified the OpendTect source file location is the solution properties as mentioned above.</p>
+        <p>Open the plugin solution in Microsoft Visual Studio and navigate to the Solution Explorer. Expand the “CMakePredefinedTargets", then right-click on "ALL_BUILD" and select Build.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_all_build.png" style="width: 481px;height: 308px;" />
+        </p>
+        <p>Once the build process is complete, expand the “Launchers” on Solution Explorer. Right-click on "od_main_console" and click "Set as Startup Project". This will be the launcher project for running the od_main debug executable included in the Developer’s Package.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_launchers.png" style="width: 479px;height: 457px;" />
+        </p>
+        <p>Press F5 to start debugging. If you see any Visual Studio warnings, they can be ignored. The OpendTect main program will launch. Inside OpendTect, navigate to Utilities &gt; Installation &gt; Plugins to verify that the developed plugins are listed and loaded correctly.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_inst_plugins_menu.png" style="width: 353px;height: 229px;" />
+        </p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_inst_plugins_main.png" style="width: 705px;height: 307px;" />
+        </p>
+        <p>Note that the OpendTect program that opens is from the official OpendTect installation. However, the main focus of debugging is the developed plugin. If you want to debug a specific plugin, you must select and build that plugin instead of building “ALL_BUILD”. To do this, go to the Microsoft Visual Studio Solution Explorer and expand “OD Free Plugins”. Select the plugin you want to debug, such as the "Tut" plugin, then right-click on it and click Build.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_specific_plugin.png" style="width: 468px;height: 201px;" />
+        </p>
+        <p>After the build process is complete, press F5 to start debugging. Once OpendTect launches, check whether the plugin loads correctly by navigating to Utilities &gt; Installation &gt; Plugins.</p>
+        <p>
+            <img src="../Resources/Images/Plugins/debug_specific_plugin_check.png" />
+        </p>
     </body>
 </html>

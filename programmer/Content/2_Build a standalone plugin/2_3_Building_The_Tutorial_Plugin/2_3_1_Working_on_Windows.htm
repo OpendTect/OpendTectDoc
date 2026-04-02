@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h3>2.3.1 Working on Windows</h3>
+        <p>After creating the folder, run CMake-GUI. In the "Where is the source code" field, browse and select the directory you just created previously (e.g., C:/Users/your_name/ODWork).</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_main.png" style="width: 495px;height: 492px;" />
+        </p>
+        <p>In the “Preset” field, select “Default Windows settings for MSVC”, this preset is used for Microsoft Studio Code 2022 IDE.</p>
+        <p>Note that there are other preset options. However, these presets are not used directly using CMake-GUI. “Default Windows settings for VSCODE” is used for Visual Studio, “ninja-msvc-qtcreator” is used for QT Creator IDE, and “Default Linux settings” is used for Linux operating systems.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_set+default.png" style="width: 496px;height: 495px;" />
+        </p>
+        <p>After selecting the “Define Windows settings for MSVC” preset. The “Where to build the binaries” will be automatically filled.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_set_build_location.png" style="width: 496px;height: 494px;" />
+        </p>
+        <p>Then click Configure. An information window will appear, asking for permission to create a build directory. Click Yes.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_set_yes.png" style="width: 493px;height: 490px;" />
+        </p>
+        <p>Select Visual Studio 17 2022 as the generator and choose x64 as the platform. Click Finish.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_set_finish.png" style="width: 496px;height: 494px;" />
+        </p>
+        <p>CMake will automatically start the configuration process. Once completed, CMake-GUI will display a list of variables with “Name” and “Value” fields automatically filled in. Pay attention to the following variables:</p>
+        <ul>
+            <li>
+                <p>CMAKE_INSTALL_PREFIX</p>
+            </li>
+            <li>
+                <p>OD_BINARY_BASEDIR</p>
+            </li>
+            <li>
+                <p>OpendTect_DIR</p>
+            </li>
+        </ul>
+        <p>Ensure that these variables point to the correct paths. The values of OD_BINARY_BASEDIR and OpendTect_DIR should be the same when using an official installation of OpendTect, as opposed to a rebuilt SDK. As a result in most cases their values should not be changed.</p>
+        <p>
+            <img src="../../Resources/Images/Plugins/win_cmake_set_build.png" style="width: 495px;height: 493px;" />
+        </p>
+        <p>Then click Generate. If everything is successful, you can click Open Project. Microsoft Visual Studio will automatically open the project solution.</p>
+        <p>For a more in depth view of the code in the tutorial plugin, please review Chapter 3 of this manual, this chapter will continue with ways to debug and install a plugin.</p>
+    </body>
+</html>
