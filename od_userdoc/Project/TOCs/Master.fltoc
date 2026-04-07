@@ -20,65 +20,70 @@
     Link="/Content/PDF Front Page/toc_proxy_only.htm"
     conditions="Default.PrintOnly" />
   <TocEntry
-    Title="1 Preface"
-    Link="/Content/Preface.htm">
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Preface.htm"
+    ReplaceMergeNode="false">
     <TocEntry
-      Title="1.1 About this Manual"
-      Link="/Content/Preface/About_This_Manual.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Preface/About_This_Manual.htm"
+      ReplaceMergeNode="false" />
     <TocEntry
-      Title="1.2 Release Notes"
-      Link="/Content/Preface/Release_Notes.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Preface/Release_Notes.htm"
+      ReplaceMergeNode="false" />
     <TocEntry
-      Title="1.3 About OpendTect"
-      Link="/Content/Preface/About_OpendTect.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Preface/About_OpendTect.htm"
+      ReplaceMergeNode="false" />
     <TocEntry
-      Title="1.4 Copyright"
-      Link="/Content/Preface/Copyright.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Preface/Copyright.htm"
+      ReplaceMergeNode="false" />
   </TocEntry>
   <TocEntry
-    Title="2 Getting Started"
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/Getting_Started.htm">
     <TocEntry
-      Title="2.1 System Overview"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/System_Overview.htm">
       <TocEntry
-        Title="2.1.1 Distributed Computing &amp; Parallelization"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Getting_Started/System_Overview/Distributed_Computing_Parallelization.htm" />
     </TocEntry>
     <TocEntry
-      Title="2.2 Toolbars"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/Toolbars.htm">
       <TocEntry
-        Title="2.2.1 OpendTect Toolbar"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Getting_Started/Toolbars/OpendTect_Toolbar.htm" />
       <TocEntry
-        Title="2.2.2 Manage Toolbar"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Getting_Started/Toolbars/Manage_Toolbar.htm" />
       <TocEntry
-        Title="2.2.3 Graphics Toolbar"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar.htm">
         <TocEntry
-          Title="2.2.3.1 Take Snapshots"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Take_Snapshots.htm" />
         <TocEntry
-          Title="2.2.3.2 Directional Lighting"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Getting_Started/Toolbars/Graphics_Toolbar/Directional_Lighting.htm" />
       </TocEntry>
       <TocEntry
-        Title="2.2.4 Slice Position Tool"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Getting_Started/Toolbars/Slice_Position_Tool.htm" />
     </TocEntry>
     <TocEntry
-      Title="2.3 Mouse Controls - Scenes and Graphical Interaction"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/Mouse_Controls.htm" />
     <TocEntry
-      Title="2.4 Color Tables"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/Color_Tables.htm" />
     <TocEntry
-      Title="2.5 General Selection Window"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/General_Selection_Window.htm" />
     <TocEntry
-      Title="2.6 2D Viewer"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Getting_Started/Viewer_2D.htm">
       <TocEntry
         Title="2.6.1 Pre-Stack 2D Viewer"
@@ -86,178 +91,178 @@
     </TocEntry>
   </TocEntry>
   <TocEntry
-    Title="3 OpendTect Trees and Elements"
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/OpendTect_Trees_And_Elements.htm">
     <TocEntry
-      Title="3.1 Scene"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Scene.htm" />
     <TocEntry
-      Title="3.2 Inline, Crossline &amp; Z-Slice"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Inline_Crossline_Z-Slice.htm" />
     <TocEntry
-      Title="3.3 Volume"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Volume.htm" />
     <TocEntry
-      Title="3.4 Random Line"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Random_Line.htm">
       <TocEntry
-        Title="3.4.1 Manual Mode (Empty)"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Manual_Mode.htm" />
       <TocEntry
-        Title="3.4.2 Create from Existing"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Existing.htm" />
       <TocEntry
-        Title="3.4.3 Create from Polygons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Polygons.htm" />
       <TocEntry
-        Title="3.4.4 Create From Wells"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Wells.htm" />
       <TocEntry
-        Title="3.4.5 Create From Table"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Create_From_Table.htm" />
       <TocEntry
-        Title="3.4.6 Interactive Mode"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Random_Line/Interactive_Mode.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.5 2D Seismic"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Seismic_2D.htm" />
     <TocEntry
-      Title="3.6 Pointset &amp; Polygon"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon.htm">
       <TocEntry
-        Title="3.6.1 Manual &amp; Empty Pointsets"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Manual_Empty_Pickset.htm" />
       <TocEntry
-        Title="3.6.2 Generate Random Points (3D)"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Generate_Random_Points_3D.htm" />
       <TocEntry
-        Title="3.6.3 Generate Random Points (2D)"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Generate_Random_Points_2D.htm" />
       <TocEntry
-        Title="3.6.4 Polygon"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Polygon.htm" />
       <TocEntry
-        Title="3.6.5 Pop-Up Menus"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Pointset_Polygon/Pop-Up_Menus.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.7 Horizon"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Horizon.htm">
       <TocEntry
-        Title="3.7.1 Add Attribute"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Add_Attribute.htm" />
       <TocEntry
-        Title="3.7.2 Color-Blended Display"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Color-Blended_Display.htm" />
       <TocEntry
-        Title="3.7.3 Tools"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools.htm">
         <TocEntry
-          Title="3.7.3.1 Grid"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Grid.htm" />
         <TocEntry
-          Title="3.7.3.2 Filter"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Filter.htm" />
         <TocEntry
-          Title="3.7.3.3 Snap-To Event"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Snap-To_Event.htm" />
         <TocEntry
-          Title="3.7.3.4 Variogram"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/Tools/Variogram.htm" />
       </TocEntry>
       <TocEntry
-        Title="3.7.4 Display Contours"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Display_Contours.htm" />
       <TocEntry
-        Title="3.7.5 Calculate Isopach"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Calculate_Isopach.htm" />
       <TocEntry
-        Title="3.7.6 Flattening"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Flattening.htm" />
       <TocEntry
-        Title="3.7.7 New Horizon"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon.htm">
         <TocEntry
-          Title="3.7.7.1 Auto and Manual Horizon Tracking"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking.htm">
           <TocEntry
-            Title="3.7.7.1.1 Horizon Tracking Settings"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Auto_And_Manual_Horizon_Tracking/Horizon_Tracking_Settings.htm" />
         </TocEntry>
         <TocEntry
-          Title="3.7.7.2 Create Horizon With Constant Z"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/OpendTect_Trees_And_Elements/Horizon/New_Horizon/Create_Horizon_With_Constant_Z.htm" />
       </TocEntry>
       <TocEntry
-        Title="3.7.8 Shift"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Shift.htm" />
       <TocEntry
-        Title="3.7.9 Calculate Volume"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Calculate_Volume.htm" />
       <TocEntry
-        Title="3.7.10 Other Options"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Other_Options.htm" />
       <TocEntry
-        Title="3.7.11 Store Z as Attribute"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Store_Z_As_Attribute.htm" />
       <TocEntry
-        Title="3.7.12 Set Z Values"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon/Set_Z_Values.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.8 2D Horizon"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D.htm">
       <TocEntry
-        Title="3.8.1 Display"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Display.htm" />
       <TocEntry
-        Title="3.8.2 Tracking"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Tracking.htm" />
       <TocEntry
-        Title="3.8.3 Tools"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Tools.htm" />
       <TocEntry
-        Title="3.8.4 Workflows"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D/Workflows.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.9 Fault"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Fault.htm" />
     <TocEntry
-      Title="3.10 FaultStickSet"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/FaultStickSet.htm">
       <TocEntry
-        Title="3.10.1 FaultStickSet to Fault"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/OpendTect_Trees_And_Elements/FaultStickSet/FaultStickSet_To_Fault.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.11 Body"
-      Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/OpendTect_Trees_And_Elements/Geobody.htm" />
     <TocEntry
-      Title="3.12 Well"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Well.htm" />
     <TocEntry
-      Title="3.13 Pre-Stack Events"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Pre-Stack_Events.htm" />
     <TocEntry
-      Title="3.14 Pre-Stack 3D Viewer"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Pre-Stack_3D_Viewer.htm" />
     <TocEntry
-      Title="3.15 Annotations"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/Annotations.htm" />
   </TocEntry>
   <TocEntry
-    Title="4 Survey"
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/Survey.htm">
     <TocEntry
-      Title="4.1 Select &amp; Setup Survey"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Select_Setup_Survey.htm">
       <TocEntry
-        Title="4.1.1 Survey Selection Window"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
       <TocEntry
-        Title="4.1.2 New  Survey Window"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
@@ -277,128 +282,135 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="4.2 Session"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Session.htm" />
     <TocEntry
-      Title="4.3 Import"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Import.htm">
       <TocEntry
-        Title="4.3.1 Import Attributes"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Attributes.htm" />
       <TocEntry
-        Title="4.3.2 Import Color Table"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Color_Table.htm" />
       <TocEntry
-        Title="4.3.3 Import Cross-Plot Data"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Cross-Plot_Data.htm" />
       <TocEntry
-        Title="4.3.4 Import Faults"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Faults.htm">
         <TocEntry
-          Title="4.3.4.1 Import Fault Ascii 3D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Faults/Import_Fault_Ascii_3D.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.3.5 Import FaultStickSets"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_FaultStickSets.htm">
         <TocEntry
-          Title="4.3.5.1 Import FaultStickSets Ascii 3D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_FaultStickSets/Import_FaultStickSets_Ascii_3D.htm" />
         <TocEntry
-          Title="4.3.5.2 Import FaultStickSets Ascii 2D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_FaultStickSets/Import_FaultStickSets_Ascii_2D.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.3.6 Import Horizons"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Import/Import_FaultSet.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Import/Import_FaultSets/Import_FaultSet.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Horizons.htm">
         <TocEntry
-          Title="4.3.6.1 Geometry 3D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Horizons/Geometry_3D.htm" />
         <TocEntry
-          Title="4.3.6.2 Attributes 3D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Horizons/Attributes_3D.htm" />
         <TocEntry
-          Title="4.3.6.3 Geometry 2D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Horizons/Geometry_2D.htm" />
         <TocEntry
-          Title="4.3.6.4 Bulk 3D"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Horizons/Bulk_3D.htm" />
         <TocEntry
-          Title="4.3.4.5 From ZMap"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Horizons/From_ZMap.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.3.7 Import Mute Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Mute_Functions.htm"></TocEntry>
       <TocEntry
-        Title="4.3.8 Import Navigation Data / 2D Geometry"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Navigation_Data_2D_Geometry.htm" />
       <TocEntry
-        Title="4.3.9 Import Pointsets &amp; Polygons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Pointsets_Polygons.htm" />
       <TocEntry
-        Title="4.3.10 Import Probability Density Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.3.11 Import Seismic Data"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Seismic.htm">
         <TocEntry
-          Title="4.3.11.1 SEG-Y"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/SEG-Y.htm">
           <TocEntry
-            Title="4.3.11.1.1 SEG-Y Wizard"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard.htm">
             <TocEntry
-              Title="4.3.11.1.1.1 Import Window"
+              Title="[%=System.LinkedTitle%]"
               Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Wizard/Import_Window.htm" />
           </TocEntry>
           <TocEntry
-            Title="4.3.11.1.2 Classic SEG-Y Import Tool"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool.htm">
             <TocEntry
-              Title="4.3.11.1.2.1 SEG-Y Import Preparation"
+              Title="[%=System.LinkedTitle%]"
               Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import_Preparation.htm" />
             <TocEntry
-              Title="4.3.11.1.2.2 SEG-Y Revision"
+              Title="[%=System.LinkedTitle%]"
               Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Revision.htm" />
             <TocEntry
-              Title="4.3.11.1.2.3 SEG-Y Import"
+              Title="[%=System.LinkedTitle%]"
               Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Import.htm" />
             <TocEntry
-              Title="4.3.11.1.2.4 SEG-Y Scan"
+              Title="[%=System.LinkedTitle%]"
               Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Classic_SEG-Y_Import_Tool/SEG-Y_Scan.htm" />
           </TocEntry>
           <TocEntry
-            Title="4.3.11.1.3 SEG-Y Examiner"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/SEG-Y_Examiner.htm" />
           <TocEntry
-            Title="4.3.11.1.4 Manipulate SEG-Y File"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Import/Import_Seismic/SEG-Y/Manipulate_SEG-Y_File.htm" />
         </TocEntry>
         <TocEntry
-          Title="4.3.11.2 SEG-Y Scanned"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/SEG-Y_Scanned.htm" />
         <TocEntry
-          Title="4.3.11.3 Simple File"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/Simple_File.htm" />
         <TocEntry
-          Title="4.3.11.4 Import CBVS Cube"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/Import_CBVS_Cube.htm" />
         <TocEntry
-          Title="4.3.11.5 GPR - DTZ"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/GPR-DTZ.htm" />
         <TocEntry
-          Title="4.3.11.6 Tagged Seismic Data"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Import/Import_Seismic/Tagged_Seismic_Data.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.3.12 Import Velocity Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Velocity_Functions.htm" />
       <TocEntry
-        Title="4.3.13 Import Wavelets"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Wavelets.htm" />
       <TocEntry
-        Title="4.3.14 Import Wells"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Import/Import_Wells.htm">
         <TocEntry
           Title="4.3.14.1 From Ascii Files"
@@ -438,78 +450,84 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="4.4 Export"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Export.htm">
       <TocEntry
-        Title="4.4.1 Export Faults"
-        Link="/Content/Survey/Export/Export_Faults.htm" />
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_Faults/Export_Faults.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="4.4.2 Export FaultStickSets"
-        Link="/Content/Survey/Export/Export_FaultStickSets.htm" />
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_FaultStickSets/Export_FaultStickSets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="4.4.3 Export Geometry 2D"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_FaultSet/Export FaultSet.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Geometry_2D.htm" />
       <TocEntry
-        Title="4.4.4 Export Horizons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Horizons.htm">
         <TocEntry
-          Title="4.4.4.1 Export Ascii 3D Horizons"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Horizons/Export_Ascii_3D_Horizons.htm" />
         <TocEntry
-          Title="4.4.4.2 Export Ascii 2D Horizons"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Horizons/Export_Ascii_2D_Horizons.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.4.5 Export Mute Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Mute_Functions.htm" />
       <TocEntry
-        Title="4.4.6 Export Pointsets &amp; Polygons"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Pointsets_Polygons.htm" />
       <TocEntry
-        Title="4.4.7 Export Probability Density Functions"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
       <TocEntry
-        Title="4.4.8 Export Seismic Data"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Seismics.htm">
         <TocEntry
-          Title="4.4.8.1 Export SEG-Y"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y.htm">
           <TocEntry
-            Title="4.4.8.1.1 Export SEG-Y 3D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_3D.htm" />
           <TocEntry
-            Title="4.4.8.1.2 Export SEG-Y 2D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_2D.htm" />
           <TocEntry
-            Title="4.4.8.1.3 Export SEG-Y Prestack 3D"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_3D.htm"></TocEntry>
           <TocEntry
             Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_SEG-Y/Export_SEG-Y_Prestack_2D.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
         <TocEntry
-          Title="4.4.8.2 Export Simple File"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File.htm">
           <TocEntry
-            Title="4.4.8.2.1 Export 3D Simple File Format"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_3D_Simple_File_Format.htm" />
           <TocEntry
-            Title="4.4.8.2.2 Export 2D Simple File Format"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_2D_Simple_File_Format.htm" />
           <TocEntry
-            Title="4.4.8.2.3 Export PreStack Simple File"
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/Survey/Export/Export_Seismics/Export_Simple_File/Export_PreStack_Simple_File.htm" />
         </TocEntry>
         <TocEntry
-          Title="4.4.8.3 Export Cube Positions"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Export/Export_Seismics/Export_Cube_Positions.htm" />
       </TocEntry>
       <TocEntry
-        Title="4.4.9 Survey Setup"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Survey_Setup.htm" />
       <TocEntry
-        Title="4.4.10 Export Wavelets"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export_Wavelets.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Survey/Export/Export_Wavelets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Export/Export Well.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">

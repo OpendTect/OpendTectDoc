@@ -232,8 +232,7 @@
         Link="/Content/OpendTect_Trees_And_Elements/FaultStickSet/FaultStickSet_To_Fault.htm" />
     </TocEntry>
     <TocEntry
-      Title="3.11 Body"
-      Link="/Content/OpendTect_Trees_And_Elements/Body.htm" />
+      Title="3.11 Body" />
     <TocEntry
       Title="3.12 Well"
       Link="/Content/OpendTect_Trees_And_Elements/Well.htm" />
