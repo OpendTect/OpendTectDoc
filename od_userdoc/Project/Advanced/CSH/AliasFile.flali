@@ -26,8 +26,8 @@
     <Map Name="mEditProbDenFuncHelpID" Link="/Content/Survey/Manage/Manage_Probability_Density_Functions.htm" />
     <Map Name="mEnergyAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Energy.htm" />
     <Map Name="mEventAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Event.htm" />
-    <Map Name="mExportFaultHelpID" Link="/Content/Survey/Export/Export_Faults.htm" />
-    <Map Name="mExportFaultStickHelpID" Link="/Content/Survey/Export/Export_FaultStickSets.htm" />
+    <Map Name="mExportFaultHelpID" Link="/Content/Survey/Export/Export_Faults/Export_Faults.htm" />
+    <Map Name="mExportFaultStickHelpID" Link="/Content/Survey/Export/Export_FaultStickSets/Export_FaultStickSets.htm" />
     <Map Name="mExportHorizonHelpID" Link="/Content/Survey/Export/Export_Horizons.htm" />
     <Map Name="mExpPickSetHelpID" Link="/Content/Survey/Export/Export_Pointsets_Polygons.htm" />
     <Map Name="mExpRokDocPDFHelpID" Link="/Content/Survey/Export/Export_Probability_Density_Functions.htm" />
@@ -405,4 +405,6 @@
     <Map Name="mIsochronMakerBatchHelpID" Link="/Content/Processing/Create_Horizon_Ouptut/Isochron.htm" />
     <Map Name="mIOObjInputSelDlgHelpID" Link="/Content/Processing/Create_Seismic_Output/Velocity/Time-Depth_Conversion/Velocity Volume.htm" />
     <Map Name="mCreateDevEnvHelpID" Link="/Content/Utilities/Plugin Development.htm" />
+    <Map Name="mExportFaultSetHelpID" Link="/Content/Survey/Export/Export_FaultSet/Export FaultSet.htm" />
+    <Map Name="mImportFaultSetHelpID" Link="/Content/Survey/Import/Import_FaultSets/Import_FaultSet.htm" />
 </CatapultAliasFile>
