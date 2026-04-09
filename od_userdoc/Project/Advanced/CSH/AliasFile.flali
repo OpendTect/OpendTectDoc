@@ -166,7 +166,7 @@
     <Map Name="mTextureAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Texture.htm" />
     <Map Name="mSampleValueAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Sample_Value.htm" />
     <Map Name="mConvolveAttribHelpID" Link="/Content/Appendix_A-Attributes_And_Filters/Convolve.htm" />
-    <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon_2D.htm" />
+    <Map Name="mMultiSurfaceReadDlgHelpID" Link="/Content/OpendTect_Trees_And_Elements/Horizon.htm" />
     <Map Name="mWaveletExtractionHelpID" Link="/Content/Survey/Manage/Manage_Wavelets/Statitistical_Wavelet_Extraction.htm" />
     <Map Name="mRayTrcParamsDlgHelpID" Link="/Content/Analysis/Layer_Modeling/Synthetic_And_Property-Log_Generation/Ray_Tracing.htm" />
     <Map Name="mMadagascarMainHelpID" Link="/Content/Processing/Madagascar.htm" />

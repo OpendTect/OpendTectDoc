@@ -231,6 +231,9 @@
       Link="/Content/OpendTect_Trees_And_Elements/Fault.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+      Link="/Content/OpendTect_Trees_And_Elements/FaultSet.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/OpendTect_Trees_And_Elements/FaultStickSet.htm">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
