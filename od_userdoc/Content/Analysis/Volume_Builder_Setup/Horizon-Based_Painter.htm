@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1342" MadCap:lastWidth="1776">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
@@ -9,6 +9,56 @@
         <p>The horizon-based painter  paints velocities in a 3D area or on a 2D line. Geometry of the velocities is defined by one or more horizons.</p>
         <p>The painted velocities are referenced to a specific time. This time can be either constant (user-defined), or retrieved from a horizon and not necessarily from one of the horizons defining the limit of the body. For example, an intermediary horizon could be used.</p>
         <p>Then velocities are painted from that reference time. The velocity must be provided as a velocity/gradient pair. The values are once again either user-defined or extracted from a surface data (grid) attached to a horizon.</p>
+        <p>Detailed below you can see exactly what the velocity/gradient pair represents for each Z-domain.</p>
+        <p>For a <b>time survey</b>, the painted seismic velocity is:</p>
+        <p style="text-indent: 0.5in;">V(t) = v0 + k*t</p>
+        <p>where:</p>
+        <ul>
+            <li>
+                <p>t is time in milliseconds</p>
+            </li>
+            <li>
+                <p>v0 is the top value or initial velocity in m/s</p>
+            </li>
+            <li>
+                <p>k is the pure velocity-time gradient in km/s^2</p>
+            </li>
+            <li>
+                <p>&#160;</p>
+            </li>
+        </ul>
+        <p>For a <b>depth survey</b>, the formulation becomes:</p>
+        <p style="text-indent: 0.5in;">v(z) = v0 + k*z</p>
+        <p>where:</p>
+        <ul>
+            <li>
+                <p>z is depth in meters or feet</p>
+            </li>
+            <li>
+                <p>v0 is the initial velocity in m/s or ft/s</p>
+            </li>
+            <li>
+                <p>k is the pure velocity-position gradient in 1/s</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Please note:</b> users should be careful when creating compatible velocity models using the painter together with the linear velocity conversion available under <i>Processing -&gt; Time-Depth Conversion </i> as here the linear conversion model uses:</p>
+        <p style="text-indent: 0.5in;">z(t) = (v0'/k') * (exp(k'*t/2) - 1)</p>
+        <p>which, to second order, becomes approximately:</p>
+        <p style="text-indent: 0.5in;">z(t) ~= v0'*(t/2) + (v0'k'/2)(t/2)^2</p>
+        <p>Differentiating with respect to t/2 gives the equivalent velocity model:</p>
+        <p style="text-indent: 0.5in;">v(t) = v0' + (v0'*k'/2)*t</p>
+        <p>Therefore, to obtain a compatible painter velocity model:</p>
+        <p style="text-indent: 0.5in;">v(t) = v0 + k*t</p>
+        <p>the parameters should satisfy:</p>
+        <p style="text-indent: 0.5in;">v0 = v0'</p>
+        <p style="text-indent: 0.5in;">1000*k = v0'*k'/2</p>
+        <p>For example:</p>
+        <p style="text-indent: 0.5in;">v0' = 3000, k' = 0.1</p>
+        <p>leads to:</p>
+        <p style="text-indent: 0.5in;">v0 = 3000, k = 0.15</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
         <p>There is also a much simplified Horizon-based painter also available:</p>
         <img src="../../Resources/Images/Analysis/Analysis volume builder hb painter simple.png" class="General_Image" />
     </body>
