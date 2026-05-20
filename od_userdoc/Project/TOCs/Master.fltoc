@@ -1050,35 +1050,6 @@
       Link="/Content/Processing/Start_Batch_Job.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Processing/GMT.htm">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/GMT/Initial_Setup.htm" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/GMT/Create_Postscript_Maps.htm" />
-    </TocEntry>
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/Processing/Madagascar.htm">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/Madagascar/Madagascar_Installation.htm" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/Madagascar/Madagascar_Processing_Window.htm" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/Madagascar/Toolbar.htm" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/Madagascar/Processing_Input.htm" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/Processing/Madagascar/Madagascar_Processing_Output.htm" />
-    </TocEntry>
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
       Link="/Content/Processing/Batch_Processing.htm">
       <TocEntry
         Title="6.6.1 Single Machine Batch Processing Window"
@@ -1221,6 +1192,9 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Help/Training_Manual.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Help/Release Notes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Help/Videos.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

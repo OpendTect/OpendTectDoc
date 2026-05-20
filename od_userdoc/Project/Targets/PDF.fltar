@@ -34,6 +34,6 @@
   <RelationshipTables />
   <Variables>
     <Variable
-      Name="Variables/PubYear">2025</Variable>
+      Name="Variables/PubYear">2026</Variable>
   </Variables>
 </CatapultTarget>
