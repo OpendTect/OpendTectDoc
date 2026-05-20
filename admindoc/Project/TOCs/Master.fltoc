@@ -26,58 +26,51 @@
       Link="/Content/System_Requirements/Linux.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/System_Requirements/macOS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    <TocEntry
-      Title="Cloud"
       Link="/Content/System_Requirements/Cloud.htm" />
   </TocEntry>
   <TocEntry
     Title="2 Installation"
     Link="/Content/Installation.htm">
     <TocEntry
-      Title="OpendTect"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/OpendTect.htm">
       <TocEntry
-        Title="Installing OpendTect on Windows"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Windows.htm" />
       <TocEntry
-        Title="Installing OpendTect on Linux"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Installing-OpendTect-on-Linux.htm"></TocEntry>
       <TocEntry
-        Title="Installing OpendTect on macOS"
-        Link="/Content/Installation/OpendTect/Installing-OpendTect-on-macOS.htm"
-        ReplaceMergeNode="false" />
-      <TocEntry
-        Title="Licenses"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Licenses.htm">
         <TocEntry
-          Title="Licensing and Host IDs"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Installation/OpendTect/Licenses/Licensing-and-Host-IDs.htm" />
         <TocEntry
-          Title="Installing demo/node-locked licenses"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Installation/OpendTect/Licenses/Installing-demo-node-locked-licenses.htm"
           StartSection="false"></TocEntry>
         <TocEntry
-          Title="Installing floating licenses"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Installation/OpendTect/Licenses/Installing-floating-licenses.htm" />
         <TocEntry
-          Title="Clear License Installation"
+          Title="[%=System.LinkedTitle%]"
           Link="/Content/Installation/OpendTect/Licenses/Clear-license-installation.htm" />
       </TocEntry>
       <TocEntry
-        Title="Prepare offline installation packages"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Prepare-offline-installation-packages.htm"></TocEntry>
       <TocEntry
-        Title="Installing OpendTect via offline installation package"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Install-OpendTect-via-offline-installation-package.htm" />
       <TocEntry
-        Title="Setup Python Settings"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Setup-Python-Settings.htm" />
       <TocEntry
-        Title="Setup Distributed Computing"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Setup-Distributed-Computing.htm"></TocEntry>
       <TocEntry
-        Title="Setup the preferred GPU with Windows settings"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Setup-the-preferred-gpu-with-Windows-settings.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
@@ -86,27 +79,27 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Environment-variables.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="Firewall rules and open ports"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/OpendTect/Firewall-Rules-and-Open-Ports.htm" />
     </TocEntry>
     <TocEntry
-      Title="Python environments"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/Python_environments.htm">
       <TocEntry
-        Title="Information about the OpendTect Python environments"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/Python_environments/Information-about-the-OpendTect-Python-environments.htm" />
       <TocEntry
-        Title="Internal Python installation for use in OpendTect"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/Python_environments/Internal-Python-installation-for-use-in-OpendTect.htm" />
       <TocEntry
-        Title="System Python installation for use in OpendTect"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/Python_environments/System-Python-installation-for-use-in-OpendTect.htm" />
       <TocEntry
-        Title="Custom Python installation from YAML files"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/Python_environments/Custom-Python-installation-from-YAML-files.htm" />
     </TocEntry>
     <TocEntry
-      Title="License server"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Installation/License_server.htm"
       StartSection="false"
       SectionNumberReset="continue"
@@ -115,10 +108,10 @@
       ComputeToc="false"
       ReplaceMergeNode="false">
       <TocEntry
-        Title="Installing a license server on Linux"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/License_server/Installing-license-server-on-Linux.htm" />
       <TocEntry
-        Title="Installing a license server on Windows"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Installation/License_server/Installing-license-server-on-Windows.htm" />
     </TocEntry>
     <TocEntry
@@ -129,6 +122,6 @@
     Title="3 Troubleshooting"
     Link="/Content/Troubleshooting.htm" />
   <TocEntry
-    Title="Appendix A - FlexNet Licenses Explained"
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/Appendix/AppendixA-FlexNet-Licenses-Explained.htm" />
 </CatapultToc>
