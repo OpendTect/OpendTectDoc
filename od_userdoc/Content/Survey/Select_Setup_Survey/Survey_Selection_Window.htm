@@ -5,22 +5,22 @@
     <body>
         <h3 style="text-align: justify; page-break-before: always">4.1.1 Survey Selection Window<MadCap:keyword term="Survey Selection Window" /></h3>
         <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">
-            <img src="../../Resources/Images/Survey/Survey selection window.png" class="General_Image" style="width: 776px;height: 652px;" />
+            <img src="../../Resources/Images/Survey/Survey selection window.png" class="General_Image" style="width: 776px;height: auto;" />
         </MadCap:conditionalText>
         <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">
             <img src="../../Resources/Images/Survey/Survey selection window.png" class="General_Image" style="width: 461px;height: 385px;" />
         </MadCap:conditionalText>
         <p>The three tabs, <i>Information</i>, <i>Notes</i> and <i>Log</i> show their respective data:</p>
         <p>
-            <img src="../../Resources/Images/Survey/Survey selection window notes.png" class="General_Image" style="width: 503px;height: 179px;" /> 
-            <img src="../../Resources/Images/Survey/Survey selection window log.png" class="General_Image" style="width: 510px;height: 179px;" />
+            <img src="../../Resources/Images/Survey/Survey selection window notes.png" class="General_Image" style="width: 503px;height: auto;" />
+            <img src="../../Resources/Images/Survey/Survey selection window log.png" class="General_Image" style="height: auto;width: 503px;" />
         </p>
-        <p> <i>Notes</i> can be edited manually.</p>
+        <p> The <i>Notes</i><img src="../../Resources/Images/Icons/notes.png" class="Icons" /> field is a free-format text field to store relevant survey notes.</p>
         <p>&#160;</p>
-        <p><i>Select</i> an existing survey from the list of surveys on the left or create a new one with <i>New</i> <img src="../../Resources/Images/Icons/addnew.png" class="Icons" /> ... (see below). The boundaries of the survey are depicted in the field to the right and detailed in the information field <img src="../../Resources/Images/Icons/info.png" class="Icons" /> . The <i>Notes</i><img src="../../Resources/Images/Icons/notes.png" class="Icons" /> field is a free-format text field to store relevant survey notes.</p>
+        <p><i>Select</i> an existing survey from the list of surveys on the left or create a new one with <i>New</i> <img src="../../Resources/Images/Icons/addnew.png" class="Icons" /> ... (see below). The boundaries of the survey are depicted in red in the field to the right and the info icon <img src="../../Resources/Images/Icons/info.png" class="Icons" /> gives details of the OS, data file system and available disk space.</p>
         <p>
-            <img src="../../Resources/Images/Survey/Survey data root .png" /> When you install OpendTect, selected an OpendTect data directory where all your surveys are stored:</p>
-        <img src="../../Resources/Images/Survey/Survey set data root.png" class="General_Image" />
+            <img src="../../Resources/Images/Survey/Survey data root .png" style="width: 145px;height: auto;" /> When you install OpendTect, select an OpendTect data directory where all your surveys are stored:</p>
+        <img src="../../Resources/Images/Survey/Survey set data root.png" class="General_Image" style="width: 489px;height: auto;" />
         <p> Any folder can be turned into an OpendTect folder, the only change being the addition of a parameter file (.omf).</p>
         <p>Only surveys stored in the selected OpendTect folder are displayed and can be accessed. Later you can open another OpendTect folder clicking on <i>Survey Data root</i>. The current data root is always displayed on the top of the window.</p>
         <p>
@@ -31,22 +31,27 @@
             <img src="../../Resources/Images/Icons/copyobj.png" class="Icons" /> Copy whole surveys from your data root to a designated location.</p>
         <p>
             <img src="../../Resources/Images/Icons/import.png" class="Icons" /> Allows you to compress/pack your entire survey into a zip file. This is highly recommended when transferring your survey from a computer to another computer, especially if they do not use the same platform. All data from this survey will be contained in the zip file, with the exception of the SEG-Y and/or CBVS files that were used 'in-place' from another location (ie: those SEG-Y or CBVS files that were used but not actually put inside the survey folder)</p>
-        <img src="../../Resources/Images/Survey/Survey pack into zip.png" class="General_Image" />
+        <img src="../../Resources/Images/Survey/Survey pack into zip.png" class="General_Image" style="width: 487px;height: auto;" />
         <p>
             <img src="../../Resources/Images/Icons/export.png" class="Icons" /> Unpacks a previously packed survey (see above) into your Data root folder. Most zip files could potentially be unpacked, but we support only the unpacking of survey packed using the OpendTect packing tool. If you wish to share your survey with the community, visit our <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="https://terranubis.com/datalist/free/" target="_blank">Open Seismic Repository on TerraNubis</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Open Seismic Repository</MadCap:conditionalText>.</p>
         <p>
-            <img src="../../Resources/Images/Icons/share.png" class="Icons" /> Takes the user to the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="https://terranubis.com/datalist/free/" target="_blank">Open Seismic Repository on TerraNubis</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Open Seismic Repository</MadCap:conditionalText>. Here, one can find information on how to share surveys with the wider community.</p>
+            <img src="../../Resources/Images/Survey/share.png" style="width: 60px; height: 60px;" class="Icons" />Takes the user to the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="https://terranubis.com/datalist/free/" target="_blank">Open Seismic Repository on TerraNubis</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Open Seismic Repository</MadCap:conditionalText>. Here, one can find information on how to share surveys with the wider community.</p>
         <p>
-            <img src="../../Resources/Images/Icons/xy2ic.png" class="Icons" /> In the position conversion window there are two modes available for coordinate conversion: Manual / File. In <i>Manual mode</i>, specify a inline/crossline pair, or a X/Y pair, and press the corresponding arrow key to obtain the position in the other domain. In <i>File mode</i>, browse the input file and create a new output file. By specifying the corresponding type conversion (XY to IC or IC to XY) and pressing the GO button, the desired conversion is written to the output file. There is no specific file type necessary for this input - even files without extension may be used. Simply <i>Select</i> them and, if desired, <i>Examine</i>, too.</p>
-        <img src="../../Resources/Images/Survey/Survey xy to ic manual.png" class="General_Image" />
-        <div style="page-break-before: avoid">
-            <img src="../../Resources/Images/Survey/Survey xy to ic file.png" class="General_Image" />
-        </div>
+            <img src="../../Resources/Images/Icons/delete_bin.png" class="Icons" /> Will delete the entire survey folder of the selected survey.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/settings.png" class="Icons" /> Opens the OpendTect Settings, outlined in the <i><a href="../../Utilities/Settings/Look_And_Feel.htm" target="_blank">Look and Feel</a></i> section of this UserDoc.</p>
+        <p>
+            <img src="../../Resources/Images/Icons/xy2ic.png" class="Icons" /> In this <i>Convert Positions</i>  window there are two modes available for coordinate conversion: Single Position/ File.</p>
+        <p>
+            <img src="../../Resources/Images/Survey/survey convert pos single.png" style="height: auto;width: 550px;" class="General_Image" /> <img src="../../Resources/Images/Survey/survey convert pos file.png" class="General_Image" style="width: 550px;" /></p>
+        <p>In <i>Single Position</i>, use the drop-down to specify the choice of input: X/Y, inline/crossline, or Lat/Long pair, or a X/Y pair. Then specify the Input CRS and enter the data pair. After selecting the Output CRS and/or Output Lat-Long system, press <i>Convert</i> to obtain the results.</p>
+        <p>In <i>File mode</i>, select the input file, Examine and Define  the Format (or retrieve a saved Format definition). In the lower section, specify the position of the resulting converted data, select the conversion types, Output CRS and/or Output Lat-Long system, and the location of the output file before pressing <i>Convert</i> to obtain the results.</p>
         <p>
             <img src="../../Resources/Images/Icons/clipboard.png" class="Icons" />is used to copy survey information to the clipboard.</p>
         <p>
-            <img src="../../Resources/Images/Icons/google.png" class="Icons" /> is used to export the selected survey boundary in a *.kml file, which is accessible via Google Earth. The dialog box contains the editable fields for the survey box. The area of the survey box is filled with the selected color. The width is the horizontal thickness of the survey outline. The border height is the altitude of the line with respect to the ground. The Output file field is an output location of the *.kml file. On 'Ok' the file (*.kml) is written at the specified path, which can be opened directly in Google Earth.</p>
-        <img src="../../Resources/Images/Survey/Survey export to google earth.png" class="General_Image" />
-        <p>Before exporting the *.kml file, specify the correspondence between X-Y coordinates and latitude/longitude at any location in the surveybox <img src="../../Resources/Images/Icons/spherewire.png" class="Icons" /> :</p>
-        <img src="../../Resources/Images/Survey/Survey lat long vs coords decimal.png" class="General_Image" /> <img src="../../Resources/Images/Survey/Survey lat long vs coords dms.png" class="General_Image" /><p>After pressing <i>Ok</i> provide an output filename.</p></body>
+            <img src="../../Resources/Images/Icons/google.png" class="Icons" /> is used to export the selected survey boundary to either GIS (export type GeoJSON) or to Google Earth (export type KML).</p>
+        <p> The dialog box contains the editable fields for the survey box. The area of the survey box is filled with the selected color. The width is the horizontal thickness of the survey outline. The border height is the altitude of the line with respect to the ground.  On 'Ok' the file  is written at the specified path.</p>
+        <img src="../../Resources/Images/Survey/survey export to gis.png" class="General_Image" style="width: 460px;height: auto;" />
+        <p>&#160;</p>
+    </body>
 </html>
