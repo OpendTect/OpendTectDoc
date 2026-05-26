@@ -266,7 +266,20 @@
         Link="/Content/Survey/Select_Setup_Survey/Survey_Selection_Window.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm" />
+        Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Enter X Y Ranges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Scan Navigation Data.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Copy from other survey.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Read from Survey Setup file.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Survey/Select_Setup_Survey/Edit_Survey_Parameters_Window.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
