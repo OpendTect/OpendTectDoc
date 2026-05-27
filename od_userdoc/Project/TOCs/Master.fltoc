@@ -562,7 +562,7 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="4.5 Manage"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Manage.htm">
       <TocEntry
         Title="4.5.1 Manage Attribute Sets"
@@ -766,7 +766,7 @@
         Link="/Content/Survey/Manage/Well_Data_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
-      Title="4.6 Pre-load"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Survey/Pre-Load.htm">
       <TocEntry
         Title="4.6.1 Preload Seismics"
