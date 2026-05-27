@@ -279,6 +279,12 @@
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Read from Survey Setup file.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Scan SEG-Y file(s).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Survey/Select_Setup_Survey/New_Survey_Window/Scan LAS Well Data.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
