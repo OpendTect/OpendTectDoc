@@ -407,4 +407,5 @@
     <Map Name="mCreateDevEnvHelpID" Link="/Content/Utilities/Plugin Development.htm" />
     <Map Name="mExportFaultSetHelpID" Link="/Content/Survey/Export/Export_FaultSet/Export FaultSet.htm" />
     <Map Name="mImportFaultSetHelpID" Link="/Content/Survey/Import/Import_FaultSets/Import_FaultSet.htm" />
+    <Map Name="mInformationHelpID" Link="/Content/Utilities/Installation/System_Information.htm" />
 </CatapultAliasFile>
