@@ -23,8 +23,7 @@
   SearchEngine="MadCapSearch"
   ResultsPerPage="20"
   AbstractLength="306"
-  MobileBreakpoint="773"
-  OutputFile="OpendTect-Administrators-Manual-2026">
+  MobileBreakpoint="773">
   <PrintedOutput
     CollapseMargins="true" />
   <MicroContentSearch>

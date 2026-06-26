@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultSkin
-  Version="4"
+  Version="6"
   SkinType="WebHelp2"
   Comment="HTML5 skin"
   Anchors="Top,Bottom"
@@ -333,6 +333,13 @@
         <Properties>
           <Property
             Name="Color">#696969</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Button">
+        <Properties>
+          <Property
+            Name="BackgroundRepeat">no-repeat</Property>
         </Properties>
       </Style>
     </Styles>
