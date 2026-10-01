@@ -14,7 +14,7 @@
   Medium="print"
   MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl"
   AutoSizeCaptureCaptions="false"
-  OutputFile="OpendTect-Programmers-Manual-7-0">
+  OutputFile="OpendTect-Programmers-Manual-2026">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"
@@ -22,7 +22,7 @@
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
-    Title="OpendTect User Documentation - Version 7.0"
+    Title="OpendTect User Documentation - Version 2026"
     Author="dGB Earth Sciences" />
   <PDF
     TitleBar="DocumentTitle"
